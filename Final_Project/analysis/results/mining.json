@@ -1881,6 +1881,33 @@
     "pair_agreement_with_k6": 0.982
    }
   ],
+  "dwell_by_position_bin": [
+   {
+    "SL_median": 69.2,
+    "bin": 0,
+    "support_median": 218.95
+   },
+   {
+    "SL_median": 40.55,
+    "bin": 1,
+    "support_median": 173.8
+   },
+   {
+    "SL_median": 66.0,
+    "bin": 2,
+    "support_median": 130.0
+   },
+   {
+    "SL_median": 53.3,
+    "bin": 3,
+    "support_median": 118.35
+   },
+   {
+    "SL_median": 49.75,
+    "bin": 4,
+    "support_median": 119.8
+   }
+  ],
   "dwell_by_typing": [
    {
     "group": "SLb",
@@ -1970,6 +1997,14 @@
    "SLb_caught": 0.696,
    "of_windows": 347,
    "windows_fired": 140
+  },
+  "verification_counts": {
+   "UNSETTLED": 3,
+   "V0": 376,
+   "V1": 62,
+   "V2": 5,
+   "V3": 13,
+   "VX": 39
   }
  },
  "stage": {
@@ -2865,6 +2900,23 @@
       "value": "VISIBLE_PARTIAL"
      }
     ],
+    "prior_own_work_nirvana": [
+     {
+      "stay": 17,
+      "switch": 4,
+      "value": "NONE_VISIBLE"
+     },
+     {
+      "stay": 8,
+      "switch": 9,
+      "value": "VISIBLE_DRAFT"
+     },
+     {
+      "stay": 20,
+      "switch": 14,
+      "value": "VISIBLE_PARTIAL"
+     }
+    ],
     "process": [
      {
       "stay": 7,
@@ -3089,6 +3141,23 @@
       "stay": 26,
       "switch": 17,
       "switch_rate": 0.395,
+      "value": "VISIBLE_PARTIAL"
+     }
+    ],
+    "prior_own_work_nirvana": [
+     {
+      "stay": 10,
+      "switch": 1,
+      "value": "NONE_VISIBLE"
+     },
+     {
+      "stay": 49,
+      "switch": 10,
+      "value": "VISIBLE_DRAFT"
+     },
+     {
+      "stay": 25,
+      "switch": 16,
       "value": "VISIBLE_PARTIAL"
      }
     ],

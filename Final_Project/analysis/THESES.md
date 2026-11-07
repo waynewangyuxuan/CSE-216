@@ -15,14 +15,14 @@ Four theses about these 106 sessions (NIRVANA 71, WildChat 35), each followed by
 | C7 | Entering surrender-leaning most often lands on asking for generation and iterating in chat; leaving it most commonly lands on the writer revising AI text in the editor | into SL: D2/U4 18 of 29; out of SL: D3/U3 8 of 29 (the plurality) | §3 |
 | C8 | Six archetypes describe the sessions. The two paste archetypes end with essays almost wholly by the AI; the two support archetypes do not | Paste into the draft 12 sessions, median GPT Final % 0.971; One-shot paste 7, 1.0; Short support visit (NIRVANA 25) 0.0; Long working session (NIRVANA 19) 0.176 | §1, §8 |
 
-## T2 (RQ1 across sessions, and RQ3). The writer's own text is the anchor. Sessions that start from it stay on the support side, and a visible own draft predicts that the next request stays there too.
+## T2 (RQ1 across sessions, and RQ3). The writer's own text is the anchor. Sessions that start from it lean to the support side, and a visible own draft predicts that the next request stays there too.
 
 | # | Claim | Number | Source |
 |---|---|---|---|
 | C9 | Across NIRVANA sessions, more text in the editor at the first request goes with a larger support share. The link is between sessions, and about half as strong once one-window sessions are set aside | rho 0.401, p 0.0005 (65 sessions); multi-window only 0.256, p 0.075 (54); minutes before first ask 0.242, p 0.043 | §5, §10 |
 | C10 | First window's own work and the session's support share | NIRVANA none visible 0.497 (30), notes 0.708 (17), draft 0.767 (18). WildChat unseen 0.07 (19; 18 have SL), draft 1.0 (7; none has SL) | §5 |
 | C11 | A visible draft predicts lower odds that the next substantive window is surrender-leaning, with the current window's category, chat uptake, dataset and position in the model | odds ratio 0.225 [0.074, 0.441]; next-SL rate 0.213 with a draft vs 0.647 without | §3 |
-| C12 | In NIRVANA, writers leave surrender-leaning more often when their own draft is visible, and enter it more often when they have only notes | leaving SL: draft 10/18, notes 14/42, none visible 4/21. Entering SL from support: notes 17/43, draft 11/71 | §3, fig21 |
+| C12 | In NIRVANA, writers leave surrender-leaning more often when their own draft is visible, and enter it more often when they have only notes | leaving SL: draft 9/17, notes 14/34, none visible 4/21. Entering SL from support: notes 16/41, draft 10/59 (fig21 pools both datasets) | §3 NIRVANA rows |
 | C13 | In WildChat (chat only), sessions that become surrender-leaning rarely come back; in NIRVANA most do | return to support after the first SL window: WildChat 2 of 21, NIRVANA 17 of 29 | §6 |
 | C14 | The writer's document grows through the session | NIRVANA median editor characters at request, position bins 0–4: 101, 342, 1156.5, 1369, 2157 | §5 |
 
@@ -30,10 +30,10 @@ Four theses about these 106 sessions (NIRVANA 71, WildChat 35), each followed by
 
 | # | Claim | Number | Source |
 |---|---|---|---|
-| C15 | NIRVANA dwell (response to next request) is under half as long for surrender-leaning windows, in every position bin and within most sessions | median 57.8 s vs 152.2 s (within-session shuffle p 0.0005); SLb alone 65.4 s (p 0.0035). Shorter in 13 of 17 sessions that have both | §7, §10 |
+| C15 | NIRVANA dwell (response to next request) is under half as long for surrender-leaning windows, in every position bin and within most sessions | median 57.8 s vs 152.2 s (within-session shuffle p 0.0005); SLb alone 65.4 s (p 0.0035). By position bin SL 40.6–69.2 s, support 118.4–219.0 s. Shorter in 13 of 17 sessions that have both | §7, §10 |
 | C16 | The gap is typing time. With under 50 characters typed, behavior-based surrender and support windows have the same dwell | under 50 typed: SLb 44.1 s, support 43.5 s; 50+ typed: 156.1 vs 308.3 | §10 |
-| C17 | Typing after the response separates the sides; time to the first copy does not | median typed after: SLb 0, OFF 108, AUG 256. First copy: SLb 15.5 s vs OFF 10.3 s (p 0.616) | §5, §7 |
-| C18 | Checks that would show deliberation are nearly absent | V3 13 windows in 6 sessions, V4 0, V2 5 | Bet 8 `patterns.md` §1 |
+| C17 | Typing after the response separates the sides; time to the first copy does not | median typed after: SLb 0, OFF 108, AUG 256. First copy: SLb 15.5 s vs support 10.35 s (p 0.616); OFF 10.3 s | §5, §7 |
+| C18 | Checks that would show deliberation are nearly absent | V3 13 windows in 6 sessions, V4 0, V2 5 | §10; Bet 8 `patterns.md` §1 |
 | C19 | Felt ownership is lower in sessions with either kind of surrender, mostly between sessions with any behavior-based surrender and those with none | ownership vs SLb share −0.546; vs SLr share −0.332 (p 0.004); among the 34 sessions with any SLb, −0.206 (p 0.246) | §8, §10 |
 | C20 | WildChat's only clock (AI reply to next AI reply) does not separate SL from support | 232 s vs 332 s, p 0.39 | §7 |
 
@@ -48,7 +48,7 @@ RQ2 argument (analytic). Shaw & Nave define surrender by absent deliberation. Th
 | C23 | Together (either fires) | 140 of 347 windows; SL among fired 0.559; catches 0.633 of SL and 0.696 of SLb | §10 |
 | C24 | Speed alone is not a trigger: a quick return to chat has modest precision and no relation to outcome | SL among fired 0.548; vs GPT Final % rho 0.139 (p 0.24) | §9 |
 
-Proposed feedback, each tied to its trigger (mockup level): on a near-empty page, before showing generated prose, ask the writer for the claim they want to make (C22, C9–C11); after a large paste with no typing, ask which sentence of it the writer would defend or change (C21, C2). In chat-only tools, where neither event exists, the nearest analogue is a run of generation follow-ups with no own text supplied (C13; runs of SLr are only slightly over-represented, 46 vs 40.47, p 0.025, one of 40 tests).
+Proposed feedback, each tied to its trigger (mockup level): on a near-empty page, before showing generated prose, ask the writer for the claim they want to make (C22, C9–C11); after a large paste with no typing, ask which sentence of it the writer would defend or change (C21, C2). In chat-only tools, where neither event exists, the nearest analogue is a run of generation follow-ups with no own text supplied (WildChat sessions that become SL rarely return, C13; runs of SLr are only slightly over-represented, 46 vs 40.47, p 0.025, one of 40 tests).
 
 ## Caveats (collected)
 

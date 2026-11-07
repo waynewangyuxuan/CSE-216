@@ -102,6 +102,14 @@ By current window's `process`:
 | R | 6 | 3 | 0.333 |
 | T | 78 | 18 | 0.188 |
 
+NIRVANA only, by current window's `prior_own_work`:
+
+| Value | Stay | Switch |
+|---|---|---|
+| NONE_VISIBLE | 17 | 4 |
+| VISIBLE_DRAFT | 8 | 9 |
+| VISIBLE_PARTIAL | 20 | 14 |
+
 Next window's decision/uptake when it switches:
 
 | D/U | Count |
@@ -160,6 +168,14 @@ By current window's `process`:
 | P | 41 | 10 | 0.196 |
 | R | 44 | 8 | 0.154 |
 | T | 11 | 11 | 0.5 |
+
+NIRVANA only, by current window's `prior_own_work`:
+
+| Value | Stay | Switch |
+|---|---|---|
+| NONE_VISIBLE | 10 | 1 |
+| VISIBLE_DRAFT | 49 | 10 |
+| VISIBLE_PARTIAL | 25 | 16 |
 
 Next window's decision/uptake when it switches:
 
@@ -453,6 +469,18 @@ NIRVANA dwell with typing held low or high:
 | under 50 typed | support | 49 | 43.5 |
 | 50+ typed | SLb | 14 | 156.1 |
 | 50+ typed | support | 68 | 308.25 |
+
+NIRVANA median dwell (s) by centred position bin:
+
+| Bin | SL | Support |
+|---|---|---|
+| 0 | 69.2 | 218.95 |
+| 1 | 40.55 | 173.8 |
+| 2 | 66.0 | 130.0 |
+| 3 | 53.3 | 118.35 |
+| 4 | 49.75 | 119.8 |
+
+Verification codes, whole sessions: UNSETTLED 3, V0 376, V1 62, V2 5, V3 13, VX 39.
 
 Within NIRVANA sessions that have both sides: SL median dwell shorter in 13 of 17.
 

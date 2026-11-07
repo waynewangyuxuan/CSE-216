@@ -301,6 +301,10 @@ def triggers(S):
         # Where does the switch window land (next window's codes)?
         tab["next_D_U_when_switch"] = Counter(f"{b['D']}/{b['U']}" for a, b in sub if b["side"] != frm).most_common(8)
         tab["next_D_U_when_switch"] = [list(x) for x in tab["next_D_U_when_switch"]]
+        subn = [(a, b) for a, b, d in P if a["side"] == frm and d == "NIRVANA"]
+        tab["prior_own_work_nirvana"] = [{"value": v, "stay": sum(a["pow"] == v and b["side"] == frm for a, b in subn),
+                                          "switch": sum(a["pow"] == v and b["side"] != frm for a, b in subn)}
+                                         for v in sorted({a["pow"] for a, _ in subn})]
         res[label] = {"pairs": len(sub), "stay": len(stay), "switch": len(move), "by_feature": tab}
     return res
 
@@ -736,6 +740,11 @@ def robustness(S, out, arch_rows):
             both += 1
             shorter += med(a) < med(b)
     R["dwell_within_session"] = {"sessions_with_both": both, "SL_median_shorter": shorter}
+    R["dwell_by_position_bin"] = [{"bin": b,
+                                   "SL_median": r2(med([float(w["t"]["dwell_s"]) for w in SN if w["side"] == "S" and min(4, int(5 * w["rel"])) == b])),
+                                   "support_median": r2(med([float(w["t"]["dwell_s"]) for w in SN if w["side"] == "P" and min(4, int(5 * w["rel"])) == b]))}
+                                  for b in range(5)]
+    R["verification_counts"] = dict(sorted(Counter(w["V"] for w in W).items()))
     # Editor text at first ask: multi-window sessions only.
     nv = []
     for (d, sid), v in S.items():
@@ -838,6 +847,8 @@ def report(J):
         for f in ("tok", "U", "D", "prior_own_work", "process"):
             md.append(f"By current window's `{f}`:\n\n" + md_table(["Value", "Stay", "Switch", "Switch rate"],
                       [[r["value"], r["stay"], r["switch"], r["switch_rate"]] for r in t["by_feature"][f]]) + "\n")
+        md.append("NIRVANA only, by current window's `prior_own_work`:\n\n" + md_table(["Value", "Stay", "Switch"],
+                  [[r["value"], r["stay"], r["switch"]] for r in t["by_feature"]["prior_own_work_nirvana"]]) + "\n")
         md.append("Next window's decision/uptake when it switches:\n\n" + md_table(["D/U", "Count"], t["by_feature"]["next_D_U_when_switch"]) + "\n")
     L = J["lagged_model"]
     md.append(f"\n### Lagged model: next substantive window is SL\n\n{L['n_pairs']} pairs in {L['n_sessions']} sessions; base rate "
@@ -932,6 +943,9 @@ def report(J):
     md.append("\nNIRVANA dwell with typing held low or high:\n\n" + md_table(["Typing after response", "Group", "Windows", "Median dwell (s)"],
               [[r["typing"], r["group"], r["windows"], r["median_dwell"]] for r in Rb["dwell_by_typing"]]))
     dw = Rb["dwell_within_session"]
+    md.append("\nNIRVANA median dwell (s) by centred position bin:\n\n" + md_table(["Bin", "SL", "Support"],
+              [[r["bin"], r["SL_median"], r["support_median"]] for r in Rb["dwell_by_position_bin"]]))
+    md.append("\nVerification codes, whole sessions: " + ", ".join(f"{k} {v}" for k, v in Rb["verification_counts"].items()) + ".\n")
     md.append(f"\nWithin NIRVANA sessions that have both sides: SL median dwell shorter in {dw['SL_median_shorter']} of {dw['sessions_with_both']}.\n")
     e = Rb["editor_first_multi_window"]
     md.append(f"\nEditor characters at first ask vs support share, multi-window NIRVANA sessions: rho {e['rho']}, p {e['p']} ({e['sessions']} sessions).\n")
