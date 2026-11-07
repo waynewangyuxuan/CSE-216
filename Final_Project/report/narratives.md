@@ -35,3 +35,33 @@ All conversation content below is paraphrased; nothing is quoted from the datase
 **A new section (t07-t08).** In WILDCHAT-2849709b14c2-t07 the user asked for a problem statement in the same format; the AI wrote one with a bullet explanation and references, and the user asked again with a specific location added (F4, D2, V0, U4; R16, weak). WILDCHAT-2849709b14c2-t08 is that location-specific version; there is no later turn (C0; R03, INDETERMINATE).
 
 **What it shows.** In WildChat, "surrender-leaning" here means only that the user asked the AI to write thesis text and kept asking for more; the log never shows whether any of it entered a thesis, was rewritten, or was discarded. The strength is weak because the window matches a source only by what was requested, the lowest grade v1.2 §9.2 allows. In NIRVANA the editor log usually shows what followed such a request, a paste or the writer's own typing (as in e70 and e26); here that half of the window is missing. R16's main alternative reading says the same: no adoption is seen, and the text may have been used only as reference. Whether the AI's citations exist is also unseen, since AI correctness is not coded. The codes match the text; the weakness is in what a chat log can show, not in the coding.
+
+## 4. NIRVANA e41: paste into the draft
+
+*Illustrates T1 and T3: AI text entering the draft whole, with little time on it.*
+
+**Summary.** IND SLb SLb SLb SLb SLb SLb: the editor stays empty while the writer asks the AI for a full essay and then for longer and differently split versions of it, and the session ends with the whole AI essay pasted into the editor.
+
+**Opening (t01-t02).** In NIRVANA-e41-t01 the writer asked, in one line, for help writing a paper; the AI asked for the prompt, and the writer pasted the assignment into chat about one second later. Codes: F4, D0, V0, U4, prior own work none visible; R01, INDETERMINATE. In NIRVANA-e41-t02 the AI answered the pasted prompt with a five-paragraph essay that walks through the three perspectives and closes on a balanced stance. Codes: F4, D2, V1, U4, prior own work none visible; R15, SURRENDER_LEANING (moderate).
+
+**Surface-only iteration in chat (t03-t05).** The next three requests asked only for more length, more sentences per paragraph, and a fixed paragraph count (NIRVANA-e41-t03, -t04, -t05). None touched the argument or the stance, and none of the drafts reached the editor. All three: F4, D2, V1, U4, prior own work none visible; R15, SURRENDER_LEANING (moderate). Dwell from response to next request was 9.0 s (t02), 18.0 s (t03), 13.2 s (t04) and 16.6 s (t05); typed and pasted characters were 0 in each, and the editor held 0 characters at every request through t06.
+
+**Whole paste (t06-t07).** In NIRVANA-e41-t06 the writer asked for the essay in a form ready to copy; the AI returned the same sectioned text, and the writer copied it 6.5 s after the response and pasted 4,681 characters into the empty editor. Codes: F8, D4, V0, U1; R09, SURRENDER_LEANING (strong). In NIRVANA-e41-t07 the writer asked for a title, pasted it in place of the first section label, and spent about a minute deleting the remaining section labels (27 typed, 93 pasted, 238 deleted characters). Codes: F4, D4, V0, U1; R09, SURRENDER_LEANING (strong). The session lasted about 227 s in total.
+
+**Outcome.** Per the dataset, GPT Final % is 100% (no writer-added words in the 649-word essay) and Perceived Ownership is 3.13 of 7.
+
+**What it shows.** Every sentence of the essay came from the AI, and the writer's only work on it was length requests and removing headings; each AI draft was on screen for under 21 s before the next request. The V1 codes rest on the writer reacting to length and layout only, which fits the log. The alternative reading the log cannot rule out: the writer may have read the drafts closely in those seconds, or treated the session as a quick trial rather than a real attempt, so the timing shows little engagement but cannot prove none. The low ownership rating suggests the writer did not count the essay as their own. Reading the windows, the codes look right; F8 on t06 is defensible, since the request was about format, not content.
+
+## 5. NIRVANA e24: short support visit
+
+*Illustrates T2: own text as the anchor.*
+
+**Summary.** OFF AUG AUG: the writer starts from a near-empty page, borrows one sentence from an AI essay and rewrites its ending, then asks about each remaining perspective and answers each one by typing a paragraph of their own.
+
+**Borrowing a sentence (t01).** In NIRVANA-e24-t01 the editor held only a 101-character note that the writer then sent as the request: an essay on automation from the dystopian angle. The AI returned a full essay. The writer cleared the note, typed an opening sentence of their own, copied one AI sentence, pasted it, and replaced its closing words so it pointed to several perspectives rather than one. They then typed a dystopian paragraph in their own words, covering job loss for workers without degrees and a loss of everyday courtesy. Dwell 576.7 s; 1,271 typed, 334 pasted and 445 deleted characters; the editor grew from 101 to 1,056 characters. Codes: F4, D3, V0, U3, prior own work none visible; R08, OFFLOADING (moderate).
+
+**Asking, then writing (t02-t03).** In NIRVANA-e24-t02 the writer, mid-sentence on the utilitarian perspective, asked what that view could be; the AI gave a long explanation. Nothing was copied: the writer typed their own utilitarian paragraph over about five minutes (dwell 300.7 s; 989 typed, 0 pasted; 1,056 to 1,801 characters). In NIRVANA-e24-t03 they asked the same about the progressive view and again typed their own paragraph (1,299 typed characters; editor 1,801 to 2,403). The 894 pasted characters in t03 are the writer moving their own sentences between paragraphs, not AI text. Both: F4, D2, V0, U7, prior own work visible; R17, AUGMENTING (weak).
+
+**Outcome.** Per the dataset, GPT Final % is about 10% (385 words in total) and Perceived Ownership is 6.0 of 7, with about 1,575 s spent.
+
+**What it shows.** The writer's draft set the order of work: each request came while a paragraph of theirs was half-written, and the long dwells and growing editor show composition rather than adoption. The alternative reading the log cannot settle: some of the writer's points (fewer injuries, new jobs) echo ideas in the AI replies, so the AI may have supplied the ideas while the writer supplied the wording; R17 is weak for this reason. The t01 OFFLOADING label also counts one borrowed sentence against a mostly self-typed paragraph. The codes look right, though D2 on t02-t03 could be argued as D3 if the echoed points count as taken.
