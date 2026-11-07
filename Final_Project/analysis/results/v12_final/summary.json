@@ -1,0 +1,116 @@
+{
+ "n_windows": 528,
+ "coverage_not_indeterminate": 0.788,
+ "by_category": {
+  "SURRENDER_LEANING": 182,
+  "OFFLOADING": 113,
+  "INDETERMINATE": 112,
+  "AUGMENTING": 66,
+  "NEUTRAL_MECHANICAL": 55
+ },
+ "by_category_strength": {
+  "AUGMENTING/moderate": 32,
+  "AUGMENTING/weak": 34,
+  "INDETERMINATE/-": 112,
+  "NEUTRAL_MECHANICAL/moderate": 55,
+  "OFFLOADING/moderate": 93,
+  "OFFLOADING/weak": 20,
+  "SURRENDER_LEANING/moderate": 55,
+  "SURRENDER_LEANING/strong": 15,
+  "SURRENDER_LEANING/weak": 112
+ },
+ "by_rule": {
+  "R00": 20,
+  "R01": 4,
+  "R02": 55,
+  "R03": 34,
+  "R04": 13,
+  "R05": 5,
+  "R06": 6,
+  "R07": 1,
+  "R08": 33,
+  "R09": 15,
+  "R10": 3,
+  "R11": 28,
+  "R12": 7,
+  "R13": 47,
+  "R14": 13,
+  "R15": 21,
+  "R16": 111,
+  "R17": 11,
+  "R18": 25,
+  "R19": 20,
+  "R20": 7,
+  "R99": 49
+ },
+ "by_dataset": {
+  "NIRVANA": {
+   "n": 347,
+   "coverage_not_indeterminate": 0.853,
+   "by_category": {
+    "SURRENDER_LEANING": 98,
+    "OFFLOADING": 87,
+    "AUGMENTING": 63,
+    "INDETERMINATE": 51,
+    "NEUTRAL_MECHANICAL": 48
+   }
+  },
+  "WildChat": {
+   "n": 151,
+   "coverage_not_indeterminate": 0.656,
+   "by_category": {
+    "SURRENDER_LEANING": 69,
+    "INDETERMINATE": 52,
+    "OFFLOADING": 22,
+    "NEUTRAL_MECHANICAL": 5,
+    "AUGMENTING": 3
+   }
+  },
+  "WildChat-Bet4": {
+   "n": 30,
+   "coverage_not_indeterminate": 0.7,
+   "by_category": {
+    "SURRENDER_LEANING": 15,
+    "INDETERMINATE": 9,
+    "OFFLOADING": 4,
+    "NEUTRAL_MECHANICAL": 2
+   }
+  }
+ },
+ "by_coverage": {
+  "C0": {
+   "n": 44,
+   "coverage_not_indeterminate": 0.136
+  },
+  "C1": {
+   "n": 280,
+   "coverage_not_indeterminate": 0.782
+  },
+  "C2": {
+   "n": 204,
+   "coverage_not_indeterminate": 0.936
+  }
+ },
+ "unrecognized": [
+  "NIRVANA-e04-t16",
+  "NIRVANA-e06-t02",
+  "NIRVANA-e19-t01",
+  "NIRVANA-e25-t16",
+  "NIRVANA-e42-t08",
+  "NIRVANA-e47-t01",
+  "NIRVANA-e68-t06",
+  "WILDCHAT-14140e33cb98-t01",
+  "WILDCHAT-14140e33cb98-t02",
+  "WILDCHAT-85fb5101edc7-t02",
+  "WILDCHAT-953148aa3d57-t01",
+  "WILDCHAT-953148aa3d57-t02",
+  "WILDCHAT-953148aa3d57-t03",
+  "WILDCHAT-9dff96b50f4f-t01",
+  "WILDCHAT-bc60326cb766-t05",
+  "WILDCHAT-e6acb3ce8d84-t01",
+  "WILDCHAT-e6acb3ce8d84-t02",
+  "WILDCHAT-f6837354bd04-t03",
+  "WILDCHAT-f6837354bd04-t04",
+  "WILDCHAT-f6837354bd04-t05"
+ ]
+}

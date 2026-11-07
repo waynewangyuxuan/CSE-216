@@ -1,0 +1,94 @@
+{
+ "n_windows": 528,
+ "coverage_not_indeterminate": 0.82,
+ "by_category": {
+  "SURRENDER_LEANING": 193,
+  "OFFLOADING": 117,
+  "INDETERMINATE": 95,
+  "AUGMENTING": 72,
+  "NEUTRAL_MECHANICAL": 51
+ },
+ "by_category_strength": {
+  "AUGMENTING/moderate": 39,
+  "AUGMENTING/weak": 33,
+  "INDETERMINATE/-": 95,
+  "NEUTRAL_MECHANICAL/moderate": 51,
+  "OFFLOADING/moderate": 97,
+  "OFFLOADING/weak": 20,
+  "SURRENDER_LEANING/moderate": 60,
+  "SURRENDER_LEANING/strong": 15,
+  "SURRENDER_LEANING/weak": 118
+ },
+ "by_rule": {
+  "R01": 2,
+  "R02": 51,
+  "R03": 38,
+  "R04": 13,
+  "R05": 5,
+  "R06": 6,
+  "R07": 1,
+  "R08": 32,
+  "R09": 15,
+  "R10": 2,
+  "R11": 30,
+  "R12": 7,
+  "R13": 52,
+  "R14": 13,
+  "R15": 24,
+  "R16": 117,
+  "R17": 9,
+  "R18": 32,
+  "R19": 22,
+  "R20": 7,
+  "R99": 50
+ },
+ "by_dataset": {
+  "NIRVANA": {
+   "n": 347,
+   "coverage_not_indeterminate": 0.873,
+   "by_category": {
+    "SURRENDER_LEANING": 102,
+    "OFFLOADING": 89,
+    "AUGMENTING": 69,
+    "INDETERMINATE": 44,
+    "NEUTRAL_MECHANICAL": 43
+   }
+  },
+  "WildChat": {
+   "n": 151,
+   "coverage_not_indeterminate": 0.715,
+   "by_category": {
+    "SURRENDER_LEANING": 75,
+    "INDETERMINATE": 43,
+    "OFFLOADING": 24,
+    "NEUTRAL_MECHANICAL": 6,
+    "AUGMENTING": 3
+   }
+  },
+  "WildChat-Bet4": {
+   "n": 30,
+   "coverage_not_indeterminate": 0.733,
+   "by_category": {
+    "SURRENDER_LEANING": 16,
+    "INDETERMINATE": 8,
+    "OFFLOADING": 4,
+    "NEUTRAL_MECHANICAL": 2
+   }
+  }
+ },
+ "by_coverage": {
+  "C0": {
+   "n": 44,
+   "coverage_not_indeterminate": 0.136
+  },
+  "C1": {
+   "n": 280,
+   "coverage_not_indeterminate": 0.829
+  },
+  "C2": {
+   "n": 204,
+   "coverage_not_indeterminate": 0.956
+  }
+ },
+ "unrecognized": []
+}

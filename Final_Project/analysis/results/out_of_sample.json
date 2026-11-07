@@ -1,0 +1,384 @@
+{
+ "calibration_changed": [
+  [
+   "NIRVANA-e29-t07",
+   "NEUTRAL_MECHANICAL",
+   "AUGMENTING",
+   "bet6_fullview_recode"
+  ],
+  [
+   "NIRVANA-e61-t07",
+   "INDETERMINATE",
+   "AUGMENTING",
+   "bet6_fullview_recode"
+  ]
+ ],
+ "category_strength": {
+  "AUGMENTING/moderate": {
+   "NIRVANA": 29,
+   "WildChat": 3,
+   "WildChat-Bet4": 0
+  },
+  "AUGMENTING/weak": {
+   "NIRVANA": 34,
+   "WildChat": 0,
+   "WildChat-Bet4": 0
+  },
+  "INDETERMINATE/-": {
+   "NIRVANA": 51,
+   "WildChat": 52,
+   "WildChat-Bet4": 9
+  },
+  "NEUTRAL_MECHANICAL/moderate": {
+   "NIRVANA": 48,
+   "WildChat": 5,
+   "WildChat-Bet4": 2
+  },
+  "OFFLOADING/moderate": {
+   "NIRVANA": 71,
+   "WildChat": 18,
+   "WildChat-Bet4": 4
+  },
+  "OFFLOADING/weak": {
+   "NIRVANA": 16,
+   "WildChat": 4,
+   "WildChat-Bet4": 0
+  },
+  "SURRENDER_LEANING/moderate": {
+   "NIRVANA": 53,
+   "WildChat": 2,
+   "WildChat-Bet4": 0
+  },
+  "SURRENDER_LEANING/strong": {
+   "NIRVANA": 15,
+   "WildChat": 0,
+   "WildChat-Bet4": 0
+  },
+  "SURRENDER_LEANING/weak": {
+   "NIRVANA": 30,
+   "WildChat": 67,
+   "WildChat-Bet4": 15
+  }
+ },
+ "coder_ab": {
+  "All": {
+   "SL_A": 193,
+   "SL_B": 181,
+   "SL_final": 182,
+   "agree": 471,
+   "final_eq_A": 502,
+   "final_eq_B": 470,
+   "kappa": 0.858,
+   "n": 528
+  },
+  "NIRVANA": {
+   "SL_A": 102,
+   "SL_B": 94,
+   "SL_final": 98,
+   "agree": 298,
+   "final_eq_A": 332,
+   "final_eq_B": 304,
+   "kappa": 0.819,
+   "n": 347
+  },
+  "WildChat": {
+   "SL_A": 75,
+   "SL_B": 73,
+   "SL_final": 69,
+   "agree": 146,
+   "final_eq_A": 141,
+   "final_eq_B": 138,
+   "kappa": 0.949,
+   "n": 151
+  },
+  "WildChat-Bet4": {
+   "SL_A": 16,
+   "SL_B": 14,
+   "SL_final": 15,
+   "agree": 27,
+   "final_eq_A": 29,
+   "final_eq_B": 28,
+   "kappa": 0.845,
+   "n": 30
+  }
+ },
+ "coverage": {
+  "All 528": {
+   "n": 528,
+   "not_indeterminate": 416
+  },
+  "NIRVANA, Bet 4 labels kept (in calibration)": {
+   "n": 52,
+   "not_indeterminate": 43
+  },
+  "NIRVANA, Bet 4 windows recoded with full history": {
+   "n": 18,
+   "not_indeterminate": 16
+  },
+  "NIRVANA, new in Bet 6 (out of sample)": {
+   "n": 277,
+   "not_indeterminate": 237
+  },
+  "Out of sample: Bet 6 new + Bet 7": {
+   "n": 428,
+   "not_indeterminate": 336
+  },
+  "WildChat, Bet 4 sample (in calibration; incomplete sessions)": {
+   "n": 30,
+   "not_indeterminate": 21
+  },
+  "WildChat, Bet 7 (out of sample)": {
+   "n": 151,
+   "not_indeterminate": 99
+  }
+ },
+ "rules": {
+  "R00": {
+   "NIRVANA": 7,
+   "WildChat": 13,
+   "WildChat-Bet4": 0
+  },
+  "R01": {
+   "NIRVANA": 1,
+   "WildChat": 1,
+   "WildChat-Bet4": 2
+  },
+  "R02": {
+   "NIRVANA": 48,
+   "WildChat": 5,
+   "WildChat-Bet4": 2
+  },
+  "R03": {
+   "NIRVANA": 4,
+   "WildChat": 25,
+   "WildChat-Bet4": 5
+  },
+  "R04": {
+   "NIRVANA": 13,
+   "WildChat": 0,
+   "WildChat-Bet4": 0
+  },
+  "R05": {
+   "NIRVANA": 4,
+   "WildChat": 1,
+   "WildChat-Bet4": 0
+  },
+  "R06": {
+   "NIRVANA": 6,
+   "WildChat": 0,
+   "WildChat-Bet4": 0
+  },
+  "R07": {
+   "NIRVANA": 1,
+   "WildChat": 0,
+   "WildChat-Bet4": 0
+  },
+  "R08": {
+   "NIRVANA": 33,
+   "WildChat": 0,
+   "WildChat-Bet4": 0
+  },
+  "R09": {
+   "NIRVANA": 15,
+   "WildChat": 0,
+   "WildChat-Bet4": 0
+  },
+  "R10": {
+   "NIRVANA": 3,
+   "WildChat": 0,
+   "WildChat-Bet4": 0
+  },
+  "R11": {
+   "NIRVANA": 28,
+   "WildChat": 0,
+   "WildChat-Bet4": 0
+  },
+  "R12": {
+   "NIRVANA": 7,
+   "WildChat": 0,
+   "WildChat-Bet4": 0
+  },
+  "R13": {
+   "NIRVANA": 25,
+   "WildChat": 18,
+   "WildChat-Bet4": 4
+  },
+  "R14": {
+   "NIRVANA": 9,
+   "WildChat": 4,
+   "WildChat-Bet4": 0
+  },
+  "R15": {
+   "NIRVANA": 19,
+   "WildChat": 2,
+   "WildChat-Bet4": 0
+  },
+  "R16": {
+   "NIRVANA": 29,
+   "WildChat": 67,
+   "WildChat-Bet4": 15
+  },
+  "R17": {
+   "NIRVANA": 11,
+   "WildChat": 0,
+   "WildChat-Bet4": 0
+  },
+  "R18": {
+   "NIRVANA": 22,
+   "WildChat": 3,
+   "WildChat-Bet4": 0
+  },
+  "R19": {
+   "NIRVANA": 20,
+   "WildChat": 0,
+   "WildChat-Bet4": 0
+  },
+  "R20": {
+   "NIRVANA": 7,
+   "WildChat": 0,
+   "WildChat-Bet4": 0
+  },
+  "R99": {
+   "NIRVANA": 35,
+   "WildChat": 12,
+   "WildChat-Bet4": 2
+  }
+ },
+ "sl_by_rule16": {
+  "NIRVANA": [
+   29,
+   98
+  ],
+  "WildChat": [
+   67,
+   69
+  ],
+  "WildChat-Bet4": [
+   15,
+   15
+  ]
+ },
+ "u8_with_v_not_v0": [],
+ "unsettled_range": [
+  {
+   "dataset": "NIRVANA",
+   "possible": "OFF 5",
+   "unsettled": "verification",
+   "window_id": "NIRVANA-e04-t16"
+  },
+  {
+   "dataset": "NIRVANA",
+   "possible": "OFF 2, IND 3",
+   "unsettled": "verification",
+   "window_id": "NIRVANA-e06-t02"
+  },
+  {
+   "dataset": "NIRVANA",
+   "possible": "SL 11, OFF 13, AUG 2, IND 28",
+   "unsettled": "decision;uptake",
+   "window_id": "NIRVANA-e19-t01"
+  },
+  {
+   "dataset": "NIRVANA",
+   "possible": "OFF 5",
+   "unsettled": "verification",
+   "window_id": "NIRVANA-e25-t16"
+  },
+  {
+   "dataset": "NIRVANA",
+   "possible": "NEU 5",
+   "unsettled": "uptake",
+   "window_id": "NIRVANA-e42-t08"
+  },
+  {
+   "dataset": "NIRVANA",
+   "possible": "IND 5",
+   "unsettled": "uptake",
+   "window_id": "NIRVANA-e47-t01"
+  },
+  {
+   "dataset": "NIRVANA",
+   "possible": "OFF 1, AUG 5, IND 3",
+   "unsettled": "function",
+   "window_id": "NIRVANA-e68-t06"
+  },
+  {
+   "dataset": "WildChat",
+   "possible": "SL 4",
+   "unsettled": "prior_own_work",
+   "window_id": "WILDCHAT-14140e33cb98-t01"
+  },
+  {
+   "dataset": "WildChat",
+   "possible": "IND 4",
+   "unsettled": "prior_own_work",
+   "window_id": "WILDCHAT-14140e33cb98-t02"
+  },
+  {
+   "dataset": "WildChat",
+   "possible": "IND 4",
+   "unsettled": "prior_own_work",
+   "window_id": "WILDCHAT-85fb5101edc7-t02"
+  },
+  {
+   "dataset": "WildChat",
+   "possible": "OFF 4",
+   "unsettled": "prior_own_work",
+   "window_id": "WILDCHAT-953148aa3d57-t01"
+  },
+  {
+   "dataset": "WildChat",
+   "possible": "OFF 4",
+   "unsettled": "prior_own_work",
+   "window_id": "WILDCHAT-953148aa3d57-t02"
+  },
+  {
+   "dataset": "WildChat",
+   "possible": "OFF 4",
+   "unsettled": "prior_own_work",
+   "window_id": "WILDCHAT-953148aa3d57-t03"
+  },
+  {
+   "dataset": "WildChat",
+   "possible": "NEU 5",
+   "unsettled": "uptake",
+   "window_id": "WILDCHAT-9dff96b50f4f-t01"
+  },
+  {
+   "dataset": "WildChat",
+   "possible": "SL 3, IND 2",
+   "unsettled": "uptake",
+   "window_id": "WILDCHAT-bc60326cb766-t05"
+  },
+  {
+   "dataset": "WildChat",
+   "possible": "SL 4",
+   "unsettled": "prior_own_work",
+   "window_id": "WILDCHAT-e6acb3ce8d84-t01"
+  },
+  {
+   "dataset": "WildChat",
+   "possible": "IND 4",
+   "unsettled": "prior_own_work",
+   "window_id": "WILDCHAT-e6acb3ce8d84-t02"
+  },
+  {
+   "dataset": "WildChat",
+   "possible": "SL 4",
+   "unsettled": "prior_own_work",
+   "window_id": "WILDCHAT-f6837354bd04-t03"
+  },
+  {
+   "dataset": "WildChat",
+   "possible": "SL 4",
+   "unsettled": "prior_own_work",
+   "window_id": "WILDCHAT-f6837354bd04-t04"
+  },
+  {
+   "dataset": "WildChat",
+   "possible": "IND 4",
+   "unsettled": "prior_own_work",
+   "window_id": "WILDCHAT-f6837354bd04-t05"
+  }
+ ]
+}
