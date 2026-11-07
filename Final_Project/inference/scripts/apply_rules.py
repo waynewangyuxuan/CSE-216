@@ -40,7 +40,7 @@ def s(code):
 NOCHECK = {"V0", "V1", "V2"}  # V2: AI asked to check itself, no independent grounds (v1.1 s6)
 RULES = [
     ("R00", INDET, "-", lambda w: w["_bad"],
-     "A field is missing, unsettled or not a v1.1 code"),
+     "A field is missing, unsettled or not a v1.1 code, or a combination v1.1 s2 forbids"),
     ("R01", INDET, "-",
      lambda w: w["D"] == "D0" and w["F"] == "F4",
      "D0 + F4: generation requested but no substantive content delivered (advice, refusal, missing input)"),
@@ -58,23 +58,23 @@ RULES = [
      "Writer rejects the output in words (U6), no reasoned check"),
     ("R06", SURRENDER, "moderate",
      lambda w: w["D"] == "D3" and w["U"] in {"U1", "U2"} and w["V"] in NOCHECK,
-     "Part of the AI text pasted verbatim or with surface edits only, no check (D3 + U1/U2 + V0/V1)"),
+     "Part of the AI text pasted verbatim or with surface edits only, no check (D3 + U1/U2 + NOCHECK)"),
     ("R07", SURRENDER, "weak",
-     lambda w: (w["D"] == "D3" or w["U"] == "U3") and w["U"] in {"U4", "U5"}
+     lambda w: w["D"] == "D3" and w["U"] in {"U4", "U5"}
      and w["P"] in {"NONE_VISIBLE", "UNOBSERVABLE"},
-     "Writer steers AI content in chat only, with no own work visible: substance stays AI's (D3/U3, chat uptake)"),
+     "Writer steers AI content in chat only, with no own work visible: substance stays AI's (D3, chat uptake)"),
     ("R08", OFFLOADING, "moderate",
      lambda w: w["D"] == "D3" or w["U"] == "U3",
      "Writer selects or changes claims of AI content, or changes inserted AI text substantively (D3 or U3)"),
     ("R09", SURRENDER, "strong",
-     lambda w: w["D"] == "D4" and w["V"] in NOCHECK and w["U"] in {"U1", "U2"} and w["P"] == "NONE_VISIBLE",
-     "No visible own work + AI text reused about half or more, unchanged or surface-only, no check"),
+     lambda w: w["D"] == "D4" and w["V"] in NOCHECK and w["U"] in {"U1", "U2"} and w["P"] == "NONE_VISIBLE" and w["C"] == "C2",
+     "No visible own work + AI text reused about half or more, unchanged or surface-only, no check, editor visible (C2)"),
     ("R10", AUGMENTING, "weak",
      lambda w: w["D"] == "D4" and w["V"] in NOCHECK and w["F"] in {"F1", "F6"},
      "AI explanation or evaluation of the writer's text accepted; no AI text enters the writing (D4 + F1/F6)"),
     ("R11", SURRENDER, "moderate",
      lambda w: w["D"] == "D4" and w["V"] in NOCHECK,
-     "Other AI-origin content taken (D4) with no check beyond surface"),
+     "Other AI-origin content taken (D4) with no independent check (NOCHECK)"),
     ("R12", AUGMENTING, "moderate",
      lambda w: w["D"] == "D1" and w["U"] == "U7",
      "AI renders the writer's text, writer types own changes instead of pasting (D1 + U7)"),
@@ -116,6 +116,14 @@ def window_order(row):
 
 def prep(row):
     bad = [f for f in FIELDS if row.get(f, "") not in KNOWN[f]]
+    # Combinations v1.1 s2 forbids are treated as unrecognized.
+    cov, v, u = row.get("coverage"), row.get("verification", ""), row.get("uptake", "")
+    if cov == "C0" and (v != "VX_UNOBSERVABLE" or u != "UX_NO_TRACE"):
+        bad.append("coverage")
+    if cov in {"C1", "C2"} and v == "VX_UNOBSERVABLE":
+        bad.append("coverage")
+    if cov == "C1" and s(u) in {"U1", "U2", "U3", "U7"}:
+        bad.append("coverage")
     get = lambda f: s(row[f]) if f not in bad else "?"
     return {"_bad": bool(bad), "_badfields": bad, "C": row.get("coverage", "?"), "P": row.get("prior_own_work", "?"),
             "F": get("function"), "D": get("decision"), "V": get("verification"), "U": get("uptake")}

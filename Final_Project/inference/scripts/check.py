@@ -21,7 +21,7 @@ def ex(cov, prior, f, d, v, u):
     return {"window_id": "E", "coverage": cov, "prior_own_work": prior, "function": f, "decision": d,
             "verification": v, "uptake": u}
 
-# Expected categories are what section 9 states for these constructed cases.
+# Expected categories follow from the section 9.3 rule table for these constructed v1.1 cases.
 EXAMPLES = {
     "E1 format citation, pasted": (ex("C2", "VISIBLE_DRAFT", "F8_PROCEDURAL", "D0_NO_DECISION", "V0_NONE_VISIBLE", "U1_EDITOR_DIRECT"), A.NEUTRAL),
     "E2 grammar of own claim, wording edits": (ex("C2", "VISIBLE_DRAFT", "F5_TRANSFORM", "D1_HUMAN_GIVEN", "V1_SURFACE_ONLY", "U2_EDITOR_SURFACE"), A.OFFLOADING),
@@ -36,6 +36,7 @@ EXAMPLES = {
     "E12 template, AI invents, text sent": (ex("C1", "UNOBSERVABLE", "F5_TRANSFORM", "D2_AI_PROPOSED_OPEN", "V0_NONE_VISIBLE", "U4_CHAT_ITERATE"), A.INDET),
     "E14 advice only, writer rejects": (ex("C1", "UNOBSERVABLE", "F4_GENERATE", "D3_HUMAN_CHOSE_REVISED", "V0_NONE_VISIBLE", "U6_REJECT"), A.INDET),
     "E10-style prior window: generate, then AI asked to recheck itself": (ex("C1", "UNOBSERVABLE", "F4_GENERATE", "D2_AI_PROPOSED_OPEN", "V2_AI_SELF_CHECK", "U4_CHAT_ITERATE"), A.SURRENDER),
+    "forbidden: C1 with editor paste": (ex("C1", "NONE_VISIBLE", "F4_GENERATE", "D4_AI_PROPOSAL_TAKEN", "V0_NONE_VISIBLE", "U1_EDITOR_DIRECT"), A.INDET),
     "unsettled code": (ex("C1", "VISIBLE_DRAFT", "F5_TRANSFORM", "D2_AI_PROPOSED_OPEN", "UNSETTLED", "U4_CHAT_ITERATE"), A.INDET),
 }
 for name, (row, want) in EXAMPLES.items():

@@ -20,3 +20,10 @@ ts	change	why	evidence
 2026-11-07T03:25	KEPT R01 on WILDCHAT-56e6-t02 (recheck: NEUTRAL)	Its codes (D0 + F4, O10) match 7ce4-t01, where INDETERMINATE was the reviewer's call; a rule cannot split them without the operation code being OX	recheck.tsv
 2026-11-07T03:25	CODE_DOUBT e63-t01 (D0 vs D3/U3) and e37-t02 (D3 vs D2) reported, not acted on	Codes frozen; noted for v1.1 coding audit	recheck.tsv
 2026-11-07T03:25	Calibration stops here; no further rule changes before freeze	Each further change would rest on single windows from the same 100; Bets 6-7 are the out-of-sample application	-
+2026-11-07T04:05	Gate critic: all 5 items PASS, citations PASS with fixes (3 medium, 11 low)	Gate	blind/gate_report.md (excluded)
+2026-11-07T04:10	M1: hybrid-route fold restated as a project choice; Table 2 gives no locus for that row and lists post-hoc rationalization	False claim	codebook s9.1
+2026-11-07T04:10	M2: R17 alternative now states C&R classify F4 requests as automation (the R16 reading)	Overstated source	codebook s9.3 R17
+2026-11-07T04:10	M3: s9.2 says Shaw & Nave Table 2 / Risko definition are general theory; rules resting only on other-task studies are weak. No strength changed (moderate rules cite the theory)	Strength scale	codebook s9.2
+2026-11-07T04:10	L2: dead U3 clause removed from R07. L4: R09 requires C2; R00 catches v1.1-forbidden combinations (C0 without VX+UX, VX outside C0, C1 with editor uptake)	Logic	scripts/apply_rules.py; check.py new case
+2026-11-07T04:10	L5-L9: Bastani wording (results suggest; superficial = any answer-request or restatement), Maier levels incl. no AI use, C&R p. 22 replaces Fig. A10 claim, Risko R20 support ms pp. 3, 9 with memory cost, C&R p. 77 marked as narrative coding	Citation precision	codebook s9.1, s9.3
+2026-11-07T04:15	Re-frozen (freeze 2). Categories on all 100 windows identical to freeze 1; 98,000-combination enumeration: 0 errors, one rule each	No Bet 6-7 label read before either freeze	FROZEN.md
