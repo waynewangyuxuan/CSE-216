@@ -1,0 +1,49 @@
+window_id	rule	assigned_category	assigned_strength	verdict	proposed_category	proposed_strength	reason
+NIRVANA-e58-t08	R01	NEUTRAL_MECHANICAL	moderate	OK			Courtesy turn, D0. Paste of the prior window's AI text lands in this window's next actions; affects t07, not this category.
+NIRVANA-e58-t09	R06	OFFLOADING	moderate	WRONG_CATEGORY	SURRENDER_LEANING	moderate	D3 only because under half was pasted; the kept part is the AI's opening conclusion paragraph, verbatim (U1), V0. No selection, change, or check visible.
+NIRVANA-e58-t10	R03	INDETERMINATE	-	OK			C0, no next action. Side note: the essay sent for checking is largely AI text from earlier turns, so D1 is doubtful; category unaffected.
+NIRVANA-e60-t02	R10	OFFLOADING	weak	OK			Writer-stated stance rendered as a thesis (D1); next turn repairs missing input. Weak fits.
+NIRVANA-e60-t03	R10	OFFLOADING	weak	OK			D1 thesis rendering, then U8 after a long gap. Weak fits.
+NIRVANA-e60-t04	R14	AUGMENTING	weak	OK			Options requested; writer drafts and deletes own sentences (U7) without verbatim AI runs. Weak fits.
+NIRVANA-e61-t05	R06	OFFLOADING	moderate	WRONG_CATEGORY	SURRENDER_LEANING	moderate	Full essay requested (F4, no own text); writer retypes the AI thesis verbatim (U1) and next asks only for a length change (V1). D3 rests on retype being under half.
+NIRVANA-e61-t06	R99	INDETERMINATE	-	OK			This response is not used; typed text continues an earlier AI turn, not this one. Indeterminate fits.
+NIRVANA-e61-t07	R99	INDETERMINATE	-	OK			Same as t06: response unused; typing continues an earlier AI turn.
+NIRVANA-e63-t01	R02	AUGMENTING	weak	WRONG_CATEGORY	NEUTRAL_MECHANICAL	moderate	Definition request (D0, F1) whose AI sentence is pasted and kept as text (U3), against the augmenting definition. Reads as a reference look-up; writer then composes at length.
+NIRVANA-e63-t02	R09	OFFLOADING	moderate	OK			Polish of writer's own draft (D1), pasted whole (U1). Fits.
+NIRVANA-e70-t05	R09	OFFLOADING	moderate	OK			Polish of writer's own paragraph (D1), pasted (U1). Fits.
+NIRVANA-e70-t06	R08	SURRENDER_LEANING	moderate	OK			AI extension pasted verbatim (D4, U1, V0) beside visible own draft. Fits; moderate rests on visible draft, not an unobservable element.
+NIRVANA-e70-t07	R08	SURRENDER_LEANING	moderate	OK			AI conclusion pasted verbatim (D4, U1, V0). Fits, same strength note as t06.
+NIRVANA-e71-t01	R01	NEUTRAL_MECHANICAL	moderate	OK			Spelling question (D0); writer then composes own text. Fits.
+NIRVANA-e71-t02	R09	OFFLOADING	moderate	WRONG_CATEGORY	AUGMENTING	moderate	Check of own text; AI lists suggestions, none applied; writer makes own unrelated edits (U7). Feedback not reused as text matches augmenting, not offloading.
+NIRVANA-e75-t01	R99	INDETERMINATE	-	WRONG_CATEGORY	OFFLOADING	weak	Fact look-up (F7) for writer's own stated position; writer keeps composing own argument (U7). No rule covers F7; reads as non-substance demand, writer keeps substance.
+NIRVANA-e75-t02	R99	INDETERMINATE	-	OK			Fact look-up, then U8 with no use. Indeterminate fits.
+WILDCHAT-0685972d7031-t01	R09	OFFLOADING	moderate	OK			Paraphrase of supplied text (D1), next turn is next batch (U8). Fits within WildChat cap.
+WILDCHAT-0685972d7031-t02	R09	OFFLOADING	moderate	OK			Same batch pattern: D1 paraphrase, U8.
+WILDCHAT-0685972d7031-t03	R09	OFFLOADING	moderate	OK			Same batch pattern; AI adds a small closing claim, within R09 alternative.
+WILDCHAT-0abcf1070c03-t01	R12	SURRENDER_LEANING	weak	OK			Full dissertation generation requested with no own text, D2, U8. Weak by request type fits.
+WILDCHAT-0abcf1070c03-t02	R12	SURRENDER_LEANING	weak	OK			Thesis generation requested, D2, U8. Fits.
+WILDCHAT-0abcf1070c03-t03	R03	INDETERMINATE	-	OK			C0. Fits.
+WILDCHAT-1bcd99f673a7-t01	R12	SURRENDER_LEANING	weak	OK			Writer supplies one data point; AI generates results and discussion with added content (D2), U8. Weak fits.
+WILDCHAT-1bcd99f673a7-t02	R03	INDETERMINATE	-	OK			C0. Fits.
+WILDCHAT-2d9abc984de9-t01	R99	INDETERMINATE	-	WRONG_CATEGORY	AUGMENTING	weak	Options requested (F2); next turn asks to understand a term from the output (U4), then writer drafts own sentence. R14 analogue blocked only because WildChat cannot show U7.
+WILDCHAT-2d9abc984de9-t02	R02	AUGMENTING	weak	OK			Term explanation (D0, F1), U8. Fits.
+WILDCHAT-30f7e79715c8-t01	R12	SURRENDER_LEANING	weak	OK			Assignment reflection generated (F4, D2), U8. Fits.
+WILDCHAT-30f7e79715c8-t02	R02	AUGMENTING	weak	OK			Bare term, explained (D0, F1), U8. Fits.
+WILDCHAT-30f7e79715c8-t03	R12	SURRENDER_LEANING	weak	OK			Abstract generated from assignment prompt (F4, D2), U8. Fits.
+WILDCHAT-56e6d87d4326-t01	R09	OFFLOADING	moderate	OK			Writer's own sentence polished (D1), U8. Fits.
+WILDCHAT-56e6d87d4326-t02	R01	NEUTRAL_MECHANICAL	moderate	OK			Non-research email request (D0). Fits.
+WILDCHAT-56e6d87d4326-t03	R03	INDETERMINATE	-	OK			C0. Fits.
+WILDCHAT-62387a055143-t01	R99	INDETERMINATE	-	WRONG_CATEGORY	SURRENDER_LEANING	weak	AI outline (F3, D2) is carried forward whole as the basis for the next generation request (U4), no check. Matches carried forward without check.
+WILDCHAT-62387a055143-t02	R12	SURRENDER_LEANING	weak	OK			Full review generated (F4, D2), next turn asks to continue (U4). Fits.
+WILDCHAT-62387a055143-t03	R12	SURRENDER_LEANING	weak	OK			Continuation generated (F4, D2), U4. Fits.
+WILDCHAT-7666be57e1d7-t01	R12	SURRENDER_LEANING	weak	OK			Literature review generated (F4, D2); silent resend (U4). Fits.
+WILDCHAT-7666be57e1d7-t02	R12	SURRENDER_LEANING	weak	OK			Same request, D2, U8. Fits.
+WILDCHAT-7666be57e1d7-t03	R12	SURRENDER_LEANING	weak	OK			Literature review generated (F4, D2), U4. Fits.
+WILDCHAT-7ce4215c67a9-t01	R01	NEUTRAL_MECHANICAL	moderate	WRONG_CATEGORY	INDETERMINATE		Request is full chapter generation (F4); AI returns generic advice (D0); writer supplies missing topic (U4). No mechanical work; neutral at moderate misreads it.
+WILDCHAT-7ce4215c67a9-t02	R03	INDETERMINATE	-	OK			C0. Fits.
+WILDCHAT-83d047d8ab0b-t01	R12	SURRENDER_LEANING	weak	OK			Section generation from writer outline (F4, D2), next section requested (U8). Fits.
+WILDCHAT-83d047d8ab0b-t02	R12	SURRENDER_LEANING	weak	OK			Same batch pattern. Fits.
+WILDCHAT-83d047d8ab0b-t03	R12	SURRENDER_LEANING	weak	OK			Same batch pattern. Fits.
+WILDCHAT-8685d89a537b-t01	R12	SURRENDER_LEANING	weak	OK			Proposal requested (F4); AI outline is elaborated in next turn (U4). Fits; compare 62387 t01.
+WILDCHAT-8685d89a537b-t02	R12	SURRENDER_LEANING	weak	OK			Elaboration generated (F4, D2), U8. Fits.
+WILDCHAT-8685d89a537b-t03	R03	INDETERMINATE	-	OK			C0, no later turn. Fits.

@@ -35,6 +35,7 @@ EXAMPLES = {
     "E11 outline, will use": (ex("C1", "UNOBSERVABLE", "F3_PLAN", "D4_AI_PROPOSAL_TAKEN", "V0_NONE_VISIBLE", "U5_CHAT_ACCEPT"), A.SURRENDER),
     "E12 template, AI invents, text sent": (ex("C1", "UNOBSERVABLE", "F5_TRANSFORM", "D2_AI_PROPOSED_OPEN", "V0_NONE_VISIBLE", "U4_CHAT_ITERATE"), A.INDET),
     "E14 advice only, writer rejects": (ex("C1", "UNOBSERVABLE", "F4_GENERATE", "D3_HUMAN_CHOSE_REVISED", "V0_NONE_VISIBLE", "U6_REJECT"), A.INDET),
+    "E10-style prior window: generate, then AI asked to recheck itself": (ex("C1", "UNOBSERVABLE", "F4_GENERATE", "D2_AI_PROPOSED_OPEN", "V2_AI_SELF_CHECK", "U4_CHAT_ITERATE"), A.SURRENDER),
     "unsettled code": (ex("C1", "VISIBLE_DRAFT", "F5_TRANSFORM", "D2_AI_PROPOSED_OPEN", "UNSETTLED", "U4_CHAT_ITERATE"), A.INDET),
 }
 for name, (row, want) in EXAMPLES.items():

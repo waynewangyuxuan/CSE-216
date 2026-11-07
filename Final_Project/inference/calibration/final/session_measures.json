@@ -142,21 +142,21 @@
   "n_windows": 3,
   "sequence": [
    "OFFLOADING",
-   "INDETERMINATE",
-   "INDETERMINATE"
+   "AUGMENTING",
+   "AUGMENTING"
   ],
   "switches": 1,
-  "switches_excluding_indeterminate": 0,
+  "switches_excluding_indeterminate": 1,
   "transitions": {
-   "INDETERMINATE->INDETERMINATE": 1,
-   "OFFLOADING->INDETERMINATE": 1
+   "AUGMENTING->AUGMENTING": 1,
+   "OFFLOADING->AUGMENTING": 1
   },
   "proportions": {
    "SURRENDER_LEANING": 0.0,
    "OFFLOADING": 0.333,
-   "AUGMENTING": 0.0,
+   "AUGMENTING": 0.667,
    "NEUTRAL_MECHANICAL": 0.0,
-   "INDETERMINATE": 0.667
+   "INDETERMINATE": 0.0
   },
   "first_surrender_index": null,
   "first_surrender_relative": null,
@@ -170,24 +170,24 @@
   "n_windows": 3,
   "sequence": [
    "AUGMENTING",
-   "SURRENDER_LEANING",
+   "AUGMENTING",
    "NEUTRAL_MECHANICAL"
   ],
-  "switches": 2,
-  "switches_excluding_indeterminate": 2,
+  "switches": 1,
+  "switches_excluding_indeterminate": 1,
   "transitions": {
-   "AUGMENTING->SURRENDER_LEANING": 1,
-   "SURRENDER_LEANING->NEUTRAL_MECHANICAL": 1
+   "AUGMENTING->AUGMENTING": 1,
+   "AUGMENTING->NEUTRAL_MECHANICAL": 1
   },
   "proportions": {
-   "SURRENDER_LEANING": 0.333,
+   "SURRENDER_LEANING": 0.0,
    "OFFLOADING": 0.0,
-   "AUGMENTING": 0.333,
+   "AUGMENTING": 0.667,
    "NEUTRAL_MECHANICAL": 0.333,
    "INDETERMINATE": 0.0
   },
-  "first_surrender_index": 2,
-  "first_surrender_relative": 0.5,
+  "first_surrender_index": null,
+  "first_surrender_relative": null,
   "turns_observed": [
    9,
    10,
@@ -222,21 +222,21 @@
  "NIRVANA:e29": {
   "n_windows": 3,
   "sequence": [
-   "AUGMENTING",
+   "NEUTRAL_MECHANICAL",
    "NEUTRAL_MECHANICAL",
    "OFFLOADING"
   ],
-  "switches": 2,
-  "switches_excluding_indeterminate": 2,
+  "switches": 1,
+  "switches_excluding_indeterminate": 1,
   "transitions": {
-   "AUGMENTING->NEUTRAL_MECHANICAL": 1,
+   "NEUTRAL_MECHANICAL->NEUTRAL_MECHANICAL": 1,
    "NEUTRAL_MECHANICAL->OFFLOADING": 1
   },
   "proportions": {
    "SURRENDER_LEANING": 0.0,
    "OFFLOADING": 0.333,
-   "AUGMENTING": 0.333,
-   "NEUTRAL_MECHANICAL": 0.333,
+   "AUGMENTING": 0.0,
+   "NEUTRAL_MECHANICAL": 0.667,
    "INDETERMINATE": 0.0
   },
   "first_surrender_index": null,
@@ -251,18 +251,17 @@
   "n_windows": 3,
   "sequence": [
    "SURRENDER_LEANING",
-   "OFFLOADING",
+   "SURRENDER_LEANING",
    "SURRENDER_LEANING"
   ],
-  "switches": 2,
-  "switches_excluding_indeterminate": 2,
+  "switches": 0,
+  "switches_excluding_indeterminate": 0,
   "transitions": {
-   "OFFLOADING->SURRENDER_LEANING": 1,
-   "SURRENDER_LEANING->OFFLOADING": 1
+   "SURRENDER_LEANING->SURRENDER_LEANING": 2
   },
   "proportions": {
-   "SURRENDER_LEANING": 0.667,
-   "OFFLOADING": 0.333,
+   "SURRENDER_LEANING": 1.0,
+   "OFFLOADING": 0.0,
    "AUGMENTING": 0.0,
    "NEUTRAL_MECHANICAL": 0.0,
    "INDETERMINATE": 0.0
@@ -492,19 +491,19 @@
   "n_windows": 2,
   "sequence": [
    "OFFLOADING",
-   "INDETERMINATE"
+   "AUGMENTING"
   ],
   "switches": 1,
-  "switches_excluding_indeterminate": 0,
+  "switches_excluding_indeterminate": 1,
   "transitions": {
-   "OFFLOADING->INDETERMINATE": 1
+   "OFFLOADING->AUGMENTING": 1
   },
   "proportions": {
    "SURRENDER_LEANING": 0.0,
    "OFFLOADING": 0.5,
-   "AUGMENTING": 0.0,
+   "AUGMENTING": 0.5,
    "NEUTRAL_MECHANICAL": 0.0,
-   "INDETERMINATE": 0.5
+   "INDETERMINATE": 0.0
   },
   "first_surrender_index": null,
   "first_surrender_relative": null,
@@ -517,24 +516,24 @@
   "n_windows": 3,
   "sequence": [
    "NEUTRAL_MECHANICAL",
-   "OFFLOADING",
+   "SURRENDER_LEANING",
    "INDETERMINATE"
   ],
   "switches": 2,
   "switches_excluding_indeterminate": 1,
   "transitions": {
-   "NEUTRAL_MECHANICAL->OFFLOADING": 1,
-   "OFFLOADING->INDETERMINATE": 1
+   "NEUTRAL_MECHANICAL->SURRENDER_LEANING": 1,
+   "SURRENDER_LEANING->INDETERMINATE": 1
   },
   "proportions": {
-   "SURRENDER_LEANING": 0.0,
-   "OFFLOADING": 0.333,
+   "SURRENDER_LEANING": 0.333,
+   "OFFLOADING": 0.0,
    "AUGMENTING": 0.0,
    "NEUTRAL_MECHANICAL": 0.333,
    "INDETERMINATE": 0.333
   },
-  "first_surrender_index": null,
-  "first_surrender_relative": null,
+  "first_surrender_index": 2,
+  "first_surrender_relative": 0.5,
   "turns_observed": [
    8,
    9,
@@ -572,7 +571,7 @@
  "NIRVANA:e61": {
   "n_windows": 3,
   "sequence": [
-   "OFFLOADING",
+   "SURRENDER_LEANING",
    "INDETERMINATE",
    "INDETERMINATE"
   ],
@@ -580,17 +579,17 @@
   "switches_excluding_indeterminate": 0,
   "transitions": {
    "INDETERMINATE->INDETERMINATE": 1,
-   "OFFLOADING->INDETERMINATE": 1
+   "SURRENDER_LEANING->INDETERMINATE": 1
   },
   "proportions": {
-   "SURRENDER_LEANING": 0.0,
-   "OFFLOADING": 0.333,
+   "SURRENDER_LEANING": 0.333,
+   "OFFLOADING": 0.0,
    "AUGMENTING": 0.0,
    "NEUTRAL_MECHANICAL": 0.0,
    "INDETERMINATE": 0.667
   },
-  "first_surrender_index": null,
-  "first_surrender_relative": null,
+  "first_surrender_index": 1,
+  "first_surrender_relative": 0.0,
   "turns_observed": [
    5,
    6,
@@ -600,19 +599,19 @@
  "NIRVANA:e63": {
   "n_windows": 2,
   "sequence": [
-   "AUGMENTING",
+   "NEUTRAL_MECHANICAL",
    "OFFLOADING"
   ],
   "switches": 1,
   "switches_excluding_indeterminate": 1,
   "transitions": {
-   "AUGMENTING->OFFLOADING": 1
+   "NEUTRAL_MECHANICAL->OFFLOADING": 1
   },
   "proportions": {
    "SURRENDER_LEANING": 0.0,
    "OFFLOADING": 0.5,
-   "AUGMENTING": 0.5,
-   "NEUTRAL_MECHANICAL": 0.0,
+   "AUGMENTING": 0.0,
+   "NEUTRAL_MECHANICAL": 0.5,
    "INDETERMINATE": 0.0
   },
   "first_surrender_index": null,
@@ -654,17 +653,17 @@
   "n_windows": 2,
   "sequence": [
    "NEUTRAL_MECHANICAL",
-   "OFFLOADING"
+   "AUGMENTING"
   ],
   "switches": 1,
   "switches_excluding_indeterminate": 1,
   "transitions": {
-   "NEUTRAL_MECHANICAL->OFFLOADING": 1
+   "NEUTRAL_MECHANICAL->AUGMENTING": 1
   },
   "proportions": {
    "SURRENDER_LEANING": 0.0,
-   "OFFLOADING": 0.5,
-   "AUGMENTING": 0.0,
+   "OFFLOADING": 0.0,
+   "AUGMENTING": 0.5,
    "NEUTRAL_MECHANICAL": 0.5,
    "INDETERMINATE": 0.0
   },
@@ -678,20 +677,20 @@
  "NIRVANA:e75": {
   "n_windows": 2,
   "sequence": [
-   "INDETERMINATE",
+   "OFFLOADING",
    "INDETERMINATE"
   ],
-  "switches": 0,
+  "switches": 1,
   "switches_excluding_indeterminate": 0,
   "transitions": {
-   "INDETERMINATE->INDETERMINATE": 1
+   "OFFLOADING->INDETERMINATE": 1
   },
   "proportions": {
    "SURRENDER_LEANING": 0.0,
-   "OFFLOADING": 0.0,
+   "OFFLOADING": 0.5,
    "AUGMENTING": 0.0,
    "NEUTRAL_MECHANICAL": 0.0,
-   "INDETERMINATE": 1.0
+   "INDETERMINATE": 0.5
   },
   "first_surrender_index": null,
   "first_surrender_relative": null,
@@ -784,18 +783,18 @@
   "n_windows": 2,
   "sequence": [
    "INDETERMINATE",
-   "AUGMENTING"
+   "NEUTRAL_MECHANICAL"
   ],
   "switches": 1,
   "switches_excluding_indeterminate": 0,
   "transitions": {
-   "INDETERMINATE->AUGMENTING": 1
+   "INDETERMINATE->NEUTRAL_MECHANICAL": 1
   },
   "proportions": {
    "SURRENDER_LEANING": 0.0,
    "OFFLOADING": 0.0,
-   "AUGMENTING": 0.5,
-   "NEUTRAL_MECHANICAL": 0.0,
+   "AUGMENTING": 0.0,
+   "NEUTRAL_MECHANICAL": 0.5,
    "INDETERMINATE": 0.5
   },
   "first_surrender_index": null,
@@ -809,20 +808,20 @@
   "n_windows": 3,
   "sequence": [
    "SURRENDER_LEANING",
-   "AUGMENTING",
+   "NEUTRAL_MECHANICAL",
    "SURRENDER_LEANING"
   ],
   "switches": 2,
   "switches_excluding_indeterminate": 2,
   "transitions": {
-   "AUGMENTING->SURRENDER_LEANING": 1,
-   "SURRENDER_LEANING->AUGMENTING": 1
+   "NEUTRAL_MECHANICAL->SURRENDER_LEANING": 1,
+   "SURRENDER_LEANING->NEUTRAL_MECHANICAL": 1
   },
   "proportions": {
    "SURRENDER_LEANING": 0.667,
    "OFFLOADING": 0.0,
-   "AUGMENTING": 0.333,
-   "NEUTRAL_MECHANICAL": 0.0,
+   "AUGMENTING": 0.0,
+   "NEUTRAL_MECHANICAL": 0.333,
    "INDETERMINATE": 0.0
   },
   "first_surrender_index": 1,
@@ -837,21 +836,21 @@
   "n_windows": 3,
   "sequence": [
    "OFFLOADING",
-   "NEUTRAL_MECHANICAL",
+   "INDETERMINATE",
    "INDETERMINATE"
   ],
-  "switches": 2,
-  "switches_excluding_indeterminate": 1,
+  "switches": 1,
+  "switches_excluding_indeterminate": 0,
   "transitions": {
-   "NEUTRAL_MECHANICAL->INDETERMINATE": 1,
-   "OFFLOADING->NEUTRAL_MECHANICAL": 1
+   "INDETERMINATE->INDETERMINATE": 1,
+   "OFFLOADING->INDETERMINATE": 1
   },
   "proportions": {
    "SURRENDER_LEANING": 0.0,
    "OFFLOADING": 0.333,
    "AUGMENTING": 0.0,
-   "NEUTRAL_MECHANICAL": 0.333,
-   "INDETERMINATE": 0.333
+   "NEUTRAL_MECHANICAL": 0.0,
+   "INDETERMINATE": 0.667
   },
   "first_surrender_index": null,
   "first_surrender_relative": null,
@@ -919,20 +918,20 @@
  "WildChat:7ce4215c67a9": {
   "n_windows": 2,
   "sequence": [
-   "NEUTRAL_MECHANICAL",
+   "INDETERMINATE",
    "INDETERMINATE"
   ],
-  "switches": 1,
+  "switches": 0,
   "switches_excluding_indeterminate": 0,
   "transitions": {
-   "NEUTRAL_MECHANICAL->INDETERMINATE": 1
+   "INDETERMINATE->INDETERMINATE": 1
   },
   "proportions": {
    "SURRENDER_LEANING": 0.0,
    "OFFLOADING": 0.0,
    "AUGMENTING": 0.0,
-   "NEUTRAL_MECHANICAL": 0.5,
-   "INDETERMINATE": 0.5
+   "NEUTRAL_MECHANICAL": 0.0,
+   "INDETERMINATE": 1.0
   },
   "first_surrender_index": null,
   "first_surrender_relative": null,

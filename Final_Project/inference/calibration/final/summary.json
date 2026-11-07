@@ -1,61 +1,66 @@
 {
  "n_windows": 100,
- "coverage_not_indeterminate": 0.77,
+ "coverage_not_indeterminate": 0.79,
  "by_category": {
-  "SURRENDER_LEANING": 35,
-  "INDETERMINATE": 23,
-  "OFFLOADING": 19,
-  "NEUTRAL_MECHANICAL": 12,
-  "AUGMENTING": 11
+  "SURRENDER_LEANING": 37,
+  "INDETERMINATE": 21,
+  "OFFLOADING": 16,
+  "NEUTRAL_MECHANICAL": 14,
+  "AUGMENTING": 12
  },
  "by_category_strength": {
-  "AUGMENTING/moderate": 5,
+  "AUGMENTING/moderate": 6,
   "AUGMENTING/weak": 6,
-  "INDETERMINATE/-": 23,
-  "NEUTRAL_MECHANICAL/moderate": 12,
-  "OFFLOADING/moderate": 17,
-  "OFFLOADING/weak": 2,
+  "INDETERMINATE/-": 21,
+  "NEUTRAL_MECHANICAL/moderate": 14,
+  "OFFLOADING/moderate": 13,
+  "OFFLOADING/weak": 3,
   "SURRENDER_LEANING/moderate": 16,
-  "SURRENDER_LEANING/strong": 1,
-  "SURRENDER_LEANING/weak": 18
+  "SURRENDER_LEANING/strong": 2,
+  "SURRENDER_LEANING/weak": 19
  },
  "by_rule": {
   "R00": 1,
-  "R01": 12,
-  "R02": 4,
+  "R01": 2,
+  "R02": 14,
   "R03": 6,
   "R05": 2,
-  "R06": 9,
+  "R06": 2,
   "R07": 1,
-  "R08": 7,
-  "R09": 8,
-  "R10": 2,
-  "R11": 9,
-  "R12": 18,
-  "R13": 5,
+  "R08": 6,
+  "R09": 2,
+  "R10": 1,
+  "R11": 5,
+  "R12": 1,
+  "R13": 7,
   "R14": 2,
-  "R99": 14
+  "R15": 9,
+  "R16": 18,
+  "R17": 3,
+  "R18": 5,
+  "R19": 2,
+  "R20": 1,
+  "R99": 10
  },
  "by_dataset": {
   "NIRVANA": {
    "n": 70,
-   "coverage_not_indeterminate": 0.771,
+   "coverage_not_indeterminate": 0.829,
    "by_category": {
-    "SURRENDER_LEANING": 20,
-    "INDETERMINATE": 16,
-    "OFFLOADING": 15,
-    "NEUTRAL_MECHANICAL": 10,
-    "AUGMENTING": 9
+    "SURRENDER_LEANING": 22,
+    "AUGMENTING": 12,
+    "INDETERMINATE": 12,
+    "OFFLOADING": 12,
+    "NEUTRAL_MECHANICAL": 12
    }
   },
   "WildChat": {
    "n": 30,
-   "coverage_not_indeterminate": 0.767,
+   "coverage_not_indeterminate": 0.7,
    "by_category": {
     "SURRENDER_LEANING": 15,
-    "INDETERMINATE": 7,
+    "INDETERMINATE": 9,
     "OFFLOADING": 4,
-    "AUGMENTING": 2,
     "NEUTRAL_MECHANICAL": 2
    }
   }
@@ -67,11 +72,11 @@
   },
   "C1": {
    "n": 57,
-   "coverage_not_indeterminate": 0.842
+   "coverage_not_indeterminate": 0.807
   },
   "C2": {
    "n": 35,
-   "coverage_not_indeterminate": 0.771
+   "coverage_not_indeterminate": 0.886
   }
  },
  "unrecognized": [

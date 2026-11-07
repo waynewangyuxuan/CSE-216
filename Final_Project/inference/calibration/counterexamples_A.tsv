@@ -1,0 +1,53 @@
+window_id	rule	assigned_category	assigned_strength	verdict	proposed_category	proposed_strength	reason
+NIRVANA-e01-t02	R13	AUGMENTING	moderate	OK			Critique of own visible draft; output not reused; writer moved to a new request.
+NIRVANA-e01-t03	R99	INDETERMINATE	-	OK			Misread mechanical request; writer repaired by resending own text; no use of output. Indeterminate acceptable.
+NIRVANA-e01-t04	R06	OFFLOADING	moderate	OK			Spell-check of own text pasted, then writer typed new own sentences.
+NIRVANA-e05-t01	R07	SURRENDER_LEANING	strong	OK			Whole essay generated from prompt, pasted, only word-level edits, nothing own before.
+NIRVANA-e05-t02	R08	SURRENDER_LEANING	moderate	WRONG_STRENGTH	SURRENDER_LEANING	strong	Meets the section 9.2 strong test: C2, NONE_VISIBLE, rewrite of AI essay adding new content, pasted whole, surface edits only. F5 alone demotes it.
+NIRVANA-e05-t03	R08	SURRENDER_LEANING	moderate	OK			Writer supplied one idea; AI rewrote essay; pasted whole. Moderate fits because a stated idea is visible.
+NIRVANA-e06-t01	R11	SURRENDER_LEANING	moderate	OK			Stance given, essay generated, follow-up asks only a framing/style change; chat-only.
+NIRVANA-e06-t02	R00	INDETERMINATE	-	OK			R00 on unsettled verification; nothing in the text argues against it.
+NIRVANA-e06-t03	R13	AUGMENTING	moderate	WRONG_CATEGORY	SURRENDER_LEANING	weak	F6 critique targets AI-generated essay, not own text; next turn asks AI to regenerate it. Generate-critique-regenerate loop, not augmenting.
+NIRVANA-e19-t02	R01	NEUTRAL_MECHANICAL	moderate	OK			Spelling look-up, writer kept typing own text.
+NIRVANA-e19-t03	R08	SURRENDER_LEANING	moderate	CODE_DOUBT	OFFLOADING	weak	Continuation mostly restates the writer's two supplied claims; D1 is arguable over D4, which would give OFFLOADING.
+NIRVANA-e19-t04	R09	OFFLOADING	moderate	OK			Rewrite of own paragraph pasted; some amplification by AI, within R09 alternative.
+NIRVANA-e20-t01	R12	SURRENDER_LEANING	weak	OK			Reasons requested for own stance; follow-up is a question; weak is appropriately hedged.
+NIRVANA-e20-t02	R13	AUGMENTING	moderate	OK			Question for understanding, answer not reused, writer returned to earlier request.
+NIRVANA-e20-t03	R11	SURRENDER_LEANING	moderate	OK			Argument generated in short form; follow-up asks only a register change.
+NIRVANA-e24-t01	R06	OFFLOADING	moderate	OK			One AI sentence pasted and altered, rest typed by writer with added own claims.
+NIRVANA-e24-t02	R99	INDETERMINATE	-	WRONG_CATEGORY	AUGMENTING	weak	Rule gap: D2+F4+U7 hits R99. Request asks what a view could be; writer composes own paragraph with no verbatim run. Same behavior as R14.
+NIRVANA-e24-t03	R99	INDETERMINATE	-	WRONG_CATEGORY	AUGMENTING	weak	Same rule gap as previous window: explanation-type request coded F4, writer composes and reorganizes own text, no verbatim run.
+NIRVANA-e26-t09	R13	AUGMENTING	moderate	OK			Critique of own essay, not reused, writer moved on.
+NIRVANA-e26-t10	R08	SURRENDER_LEANING	moderate	WRONG_CATEGORY	AUGMENTING	moderate	D4+U5 here is acceptance of a grade on own essay; no AI substance enters the text. R08 treats evaluation acceptance as adoption.
+NIRVANA-e26-t11	R01	NEUTRAL_MECHANICAL	moderate	OK			Closing courtesy, non-writing.
+NIRVANA-e27-t01	R12	SURRENDER_LEANING	weak	OK			Full essay requested and copied, not pasted; next turn re-requests with assignment wording.
+NIRVANA-e27-t02	R06	OFFLOADING	moderate	OK			AI essay pasted, then stance changed, a paragraph cut, own claims typed.
+NIRVANA-e29-t06	R02	AUGMENTING	weak	WRONG_CATEGORY	NEUTRAL_MECHANICAL	moderate	Usage-convention look-up for an abbreviation; same kind as a spelling query that R01 labels neutral. Only F1 vs F8 separates them.
+NIRVANA-e29-t07	R01	NEUTRAL_MECHANICAL	moderate	OK			Synonym list for a connective; writer typed own sentence.
+NIRVANA-e29-t08	R06	OFFLOADING	moderate	OK			Shortening of own sentence pasted, then own claims added.
+NIRVANA-e37-t01	R11	SURRENDER_LEANING	moderate	OK			Essay from prompt alone, follow-up asks style and length.
+NIRVANA-e37-t02	R06	OFFLOADING	moderate	WRONG_CATEGORY	SURRENDER_LEANING	weak	D3 comes from a steering re-request matching the assignment; all substance stays AI-generated, nothing own visible. Writer keeps no substance.
+NIRVANA-e37-t03	R11	SURRENDER_LEANING	moderate	OK			Generated essay, follow-up asks style, detail, no repetition.
+NIRVANA-e41-t02	R11	SURRENDER_LEANING	moderate	OK			Essay from prompt alone, follow-up asks length only.
+NIRVANA-e41-t03	R11	SURRENDER_LEANING	moderate	OK			Same pattern, follow-up asks more sentences.
+NIRVANA-e41-t04	R11	SURRENDER_LEANING	moderate	OK			Same pattern, follow-up asks a longer format.
+NIRVANA-e42-t05	R01	NEUTRAL_MECHANICAL	moderate	OK			Evidence search declined by AI; no decision in play.
+NIRVANA-e42-t06	R01	NEUTRAL_MECHANICAL	moderate	OK			Repeat of declined search.
+NIRVANA-e42-t07	R01	NEUTRAL_MECHANICAL	moderate	OK			Repeat of declined search; writer turned to a non-writing question.
+NIRVANA-e43-t01	R05	INDETERMINATE	-	OK			Reject states the deliverable was wrong; no use. Indeterminate acceptable though the reject has a reason.
+NIRVANA-e43-t02	R05	INDETERMINATE	-	OK			Same failure repeated; writer abandons.
+NIRVANA-e43-t03	R01	NEUTRAL_MECHANICAL	moderate	OK			Closing remark, non-writing.
+NIRVANA-e46-t01	R99	INDETERMINATE	-	OK			Idea list, next turn asks for AI stance; no rule fits, indeterminate fine.
+NIRVANA-e46-t02	R99	INDETERMINATE	-	WRONG_CATEGORY	AUGMENTING	weak	Rule gap D2+F4+U7: writer types own stance on an angle absent from the AI output, no verbatim run. Writer keeps composing.
+NIRVANA-e51-t01	R11	SURRENDER_LEANING	moderate	OK			Own thesis expanded by AI with new examples, follow-up asks plainer register.
+NIRVANA-e51-t02	R06	OFFLOADING	moderate	CODE_DOUBT	SURRENDER_LEANING	moderate	Nearly all AI text pasted over own paragraph; later edits are word swaps plus restoring own earlier claim. D4+U2 arguable over D3+U3.
+NIRVANA-e53-t01	R99	INDETERMINATE	-	OK			Options for own draft, next turn asks AI to write it; indeterminate fine.
+NIRVANA-e53-t02	R08	SURRENDER_LEANING	moderate	OK			AI rewrite of own draft pasted with surface edits; own draft visible, moderate fits.
+NIRVANA-e54-t01	R99	INDETERMINATE	-	OK			Input missing, AI invented a topic, writer resent with input.
+NIRVANA-e54-t02	R14	AUGMENTING	weak	OK			Ideas requested, writer then typed a long own essay; weak may be conservative.
+NIRVANA-e54-t03	R13	AUGMENTING	moderate	OK			Critique of own essay, not reused; writer moved on.
+NIRVANA-e55-t01	R12	SURRENDER_LEANING	weak	WRONG_CATEGORY	INDETERMINATE	-	Input missing; AI invented an unrelated issue; next turn repairs input. Same pattern as e54-t01, which gets indeterminate. Nothing to adopt.
+NIRVANA-e55-t02	R01	NEUTRAL_MECHANICAL	moderate	OK			Process message, non-writing.
+NIRVANA-e55-t03	R11	SURRENDER_LEANING	moderate	OK			Generated stance and analysis, follow-up asks surface polish only.
+NIRVANA-e56-t01	R06	OFFLOADING	moderate	OK			Short phrase pasted, writer composed own paragraphs; partial take. Note: a sub-30-char paste is what separates it from R99.
+NIRVANA-e56-t02	R99	INDETERMINATE	-	WRONG_CATEGORY	AUGMENTING	weak	Rule gap D2+F4+U7: writer types a long own section with claims absent from the AI output, no verbatim run.
