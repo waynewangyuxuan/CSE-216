@@ -39,7 +39,7 @@ Numbers come from `scripts/run_all.sh`, which replays cached labels and calls no
 | **Accepted pool (unused)** | **2,236** | 114 from the seed, 367 from enrichment, 1,755 from confirmation |
 | Coded sample | 35 conversations, 151 windows | From the seed's 114 only |
 
-- **Screen labeller.** Requested `claude-sonnet-5-5` through `claude -p` (CLI 2.1.318), tools off. 43 of 4,052 labels (23 in the seed) record `claude-sonnet-5` alongside it as served, as a CLI side call may; the label model is not separable per row. It reads the whole conversation, with user turns cut to 1,500 characters and AI turns to 500 (W05). Prompt: `scripts/screen_prompt.txt`.
+- **Screen labeller.** Requested `claude-sonnet-5-5` through `claude -p` (CLI 2.1.318), tools off. 43 of 4,052 labels (23 in the seed) record `claude-sonnet-5` alongside it as served (cause not known); the label model is not separable per row. It reads the whole conversation, with user turns cut to 1,500 characters and AI turns to 500 (W05). Prompt: `scripts/screen_prompt.txt`.
 - **Embeddings.** `BAAI/bge-small-en-v1.5`, revision `5c38ec7c`, sentence-transformers 3.3.1 on MPS. Input is masked user text, first 2,000 characters (W07, `results/embed_meta.json`).
 - **Bet 1's 2,399 cached labels** aren't reused as labels (W04): they used a research-only definition on the first 3 user turns. The 281 eligible records of Bet 1's random draw are in the seed. On them, old `CLEAR_RESEARCH_WRITING` maps to INCLUDE 6 of 8, while 15 of 113 old `OTHER_WRITING` or `ACADEMIC_NOT_RESEARCH` records are now INCLUDE.
 - **Model cost** was $33.70 in all (`results/llm_cost_log.tsv`). Coder and adjudicator runs are not in it.
