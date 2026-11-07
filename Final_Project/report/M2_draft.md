@@ -204,7 +204,7 @@ Narrative e24 shows the anchor in one session: the writer asks while a paragraph
 
 - **Dwell.** In NIRVANA, the time from the AI's response to the writer's next request has a median of 58 s for surrender-leaning windows and 152 s for support windows (within-session shuffle p 0.0005). Behavior-based surrender alone is 65 s (p 0.0035). The gap appears in every fifth of the session (SL 41–69 s, support 118–219 s) and within 13 of the 17 sessions that have both (mining §7, §10).
 - **The gap is typing.** Where the writer typed under 50 characters, behavior-based surrender and support windows have the same dwell (44 s and 44 s). Median characters typed after the response: 0 for behavior-based surrender, 108 for offloading, 256 for augmenting (mining §5, §10).
-- **The copy is not faster.** The first copy from the chat comes after a median 15.5 s for behavior-based surrender, 10.4 s for support (p 0.62) and 10.3 s for offloading; 20 of 69 and 31 of 87 such windows are copied within 10 s (mining §7).
+- **The copy is not faster.** The first copy from the chat comes after a median 15.5 s for behavior-based surrender, 10.4 s for support (p 0.62) and 10.3 s for offloading; 20 of 69 behavior-based surrender and 31 of 87 offloading windows are copied within 10 s (mining §7).
 - **WildChat cannot test this.** Its one clock, AI reply to next AI reply, includes generation time and does not separate the sides (232 vs 332 s, p 0.39).
 
 Narrative e41 is the extreme case: six chat turns on an empty page, each AI draft on screen for under 21 s before the next request, then one paste of 4,681 characters. The essay is 100% AI by NIRVANA's measure, and the writer rated their ownership 3.1 of 7.

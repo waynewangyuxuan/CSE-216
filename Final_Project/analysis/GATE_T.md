@@ -63,3 +63,20 @@ All present:
 6. **§1 T2, first sentence:** change "stay on the support side" to "lean to the support side (mean support share 0.77 with a draft vs 0.50 with nothing visible)".
 7. **§1 T2, last sentence:** change "In WildChat, where no editor exists," to "In WildChat (chat only),".
 8. **§1 T1, third sentence:** start it with "In NIRVANA, writers paste…".
+
+## Recheck (commit 8a8c174): PASS
+
+`mine.py` changed, so I reran `run_all.sh`: exit 0, check_no_text ok, and `git status` shows Final_Project unchanged. The committed mining.md reproduces exactly.
+
+| Fix | Status |
+|---|---|
+| 1. Switching | PASS. The new "NIRVANA only" rows in mining §3 give 9/17, 14/34, 4/21 and 16/41, 10/59, which match the draft §7.3 and THESES C12 and my earlier recompute. The fig21 note correctly says the figure pools both datasets. |
+| 2. Copy latency | PASS. The p 0.62 now goes with support (10.35 s, printed as 10.4); offloading 10.3 s is kept as a description. THESES C17 matches. |
+| 3. Dwell by bin | PASS. The new mining §10 table has SL 40.55–69.2 s and support 118.35–218.95 s; the draft's "41–69 / 118–219 s" matches. The bins are fifths of the session (`int(5·rel)`), so "every fifth of the session" is accurate. |
+| 4. V4 | PASS. mining §10 lists the verification codes: V2 5, V3 13, and no V4. |
+| 5. §8 RQ3 "2 of 21" | PASS. It now reads as WildChat sessions that become surrender-leaning, which is what mining §6 counts. THESES's chat-only note says the same. |
+| 6. §1 T2 "lean to" | PASS. 0.77 and 0.50 are in mining §5. |
+| 7. §1 T2 "(chat only)" | PASS |
+| 8. §1 T1 "in NIRVANA" | PASS |
+
+Nothing new is untraced. One small point, no fix required: in §7.4, "20 of 69 and 31 of 87 such windows" now comes after three groups, but the counts belong to behavior-based surrender and offloading.
