@@ -22,9 +22,10 @@ Wayne Wang · CSE 216 / COGS 230, Fall 2026 · Draft for Wayne's read on Nov 14;
 I asked which observable patterns of AI use in writing resemble *offloading* (the writer keeps the substance and hands over a demand) and which resemble *surrender* (AI substance taken over with no visible check). AI coders labeled every request window in 106 whole writing sessions (71 timed-essay sessions from NIRVANA, with chat and editor; 35 formal long-form writing conversations from WildChat, chat only) with behavior codes. A rule table, written from the literature and frozen before these labels existed, turned each window's codes into one of five categories with a strength.
 
 - **The frozen rules held up out of sample.** 78.5% of the 428 new windows received a category other than indeterminate, against 79% on the 100 windows the rules were built on (§7.1).
-- **About a third of windows lean toward surrender and a third toward support**, but most surrender-leaning windows are weak. In WildChat almost all of them rest on what was *asked* ("write this for me"), since nothing shows what happened to the text (§7.1).
-- **Surrender-leaning sorts sessions more than it marks a turning point.** Sessions tend to be mostly one kind or the other. Within a session, moves into and out of surrender-leaning are equally common, and in NIRVANA the order of categories is no different from chance once each session's mix is fixed (§7.2).
-- **When it appears, surrender-leaning usually starts at the first request.** In NIRVANA, a little over half of the sessions that pass through a surrender-leaning window later return to support (§7.2).
+- **The mix depends on what the log can see.** In NIRVANA (chat and editor) 28% of windows lean toward surrender and 43% toward support; in WildChat (chat only) 46% and 17%. Most surrender-leaning windows are weak, and in WildChat almost all rest on what was *asked* ("write this for me"), since nothing shows what happened to the text (§7.1).
+- **Surrender-leaning sorts sessions; it is not sticky from turn to turn.** Once each session's mix is fixed, a surrender-leaning window is no more likely to follow another than chance (§7.2).
+- **Two kinds of surrender-leaning sit at different points.** Request-only surrender-leaning ("write this") opens sessions. Surrender-leaning that rests on observed behavior (pasting AI text unchecked, editing only its form) sits later in sessions than chance would place it. That second result is uncorrected and may be partly built into the rules (§7.2).
+- **Sessions do leave surrender-leaning.** In NIRVANA, 17 of 29 sessions that pass through a surrender-leaning window later return to support (§7.2).
 - **The clearest observable signals are code combinations, not single codes**: a whole paste with no change, edits only to length or tone, and a generation request from a writer with no visible draft of their own (§8).
 
 Categories are **literature-grounded inferences from behavior**, not calibrated probabilities and not measurements of anyone's thinking. **No human coded anything.**
@@ -112,7 +113,7 @@ Windows are chained by turn into sessions (v1.2 §9.5): category sequence, switc
 | Bet 7 WildChat | 151 | 0.92 | 0.94 | 0.92 | session interval ≥ 0.61 | `wildchat/REPORT.md` |
 | **This draft: categories from A's labels vs B's labels** | 528 | – | – | – | **category κ 0.86** (89.2% agree) | `analysis/results/out_of_sample.md` §7 |
 
-**Adjudicators lean toward the same model.** When coders disagreed, the adjudicator (Opus) sided with coder A (also Opus) 25 to 13 in Bet 4, 159 to 45 in Bet 6 and 54 to 17 in Bet 7. Running the frozen rules on each coder's labels alone shows how much this moves categories: surrender-leaning windows number 193 under A's labels, 181 under B's, and 182 in the final labels. Final categories match A's on 502 of 528 windows and B's on 470.
+**Adjudicators lean toward the same model.** When coders disagreed, the adjudicator (Opus) sided with coder A (also Opus) 25 to 13 in Bet 4, 159 to 45 in Bet 6 and 54 to 17 in Bet 7. Running the frozen rules on each coder's labels alone shows what this does to categories. Totals barely move: in whole sessions, surrender-leaning windows number 177 under A's labels, 167 under B's and 167 in the final labels. But on the 57 windows where A's and B's categories differ, the final category follows A in 44 and B in 12 (`analysis/results/out_of_sample.md` §7). The lean is real at the window level; it does not change the headline counts.
 
 **Analyzed disagreements.**
 
@@ -137,10 +138,19 @@ Windows are chained by turn into sessions (v1.2 §9.5): category sequence, switc
 
 Source: `analysis/results/out_of_sample.md` §1. Coverage depends on what the log shows: 13.6% of C0 windows (no next action seen), 78.2% of C1 and 93.6% of C2 get a category (`figures/fig12_category_by_coverage.png`).
 
+Coverage counts any category other than indeterminate, not a correct one; no human checked a category. Without R16 (request type alone), whole-session coverage is 60.0%. WildChat's coverage fell slightly out of sample (70% to 65.6%).
+
 **Category × strength, all 528 windows** (`out_of_sample.md` §2): surrender-leaning 182 (strong 15, moderate 55, weak 112); offloading 113 (moderate 93, weak 20); augmenting 66 (moderate 32, weak 34); neutral-mechanical 55; indeterminate 112.
 
-- **Strong surrender-leaning is rare and editor-only.** All 15 strong windows are NIRVANA R09: AI text pasted with no visible own work and no check, with the editor in view.
-- **In WildChat, surrender-leaning mostly means "asked the AI to write it".** 67 of its 69 surrender-leaning windows fire R16, which rests on the request type alone; no adoption is seen. In NIRVANA, R16 carries 29 of 98. Treat R16 as indeterminate and the surrender-leaning share of whole-session windows falls from 33.5% to 14.3% (`analysis/results/sensitivity.md`).
+**By dataset, whole sessions** (`out_of_sample.md` §7c). Pooled shares (33.5% surrender-leaning, 35.1% support) describe neither dataset, so they are not used below:
+
+| | Windows | Surrender-leaning | Support | Weak share of surrender-leaning |
+|---|---|---|---|---|
+| NIRVANA | 347 | 98 (28.2%) | 150 (43.2%) | 30 of 98 |
+| WildChat | 151 | 69 (45.7%) | 25 (16.6%) | 67 of 69 |
+
+- **Unchecked reuse of AI text is common; strong ratings are rare by design.** 45 whole-session windows take an AI proposal into the editor with no independent check. Only the 15 with no own work visible are strong (R09); the 30 with some own work visible are moderate (R11), because the writer may already have held the idea. R09 needs the editor, so "all strong windows are NIRVANA" holds by construction (`out_of_sample.md` §7d).
+- **In WildChat, surrender-leaning mostly means "asked the AI to write it".** 67 of its 69 surrender-leaning windows fire R16, which rests on the request type alone; no adoption is seen. In NIRVANA, R16 carries 29 of 98. Half of all whole-session R16 windows (48 of 96) are ones where the writer asked for text and then did not use it (`U8`). Treat R16 as indeterminate and the surrender-leaning share of whole-session windows falls from 33.5% to 14.3% (`analysis/results/sensitivity.md`).
 - **WildChat cannot show the behaviors that make a window strong or support-side in the editor.** R06, R09, R12, R17, R19 and R20 cannot fire there (asserted: 0 fired). Dataset differences below are a coverage caveat, not a comparison of writers.
 - **V2–V4 are essentially absent.** 13 reasoned checks (`V3`/`V4`) and 5 AI self-checks (`V2`) in 498 whole-session windows. The rule for reasoned checks (R04) fires 13 times, all NIRVANA.
 
@@ -152,22 +162,30 @@ Source: `analysis/results/out_of_sample.md` §1. Coverage depends on what the lo
 
 *One row per session, one cell per window in turn order. Session sequences: `analysis/results/sessions/session_table.csv`.*
 
-**Session types** (`analysis/results/patterns.md` §2; IND and NEU ignored): of 106 sessions, 34 are surrender-leaning only, 23 mixed, 40 support only, and 9 have no substantive category.
+**Session types** (`analysis/results/patterns.md` §2; IND and NEU ignored): of 106 sessions, 34 are surrender-leaning only, 23 mixed, 40 support only, and 9 have no substantive category. Type tracks length: mixed sessions average 9.3 windows, single-type ones 3–4, so a short session has little chance to be mixed. Without R16, surrender-leaning-only sessions halve (`sensitivity.md`). These describe a session's make-up, not kinds of writer.
 
-**Transitions** (`analysis/results/sessions.md`). Surrender-leaning is followed by surrender-leaning in 83 of 143 cases (58%), the commonest transition. But a within-session shuffle, which keeps each session's mix and destroys order, expects 76.9 such pairs. The excess is small (p 0.045 pooled), absent in NIRVANA (40 observed vs 40.1 expected, p 0.59), and present in WildChat (43 vs 36.7, p 0.001), where it comes from consecutive generation requests. **Surrender-leaning describes which sessions a writer is in more than when in a session it happens.**
+**Transitions** (`analysis/results/sessions.md`). Surrender-leaning is followed by surrender-leaning in 83 of 143 cases (58%), the commonest transition. That is make-up, not momentum. A within-session shuffle keeps each session's mix and destroys order. With indeterminate windows set aside first (they are often a conversation's closing turn, which a shuffle would otherwise move into the middle of runs), the shuffle expects 89.2 surrender-leaning pairs against 88 observed (p 0.73). NIRVANA (43 vs 43.6) and WildChat (45 vs 45.5) agree. **Surrender-leaning describes which sessions a writer is in, not a state that pulls the next request after it.** The version with indeterminate windows kept seemed to show persistence; it is shown in the figure's top row for comparison and is not a finding.
 
 ![Transitions](../analysis/figures/fig04_transition_matrices.png)
 ![Persistence vs shuffle](../analysis/figures/fig05_persistence_vs_shuffle.png)
 
-**Switching between offloading and surrender.** With indeterminate and neutral windows removed, there are 29 moves from surrender-leaning to support and 29 back, in 23 sessions. Among sessions with both, support comes first in 10 and surrender-leaning in 13. Within these short sessions there is no visible drift toward surrender.
+**Switching between offloading and surrender.** With indeterminate and neutral windows removed, there are 29 moves from surrender-leaning to support and 29 back. That equality is close to arithmetic: within a session the two counts can differ by at most one, set by where it starts and ends. So it says nothing about direction. Among the 23 sessions with both, support comes first in 10 and surrender-leaning in 13.
 
-**What comes first.** Of 52 multi-window sessions with any surrender-leaning window, 33 have it at window 1 (NIRVANA 16 of 31, WildChat 17 of 21). Across sessions with three or more windows, the surrender-leaning share falls from the first fifth to the last (`figures/fig06_category_by_position.png`, `fig07_first_surrender_position.png`).
+**Order: two kinds of surrender-leaning.** Of 52 multi-window sessions with any surrender-leaning window, 33 have it at window 1. The first surrender-leaning window rests on R16 (a generation request) in 32 of 57 sessions, including all 21 in WildChat. Split by what the rule rests on (`sessions.md` drift table; `figures/fig06`, `fig15`):
 
-**Does a session ever leave surrender-leaning?** Of 50 sessions whose first surrender-leaning window is not their last, 19 later reach a support window. That pooled 38% hides a coverage split: NIRVANA 17 of 29 (59%), WildChat 2 of 21 (10%). WildChat cannot show a writer returning to their own text (`U3`, `U7`), so its low rate is partly what the log cannot see.
+- **Request-only surrender-leaning (R16) opens sessions.** Its mean position is 0.37 on a 0–1 scale, against 0.50 under shuffle.
+- **Behavior-based surrender-leaning sits later.** This covers pastes, partial pastes and surface-only edits (R06, R09, R11, R15). Its mean position is 0.58 against 0.50 (p 0.01 pooled, NIRVANA alone p 0.015, p ≤ 0.03 in every sensitivity variant). Support windows show no drift.
+- **Caveats.** This test is uncorrected. It may be partly built in: R11 needs visible own work, which accumulates as a session goes on.
+- **NIRVANA's overall surrender-leaning share is flat across the session.** The two trends cancel.
+
+![Category by position](../analysis/figures/fig06_category_by_position.png)
+![Position drift](../analysis/figures/fig15_position_drift.png)
+
+**Does a session ever leave surrender-leaning?** Of sessions whose first surrender-leaning window is not their last, NIRVANA 17 of 29 (59%) later reach a support window, WildChat 2 of 21 (10%). The WildChat figure is low for two reasons besides the writers: chat cannot show a writer returning to their own text (`U3`, `U7`), and the rules read every chat follow-up on an AI draft (`D2 F4 U4`) as R16 again. WildChat can produce support windows (25, mostly language work on the writer's own text), so the gap is not only missing coverage.
 
 ![Leaving surrender](../analysis/figures/fig08_leaving_surrender.png)
 
-**Escalation** from handing over one's own content (`D1`) to taking an AI proposal (`D4`) happens in 6 of 71 NIRVANA sessions (e25, e26, e31, e44, e70, e74); WildChat has no `D4` window at all, because adoption cannot be seen in chat (`figures/fig10_decision_timelines_nirvana.png`; narrative 1 in `narratives.md`).
+**Escalation is not supported as a pattern.** Six NIRVANA sessions have a window where the writer hands over their own content (`D1`) and a later window taking an AI proposal (`D4`): e25, e26, e31, e44, e70, e74. Shuffling each session's decision codes gives 6.97 such sessions on average, and the reverse order (`D4`, later `D1`) occurs in 7. So e70-style escalation exists as a case (narrative 1 in `narratives.md`), not as a tendency. WildChat has no `D4` window, because adoption cannot be seen in chat (`figures/fig10_decision_timelines_nirvana.png`).
 
 ### 7.3 Recurring patterns
 
@@ -184,7 +202,7 @@ Signatures were fixed on codes before counting (`analysis/results/patterns.md` �
 | Asked and moved on (`U8`) | 102 (44) | **split across all five**: surrender-leaning 48 |
 | Reasoned check (`V3`/`V4`) | 13 (6) | offloading 13 |
 
-"Asked and moved on" is the one pattern the rules do not resolve: they read it by what was requested, since nothing was done with the output.
+The consistency in this table is a property of the rule table, not an empirical regularity: signatures and rules are both code combinations. The informative row is "asked and moved on", which the rules do not resolve. They read it by what was requested, so a writer who asked for text and then ignored it is counted as surrender-leaning (R16).
 
 ### 7.4 Narratives
 
@@ -207,11 +225,12 @@ The proposal promised no user study, so this is an argument from the codes and t
 
 From §7, the candidate signals are combinations that a writing tool could detect without reading anyone's mind:
 
-1. **Generation request with no visible own draft** (`F4` + `NONE_VISIBLE`): the main feeder of strong and moderate surrender-leaning.
+1. **A generation request (`F4`) from a writer with no visible own draft (`NONE_VISIBLE`).** R16 rests on the first part. R09, the only strong rule, needs the second.
 2. **Whole paste with no change** (`U1`, high verbatim overlap): computable by script, as NIRVANA already does.
 3. **Edits only to length, tone or format of AI substance** (`V1` on a `D4`/`D2` window).
-4. **A first request that is a generation request.** Surrender-leaning usually starts at window 1 and sessions tend to stay one kind, so the first request may be the cheapest point for a prompt to reflect.
+4. **A generation request as the first request.** Request-only surrender-leaning concentrates at window 1, and sessions tend to be mostly one kind. So the first request may be the cheapest point for a prompt to reflect, before any AI text is pasted.
 5. **Absence of any reasoned check** across a session (no `V3`/`V4`): near-universal here, so it cannot discriminate alone.
+6. **Later in a session, a paste or a form-only edit of AI text.** Behavior-based surrender-leaning sits later than chance. A signal there would act on what the writer did, not on what they asked.
 
 These are candidates, not validated detectors. No signal was tested against outcomes, and a feedback design stays at mockup level per the proposal.
 
@@ -220,7 +239,8 @@ These are candidates, not validated detectors. No signal was tested against outc
 v1.2 stays frozen for this milestone. The data suggest these changes for a v1.3 with a logged rerun:
 
 - **Split R16.** "Asked the AI to write it" with no adoption seen is a different claim from adoption. Report it as its own pattern ("generation requested, use unseen") rather than weak surrender-leaning.
-- **Resolve `U8`.** Either keep `U8` windows indeterminate, or state that they are read by request type.
+- **Resolve `U8`.** 48 of the 96 whole-session R16 windows are "asked for text, then did not use it". Either keep `U8` windows indeterminate, or state that they are read by request type.
+- **Narrow R00.** 16 of the 20 windows with an `UNSETTLED` field get the same category under every value of that field. R00 could send a window to indeterminate only when the unsettled field can change the rule that fires.
 - **Add a length rule for `U3` vs `U7`** and a `V0`/`V1` rule for editor windows, the two boundaries that move categories or strength.
 - **Cover the commonest R99 gaps.** 49 windows fall through to R99. The largest groups are AI rework of AI text kept in chat (`D2 F5 U4`, 13), options or plans left open in chat (`D2 F2/F3 U4`, 14), and a rewrite set aside while the writer keeps composing (`D2 F5 U7`, 2; NIRVANA-e26-t05 in `narratives.md`), which reads like augmenting (`analysis/results/out_of_sample.md` §9).
 - **Keep `prior_own_work` but allow "unknown, pasted"** in chat, which would settle most WildChat `UNSETTLED` cells.
@@ -231,7 +251,8 @@ v1.2 stays frozen for this milestone. The data suggest these changes for a v1.3 
 - **Categories are literature-grounded inferences, not calibrated probabilities**, and not measurements of cognition. Each keeps the silent-evaluation alternative open.
 - **`NEUTRAL_MECHANICAL` has no source.**
 - **V2–V4 are essentially absent**, so the framework's verification distinctions rest on very few windows.
-- **Adjudicators lean toward the same model** (Bet 4 25:13, Bet 6 159:45, Bet 7 54:17). The coder-A-only and coder-B-only runs bound its effect on categories (§6).
+- **Adjudicators lean toward the same model** (Bet 4 25:13, Bet 6 159:45, Bet 7 54:17). Where the coders' categories differ, the final follows A 44 to 12; totals barely move (§6).
+- **Statistical tests are exploratory.** The shuffle and drift tests are uncorrected for the number run (each script prints all of them), and windows within a session are clustered. A finding that rests on one p-value near 0.01 is a lead, not a result.
 - **In WildChat, surrender-leaning mostly means "asked the AI to write it"** (R16, request type alone).
 - **Scope was adapted** from research writing to formal long-form writing; NIRVANA is a timed 30-minute essay, not research writing.
 - **Coverage drives what can be inferred.** WildChat has no editor; six rules cannot fire there.
