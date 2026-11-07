@@ -1,0 +1,69 @@
+id	from	to	evidence	file
+C01	Operation reported at 16 labels	Code 16, report 7 families by script rollup	Lit rec 6 (Chen 2026 layers informed the choice; grouping is the project's). Family and operation agreement nearly equal: R3 k 0.92 and 0.92, R4 0.82 and 0.77. Pooled use: O07 and O16 0 of 264, O06 and O15 2, O08 3	CSE216_Research_Writing_Codebook_v1.1.md s3; scripts/agreement.py
+C02	process coded by hand	Derived by script from operation	Equals the map in 160 of 160 labels in R1 and R2 (scripts/summary.py). Saves coder time and removes an override	v1.1 s3
+C03	O05 one source	One supplied text or term, including an assignment prompt, feedback, a definition	R1 flags: prompt summaries and a marker's comment had no home (NIRVANA-e14-t01, WILDCHAT-d68e51f9a2f0-t07)	v1.1 s3
+C04	O10 and O14 boundary on expansion and translation unclear	Expanding with new content is O10; shortening and translating supplied text is O14; a transition between existing parts is O13	R1 flags on NIRVANA-e09-t02, WILDCHAT-e0c27ae29ba4-t01, NIRVANA-e31-t06	v1.1 s3
+C05	F5 included expand	F5 means no new content asked for; more content is F4	R1 flag on NIRVANA-e09-t02	v1.1 s4
+C06	F7 locate or check	F7 includes generating a reference list; F8 only formats known references	R2 confusion F4|F8 on a reference list (WILDCHAT-0729d957ff83-t04)	v1.1 s4
+C07	object rules thin	EVIDENCE means source or data; illustrating examples and research questions are IDEA; assignment prompts are OTHER	R1 confusion EVIDENCE|IDEA 3 of 4 object disagreements	v1.1 s4
+C08	D0 mechanical work, read to include polishing	Polishing or translating text with claims is D1; D0 is mechanical, plain explanation or non-writing	R1: D0|D1 was the largest confusion, 7 of 19 decision disagreements, all polish or translate requests	v1.1 s5
+C09	Tie-break order for decision	Three-step test: is a decision in play, where did content come from, what does the next action show	R1 decision k 0.38 on follow-up windows; 21 flags on decision. R2 0.73, R3 0.87 on follow-up windows	v1.1 s5
+C10	D4 accepts traceable adoption, undefined	D4 needs a stated yes or verbatim reuse (run of about 30 characters); typed echo is D2	R1 both coders' final messages named this their hardest rule (coder_briefs/coder_final_messages.md); D2|DX and D4|DX 4 disagreements. R2 and R3 C2 decision agreement 100%	v1.1 s5
+C11	D5_CO_CONSTRUCTED	Cut, merged into D3	Lit rec 7. R1 3 labels, none agreed, all confused with D3. Strict rule in R2: 0 of 80 labels. Not offered in R3	v1.1 s5
+C12	DX example: missing input	Missing input with AI-invented content is D2; DX only when origin truly cannot be told	R2 both coders flagged it; 2 D2|DX. R3 DX 0 of 60	v1.1 s5
+C13	Reworking AI text had no branch	Content from an earlier AI turn is AI-origin	R2 flags from both coders (WILDCHAT-10fda5c12bd0-t02, NIRVANA-e48-t02)	v1.1 s5
+C14	V from any trace	Only the next action counts; a challenge in this request belongs to the previous window	R1 V0|V3 on NIRVANA-e04-t13	v1.1 s6
+C15	V3 stated or silent unclear	V3 needs words; silent content edits are U3	R1 V0|V3 on NIRVANA-e00-t02, NIRVANA-e57-t08. Verification on C2 k 0.09 in R1, 0.62 in R2, 1.0 in R3	v1.1 s6
+C16	V3 reads as evaluation	V3 marked weak evidence: stated engagement, not quality	Lit rec 4, Tao et al. 2026	v1.1 s6
+C17	V1 unclear	V1 means edits to AI text, or asking for a style, length or format change to this output; a style complaint in words is V1	R1 V0|V1 4 disagreements; R2 flags on NIRVANA-e04-t06	v1.1 s6
+C18	V5_MULTIPLE_GROUNDS	Cut, merged into V4	Lit rec 4. No use in R1 or R2. Not offered from R3	v1.1 s6
+C19	U4 any next chat on same goal	New U8_MOVED_ON for a next turn that does not touch this output; U4 only if it works on, repeats or repairs	R1 U4|UX 2 disagreements, and 16 uptake flags of all kinds; both coders' final messages named it (coder_briefs/coder_final_messages.md). Mysore Table 4 separates original requests from follow-ups. U8 used 47 of 184 labels in R2 to R4, 17 on enriched windows. Uptake on C1 k 0.61 in R1, 0.70 in R2, 1.0 in R3	v1.1 s7
+C20	U4 and U6 boundary	Saying no in words is U6 even if the writer asks again; a silent resend is U4	R2 U4|U6 2 disagreements; R3 0	v1.1 s7
+C21	Follow-on reuse	Feeding this output into a new task, or sending missing input, is U4	R2 U4|U8 2 disagreements, named in both coders' final messages; R3 0	v1.1 s7
+C22	U1 to U3 by reading only	Script audits U1, U2, U7, and settles U1 vs U2 by survival of pasted text (99.5%); U2 vs U3 stays judgment; coders do not see it	Lit rec 5. 32 of 34 U7 labels have no script match; script agrees on 39 of 45 U1 and U2 labels. Script match or no-match equals Bet 1 linkage on 201 of 204 C2 windows; the other 3 are short pastes	v1.1 s7; scripts/overlap.py
+C23	U4 single code	u4_subtype as a secondary note, not promoted, not in C3	Lit rec 3. Read Mysore Table 4 (11 types). k 0.48 in R1 and 0.43 in R2; 1.0 in R3 on only 10 windows, too few to promote	v1.1 s7
+C24	No field for prior own work	Add prior_own_work with four values; NONE_VISIBLE for NIRVANA only, UNOBSERVABLE for chat-only	Lit rec 1. k 0.72, 0.80, 0.86. R1 NONE_VISIBLE|UNOBSERVABLE 3 led to the channel rule	v1.1 s2
+C25	Q3-Q5 could imply a verdict	No per-window offloading or surrender; six candidate indicators computed by script; patterns assigned, concepts interpretive	Lit rec 2 and the C1 default (c) as relayed by the parent session's task message; recorded in no file, so REPORT.md asks Wayne to confirm it	v1.1 s1, s9
+C26	AI correctness not addressed	Not coded; limit stated	Lit rec 8	v1.1 s1
+C27	Q1-Q5 read as new	Credit Poquet, Chen, Mysore, NIRVANA, Welzel and T. Kim	Lit rec 9	v1.1 header
+C28	Reference 11 Harvard College Writing Center	Harvard College Writing Program	Page opened Nov 6, 2026 in a browser: A Publication of the Harvard College Writing Program	v1.1 s11
+C29	Examples partly built on cut labels	E1-E14 constructed, none from data; D5 and V5 examples replaced	scripts/check_blinding.py finds no 40-character run shared with any window	v1.1 s8
+C30	Sections 1.2, 9, 10, 11, 12 of v1.0	Condensed into v1.1 sections 1, 9, 10; v1.0 stays in place for the full discussion	Coders and C3 need a shorter document; nothing about axes was retested	v1.1
+K01	Poquet active or passive as a Q2 axis (open question in lit)	Not added	Not tested as its own field. D1 with F partly covers it. Left for M2 to discuss	none
+K02	Some rarely used labels	Kept	Reasons and counts are in REPORT_AFTER_C3.md, held back until C3 is saved so they cannot prime blind coding	v1.1 s6, s7; REPORT_AFTER_C3.md
+K03	F6, F8, O07, O16 unused or rare	Kept	Use is low because of the essay-heavy pool; they are research-writing or monitoring labels the proposal needs, and families protect the reports	v1.1 s3, s4
+P01	Summary or comparison origin (post R3; R4 had no summary request; R5 met only 2 summary windows)	A summary, comparison or analysis built on supplied material is AI-origin	R3 flags from both coders; E9 conflict; NIRVANA-e50-t03. R5: both coders D2 on the 2 real summary windows	v1.1 s5
+P02	O04 and OX (post R3; R4 met no O04 fact lookup)	O04 includes a fact or statistic; OX includes a code task with no writing	R3 coder A flag; WILDCHAT-8e7149d67185-t05	v1.1 s3
+P03	V2 (post R3, tested in R4)	Adding references to its own content counts as V2	R3 V0|V2 on WILDCHAT-44e67cc4da0e-t01	v1.1 s6
+P04	V1 and V4 (post R3; R4 met no case)	"Filler" is V1; a pasted error from running AI code is V4	R3 V1|V3 on NIRVANA-e74-t05; both coders V4 on WILDCHAT-8e7149d67185-t05	v1.1 s6
+P05	VX (post R3, tested in R4)	VX only for C0	v1.0 wording allowed a case that coverage rules out; VX used only on C0 in all rounds	v1.1 s6; scripts/check_c3.py
+P06	U5 (post R3; R4 met no case)	Selecting from the output counts as U5; E4 moved to U5	VIG-10: both coders chose U5, the key said U4	v1.1 s7, s8
+K04	DX kept	Kept, for windows whose origin cannot be told	0 agreed windows across rounds and 0 of 60 labels in R3, once missing input moved to D2. Kept because forcing origin onto an unclear window is worse than a rare code; lit calls it supported in spirit (NIRVANA on P47)	v1.1 s5
+C31	CX coverage row in the table	Dropped from the coder table	CX windows are excluded before coding; none reach coders, sample or gold (data/REPORT.md)	v1.1 s2
+C32	domain overlap unstated	A course assignment that is itself research work is RESEARCH_EXPLICIT	R1 flag WILDCHAT-2266e2cb52fc-t18	v1.1 s2
+C33	No rule for a bare request	Infer the task from earlier turns or the pasted task, and say so	R1 flags WILDCHAT-73167bb9da55-t04, NIRVANA-e76-t01, NIRVANA-e15-t01	v1.1 s3
+C34	F1 and F4 on summaries turned on wording	Summary of someone else's text defaults to F1; shortening the writer's own text defaults to F5	R1 flag on NIRVANA-e50-t01	v1.1 s4
+C35	V2 included explain	V2 means justify, recheck or add references; asks for more depth are V0	R1 flag on NIRVANA-e73-t01; explaining alone is not doubt	v1.1 s6
+C36	V3 criterion undefined	An assignment requirement counts as a criterion	R1 flag on NIRVANA-e74-t01	v1.1 s6
+C37	V0 rule	Asking the AI to check the writer's own essay is a new request: V0	R1 flag on NIRVANA-e03-t02	v1.1 s6
+C38	U1 means paste only	U1 also covers a retyped verbatim run; U7 means no verbatim run	R1 flag on NIRVANA-e25-t05. R4 had 1 such window, and both coders said U7 while the script found a run, so the rule is barely tested; audit catches it	v1.1 s7
+C39	U6 included a clearly incompatible alternative	Only rejection in words; a silent resend is U4	R1 flag on NIRVANA-e30-t01; incompatibility has no usable test	v1.1 s7
+C40	D3 partial paste unstated	Pasting less than about half the response is D3	R1 flag on NIRVANA-e15-t01. R4: both coders D3 on NIRVANA-e15-t04, under half pasted	v1.1 s5
+C41	Minimum record had episode_id, session fields, previous_unit_id	Coding record holds what coders fill; ids stay in the data files, and episode_id is not coded here	data/REPORT.md: episode_id is empty. Transition analysis can use session and turn order; episodes left to Bet 5 if needed	v1.1 s10
+P07	D0 plain explanation vs summary (post R3; R4 had no summary request; R5 met only 2 summary windows)	D0 is explaining a term, task or feedback; a summary is AI-origin	Critic: rules conflicted (notes/critic_report.md). R5: both coders D2 on the 2 real summary windows; the other 8 were polish or proofread requests	v1.1 s5
+P08	D3 partial vs D4 verbatim (post R3, tested in R4)	Under about half pasted is D3; half or more is D4	Critic: rules conflicted (notes/critic_report.md)	v1.1 s5
+C42	No seam rule	A few characters trimmed at a paste seam are no edit: U1 and V0	R2 U1|U2 and V0|V1 on NIRVANA-e13-t02	v1.1 s6, s7
+C43	U1 "no substantive alteration"	U1 "no later change to it"; surface changes are U2	Sharpens the U1 and U2 line so the script can audit it; R1 U1|U2 on NIRVANA-e25-t05	v1.1 s7
+C44	Operation definitions long	Wording shortened in O01, O02, O06, O10 (summaries removed), O11, O16	Condensing for coder and C3 time, no pilot evidence behind it. O10 no longer names summaries because summary now routes by request to O05 or O14	v1.1 s3
+C45	F6 "compare"	Removed from F6	Condensing, no pilot evidence; comparing sources stays O07	v1.1 s4
+C46	V3 "independent rationale"	Wording cut; a counterexample, limit, contradiction or criterion remains	Condensing, no pilot evidence	v1.1 s6
+C47	D3 "narrows" and "substantively changes"	Replaced by select, reject, under half pasted, change or add claims	Condensing plus R1 flags on NIRVANA-e57-t08; adding claims beside a paste had no home	v1.1 s5
+C48	Stance counted as a decision without limit	A stated stance counts only for what it states; a generic instruction or assignment prompt is no decision	R1 flags on NIRVANA-e48-t01, NIRVANA-e32-t01, NIRVANA-e11-t01	v1.1 s5
+C49	Courtesy had no rule	Courtesy or praise alone is U8	Mysore Table 4 treats courtesy as its own follow-up type; VIG-08 tested it	v1.1 s7
+C50	Accept plus more was U4 by priority	U5 only if the turn states use, acceptance or a selection; otherwise U4	R1 flag on NIRVANA-e34-t01; R4 flag on praise plus continue	v1.1 s7
+C51	U8 and V unconnected	With U8, V is V0	Follows from V counting only checks on this output; R1 flag on V0 with UX	v1.1 s7; scripts/check_c3.py
+C52	Copy with no paste unaddressed	Stays UX, noted	R1 flag on NIRVANA-e72-t01	v1.1 s7
+C53	U3 changes only	U3 includes claims replaced or added beside the paste	R1 flags on NIRVANA-e57-t08, NIRVANA-e00-t02	v1.1 s7
+C54	confidence defined in s2.3	Definitions dropped from v1.1, kept in C3_INSTRUCTIONS.md; codes unchanged	Condensing. Note left for Bet 4 to reuse the v1.0 wording	C3_INSTRUCTIONS.md; v1.1 s10
+C55	Multi-purpose segmenting rule and secondary_note	Dropped; one primary label by dominant deliverable, notes in evidence_note	Condensing, no pilot evidence; no segmenting was done in the data	v1.1 s3, s10
+C56	Silent resend unaddressed in decision	A silent resend is D2	R1 flag on NIRVANA-e30-t01	v1.1 s5

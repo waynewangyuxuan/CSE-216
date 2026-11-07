@@ -1,0 +1,142 @@
+{
+ "class_vs_coders": {
+  "ADDED_TEXT_NO_MATCH|U7|U7": 2,
+  "PASTE_MATCH_THEN_EDITS|U1|U1": 1,
+  "PASTE_MATCH_THEN_EDITS|U3|U3": 2,
+  "PASTE_MATCH_UNEDITED|U1|U1": 3,
+  "PASTE_MATCH_UNEDITED|U4|U4": 1,
+  "TYPED_MATCH|U7|U7": 1
+ },
+ "facts": {
+  "NIRVANA-e04-t03": {
+   "audit_u1_vs_u2": "U1",
+   "class": "PASTE_MATCH_THEN_EDITS",
+   "deleted_after_paste": 56,
+   "deleted_chars": 56,
+   "paste_chars": 7,
+   "paste_matched": 7,
+   "share_paste_retained": 1.0,
+   "share_response_pasted": 0.03,
+   "typed_after_paste": 256,
+   "typed_chars": 253,
+   "typed_matched": 0
+  },
+  "NIRVANA-e04-t16": {
+   "audit_u1_vs_u2": "U2",
+   "class": "PASTE_MATCH_THEN_EDITS",
+   "deleted_after_paste": 190,
+   "deleted_chars": 190,
+   "paste_chars": 287,
+   "paste_matched": 287,
+   "share_paste_retained": 0.519,
+   "share_response_pasted": 1.0,
+   "typed_after_paste": 208,
+   "typed_chars": 207,
+   "typed_matched": 0
+  },
+  "NIRVANA-e15-t04": {
+   "audit_u1_vs_u2": "U1",
+   "class": "PASTE_MATCH_UNEDITED",
+   "deleted_after_paste": 3,
+   "deleted_chars": 4,
+   "paste_chars": 1127,
+   "paste_matched": 1127,
+   "share_paste_retained": 1.0,
+   "share_response_pasted": 0.35,
+   "typed_after_paste": 0,
+   "typed_chars": 0,
+   "typed_matched": 0
+  },
+  "NIRVANA-e30-t02": {
+   "audit_u1_vs_u2": "U1",
+   "class": "PASTE_MATCH_UNEDITED",
+   "deleted_after_paste": 0,
+   "deleted_chars": 0,
+   "paste_chars": 654,
+   "paste_matched": 654,
+   "share_paste_retained": 1.0,
+   "share_response_pasted": 1.0,
+   "typed_after_paste": 0,
+   "typed_chars": 0,
+   "typed_matched": 0
+  },
+  "NIRVANA-e30-t03": {
+   "audit_u1_vs_u2": "U1",
+   "class": "PASTE_MATCH_UNEDITED",
+   "deleted_after_paste": 0,
+   "deleted_chars": 0,
+   "paste_chars": 648,
+   "paste_matched": 648,
+   "share_paste_retained": 1.0,
+   "share_response_pasted": 1.0,
+   "typed_after_paste": 0,
+   "typed_chars": 0,
+   "typed_matched": 0
+  },
+  "NIRVANA-e34-t02": {
+   "audit_u1_vs_u2": "U2",
+   "class": "PASTE_MATCH_THEN_EDITS",
+   "deleted_after_paste": 2481,
+   "deleted_chars": 2481,
+   "paste_chars": 3699,
+   "paste_matched": 2863,
+   "share_paste_retained": 0.444,
+   "share_response_pasted": 1.0,
+   "typed_after_paste": 1133,
+   "typed_chars": 1127,
+   "typed_matched": 0
+  },
+  "NIRVANA-e38-t02": {
+   "audit_u1_vs_u2": null,
+   "class": "TYPED_MATCH",
+   "deleted_after_paste": 0,
+   "deleted_chars": 172,
+   "paste_chars": 0,
+   "paste_matched": 0,
+   "share_paste_retained": null,
+   "share_response_pasted": 0.0,
+   "typed_after_paste": 0,
+   "typed_chars": 2274,
+   "typed_matched": 32
+  },
+  "NIRVANA-e44-t02": {
+   "audit_u1_vs_u2": null,
+   "class": "ADDED_TEXT_NO_MATCH",
+   "deleted_after_paste": 0,
+   "deleted_chars": 203,
+   "paste_chars": 0,
+   "paste_matched": 0,
+   "share_paste_retained": null,
+   "share_response_pasted": 0.0,
+   "typed_after_paste": 0,
+   "typed_chars": 1187,
+   "typed_matched": 0
+  },
+  "NIRVANA-e44-t05": {
+   "audit_u1_vs_u2": "U1",
+   "class": "PASTE_MATCH_UNEDITED",
+   "deleted_after_paste": 2,
+   "deleted_chars": 983,
+   "paste_chars": 1062,
+   "paste_matched": 50,
+   "share_paste_retained": 1.0,
+   "share_response_pasted": 0.03,
+   "typed_after_paste": 0,
+   "typed_chars": 0,
+   "typed_matched": 0
+  },
+  "NIRVANA-e65-t01": {
+   "audit_u1_vs_u2": null,
+   "class": "ADDED_TEXT_NO_MATCH",
+   "deleted_after_paste": 0,
+   "deleted_chars": 80,
+   "paste_chars": 0,
+   "paste_matched": 0,
+   "share_paste_retained": null,
+   "share_response_pasted": 0.0,
+   "typed_after_paste": 0,
+   "typed_chars": 589,
+   "typed_matched": 0
+  }
+ }
+}
