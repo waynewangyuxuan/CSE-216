@@ -1862,6 +1862,116 @@
    }
   ]
  },
+ "robustness": {
+  "T_windows_that_are_F4": [
+   192,
+   195
+  ],
+  "archetype_stability": [
+   {
+    "k": 4,
+    "pair_agreement_with_k6": 0.894
+   },
+   {
+    "k": 5,
+    "pair_agreement_with_k6": 0.957
+   },
+   {
+    "k": 7,
+    "pair_agreement_with_k6": 0.982
+   }
+  ],
+  "dwell_by_typing": [
+   {
+    "group": "SLb",
+    "median_dwell": 44.1,
+    "typing": "under 50 typed",
+    "windows": 34
+   },
+   {
+    "group": "support",
+    "median_dwell": 43.5,
+    "typing": "under 50 typed",
+    "windows": 49
+   },
+   {
+    "group": "SLb",
+    "median_dwell": 156.1,
+    "typing": "50+ typed",
+    "windows": 14
+   },
+   {
+    "group": "support",
+    "median_dwell": 308.25,
+    "typing": "50+ typed",
+    "windows": 68
+   }
+  ],
+  "dwell_within_session": {
+   "SL_median_shorter": 13,
+   "sessions_with_both": 17
+  },
+  "editor_first_multi_window": {
+   "p": 0.075,
+   "rho": 0.256,
+   "sessions": 54
+  },
+  "outcome_multi_window": {
+   "SLb_vs_gpt_final_rho": 0.536,
+   "SLb_vs_ownership_rho": -0.493,
+   "sessions": 56
+  },
+  "ownership_among_any_SLb": {
+   "p": 0.2459,
+   "rho": -0.206,
+   "sessions": 34
+  },
+  "stage_by_F4": [
+   {
+    "F4_request": true,
+    "SL_share": 0.556,
+    "determinate": 27,
+    "stage": "P"
+   },
+   {
+    "F4_request": true,
+    "SL_share": 0.795,
+    "determinate": 166,
+    "stage": "T"
+   },
+   {
+    "F4_request": true,
+    "SL_share": 0.8,
+    "determinate": 10,
+    "stage": "R"
+   },
+   {
+    "F4_request": false,
+    "SL_share": 0.071,
+    "determinate": 56,
+    "stage": "P"
+   },
+   {
+    "F4_request": false,
+    "SL_share": null,
+    "determinate": 0,
+    "stage": "T"
+   },
+   {
+    "F4_request": false,
+    "SL_share": 0.098,
+    "determinate": 82,
+    "stage": "R"
+   }
+  ],
+  "two_triggers_combined": {
+   "SL_among_fired_determinate": 0.559,
+   "SL_caught": 0.633,
+   "SLb_caught": 0.696,
+   "of_windows": 347,
+   "windows_fired": 140
+  }
+ },
  "stage": {
   "by_archetype": [
    {

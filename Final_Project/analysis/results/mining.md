@@ -431,3 +431,37 @@ NIRVANA latency by code signature (medians, s):
 | Quick return to chat | the next request comes within 60 s of the response, with under 50 characters typed | 122/347 | 0.548 | 0.395 | 0.408 | 0.304 | 38 | 0.139 (0.2429) | -0.105 (0.3918) |
 | Ask on a near-empty page | the request is sent while the editor holds under 200 characters | 101/347 | 0.587 | 0.395 | 0.449 | 0.435 | 44 | 0.378 (0.004) | -0.281 (0.018) |
 | Paste, then straight back | 200+ characters pasted and the next request within 90 s | 23/347 | 0.667 | 0.395 | 0.143 | 0.203 | 14 | 0.172 (0.1489) | -0.229 (0.0515) |
+
+## 10. Robustness
+
+Stage within generation requests (F4) and outside them; 192 of 195 translating windows are F4:
+
+| F4 request | Stage | Determinate | SL share |
+|---|---|---|---|
+| True | P | 27 | 0.556 |
+| True | T | 166 | 0.795 |
+| True | R | 10 | 0.8 |
+| False | P | 56 | 0.071 |
+| False | T | 0 | None |
+| False | R | 82 | 0.098 |
+
+NIRVANA dwell with typing held low or high:
+
+| Typing after response | Group | Windows | Median dwell (s) |
+|---|---|---|---|
+| under 50 typed | SLb | 34 | 44.1 |
+| under 50 typed | support | 49 | 43.5 |
+| 50+ typed | SLb | 14 | 156.1 |
+| 50+ typed | support | 68 | 308.25 |
+
+Within NIRVANA sessions that have both sides: SL median dwell shorter in 13 of 17.
+
+Editor characters at first ask vs support share, multi-window NIRVANA sessions: rho 0.256, p 0.075 (54 sessions).
+
+Outcome links, multi-window NIRVANA sessions (56): SLb share vs GPT Final % rho 0.536; vs ownership -0.493.
+
+Among the 34 sessions with any SLb window, SLb share vs ownership: rho -0.206, p 0.2459.
+
+Large paste with little typing OR ask on a near-empty page: fires on 140 of 347 windows; SL among fired 0.559; catches 0.633 of SL and 0.696 of SLb windows.
+
+Archetype stability (share of session pairs placed together or apart as at k = 6): k=4 0.894, k=5 0.957, k=7 0.982.

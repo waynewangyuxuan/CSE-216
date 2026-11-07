@@ -704,6 +704,83 @@ def log_triggers(S, out):
     return rows
 
 
+# ---------- 10. robustness (checks the skeptic asked for) ----------
+
+def robustness(S, out, arch_rows):
+    W = [w for v in S.values() for w in v]
+    R = {}
+    # Stage within generation requests (F4) and outside them: is the stage result more than "asked for prose"?
+    st = []
+    for f4 in (True, False):
+        for s_ in ("P", "T", "R"):
+            ws = [w for w in W if (w["F"] == "F4") == f4 and w["process"] == s_ and w["side"] != "X"]
+            st.append({"F4_request": f4, "stage": s_, "determinate": len(ws),
+                       "SL_share": r2(sum(w["side"] == "S" for w in ws) / len(ws)) if ws else None})
+    R["stage_by_F4"] = st
+    R["T_windows_that_are_F4"] = [sum(w["process"] == "T" and w["F"] == "F4" for w in W), sum(w["process"] == "T" for w in W)]
+    # Dwell with typing held low or high (NIRVANA): is the dwell gap anything more than typing time?
+    SN = [w for (d, _), v in S.items() if d == "NIRVANA" for w in v if w["t"].get("dwell_s")]
+    dt = []
+    for lab, test in (("under 50 typed", lambda w: int(w["t"]["typed_chars"]) < 50), ("50+ typed", lambda w: int(w["t"]["typed_chars"]) >= 50)):
+        for g, gt in (("SLb", lambda w: w["tok"] == "SLb"), ("support", lambda w: w["side"] == "P")):
+            xs = [float(w["t"]["dwell_s"]) for w in SN if test(w) and gt(w)]
+            dt.append({"typing": lab, "group": g, "windows": len(xs), "median_dwell": r2(med(xs))})
+    R["dwell_by_typing"] = dt
+    both = shorter = 0
+    for (d, _), v in S.items():
+        if d != "NIRVANA":
+            continue
+        a = [float(w["t"]["dwell_s"]) for w in v if w["side"] == "S" and w["t"].get("dwell_s")]
+        b = [float(w["t"]["dwell_s"]) for w in v if w["side"] == "P" and w["t"].get("dwell_s")]
+        if a and b:
+            both += 1
+            shorter += med(a) < med(b)
+    R["dwell_within_session"] = {"sessions_with_both": both, "SL_median_shorter": shorter}
+    # Editor text at first ask: multi-window sessions only.
+    nv = []
+    for (d, sid), v in S.items():
+        det = [w for w in v if w["side"] != "X"]
+        if d == "NIRVANA" and det and len(v) > 1:
+            nv.append((int(v[0]["t"]["editor_chars_before"]), sum(w["side"] == "P" for w in det) / len(det)))
+    R["editor_first_multi_window"] = {"sessions": len(nv), "rho": r2(spearman([a for a, _ in nv], [b for _, b in nv])),
+                                      "p": round(spearman_p([a for a, _ in nv], [b for _, b in nv]), 4)}
+    # Outcome links without one-window sessions, and ownership among sessions that have any SLb.
+    rows = []
+    for (d, sid), v in S.items():
+        if d == "NIRVANA":
+            rows.append((len(v), sum(w["tok"] == "SLb" for w in v) / len(v), fnum(out[sid]["GPT Final %"]), fnum(out[sid]["Perceived Ownership"])))
+    mw = [r for r in rows if r[0] > 1]
+    R["outcome_multi_window"] = {"sessions": len(mw), "SLb_vs_gpt_final_rho": r2(spearman([r[1] for r in mw], [r[2] for r in mw])),
+                                 "SLb_vs_ownership_rho": r2(spearman([r[1] for r in mw], [r[3] for r in mw]))}
+    any_b = [r for r in rows if r[1] > 0]
+    R["ownership_among_any_SLb"] = {"sessions": len(any_b), "rho": r2(spearman([r[1] for r in any_b], [r[3] for r in any_b])),
+                                    "p": round(spearman_p([r[1] for r in any_b], [r[3] for r in any_b]), 4)}
+    # The two working log triggers together.
+    Wn = [w for (d, _), v in S.items() if d == "NIRVANA" for w in v]
+    fire = [w for w in Wn if LOG_TRIGGERS[0][1](w["t"]) or LOG_TRIGGERS[2][1](w["t"])]
+    det = [w for w in fire if w["side"] != "X"]
+    R["two_triggers_combined"] = {"windows_fired": len(fire), "of_windows": len(Wn),
+                                  "SL_among_fired_determinate": r2(sum(w["side"] == "S" for w in det) / len(det)),
+                                  "SL_caught": r2(sum(w["side"] == "S" for w in fire) / sum(w["side"] == "S" for w in Wn)),
+                                  "SLb_caught": r2(sum(w["tok"] == "SLb" for w in fire) / sum(w["tok"] == "SLb" for w in Wn))}
+    # Archetype stability over k.
+    keys = list(S)
+    seqs = [[w["tok"] for w in S[k]] for k in keys]
+    D = [[om(a, b) for b in seqs] for a in seqs]
+    base = {(r["dataset"], r["session_id"]): r["cluster"] for r in arch_rows}
+    stab = []
+    for k in (4, 5, 7):
+        lab = upgma(D, k)
+        same = 0
+        for i in range(len(keys)):
+            for j in range(i + 1, len(keys)):
+                same += (lab[i] == lab[j]) == (base[keys[i]] == base[keys[j]])
+        n = len(keys) * (len(keys) - 1) // 2
+        stab.append({"k": k, "pair_agreement_with_k6": r2(same / n)})
+    R["archetype_stability"] = stab
+    return R
+
+
 # ---------- report ----------
 
 def main():
@@ -728,6 +805,7 @@ def main():
     write_csv(os.path.join(OUT, "outcome_sessions.csv"),
               [{k: (round(v, 4) if isinstance(v, float) else v) for k, v in r.items()} for r in orow])
     J["log_triggers"] = log_triggers(S, out)
+    J["robustness"] = robustness(S, out, arow)
     write_json(os.path.join(RES, "mining.json"), J)
     write_text(os.path.join(RES, "mining.md"), report(J))
 
@@ -846,6 +924,27 @@ def report(J):
                          r["SL_base_rate_determinate"], r["SL_windows_caught"], r["SLb_windows_caught"], r["sessions_fired"],
                          f"{r['session_fire_rate_vs_gpt_final_rho']} ({r['p']})",
                          f"{r['session_fire_rate_vs_ownership_rho']} ({r['p_ownership']})"] for r in J["log_triggers"]]))
+    Rb = J["robustness"]
+    md.append("\n## 10. Robustness\n\nStage within generation requests (F4) and outside them; "
+              f"{Rb['T_windows_that_are_F4'][0]} of {Rb['T_windows_that_are_F4'][1]} translating windows are F4:\n\n" +
+              md_table(["F4 request", "Stage", "Determinate", "SL share"],
+                       [[r["F4_request"], r["stage"], r["determinate"], r["SL_share"]] for r in Rb["stage_by_F4"]]))
+    md.append("\nNIRVANA dwell with typing held low or high:\n\n" + md_table(["Typing after response", "Group", "Windows", "Median dwell (s)"],
+              [[r["typing"], r["group"], r["windows"], r["median_dwell"]] for r in Rb["dwell_by_typing"]]))
+    dw = Rb["dwell_within_session"]
+    md.append(f"\nWithin NIRVANA sessions that have both sides: SL median dwell shorter in {dw['SL_median_shorter']} of {dw['sessions_with_both']}.\n")
+    e = Rb["editor_first_multi_window"]
+    md.append(f"\nEditor characters at first ask vs support share, multi-window NIRVANA sessions: rho {e['rho']}, p {e['p']} ({e['sessions']} sessions).\n")
+    o = Rb["outcome_multi_window"]
+    md.append(f"\nOutcome links, multi-window NIRVANA sessions ({o['sessions']}): SLb share vs GPT Final % rho {o['SLb_vs_gpt_final_rho']}; "
+              f"vs ownership {o['SLb_vs_ownership_rho']}.\n")
+    a = Rb["ownership_among_any_SLb"]
+    md.append(f"\nAmong the {a['sessions']} sessions with any SLb window, SLb share vs ownership: rho {a['rho']}, p {a['p']}.\n")
+    c = Rb["two_triggers_combined"]
+    md.append(f"\nLarge paste with little typing OR ask on a near-empty page: fires on {c['windows_fired']} of {c['of_windows']} windows; "
+              f"SL among fired {c['SL_among_fired_determinate']}; catches {c['SL_caught']} of SL and {c['SLb_caught']} of SLb windows.\n")
+    md.append("\nArchetype stability (share of session pairs placed together or apart as at k = 6): " +
+              ", ".join(f"k={r['k']} {r['pair_agreement_with_k6']}" for r in Rb["archetype_stability"]) + ".\n")
     return "".join(md)
 
 
