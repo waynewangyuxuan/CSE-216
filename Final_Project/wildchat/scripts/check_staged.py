@@ -40,6 +40,10 @@ def main():
             r = json.loads(l)
             if r["hash"] in labelled:
                 bank |= grams(r["text"])
+    # DEFINITION.md was committed (c00b797) before any conversation was read, so its 40-char runs are authored text; a match
+    # with user text (e.g. a list of paper section names) is coincidence. The prompts restate it.
+    authored = grams(subprocess.check_output(["git", "show", "c00b797:Final_Project/wildchat/DEFINITION.md"], cwd=root).decode())
+    bank -= authored
     bad = 0
     for p in paths:
         if not p.startswith("Final_Project/wildchat/") or "/blind/" in p:

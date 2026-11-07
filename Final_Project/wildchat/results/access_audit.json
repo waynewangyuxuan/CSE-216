@@ -34,9 +34,9 @@
   "disallowed_paths": [],
   "distinct_paths": 9,
   "lookahead_counts": {
-   "0": 19,
-   "1": 19,
-   "2": 3
+   "0": 20,
+   "1": 20,
+   "2": 4
   },
   "requested": "sonnet",
   "role": "coder_B",
@@ -45,10 +45,11 @@
   ],
   "windows_lookahead_ge2": [
    "04adc14b7dc6-t05",
+   "953148aa3d57-t03",
    "a656cf58e949-t01",
    "f432a63be5a3-t01"
   ],
-  "windows_written": 41
+  "windows_written": 44
  },
  "a74fa63f059a310a6": {
   "batch": "2",

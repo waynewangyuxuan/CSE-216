@@ -61,6 +61,10 @@ def main():
                 if c["name"] in ("Write", "Edit"):
                     wpart, rpart = text, ""
                 writes = [(s_, int(n)) for s_, n in WID.findall(wpart)]
+                # Loop-generated ids such as WILDCHAT-<sid>-t0$n inside "for n in 3 4 5"
+                for var, vals in re.findall(r"for (\w+) in ([\d ]+);", cmd):
+                    for s_ in re.findall(r"WILDCHAT-([0-9a-f]{12})-t0?\$\{?" + var + r"\}?", cmd):
+                        writes += [(s_, int(v)) for v in vals.split()]
                 sid_cd = (CD.findall(cmd) or [None])[0]
                 reads = []
                 if c["name"] == "Read":

@@ -8,7 +8,7 @@ Numbers come from `scripts/run_all.sh`, which replays cached labels and calls no
 
 - **The screen is precise but finds only a small share.** The auditor agrees on 118 of 120 random accepted conversations (98.3%, CI 94–99.5%). Formal long-form writing is about 10% of eligible conversations, so roughly 14,000 exist, and the accepted pool of 2,236 holds roughly 12–16% of them.
 - **The coded sample is new, random and whole.** 35 conversations and 151 windows, drawn only from the random seed, so keyword and embedding ranking cannot bias it. The auditor rejects 3 of the 35 (9 windows); their labels stay.
-- **The coders agree closely.** On Q3–Q5, κ is 0.92 for `decision`, 0.94 for `verification` and 0.92 for `uptake`. On follow-up windows it is 0.83 to 0.94, and no session interval drops below 0.61. `prior_own_work` (0.75) and `object` (0.76) are the weakest.
+- **The coders agree closely.** On Q3–Q5, κ is 0.92 for `decision`, 0.94 for `verification` and 0.92 for `uptake`. On follow-up windows it is 0.83 to 0.94, and no Q3–Q5 session interval drops below 0.61. `prior_own_work` (0.75) and `object` (0.76) are the weakest.
 - **19 fields are `UNSETTLED`**, 11 of them `prior_own_work`, from gaps in v1.1 (`rule_gaps_v1_1.tsv`).
 - **No stop condition was hit.**
 
@@ -39,14 +39,14 @@ Numbers come from `scripts/run_all.sh`, which replays cached labels and calls no
 | **Accepted pool (unused)** | **2,236** | 114 from the seed, 367 from enrichment, 1,755 from confirmation |
 | Coded sample | 35 conversations, 151 windows | From the seed's 114 only |
 
-- **Screen labeller.** `claude-sonnet-5-5` through `claude -p` (CLI 2.1.318), tools off. It reads the whole conversation, with user turns cut to 1,500 characters and AI turns to 500 (W05). Prompt: `scripts/screen_prompt.txt`.
+- **Screen labeller.** Requested `claude-sonnet-5-5` through `claude -p` (CLI 2.1.318), tools off. 43 of 4,052 labels (23 in the seed) record `claude-sonnet-5` alongside it as served, as a CLI side call may; the label model is not separable per row. It reads the whole conversation, with user turns cut to 1,500 characters and AI turns to 500 (W05). Prompt: `scripts/screen_prompt.txt`.
 - **Embeddings.** `BAAI/bge-small-en-v1.5`, revision `5c38ec7c`, sentence-transformers 3.3.1 on MPS. Input is masked user text, first 2,000 characters (W07, `results/embed_meta.json`).
 - **Bet 1's 2,399 cached labels** aren't reused as labels (W04): they used a research-only definition on the first 3 user turns. The 281 eligible records of Bet 1's random draw are in the seed. On them, old `CLEAR_RESEARCH_WRITING` maps to INCLUDE 6 of 8, while 15 of 113 old `OTHER_WRITING` or `ACADEMIC_NOT_RESEARCH` records are now INCLUDE.
 - **Model cost** was $33.70 in all (`results/llm_cost_log.tsv`). Coder and adjudicator runs are not in it.
 
 ## Precision and recall
 
-The auditor is `claude-opus-5-5` with its own prompt (`scripts/audit_prompt.txt`), run as fresh processes. It saw all 415 audited records as one shuffled list, never saw screen labels, and was not told which set a record came from.
+The auditor is `claude-opus-5-5` with its own prompt (`scripts/audit_prompt.txt`), run as fresh processes. It saw all 415 audited records in one seeded shuffled order, sent in 21 batches of about 20, never saw screen labels, and was not told which set a record came from.
 
 | Audit set | n | Auditor INCLUDE | Share [95% CI] | Reads as |
 |---|---|---|---|---|
@@ -56,7 +56,7 @@ The auditor is `claude-opus-5-5` with its own prompt (`scripts/audit_prompt.txt`
 | Random never-labelled | 150 | 17 | 11.3% [7.2, 17.4] | Matches the seed's 10% |
 
 - **Screen vs auditor** on the 265 records both labelled: 88.7% agree, κ 0.74. Disagreements go mostly one way: the screen said EXCLUDE and the auditor INCLUDE on 20, against 5 the other way.
-- **Recall is rough, about 12%.** Estimated true positives found: 2,198. Estimated misses: 523 among labelled rejects and about 15,300 among never-labelled records. As a second check, 10 of the 56 held-out seed positives rank in the top 2,500 (18%). The confirm pass stops at 2,500, and its INCLUDE rate is still 73% at ranks 2,000–2,500, so a deeper cut would find more.
+- **Recall is rough, about 12%.** Estimated true positives found: 2,198. Estimated misses: 523 among labelled rejects and about 15,300 among never-labelled records. As a second check, 10 of the 56 held-out seed positives rank in the top 2,500 (18%). The confirm pass stops at 2,500, and its INCLUDE rate is still 71% at ranks 2,000–2,500 (counting only records first labelled there), so a deeper cut would find more. "2,500 confirmed" includes 259 records already labelled in the seed or enrichment, with the same prompt.
 - **The 3 coded conversations the auditor rejects** are all ones the screen called `article`. They are `d429342fd747`, `8af2896cda07` and `e6acb3ce8d84`: the auditor read them as other, fiction and marketing, together 9 windows. The article boundary is the screen's soft spot.
 
 ## Sample
@@ -126,10 +126,10 @@ From transcripts, by `scripts/audit_access.py` → `results/access_audit.json`.
 |---|---|
 | Paths outside each agent's allowed set (other coder, results, screen labels, `inference/`, `data/`, `coding/`) | 0 of 9 agents |
 | Served model matches requested | 9 of 9 |
-| Label written before the next part was read | 7 of 8 coders on every window. Coder B batch 3 read one part ahead on 19 windows and two ahead on 3 |
+| Label written before the next part was read | 7 of 8 coders on every window. Coder B batch 3 read one part ahead on 20 windows and two ahead on 4, and wrote 3 windows of `953148aa3d57` in one loop with identical codes |
 | A and B ran in parallel, in separate folders | Yes |
 
-One part ahead shows only the AI response to the next request; the window's own next user turn already shows that request. Still, B batch 3 broke the read-in-order rule, and its labels were not redone. The adjudicator read parts up to each conversation's highest disputed turn, so for lower windows it may have seen later turns; the audit does not measure this. Separation is by instruction, not by file permissions.
+One part ahead shows the next AI response and the user turn after it, so B batch 3 saw later turns on 24 windows. It broke the read-in-order rule, and its labels were not redone. The adjudicator read parts up to each conversation's highest disputed turn, so for lower windows it may have seen later turns. It also often read long parts only partly, through `head` or `grep` extracts (for example about 198 of 483 lines on one conversation), against its brief. Its rulings rest on partial reads in those cases; they were not redone. Separation is by instruction, not by file permissions.
 
 ## Bet 4's 30 windows, re-judged
 
@@ -151,7 +151,7 @@ Bet 4's 30 WildChat windows come from 11 conversations. Both the screen labeller
 4. **The article boundary is soft.** All 3 audit rejections in the coded sample are screen "articles".
 5. **`prior_own_work` and `domain` are weak.** Their κ is 0.75 and 0.86, they hold 16 of the 19 `UNSETTLED`, and `domain` is no longer a reporting split (Nov 7 direction).
 6. **The adjudicator favoured its own model 54 to 17.** This can't be told apart from rule fit.
-7. **Coder B batch 3 read ahead,** on 22 windows.
+7. **Coder B batch 3 read ahead** on 24 windows, and the adjudicator read some parts only partly.
 8. **Within-coder drift** across batches is not measured.
 9. **Checks are almost absent.** 1 `V2`, and no V3 or V4.
 
@@ -167,4 +167,15 @@ Bet 4's 30 WildChat windows come from 11 conversations. Both the screen labeller
 
 ## Gate
 
-Pending.
+**Passed**, by a fresh critic agent with no access to my reasoning (`.wayne/bets/0008-wildchat-writing/gate/critic_report.md`). It found:
+
+- The definition was committed before any screen label and has not changed since.
+- `run_all.sh` gives 16 of 16 results hashes identical to HEAD, and its own script reproduced every checked number.
+- The audit used a separate model and prompt and was drawn by seeded script.
+- No coder touched another coder's files, results, `inference/`, `data/`, `coding/` or `sessions/`, from reading all 9 transcripts.
+- All 1,208 final fields trace.
+- 0 of 40 random snippets from the selected conversations are in git history.
+
+No blocking problems. These corrections came from it and are made above: B batch 3 read ahead on 24 windows, not 22; reading ahead also shows the next user turn; the adjudicator read some parts partly; 43 labels record a second served model; the 71% band; batched audit input; and the 0.61 floor holds for Q3–Q5 only.
+
+`check_staged.py` then flagged 3 false positives: the definition's own list of paper section names also occurs in two users' text. The check now leaves out runs found in `DEFINITION.md` as committed before any conversation was read, and `--all-tracked` gives 0 problems. `audit_access.py` now parses loop-written window ids. No critic rechecked these fixes.
