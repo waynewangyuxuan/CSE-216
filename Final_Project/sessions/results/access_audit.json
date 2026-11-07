@@ -1,0 +1,848 @@
+[
+ {
+  "batch": 0,
+  "labels_seen": 23,
+  "listing_or_search": [],
+  "model_requested": "opus",
+  "model_served": {
+   "claude-opus-5-5": 72
+  },
+  "order_problems": [],
+  "other_reads": [
+   "Final_Project/sessions/blind/lists/batch_0.txt",
+   "Final_Project/sessions/coder_brief.md",
+   "Final_Project/sessions/coder_codebook_v1.1.md"
+  ],
+  "part_line_coverage_min": 1.0,
+  "parts_under_full_coverage": {},
+  "role": "coder_a",
+  "targets": 23,
+  "tool_uses": {
+   "Bash": 23,
+   "Read": 26,
+   "SubagentHandback": 1
+  },
+  "violations": {},
+  "writes_to_label_files": []
+ },
+ {
+  "batch": 1,
+  "labels_seen": 27,
+  "listing_or_search": [
+   "ls -la /Users/wang/CSE-216/Final_Project/sessions/blind/coder_a/"
+  ],
+  "model_requested": "opus",
+  "model_served": {
+   "claude-opus-5-5": 58
+  },
+  "order_problems": [],
+  "other_reads": [],
+  "part_line_coverage_min": 1.0,
+  "parts_under_full_coverage": {},
+  "role": "coder_a",
+  "targets": 27,
+  "tool_uses": {
+   "Bash": 30,
+   "SubagentHandback": 1
+  },
+  "violations": {},
+  "writes_to_label_files": []
+ },
+ {
+  "batch": 2,
+  "labels_seen": 19,
+  "listing_or_search": [],
+  "model_requested": "opus",
+  "model_served": {
+   "claude-opus-5-5": 57
+  },
+  "order_problems": [],
+  "other_reads": [
+   "Final_Project/sessions/blind/lists/batch_2.txt",
+   "Final_Project/sessions/coder_brief.md",
+   "Final_Project/sessions/coder_codebook_v1.1.md"
+  ],
+  "part_line_coverage_min": 1.0,
+  "parts_under_full_coverage": {},
+  "role": "coder_a",
+  "targets": 19,
+  "tool_uses": {
+   "Bash": 19,
+   "Read": 22,
+   "SubagentHandback": 1
+  },
+  "violations": {},
+  "writes_to_label_files": []
+ },
+ {
+  "batch": 3,
+  "labels_seen": 22,
+  "listing_or_search": [],
+  "model_requested": "opus",
+  "model_served": {
+   "claude-opus-5-5": 67
+  },
+  "order_problems": [],
+  "other_reads": [
+   "Final_Project/sessions/blind/lists/batch_3.txt",
+   "Final_Project/sessions/coder_brief.md",
+   "Final_Project/sessions/coder_codebook_v1.1.md"
+  ],
+  "part_line_coverage_min": 1.0,
+  "parts_under_full_coverage": {},
+  "role": "coder_a",
+  "targets": 22,
+  "tool_uses": {
+   "Bash": 22,
+   "Read": 25,
+   "SubagentHandback": 1
+  },
+  "violations": {},
+  "writes_to_label_files": []
+ },
+ {
+  "batch": 4,
+  "labels_seen": 31,
+  "listing_or_search": [],
+  "model_requested": "opus",
+  "model_served": {
+   "claude-opus-5-5": 91
+  },
+  "order_problems": [],
+  "other_reads": [
+   "Final_Project/sessions/blind/lists/batch_4.txt",
+   "Final_Project/sessions/coder_brief.md",
+   "Final_Project/sessions/coder_codebook_v1.1.md"
+  ],
+  "part_line_coverage_min": 1.0,
+  "parts_under_full_coverage": {},
+  "role": "coder_a",
+  "targets": 31,
+  "tool_uses": {
+   "Bash": 31,
+   "Read": 34,
+   "SubagentHandback": 1
+  },
+  "violations": {},
+  "writes_to_label_files": []
+ },
+ {
+  "batch": 5,
+  "labels_seen": 14,
+  "listing_or_search": [],
+  "model_requested": "opus",
+  "model_served": {
+   "claude-opus-5-5": 46
+  },
+  "order_problems": [],
+  "other_reads": [
+   "Final_Project/sessions/blind/lists/batch_5.txt",
+   "Final_Project/sessions/coder_brief.md",
+   "Final_Project/sessions/coder_codebook_v1.1.md"
+  ],
+  "part_line_coverage_min": 1.0,
+  "parts_under_full_coverage": {},
+  "role": "coder_a",
+  "targets": 14,
+  "tool_uses": {
+   "Bash": 14,
+   "Read": 17,
+   "SubagentHandback": 1
+  },
+  "violations": {},
+  "writes_to_label_files": []
+ },
+ {
+  "batch": 6,
+  "labels_seen": 26,
+  "listing_or_search": [
+   "ls -la /Users/wang/CSE-216/Final_Project/sessions/blind/coder_a/"
+  ],
+  "model_requested": "opus",
+  "model_served": {
+   "claude-opus-5-5": 81
+  },
+  "order_problems": [],
+  "other_reads": [
+   "Final_Project/sessions/coder_codebook_v1.1.md"
+  ],
+  "part_line_coverage_min": 1.0,
+  "parts_under_full_coverage": {},
+  "role": "coder_a",
+  "targets": 26,
+  "tool_uses": {
+   "Bash": 27,
+   "Read": 27,
+   "SubagentHandback": 1
+  },
+  "violations": {},
+  "writes_to_label_files": []
+ },
+ {
+  "batch": 7,
+  "labels_seen": 22,
+  "listing_or_search": [],
+  "model_requested": "opus",
+  "model_served": {
+   "claude-opus-5-5": 67
+  },
+  "order_problems": [],
+  "other_reads": [
+   "Final_Project/sessions/blind/lists/batch_7.txt",
+   "Final_Project/sessions/coder_brief.md",
+   "Final_Project/sessions/coder_codebook_v1.1.md"
+  ],
+  "part_line_coverage_min": 1.0,
+  "parts_under_full_coverage": {},
+  "role": "coder_a",
+  "targets": 22,
+  "tool_uses": {
+   "Bash": 22,
+   "Read": 25,
+   "SubagentHandback": 1
+  },
+  "violations": {},
+  "writes_to_label_files": []
+ },
+ {
+  "batch": 8,
+  "labels_seen": 23,
+  "listing_or_search": [],
+  "model_requested": "opus",
+  "model_served": {
+   "claude-opus-5-5": 70
+  },
+  "order_problems": [],
+  "other_reads": [
+   "Final_Project/sessions/blind/lists/batch_8.txt",
+   "Final_Project/sessions/coder_brief.md",
+   "Final_Project/sessions/coder_codebook_v1.1.md"
+  ],
+  "part_line_coverage_min": 1.0,
+  "parts_under_full_coverage": {},
+  "role": "coder_a",
+  "targets": 23,
+  "tool_uses": {
+   "Bash": 23,
+   "Read": 26,
+   "SubagentHandback": 1
+  },
+  "violations": {},
+  "writes_to_label_files": []
+ },
+ {
+  "batch": 9,
+  "labels_seen": 22,
+  "listing_or_search": [],
+  "model_requested": "opus",
+  "model_served": {
+   "claude-opus-5-5": 70
+  },
+  "order_problems": [],
+  "other_reads": [
+   "Final_Project/sessions/blind/lists/batch_9.txt",
+   "Final_Project/sessions/coder_brief.md",
+   "Final_Project/sessions/coder_codebook_v1.1.md"
+  ],
+  "part_line_coverage_min": 1.0,
+  "parts_under_full_coverage": {},
+  "role": "coder_a",
+  "targets": 22,
+  "tool_uses": {
+   "Bash": 23,
+   "Read": 25,
+   "SubagentHandback": 1
+  },
+  "violations": {},
+  "writes_to_label_files": []
+ },
+ {
+  "batch": 10,
+  "labels_seen": 23,
+  "listing_or_search": [
+   "ls -la /Users/wang/CSE-216/Final_Project/sessions/blind/coder_a/"
+  ],
+  "model_requested": "opus",
+  "model_served": {
+   "claude-opus-5-5": 72
+  },
+  "order_problems": [],
+  "other_reads": [
+   "Final_Project/sessions/coder_brief.md",
+   "Final_Project/sessions/coder_codebook_v1.1.md"
+  ],
+  "part_line_coverage_min": 1.0,
+  "parts_under_full_coverage": {},
+  "role": "coder_a",
+  "targets": 23,
+  "tool_uses": {
+   "Bash": 25,
+   "Read": 25,
+   "SubagentHandback": 1
+  },
+  "violations": {},
+  "writes_to_label_files": []
+ },
+ {
+  "batch": 11,
+  "labels_seen": 20,
+  "listing_or_search": [
+   "ls -la /Users/wang/CSE-216/Final_Project/sessions/blind/coder_a/"
+  ],
+  "model_requested": "opus",
+  "model_served": {
+   "claude-opus-5-5": 44
+  },
+  "order_problems": [],
+  "other_reads": [],
+  "part_line_coverage_min": 1.0,
+  "parts_under_full_coverage": {},
+  "role": "coder_a",
+  "targets": 20,
+  "tool_uses": {
+   "Bash": 24,
+   "SubagentHandback": 1
+  },
+  "violations": {},
+  "writes_to_label_files": []
+ },
+ {
+  "batch": 12,
+  "labels_seen": 16,
+  "listing_or_search": [],
+  "model_requested": "opus",
+  "model_served": {
+   "claude-opus-5-5": 49
+  },
+  "order_problems": [],
+  "other_reads": [
+   "Final_Project/sessions/blind/lists/batch_12.txt",
+   "Final_Project/sessions/coder_brief.md",
+   "Final_Project/sessions/coder_codebook_v1.1.md"
+  ],
+  "part_line_coverage_min": 1.0,
+  "parts_under_full_coverage": {},
+  "role": "coder_a",
+  "targets": 16,
+  "tool_uses": {
+   "Bash": 16,
+   "Read": 19,
+   "SubagentHandback": 1
+  },
+  "violations": {},
+  "writes_to_label_files": []
+ },
+ {
+  "batch": 13,
+  "labels_seen": 21,
+  "listing_or_search": [],
+  "model_requested": "opus",
+  "model_served": {
+   "claude-opus-5-5": 67
+  },
+  "order_problems": [],
+  "other_reads": [
+   "Final_Project/sessions/blind/lists/batch_13.txt",
+   "Final_Project/sessions/coder_brief.md",
+   "Final_Project/sessions/coder_codebook_v1.1.md"
+  ],
+  "part_line_coverage_min": 1.0,
+  "parts_under_full_coverage": {},
+  "role": "coder_a",
+  "targets": 21,
+  "tool_uses": {
+   "Bash": 22,
+   "Read": 24,
+   "SubagentHandback": 1
+  },
+  "violations": {},
+  "writes_to_label_files": []
+ },
+ {
+  "batch": 14,
+  "labels_seen": 25,
+  "listing_or_search": [
+   "ls -la /Users/wang/CSE-216/Final_Project/sessions/blind/coder_a/"
+  ],
+  "model_requested": "opus",
+  "model_served": {
+   "claude-opus-5-5": 78
+  },
+  "order_problems": [],
+  "other_reads": [],
+  "part_line_coverage_min": 1.0,
+  "parts_under_full_coverage": {},
+  "role": "coder_a",
+  "targets": 25,
+  "tool_uses": {
+   "Bash": 52,
+   "SubagentHandback": 1
+  },
+  "violations": {},
+  "writes_to_label_files": []
+ },
+ {
+  "batch": 15,
+  "labels_seen": 13,
+  "listing_or_search": [
+   "ls -la /Users/wang/CSE-216/Final_Project/sessions/blind/coder_a/"
+  ],
+  "model_requested": "opus",
+  "model_served": {
+   "claude-opus-5-5": 43
+  },
+  "order_problems": [],
+  "other_reads": [
+   "Final_Project/sessions/coder_brief.md",
+   "Final_Project/sessions/coder_codebook_v1.1.md"
+  ],
+  "part_line_coverage_min": 1.0,
+  "parts_under_full_coverage": {},
+  "role": "coder_a",
+  "targets": 13,
+  "tool_uses": {
+   "Bash": 14,
+   "Read": 15,
+   "SubagentHandback": 1
+  },
+  "violations": {},
+  "writes_to_label_files": []
+ },
+ {
+  "batch": 0,
+  "labels_seen": 23,
+  "listing_or_search": [
+   "ls",
+   "ls coder_b 2>"
+  ],
+  "model_requested": "sonnet",
+  "model_served": {
+   "claude-sonnet-5-5": 74
+  },
+  "order_problems": [],
+  "other_reads": [
+   "Final_Project/sessions/coder_brief.md",
+   "Final_Project/sessions/coder_codebook_v1.1.md"
+  ],
+  "part_line_coverage_min": 1.0,
+  "parts_under_full_coverage": {},
+  "role": "coder_b",
+  "targets": 23,
+  "tool_uses": {
+   "Bash": 25,
+   "Read": 25,
+   "SubagentHandback": 1
+  },
+  "violations": {},
+  "writes_to_label_files": []
+ },
+ {
+  "batch": 1,
+  "labels_seen": 27,
+  "listing_or_search": [
+   "ls -la /Users/wang/CSE-216/Final_Project/sessions/blind/coder_b/ /Users/wang/CSE-216/Final_Project/sessions/blind/"
+  ],
+  "model_requested": "sonnet",
+  "model_served": {
+   "claude-sonnet-5-5": 87
+  },
+  "order_problems": [],
+  "other_reads": [
+   "Final_Project/sessions/blind/lists/batch_1.txt",
+   "Final_Project/sessions/coder_brief.md",
+   "Final_Project/sessions/coder_codebook_v1.1.md"
+  ],
+  "part_line_coverage_min": 1.0,
+  "parts_under_full_coverage": {},
+  "role": "coder_b",
+  "targets": 27,
+  "tool_uses": {
+   "Bash": 28,
+   "Read": 30,
+   "SubagentHandback": 1
+  },
+  "violations": {},
+  "writes_to_label_files": []
+ },
+ {
+  "batch": 2,
+  "labels_seen": 19,
+  "listing_or_search": [
+   "ls coder_b 2>"
+  ],
+  "model_requested": "sonnet",
+  "model_served": {
+   "claude-sonnet-5-5": 61
+  },
+  "order_problems": [],
+  "other_reads": [
+   "Final_Project/sessions/coder_brief.md",
+   "Final_Project/sessions/coder_codebook_v1.1.md"
+  ],
+  "part_line_coverage_min": 1.0,
+  "parts_under_full_coverage": {},
+  "role": "coder_b",
+  "targets": 19,
+  "tool_uses": {
+   "Bash": 21,
+   "Read": 21,
+   "SubagentHandback": 1
+  },
+  "violations": {},
+  "writes_to_label_files": []
+ },
+ {
+  "batch": 3,
+  "labels_seen": 22,
+  "listing_or_search": [
+   "ls -la /Users/wang/CSE-216/Final_Project/sessions/blind/coder_b/"
+  ],
+  "model_requested": "sonnet",
+  "model_served": {
+   "claude-sonnet-5-5": 71
+  },
+  "order_problems": [],
+  "other_reads": [
+   "Final_Project/sessions/coder_brief.md",
+   "Final_Project/sessions/coder_codebook_v1.1.md"
+  ],
+  "part_line_coverage_min": 1.0,
+  "parts_under_full_coverage": {},
+  "role": "coder_b",
+  "targets": 22,
+  "tool_uses": {
+   "Bash": 24,
+   "Read": 24,
+   "SubagentHandback": 1
+  },
+  "violations": {},
+  "writes_to_label_files": []
+ },
+ {
+  "batch": 4,
+  "labels_seen": 31,
+  "listing_or_search": [
+   "ls coder_b"
+  ],
+  "model_requested": "sonnet",
+  "model_served": {
+   "claude-sonnet-5-5": 99
+  },
+  "order_problems": [],
+  "other_reads": [
+   "Final_Project/sessions/coder_brief.md",
+   "Final_Project/sessions/coder_codebook_v1.1.md"
+  ],
+  "part_line_coverage_min": 1.0,
+  "parts_under_full_coverage": {},
+  "role": "coder_b",
+  "targets": 31,
+  "tool_uses": {
+   "Bash": 32,
+   "Read": 33,
+   "SubagentHandback": 1
+  },
+  "violations": {},
+  "writes_to_label_files": []
+ },
+ {
+  "batch": 5,
+  "labels_seen": 14,
+  "listing_or_search": [
+   "ls coder_b"
+  ],
+  "model_requested": "sonnet",
+  "model_served": {
+   "claude-sonnet-5-5": 35
+  },
+  "order_problems": [],
+  "other_reads": [
+   "Final_Project/sessions/coder_brief.md",
+   "Final_Project/sessions/coder_codebook_v1.1.md"
+  ],
+  "part_line_coverage_min": 1.0,
+  "parts_under_full_coverage": {},
+  "role": "coder_b",
+  "targets": 14,
+  "tool_uses": {
+   "Bash": 16,
+   "Read": 2,
+   "SubagentHandback": 1
+  },
+  "violations": {},
+  "writes_to_label_files": []
+ },
+ {
+  "batch": 6,
+  "labels_seen": 26,
+  "listing_or_search": [
+   "ls -la /Users/wang/CSE-216/Final_Project/sessions/blind/coder_b/"
+  ],
+  "model_requested": "sonnet",
+  "model_served": {
+   "claude-sonnet-5-5": 82
+  },
+  "order_problems": [],
+  "other_reads": [
+   "Final_Project/sessions/coder_brief.md",
+   "Final_Project/sessions/coder_codebook_v1.1.md"
+  ],
+  "part_line_coverage_min": 1.0,
+  "parts_under_full_coverage": {},
+  "role": "coder_b",
+  "targets": 26,
+  "tool_uses": {
+   "Bash": 27,
+   "Read": 28,
+   "SubagentHandback": 1
+  },
+  "violations": {},
+  "writes_to_label_files": []
+ },
+ {
+  "batch": 7,
+  "labels_seen": 22,
+  "listing_or_search": [
+   "ls coder_b"
+  ],
+  "model_requested": "sonnet",
+  "model_served": {
+   "claude-sonnet-5-5": 57
+  },
+  "order_problems": [],
+  "other_reads": [
+   "Final_Project/sessions/coder_brief.md",
+   "Final_Project/sessions/coder_codebook_v1.1.md"
+  ],
+  "part_line_coverage_min": 1.0,
+  "parts_under_full_coverage": {},
+  "role": "coder_b",
+  "targets": 22,
+  "tool_uses": {
+   "Bash": 25,
+   "Read": 8,
+   "SubagentHandback": 1
+  },
+  "violations": {},
+  "writes_to_label_files": []
+ },
+ {
+  "batch": 8,
+  "labels_seen": 23,
+  "listing_or_search": [
+   "ls coder_b",
+   "ls"
+  ],
+  "model_requested": "sonnet",
+  "model_served": {
+   "claude-sonnet-5-5": 73
+  },
+  "order_problems": [],
+  "other_reads": [
+   "Final_Project/sessions/coder_brief.md",
+   "Final_Project/sessions/coder_codebook_v1.1.md"
+  ],
+  "part_line_coverage_min": 1.0,
+  "parts_under_full_coverage": {},
+  "role": "coder_b",
+  "targets": 23,
+  "tool_uses": {
+   "Bash": 24,
+   "Read": 25,
+   "SubagentHandback": 1
+  },
+  "violations": {},
+  "writes_to_label_files": []
+ },
+ {
+  "batch": 9,
+  "labels_seen": 22,
+  "listing_or_search": [
+   "ls -la /Users/wang/CSE-216/Final_Project/sessions/blind/coder_b/",
+   "ls /Users/wang/CSE-216/Final_Project/sessions/blind/coder_b/"
+  ],
+  "model_requested": "sonnet",
+  "model_served": {
+   "claude-sonnet-5-5": 70
+  },
+  "order_problems": [],
+  "other_reads": [
+   "Final_Project/sessions/coder_brief.md",
+   "Final_Project/sessions/coder_codebook_v1.1.md"
+  ],
+  "part_line_coverage_min": 1.0,
+  "parts_under_full_coverage": {},
+  "role": "coder_b",
+  "targets": 22,
+  "tool_uses": {
+   "Bash": 24,
+   "Read": 24,
+   "SubagentHandback": 1
+  },
+  "violations": {},
+  "writes_to_label_files": []
+ },
+ {
+  "batch": 10,
+  "labels_seen": 23,
+  "listing_or_search": [
+   "ls coder_b"
+  ],
+  "model_requested": "sonnet",
+  "model_served": {
+   "claude-sonnet-5-5": 75
+  },
+  "order_problems": [],
+  "other_reads": [
+   "Final_Project/sessions/coder_brief.md",
+   "Final_Project/sessions/coder_codebook_v1.1.md"
+  ],
+  "part_line_coverage_min": 1.0,
+  "parts_under_full_coverage": {},
+  "role": "coder_b",
+  "targets": 23,
+  "tool_uses": {
+   "Bash": 25,
+   "Read": 25,
+   "SubagentHandback": 1
+  },
+  "violations": {},
+  "writes_to_label_files": []
+ },
+ {
+  "batch": 11,
+  "labels_seen": 20,
+  "listing_or_search": [
+   "ls coder_b"
+  ],
+  "model_requested": "sonnet",
+  "model_served": {
+   "claude-sonnet-5-5": 66
+  },
+  "order_problems": [],
+  "other_reads": [
+   "Final_Project/sessions/coder_brief.md",
+   "Final_Project/sessions/coder_codebook_v1.1.md"
+  ],
+  "part_line_coverage_min": 1.0,
+  "parts_under_full_coverage": {},
+  "role": "coder_b",
+  "targets": 20,
+  "tool_uses": {
+   "Bash": 21,
+   "Read": 22,
+   "SubagentHandback": 1
+  },
+  "violations": {},
+  "writes_to_label_files": []
+ },
+ {
+  "batch": 12,
+  "labels_seen": 16,
+  "listing_or_search": [
+   "ls coder_b",
+   "ls"
+  ],
+  "model_requested": "sonnet",
+  "model_served": {
+   "claude-sonnet-5-5": 52
+  },
+  "order_problems": [],
+  "other_reads": [
+   "Final_Project/sessions/coder_brief.md",
+   "Final_Project/sessions/coder_codebook_v1.1.md"
+  ],
+  "part_line_coverage_min": 1.0,
+  "parts_under_full_coverage": {},
+  "role": "coder_b",
+  "targets": 16,
+  "tool_uses": {
+   "Bash": 17,
+   "Read": 18,
+   "SubagentHandback": 1
+  },
+  "violations": {},
+  "writes_to_label_files": []
+ },
+ {
+  "batch": 13,
+  "labels_seen": 21,
+  "listing_or_search": [
+   "ls -la /Users/wang/CSE-216/Final_Project/sessions/blind/coder_b/"
+  ],
+  "model_requested": "sonnet",
+  "model_served": {
+   "claude-sonnet-5-5": 67
+  },
+  "order_problems": [],
+  "other_reads": [
+   "Final_Project/sessions/coder_brief.md",
+   "Final_Project/sessions/coder_codebook_v1.1.md"
+  ],
+  "part_line_coverage_min": 1.0,
+  "parts_under_full_coverage": {},
+  "role": "coder_b",
+  "targets": 21,
+  "tool_uses": {
+   "Bash": 22,
+   "Read": 23,
+   "SubagentHandback": 1
+  },
+  "violations": {},
+  "writes_to_label_files": []
+ },
+ {
+  "batch": 14,
+  "labels_seen": 25,
+  "listing_or_search": [
+   "ls coder_b"
+  ],
+  "model_requested": "sonnet",
+  "model_served": {
+   "claude-sonnet-5-5": 79
+  },
+  "order_problems": [],
+  "other_reads": [
+   "Final_Project/sessions/coder_brief.md",
+   "Final_Project/sessions/coder_codebook_v1.1.md"
+  ],
+  "part_line_coverage_min": 1.0,
+  "parts_under_full_coverage": {},
+  "role": "coder_b",
+  "targets": 25,
+  "tool_uses": {
+   "Bash": 26,
+   "Read": 27,
+   "SubagentHandback": 1
+  },
+  "violations": {},
+  "writes_to_label_files": []
+ },
+ {
+  "batch": 15,
+  "labels_seen": 13,
+  "listing_or_search": [
+   "ls coder_b"
+  ],
+  "model_requested": "sonnet",
+  "model_served": {
+   "claude-sonnet-5-5": 32
+  },
+  "order_problems": [],
+  "other_reads": [
+   "Final_Project/sessions/coder_brief.md",
+   "Final_Project/sessions/coder_codebook_v1.1.md"
+  ],
+  "part_line_coverage_min": 1.0,
+  "parts_under_full_coverage": {},
+  "role": "coder_b",
+  "targets": 13,
+  "tool_uses": {
+   "Bash": 15,
+   "Read": 2,
+   "SubagentHandback": 1
+  },
+  "violations": {},
+  "writes_to_label_files": []
+ }
+]
