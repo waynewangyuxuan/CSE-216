@@ -1,0 +1,80 @@
+{
+ "n_windows": 100,
+ "coverage_not_indeterminate": 0.77,
+ "by_category": {
+  "SURRENDER_LEANING": 35,
+  "INDETERMINATE": 23,
+  "OFFLOADING": 19,
+  "NEUTRAL_MECHANICAL": 12,
+  "AUGMENTING": 11
+ },
+ "by_category_strength": {
+  "AUGMENTING/moderate": 5,
+  "AUGMENTING/weak": 6,
+  "INDETERMINATE/-": 23,
+  "NEUTRAL_MECHANICAL/moderate": 12,
+  "OFFLOADING/moderate": 17,
+  "OFFLOADING/weak": 2,
+  "SURRENDER_LEANING/moderate": 16,
+  "SURRENDER_LEANING/strong": 1,
+  "SURRENDER_LEANING/weak": 18
+ },
+ "by_rule": {
+  "R00": 1,
+  "R01": 12,
+  "R02": 4,
+  "R03": 6,
+  "R05": 2,
+  "R06": 9,
+  "R07": 1,
+  "R08": 7,
+  "R09": 8,
+  "R10": 2,
+  "R11": 9,
+  "R12": 18,
+  "R13": 5,
+  "R14": 2,
+  "R99": 14
+ },
+ "by_dataset": {
+  "NIRVANA": {
+   "n": 70,
+   "coverage_not_indeterminate": 0.771,
+   "by_category": {
+    "SURRENDER_LEANING": 20,
+    "INDETERMINATE": 16,
+    "OFFLOADING": 15,
+    "NEUTRAL_MECHANICAL": 10,
+    "AUGMENTING": 9
+   }
+  },
+  "WildChat": {
+   "n": 30,
+   "coverage_not_indeterminate": 0.767,
+   "by_category": {
+    "SURRENDER_LEANING": 15,
+    "INDETERMINATE": 7,
+    "OFFLOADING": 4,
+    "AUGMENTING": 2,
+    "NEUTRAL_MECHANICAL": 2
+   }
+  }
+ },
+ "by_coverage": {
+  "C0": {
+   "n": 8,
+   "coverage_not_indeterminate": 0.25
+  },
+  "C1": {
+   "n": 57,
+   "coverage_not_indeterminate": 0.842
+  },
+  "C2": {
+   "n": 35,
+   "coverage_not_indeterminate": 0.771
+  }
+ },
+ "unrecognized": [
+  "NIRVANA-e06-t02"
+ ]
+}

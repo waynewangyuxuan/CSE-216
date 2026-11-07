@@ -1,0 +1,14 @@
+{
+ "records": 837989,
+ "toxic": 0,
+ "non_english": 359491,
+ "under_2_user_turns": 321381,
+ "no_pair": 0,
+ "duplicate_hash": 4,
+ "duplicate_first_turn": 17377,
+ "eligible": 139736,
+ "eligible_with_contact_pattern_masked": 4014,
+ "eligible_used_before": 72,
+ "used_session_ids_found": 74,
+ "used_session_ids_matched": 72
+}

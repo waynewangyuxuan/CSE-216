@@ -1,0 +1,999 @@
+{
+ "NIRVANA:e01": {
+  "n_windows": 3,
+  "sequence": [
+   "AUGMENTING",
+   "INDETERMINATE",
+   "OFFLOADING"
+  ],
+  "switches": 2,
+  "switches_excluding_indeterminate": 1,
+  "transitions": {
+   "AUGMENTING->INDETERMINATE": 1,
+   "INDETERMINATE->OFFLOADING": 1
+  },
+  "proportions": {
+   "SURRENDER_LEANING": 0.0,
+   "OFFLOADING": 0.333,
+   "AUGMENTING": 0.333,
+   "NEUTRAL_MECHANICAL": 0.0,
+   "INDETERMINATE": 0.333
+  },
+  "first_surrender_index": null,
+  "first_surrender_relative": null,
+  "turns_observed": [
+   2,
+   3,
+   4
+  ]
+ },
+ "NIRVANA:e05": {
+  "n_windows": 3,
+  "sequence": [
+   "SURRENDER_LEANING",
+   "SURRENDER_LEANING",
+   "SURRENDER_LEANING"
+  ],
+  "switches": 0,
+  "switches_excluding_indeterminate": 0,
+  "transitions": {
+   "SURRENDER_LEANING->SURRENDER_LEANING": 2
+  },
+  "proportions": {
+   "SURRENDER_LEANING": 1.0,
+   "OFFLOADING": 0.0,
+   "AUGMENTING": 0.0,
+   "NEUTRAL_MECHANICAL": 0.0,
+   "INDETERMINATE": 0.0
+  },
+  "first_surrender_index": 1,
+  "first_surrender_relative": 0.0,
+  "turns_observed": [
+   1,
+   2,
+   3
+  ]
+ },
+ "NIRVANA:e06": {
+  "n_windows": 3,
+  "sequence": [
+   "SURRENDER_LEANING",
+   "INDETERMINATE",
+   "AUGMENTING"
+  ],
+  "switches": 2,
+  "switches_excluding_indeterminate": 1,
+  "transitions": {
+   "INDETERMINATE->AUGMENTING": 1,
+   "SURRENDER_LEANING->INDETERMINATE": 1
+  },
+  "proportions": {
+   "SURRENDER_LEANING": 0.333,
+   "OFFLOADING": 0.0,
+   "AUGMENTING": 0.333,
+   "NEUTRAL_MECHANICAL": 0.0,
+   "INDETERMINATE": 0.333
+  },
+  "first_surrender_index": 1,
+  "first_surrender_relative": 0.0,
+  "turns_observed": [
+   1,
+   2,
+   3
+  ]
+ },
+ "NIRVANA:e19": {
+  "n_windows": 3,
+  "sequence": [
+   "NEUTRAL_MECHANICAL",
+   "SURRENDER_LEANING",
+   "OFFLOADING"
+  ],
+  "switches": 2,
+  "switches_excluding_indeterminate": 2,
+  "transitions": {
+   "NEUTRAL_MECHANICAL->SURRENDER_LEANING": 1,
+   "SURRENDER_LEANING->OFFLOADING": 1
+  },
+  "proportions": {
+   "SURRENDER_LEANING": 0.333,
+   "OFFLOADING": 0.333,
+   "AUGMENTING": 0.0,
+   "NEUTRAL_MECHANICAL": 0.333,
+   "INDETERMINATE": 0.0
+  },
+  "first_surrender_index": 2,
+  "first_surrender_relative": 0.5,
+  "turns_observed": [
+   2,
+   3,
+   4
+  ]
+ },
+ "NIRVANA:e20": {
+  "n_windows": 3,
+  "sequence": [
+   "SURRENDER_LEANING",
+   "AUGMENTING",
+   "SURRENDER_LEANING"
+  ],
+  "switches": 2,
+  "switches_excluding_indeterminate": 2,
+  "transitions": {
+   "AUGMENTING->SURRENDER_LEANING": 1,
+   "SURRENDER_LEANING->AUGMENTING": 1
+  },
+  "proportions": {
+   "SURRENDER_LEANING": 0.667,
+   "OFFLOADING": 0.0,
+   "AUGMENTING": 0.333,
+   "NEUTRAL_MECHANICAL": 0.0,
+   "INDETERMINATE": 0.0
+  },
+  "first_surrender_index": 1,
+  "first_surrender_relative": 0.0,
+  "turns_observed": [
+   1,
+   2,
+   3
+  ]
+ },
+ "NIRVANA:e24": {
+  "n_windows": 3,
+  "sequence": [
+   "OFFLOADING",
+   "INDETERMINATE",
+   "INDETERMINATE"
+  ],
+  "switches": 1,
+  "switches_excluding_indeterminate": 0,
+  "transitions": {
+   "INDETERMINATE->INDETERMINATE": 1,
+   "OFFLOADING->INDETERMINATE": 1
+  },
+  "proportions": {
+   "SURRENDER_LEANING": 0.0,
+   "OFFLOADING": 0.333,
+   "AUGMENTING": 0.0,
+   "NEUTRAL_MECHANICAL": 0.0,
+   "INDETERMINATE": 0.667
+  },
+  "first_surrender_index": null,
+  "first_surrender_relative": null,
+  "turns_observed": [
+   1,
+   2,
+   3
+  ]
+ },
+ "NIRVANA:e26": {
+  "n_windows": 3,
+  "sequence": [
+   "AUGMENTING",
+   "SURRENDER_LEANING",
+   "NEUTRAL_MECHANICAL"
+  ],
+  "switches": 2,
+  "switches_excluding_indeterminate": 2,
+  "transitions": {
+   "AUGMENTING->SURRENDER_LEANING": 1,
+   "SURRENDER_LEANING->NEUTRAL_MECHANICAL": 1
+  },
+  "proportions": {
+   "SURRENDER_LEANING": 0.333,
+   "OFFLOADING": 0.0,
+   "AUGMENTING": 0.333,
+   "NEUTRAL_MECHANICAL": 0.333,
+   "INDETERMINATE": 0.0
+  },
+  "first_surrender_index": 2,
+  "first_surrender_relative": 0.5,
+  "turns_observed": [
+   9,
+   10,
+   11
+  ]
+ },
+ "NIRVANA:e27": {
+  "n_windows": 2,
+  "sequence": [
+   "SURRENDER_LEANING",
+   "OFFLOADING"
+  ],
+  "switches": 1,
+  "switches_excluding_indeterminate": 1,
+  "transitions": {
+   "SURRENDER_LEANING->OFFLOADING": 1
+  },
+  "proportions": {
+   "SURRENDER_LEANING": 0.5,
+   "OFFLOADING": 0.5,
+   "AUGMENTING": 0.0,
+   "NEUTRAL_MECHANICAL": 0.0,
+   "INDETERMINATE": 0.0
+  },
+  "first_surrender_index": 1,
+  "first_surrender_relative": 0.0,
+  "turns_observed": [
+   1,
+   2
+  ]
+ },
+ "NIRVANA:e29": {
+  "n_windows": 3,
+  "sequence": [
+   "AUGMENTING",
+   "NEUTRAL_MECHANICAL",
+   "OFFLOADING"
+  ],
+  "switches": 2,
+  "switches_excluding_indeterminate": 2,
+  "transitions": {
+   "AUGMENTING->NEUTRAL_MECHANICAL": 1,
+   "NEUTRAL_MECHANICAL->OFFLOADING": 1
+  },
+  "proportions": {
+   "SURRENDER_LEANING": 0.0,
+   "OFFLOADING": 0.333,
+   "AUGMENTING": 0.333,
+   "NEUTRAL_MECHANICAL": 0.333,
+   "INDETERMINATE": 0.0
+  },
+  "first_surrender_index": null,
+  "first_surrender_relative": null,
+  "turns_observed": [
+   6,
+   7,
+   8
+  ]
+ },
+ "NIRVANA:e37": {
+  "n_windows": 3,
+  "sequence": [
+   "SURRENDER_LEANING",
+   "OFFLOADING",
+   "SURRENDER_LEANING"
+  ],
+  "switches": 2,
+  "switches_excluding_indeterminate": 2,
+  "transitions": {
+   "OFFLOADING->SURRENDER_LEANING": 1,
+   "SURRENDER_LEANING->OFFLOADING": 1
+  },
+  "proportions": {
+   "SURRENDER_LEANING": 0.667,
+   "OFFLOADING": 0.333,
+   "AUGMENTING": 0.0,
+   "NEUTRAL_MECHANICAL": 0.0,
+   "INDETERMINATE": 0.0
+  },
+  "first_surrender_index": 1,
+  "first_surrender_relative": 0.0,
+  "turns_observed": [
+   1,
+   2,
+   3
+  ]
+ },
+ "NIRVANA:e41": {
+  "n_windows": 3,
+  "sequence": [
+   "SURRENDER_LEANING",
+   "SURRENDER_LEANING",
+   "SURRENDER_LEANING"
+  ],
+  "switches": 0,
+  "switches_excluding_indeterminate": 0,
+  "transitions": {
+   "SURRENDER_LEANING->SURRENDER_LEANING": 2
+  },
+  "proportions": {
+   "SURRENDER_LEANING": 1.0,
+   "OFFLOADING": 0.0,
+   "AUGMENTING": 0.0,
+   "NEUTRAL_MECHANICAL": 0.0,
+   "INDETERMINATE": 0.0
+  },
+  "first_surrender_index": 1,
+  "first_surrender_relative": 0.0,
+  "turns_observed": [
+   2,
+   3,
+   4
+  ]
+ },
+ "NIRVANA:e42": {
+  "n_windows": 3,
+  "sequence": [
+   "NEUTRAL_MECHANICAL",
+   "NEUTRAL_MECHANICAL",
+   "NEUTRAL_MECHANICAL"
+  ],
+  "switches": 0,
+  "switches_excluding_indeterminate": 0,
+  "transitions": {
+   "NEUTRAL_MECHANICAL->NEUTRAL_MECHANICAL": 2
+  },
+  "proportions": {
+   "SURRENDER_LEANING": 0.0,
+   "OFFLOADING": 0.0,
+   "AUGMENTING": 0.0,
+   "NEUTRAL_MECHANICAL": 1.0,
+   "INDETERMINATE": 0.0
+  },
+  "first_surrender_index": null,
+  "first_surrender_relative": null,
+  "turns_observed": [
+   5,
+   6,
+   7
+  ]
+ },
+ "NIRVANA:e43": {
+  "n_windows": 3,
+  "sequence": [
+   "INDETERMINATE",
+   "INDETERMINATE",
+   "NEUTRAL_MECHANICAL"
+  ],
+  "switches": 1,
+  "switches_excluding_indeterminate": 0,
+  "transitions": {
+   "INDETERMINATE->INDETERMINATE": 1,
+   "INDETERMINATE->NEUTRAL_MECHANICAL": 1
+  },
+  "proportions": {
+   "SURRENDER_LEANING": 0.0,
+   "OFFLOADING": 0.0,
+   "AUGMENTING": 0.0,
+   "NEUTRAL_MECHANICAL": 0.333,
+   "INDETERMINATE": 0.667
+  },
+  "first_surrender_index": null,
+  "first_surrender_relative": null,
+  "turns_observed": [
+   1,
+   2,
+   3
+  ]
+ },
+ "NIRVANA:e46": {
+  "n_windows": 2,
+  "sequence": [
+   "INDETERMINATE",
+   "INDETERMINATE"
+  ],
+  "switches": 0,
+  "switches_excluding_indeterminate": 0,
+  "transitions": {
+   "INDETERMINATE->INDETERMINATE": 1
+  },
+  "proportions": {
+   "SURRENDER_LEANING": 0.0,
+   "OFFLOADING": 0.0,
+   "AUGMENTING": 0.0,
+   "NEUTRAL_MECHANICAL": 0.0,
+   "INDETERMINATE": 1.0
+  },
+  "first_surrender_index": null,
+  "first_surrender_relative": null,
+  "turns_observed": [
+   1,
+   2
+  ]
+ },
+ "NIRVANA:e51": {
+  "n_windows": 2,
+  "sequence": [
+   "SURRENDER_LEANING",
+   "OFFLOADING"
+  ],
+  "switches": 1,
+  "switches_excluding_indeterminate": 1,
+  "transitions": {
+   "SURRENDER_LEANING->OFFLOADING": 1
+  },
+  "proportions": {
+   "SURRENDER_LEANING": 0.5,
+   "OFFLOADING": 0.5,
+   "AUGMENTING": 0.0,
+   "NEUTRAL_MECHANICAL": 0.0,
+   "INDETERMINATE": 0.0
+  },
+  "first_surrender_index": 1,
+  "first_surrender_relative": 0.0,
+  "turns_observed": [
+   1,
+   2
+  ]
+ },
+ "NIRVANA:e53": {
+  "n_windows": 2,
+  "sequence": [
+   "INDETERMINATE",
+   "SURRENDER_LEANING"
+  ],
+  "switches": 1,
+  "switches_excluding_indeterminate": 0,
+  "transitions": {
+   "INDETERMINATE->SURRENDER_LEANING": 1
+  },
+  "proportions": {
+   "SURRENDER_LEANING": 0.5,
+   "OFFLOADING": 0.0,
+   "AUGMENTING": 0.0,
+   "NEUTRAL_MECHANICAL": 0.0,
+   "INDETERMINATE": 0.5
+  },
+  "first_surrender_index": 2,
+  "first_surrender_relative": 1.0,
+  "turns_observed": [
+   1,
+   2
+  ]
+ },
+ "NIRVANA:e54": {
+  "n_windows": 3,
+  "sequence": [
+   "INDETERMINATE",
+   "AUGMENTING",
+   "AUGMENTING"
+  ],
+  "switches": 1,
+  "switches_excluding_indeterminate": 0,
+  "transitions": {
+   "AUGMENTING->AUGMENTING": 1,
+   "INDETERMINATE->AUGMENTING": 1
+  },
+  "proportions": {
+   "SURRENDER_LEANING": 0.0,
+   "OFFLOADING": 0.0,
+   "AUGMENTING": 0.667,
+   "NEUTRAL_MECHANICAL": 0.0,
+   "INDETERMINATE": 0.333
+  },
+  "first_surrender_index": null,
+  "first_surrender_relative": null,
+  "turns_observed": [
+   1,
+   2,
+   3
+  ]
+ },
+ "NIRVANA:e55": {
+  "n_windows": 3,
+  "sequence": [
+   "SURRENDER_LEANING",
+   "NEUTRAL_MECHANICAL",
+   "SURRENDER_LEANING"
+  ],
+  "switches": 2,
+  "switches_excluding_indeterminate": 2,
+  "transitions": {
+   "NEUTRAL_MECHANICAL->SURRENDER_LEANING": 1,
+   "SURRENDER_LEANING->NEUTRAL_MECHANICAL": 1
+  },
+  "proportions": {
+   "SURRENDER_LEANING": 0.667,
+   "OFFLOADING": 0.0,
+   "AUGMENTING": 0.0,
+   "NEUTRAL_MECHANICAL": 0.333,
+   "INDETERMINATE": 0.0
+  },
+  "first_surrender_index": 1,
+  "first_surrender_relative": 0.0,
+  "turns_observed": [
+   1,
+   2,
+   3
+  ]
+ },
+ "NIRVANA:e56": {
+  "n_windows": 2,
+  "sequence": [
+   "OFFLOADING",
+   "INDETERMINATE"
+  ],
+  "switches": 1,
+  "switches_excluding_indeterminate": 0,
+  "transitions": {
+   "OFFLOADING->INDETERMINATE": 1
+  },
+  "proportions": {
+   "SURRENDER_LEANING": 0.0,
+   "OFFLOADING": 0.5,
+   "AUGMENTING": 0.0,
+   "NEUTRAL_MECHANICAL": 0.0,
+   "INDETERMINATE": 0.5
+  },
+  "first_surrender_index": null,
+  "first_surrender_relative": null,
+  "turns_observed": [
+   1,
+   2
+  ]
+ },
+ "NIRVANA:e58": {
+  "n_windows": 3,
+  "sequence": [
+   "NEUTRAL_MECHANICAL",
+   "OFFLOADING",
+   "INDETERMINATE"
+  ],
+  "switches": 2,
+  "switches_excluding_indeterminate": 1,
+  "transitions": {
+   "NEUTRAL_MECHANICAL->OFFLOADING": 1,
+   "OFFLOADING->INDETERMINATE": 1
+  },
+  "proportions": {
+   "SURRENDER_LEANING": 0.0,
+   "OFFLOADING": 0.333,
+   "AUGMENTING": 0.0,
+   "NEUTRAL_MECHANICAL": 0.333,
+   "INDETERMINATE": 0.333
+  },
+  "first_surrender_index": null,
+  "first_surrender_relative": null,
+  "turns_observed": [
+   8,
+   9,
+   10
+  ]
+ },
+ "NIRVANA:e60": {
+  "n_windows": 3,
+  "sequence": [
+   "OFFLOADING",
+   "OFFLOADING",
+   "AUGMENTING"
+  ],
+  "switches": 1,
+  "switches_excluding_indeterminate": 1,
+  "transitions": {
+   "OFFLOADING->AUGMENTING": 1,
+   "OFFLOADING->OFFLOADING": 1
+  },
+  "proportions": {
+   "SURRENDER_LEANING": 0.0,
+   "OFFLOADING": 0.667,
+   "AUGMENTING": 0.333,
+   "NEUTRAL_MECHANICAL": 0.0,
+   "INDETERMINATE": 0.0
+  },
+  "first_surrender_index": null,
+  "first_surrender_relative": null,
+  "turns_observed": [
+   2,
+   3,
+   4
+  ]
+ },
+ "NIRVANA:e61": {
+  "n_windows": 3,
+  "sequence": [
+   "OFFLOADING",
+   "INDETERMINATE",
+   "INDETERMINATE"
+  ],
+  "switches": 1,
+  "switches_excluding_indeterminate": 0,
+  "transitions": {
+   "INDETERMINATE->INDETERMINATE": 1,
+   "OFFLOADING->INDETERMINATE": 1
+  },
+  "proportions": {
+   "SURRENDER_LEANING": 0.0,
+   "OFFLOADING": 0.333,
+   "AUGMENTING": 0.0,
+   "NEUTRAL_MECHANICAL": 0.0,
+   "INDETERMINATE": 0.667
+  },
+  "first_surrender_index": null,
+  "first_surrender_relative": null,
+  "turns_observed": [
+   5,
+   6,
+   7
+  ]
+ },
+ "NIRVANA:e63": {
+  "n_windows": 2,
+  "sequence": [
+   "AUGMENTING",
+   "OFFLOADING"
+  ],
+  "switches": 1,
+  "switches_excluding_indeterminate": 1,
+  "transitions": {
+   "AUGMENTING->OFFLOADING": 1
+  },
+  "proportions": {
+   "SURRENDER_LEANING": 0.0,
+   "OFFLOADING": 0.5,
+   "AUGMENTING": 0.5,
+   "NEUTRAL_MECHANICAL": 0.0,
+   "INDETERMINATE": 0.0
+  },
+  "first_surrender_index": null,
+  "first_surrender_relative": null,
+  "turns_observed": [
+   1,
+   2
+  ]
+ },
+ "NIRVANA:e70": {
+  "n_windows": 3,
+  "sequence": [
+   "OFFLOADING",
+   "SURRENDER_LEANING",
+   "SURRENDER_LEANING"
+  ],
+  "switches": 1,
+  "switches_excluding_indeterminate": 1,
+  "transitions": {
+   "OFFLOADING->SURRENDER_LEANING": 1,
+   "SURRENDER_LEANING->SURRENDER_LEANING": 1
+  },
+  "proportions": {
+   "SURRENDER_LEANING": 0.667,
+   "OFFLOADING": 0.333,
+   "AUGMENTING": 0.0,
+   "NEUTRAL_MECHANICAL": 0.0,
+   "INDETERMINATE": 0.0
+  },
+  "first_surrender_index": 2,
+  "first_surrender_relative": 0.5,
+  "turns_observed": [
+   5,
+   6,
+   7
+  ]
+ },
+ "NIRVANA:e71": {
+  "n_windows": 2,
+  "sequence": [
+   "NEUTRAL_MECHANICAL",
+   "OFFLOADING"
+  ],
+  "switches": 1,
+  "switches_excluding_indeterminate": 1,
+  "transitions": {
+   "NEUTRAL_MECHANICAL->OFFLOADING": 1
+  },
+  "proportions": {
+   "SURRENDER_LEANING": 0.0,
+   "OFFLOADING": 0.5,
+   "AUGMENTING": 0.0,
+   "NEUTRAL_MECHANICAL": 0.5,
+   "INDETERMINATE": 0.0
+  },
+  "first_surrender_index": null,
+  "first_surrender_relative": null,
+  "turns_observed": [
+   1,
+   2
+  ]
+ },
+ "NIRVANA:e75": {
+  "n_windows": 2,
+  "sequence": [
+   "INDETERMINATE",
+   "INDETERMINATE"
+  ],
+  "switches": 0,
+  "switches_excluding_indeterminate": 0,
+  "transitions": {
+   "INDETERMINATE->INDETERMINATE": 1
+  },
+  "proportions": {
+   "SURRENDER_LEANING": 0.0,
+   "OFFLOADING": 0.0,
+   "AUGMENTING": 0.0,
+   "NEUTRAL_MECHANICAL": 0.0,
+   "INDETERMINATE": 1.0
+  },
+  "first_surrender_index": null,
+  "first_surrender_relative": null,
+  "turns_observed": [
+   1,
+   2
+  ]
+ },
+ "WildChat:0685972d7031": {
+  "n_windows": 3,
+  "sequence": [
+   "OFFLOADING",
+   "OFFLOADING",
+   "OFFLOADING"
+  ],
+  "switches": 0,
+  "switches_excluding_indeterminate": 0,
+  "transitions": {
+   "OFFLOADING->OFFLOADING": 2
+  },
+  "proportions": {
+   "SURRENDER_LEANING": 0.0,
+   "OFFLOADING": 1.0,
+   "AUGMENTING": 0.0,
+   "NEUTRAL_MECHANICAL": 0.0,
+   "INDETERMINATE": 0.0
+  },
+  "first_surrender_index": null,
+  "first_surrender_relative": null,
+  "turns_observed": [
+   1,
+   2,
+   3
+  ]
+ },
+ "WildChat:0abcf1070c03": {
+  "n_windows": 3,
+  "sequence": [
+   "SURRENDER_LEANING",
+   "SURRENDER_LEANING",
+   "INDETERMINATE"
+  ],
+  "switches": 1,
+  "switches_excluding_indeterminate": 0,
+  "transitions": {
+   "SURRENDER_LEANING->INDETERMINATE": 1,
+   "SURRENDER_LEANING->SURRENDER_LEANING": 1
+  },
+  "proportions": {
+   "SURRENDER_LEANING": 0.667,
+   "OFFLOADING": 0.0,
+   "AUGMENTING": 0.0,
+   "NEUTRAL_MECHANICAL": 0.0,
+   "INDETERMINATE": 0.333
+  },
+  "first_surrender_index": 1,
+  "first_surrender_relative": 0.0,
+  "turns_observed": [
+   1,
+   2,
+   3
+  ]
+ },
+ "WildChat:1bcd99f673a7": {
+  "n_windows": 2,
+  "sequence": [
+   "SURRENDER_LEANING",
+   "INDETERMINATE"
+  ],
+  "switches": 1,
+  "switches_excluding_indeterminate": 0,
+  "transitions": {
+   "SURRENDER_LEANING->INDETERMINATE": 1
+  },
+  "proportions": {
+   "SURRENDER_LEANING": 0.5,
+   "OFFLOADING": 0.0,
+   "AUGMENTING": 0.0,
+   "NEUTRAL_MECHANICAL": 0.0,
+   "INDETERMINATE": 0.5
+  },
+  "first_surrender_index": 1,
+  "first_surrender_relative": 0.0,
+  "turns_observed": [
+   1,
+   2
+  ]
+ },
+ "WildChat:2d9abc984de9": {
+  "n_windows": 2,
+  "sequence": [
+   "INDETERMINATE",
+   "AUGMENTING"
+  ],
+  "switches": 1,
+  "switches_excluding_indeterminate": 0,
+  "transitions": {
+   "INDETERMINATE->AUGMENTING": 1
+  },
+  "proportions": {
+   "SURRENDER_LEANING": 0.0,
+   "OFFLOADING": 0.0,
+   "AUGMENTING": 0.5,
+   "NEUTRAL_MECHANICAL": 0.0,
+   "INDETERMINATE": 0.5
+  },
+  "first_surrender_index": null,
+  "first_surrender_relative": null,
+  "turns_observed": [
+   1,
+   2
+  ]
+ },
+ "WildChat:30f7e79715c8": {
+  "n_windows": 3,
+  "sequence": [
+   "SURRENDER_LEANING",
+   "AUGMENTING",
+   "SURRENDER_LEANING"
+  ],
+  "switches": 2,
+  "switches_excluding_indeterminate": 2,
+  "transitions": {
+   "AUGMENTING->SURRENDER_LEANING": 1,
+   "SURRENDER_LEANING->AUGMENTING": 1
+  },
+  "proportions": {
+   "SURRENDER_LEANING": 0.667,
+   "OFFLOADING": 0.0,
+   "AUGMENTING": 0.333,
+   "NEUTRAL_MECHANICAL": 0.0,
+   "INDETERMINATE": 0.0
+  },
+  "first_surrender_index": 1,
+  "first_surrender_relative": 0.0,
+  "turns_observed": [
+   1,
+   2,
+   3
+  ]
+ },
+ "WildChat:56e6d87d4326": {
+  "n_windows": 3,
+  "sequence": [
+   "OFFLOADING",
+   "NEUTRAL_MECHANICAL",
+   "INDETERMINATE"
+  ],
+  "switches": 2,
+  "switches_excluding_indeterminate": 1,
+  "transitions": {
+   "NEUTRAL_MECHANICAL->INDETERMINATE": 1,
+   "OFFLOADING->NEUTRAL_MECHANICAL": 1
+  },
+  "proportions": {
+   "SURRENDER_LEANING": 0.0,
+   "OFFLOADING": 0.333,
+   "AUGMENTING": 0.0,
+   "NEUTRAL_MECHANICAL": 0.333,
+   "INDETERMINATE": 0.333
+  },
+  "first_surrender_index": null,
+  "first_surrender_relative": null,
+  "turns_observed": [
+   1,
+   2,
+   3
+  ]
+ },
+ "WildChat:62387a055143": {
+  "n_windows": 3,
+  "sequence": [
+   "INDETERMINATE",
+   "SURRENDER_LEANING",
+   "SURRENDER_LEANING"
+  ],
+  "switches": 1,
+  "switches_excluding_indeterminate": 0,
+  "transitions": {
+   "INDETERMINATE->SURRENDER_LEANING": 1,
+   "SURRENDER_LEANING->SURRENDER_LEANING": 1
+  },
+  "proportions": {
+   "SURRENDER_LEANING": 0.667,
+   "OFFLOADING": 0.0,
+   "AUGMENTING": 0.0,
+   "NEUTRAL_MECHANICAL": 0.0,
+   "INDETERMINATE": 0.333
+  },
+  "first_surrender_index": 2,
+  "first_surrender_relative": 0.5,
+  "turns_observed": [
+   1,
+   2,
+   3
+  ]
+ },
+ "WildChat:7666be57e1d7": {
+  "n_windows": 3,
+  "sequence": [
+   "SURRENDER_LEANING",
+   "SURRENDER_LEANING",
+   "SURRENDER_LEANING"
+  ],
+  "switches": 0,
+  "switches_excluding_indeterminate": 0,
+  "transitions": {
+   "SURRENDER_LEANING->SURRENDER_LEANING": 2
+  },
+  "proportions": {
+   "SURRENDER_LEANING": 1.0,
+   "OFFLOADING": 0.0,
+   "AUGMENTING": 0.0,
+   "NEUTRAL_MECHANICAL": 0.0,
+   "INDETERMINATE": 0.0
+  },
+  "first_surrender_index": 1,
+  "first_surrender_relative": 0.0,
+  "turns_observed": [
+   1,
+   2,
+   3
+  ]
+ },
+ "WildChat:7ce4215c67a9": {
+  "n_windows": 2,
+  "sequence": [
+   "NEUTRAL_MECHANICAL",
+   "INDETERMINATE"
+  ],
+  "switches": 1,
+  "switches_excluding_indeterminate": 0,
+  "transitions": {
+   "NEUTRAL_MECHANICAL->INDETERMINATE": 1
+  },
+  "proportions": {
+   "SURRENDER_LEANING": 0.0,
+   "OFFLOADING": 0.0,
+   "AUGMENTING": 0.0,
+   "NEUTRAL_MECHANICAL": 0.5,
+   "INDETERMINATE": 0.5
+  },
+  "first_surrender_index": null,
+  "first_surrender_relative": null,
+  "turns_observed": [
+   1,
+   2
+  ]
+ },
+ "WildChat:83d047d8ab0b": {
+  "n_windows": 3,
+  "sequence": [
+   "SURRENDER_LEANING",
+   "SURRENDER_LEANING",
+   "SURRENDER_LEANING"
+  ],
+  "switches": 0,
+  "switches_excluding_indeterminate": 0,
+  "transitions": {
+   "SURRENDER_LEANING->SURRENDER_LEANING": 2
+  },
+  "proportions": {
+   "SURRENDER_LEANING": 1.0,
+   "OFFLOADING": 0.0,
+   "AUGMENTING": 0.0,
+   "NEUTRAL_MECHANICAL": 0.0,
+   "INDETERMINATE": 0.0
+  },
+  "first_surrender_index": 1,
+  "first_surrender_relative": 0.0,
+  "turns_observed": [
+   1,
+   2,
+   3
+  ]
+ },
+ "WildChat:8685d89a537b": {
+  "n_windows": 3,
+  "sequence": [
+   "SURRENDER_LEANING",
+   "SURRENDER_LEANING",
+   "INDETERMINATE"
+  ],
+  "switches": 1,
+  "switches_excluding_indeterminate": 0,
+  "transitions": {
+   "SURRENDER_LEANING->INDETERMINATE": 1,
+   "SURRENDER_LEANING->SURRENDER_LEANING": 1
+  },
+  "proportions": {
+   "SURRENDER_LEANING": 0.667,
+   "OFFLOADING": 0.0,
+   "AUGMENTING": 0.0,
+   "NEUTRAL_MECHANICAL": 0.0,
+   "INDETERMINATE": 0.333
+  },
+  "first_surrender_index": 1,
+  "first_surrender_relative": 0.0,
+  "turns_observed": [
+   1,
+   2,
+   3
+  ]
+ }
+}
