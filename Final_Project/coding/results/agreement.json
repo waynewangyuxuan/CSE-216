@@ -1850,8 +1850,8 @@
   },
   "domain": {},
   "family": {
-   "CLAIM_ARGUMENT|FRAME": 2,
-   "FRAME|PROSE_CITATION": 1,
+   "CLAIM_ARGUMENT|FRAME_IDEA_PLAN": 2,
+   "FRAME_IDEA_PLAN|PROSE_CITATION": 1,
    "PROSE_CITATION|REVIEW_SUBSTANCE": 1
   },
   "function": {
@@ -1873,9 +1873,9 @@
    "O10|O12": 1
   },
   "prior_own_work": {
-   "NONE_VISIBLE|VISIBLE": 4,
-   "UNOBSERVABLE|VISIBLE": 3,
-   "VISIBLE|VISIBLE": 1
+   "NONE_VISIBLE|VISIBLE_PARTIAL": 4,
+   "UNOBSERVABLE|VISIBLE_PARTIAL": 3,
+   "VISIBLE_DRAFT|VISIBLE_PARTIAL": 1
   },
   "process": {
    "P|T": 1,
@@ -2483,7 +2483,7 @@
    "A": {
     "NIRVANA": {
      "CLAIM_ARGUMENT": 7,
-     "FRAME": 7,
+     "FRAME_IDEA_PLAN": 7,
      "OX": 4,
      "PROSE_CITATION": 22,
      "REVIEW_SUBSTANCE": 6,
@@ -2492,14 +2492,14 @@
     },
     "WildChat": {
      "CLAIM_ARGUMENT": 2,
-     "FRAME": 2,
+     "FRAME_IDEA_PLAN": 2,
      "PROSE_CITATION": 18,
      "SOURCE_WORK": 3,
      "SURFACE": 5
     },
     "all": {
      "CLAIM_ARGUMENT": 9,
-     "FRAME": 9,
+     "FRAME_IDEA_PLAN": 9,
      "OX": 4,
      "PROSE_CITATION": 40,
      "REVIEW_SUBSTANCE": 6,
@@ -2510,7 +2510,7 @@
    "B": {
     "NIRVANA": {
      "CLAIM_ARGUMENT": 9,
-     "FRAME": 5,
+     "FRAME_IDEA_PLAN": 5,
      "OX": 4,
      "PROSE_CITATION": 23,
      "REVIEW_SUBSTANCE": 5,
@@ -2519,14 +2519,14 @@
     },
     "WildChat": {
      "CLAIM_ARGUMENT": 2,
-     "FRAME": 3,
+     "FRAME_IDEA_PLAN": 3,
      "PROSE_CITATION": 17,
      "SOURCE_WORK": 3,
      "SURFACE": 5
     },
     "all": {
      "CLAIM_ARGUMENT": 11,
-     "FRAME": 8,
+     "FRAME_IDEA_PLAN": 8,
      "OX": 4,
      "PROSE_CITATION": 40,
      "REVIEW_SUBSTANCE": 5,
@@ -2537,7 +2537,7 @@
    "final": {
     "NIRVANA": {
      "CLAIM_ARGUMENT": 9,
-     "FRAME": 5,
+     "FRAME_IDEA_PLAN": 5,
      "OX": 4,
      "PROSE_CITATION": 22,
      "REVIEW_SUBSTANCE": 6,
@@ -2546,14 +2546,14 @@
     },
     "WildChat": {
      "CLAIM_ARGUMENT": 2,
-     "FRAME": 2,
+     "FRAME_IDEA_PLAN": 2,
      "PROSE_CITATION": 18,
      "SOURCE_WORK": 3,
      "SURFACE": 5
     },
     "all": {
      "CLAIM_ARGUMENT": 11,
-     "FRAME": 7,
+     "FRAME_IDEA_PLAN": 7,
      "OX": 4,
      "PROSE_CITATION": 40,
      "REVIEW_SUBSTANCE": 6,
@@ -2855,46 +2855,55 @@
    "A": {
     "NIRVANA": {
      "NONE_VISIBLE": 22,
-     "VISIBLE": 48
+     "VISIBLE_DRAFT": 38,
+     "VISIBLE_PARTIAL": 10
     },
     "WildChat": {
      "UNOBSERVABLE": 17,
-     "VISIBLE": 13
+     "VISIBLE_DRAFT": 6,
+     "VISIBLE_PARTIAL": 7
     },
     "all": {
      "NONE_VISIBLE": 22,
      "UNOBSERVABLE": 17,
-     "VISIBLE": 61
+     "VISIBLE_DRAFT": 44,
+     "VISIBLE_PARTIAL": 17
     }
    },
    "B": {
     "NIRVANA": {
      "NONE_VISIBLE": 22,
-     "VISIBLE": 48
+     "VISIBLE_DRAFT": 37,
+     "VISIBLE_PARTIAL": 11
     },
     "WildChat": {
      "UNOBSERVABLE": 20,
-     "VISIBLE": 10
+     "VISIBLE_DRAFT": 6,
+     "VISIBLE_PARTIAL": 4
     },
     "all": {
      "NONE_VISIBLE": 22,
      "UNOBSERVABLE": 20,
-     "VISIBLE": 58
+     "VISIBLE_DRAFT": 43,
+     "VISIBLE_PARTIAL": 15
     }
    },
    "final": {
     "NIRVANA": {
      "NONE_VISIBLE": 21,
-     "VISIBLE": 49
+     "VISIBLE_DRAFT": 38,
+     "VISIBLE_PARTIAL": 11
     },
     "WildChat": {
      "UNOBSERVABLE": 17,
-     "VISIBLE": 13
+     "VISIBLE_DRAFT": 6,
+     "VISIBLE_PARTIAL": 7
     },
     "all": {
      "NONE_VISIBLE": 21,
      "UNOBSERVABLE": 17,
-     "VISIBLE": 62
+     "VISIBLE_DRAFT": 44,
+     "VISIBLE_PARTIAL": 18
     }
    }
   },
@@ -3147,7 +3156,7 @@
     9,
     11
    ],
-   "FRAME": [
+   "FRAME_IDEA_PLAN": [
     7,
     10
    ],
@@ -3299,9 +3308,13 @@
     17,
     20
    ],
-   "VISIBLE": [
-    56,
-    63
+   "VISIBLE_DRAFT": [
+    43,
+    44
+   ],
+   "VISIBLE_PARTIAL": [
+    12,
+    20
    ]
   },
   "process": {

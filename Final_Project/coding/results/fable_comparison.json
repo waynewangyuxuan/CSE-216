@@ -1,0 +1,2563 @@
+{
+ "A_vs_B_on_gold": {
+  "decision": {
+   "kappa": 1.0,
+   "kappa_ci_cluster": [
+    1.0,
+    1.0
+   ],
+   "kappa_ci_window": [
+    1.0,
+    1.0
+   ],
+   "n": 20,
+   "pct": 100.0,
+   "pct_ci_cluster": [
+    100.0,
+    100.0
+   ],
+   "pct_ci_window": [
+    100.0,
+    100.0
+   ],
+   "sessions": 20
+  },
+  "domain": {
+   "kappa": null,
+   "kappa_ci_cluster": null,
+   "kappa_ci_window": null,
+   "n": 6,
+   "pct": 100.0,
+   "pct_ci_cluster": [
+    100.0,
+    100.0
+   ],
+   "pct_ci_window": [
+    100.0,
+    100.0
+   ],
+   "sessions": 6
+  },
+  "family": {
+   "kappa": 0.93,
+   "kappa_ci_cluster": [
+    0.78,
+    1.0
+   ],
+   "kappa_ci_window": [
+    0.78,
+    1.0
+   ],
+   "n": 20,
+   "pct": 95.0,
+   "pct_ci_cluster": [
+    85.0,
+    100.0
+   ],
+   "pct_ci_window": [
+    85.0,
+    100.0
+   ],
+   "sessions": 20
+  },
+  "function": {
+   "kappa": 0.91,
+   "kappa_ci_cluster": [
+    0.69,
+    1.0
+   ],
+   "kappa_ci_window": [
+    0.7,
+    1.0
+   ],
+   "n": 20,
+   "pct": 95.0,
+   "pct_ci_cluster": [
+    85.0,
+    100.0
+   ],
+   "pct_ci_window": [
+    85.0,
+    100.0
+   ],
+   "sessions": 20
+  },
+  "object": {
+   "kappa": 0.91,
+   "kappa_ci_cluster": [
+    0.7,
+    1.0
+   ],
+   "kappa_ci_window": [
+    0.71,
+    1.0
+   ],
+   "n": 20,
+   "pct": 95.0,
+   "pct_ci_cluster": [
+    85.0,
+    100.0
+   ],
+   "pct_ci_window": [
+    85.0,
+    100.0
+   ],
+   "sessions": 20
+  },
+  "operation": {
+   "kappa": 0.93,
+   "kappa_ci_cluster": [
+    0.79,
+    1.0
+   ],
+   "kappa_ci_window": [
+    0.79,
+    1.0
+   ],
+   "n": 20,
+   "pct": 95.0,
+   "pct_ci_cluster": [
+    85.0,
+    100.0
+   ],
+   "pct_ci_window": [
+    85.0,
+    100.0
+   ],
+   "sessions": 20
+  },
+  "prior_own_work": {
+   "kappa": 1.0,
+   "kappa_ci_cluster": [
+    1.0,
+    1.0
+   ],
+   "kappa_ci_window": [
+    1.0,
+    1.0
+   ],
+   "n": 20,
+   "pct": 100.0,
+   "pct_ci_cluster": [
+    100.0,
+    100.0
+   ],
+   "pct_ci_window": [
+    100.0,
+    100.0
+   ],
+   "sessions": 20
+  },
+  "process": {
+   "kappa": 1.0,
+   "kappa_ci_cluster": [
+    1.0,
+    1.0
+   ],
+   "kappa_ci_window": [
+    1.0,
+    1.0
+   ],
+   "n": 20,
+   "pct": 100.0,
+   "pct_ci_cluster": [
+    100.0,
+    100.0
+   ],
+   "pct_ci_window": [
+    100.0,
+    100.0
+   ],
+   "sessions": 20
+  },
+  "uptake": {
+   "kappa": 0.81,
+   "kappa_ci_cluster": [
+    0.57,
+    1.0
+   ],
+   "kappa_ci_window": [
+    0.57,
+    1.0
+   ],
+   "n": 20,
+   "pct": 85.0,
+   "pct_ci_cluster": [
+    70.0,
+    100.0
+   ],
+   "pct_ci_window": [
+    65.0,
+    100.0
+   ],
+   "sessions": 20
+  },
+  "verification": {
+   "kappa": 1.0,
+   "kappa_ci_cluster": [
+    1.0,
+    1.0
+   ],
+   "kappa_ci_window": [
+    1.0,
+    1.0
+   ],
+   "n": 20,
+   "pct": 100.0,
+   "pct_ci_cluster": [
+    100.0,
+    100.0
+   ],
+   "pct_ci_window": [
+    100.0,
+    100.0
+   ],
+   "sessions": 20
+  }
+ },
+ "confusions_q3_q5": {
+  "decision": {
+   "D2|D3": 2
+  },
+  "uptake": {
+   "U1|U3": 1,
+   "U7|U3": 2
+  },
+  "verification": {}
+ },
+ "disagreements_with_final": [
+  {
+   "A": "U3",
+   "B": "U3",
+   "coverage": "C2",
+   "dataset": "NIRVANA",
+   "fable": "U1",
+   "field": "uptake",
+   "final": "U3",
+   "marked": false,
+   "window_id": "NIRVANA-e01-t04"
+  },
+  {
+   "A": "D3",
+   "B": "D3",
+   "coverage": "C2",
+   "dataset": "NIRVANA",
+   "fable": "D2",
+   "field": "decision",
+   "final": "D3",
+   "marked": true,
+   "window_id": "NIRVANA-e27-t02"
+  },
+  {
+   "A": "U3",
+   "B": "U3",
+   "coverage": "C2",
+   "dataset": "NIRVANA",
+   "fable": "U7",
+   "field": "uptake",
+   "final": "U3",
+   "marked": true,
+   "window_id": "NIRVANA-e27-t02"
+  },
+  {
+   "A": "O05",
+   "B": "O05",
+   "coverage": "C1",
+   "dataset": "NIRVANA",
+   "fable": "O14",
+   "field": "operation",
+   "final": "O05",
+   "marked": false,
+   "window_id": "NIRVANA-e29-t06"
+  },
+  {
+   "A": "P",
+   "B": "P",
+   "coverage": "C1",
+   "dataset": "NIRVANA",
+   "fable": "R",
+   "field": "process",
+   "final": "P",
+   "marked": false,
+   "window_id": "NIRVANA-e29-t06"
+  },
+  {
+   "A": "F1",
+   "B": "F1",
+   "coverage": "C1",
+   "dataset": "NIRVANA",
+   "fable": "F8",
+   "field": "function",
+   "final": "F1",
+   "marked": false,
+   "window_id": "NIRVANA-e29-t06"
+  },
+  {
+   "A": "OTHER",
+   "B": "OTHER",
+   "coverage": "C1",
+   "dataset": "NIRVANA",
+   "fable": "PROSE",
+   "field": "object",
+   "final": "OTHER",
+   "marked": false,
+   "window_id": "NIRVANA-e29-t06"
+  },
+  {
+   "A": "D3",
+   "B": "D3",
+   "coverage": "C2",
+   "dataset": "NIRVANA",
+   "fable": "D2",
+   "field": "decision",
+   "final": "D3",
+   "marked": false,
+   "window_id": "NIRVANA-e56-t01"
+  },
+  {
+   "A": "U3",
+   "B": "U7",
+   "coverage": "C2",
+   "dataset": "NIRVANA",
+   "fable": "U7",
+   "field": "uptake",
+   "final": "U3",
+   "marked": false,
+   "window_id": "NIRVANA-e56-t01"
+  },
+  {
+   "A": "VISIBLE_PARTIAL",
+   "B": "VISIBLE_PARTIAL",
+   "coverage": "C0",
+   "dataset": "WildChat",
+   "fable": "UNOBSERVABLE",
+   "field": "prior_own_work",
+   "final": "VISIBLE_PARTIAL",
+   "marked": false,
+   "window_id": "WILDCHAT-1bcd99f673a7-t02"
+  },
+  {
+   "A": "O02",
+   "B": "O02",
+   "coverage": "C1",
+   "dataset": "WildChat",
+   "fable": "O06",
+   "field": "operation",
+   "final": "O02",
+   "marked": false,
+   "window_id": "WILDCHAT-2d9abc984de9-t01"
+  },
+  {
+   "A": "IDEA",
+   "B": "IDEA",
+   "coverage": "C1",
+   "dataset": "WildChat",
+   "fable": "SOURCE",
+   "field": "object",
+   "final": "IDEA",
+   "marked": false,
+   "window_id": "WILDCHAT-2d9abc984de9-t01"
+  },
+  {
+   "A": "RESEARCH_EXPLICIT",
+   "B": "RESEARCH_EXPLICIT",
+   "coverage": "C1",
+   "dataset": "WildChat",
+   "fable": "ACADEMIC_STATED",
+   "field": "domain",
+   "final": "RESEARCH_EXPLICIT",
+   "marked": false,
+   "window_id": "WILDCHAT-30f7e79715c8-t01"
+  }
+ ],
+ "fable_vs_A": {
+  "all": {
+   "decision": {
+    "kappa": 0.84,
+    "kappa_ci_cluster": [
+     0.61,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.6,
+     1.0
+    ],
+    "n": 20,
+    "pct": 90.0,
+    "pct_ci_cluster": [
+     75.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     75.0,
+     100.0
+    ],
+    "sessions": 20
+   },
+   "domain": {
+    "kappa": 0.0,
+    "kappa_ci_cluster": [
+     0.0,
+     0.0
+    ],
+    "kappa_ci_window": [
+     0.0,
+     0.0
+    ],
+    "n": 6,
+    "pct": 83.3,
+    "pct_ci_cluster": [
+     50.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     50.0,
+     100.0
+    ],
+    "sessions": 6
+   },
+   "family": {
+    "kappa": 0.79,
+    "kappa_ci_cluster": [
+     0.57,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.57,
+     1.0
+    ],
+    "n": 20,
+    "pct": 85.0,
+    "pct_ci_cluster": [
+     65.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     65.0,
+     100.0
+    ],
+    "sessions": 20
+   },
+   "function": {
+    "kappa": 0.83,
+    "kappa_ci_cluster": [
+     0.58,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.57,
+     1.0
+    ],
+    "n": 20,
+    "pct": 90.0,
+    "pct_ci_cluster": [
+     75.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     75.0,
+     100.0
+    ],
+    "sessions": 20
+   },
+   "object": {
+    "kappa": 0.71,
+    "kappa_ci_cluster": [
+     0.42,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.42,
+     1.0
+    ],
+    "n": 20,
+    "pct": 85.0,
+    "pct_ci_cluster": [
+     65.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     65.0,
+     100.0
+    ],
+    "sessions": 20
+   },
+   "operation": {
+    "kappa": 0.8,
+    "kappa_ci_cluster": [
+     0.58,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.58,
+     1.0
+    ],
+    "n": 20,
+    "pct": 85.0,
+    "pct_ci_cluster": [
+     65.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     65.0,
+     100.0
+    ],
+    "sessions": 20
+   },
+   "prior_own_work": {
+    "kappa": 0.91,
+    "kappa_ci_cluster": [
+     0.72,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.71,
+     1.0
+    ],
+    "n": 20,
+    "pct": 95.0,
+    "pct_ci_cluster": [
+     85.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     85.0,
+     100.0
+    ],
+    "sessions": 20
+   },
+   "process": {
+    "kappa": 0.93,
+    "kappa_ci_cluster": [
+     0.76,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.74,
+     1.0
+    ],
+    "n": 20,
+    "pct": 95.0,
+    "pct_ci_cluster": [
+     85.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     85.0,
+     100.0
+    ],
+    "sessions": 20
+   },
+   "uptake": {
+    "kappa": 0.81,
+    "kappa_ci_cluster": [
+     0.63,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.63,
+     1.0
+    ],
+    "n": 20,
+    "pct": 85.0,
+    "pct_ci_cluster": [
+     70.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     70.0,
+     100.0
+    ],
+    "sessions": 20
+   },
+   "verification": {
+    "kappa": 1.0,
+    "kappa_ci_cluster": [
+     1.0,
+     1.0
+    ],
+    "kappa_ci_window": [
+     1.0,
+     1.0
+    ],
+    "n": 20,
+    "pct": 100.0,
+    "pct_ci_cluster": [
+     100.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     100.0,
+     100.0
+    ],
+    "sessions": 20
+   }
+  },
+  "followup": {
+   "decision": {
+    "kappa": 0.82,
+    "kappa_ci_cluster": [
+     0.57,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.55,
+     1.0
+    ],
+    "n": 18,
+    "pct": 88.9,
+    "pct_ci_cluster": [
+     72.22,
+     100.0
+    ],
+    "pct_ci_window": [
+     72.22,
+     100.0
+    ],
+    "sessions": 18
+   },
+   "domain": {
+    "kappa": 0.0,
+    "kappa_ci_cluster": [
+     0.0,
+     0.0
+    ],
+    "kappa_ci_window": [
+     0.0,
+     0.0
+    ],
+    "n": 5,
+    "pct": 80.0,
+    "pct_ci_cluster": [
+     40.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     40.0,
+     100.0
+    ],
+    "sessions": 5
+   },
+   "family": {
+    "kappa": 0.77,
+    "kappa_ci_cluster": [
+     0.54,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.54,
+     1.0
+    ],
+    "n": 18,
+    "pct": 83.3,
+    "pct_ci_cluster": [
+     66.67,
+     100.0
+    ],
+    "pct_ci_window": [
+     66.67,
+     100.0
+    ],
+    "sessions": 18
+   },
+   "function": {
+    "kappa": 0.8,
+    "kappa_ci_cluster": [
+     0.53,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.52,
+     1.0
+    ],
+    "n": 18,
+    "pct": 88.9,
+    "pct_ci_cluster": [
+     72.22,
+     100.0
+    ],
+    "pct_ci_window": [
+     72.22,
+     100.0
+    ],
+    "sessions": 18
+   },
+   "object": {
+    "kappa": 0.66,
+    "kappa_ci_cluster": [
+     0.35,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.36,
+     1.0
+    ],
+    "n": 18,
+    "pct": 83.3,
+    "pct_ci_cluster": [
+     66.67,
+     100.0
+    ],
+    "pct_ci_window": [
+     66.67,
+     100.0
+    ],
+    "sessions": 18
+   },
+   "operation": {
+    "kappa": 0.78,
+    "kappa_ci_cluster": [
+     0.55,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.56,
+     1.0
+    ],
+    "n": 18,
+    "pct": 83.3,
+    "pct_ci_cluster": [
+     66.67,
+     100.0
+    ],
+    "pct_ci_window": [
+     66.67,
+     100.0
+    ],
+    "sessions": 18
+   },
+   "prior_own_work": {
+    "kappa": 1.0,
+    "kappa_ci_cluster": [
+     1.0,
+     1.0
+    ],
+    "kappa_ci_window": [
+     1.0,
+     1.0
+    ],
+    "n": 18,
+    "pct": 100.0,
+    "pct_ci_cluster": [
+     100.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     100.0,
+     100.0
+    ],
+    "sessions": 18
+   },
+   "process": {
+    "kappa": 0.91,
+    "kappa_ci_cluster": [
+     0.74,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.74,
+     1.0
+    ],
+    "n": 18,
+    "pct": 94.4,
+    "pct_ci_cluster": [
+     83.33,
+     100.0
+    ],
+    "pct_ci_window": [
+     83.33,
+     100.0
+    ],
+    "sessions": 18
+   },
+   "uptake": {
+    "kappa": 0.78,
+    "kappa_ci_cluster": [
+     0.57,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.56,
+     1.0
+    ],
+    "n": 18,
+    "pct": 83.3,
+    "pct_ci_cluster": [
+     66.67,
+     100.0
+    ],
+    "pct_ci_window": [
+     66.67,
+     100.0
+    ],
+    "sessions": 18
+   },
+   "verification": {
+    "kappa": 1.0,
+    "kappa_ci_cluster": [
+     1.0,
+     1.0
+    ],
+    "kappa_ci_window": [
+     1.0,
+     1.0
+    ],
+    "n": 18,
+    "pct": 100.0,
+    "pct_ci_cluster": [
+     100.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     100.0,
+     100.0
+    ],
+    "sessions": 18
+   }
+  },
+  "unmarked": {
+   "decision": {
+    "kappa": 0.88,
+    "kappa_ci_cluster": [
+     0.57,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.57,
+     1.0
+    ],
+    "n": 16,
+    "pct": 93.8,
+    "pct_ci_cluster": [
+     81.25,
+     100.0
+    ],
+    "pct_ci_window": [
+     81.25,
+     100.0
+    ],
+    "sessions": 16
+   },
+   "domain": {
+    "kappa": 0.0,
+    "kappa_ci_cluster": [
+     0.0,
+     0.0
+    ],
+    "kappa_ci_window": [
+     0.0,
+     0.0
+    ],
+    "n": 5,
+    "pct": 80.0,
+    "pct_ci_cluster": [
+     40.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     40.0,
+     100.0
+    ],
+    "sessions": 5
+   },
+   "family": {
+    "kappa": 0.74,
+    "kappa_ci_cluster": [
+     0.49,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.49,
+     1.0
+    ],
+    "n": 16,
+    "pct": 81.2,
+    "pct_ci_cluster": [
+     62.5,
+     100.0
+    ],
+    "pct_ci_window": [
+     62.5,
+     100.0
+    ],
+    "sessions": 16
+   },
+   "function": {
+    "kappa": 0.77,
+    "kappa_ci_cluster": [
+     0.44,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.43,
+     1.0
+    ],
+    "n": 16,
+    "pct": 87.5,
+    "pct_ci_cluster": [
+     68.75,
+     100.0
+    ],
+    "pct_ci_window": [
+     68.75,
+     100.0
+    ],
+    "sessions": 16
+   },
+   "object": {
+    "kappa": 0.65,
+    "kappa_ci_cluster": [
+     0.35,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.34,
+     1.0
+    ],
+    "n": 16,
+    "pct": 81.2,
+    "pct_ci_cluster": [
+     62.5,
+     100.0
+    ],
+    "pct_ci_window": [
+     62.5,
+     100.0
+    ],
+    "sessions": 16
+   },
+   "operation": {
+    "kappa": 0.75,
+    "kappa_ci_cluster": [
+     0.51,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.5,
+     1.0
+    ],
+    "n": 16,
+    "pct": 81.2,
+    "pct_ci_cluster": [
+     62.5,
+     100.0
+    ],
+    "pct_ci_window": [
+     62.5,
+     100.0
+    ],
+    "sessions": 16
+   },
+   "prior_own_work": {
+    "kappa": 0.9,
+    "kappa_ci_cluster": [
+     0.69,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.7,
+     1.0
+    ],
+    "n": 16,
+    "pct": 93.8,
+    "pct_ci_cluster": [
+     81.25,
+     100.0
+    ],
+    "pct_ci_window": [
+     81.25,
+     100.0
+    ],
+    "sessions": 16
+   },
+   "process": {
+    "kappa": 0.9,
+    "kappa_ci_cluster": [
+     0.69,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.69,
+     1.0
+    ],
+    "n": 16,
+    "pct": 93.8,
+    "pct_ci_cluster": [
+     81.25,
+     100.0
+    ],
+    "pct_ci_window": [
+     81.25,
+     100.0
+    ],
+    "sessions": 16
+   },
+   "uptake": {
+    "kappa": 0.84,
+    "kappa_ci_cluster": [
+     0.62,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.61,
+     1.0
+    ],
+    "n": 16,
+    "pct": 87.5,
+    "pct_ci_cluster": [
+     68.75,
+     100.0
+    ],
+    "pct_ci_window": [
+     68.75,
+     100.0
+    ],
+    "sessions": 16
+   },
+   "verification": {
+    "kappa": 1.0,
+    "kappa_ci_cluster": [
+     1.0,
+     1.0
+    ],
+    "kappa_ci_window": [
+     1.0,
+     1.0
+    ],
+    "n": 16,
+    "pct": 100.0,
+    "pct_ci_cluster": [
+     100.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     100.0,
+     100.0
+    ],
+    "sessions": 16
+   }
+  }
+ },
+ "fable_vs_B": {
+  "all": {
+   "decision": {
+    "kappa": 0.84,
+    "kappa_ci_cluster": [
+     0.61,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.6,
+     1.0
+    ],
+    "n": 20,
+    "pct": 90.0,
+    "pct_ci_cluster": [
+     75.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     75.0,
+     100.0
+    ],
+    "sessions": 20
+   },
+   "domain": {
+    "kappa": 0.0,
+    "kappa_ci_cluster": [
+     0.0,
+     0.0
+    ],
+    "kappa_ci_window": [
+     0.0,
+     0.0
+    ],
+    "n": 6,
+    "pct": 83.3,
+    "pct_ci_cluster": [
+     50.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     50.0,
+     100.0
+    ],
+    "sessions": 6
+   },
+   "family": {
+    "kappa": 0.86,
+    "kappa_ci_cluster": [
+     0.67,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.67,
+     1.0
+    ],
+    "n": 20,
+    "pct": 90.0,
+    "pct_ci_cluster": [
+     75.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     75.0,
+     100.0
+    ],
+    "sessions": 20
+   },
+   "function": {
+    "kappa": 0.91,
+    "kappa_ci_cluster": [
+     0.72,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.7,
+     1.0
+    ],
+    "n": 20,
+    "pct": 95.0,
+    "pct_ci_cluster": [
+     85.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     85.0,
+     100.0
+    ],
+    "sessions": 20
+   },
+   "object": {
+    "kappa": 0.81,
+    "kappa_ci_cluster": [
+     0.53,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.5,
+     1.0
+    ],
+    "n": 20,
+    "pct": 90.0,
+    "pct_ci_cluster": [
+     75.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     75.0,
+     100.0
+    ],
+    "sessions": 20
+   },
+   "operation": {
+    "kappa": 0.86,
+    "kappa_ci_cluster": [
+     0.68,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.67,
+     1.0
+    ],
+    "n": 20,
+    "pct": 90.0,
+    "pct_ci_cluster": [
+     75.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     75.0,
+     100.0
+    ],
+    "sessions": 20
+   },
+   "prior_own_work": {
+    "kappa": 0.91,
+    "kappa_ci_cluster": [
+     0.72,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.71,
+     1.0
+    ],
+    "n": 20,
+    "pct": 95.0,
+    "pct_ci_cluster": [
+     85.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     85.0,
+     100.0
+    ],
+    "sessions": 20
+   },
+   "process": {
+    "kappa": 0.93,
+    "kappa_ci_cluster": [
+     0.76,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.74,
+     1.0
+    ],
+    "n": 20,
+    "pct": 95.0,
+    "pct_ci_cluster": [
+     85.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     85.0,
+     100.0
+    ],
+    "sessions": 20
+   },
+   "uptake": {
+    "kappa": 0.75,
+    "kappa_ci_cluster": [
+     0.51,
+     0.94
+    ],
+    "kappa_ci_window": [
+     0.5,
+     0.94
+    ],
+    "n": 20,
+    "pct": 80.0,
+    "pct_ci_cluster": [
+     60.0,
+     95.0
+    ],
+    "pct_ci_window": [
+     60.0,
+     95.0
+    ],
+    "sessions": 20
+   },
+   "verification": {
+    "kappa": 1.0,
+    "kappa_ci_cluster": [
+     1.0,
+     1.0
+    ],
+    "kappa_ci_window": [
+     1.0,
+     1.0
+    ],
+    "n": 20,
+    "pct": 100.0,
+    "pct_ci_cluster": [
+     100.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     100.0,
+     100.0
+    ],
+    "sessions": 20
+   }
+  },
+  "followup": {
+   "decision": {
+    "kappa": 0.82,
+    "kappa_ci_cluster": [
+     0.57,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.55,
+     1.0
+    ],
+    "n": 18,
+    "pct": 88.9,
+    "pct_ci_cluster": [
+     72.22,
+     100.0
+    ],
+    "pct_ci_window": [
+     72.22,
+     100.0
+    ],
+    "sessions": 18
+   },
+   "domain": {
+    "kappa": 0.0,
+    "kappa_ci_cluster": [
+     0.0,
+     0.0
+    ],
+    "kappa_ci_window": [
+     0.0,
+     0.0
+    ],
+    "n": 5,
+    "pct": 80.0,
+    "pct_ci_cluster": [
+     40.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     40.0,
+     100.0
+    ],
+    "sessions": 5
+   },
+   "family": {
+    "kappa": 0.84,
+    "kappa_ci_cluster": [
+     0.63,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.63,
+     1.0
+    ],
+    "n": 18,
+    "pct": 88.9,
+    "pct_ci_cluster": [
+     72.22,
+     100.0
+    ],
+    "pct_ci_window": [
+     72.22,
+     100.0
+    ],
+    "sessions": 18
+   },
+   "function": {
+    "kappa": 0.89,
+    "kappa_ci_cluster": [
+     0.69,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.68,
+     1.0
+    ],
+    "n": 18,
+    "pct": 94.4,
+    "pct_ci_cluster": [
+     83.33,
+     100.0
+    ],
+    "pct_ci_window": [
+     83.33,
+     100.0
+    ],
+    "sessions": 18
+   },
+   "object": {
+    "kappa": 0.77,
+    "kappa_ci_cluster": [
+     0.44,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.45,
+     1.0
+    ],
+    "n": 18,
+    "pct": 88.9,
+    "pct_ci_cluster": [
+     72.22,
+     100.0
+    ],
+    "pct_ci_window": [
+     72.22,
+     100.0
+    ],
+    "sessions": 18
+   },
+   "operation": {
+    "kappa": 0.85,
+    "kappa_ci_cluster": [
+     0.64,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.64,
+     1.0
+    ],
+    "n": 18,
+    "pct": 88.9,
+    "pct_ci_cluster": [
+     72.22,
+     100.0
+    ],
+    "pct_ci_window": [
+     72.22,
+     100.0
+    ],
+    "sessions": 18
+   },
+   "prior_own_work": {
+    "kappa": 1.0,
+    "kappa_ci_cluster": [
+     1.0,
+     1.0
+    ],
+    "kappa_ci_window": [
+     1.0,
+     1.0
+    ],
+    "n": 18,
+    "pct": 100.0,
+    "pct_ci_cluster": [
+     100.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     100.0,
+     100.0
+    ],
+    "sessions": 18
+   },
+   "process": {
+    "kappa": 0.91,
+    "kappa_ci_cluster": [
+     0.74,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.74,
+     1.0
+    ],
+    "n": 18,
+    "pct": 94.4,
+    "pct_ci_cluster": [
+     83.33,
+     100.0
+    ],
+    "pct_ci_window": [
+     83.33,
+     100.0
+    ],
+    "sessions": 18
+   },
+   "uptake": {
+    "kappa": 0.71,
+    "kappa_ci_cluster": [
+     0.44,
+     0.93
+    ],
+    "kappa_ci_window": [
+     0.43,
+     0.93
+    ],
+    "n": 18,
+    "pct": 77.8,
+    "pct_ci_cluster": [
+     55.56,
+     94.44
+    ],
+    "pct_ci_window": [
+     55.56,
+     94.44
+    ],
+    "sessions": 18
+   },
+   "verification": {
+    "kappa": 1.0,
+    "kappa_ci_cluster": [
+     1.0,
+     1.0
+    ],
+    "kappa_ci_window": [
+     1.0,
+     1.0
+    ],
+    "n": 18,
+    "pct": 100.0,
+    "pct_ci_cluster": [
+     100.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     100.0,
+     100.0
+    ],
+    "sessions": 18
+   }
+  },
+  "unmarked": {
+   "decision": {
+    "kappa": 0.88,
+    "kappa_ci_cluster": [
+     0.57,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.57,
+     1.0
+    ],
+    "n": 16,
+    "pct": 93.8,
+    "pct_ci_cluster": [
+     81.25,
+     100.0
+    ],
+    "pct_ci_window": [
+     81.25,
+     100.0
+    ],
+    "sessions": 16
+   },
+   "domain": {
+    "kappa": 0.0,
+    "kappa_ci_cluster": [
+     0.0,
+     0.0
+    ],
+    "kappa_ci_window": [
+     0.0,
+     0.0
+    ],
+    "n": 5,
+    "pct": 80.0,
+    "pct_ci_cluster": [
+     40.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     40.0,
+     100.0
+    ],
+    "sessions": 5
+   },
+   "family": {
+    "kappa": 0.83,
+    "kappa_ci_cluster": [
+     0.59,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.58,
+     1.0
+    ],
+    "n": 16,
+    "pct": 87.5,
+    "pct_ci_cluster": [
+     68.75,
+     100.0
+    ],
+    "pct_ci_window": [
+     68.75,
+     100.0
+    ],
+    "sessions": 16
+   },
+   "function": {
+    "kappa": 0.88,
+    "kappa_ci_cluster": [
+     0.63,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.63,
+     1.0
+    ],
+    "n": 16,
+    "pct": 93.8,
+    "pct_ci_cluster": [
+     81.25,
+     100.0
+    ],
+    "pct_ci_window": [
+     81.25,
+     100.0
+    ],
+    "sessions": 16
+   },
+   "object": {
+    "kappa": 0.76,
+    "kappa_ci_cluster": [
+     0.43,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.44,
+     1.0
+    ],
+    "n": 16,
+    "pct": 87.5,
+    "pct_ci_cluster": [
+     68.75,
+     100.0
+    ],
+    "pct_ci_window": [
+     68.75,
+     100.0
+    ],
+    "sessions": 16
+   },
+   "operation": {
+    "kappa": 0.83,
+    "kappa_ci_cluster": [
+     0.6,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.6,
+     1.0
+    ],
+    "n": 16,
+    "pct": 87.5,
+    "pct_ci_cluster": [
+     68.75,
+     100.0
+    ],
+    "pct_ci_window": [
+     68.75,
+     100.0
+    ],
+    "sessions": 16
+   },
+   "prior_own_work": {
+    "kappa": 0.9,
+    "kappa_ci_cluster": [
+     0.69,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.7,
+     1.0
+    ],
+    "n": 16,
+    "pct": 93.8,
+    "pct_ci_cluster": [
+     81.25,
+     100.0
+    ],
+    "pct_ci_window": [
+     81.25,
+     100.0
+    ],
+    "sessions": 16
+   },
+   "process": {
+    "kappa": 0.9,
+    "kappa_ci_cluster": [
+     0.69,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.69,
+     1.0
+    ],
+    "n": 16,
+    "pct": 93.8,
+    "pct_ci_cluster": [
+     81.25,
+     100.0
+    ],
+    "pct_ci_window": [
+     81.25,
+     100.0
+    ],
+    "sessions": 16
+   },
+   "uptake": {
+    "kappa": 0.76,
+    "kappa_ci_cluster": [
+     0.47,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.45,
+     1.0
+    ],
+    "n": 16,
+    "pct": 81.2,
+    "pct_ci_cluster": [
+     62.5,
+     100.0
+    ],
+    "pct_ci_window": [
+     62.5,
+     100.0
+    ],
+    "sessions": 16
+   },
+   "verification": {
+    "kappa": 1.0,
+    "kappa_ci_cluster": [
+     1.0,
+     1.0
+    ],
+    "kappa_ci_window": [
+     1.0,
+     1.0
+    ],
+    "n": 16,
+    "pct": 100.0,
+    "pct_ci_cluster": [
+     100.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     100.0,
+     100.0
+    ],
+    "sessions": 16
+   }
+  }
+ },
+ "fable_vs_final": {
+  "all": {
+   "decision": {
+    "kappa": 0.84,
+    "kappa_ci_cluster": [
+     0.61,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.6,
+     1.0
+    ],
+    "n": 20,
+    "pct": 90.0,
+    "pct_ci_cluster": [
+     75.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     75.0,
+     100.0
+    ],
+    "sessions": 20
+   },
+   "domain": {
+    "kappa": 0.0,
+    "kappa_ci_cluster": [
+     0.0,
+     0.0
+    ],
+    "kappa_ci_window": [
+     0.0,
+     0.0
+    ],
+    "n": 6,
+    "pct": 83.3,
+    "pct_ci_cluster": [
+     50.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     50.0,
+     100.0
+    ],
+    "sessions": 6
+   },
+   "family": {
+    "kappa": 0.86,
+    "kappa_ci_cluster": [
+     0.67,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.67,
+     1.0
+    ],
+    "n": 20,
+    "pct": 90.0,
+    "pct_ci_cluster": [
+     75.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     75.0,
+     100.0
+    ],
+    "sessions": 20
+   },
+   "function": {
+    "kappa": 0.91,
+    "kappa_ci_cluster": [
+     0.72,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.7,
+     1.0
+    ],
+    "n": 20,
+    "pct": 95.0,
+    "pct_ci_cluster": [
+     85.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     85.0,
+     100.0
+    ],
+    "sessions": 20
+   },
+   "object": {
+    "kappa": 0.81,
+    "kappa_ci_cluster": [
+     0.53,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.5,
+     1.0
+    ],
+    "n": 20,
+    "pct": 90.0,
+    "pct_ci_cluster": [
+     75.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     75.0,
+     100.0
+    ],
+    "sessions": 20
+   },
+   "operation": {
+    "kappa": 0.86,
+    "kappa_ci_cluster": [
+     0.68,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.67,
+     1.0
+    ],
+    "n": 20,
+    "pct": 90.0,
+    "pct_ci_cluster": [
+     75.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     75.0,
+     100.0
+    ],
+    "sessions": 20
+   },
+   "prior_own_work": {
+    "kappa": 0.91,
+    "kappa_ci_cluster": [
+     0.72,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.71,
+     1.0
+    ],
+    "n": 20,
+    "pct": 95.0,
+    "pct_ci_cluster": [
+     85.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     85.0,
+     100.0
+    ],
+    "sessions": 20
+   },
+   "process": {
+    "kappa": 0.93,
+    "kappa_ci_cluster": [
+     0.76,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.74,
+     1.0
+    ],
+    "n": 20,
+    "pct": 95.0,
+    "pct_ci_cluster": [
+     85.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     85.0,
+     100.0
+    ],
+    "sessions": 20
+   },
+   "uptake": {
+    "kappa": 0.81,
+    "kappa_ci_cluster": [
+     0.63,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.63,
+     1.0
+    ],
+    "n": 20,
+    "pct": 85.0,
+    "pct_ci_cluster": [
+     70.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     70.0,
+     100.0
+    ],
+    "sessions": 20
+   },
+   "verification": {
+    "kappa": 1.0,
+    "kappa_ci_cluster": [
+     1.0,
+     1.0
+    ],
+    "kappa_ci_window": [
+     1.0,
+     1.0
+    ],
+    "n": 20,
+    "pct": 100.0,
+    "pct_ci_cluster": [
+     100.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     100.0,
+     100.0
+    ],
+    "sessions": 20
+   }
+  },
+  "followup": {
+   "decision": {
+    "kappa": 0.82,
+    "kappa_ci_cluster": [
+     0.57,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.55,
+     1.0
+    ],
+    "n": 18,
+    "pct": 88.9,
+    "pct_ci_cluster": [
+     72.22,
+     100.0
+    ],
+    "pct_ci_window": [
+     72.22,
+     100.0
+    ],
+    "sessions": 18
+   },
+   "domain": {
+    "kappa": 0.0,
+    "kappa_ci_cluster": [
+     0.0,
+     0.0
+    ],
+    "kappa_ci_window": [
+     0.0,
+     0.0
+    ],
+    "n": 5,
+    "pct": 80.0,
+    "pct_ci_cluster": [
+     40.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     40.0,
+     100.0
+    ],
+    "sessions": 5
+   },
+   "family": {
+    "kappa": 0.84,
+    "kappa_ci_cluster": [
+     0.63,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.63,
+     1.0
+    ],
+    "n": 18,
+    "pct": 88.9,
+    "pct_ci_cluster": [
+     72.22,
+     100.0
+    ],
+    "pct_ci_window": [
+     72.22,
+     100.0
+    ],
+    "sessions": 18
+   },
+   "function": {
+    "kappa": 0.89,
+    "kappa_ci_cluster": [
+     0.69,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.68,
+     1.0
+    ],
+    "n": 18,
+    "pct": 94.4,
+    "pct_ci_cluster": [
+     83.33,
+     100.0
+    ],
+    "pct_ci_window": [
+     83.33,
+     100.0
+    ],
+    "sessions": 18
+   },
+   "object": {
+    "kappa": 0.77,
+    "kappa_ci_cluster": [
+     0.44,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.45,
+     1.0
+    ],
+    "n": 18,
+    "pct": 88.9,
+    "pct_ci_cluster": [
+     72.22,
+     100.0
+    ],
+    "pct_ci_window": [
+     72.22,
+     100.0
+    ],
+    "sessions": 18
+   },
+   "operation": {
+    "kappa": 0.85,
+    "kappa_ci_cluster": [
+     0.64,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.64,
+     1.0
+    ],
+    "n": 18,
+    "pct": 88.9,
+    "pct_ci_cluster": [
+     72.22,
+     100.0
+    ],
+    "pct_ci_window": [
+     72.22,
+     100.0
+    ],
+    "sessions": 18
+   },
+   "prior_own_work": {
+    "kappa": 1.0,
+    "kappa_ci_cluster": [
+     1.0,
+     1.0
+    ],
+    "kappa_ci_window": [
+     1.0,
+     1.0
+    ],
+    "n": 18,
+    "pct": 100.0,
+    "pct_ci_cluster": [
+     100.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     100.0,
+     100.0
+    ],
+    "sessions": 18
+   },
+   "process": {
+    "kappa": 0.91,
+    "kappa_ci_cluster": [
+     0.74,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.74,
+     1.0
+    ],
+    "n": 18,
+    "pct": 94.4,
+    "pct_ci_cluster": [
+     83.33,
+     100.0
+    ],
+    "pct_ci_window": [
+     83.33,
+     100.0
+    ],
+    "sessions": 18
+   },
+   "uptake": {
+    "kappa": 0.78,
+    "kappa_ci_cluster": [
+     0.57,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.56,
+     1.0
+    ],
+    "n": 18,
+    "pct": 83.3,
+    "pct_ci_cluster": [
+     66.67,
+     100.0
+    ],
+    "pct_ci_window": [
+     66.67,
+     100.0
+    ],
+    "sessions": 18
+   },
+   "verification": {
+    "kappa": 1.0,
+    "kappa_ci_cluster": [
+     1.0,
+     1.0
+    ],
+    "kappa_ci_window": [
+     1.0,
+     1.0
+    ],
+    "n": 18,
+    "pct": 100.0,
+    "pct_ci_cluster": [
+     100.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     100.0,
+     100.0
+    ],
+    "sessions": 18
+   }
+  },
+  "unmarked": {
+   "decision": {
+    "kappa": 0.88,
+    "kappa_ci_cluster": [
+     0.57,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.57,
+     1.0
+    ],
+    "n": 16,
+    "pct": 93.8,
+    "pct_ci_cluster": [
+     81.25,
+     100.0
+    ],
+    "pct_ci_window": [
+     81.25,
+     100.0
+    ],
+    "sessions": 16
+   },
+   "domain": {
+    "kappa": 0.0,
+    "kappa_ci_cluster": [
+     0.0,
+     0.0
+    ],
+    "kappa_ci_window": [
+     0.0,
+     0.0
+    ],
+    "n": 5,
+    "pct": 80.0,
+    "pct_ci_cluster": [
+     40.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     40.0,
+     100.0
+    ],
+    "sessions": 5
+   },
+   "family": {
+    "kappa": 0.83,
+    "kappa_ci_cluster": [
+     0.59,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.58,
+     1.0
+    ],
+    "n": 16,
+    "pct": 87.5,
+    "pct_ci_cluster": [
+     68.75,
+     100.0
+    ],
+    "pct_ci_window": [
+     68.75,
+     100.0
+    ],
+    "sessions": 16
+   },
+   "function": {
+    "kappa": 0.88,
+    "kappa_ci_cluster": [
+     0.63,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.63,
+     1.0
+    ],
+    "n": 16,
+    "pct": 93.8,
+    "pct_ci_cluster": [
+     81.25,
+     100.0
+    ],
+    "pct_ci_window": [
+     81.25,
+     100.0
+    ],
+    "sessions": 16
+   },
+   "object": {
+    "kappa": 0.76,
+    "kappa_ci_cluster": [
+     0.43,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.44,
+     1.0
+    ],
+    "n": 16,
+    "pct": 87.5,
+    "pct_ci_cluster": [
+     68.75,
+     100.0
+    ],
+    "pct_ci_window": [
+     68.75,
+     100.0
+    ],
+    "sessions": 16
+   },
+   "operation": {
+    "kappa": 0.83,
+    "kappa_ci_cluster": [
+     0.6,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.6,
+     1.0
+    ],
+    "n": 16,
+    "pct": 87.5,
+    "pct_ci_cluster": [
+     68.75,
+     100.0
+    ],
+    "pct_ci_window": [
+     68.75,
+     100.0
+    ],
+    "sessions": 16
+   },
+   "prior_own_work": {
+    "kappa": 0.9,
+    "kappa_ci_cluster": [
+     0.69,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.7,
+     1.0
+    ],
+    "n": 16,
+    "pct": 93.8,
+    "pct_ci_cluster": [
+     81.25,
+     100.0
+    ],
+    "pct_ci_window": [
+     81.25,
+     100.0
+    ],
+    "sessions": 16
+   },
+   "process": {
+    "kappa": 0.9,
+    "kappa_ci_cluster": [
+     0.69,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.69,
+     1.0
+    ],
+    "n": 16,
+    "pct": 93.8,
+    "pct_ci_cluster": [
+     81.25,
+     100.0
+    ],
+    "pct_ci_window": [
+     81.25,
+     100.0
+    ],
+    "sessions": 16
+   },
+   "uptake": {
+    "kappa": 0.84,
+    "kappa_ci_cluster": [
+     0.62,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.61,
+     1.0
+    ],
+    "n": 16,
+    "pct": 87.5,
+    "pct_ci_cluster": [
+     68.75,
+     100.0
+    ],
+    "pct_ci_window": [
+     68.75,
+     100.0
+    ],
+    "sessions": 16
+   },
+   "verification": {
+    "kappa": 1.0,
+    "kappa_ci_cluster": [
+     1.0,
+     1.0
+    ],
+    "kappa_ci_window": [
+     1.0,
+     1.0
+    ],
+    "n": 16,
+    "pct": 100.0,
+    "pct_ci_cluster": [
+     100.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     100.0,
+     100.0
+    ],
+    "sessions": 16
+   }
+  }
+ },
+ "frequency": {
+  "decision": {
+   "fable": {
+    "D0": 2,
+    "D1": 4,
+    "D2": 12,
+    "D4": 2
+   },
+   "final": {
+    "D0": 2,
+    "D1": 4,
+    "D2": 10,
+    "D3": 2,
+    "D4": 2
+   }
+  },
+  "uptake": {
+   "fable": {
+    "U1": 3,
+    "U2": 1,
+    "U4": 4,
+    "U7": 3,
+    "U8": 7,
+    "UX": 2
+   },
+   "final": {
+    "U1": 2,
+    "U2": 1,
+    "U3": 3,
+    "U4": 4,
+    "U7": 1,
+    "U8": 7,
+    "UX": 2
+   }
+  },
+  "verification": {
+   "fable": {
+    "V0": 14,
+    "V1": 4,
+    "VX": 2
+   },
+   "final": {
+    "V0": 14,
+    "V1": 4,
+    "VX": 2
+   }
+  }
+ },
+ "marked_less_complete": {
+  "main_block_cut": [
+   "NIRVANA-e27-t02"
+  ],
+  "reused_earlier_ai_text_cut": [
+   "NIRVANA-e26-t11",
+   "NIRVANA-e70-t07",
+   "WILDCHAT-0685972d7031-t03"
+  ]
+ },
+ "marked_windows": {
+  "NIRVANA-e26-t11": {
+   "decision": {
+    "A": "D0",
+    "B": "D0",
+    "fable": "D0",
+    "final": "D0"
+   },
+   "uptake": {
+    "A": "UX",
+    "B": "UX",
+    "fable": "UX",
+    "final": "UX"
+   },
+   "verification": {
+    "A": "VX",
+    "B": "VX",
+    "fable": "VX",
+    "final": "VX"
+   }
+  },
+  "NIRVANA-e27-t02": {
+   "decision": {
+    "A": "D3",
+    "B": "D3",
+    "fable": "D2",
+    "final": "D3"
+   },
+   "uptake": {
+    "A": "U3",
+    "B": "U3",
+    "fable": "U7",
+    "final": "U3"
+   },
+   "verification": {
+    "A": "V0",
+    "B": "V0",
+    "fable": "V0",
+    "final": "V0"
+   }
+  },
+  "NIRVANA-e70-t07": {
+   "decision": {
+    "A": "D4",
+    "B": "D4",
+    "fable": "D4",
+    "final": "D4"
+   },
+   "uptake": {
+    "A": "U1",
+    "B": "U1",
+    "fable": "U1",
+    "final": "U1"
+   },
+   "verification": {
+    "A": "V0",
+    "B": "V0",
+    "fable": "V0",
+    "final": "V0"
+   }
+  },
+  "WILDCHAT-0685972d7031-t03": {
+   "decision": {
+    "A": "D1",
+    "B": "D1",
+    "fable": "D1",
+    "final": "D1"
+   },
+   "uptake": {
+    "A": "U8",
+    "B": "U8",
+    "fable": "U8",
+    "final": "U8"
+   },
+   "verification": {
+    "A": "V0",
+    "B": "V0",
+    "fable": "V0",
+    "final": "V0"
+   }
+  }
+ },
+ "n": 20,
+ "note": "AI-to-AI consistency on 20 windows. Not human, expert or gold-standard validation. Says nothing about cognition.",
+ "wildchat_is_research_writing": {
+  "fable_inconsistent": [
+   "WILDCHAT-2d9abc984de9-t01"
+  ],
+  "n": 6,
+  "no": 2,
+  "rows": {
+   "WILDCHAT-0685972d7031-t03": {
+    "fable_domain": "RESEARCH_EXPLICIT",
+    "final_domain": "RESEARCH_EXPLICIT",
+    "is_research_writing": "yes"
+   },
+   "WILDCHAT-1bcd99f673a7-t02": {
+    "fable_domain": "RESEARCH_EXPLICIT",
+    "final_domain": "RESEARCH_EXPLICIT",
+    "is_research_writing": "yes"
+   },
+   "WILDCHAT-2d9abc984de9-t01": {
+    "fable_domain": "RESEARCH_EXPLICIT",
+    "final_domain": "RESEARCH_EXPLICIT",
+    "is_research_writing": "no"
+   },
+   "WILDCHAT-30f7e79715c8-t01": {
+    "fable_domain": "ACADEMIC_STATED",
+    "final_domain": "RESEARCH_EXPLICIT",
+    "is_research_writing": "no"
+   },
+   "WILDCHAT-83d047d8ab0b-t02": {
+    "fable_domain": "RESEARCH_EXPLICIT",
+    "final_domain": "RESEARCH_EXPLICIT",
+    "is_research_writing": "yes"
+   },
+   "WILDCHAT-8685d89a537b-t02": {
+    "fable_domain": "RESEARCH_EXPLICIT",
+    "final_domain": "RESEARCH_EXPLICIT",
+    "is_research_writing": "yes"
+   }
+  },
+  "yes": 4,
+  "yes_exact_ci95": [
+   0.22,
+   0.96
+  ]
+ }
+}

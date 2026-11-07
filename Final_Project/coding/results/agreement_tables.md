@@ -145,7 +145,7 @@ Written by `scripts/stats_bet4.py` from saved labels. A vs B. **AI-to-AI consist
 | Label | A | B | final | both / either |
 |---|---|---|---|---|
 | `CLAIM_ARGUMENT` | 9 | 11 | 11 | 9/11 |
-| `FRAME` | 9 | 8 | 7 | 7/10 |
+| `FRAME_IDEA_PLAN` | 9 | 8 | 7 | 7/10 |
 | `OX` | 4 | 4 | 4 | 4/4 |
 | `PROSE_CITATION` | 40 | 40 | 40 | 39/41 |
 | `REVIEW_SUBSTANCE` | 6 | 5 | 6 | 5/6 |
@@ -210,7 +210,8 @@ Written by `scripts/stats_bet4.py` from saved labels. A vs B. **AI-to-AI consist
 |---|---|---|---|---|
 | `NONE_VISIBLE` | 22 | 22 | 21 | 20/24 |
 | `UNOBSERVABLE` | 17 | 20 | 17 | 17/20 |
-| `VISIBLE` | 61 | 58 | 62 | 56/63 |
+| `VISIBLE_DRAFT` | 44 | 43 | 44 | 43/44 |
+| `VISIBLE_PARTIAL` | 17 | 15 | 18 | 12/20 |
 
 **decision**
 

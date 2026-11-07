@@ -2,7 +2,7 @@
 """Agreement from saved labels only: results/labels_ab.csv, and final_labels.csv if present. Calls no model, needs no window text. Fixed seed, so reruns give the same numbers.
 Writes results/agreement.json and results/agreement_tables.md.
 Every number is consistency between AI coders. Two models can share a bias. Nothing here validates claims about cognition."""
-import collections, csv, json, os, random, sys
+import collections, csv, json, os, random, re, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "..", "results")
 
@@ -13,7 +13,8 @@ SEED = 2164
 
 
 def short(v):
-    return (v or "").split("_")[0] if (v or "")[:1] in "DVUF" and "_" in (v or "") else (v or "")
+    """D2_AI_PROPOSED_OPEN to D2. Leaves VISIBLE_DRAFT and FRAME_IDEA_PLAN whole."""
+    return v.split("_")[0] if re.match(r"[DVUF](\d|X)_", v or "") else (v or "")
 
 
 def kappa(a, b):
