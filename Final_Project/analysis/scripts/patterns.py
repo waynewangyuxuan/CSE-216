@@ -74,9 +74,10 @@ def main():
     rows = []
     for t in types:
         n = [sum(r["type"] == t and r["dataset"] == d for r in trow) for d in ("NIRVANA", "WildChat")]
-        rows.append([t] + n + [sum(n), pct(sum(n), len(trow))])
+        lens = [r["n_windows"] for r in trow if r["type"] == t]
+        rows.append([t] + n + [sum(n), pct(sum(n), len(trow)), f"{sum(lens) / len(lens):.1f}" if lens else "–"])
     md += ["\n## 2. Session types by category make-up (IND, NEU ignored)\n\n",
-           md_table(["Type", "NIRVANA", "WildChat", "All", "Share"], rows)]
+           md_table(["Type", "NIRVANA", "WildChat", "All", "Share", "Mean windows per session"], rows)]
 
     # Mixed sessions: what does the turn into and out of surrender look like in codes?
     into, outof = Counter(), Counter()

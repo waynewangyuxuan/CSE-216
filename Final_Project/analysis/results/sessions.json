@@ -20,8 +20,44 @@
    "OFF": 16,
    "SL": 83
   },
+  "drift": {
+   "SL": {
+    "expected": 0.5,
+    "n": 162,
+    "observed": 0.456,
+    "p_earlier": 0.0105,
+    "p_later": 0.99
+   },
+   "SL by R16": {
+    "expected": 0.5,
+    "n": 96,
+    "observed": 0.37,
+    "p_earlier": 0.0005,
+    "p_later": 1.0
+   },
+   "SL not R16": {
+    "expected": 0.499,
+    "n": 66,
+    "observed": 0.581,
+    "p_earlier": 0.991,
+    "p_later": 0.0095
+   },
+   "Support (OFF+AUG)": {
+    "expected": 0.5,
+    "n": 169,
+    "observed": 0.492,
+    "p_earlier": 0.3448,
+    "p_later": 0.6557
+   }
+  },
   "ends_in_sl": 43,
   "escalation_d1_to_d4": 6,
+  "escalation_shuffle": {
+   "observed": 6,
+   "p_ge": 0.8481,
+   "reverse_observed": 7,
+   "shuffled_mean": 6.9
+  },
   "first_determinate": {
    "AUG": 14,
    "NEU": 12,
@@ -83,6 +119,13 @@
    1.0,
    1.0
   ],
+  "first_sl_rule": {
+   "R06": 3,
+   "R09": 8,
+   "R11": 6,
+   "R15": 8,
+   "R16": 32
+  },
   "first_window": {
    "AUG": 11,
    "IND": 21,
@@ -90,6 +133,8 @@
    "OFF": 26,
    "SL": 38
   },
+  "ind_is_last_window": 37,
+  "ind_windows": 103,
   "leaves_sl_any": 23,
   "leaves_sl_to_support": 19,
   "max_sl_run": {
@@ -161,10 +206,30 @@
    }
   },
   "perm_test_excl_ind": {
+   "AUG->AUG": {
+    "expected": 16.2,
+    "observed": 18,
+    "p_ge": 0.2724
+   },
+   "AUG->SL": {
+    "expected": 8.2,
+    "observed": 9,
+    "p_ge": 0.4248
+   },
+   "OFF->OFF": {
+    "expected": 30.2,
+    "observed": 34,
+    "p_ge": 0.1224
+   },
    "OFF->SL": {
     "expected": 19.9,
     "observed": 17,
     "p_ge": 0.8921
+   },
+   "SL->AUG": {
+    "expected": 8.2,
+    "observed": 8,
+    "p_ge": 0.6377
    },
    "SL->OFF": {
     "expected": 19.9,
@@ -179,39 +244,53 @@
   },
   "position_bins": {
    "AUG": [
-    14,
-    14,
+    10,
+    16,
     5,
-    14,
-    7
+    12,
+    11
    ],
    "IND": [
-    18,
-    11,
     16,
-    17,
-    15
+    9,
+    18,
+    10,
+    24
    ],
    "NEU": [
     9,
-    11,
     8,
     11,
-    9
+    7,
+    13
    ],
    "OFF": [
-    22,
-    18,
-    23,
     17,
-    10
+    20,
+    17,
+    24,
+    12
    ],
    "SL": [
-    40,
-    34,
-    30,
+    36,
     29,
-    17
+    28,
+    29,
+    28
+   ],
+   "SL_R16": [
+    26,
+    21,
+    17,
+    15,
+    10
+   ],
+   "SL_not_R16": [
+    10,
+    8,
+    11,
+    14,
+    18
    ]
   },
   "sessions_switching_sl_support": 23,
@@ -224,6 +303,20 @@
   },
   "sessions_with_sl": 57,
   "sessions_with_sl_and_support": 23,
+  "shares_session_weighted": {
+   "AUG": 0.142,
+   "IND": 0.237,
+   "NEU": 0.086,
+   "OFF": 0.222,
+   "SL": 0.313
+  },
+  "shares_window_weighted": {
+   "AUG": 0.133,
+   "IND": 0.207,
+   "NEU": 0.106,
+   "OFF": 0.219,
+   "SL": 0.335
+  },
   "sl_first": 13,
   "sl_sessions_with_later_window": 50,
   "support_first": 10,
@@ -302,8 +395,44 @@
    "OFF": 15,
    "SL": 40
   },
+  "drift": {
+   "SL": {
+    "expected": 0.502,
+    "n": 93,
+    "observed": 0.502,
+    "p_earlier": 0.5122,
+    "p_later": 0.4883
+   },
+   "SL by R16": {
+    "expected": 0.5,
+    "n": 29,
+    "observed": 0.337,
+    "p_earlier": 0.0025,
+    "p_later": 0.998
+   },
+   "SL not R16": {
+    "expected": 0.502,
+    "n": 64,
+    "observed": 0.577,
+    "p_earlier": 0.986,
+    "p_later": 0.0145
+   },
+   "Support (OFF+AUG)": {
+    "expected": 0.5,
+    "n": 144,
+    "observed": 0.517,
+    "p_earlier": 0.7991,
+    "p_later": 0.2014
+   }
+  },
   "ends_in_sl": 24,
   "escalation_d1_to_d4": 6,
+  "escalation_shuffle": {
+   "observed": 6,
+   "p_ge": 0.8631,
+   "reverse_observed": 7,
+   "shuffled_mean": 6.97
+  },
   "first_determinate": {
    "AUG": 14,
    "NEU": 11,
@@ -344,6 +473,13 @@
    1.0,
    1.0
   ],
+  "first_sl_rule": {
+   "R06": 3,
+   "R09": 8,
+   "R11": 6,
+   "R15": 8,
+   "R16": 11
+  },
   "first_window": {
    "AUG": 11,
    "IND": 13,
@@ -351,6 +487,8 @@
    "OFF": 17,
    "SL": 21
   },
+  "ind_is_last_window": 7,
+  "ind_windows": 51,
   "leaves_sl_any": 18,
   "leaves_sl_to_support": 17,
   "max_sl_run": {
@@ -419,10 +557,30 @@
    }
   },
   "perm_test_excl_ind": {
+   "AUG->AUG": {
+    "expected": 15.3,
+    "observed": 17,
+    "p_ge": 0.2869
+   },
+   "AUG->SL": {
+    "expected": 7.0,
+    "observed": 8,
+    "p_ge": 0.3983
+   },
+   "OFF->OFF": {
+    "expected": 22.2,
+    "observed": 26,
+    "p_ge": 0.1284
+   },
    "OFF->SL": {
     "expected": 18.4,
     "observed": 16,
     "p_ge": 0.8586
+   },
+   "SL->AUG": {
+    "expected": 7.1,
+    "observed": 8,
+    "p_ge": 0.4023
    },
    "SL->OFF": {
     "expected": 18.5,
@@ -437,39 +595,53 @@
   },
   "position_bins": {
    "AUG": [
-    14,
-    13,
+    10,
+    15,
     5,
-    13,
-    6
+    11,
+    10
    ],
    "IND": [
-    11,
-    8,
     10,
+    5,
+    13,
     6,
-    7
+    8
    ],
    "NEU": [
     8,
-    10,
     8,
-    9,
-    8
+    10,
+    6,
+    11
    ],
    "OFF": [
+    14,
+    15,
+    14,
     19,
-    12,
-    17,
-    16,
-    10
+    12
    ],
    "SL": [
-    21,
-    18,
-    18,
-    17,
-    12
+    19,
+    15,
+    16,
+    16,
+    20
+   ],
+   "SL_R16": [
+    9,
+    7,
+    5,
+    4,
+    2
+   ],
+   "SL_not_R16": [
+    10,
+    8,
+    11,
+    12,
+    18
    ]
   },
   "sessions_switching_sl_support": 21,
@@ -482,6 +654,20 @@
   },
   "sessions_with_sl": 36,
   "sessions_with_sl_and_support": 21,
+  "shares_session_weighted": {
+   "AUG": 0.208,
+   "IND": 0.143,
+   "NEU": 0.113,
+   "OFF": 0.239,
+   "SL": 0.297
+  },
+  "shares_window_weighted": {
+   "AUG": 0.182,
+   "IND": 0.147,
+   "NEU": 0.138,
+   "OFF": 0.251,
+   "SL": 0.282
+  },
   "sl_first": 11,
   "sl_sessions_with_later_window": 29,
   "support_first": 10,
@@ -560,8 +746,44 @@
    "OFF": 1,
    "SL": 43
   },
+  "drift": {
+   "SL": {
+    "expected": 0.5,
+    "n": 69,
+    "observed": 0.394,
+    "p_earlier": 0.0005,
+    "p_later": 1.0
+   },
+   "SL by R16": {
+    "expected": 0.5,
+    "n": 67,
+    "observed": 0.384,
+    "p_earlier": 0.0005,
+    "p_later": 1.0
+   },
+   "SL not R16": {
+    "expected": 0.498,
+    "n": 2,
+    "observed": 0.722,
+    "p_earlier": 0.8296,
+    "p_later": 0.2319
+   },
+   "Support (OFF+AUG)": {
+    "expected": 0.503,
+    "n": 25,
+    "observed": 0.344,
+    "p_earlier": 0.006,
+    "p_later": 0.995
+   }
+  },
   "ends_in_sl": 19,
   "escalation_d1_to_d4": 0,
+  "escalation_shuffle": {
+   "observed": 0,
+   "p_ge": 1.0,
+   "reverse_observed": 0,
+   "shuffled_mean": 0.0
+  },
   "first_determinate": {
    "NEU": 1,
    "OFF": 10,
@@ -591,12 +813,17 @@
    0.333,
    0.5
   ],
+  "first_sl_rule": {
+   "R16": 21
+  },
   "first_window": {
    "IND": 8,
    "NEU": 1,
    "OFF": 9,
    "SL": 17
   },
+  "ind_is_last_window": 30,
+  "ind_windows": 52,
   "leaves_sl_any": 5,
   "leaves_sl_to_support": 2,
   "max_sl_run": {
@@ -658,10 +885,30 @@
    }
   },
   "perm_test_excl_ind": {
+   "AUG->AUG": {
+    "expected": 0.7,
+    "observed": 1,
+    "p_ge": 0.6332
+   },
+   "AUG->SL": {
+    "expected": 1.1,
+    "observed": 1,
+    "p_ge": 0.8286
+   },
+   "OFF->OFF": {
+    "expected": 7.9,
+    "observed": 8,
+    "p_ge": 0.7321
+   },
    "OFF->SL": {
     "expected": 1.4,
     "observed": 1,
     "p_ge": 0.8826
+   },
+   "SL->AUG": {
+    "expected": 1.1,
+    "observed": 0,
+    "p_ge": 1.0
    },
    "SL->OFF": {
     "expected": 1.4,
@@ -683,32 +930,46 @@
     1
    ],
    "IND": [
-    7,
-    3,
     6,
-    11,
-    8
+    4,
+    5,
+    4,
+    16
    ],
    "NEU": [
     1,
-    1,
     0,
-    2,
-    1
+    1,
+    1,
+    2
    ],
    "OFF": [
     3,
-    6,
-    6,
-    1,
+    5,
+    3,
+    5,
     0
    ],
    "SL": [
-    19,
-    16,
+    17,
+    14,
     12,
+    13,
+    8
+   ],
+   "SL_R16": [
+    17,
+    14,
     12,
-    5
+    11,
+    8
+   ],
+   "SL_not_R16": [
+    0,
+    0,
+    0,
+    2,
+    0
    ]
   },
   "sessions_switching_sl_support": 2,
@@ -721,6 +982,20 @@
   },
   "sessions_with_sl": 21,
   "sessions_with_sl_and_support": 2,
+  "shares_session_weighted": {
+   "AUG": 0.009,
+   "IND": 0.428,
+   "NEU": 0.029,
+   "OFF": 0.187,
+   "SL": 0.347
+  },
+  "shares_window_weighted": {
+   "AUG": 0.02,
+   "IND": 0.344,
+   "NEU": 0.033,
+   "OFF": 0.146,
+   "SL": 0.457
+  },
   "sl_first": 2,
   "sl_sessions_with_later_window": 21,
   "support_first": 0,

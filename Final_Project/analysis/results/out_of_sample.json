@@ -102,6 +102,18 @@
    "n": 30
   }
  },
+ "coder_disagreements": {
+  "a_eq_b_final_differs": 13,
+  "a_ne_b": 57,
+  "final_eq_A": 44,
+  "final_eq_B": 12,
+  "neither": 1,
+  "whole_session_SL": {
+   "A": 177,
+   "B": 167,
+   "final": 167
+  }
+ },
  "coverage": {
   "All 528": {
    "n": 528,
@@ -131,6 +143,19 @@
    "n": 151,
    "not_indeterminate": 99
   }
+ },
+ "d4_unchecked_paste": {
+  "NONE_VISIBLE": 15,
+  "UNOBSERVABLE": 0,
+  "VISIBLE_DRAFT": 11,
+  "VISIBLE_PARTIAL": 19,
+  "by_rule": {
+   "R09": 15,
+   "R10": 2,
+   "R11": 28
+  },
+  "n": 45,
+  "r09_at_window_1": 8
  },
  "r99_combos": {
   "D2 F2 U4": 6,
@@ -272,6 +297,24 @@
   ]
  },
  "u8_with_v_not_v0": [],
+ "unsettled_category_fixed": {
+  "NIRVANA-e04-t16": "OFF",
+  "NIRVANA-e25-t16": "OFF",
+  "NIRVANA-e42-t08": "NEU",
+  "NIRVANA-e47-t01": "IND",
+  "WILDCHAT-14140e33cb98-t01": "SL",
+  "WILDCHAT-14140e33cb98-t02": "IND",
+  "WILDCHAT-85fb5101edc7-t02": "IND",
+  "WILDCHAT-953148aa3d57-t01": "OFF",
+  "WILDCHAT-953148aa3d57-t02": "OFF",
+  "WILDCHAT-953148aa3d57-t03": "OFF",
+  "WILDCHAT-9dff96b50f4f-t01": "NEU",
+  "WILDCHAT-e6acb3ce8d84-t01": "SL",
+  "WILDCHAT-e6acb3ce8d84-t02": "IND",
+  "WILDCHAT-f6837354bd04-t03": "SL",
+  "WILDCHAT-f6837354bd04-t04": "SL",
+  "WILDCHAT-f6837354bd04-t05": "IND"
+ },
  "unsettled_range": [
   {
    "dataset": "NIRVANA",
@@ -393,5 +436,25 @@
    "unsettled": "prior_own_work",
    "window_id": "WILDCHAT-f6837354bd04-t05"
   }
- ]
+ ],
+ "whole_session_shares": {
+  "Both": {
+   "SL": 167,
+   "SL_weak": 97,
+   "n": 498,
+   "support": 175
+  },
+  "NIRVANA": {
+   "SL": 98,
+   "SL_weak": 30,
+   "n": 347,
+   "support": 150
+  },
+  "WildChat": {
+   "SL": 69,
+   "SL_weak": 67,
+   "n": 151,
+   "support": 25
+  }
+ }
 }

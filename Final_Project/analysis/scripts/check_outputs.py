@@ -4,7 +4,7 @@ names that carry dataset text)."""
 import os, sys
 from common import RES, FIG
 
-FIGS = [f"fig{i:02d}" for i in range(1, 15)]
+FIGS = [f"fig{i:02d}" for i in range(1, 16)]
 need = ["out_of_sample.md", "out_of_sample.json", "sessions.md", "sessions.json", "sensitivity.md", "sensitivity.json",
         "patterns.md", "patterns/signatures.csv", "patterns/session_types.csv", "sessions/session_table.csv",
         "v12_final/window_categories.csv", "v12_coderA/window_categories.csv", "v12_coderB/window_categories.csv"]

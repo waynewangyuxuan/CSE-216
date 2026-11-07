@@ -88,6 +88,8 @@ Possible categories counted over every v1.1 value of the unsettled field(s), ski
 | WILDCHAT-f6837354bd04-t04 | WildChat | prior_own_work | SL 4 |
 | WILDCHAT-f6837354bd04-t05 | WildChat | prior_own_work | IND 4 |
 
+16 of these 20 windows get the same category under every value of the unsettled field (SL 4, OFF 5, NEU 2, IND 5): R00 is stricter than needed for them.
+
 ## 6. The 100 calibration windows now
 100 of Bet 5's 100 windows are in this run. 2 have a different category, all from Bet 6's full-history recode (the rules are identical, so a change means a label changed):
 
@@ -105,6 +107,20 @@ Rules applied to coder A's labels only and to coder B's only (A = Opus, the adju
 | WildChat | 151 | 146 (96.7%) | 0.949 | 141 | 138 | 75 | 73 | 69 |
 | WildChat-Bet4 | 30 | 27 (90.0%) | 0.845 | 29 | 28 | 16 | 14 | 15 |
 | All | 528 | 471 (89.2%) | 0.858 | 502 | 470 | 193 | 181 | 182 |
+
+Where A's and B's categories differ (57 windows), the final category equals A's in 44, B's in 12, neither in 1: the adjudicator's lean toward A carries into categories there. On 13 windows A and B agree and the final differs from both. Whole-session surrender-leaning windows: A 177, B 167, final 167.
+
+## 7c. Whole-session windows by dataset
+
+| Set | Windows | Surrender-leaning | Support (OFF+AUG) | SL that is weak |
+|---|---|---|---|---|
+| NIRVANA | 347 | 98 (28.2%) | 150 (43.2%) | 30 of 98 |
+| WildChat | 151 | 69 (45.7%) | 25 (16.6%) | 67 of 69 |
+| Both | 498 | 167 (33.5%) | 175 (35.1%) | 97 of 167 |
+
+## 7d. Unchecked reuse of AI text
+
+AI proposal taken into the editor with no independent check (`D4` + `V0`–`V2` + `U1`/`U2`), whole sessions: 45 windows; own work none visible 15, partial 19, draft 11. Rules: R09 15, R10 2, R11 28. R09 (strong) needs no visible own work; 8 of the R09 windows are window 1.
 
 ## 8. Known scope: `U8` with `V` other than `V0` (not caught by R00)
 

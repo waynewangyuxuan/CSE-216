@@ -108,10 +108,16 @@ def main():
     # 5. UNSETTLED range.
     ur = unsettled_range(ws, ar)
     J["unsettled_range"] = ur
+    single = [u for u in ur if "," not in u["possible"]]
+    J["unsettled_category_fixed"] = {u["window_id"]: u["possible"].split()[0] for u in single}
+    md_unsettled_note = (f"\n{len(single)} of these {len(ur)} windows get the same category under every value of the unsettled field "
+                         f"(SL {sum(u['possible'].startswith('SL') for u in single)}, OFF {sum(u['possible'].startswith('OFF') for u in single)}, "
+                         f"NEU {sum(u['possible'].startswith('NEU') for u in single)}, IND {sum(u['possible'].startswith('IND') for u in single)}): "
+                         "R00 is stricter than needed for them.\n")
     md += [f"\n## 5. Windows with an UNSETTLED field ({len(ur)}), all sent to R00\n",
            "Possible categories counted over every v1.1 value of the unsettled field(s), skipping combinations v1.1 forbids.\n\n",
            md_table(["Window", "Set", "Unsettled", "Possible categories (count of values)"],
-                    [[u["window_id"], u["dataset"], u["unsettled"], u["possible"]] for u in ur])]
+                    [[u["window_id"], u["dataset"], u["unsettled"], u["possible"]] for u in ur]), md_unsettled_note]
 
     # 6. Calibration windows: same category as Bet 5?
     cal = {r["window_id"]: r for r in read_csv(os.path.join(FP, "inference", "calibration", "final", "window_categories.csv"))}
@@ -139,6 +145,49 @@ def main():
            "Rules applied to coder A's labels only and to coder B's only (A = Opus, the adjudicator's own model; B = Sonnet). "
            "If adjudication lean toward A moved categories, final would track A much more than B.\n\n",
            md_table(["Set", "Windows", "A = B category", "κ", "Final = A", "Final = B", "SL under A", "SL under B", "SL final"], rows)]
+
+    # 7b. Where coder categories differ: whom does the final follow? And whole-session SL by coder.
+    dis = [w for w in ws if A[w["window_id"]]["category"] != B[w["window_id"]]["category"]]
+    agree_ab = [w for w in ws if A[w["window_id"]]["category"] == B[w["window_id"]]["category"]]
+    whole = [w for w in ws if w["dataset"] in ("NIRVANA", "WildChat")]
+    J["coder_disagreements"] = {
+        "a_ne_b": len(dis),
+        "final_eq_A": sum(w["category"] == A[w["window_id"]]["category"] for w in dis),
+        "final_eq_B": sum(w["category"] == B[w["window_id"]]["category"] for w in dis),
+        "neither": sum(w["category"] not in (A[w["window_id"]]["category"], B[w["window_id"]]["category"]) for w in dis),
+        "a_eq_b_final_differs": sum(w["category"] != A[w["window_id"]]["category"] for w in agree_ab),
+        "whole_session_SL": {"A": sum(A[w["window_id"]]["category"] == SL for w in whole),
+                             "B": sum(B[w["window_id"]]["category"] == SL for w in whole),
+                             "final": sum(w["category"] == SL for w in whole)}}
+    j = J["coder_disagreements"]
+    md.append(f"\nWhere A's and B's categories differ ({j['a_ne_b']} windows), the final category equals A's in {j['final_eq_A']}, "
+              f"B's in {j['final_eq_B']}, neither in {j['neither']}: the adjudicator's lean toward A carries into categories there. "
+              f"On {j['a_eq_b_final_differs']} windows A and B agree and the final differs from both. Whole-session surrender-leaning "
+              f"windows: A {j['whole_session_SL']['A']}, B {j['whole_session_SL']['B']}, final {j['whole_session_SL']['final']}.\n")
+
+    # 7c. Whole-session shares by dataset (the pooled share is a mix).
+    rows = []
+    J["whole_session_shares"] = {}
+    for d in ["NIRVANA", "WildChat", "Both"]:
+        g = [w for w in whole if d == "Both" or w["dataset"] == d]
+        sl, sup = sum(w["category"] == SL for w in g), sum(w["category"] in ("OFFLOADING", "AUGMENTING") for w in g)
+        weak = sum(w["category"] == SL and w["strength"] == "weak" for w in g)
+        J["whole_session_shares"][d] = {"n": len(g), "SL": sl, "support": sup, "SL_weak": weak}
+        rows.append([d, len(g), f"{sl} ({pct(sl, len(g))})", f"{sup} ({pct(sup, len(g))})", f"{weak} of {sl}"])
+    md += ["\n## 7c. Whole-session windows by dataset\n\n",
+           md_table(["Set", "Windows", "Surrender-leaning", "Support (OFF+AUG)", "SL that is weak"], rows)]
+
+    # 7d. Unchecked wholesale reuse of AI text, by visible own work (why strong is rare).
+    paste = [w for w in whole if w["D"] == "D4" and w["V"] in ("V0", "V1", "V2") and w["U"] in ("U1", "U2")]
+    J["d4_unchecked_paste"] = {"n": len(paste), **{k: sum(w["prior_own_work"] == k for w in paste)
+                                                   for k in ("NONE_VISIBLE", "VISIBLE_PARTIAL", "VISIBLE_DRAFT", "UNOBSERVABLE")},
+                               "by_rule": dict(sorted(Counter(w["rule"] for w in paste).items())),
+                               "r09_at_window_1": sum(w["rule"] == "R09" and w["order"] == 1 for w in ws)}
+    j = J["d4_unchecked_paste"]
+    md.append(f"\n## 7d. Unchecked reuse of AI text\n\nAI proposal taken into the editor with no independent check (`D4` + `V0`–`V2` + `U1`/`U2`), whole sessions: "
+              f"{j['n']} windows; own work none visible {j['NONE_VISIBLE']}, partial {j['VISIBLE_PARTIAL']}, draft {j['VISIBLE_DRAFT']}. "
+              f"Rules: {', '.join(f'{k} {v}' for k, v in j['by_rule'].items())}. R09 (strong) needs no visible own work; "
+              f"{j['r09_at_window_1']} of the R09 windows are window 1.\n")
 
     # 8. Known scope gap from Bet 5: U8 with V other than V0.
     u8 = [w["window_id"] for w in ws if w["U"] == "U8" and w["V"] not in {"V0", "?"} and not w["unrecognized_fields"]]

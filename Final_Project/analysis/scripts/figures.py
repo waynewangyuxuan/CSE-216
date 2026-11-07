@@ -128,45 +128,76 @@ def fig_transitions(J):
 
 
 def fig_perm(SJ):
+    """Observed vs within-session shuffle, with IND kept (top) and removed before shuffling (bottom)."""
     tags = [("All whole sessions", "All"), ("NIRVANA only (coverage caveat)", "NIRVANA"), ("WildChat only (coverage caveat)", "WildChat")]
     pairs = ["SL->SL", "OFF->OFF", "AUG->AUG", "SL->OFF", "OFF->SL"]
-    fig, axes = plt.subplots(1, 3, figsize=(11, 3.3), sharey=False)
-    fig.subplots_adjust(wspace=0.5)
-    for ax, (t, lab) in zip(axes, tags):
-        pt = SJ[t]["perm_test"]
-        y = np.arange(len(pairs))[::-1]
-        ax.hlines(y, [pt[p]["expected"] for p in pairs], [pt[p]["observed"] for p in pairs], color=GRID, lw=2)
-        ax.plot([pt[p]["expected"] for p in pairs], y, "o", ms=7, mfc=SURF, mec=INK2, label="shuffled within session")
-        ax.plot([pt[p]["observed"] for p in pairs], y, "o", ms=8, color=COL[SL], label="observed")
-        for yi, p in zip(y, pairs):
-            ax.text(max(pt[p]["observed"], pt[p]["expected"]) + 1.5, yi, f"p {pt[p]['p_ge']:.3f}", va="center", fontsize=7, color=INK2)
-        ax.set_yticks(y, pairs); ax.set_title(lab, loc="left"); ax.set_xlabel("adjacent pairs")
-        ax.set_xlim(0, max(max(pt[p]["observed"], pt[p]["expected"]) for p in pairs) * 1.3)
-    axes[0].legend(frameon=False, fontsize=7, loc="lower right")
-    fig.suptitle("Is surrender sticky beyond session make-up? Observed vs 2,000 within-session shuffles",
-                 x=0.02, y=1.06, ha="left", fontweight="bold")
+    fig, axes = plt.subplots(2, 3, figsize=(11, 5.6))
+    fig.subplots_adjust(wspace=0.5, hspace=0.55)
+    for r, (key, rowlab) in enumerate([("perm_test", "IND kept"), ("perm_test_excl_ind", "IND removed first")]):
+        for ax, (t, lab) in zip(axes[r], tags):
+            pt = SJ[t][key]
+            y = np.arange(len(pairs))[::-1]
+            ax.hlines(y, [pt[p]["expected"] for p in pairs], [pt[p]["observed"] for p in pairs], color=GRID, lw=2)
+            ax.plot([pt[p]["expected"] for p in pairs], y, "o", ms=7, mfc=SURF, mec=INK2, label="shuffled within session")
+            ax.plot([pt[p]["observed"] for p in pairs], y, "o", ms=8, color=COL[SL], label="observed")
+            top = max(max(pt[p]["observed"], pt[p]["expected"]) for p in pairs)
+            for yi, p in zip(y, pairs):
+                ax.text(max(pt[p]["observed"], pt[p]["expected"]) + top * 0.04, yi, f"p {pt[p]['p_ge']:.2f}", va="center", fontsize=7, color=INK2)
+            ax.set_yticks(y, pairs); ax.set_title(f"{lab}, {rowlab}", loc="left", fontsize=9.5); ax.set_xlabel("adjacent pairs")
+            ax.set_xlim(0, top * 1.35)
+    axes[0][0].legend(frameon=False, fontsize=7, loc="lower right")
+    fig.suptitle("SL->SL is no stickier than session make-up once closing-turn IND windows are set aside (2,000 shuffles each)",
+                 x=0.02, y=0.99, ha="left", fontweight="bold")
     save(fig, "fig05_persistence_vs_shuffle.png")
 
 
-def fig_position(J):
-    bins = J["position_bins"]
-    tot = np.array([sum(bins[SHORT[c]][i] for c in CATS) for i in range(5)], float)
-    fig, ax = plt.subplots(figsize=(7, 3.2))
+def fig_position(SJ):
+    """Category share by centred fifth of the session, per dataset; SL split into request-only (R16) and other."""
+    parts = [("SL_not_R16", "Surrender-leaning, behavior seen", COL[SL], 1.0), ("SL_R16", "Surrender-leaning, request only (R16)", COL[SL], 0.4),
+             ("OFF", LABEL[OF], COL[OF], 1.0), ("AUG", LABEL[AU], COL[AU], 1.0), ("NEU", LABEL[NE], COL[NE], 1.0), ("IND", LABEL[IN], COL[IN], 1.0)]
+    tags = [("NIRVANA only (coverage caveat)", "NIRVANA"), ("WildChat only (coverage caveat)", "WildChat")]
+    fig, axes = plt.subplots(1, 2, figsize=(10, 3.6), sharey=True)
     x = np.arange(5)
-    bottom = np.zeros(5)
-    for c in CATS:
-        v = 100 * np.array(bins[SHORT[c]]) / tot
-        ax.bar(x, v - 0.3, bottom=bottom, color=COL[c], width=0.75, edgecolor="none")
-        for xi, vi, b in zip(x, v, bottom):
-            if vi > 6:
-                ax.text(xi, b + vi / 2, f"{vi:.0f}%", ha="center", va="center", fontsize=7,
-                        color="white" if c in (SL, OF, NE) else INK)
-        bottom += v
-    ax.set_xticks(x, ["first fifth", "2nd", "3rd", "4th", "last fifth"])
-    ax.set_ylabel("% of windows in that part of the session")
-    ax.set_title("Category share by position in session (sessions with 3+ windows)", loc="left")
-    legend(ax, loc="upper center", bbox_to_anchor=(0.5, -0.12), ncol=5, fontsize=7.5)
+    for ax, (t, lab) in zip(axes, tags):
+        bins = SJ[t]["position_bins"]
+        tot = np.array([sum(bins[k][i] for k in ("SL", "OFF", "AUG", "NEU", "IND")) for i in range(5)], float)
+        bottom = np.zeros(5)
+        for key, name, col, al in parts:
+            v = 100 * np.array(bins[key]) / tot
+            ax.bar(x, v, bottom=bottom, color=col, alpha=al, width=0.75, edgecolor=SURF, linewidth=1, label=name,
+                   hatch="////" if key == "SL_R16" else None)
+            for xi, vi, b in zip(x, v, bottom):
+                if vi > 7:
+                    ax.text(xi, b + vi / 2, f"{vi:.0f}%", ha="center", va="center", fontsize=7,
+                            color="white" if key in ("SL_not_R16", "OFF", "NEU") else INK)
+            bottom += v
+        ax.set_xticks(x, ["first fifth", "2nd", "3rd", "4th", "last fifth"])
+        ax.set_title(f"{lab} (sessions with 3+ windows)", loc="left")
+    axes[0].set_ylabel("% of windows in that part of the session")
+    axes[0].legend(frameon=False, fontsize=7, loc="upper center", bbox_to_anchor=(1.05, -0.12), ncol=3)
+    fig.suptitle("Request-only surrender-leaning opens sessions; behavior-based surrender-leaning sits later",
+                 x=0.02, y=1.02, ha="left", fontweight="bold")
     save(fig, "fig06_category_by_position.png")
+
+
+def fig_drift(SJ):
+    tags = [("All whole sessions", "All"), ("NIRVANA only (coverage caveat)", "NIRVANA"), ("WildChat only (coverage caveat)", "WildChat")]
+    kinds = ["SL by R16", "SL not R16", "Support (OFF+AUG)"]
+    cols = {"SL by R16": COL[SL], "SL not R16": COL[SL], "Support (OFF+AUG)": COL[OF]}
+    fig, ax = plt.subplots(figsize=(8, 3.4))
+    rows = [(t, lab, k) for t, lab in tags for k in kinds if k in SJ[t]["drift"]]
+    y = np.arange(len(rows))[::-1]
+    for yi, (t, lab, k) in zip(y, rows):
+        d = SJ[t]["drift"][k]
+        ax.hlines(yi, d["expected"], d["observed"], color=GRID, lw=2)
+        ax.plot(d["expected"], yi, "o", ms=6, mfc=SURF, mec=INK2)
+        ax.plot(d["observed"], yi, "o", ms=7, color=cols[k], alpha=0.45 if k == "SL by R16" else 1)
+        ax.text(0.87, yi, f"n {d['n']}, p_later {d['p_later']:.3f}", va="center", fontsize=7, color=INK2)
+    ax.axvline(0.5, color=GRID, lw=1)
+    ax.set_yticks(y, [f"{lab}: {k}" for t, lab, k in rows], fontsize=7.5)
+    ax.set_xlim(0.25, 1.1); ax.set_xlabel("mean relative position in session (0 = first window, 1 = last); hollow = shuffled")
+    ax.set_title("Where in a session each kind of window sits, vs within-session shuffle", loc="left")
+    save(fig, "fig15_position_drift.png")
 
 
 def fig_first_sl(rows):
@@ -334,7 +365,7 @@ def main():
     fig_timelines(S)
     fig_transitions(SJ["All whole sessions"])
     fig_perm(SJ)
-    fig_position(SJ["All whole sessions"])
+    fig_position(SJ)
     fig_first_sl(rows)
     fig_leave(SJ)
     fig_composition(rows)
@@ -343,6 +374,7 @@ def main():
     fig_coverage(ws)
     fig_coder_ab(ws)
     fig_signatures()
+    fig_drift(SJ)
 
 
 if __name__ == "__main__":
