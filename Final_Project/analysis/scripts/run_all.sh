@@ -1,5 +1,5 @@
 #!/bin/sh
-# Bet 8: rebuilds every analysis number, table and figure from committed v1.1 labels. No model calls.
+# Bets 8-9: rebuilds every analysis number, table and figure from committed v1.1 labels. No model calls.
 # Usage: sh Final_Project/analysis/scripts/run_all.sh   (from anywhere)
 set -e
 cd "$(dirname "$0")/.."            # Final_Project/analysis
@@ -20,12 +20,19 @@ for set in final coderA coderB; do
   "$PY" ../inference/scripts/apply_rules.py results/inputs/labels_$set.csv results/v12_$set > /dev/null
 done
 
+# 2b. Numeric facts from the raw logs (timing, essay outcome). Only when the git-excluded raw files and their
+#     venv exist; otherwise the committed derived/ files are used unchanged.
+RAWPY=../data/raw/_venv/bin/python
+if [ -d ../data/raw/nirvana ] && [ -x "$RAWPY" ]; then "$RAWPY" scripts/extract_raw.py; else echo "extract_raw: using committed derived/"; fi
+
 # 3. Analysis, tables and figures.
 "$PY" scripts/out_of_sample.py
 "$PY" scripts/sessions.py
 "$PY" scripts/patterns.py
 "$PY" scripts/sensitivity.py
+"$PY" scripts/mine.py
 "$PY" scripts/figures.py
+"$PY" scripts/figures2.py
 "$PY" scripts/check_outputs.py
 "$PY" scripts/check_no_text.py
 echo "run_all: ok"

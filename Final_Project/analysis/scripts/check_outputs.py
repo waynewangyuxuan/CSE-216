@@ -4,10 +4,11 @@ names that carry dataset text)."""
 import os, sys
 from common import RES, FIG
 
-FIGS = [f"fig{i:02d}" for i in range(1, 16)]
+FIGS = [f"fig{i:02d}" for i in range(1, 26)]
 need = ["out_of_sample.md", "out_of_sample.json", "sessions.md", "sessions.json", "sensitivity.md", "sensitivity.json",
         "patterns.md", "patterns/signatures.csv", "patterns/session_types.csv", "sessions/session_table.csv",
-        "v12_final/window_categories.csv", "v12_coderA/window_categories.csv", "v12_coderB/window_categories.csv"]
+        "v12_final/window_categories.csv", "mining.md", "mining.json", "mining/archetypes.csv",
+        "mining/ngrams_category.csv", "mining/ngrams_signature.csv", "mining/outcome_sessions.csv", "v12_coderA/window_categories.csv", "v12_coderB/window_categories.csv"]
 bad = [p for p in need if not os.path.exists(os.path.join(RES, p))]
 pngs = sorted(f for f in os.listdir(FIG) if f.endswith(".png"))
 for f in FIGS:

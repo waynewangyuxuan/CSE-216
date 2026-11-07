@@ -1,0 +1,107 @@
+dataset,session_id,cluster,archetype,n_windows,sequence
+NIRVANA,e00,0,Short support visit,2,SLr OFF
+NIRVANA,e01,1,Long working session,5,AUG AUG IND OFF NEU
+NIRVANA,e03,0,Short support visit,3,AUG OFF AUG
+NIRVANA,e04,1,Long working session,23,IND SLb NEU OFF NEU IND OFF IND AUG NEU IND OFF AUG SLb OFF IND OFF AUG NEU NEU IND OFF NEU
+NIRVANA,e05,2,Paste into the draft,3,SLb SLb SLb
+NIRVANA,e06,3,Delegate in chat,9,SLb IND AUG SLr NEU SLr AUG SLr NEU
+NIRVANA,e07,0,Short support visit,2,IND OFF
+NIRVANA,e09,0,Short support visit,2,IND OFF
+NIRVANA,e10,2,Paste into the draft,2,SLb SLb
+NIRVANA,e11,3,Delegate in chat,10,SLr SLr SLb SLr AUG SLr SLr OFF SLr SLb
+NIRVANA,e12,1,Long working session,5,AUG AUG NEU AUG AUG
+NIRVANA,e13,0,Short support visit,2,OFF AUG
+NIRVANA,e14,4,One-shot paste,1,NEU
+NIRVANA,e15,0,Short support visit,4,OFF OFF OFF SLb
+NIRVANA,e16,0,Short support visit,1,AUG
+NIRVANA,e17,5,Unresolved,1,IND
+NIRVANA,e18,0,Short support visit,1,OFF
+NIRVANA,e19,1,Long working session,5,IND NEU SLb OFF OFF
+NIRVANA,e20,2,Paste into the draft,7,SLr AUG SLb IND IND OFF SLb
+NIRVANA,e22,0,Short support visit,1,OFF
+NIRVANA,e24,0,Short support visit,3,OFF AUG AUG
+NIRVANA,e25,1,Long working session,17,OFF AUG SLb AUG OFF NEU SLb SLb IND OFF OFF OFF SLb IND OFF IND NEU
+NIRVANA,e26,1,Long working session,11,OFF SLb OFF AUG IND AUG OFF AUG AUG AUG NEU
+NIRVANA,e27,0,Short support visit,2,SLr OFF
+NIRVANA,e28,0,Short support visit,1,AUG
+NIRVANA,e29,1,Long working session,8,AUG AUG NEU NEU NEU NEU AUG OFF
+NIRVANA,e30,2,Paste into the draft,3,SLr SLb SLb
+NIRVANA,e31,2,Paste into the draft,7,SLb OFF SLr IND SLb SLr IND
+NIRVANA,e32,4,One-shot paste,1,SLb
+NIRVANA,e33,4,One-shot paste,1,SLb
+NIRVANA,e34,0,Short support visit,2,OFF OFF
+NIRVANA,e35,0,Short support visit,2,AUG AUG
+NIRVANA,e36,4,One-shot paste,1,NEU
+NIRVANA,e37,2,Paste into the draft,4,SLb SLb SLb SLb
+NIRVANA,e38,0,Short support visit,2,NEU AUG
+NIRVANA,e39,0,Short support visit,2,IND AUG
+NIRVANA,e40,0,Short support visit,1,OFF
+NIRVANA,e41,2,Paste into the draft,7,IND SLb SLb SLb SLb SLb SLb
+NIRVANA,e42,1,Long working session,15,NEU NEU NEU IND NEU NEU NEU IND NEU NEU OFF NEU AUG AUG OFF
+NIRVANA,e43,5,Unresolved,3,IND IND NEU
+NIRVANA,e44,1,Long working session,7,OFF AUG OFF OFF SLb IND SLb
+NIRVANA,e46,5,Unresolved,2,IND IND
+NIRVANA,e47,0,Short support visit,4,IND AUG OFF AUG
+NIRVANA,e48,2,Paste into the draft,3,SLb IND SLb
+NIRVANA,e49,0,Short support visit,2,AUG AUG
+NIRVANA,e50,2,Paste into the draft,6,NEU OFF SLb SLb SLb OFF
+NIRVANA,e51,0,Short support visit,2,SLb OFF
+NIRVANA,e53,2,Paste into the draft,2,IND SLb
+NIRVANA,e54,1,Long working session,4,IND AUG AUG OFF
+NIRVANA,e55,2,Paste into the draft,4,SLr NEU SLb SLb
+NIRVANA,e56,1,Long working session,5,OFF AUG NEU NEU OFF
+NIRVANA,e57,1,Long working session,9,SLb AUG OFF NEU NEU OFF OFF OFF OFF
+NIRVANA,e58,1,Long working session,10,NEU AUG IND AUG NEU OFF OFF NEU SLb IND
+NIRVANA,e59,4,One-shot paste,1,SLb
+NIRVANA,e60,0,Short support visit,5,OFF OFF OFF AUG AUG
+NIRVANA,e61,1,Long working session,27,NEU SLr SLr SLr SLb IND AUG SLr SLb OFF SLr OFF OFF IND SLr SLb AUG AUG IND SLb IND OFF AUG OFF SLb SLb SLb
+NIRVANA,e62,0,Short support visit,2,OFF AUG
+NIRVANA,e63,0,Short support visit,2,NEU OFF
+NIRVANA,e64,2,Paste into the draft,7,OFF SLr SLb SLb SLr SLb SLb
+NIRVANA,e65,1,Long working session,18,AUG IND OFF IND OFF AUG NEU SLb IND OFF IND OFF NEU AUG IND IND IND OFF
+NIRVANA,e66,4,One-shot paste,1,SLb
+NIRVANA,e67,4,One-shot paste,1,SLb
+NIRVANA,e68,1,Long working session,6,AUG AUG AUG OFF AUG IND
+NIRVANA,e69,0,Short support visit,1,AUG
+NIRVANA,e70,1,Long working session,7,OFF OFF SLr OFF OFF SLb SLb
+NIRVANA,e71,0,Short support visit,2,NEU AUG
+NIRVANA,e72,5,Unresolved,1,IND
+NIRVANA,e73,5,Unresolved,2,SLb IND
+NIRVANA,e74,1,Long working session,11,OFF OFF OFF OFF OFF SLr SLr OFF SLb SLb NEU
+NIRVANA,e75,1,Long working session,8,OFF IND OFF IND OFF OFF NEU NEU
+NIRVANA,e76,5,Unresolved,3,SLr SLr SLb
+WildChat,04adc14b7dc6,3,Delegate in chat,7,IND SLr SLr SLr SLr IND IND
+WildChat,05faf88fa50a,0,Short support visit,2,OFF IND
+WildChat,0c19dbfddb6e,5,Unresolved,2,SLr IND
+WildChat,0c7a64bb1aba,5,Unresolved,2,SLr IND
+WildChat,13713cfb41c0,3,Delegate in chat,8,SLr IND IND NEU IND SLr SLr IND
+WildChat,14140e33cb98,5,Unresolved,2,IND IND
+WildChat,1ae11c051865,5,Unresolved,3,SLr SLr IND
+WildChat,2849709b14c2,3,Delegate in chat,8,SLr SLr SLr SLr SLr SLr SLr IND
+WildChat,36af11c0a332,5,Unresolved,4,SLr SLr SLb IND
+WildChat,56acfd32812b,5,Unresolved,2,SLr IND
+WildChat,5c7a56d88bea,0,Short support visit,4,OFF OFF OFF IND
+WildChat,5f14f31b5762,0,Short support visit,2,OFF IND
+WildChat,6dad62e0a326,3,Delegate in chat,8,SLr SLr SLr SLr SLr SLr SLr IND
+WildChat,7b46ff7ad4c1,5,Unresolved,4,SLr OFF SLr IND
+WildChat,8551dd30e694,5,Unresolved,2,SLr IND
+WildChat,85fb5101edc7,5,Unresolved,2,SLr IND
+WildChat,8af2896cda07,3,Delegate in chat,5,SLr SLr SLr SLr IND
+WildChat,953148aa3d57,1,Long working session,7,IND IND IND OFF OFF OFF IND
+WildChat,9dff96b50f4f,5,Unresolved,4,IND SLr SLr NEU
+WildChat,a656cf58e949,5,Unresolved,3,IND SLr IND
+WildChat,a91f0bb0d847,0,Short support visit,2,OFF IND
+WildChat,b0a82842cc5e,0,Short support visit,4,OFF OFF OFF IND
+WildChat,b25442b5f212,0,Short support visit,2,OFF IND
+WildChat,bc60326cb766,3,Delegate in chat,10,SLr SLr SLr SLr IND SLr SLr SLb SLr SLr
+WildChat,d429342fd747,0,Short support visit,2,OFF IND
+WildChat,d4e917270898,0,Short support visit,2,OFF IND
+WildChat,dc0c59fe2b38,5,Unresolved,2,IND IND
+WildChat,e6acb3ce8d84,5,Unresolved,2,IND IND
+WildChat,ea3c00bfc9c9,0,Short support visit,4,NEU OFF OFF IND
+WildChat,ee01f593a7f0,0,Short support visit,3,OFF OFF IND
+WildChat,f3397aeca0f6,1,Long working session,10,SLr SLr OFF AUG IND OFF IND AUG AUG SLr
+WildChat,f432a63be5a3,3,Delegate in chat,5,SLr IND IND NEU NEU
+WildChat,f65c46a56af8,3,Delegate in chat,7,SLr SLr SLr SLr IND SLr IND
+WildChat,f6837354bd04,5,Unresolved,5,SLr SLr IND IND IND
+WildChat,f8c64fc16731,3,Delegate in chat,10,IND SLr SLr SLr SLr SLr SLr SLr SLr SLr

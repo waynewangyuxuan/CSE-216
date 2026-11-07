@@ -1,0 +1,72 @@
+session_id,archetype,windows,SL_share,SLb_share,SLr_share,support_share,any_SLb,gpt_final,ownership,self_efficacy,total_words
+e00,Short support visit,2,0.5,0.0,0.5,0.5,False,0.4048,3.75,5.38,415.0
+e01,Long working session,5,0.0,0.0,0.0,0.6,False,0.5546,6.0,6.0,485.0
+e03,Short support visit,3,0.0,0.0,0.0,1.0,False,0.0,6.38,5.06,581.0
+e04,Long working session,23,0.087,0.087,0.0,0.3913,True,0.0797,6.38,4.0,1155.0
+e05,Paste into the draft,3,1.0,1.0,0.0,0.0,True,0.9973,5.25,4.69,373.0
+e06,Delegate in chat,9,0.4444,0.1111,0.3333,0.2222,True,0.3029,5.88,4.94,274.0
+e07,Short support visit,2,0.0,0.0,0.0,0.5,False,1.0,6.0,5.25,269.0
+e09,Short support visit,2,0.0,0.0,0.0,0.5,False,0.9079,4.38,3.69,304.0
+e10,Paste into the draft,2,1.0,1.0,0.0,0.0,True,0.474,3.25,4.31,538.0
+e11,Delegate in chat,10,0.8,0.2,0.6,0.2,True,0.3268,2.0,6.56,967.0
+e12,Long working session,5,0.0,0.0,0.0,0.8,False,0.0,6.5,5.44,513.0
+e13,Short support visit,2,0.0,0.0,0.0,1.0,False,0.8309,4.38,5.38,272.0
+e14,One-shot paste,1,0.0,0.0,0.0,0.0,False,0.0,6.75,6.5,278.0
+e15,Short support visit,4,0.25,0.25,0.0,0.75,True,0.344,5.25,6.31,375.0
+e16,Short support visit,1,0.0,0.0,0.0,1.0,False,0.0,5.13,5.69,148.0
+e17,Unresolved,1,0.0,0.0,0.0,0.0,False,0.0,6.5,6.69,328.0
+e18,Short support visit,1,0.0,0.0,0.0,1.0,False,1.0,6.13,6.06,344.0
+e19,Long working session,5,0.2,0.2,0.0,0.4,True,0.5043,6.38,6.0,462.0
+e20,Paste into the draft,7,0.4286,0.2857,0.1429,0.2857,True,0.5484,5.63,3.75,124.0
+e22,Short support visit,1,0.0,0.0,0.0,1.0,False,0.0,6.0,4.69,481.0
+e24,Short support visit,3,0.0,0.0,0.0,1.0,False,0.1039,6.0,6.44,385.0
+e25,Long working session,17,0.2353,0.2353,0.0,0.4706,True,0.5177,3.63,5.75,226.0
+e26,Long working session,11,0.0909,0.0909,0.0,0.7273,True,0.0017,5.75,5.69,575.0
+e27,Short support visit,2,0.5,0.0,0.5,0.5,False,0.4753,3.0,6.06,364.0
+e28,Short support visit,1,0.0,0.0,0.0,1.0,False,0.0,7.0,6.38,510.0
+e29,Long working session,8,0.0,0.0,0.0,0.5,False,0.0707,5.63,4.56,198.0
+e30,Paste into the draft,3,1.0,0.6667,0.3333,0.0,True,0.6166,7.0,6.25,326.0
+e31,Paste into the draft,7,0.5714,0.2857,0.2857,0.1429,True,1.0,2.0,5.0,307.0
+e32,One-shot paste,1,1.0,1.0,0.0,0.0,True,1.0,3.88,4.31,165.0
+e33,One-shot paste,1,1.0,1.0,0.0,0.0,True,1.0,5.0,5.5,317.0
+e34,Short support visit,2,0.0,0.0,0.0,1.0,False,0.5348,6.63,4.75,374.0
+e35,Short support visit,2,0.0,0.0,0.0,1.0,False,0.0,6.75,6.06,522.0
+e36,One-shot paste,1,0.0,0.0,0.0,0.0,False,0.0,5.25,5.63,272.0
+e37,Paste into the draft,4,1.0,1.0,0.0,0.0,True,1.0,5.0,4.63,368.0
+e38,Short support visit,2,0.0,0.0,0.0,0.5,False,0.129,5.0,5.25,434.0
+e39,Short support visit,2,0.0,0.0,0.0,0.5,False,0.0,6.0,5.94,361.0
+e40,Short support visit,1,0.0,0.0,0.0,1.0,False,0.0,7.0,7.0,197.0
+e41,Paste into the draft,7,0.8571,0.8571,0.0,0.0,True,1.0,3.13,6.63,649.0
+e42,Long working session,15,0.0,0.0,0.0,0.2667,False,0.731,7.0,6.88,565.0
+e43,Unresolved,3,0.0,0.0,0.0,0.0,False,0.0,7.0,6.88,387.0
+e44,Long working session,7,0.2857,0.2857,0.0,0.5714,True,0.4637,5.25,4.69,537.0
+e46,Unresolved,2,0.0,0.0,0.0,0.0,False,0.0,7.0,5.56,112.0
+e47,Short support visit,4,0.0,0.0,0.0,0.75,False,0.0,6.5,6.13,248.0
+e48,Paste into the draft,3,0.6667,0.6667,0.0,0.0,True,1.0,5.25,5.81,354.0
+e49,Short support visit,2,0.0,0.0,0.0,1.0,False,0.0,6.0,5.63,308.0
+e50,Paste into the draft,6,0.5,0.5,0.0,0.3333,True,0.8018,4.25,6.31,550.0
+e51,Short support visit,2,0.5,0.5,0.0,0.5,True,0.0,4.63,4.19,151.0
+e53,Paste into the draft,2,0.5,0.5,0.0,0.0,True,0.945,5.0,5.31,218.0
+e54,Long working session,4,0.0,0.0,0.0,0.75,False,0.1763,5.13,6.31,414.0
+e55,Paste into the draft,4,0.75,0.5,0.25,0.0,True,1.0,5.5,6.0,123.0
+e56,Long working session,5,0.0,0.0,0.0,0.6,False,0.0204,5.88,5.75,392.0
+e57,Long working session,9,0.1111,0.1111,0.0,0.6667,True,0.1264,4.38,4.19,364.0
+e58,Long working session,10,0.1,0.1,0.0,0.4,True,0.8097,2.0,5.19,310.0
+e59,One-shot paste,1,1.0,1.0,0.0,0.0,True,1.0,4.0,5.19,225.0
+e60,Short support visit,5,0.0,0.0,0.0,1.0,False,0.0,5.75,4.75,325.0
+e61,Long working session,27,0.4815,0.2593,0.2222,0.3333,True,0.0,4.0,5.63,656.0
+e62,Short support visit,2,0.0,0.0,0.0,1.0,False,0.0,6.0,5.63,360.0
+e63,Short support visit,2,0.0,0.0,0.0,0.5,False,1.0,6.0,5.13,255.0
+e64,Paste into the draft,7,0.8571,0.5714,0.2857,0.1429,True,0.4161,4.13,6.19,1413.0
+e65,Long working session,18,0.0556,0.0556,0.0,0.4444,True,0.5086,5.5,5.25,350.0
+e66,One-shot paste,1,1.0,1.0,0.0,0.0,True,1.0,4.75,6.63,161.0
+e67,One-shot paste,1,1.0,1.0,0.0,0.0,True,1.0,2.0,6.0,173.0
+e68,Long working session,6,0.0,0.0,0.0,0.8333,False,0.0,5.88,5.0,278.0
+e69,Short support visit,1,0.0,0.0,0.0,1.0,False,1.0,3.88,6.31,186.0
+e70,Long working session,7,0.4286,0.2857,0.1429,0.5714,True,0.9912,5.75,4.94,456.0
+e71,Short support visit,2,0.0,0.0,0.0,0.5,False,0.0,6.38,6.38,711.0
+e72,Unresolved,1,0.0,0.0,0.0,0.0,False,0.0,6.0,6.0,95.0
+e73,Unresolved,2,0.5,0.5,0.0,0.0,True,0.9868,5.75,7.0,986.0
+e74,Long working session,11,0.3636,0.1818,0.1818,0.5455,True,0.8709,3.63,5.25,736.0
+e75,Long working session,8,0.0,0.0,0.0,0.5,False,0.0,6.5,6.19,247.0
+e76,Unresolved,3,1.0,0.3333,0.6667,0.0,True,1.0,2.5,5.69,448.0
