@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Merge coder batch files into results/labels_ab_wildchat.csv: labels only, no notes. Derives process and family by script. Prints counts."""
 import csv, os
+import os as _o, sys as _s; _s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__)))
 from coding7 import CODED, FAMILY, ID_COLS, PMAP, meta, read_coder, w7
 
 

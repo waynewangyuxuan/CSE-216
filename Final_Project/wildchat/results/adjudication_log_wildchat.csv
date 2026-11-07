@@ -1,0 +1,91 @@
+window_id,field,label_a,label_b,final,source,settled,rule,shown_order
+WILDCHAT-04adc14b7dc6-t03,operation,O01,O10,O10,adj=B,1,s3 O10 (sections); dominant requested deliverable,first=B
+WILDCHAT-04adc14b7dc6-t03,object,IDEA,PROSE,PROSE,adj=B,1,s4 object; consistent with O10/F4,first=B
+WILDCHAT-04adc14b7dc6-t04,operation,O07,O10,O10,adj=B,1,s3 O10 (sections) vs O07,first=B
+WILDCHAT-04adc14b7dc6-t04,object,EVIDENCE,PROSE,PROSE,adj=B,1,s4 object; consistent with O10/F4,first=B
+WILDCHAT-04adc14b7dc6-t06,object,PROCESS,STRUCTURE,PROCESS,adj=A,1,s4 object list,first=A
+WILDCHAT-13713cfb41c0-t01,uptake,U4_CHAT_ITERATE,U8_MOVED_ON,U8_MOVED_ON,adj=B,1,s7 U8 vs U4,first=A
+WILDCHAT-13713cfb41c0-t04,object,IDEA,OTHER,UNSETTLED,UNSETTLED,0,s4 object list,first=B
+WILDCHAT-13713cfb41c0-t07,operation,O09,O07,O09,adj=A,1,s3 O07 vs O09,first=B
+WILDCHAT-13713cfb41c0-t07,function,F4_GENERATE,F1_EXPLAIN,F4_GENERATE,adj=A,1,s4 F4 vs F1,first=B
+WILDCHAT-13713cfb41c0-t07,object,ARGUMENT,IDEA,ARGUMENT,adj=A,1,s4 object; consistent with O09/F4,first=B
+WILDCHAT-14140e33cb98-t01,prior_own_work,UNOBSERVABLE,VISIBLE_PARTIAL,UNSETTLED,UNSETTLED,0,s2 prior_own_work (VISIBLE_PARTIAL fragments vs UNOBSERVABLE,first=B
+WILDCHAT-14140e33cb98-t02,prior_own_work,UNOBSERVABLE,VISIBLE_PARTIAL,UNSETTLED,UNSETTLED,0,s2 prior_own_work (VISIBLE_PARTIAL fragments vs UNOBSERVABLE,first=A
+WILDCHAT-14140e33cb98-t02,operation,O15,O14,O14,adj=B,1,s3 O14 (shorten supplied text); s8 E13,first=A
+WILDCHAT-14140e33cb98-t02,function,F8_PROCEDURAL,F5_TRANSFORM,F5_TRANSFORM,adj=B,1,s4 F5 vs F8; s8 E13,first=A
+WILDCHAT-1ae11c051865-t01,domain,DOMAIN_UNKNOWN,OTHER_WRITING,DOMAIN_UNKNOWN,adj=A,1,s2 domain (DOMAIN_UNKNOWN vs OTHER_WRITING),first=B
+WILDCHAT-1ae11c051865-t02,domain,DOMAIN_UNKNOWN,OTHER_WRITING,DOMAIN_UNKNOWN,adj=A,1,s2 domain (DOMAIN_UNKNOWN vs OTHER_WRITING),first=B
+WILDCHAT-1ae11c051865-t03,domain,DOMAIN_UNKNOWN,OTHER_WRITING,DOMAIN_UNKNOWN,adj=A,1,s2 domain (DOMAIN_UNKNOWN vs OTHER_WRITING),first=A
+WILDCHAT-2849709b14c2-t07,object,IDEA,CLAIM,IDEA,adj=A,1,s4 object (a research question is IDEA); s3 O01,first=B
+WILDCHAT-2849709b14c2-t08,object,IDEA,CLAIM,IDEA,adj=A,1,s4 object (a research question is IDEA); s3 O01,first=B
+WILDCHAT-36af11c0a332-t02,verification,V1_SURFACE_ONLY,V0_NONE_VISIBLE,V0_NONE_VISIBLE,adj=B,1,s6 V0 (requests for more content); V1 requires a change to t,first=A
+WILDCHAT-56acfd32812b-t01,domain,DOMAIN_UNKNOWN,ACADEMIC_STATED,DOMAIN_UNKNOWN,adj=A,1,s2 domain (ACADEMIC_STATED needs a stated course assignment),first=A
+WILDCHAT-56acfd32812b-t02,domain,DOMAIN_UNKNOWN,ACADEMIC_STATED,DOMAIN_UNKNOWN,adj=A,1,s2 domain (ACADEMIC_STATED needs a stated course assignment),first=A
+WILDCHAT-5c7a56d88bea-t04,prior_own_work,VISIBLE_DRAFT,VISIBLE_PARTIAL,VISIBLE_DRAFT,adj=A,1,"s2 VISIBLE_DRAFT (running text, at least a few full sentence",first=A
+WILDCHAT-6dad62e0a326-t02,operation,O10,O09,O10,adj=A,1,s3 O10 vs O09; s8 E6,first=B
+WILDCHAT-6dad62e0a326-t02,object,PROSE,ARGUMENT,PROSE,adj=A,1,s4 object; consistent with O10/F4,first=B
+WILDCHAT-6dad62e0a326-t03,operation,O10,O07,O10,adj=A,1,s3 O10 vs O07,first=A
+WILDCHAT-6dad62e0a326-t03,object,PROSE,EVIDENCE,PROSE,adj=A,1,s4 object; consistent with O10/F4,first=A
+WILDCHAT-6dad62e0a326-t04,operation,O10,O07,O10,adj=A,1,s3 O10 vs O07,first=B
+WILDCHAT-6dad62e0a326-t04,object,PROSE,EVIDENCE,PROSE,adj=A,1,s4 object; consistent with O10/F4,first=B
+WILDCHAT-6dad62e0a326-t05,operation,O10,O07,O10,adj=A,1,s3 O10 vs O07,first=A
+WILDCHAT-6dad62e0a326-t05,object,PROSE,EVIDENCE,PROSE,adj=A,1,s4 object; consistent with O10/F4,first=A
+WILDCHAT-6dad62e0a326-t06,operation,O10,O07,O10,adj=A,1,s3 O10 vs O07,first=B
+WILDCHAT-6dad62e0a326-t06,object,PROSE,EVIDENCE,PROSE,adj=A,1,s4 object; consistent with O10/F4,first=B
+WILDCHAT-6dad62e0a326-t07,operation,O10,O07,O10,adj=A,1,s3 O10 vs O07,first=A
+WILDCHAT-6dad62e0a326-t07,object,PROSE,EVIDENCE,PROSE,adj=A,1,s4 object; consistent with O10/F4,first=A
+WILDCHAT-6dad62e0a326-t08,operation,O10,O09,O10,adj=A,1,s3 O10 vs O09; s8 E6,first=B
+WILDCHAT-6dad62e0a326-t08,object,PROSE,ARGUMENT,PROSE,adj=A,1,s4 object; consistent with O10/F4,first=B
+WILDCHAT-7b46ff7ad4c1-t02,decision,D2_AI_PROPOSED_OPEN,D1_HUMAN_GIVEN,D1_HUMAN_GIVEN,adj=B,1,s5 step 2 (most main claims already in writer-supplied text),first=B
+WILDCHAT-85fb5101edc7-t02,prior_own_work,UNOBSERVABLE,VISIBLE_PARTIAL,UNSETTLED,UNSETTLED,0,s2 prior_own_work (VISIBLE_PARTIAL fragments or stated posit,first=A
+WILDCHAT-953148aa3d57-t01,prior_own_work,VISIBLE_DRAFT,VISIBLE_PARTIAL,UNSETTLED,UNSETTLED,0,s2 VISIBLE_DRAFT (at least a few full sentences) vs VISIBLE_,first=B
+WILDCHAT-953148aa3d57-t02,prior_own_work,VISIBLE_DRAFT,VISIBLE_PARTIAL,UNSETTLED,UNSETTLED,0,s2 VISIBLE_DRAFT (at least a few full sentences) vs VISIBLE_,first=A
+WILDCHAT-953148aa3d57-t03,prior_own_work,VISIBLE_DRAFT,VISIBLE_PARTIAL,UNSETTLED,UNSETTLED,0,s2 VISIBLE_DRAFT (at least a few full sentences) vs VISIBLE_,first=B
+WILDCHAT-953148aa3d57-t04,prior_own_work,VISIBLE_DRAFT,VISIBLE_PARTIAL,VISIBLE_DRAFT,adj=A,1,s2 VISIBLE_DRAFT; s2 look at earlier turns,first=B
+WILDCHAT-953148aa3d57-t05,prior_own_work,VISIBLE_DRAFT,VISIBLE_PARTIAL,VISIBLE_DRAFT,adj=A,1,s2 VISIBLE_DRAFT; s2 look at earlier turns,first=B
+WILDCHAT-953148aa3d57-t06,prior_own_work,VISIBLE_DRAFT,VISIBLE_PARTIAL,VISIBLE_DRAFT,adj=A,1,s2 VISIBLE_DRAFT; s2 look at earlier turns,first=A
+WILDCHAT-9dff96b50f4f-t01,operation,OX,O05,OX,adj=A,1,s3 bare request rule; s3 OX,first=B
+WILDCHAT-9dff96b50f4f-t01,function,FX_OTHER,F1_EXPLAIN,FX_OTHER,adj=A,1,s4 FX_OTHER (unclear),first=B
+WILDCHAT-9dff96b50f4f-t01,uptake,U4_CHAT_ITERATE,U8_MOVED_ON,UNSETTLED,UNSETTLED,0,"s7 U4 (repairs the same request, sending missing input) vs U",first=B
+WILDCHAT-9dff96b50f4f-t02,domain,DOMAIN_UNKNOWN,OTHER_WRITING,DOMAIN_UNKNOWN,adj=A,1,s2 domain (DOMAIN_UNKNOWN vs OTHER_WRITING),first=A
+WILDCHAT-9dff96b50f4f-t03,domain,DOMAIN_UNKNOWN,OTHER_WRITING,DOMAIN_UNKNOWN,adj=A,1,s2 domain (DOMAIN_UNKNOWN vs OTHER_WRITING),first=A
+WILDCHAT-a656cf58e949-t02,uptake,U8_MOVED_ON,U4_CHAT_ITERATE,U8_MOVED_ON,adj=A,1,s7 U8 (next item of a batch); U8 is not U4,first=B
+WILDCHAT-a91f0bb0d847-t01,domain,ACADEMIC_STATED,OTHER_WRITING,OTHER_WRITING,adj=B,1,s2 domain (ACADEMIC_STATED needs a stated course assignment),first=A
+WILDCHAT-a91f0bb0d847-t02,domain,ACADEMIC_STATED,OTHER_WRITING,OTHER_WRITING,adj=B,1,s2 domain (ACADEMIC_STATED needs a stated course assignment),first=A
+WILDCHAT-b0a82842cc5e-t03,operation,O13,O14,O14,adj=B,1,"s3 O14 (tone) vs O13 (reorder, connect, transitions)",first=B
+WILDCHAT-bc60326cb766-t05,uptake,U4_CHAT_ITERATE,U8_MOVED_ON,UNSETTLED,UNSETTLED,0,s7 U4 (sending input that was missing) vs U8 (next item of a,first=A
+WILDCHAT-bc60326cb766-t06,prior_own_work,VISIBLE_PARTIAL,UNOBSERVABLE,VISIBLE_PARTIAL,adj=A,1,s2 VISIBLE_PARTIAL (a stated position of the writer's own),first=B
+WILDCHAT-bc60326cb766-t08,prior_own_work,VISIBLE_PARTIAL,UNOBSERVABLE,VISIBLE_PARTIAL,adj=A,1,s2 VISIBLE_PARTIAL (a stated position of the writer's own),first=B
+WILDCHAT-bc60326cb766-t08,verification,V1_SURFACE_ONLY,V0_NONE_VISIBLE,V1_SURFACE_ONLY,adj=A,1,"s6 V1 (asks for changes of style, length or format to this o",first=B
+WILDCHAT-bc60326cb766-t09,prior_own_work,VISIBLE_PARTIAL,UNOBSERVABLE,VISIBLE_PARTIAL,adj=A,1,s2 prior_own_work (look at earlier turns); VISIBLE_PARTIAL s,first=A
+WILDCHAT-e6acb3ce8d84-t01,prior_own_work,VISIBLE_PARTIAL,UNOBSERVABLE,UNSETTLED,UNSETTLED,0,s2 prior_own_work (VISIBLE_PARTIAL fragments vs UNOBSERVABLE,first=A
+WILDCHAT-e6acb3ce8d84-t02,prior_own_work,VISIBLE_PARTIAL,UNOBSERVABLE,UNSETTLED,UNSETTLED,0,s2 prior_own_work (VISIBLE_PARTIAL fragments vs UNOBSERVABLE,first=B
+WILDCHAT-ea3c00bfc9c9-t03,verification,V1_SURFACE_ONLY,V0_NONE_VISIBLE,V0_NONE_VISIBLE,adj=B,1,s6 V1 (style change to this output) vs V0; s6 only the next ,first=A
+WILDCHAT-ee01f593a7f0-t03,decision,D1_HUMAN_GIVEN,D2_AI_PROPOSED_OPEN,D1_HUMAN_GIVEN,adj=A,1,s5 step 2 (a rewording of the writer own claims stays D1; or,first=A
+WILDCHAT-f3397aeca0f6-t04,prior_own_work,VISIBLE_DRAFT,VISIBLE_PARTIAL,VISIBLE_DRAFT,adj=A,1,s2 VISIBLE_DRAFT; s2 look at earlier turns,first=B
+WILDCHAT-f3397aeca0f6-t04,function,F6_CRITIQUE,F1_EXPLAIN,F6_CRITIQUE,adj=A,1,s4 F6 (evaluate) vs F1,first=B
+WILDCHAT-f3397aeca0f6-t04,uptake,U4_CHAT_ITERATE,U8_MOVED_ON,U4_CHAT_ITERATE,adj=A,1,"s7 U4 (works on this output, including feeding it into a new",first=B
+WILDCHAT-f3397aeca0f6-t06,operation,O14,O12,O12,adj=B,1,s3 O12 vs O14; s3 infer task from earlier turns,first=B
+WILDCHAT-f3397aeca0f6-t07,function,FX_OTHER,F4_GENERATE,FX_OTHER,adj=A,1,"s4 code what the writer asks for, not what the AI delivers; ",first=A
+WILDCHAT-f3397aeca0f6-t07,object,REFERENCE,PROSE,REFERENCE,adj=A,1,s4 object; code the request,first=A
+WILDCHAT-f3397aeca0f6-t08,prior_own_work,VISIBLE_DRAFT,VISIBLE_PARTIAL,VISIBLE_DRAFT,adj=A,1,s2 VISIBLE_DRAFT; s2 look at earlier turns,first=A
+WILDCHAT-f3397aeca0f6-t08,function,F6_CRITIQUE,F1_EXPLAIN,F6_CRITIQUE,adj=A,1,s4 F6 (evaluate) vs F1,first=A
+WILDCHAT-f3397aeca0f6-t09,prior_own_work,VISIBLE_DRAFT,VISIBLE_PARTIAL,VISIBLE_DRAFT,adj=A,1,s2 VISIBLE_DRAFT; s2 look at earlier turns,first=A
+WILDCHAT-f3397aeca0f6-t09,function,F6_CRITIQUE,F4_GENERATE,F6_CRITIQUE,adj=A,1,s4 code what the writer asks for; F6 vs F4,first=A
+WILDCHAT-f3397aeca0f6-t09,decision,D2_AI_PROPOSED_OPEN,D1_HUMAN_GIVEN,D2_AI_PROPOSED_OPEN,adj=A,1,s5 step 2 (rework of AI output is AI-origin; a stated stance,first=A
+WILDCHAT-f3397aeca0f6-t10,decision,D2_AI_PROPOSED_OPEN,D3_HUMAN_CHOSE_REVISED,D2_AI_PROPOSED_OPEN,adj=A,1,s5 D3 needs explicit selection or rejection; s8 E14,first=B
+WILDCHAT-f3397aeca0f6-t10,verification,V0_NONE_VISIBLE,V3_REASONED_CHALLENGE,V0_NONE_VISIBLE,adj=A,1,s6 V0; s8 E14 (restating the request is V0),first=B
+WILDCHAT-f3397aeca0f6-t10,uptake,U4_CHAT_ITERATE,U6_REJECT,U4_CHAT_ITERATE,adj=A,1,s7 U4 (repairs the same request) vs U6 (says no in words),first=B
+WILDCHAT-f432a63be5a3-t01,domain,OTHER_WRITING,ACADEMIC_STATED,UNSETTLED,UNSETTLED,0,s2 domain (ACADEMIC_STATED needs a stated course assignment;,first=B
+WILDCHAT-f432a63be5a3-t01,prior_own_work,VISIBLE_PARTIAL,VISIBLE_DRAFT,VISIBLE_PARTIAL,adj=A,1,s2 VISIBLE_DRAFT (at least a few full sentences) vs VISIBLE_,first=B
+WILDCHAT-f432a63be5a3-t02,domain,OTHER_WRITING,ACADEMIC_STATED,UNSETTLED,UNSETTLED,0,s2 domain (ACADEMIC_STATED needs a stated course assignment;,first=B
+WILDCHAT-f432a63be5a3-t03,domain,OTHER_WRITING,ACADEMIC_STATED,UNSETTLED,UNSETTLED,0,s2 domain (ACADEMIC_STATED needs a stated course assignment;,first=A
+WILDCHAT-f432a63be5a3-t03,operation,O04,O11,O04,adj=A,1,s3 O04 (find references) vs O11 (link a reference to a passa,first=A
+WILDCHAT-f432a63be5a3-t04,domain,OTHER_WRITING,ACADEMIC_STATED,UNSETTLED,UNSETTLED,0,s2 domain (ACADEMIC_STATED needs a stated course assignment;,first=B
+WILDCHAT-f432a63be5a3-t05,domain,OTHER_WRITING,ACADEMIC_STATED,UNSETTLED,UNSETTLED,0,s2 domain (ACADEMIC_STATED needs a stated course assignment;,first=A
+WILDCHAT-f65c46a56af8-t07,decision,D2_AI_PROPOSED_OPEN,D0_NO_DECISION,D0_NO_DECISION,adj=B,1,s5 step 1 (no substantive decision in play in the response),first=A
+WILDCHAT-f6837354bd04-t03,prior_own_work,VISIBLE_PARTIAL,UNOBSERVABLE,UNSETTLED,UNSETTLED,0,s2 prior_own_work (VISIBLE_PARTIAL fragments or stated posit,first=A
+WILDCHAT-f6837354bd04-t04,prior_own_work,VISIBLE_PARTIAL,UNOBSERVABLE,UNSETTLED,UNSETTLED,0,s2 prior_own_work (VISIBLE_PARTIAL fragments or stated posit,first=B
+WILDCHAT-f6837354bd04-t05,prior_own_work,VISIBLE_PARTIAL,UNOBSERVABLE,UNSETTLED,UNSETTLED,0,s2 prior_own_work (VISIBLE_PARTIAL fragments or stated posit,first=B
+WILDCHAT-f8c64fc16731-t02,uptake,U4_CHAT_ITERATE,U8_MOVED_ON,U8_MOVED_ON,adj=B,1,s7 U8 (next item of a batch); U8 is not U4,first=A
+WILDCHAT-f8c64fc16731-t06,uptake,U4_CHAT_ITERATE,U8_MOVED_ON,U8_MOVED_ON,adj=B,1,s7 U8 (next item of a batch); U8 is not U4,first=A

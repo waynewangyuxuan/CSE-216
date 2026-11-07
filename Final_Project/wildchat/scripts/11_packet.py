@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Adjudication packet: disputed fields only, coders shown as first and second with a seeded flip per window. Goes to blind/adjudication/. Prints counts."""
 import collections, json, os, random
+import os as _o, sys as _s; _s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__)))
 from coding7 import CODED, SEED, read_coder, w7
 
 
@@ -16,7 +17,7 @@ def main():
         flips[i] = "first=B" if flip else "first=A"
         fs = {f: {"first": one[f], "second": two[f]} for f in CODED if A[i][f] != B[i][f]}
         if fs:
-            by.update(fs)
+            by.update(fs.keys())
             lines.append({"window_id": i, "conversation": i.split("-")[1], "turn": int(i.rsplit("t", 1)[1]), "fields": fs,
                           "notes": {k: {x: o.get(x, "") for x in ("evidence_note", "flag_field", "flag_note")} for k, o in (("first", one), ("second", two))}})
     with open(os.path.join(d, "packet_0.jsonl"), "w", encoding="utf-8") as f:

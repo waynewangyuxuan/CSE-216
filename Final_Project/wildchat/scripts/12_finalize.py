@@ -3,6 +3,7 @@
 WildChat has no editor, so the s7 script rule never applies. Writes results/final_labels_wildchat.csv (labels and a source per field)
 and results/adjudication_log_wildchat.csv (no free text). Prints counts and problems."""
 import collections, csv, glob, json, os, re, sys
+import os as _o, sys as _s; _s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__)))
 from coding7 import CODED, FAMILY, ID_COLS, PMAP, UNSET, codes, meta, read_coder, short, w7
 from check_labels import problems
 
