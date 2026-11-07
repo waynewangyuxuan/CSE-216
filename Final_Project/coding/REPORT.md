@@ -110,7 +110,7 @@ A, B and per-dataset counts are in `results/agreement_tables.md`. The sample is 
 | | Count |
 |---|---|
 | Windows with any disagreement | 31 of 100 |
-| Disputed fields | 39 of 900 coded fields |
+| Disputed fields | 39 of 800 coded fields |
 | Ruled for A | 25 |
 | Ruled for B | 13 |
 | Third code | 0 |
