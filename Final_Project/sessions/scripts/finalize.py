@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Final labels for all 347 NIRVANA windows by the rule fixed before coding (decisions.tsv S05). Writes results/final_labels_nirvana.csv
-(labels and a source per field, no text) and results/adjudication_log.csv (no free text).
+(labels and a source per field, no text) and results/adjudication_log.csv (codes and short rule citations only; reasons stay in blind/).
 new and sensitivity windows: A=B keeps the label; a disputed field takes the adjudicator's ruling, or UNSETTLED; then v1.1 s7: if final uptake
 is U1 or U2 and the script audit differs, the script decides (logged script_s7). bet4_kept windows: Bet 4 final labels as committed.
 Bet 4 labels of all 70 Bet 4 windows are kept in bet4_ columns. Prints counts only."""
