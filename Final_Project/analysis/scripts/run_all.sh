@@ -27,4 +27,5 @@ done
 "$PY" scripts/sensitivity.py
 "$PY" scripts/figures.py
 "$PY" scripts/check_outputs.py
+"$PY" scripts/check_no_text.py
 echo "run_all: ok"
