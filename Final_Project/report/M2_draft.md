@@ -2,31 +2,34 @@
 
 Wayne Wang · CSE 216 / COGS 230, Fall 2026 · Draft for Wayne's read on Nov 14; due Nov 15.
 
-**How to read this draft.** Every number comes from a script that reruns from committed labels with no model calls (`sh Final_Project/analysis/scripts/run_all.sh`). Each claim points to the file that holds it. Findings were attacked by a separate skeptic agent (`analysis/SKEPTIC.md`); the counterpoints it raised are stated next to the findings below. Narratives are in `narratives.md`. No dataset text is quoted anywhere.
+**How to read this draft.** The draft is built around four theses (§1) that answer RQ1–3 for these 106 writing sessions. Every number comes from a script that reruns from committed labels and committed numeric log facts, with no model calls (`sh Final_Project/analysis/scripts/run_all.sh`). Each claim points to the file that holds it, mostly `analysis/results/mining.md` (cited as "mining §n"). A separate skeptic agent checked every claim against the data (`analysis/SKEPTIC_T.md`), and the wording below is the version that survived. Caveats are collected in §10 rather than repeated per sentence. Narratives are in `narratives.md`. No dataset text is quoted anywhere.
 
-**What Milestone 2 asks for, and where it is.** The course handout is not in the repository. The requirements below are taken from the project brief (`BRIEF.md`, "Milestone 2 requires"), which summarizes the course materials; `Reflection/` holds only my method and contribution reflections and does not restate them. If the handout asks for something else, this draft has not seen it.
+**What Milestone 2 asks for, and where it is.** The course handout is not in the repository. The requirements below are taken from the project brief (`BRIEF.md`, "Milestone 2 requires"), which summarizes the course materials. If the handout asks for something else, this draft has not seen it.
 
 | Requirement (from `BRIEF.md`) | Section |
 |---|---|
 | Systematic comparison with existing frameworks (Risko & Gilbert, Shaw & Nave, PAUSE, Maier), with cases each cannot distinguish | §4 |
 | Review of related work | §3 |
-| Codebook applied to 50–100 sequences | §5 (applied to 106 whole sessions, 528 windows) |
+| Codebook applied to 50–100 sequences | §5 (106 whole sessions, 498 windows; 528 windows in all) |
 | Agreement statistics and analyzed disagreements | §6 |
 | Revised framework | §5.3, §9 |
 | Honest reporting of problems and adaptations | §2, §10 |
 
 ---
 
-## 1. Summary
+## 1. Summary: four theses
 
-I asked which observable patterns of AI use in writing resemble *offloading* (the writer keeps the substance and hands over a demand) and which resemble *surrender* (AI substance taken over with no visible check). AI coders labeled every request window in 106 whole writing sessions (71 timed-essay sessions from NIRVANA, with chat and editor; 35 formal long-form writing conversations from WildChat, chat only) with behavior codes. A rule table, written from the literature and frozen before these labels existed, turned each window's codes into one of five categories with a strength.
+I asked which observable patterns of AI use in writing support the writer's thinking (*offloading*, in Risko & Gilbert's sense: the writer keeps the substance and hands over a demand) and which substitute for it (*surrender*, in Shaw & Nave's sense: AI substance taken over with no visible deliberation). AI coders labeled every request window in 106 whole sessions: 71 timed-essay sessions from NIRVANA, with chat and editor logs, and 35 formal long-form writing conversations from WildChat, chat only. A rule table frozen before these labels existed turned each window's codes into a category. I then mined the sessions for archetypes, transitions, triggers, stage and own-work trajectories, and joined in what the raw logs record: timing, typing and pasting, and NIRVANA's own measures of the finished essay.
 
-- **The frozen rules held up out of sample.** 78.5% of the 428 new windows received a category other than indeterminate, against 79% on the 100 windows the rules were built on (§7.1).
-- **The mix depends on what the log can see.** In NIRVANA (chat and editor) 28% of windows lean toward surrender and 43% toward support; in WildChat (chat only) 46% and 17%. Most surrender-leaning windows are weak, and in WildChat almost all rest on what was *asked* ("write this for me"), since nothing shows what happened to the text (§7.1).
-- **Surrender-leaning sorts sessions; it is not sticky from turn to turn.** Once each session's mix is fixed, a surrender-leaning window is no more likely to follow another than chance (§7.2).
-- **Two kinds of surrender-leaning sit at different points.** Request-only surrender-leaning ("write this") opens sessions. Surrender-leaning that rests on observed behavior (pasting AI text unchecked, editing only its form) sits later in sessions than chance would place it. That second result is uncorrected and may be partly built into the rules (§7.2).
-- **Sessions do leave surrender-leaning.** In NIRVANA, 17 of 29 sessions that pass through a surrender-leaning window later return to support (§7.2).
-- **The clearest observable signals are code combinations, not single codes**: a whole paste with no change, edits only to length or tone, and a generation request from a writer with no visible draft of their own (§8).
+**T1 (RQ1, the boundary).** AI use stays on the support side when the content is the writer's own or passes through the writer's hands. It substitutes when AI-generated prose goes into the draft whole, or is only polished, and the writer moves on. Pasting itself is not the line: writers paste in 66% of offloading and 64% of behavior-based surrender windows. What differs is what follows. After pasting an AI proposal whole, the writer types a median of 6 characters and is back in the chat in 71 s; after taking part of it, they type 305 characters over 288 s. The finished essays show the same split: the more behavior-based surrender in a session, the more of the essay is AI text (ρ 0.60) and the lower the writer's felt ownership (ρ −0.55) (§7.2).
+
+**T2 (the anchor).** The writer's own text is the anchor. Sessions that start from it stay on the support side, and a visible draft predicts that the next request stays there too (odds ratio 0.23). In WildChat, where no editor exists, 2 of 21 sessions that become surrender-leaning come back to support; in NIRVANA 17 of 29 do (§7.3).
+
+**T3 (deliberation, RQ1–2).** In NIRVANA, surrender-leaning windows leave no work on the text. The writer is back in the chat after a median 58 s, against 152 s for support windows, and the gap is typing time: at equal low typing, dwell is the same. The copy is not faster. What is missing is the work afterwards. Writers register that the text is not theirs, since ownership is lower; what they are unlikely to see is that the argument was never worked through (§7.4, §8).
+
+**T4 (signals, RQ3).** A writing tool can see substitution risk from two log events, without reading any content: a request sent on a near-empty page, and a large paste with little typing after it. Together they fire on 140 of 347 NIRVANA windows and catch 63% of surrender-leaning windows, at a precision of 56% against a 40% base rate (§8).
+
+Six archetypes describe the sessions: short support visits, long working sessions, paste into the draft, one-shot paste, delegate in chat, and unresolved (§7.1).
 
 Categories are **literature-grounded inferences from behavior**, not calibrated probabilities and not measurements of anyone's thinking. **No human coded anything.**
 
@@ -35,41 +38,46 @@ Categories are **literature-grounded inferences from behavior**, not calibrated 
 | Change | What the proposal or M1 said | What this draft does | Why |
 |---|---|---|---|
 | **Who coded** | "I remain the primary coder", with the LLM as a consistency check | **This plan reverses that.** AI agents coded every window (coders A = Claude Opus 5.5, B = Claude Sonnet 5.5; adjudicator = Opus 5.5). A Fable 5.1 agent coded the 20-window gold set in my place | Time; I chose agent-led work on Nov 6 (`PACING.md`) |
-| **Agreement** | Human–LLM agreement | **All agreement is AI-to-AI, including the Fable "gold" set.** None of it is human or expert validation. Two models from one family can share a bias | Follows from the row above |
+| **Agreement** | Human–LLM agreement | **All agreement is AI-to-AI, including the Fable "gold" set.** None of it is human or expert validation | Follows from the row above |
 | **Scope** | Research writing | **Formal long-form writing**, reported as one writing activity: NIRVANA timed argumentative essays plus WildChat essays, research papers, reports, proposals, theses and literature reviews | Too few genuine research-writing conversations (the risk named in the proposal). Definition: `wildchat/DEFINITION.md` |
-| **Per-window categories** | Codebook v1.0/v1.1 refused to label offloading or surrender per window | v1.2 assigns each window one category with a strength, from its codes, by a rule table frozen before new labels were read | The proposal's success criterion asks for assignment; my Nov 7 decision |
-| **What a category is** | – | A literature-grounded inference from behavior, **not a calibrated probability**. No number here calibrates a category against cognition | Shaw & Nave define surrender partly by absent deliberation, which no log shows |
-| **Data counts** | M1: 347 windows "from 77 students"; WildChat 42 clear + 40 possible candidates from 2,000 | 347 windows from the **71** NIRVANA students who used ChatGPT; WildChat rescreened in full (§5.1) | Bet 1 rebuild; M1's WildChat candidates were never verified |
+| **Per-window categories** | Codebook v1.0/v1.1 refused to label offloading or surrender per window | v1.2 assigns each window one category with a strength, by a rule table frozen before new labels were read | The proposal's success criterion asks for assignment |
+| **What a category is** | – | A literature-grounded inference from behavior, **not a calibrated probability** | Shaw & Nave define surrender partly by absent deliberation, which no log shows |
+| **Evidence beyond codes** | Codes only | Timing, typing, pasting and editor length from the raw logs; NIRVANA's own final-essay measures (AI share, felt ownership). Numbers only, committed in `analysis/derived/` | Gives the categories an outside check and gives RQ3 signals that need no coding |
+| **Data counts** | M1: 347 windows "from 77 students"; WildChat 42 clear + 40 possible candidates | 347 windows from the **71** NIRVANA students who used ChatGPT; WildChat rescreened in full (§5.1) | Bet 1 rebuild; M1's WildChat candidates were never verified |
 
 ## 3. Related work
 
 Full review with sources: `lit/related_work.md`; search protocol and log: `lit/protocol.md`, `lit/search_log.csv`.
 
-**Offloading and surrender.** Risko & Gilbert (2016) define cognitive offloading neutrally, as action that reduces cognitive demand, and note that its benefit for learning depends on whether the removed demand is needed for the learning goal. Shaw & Nave (2026) separate strategic delegation, where one's own reasoning stays active, from "cognitive surrender", the uncritical adoption of AI output; their signature of surrender is that accuracy tracks AI accuracy, which needs items with known answers. The vocabulary is not settled: PAUSE (Alam 2026) and Maier et al. (2026) use "offloading" for the harmful substitution itself. This project uses Risko & Gilbert's sense with Shaw & Nave's condition (codebook v1.2 §9.1).
+**Offloading and surrender.** Risko & Gilbert (2016) define cognitive offloading neutrally, as action that reduces cognitive demand, and note that its benefit depends on whether the removed demand is needed for the goal. Shaw & Nave (2026) separate strategic delegation, where one's own reasoning stays active, from "cognitive surrender", the uncritical adoption of AI output; their signature of surrender needs items with known answers. PAUSE (Alam 2026) and Maier et al. (2026) use "offloading" for the harmful substitution itself. This project uses Risko & Gilbert's sense with Shaw & Nave's condition (codebook v1.2 §9.1).
 
-**Learning consequences.** Bastani et al. (2025) find that unrestricted GPT-4 access in high-school mathematics helps practice and harms later unaided performance, and read their logs as students copying answers. Contractor & Reyes (2026) separate *automation* (AI does the work) from *augmentation* (AI works with the student) from logs, and find automation's essay advantage gone a week later. Maier et al. (2026) classify requested support levels from "how do I start" to "give me the answer". Bastani and Maier study mathematics; Contractor & Reyes study students' essays.
+**Learning consequences.** Bastani et al. (2025) find that unrestricted GPT-4 access in high-school mathematics helps practice and harms later unaided performance. Contractor & Reyes (2026) separate *automation* from *augmentation* in students' essays from logs, and find automation's advantage gone a week later. Maier et al. (2026) classify requested support levels from "how do I start" to "give me the answer".
 
-**Tracing AI-assisted writing.** NIRVANA (Jelson et al. 2026) records chat and editor events for a timed essay and measures how much AI text enters the essay. Mysore et al. (2025) code follow-up behaviors in in-the-wild writing chats. Reza et al. (2025) review HCI design strategies for co-writing and interview writers; content-focused writers such as academics prioritize ownership while planning.
+**Writing process.** Flower & Hayes (1981) supply planning, translating and reviewing; Yukita et al. (2025) argue that delegating writing turns these into planning, waiting and reviewing, which is what T1's stage result shows (§7.2). Wan et al. (2024) place writing systems on a taxonomy adapted from Flower & Hayes.
 
-**Related coding schemes, credited.** The codebook's fields are not new on their own. Poquet et al. (2026) code who directs the interaction and at what level; Chen (2026) codes layers of what is handed over; T. Kim et al. (2025) propose two axes, division of cognitive labor and metacognitive oversight, which map onto this codebook's decision and verification questions; Mysore et al. (2025) separate follow-up types, which v1.1's `U4` subtypes and `U8` follow; Padmakumar et al. (2026) treat offloading as a fraction of steps. This project's contribution is narrower: coding request, origin of content, check and uptake together in one window, chaining windows into whole sessions, and stating where logs cannot support an inference (`lit/codebook_implications.md` recommendation 9).
+**Tracing AI-assisted writing.** NIRVANA (Jelson et al. 2026a) records chat and editor events for a timed essay and measures how much AI text enters the essay. Mysore et al. (2025) code follow-up behaviors in in-the-wild writing chats. Reza et al. (2025) review HCI design strategies for co-writing.
+
+**Ownership.** Joshi & Vogel (2025) find that writing with AI lowers psychological ownership. Jelson et al. (2026b) report that students relying on ChatGPT for planning or reviewing felt comparable ownership, and flag this as a concern. Park et al. (2026) find self-efficacy falling and trust rising turn by turn. Felt ownership and observable contribution are different things, which RQ2 turns on.
+
+**Related coding schemes, credited.** The codebook's fields are not new on their own. Poquet et al. (2026) code who directs the interaction and at what level; Chen (2026) codes layers of what is handed over; T. Kim et al. (2025) propose two axes, division of cognitive labor and metacognitive oversight, which map onto this codebook's decision and verification questions; Mysore et al. (2025) separate follow-up types, which v1.1's `U4` subtypes and `U8` follow; Padmakumar et al. (2026) treat offloading as a fraction of steps. This project's contribution is narrower: coding request, origin of content, check and uptake together in one window, chaining windows into whole sessions, and joining codes to what the log records (`lit/codebook_implications.md` recommendation 9).
 
 **Awareness (RQ2).** Skulmowski (2024), H. Kim et al. (2026), Tankelevitch et al. (2024) and Bhat et al. (2026) argue that people can misjudge or miss AI's influence on their own work. None tests this at the level of a single interaction, so RQ2 stays analytic here.
 
 ## 4. Comparison with existing frameworks
 
-The full comparison, its 11 case pairs and a critic's corrections are in `lit/framework_comparison.md`. Its conclusion, written before any real window was coded, was that the success criterion "distinguishes cases existing frameworks cannot" was **not established**: the project was the only framework rated Yes on 3 of 11 pairs, two of which NIRVANA's own metrics already separate, and the third (grading the grounds of a check) was built from the codebook's own examples and untested.
+The full comparison, its 11 case pairs and a critic's corrections are in `lit/framework_comparison.md`. Written before any real window was coded, it concluded that the success criterion "distinguishes cases existing frameworks cannot" was **not established**: the project was the only framework rated Yes on 3 of 11 pairs, two of which NIRVANA's own metrics already separate, and the third was untested.
 
-What the coded data now add, pair by pair:
+What the coded data now add:
 
 | Pair (from `lit/framework_comparison.md` §3) | Before coding | Now, on real windows |
 |---|---|---|
-| 1. Paste a generated essay vs request one and write your own | Project Yes [untested]; NIRVANA metrics also separate it | Both occur: whole paste (`D4 V0 U1`) 32 windows, ask-then-write-own (`D2 U7`) 52 windows; the rules send them to opposite sides (surrender-leaning 30/32 vs support 44/52) (`analysis/results/patterns.md` §1) |
-| 2. Light edits to an AI draft vs paste with no edits | Project Yes [untested], a thin gain | Both occur in the editor: 45 unchecked `D4` takes into the editor, unchanged (`U1`) or surface-edited (`U2`) (`out_of_sample.md` §7d). 43 of the 45 are surrender-leaning (2 are R10 augmenting), as Shaw & Nave would read them; the codes separate paste from surface edit but the categories do not. The chat analogue, surface-only iteration (`D2 V1 U4`), is 30 windows, 21 of them surrender-leaning moderate via R15 |
-| 6. Writer's claim reworded vs AI claim adopted | Shaw & Nave Yes [theory]; project Yes [untested] | `D1 F5` 68 windows, mostly offloading (46); `D4` adoptions surrender-leaning unless the request was explanation or critique |
-| 7. Checking against a source vs asking the AI to check itself | Project Yes [untested], "may be rare" | **Rare but present**: 13 reasoned checks (`V3`/`V4`) in 6 NIRVANA sessions, 5 `V2` windows. Enough to show the distinction exists in real traces, not enough to study it |
-| 5, 8, 11. Checked in another tab; true vs false claim; habit over weeks | Project Cannot | Still Cannot. No field records AI correctness, off-screen checking or use over weeks |
+| 1. Paste a generated essay vs request one and write your own | Project Yes [untested]; NIRVANA metrics also separate it | Both occur: whole paste (`D4 V0 U1`) 32 windows, ask-then-write-own (`D2 U7`) 52; the rules send them to opposite sides (surrender-leaning 30/32 vs support 44/52) (`analysis/results/patterns.md` §1). The log adds what NIRVANA's essay metric cannot: after a whole paste the writer types almost nothing (mining §5) |
+| 2. Light edits to an AI draft vs paste with no edits | Project Yes [untested], a thin gain | 45 unchecked `D4` takes into the editor; 43 surrender-leaning. The codes separate paste from surface edit; the categories do not. Surface-only iteration in chat (`D2 V1 U4`) is 30 windows, 21 surrender-leaning |
+| 6. Writer's claim reworded vs AI claim adopted | Shaw & Nave Yes [theory]; project Yes [untested] | `D1 F5` 68 windows, mostly offloading; `D4` adoptions surrender-leaning. **Pasting is common on both sides (66% vs 64%); this pair, not paste vs no paste, is the line T1 draws** |
+| 7. Checking against a source vs asking the AI to check itself | Project Yes [untested], "may be rare" | Rare but present: 13 reasoned checks (`V3`) in 6 NIRVANA sessions, 5 `V2` windows |
+| 5, 8, 11. Checked in another tab; true vs false claim; habit over weeks | Project Cannot | Still Cannot |
 
-So the criterion is met only in a narrow sense: the framework assigns real windows to categories with stated strength, and separates pairs 1, 2 and 7 on real traces, but NIRVANA's metrics already do much of pairs 1–2, and pair 7 rests on 13 windows. Shaw & Nave and Maier remain stronger on what they were built for (known-answer items; requested-support level).
+The new piece is pair 6 made observable: the same act (paste into the editor) sits on both sides, and the code for whose content it is, together with the typing that follows, separates them. Shaw & Nave and Maier remain stronger on what they were built for (known-answer items; requested-support level).
 
 ## 5. Data, codebook and inference layer
 
@@ -77,28 +85,30 @@ So the criterion is met only in a narrow sense: the framework assigns real windo
 
 | Set | What | Windows | Sessions | Coverage |
 |---|---|---|---|---|
-| NIRVANA | 30-minute argumentative essays, ChatGPT chat plus editor events (Jelson et al. 2026). All 71 students who used the chat | 347 | 71, all complete | C1 chat only or C2 chat + editor |
+| NIRVANA | 30-minute argumentative essays, ChatGPT chat plus editor events (Jelson et al. 2026a). All 71 students who used the chat | 347 | 71, all complete | C1 chat only or C2 chat + editor |
 | WildChat (Bet 7) | Formal long-form writing in WildChat-1M, random seed only; one conversation per IP cluster | 151 | 35 whole conversations, turns 1–10 (3 capped) | C1 or C0; no editor ever |
-| WildChat (Bet 4 sample) | 30 windows from 11 conversations, sampled for the codebook run | 30 | incomplete; **kept out of every session measure** | C1 or C0 |
+| WildChat (Bet 4 sample) | 30 windows from 11 conversations | 30 | incomplete; **kept out of every session measure** | C1 or C0 |
 
-The WildChat screen (Bet 7, `wildchat/REPORT.md`) labeled a random seed of 1,200 eligible English multi-turn conversations with an LLM (10% formal long-form writing), ranked all 139,736 eligible conversations by embeddings and keywords, and confirmed the top 2,500. A second model agreed with 118 of 120 random accepted conversations (98.3%). That is one model's agreement with another, not human-verified precision. Recall is about 12%.
+The WildChat screen (Bet 7, `wildchat/REPORT.md`) labeled a random seed of 1,200 eligible conversations with an LLM, ranked all 139,736 eligible conversations, and confirmed the top 2,500. A second model agreed with 118 of 120 random accepted conversations. That is one model's agreement with another, not human-verified precision.
 
 ### 5.2 Codebook v1.1
 
-Each window is one request, the AI's response, and the writer's next action. Q1–Q2 code what was asked (function, operation, object). Q3 codes where the content came from and who decided (`D0` no decision … `D4` AI proposal taken). Q4 codes the visible check (`V0` none, `V1` surface only, `V2` AI checks itself, `V3` reasoned challenge, `V4` source comparison). Q5 codes uptake (`U1` pasted unchanged … `U7` writer types new text, `U8` moved on). `prior_own_work` records whether the writer's own draft is visible. Revisions from v1.0, with evidence: `codebook/REPORT.md` (cut `D5` and `V5`; added `U8` and `prior_own_work`; polishing the writer's own claims is `D1`).
+Each window is one request, the AI's response, and the writer's next action. Q1–Q2 code what was asked (function `F1`–`F8`, operation, object); the process stage (planning, translating, reviewing, monitoring) is derived from the operation by script, after Flower & Hayes. Q3 codes where the content came from and who decided (`D0` no decision, `D1` writer's content, `D2` AI proposal left open, `D3` writer chose or revised, `D4` AI proposal taken). Q4 codes the visible check (`V0` none … `V4` source comparison). Q5 codes uptake (`U1` pasted unchanged … `U7` writer types new text, `U8` moved on). `prior_own_work` records whether the writer's own draft is visible. Revisions from v1.0: `codebook/REPORT.md`.
 
 ### 5.3 Inference layer v1.2 (the revised framework)
 
-v1.2 §9 (`inference/CSE216_Writing_Codebook_v1.2.md`) is an ordered rule table, R00–R20 and R99. First match wins, so every window gets exactly one category: `SURRENDER_LEANING`, `OFFLOADING`, `AUGMENTING`, `NEUTRAL_MECHANICAL` or `INDETERMINATE`, with a strength (strong, moderate, weak). Each rule cites the source it rests on and names the main alternative reading. Strength grades the link between behavior and source, not confidence.
+v1.2 §9 (`inference/CSE216_Writing_Codebook_v1.2.md`) is an ordered rule table, R00–R20 and R99. First match wins, so every window gets one category, `SURRENDER_LEANING`, `OFFLOADING`, `AUGMENTING`, `NEUTRAL_MECHANICAL` or `INDETERMINATE`, with a strength. Each rule cites its source and names the main alternative reading.
 
-- **`NEUTRAL_MECHANICAL` has no source.** It is a project category that follows v1.1's `D0` (no substantive decision in play).
-- `AUGMENTING` follows Contractor & Reyes's augmentation; Maier would call it beneficial offloading. Both sit on RQ1's "supports thinking" side, together called **support** below.
-- The rules were frozen (sha256 in `inference/FROZEN.md`) before any of this draft's 428 new windows was read, and were applied here unchanged: `analysis/scripts/check_frozen.py` checks the hash before every run.
-- Fields left `UNSETTLED` by the adjudicators go to R00 `INDETERMINATE`, as frozen. The range each could take is in `analysis/results/out_of_sample.md` §5.
+- **`NEUTRAL_MECHANICAL` has no source.** It is a project category that follows v1.1's `D0`.
+- `AUGMENTING` follows Contractor & Reyes's augmentation. Offloading and augmenting together are **support** below.
+- **Two kinds of surrender-leaning** are kept apart throughout: **SLr**, fired by R16 (generation requested, output iterated or accepted in chat: a request-only basis), and **SLb**, fired by any other surrender rule (unchecked paste, surface-only work on AI text: a behavior basis).
+- The rules were frozen (sha256 in `inference/FROZEN.md`) before any of the 428 new windows was read, and run here unchanged; `analysis/scripts/check_frozen.py` checks the hash before every run. Fields left `UNSETTLED` go to R00 `INDETERMINATE`, as frozen.
 
-### 5.4 Session measures
+### 5.4 Session measures and log facts
 
-Windows are chained by turn into sessions (v1.2 §9.5): category sequence, switches, transition counts, proportions, and the position of the first surrender-leaning window. I added a within-session shuffle test (each session's categories reordered 2,000 times) to separate order from make-up, and simple session types. Windows from one session are clustered, so counts are given per session where possible.
+Windows are chained by turn into sessions. Order claims are tested against a within-session shuffle (each session's categories reordered 2,000 times), which keeps a session's make-up and moves only the order. Archetypes come from optimal-matching distance between whole category sequences and average-linkage clustering, with k chosen by silhouette (mining §1).
+
+From the raw logs, `analysis/scripts/extract_raw.py` writes numbers only (`analysis/derived/`): for each NIRVANA window, the time from the response to the first action, first copy and next request (**dwell**), characters typed and pasted before the next request, and the editor's length when the request was sent; NIRVANA's own final-essay measures per student (GPT Final %, the share of the essay that came from the AI; Perceived Ownership, 1–7); and, for WildChat, which stamps only AI turns, the interval between consecutive AI replies.
 
 ## 6. Agreement and disagreements
 
@@ -106,164 +116,157 @@ Windows are chained by turn into sessions (v1.2 §9.5): category sequence, switc
 
 | Run | Windows | `decision` κ | `verification` κ | `uptake` κ | Lowest Q3–Q5 subset | Source |
 |---|---|---|---|---|---|---|
-| Bet 3 pilot, round 4 | 22 | 0.78 | 1.0 | 0.94 | – (small, rules written after reading these coders) | `codebook/REPORT.md` |
+| Bet 3 pilot, round 4 | 22 | 0.78 | 1.0 | 0.94 | – | `codebook/REPORT.md` |
 | Bet 4 sample | 100 | 0.94 | 0.82 | 0.92 | `verification` on C1 0.66 | `coding/REPORT.md` |
 | Fable 5.1 vs final, gold | 20 | 0.84 | 1.0 | 0.81 | – | `coding/results/fable_comparison.md` |
 | Bet 6 NIRVANA, full history | 295 | 0.80 | 0.79 | 0.85 | `verification` on C2 0.48 [0.17, 0.69] | `sessions/REPORT.md` |
 | Bet 7 WildChat | 151 | 0.92 | 0.94 | 0.92 | session interval ≥ 0.61 | `wildchat/REPORT.md` |
-| **This draft: categories from A's labels vs B's labels** | 528 | – | – | – | **category κ 0.86** (89.2% agree) | `analysis/results/out_of_sample.md` §7 |
+| **Categories from A's labels vs B's labels** | 528 | – | – | – | **category κ 0.86** (89.2% agree) | `analysis/results/out_of_sample.md` §7 |
 
-**Adjudicators lean toward the same model.** When coders disagreed, the adjudicator (Opus) sided with coder A (also Opus) 25 to 13 in Bet 4, 159 to 45 in Bet 6 and 54 to 17 in Bet 7. Running the frozen rules on each coder's labels alone shows what this does to categories. Totals barely move: in whole sessions, surrender-leaning windows number 177 under A's labels, 167 under B's and 167 in the final labels. But on the 57 windows where A's and B's categories differ, the final category follows A in 44 and B in 12 (`analysis/results/out_of_sample.md` §7). The lean is real at the window level; it does not change the headline counts.
+**Adjudicators lean toward the same model.** When coders disagreed, the adjudicator (Opus) sided with coder A (also Opus) 25 to 13 in Bet 4, 159 to 45 in Bet 6 and 54 to 17 in Bet 7. On the 57 windows where A's and B's categories differ, the final category follows A in 44 and B in 12. Totals barely move: surrender-leaning windows in whole sessions number 177 under A's labels, 167 under B's and 167 in the final labels (`out_of_sample.md` §7).
 
-**Analyzed disagreements.**
-
-- **`V0` vs `V1` on editor windows** (Bet 6: 18 of 20 C2 `verification` disagreements). A uses `V1` far more than B. This boundary decides between R15 (surrender-leaning moderate) and R16 (weak), so it moves strength, not category.
-- **`prior_own_work`** is the weakest field in WildChat (κ 0.75) and holds 11 of its 19 `UNSETTLED` cells: whether a pasted text in chat is the writer's own is often unknowable.
-- **`U3` vs `U7`** when the writer pastes a short AI phrase and keeps typing (Bet 4 G03, Bet 6 H01): the codebook has no length rule, and adjudicators read "added beside" differently across packets.
-- **Truncation.** Bet 4 coders saw only the last three earlier turns; 18 windows had older turns nobody read. Bet 6 recoded those with full history, which changed 6 labels on 5 windows and 2 categories (`analysis/results/out_of_sample.md` §6).
+**Analyzed disagreements.** `V0` vs `V1` on editor windows (18 of 20 C2 `verification` disagreements in Bet 6) moves strength between R15 and R16, not category. `prior_own_work` is the weakest WildChat field (κ 0.75) and holds 11 of its 19 `UNSETTLED` cells. `U3` vs `U7` when a writer pastes a short AI phrase and keeps typing has no length rule. Bet 4's truncated histories changed 6 labels and 2 categories when recoded with full history (`out_of_sample.md` §6).
 
 ## 7. Results
 
-### 7.1 RQ1 at the window level: the out-of-sample test of v1.2
+### 7.0 Base: the frozen rules out of sample
 
-![Window categories by set](../analysis/figures/fig01_category_strength_by_set.png)
+The frozen rules gave a category other than indeterminate to 336 of the 428 new windows (78.5%), against 79 of 100 on the windows they were built on (`out_of_sample.md` §1). By dataset, in whole sessions:
 
-| | Windows | Not indeterminate |
-|---|---|---|
-| Bet 5 calibration, in sample | 100 | 79 (79.0%) |
-| **Out of sample: NIRVANA new (Bet 6) + WildChat (Bet 7)** | 428 | **336 (78.5%)** |
-| NIRVANA new | 277 | 237 (85.6%) |
-| WildChat Bet 7 | 151 | 99 (65.6%) |
-| All 528 | 528 | 416 (78.8%) |
-
-Source: `analysis/results/out_of_sample.md` §1. Coverage depends on what the log shows: 13.6% of C0 windows (no next action seen), 78.2% of C1 and 93.6% of C2 get a category (`figures/fig12_category_by_coverage.png`).
-
-Coverage counts any category other than indeterminate, not a correct one; no human checked a category. Without R16 (request type alone), whole-session coverage is 60.0%. WildChat's coverage fell slightly out of sample (70% to 65.6%).
-
-**Category × strength, all 528 windows** (`out_of_sample.md` §2): surrender-leaning 182 (strong 15, moderate 55, weak 112); offloading 113 (moderate 93, weak 20); augmenting 66 (moderate 32, weak 34); neutral-mechanical 55; indeterminate 112.
-
-**By dataset, whole sessions** (`out_of_sample.md` §7c). Pooled shares (33.5% surrender-leaning, 35.1% support) describe neither dataset, so they are not used below:
-
-| | Windows | Surrender-leaning | Support | Weak share of surrender-leaning |
+| | Windows | Surrender-leaning (SLr / SLb) | Support | Indeterminate or neutral |
 |---|---|---|---|---|
-| NIRVANA | 347 | 98 (28.2%) | 150 (43.2%) | 30 of 98 |
-| WildChat | 151 | 69 (45.7%) | 25 (16.6%) | 67 of 69 |
+| NIRVANA | 347 | 98 (29 / 69) | 150 | 99 |
+| WildChat | 151 | 69 (67 / 2) | 25 | 57 |
 
-- **Unchecked reuse of AI text is common; strong ratings are rare by design.** 45 whole-session windows take an AI proposal into the editor with no independent check. Only the 15 with no own work visible are strong (R09). Of the 30 with some own work visible, 28 are moderate (R11), because the writer may already have held the idea, and 2 are augmenting (R10: the AI's explanation or critique was accepted, not its text). R09 needs the editor, so "all strong windows are NIRVANA" holds by construction (`out_of_sample.md` §7d).
-- **In WildChat, surrender-leaning mostly means "asked the AI to write it".** 67 of its 69 surrender-leaning windows fire R16, which rests on the request type alone; no adoption is seen. In NIRVANA, R16 carries 29 of 98. Half of all whole-session R16 windows (48 of 96) are ones where the writer asked for text and then did not use it (`U8`). Treat R16 as indeterminate and the surrender-leaning share of whole-session windows falls from 33.5% to 14.3% (`analysis/results/sensitivity.md`).
-- **WildChat cannot show the behaviors that make a window strong or support-side in the editor.** R06, R09, R12, R17, R19 and R20 cannot fire there (asserted: 0 fired). Dataset differences below are a coverage caveat, not a comparison of writers.
-- **V2–V4 are essentially absent.** 13 reasoned checks (`V3`/`V4`) and 5 AI self-checks (`V2`) in 498 whole-session windows. The rule for reasoned checks (R04) fires 13 times, all NIRVANA.
+In WildChat, surrender-leaning almost always means "asked the AI to write it" (R16), because nothing shows what happened to the text; six rules (R06, R09, R12, R17, R19, R20) cannot fire without an editor. Checks are nearly absent: 13 reasoned checks (`V3`, no `V4`) in 6 sessions and 5 AI self-checks (`V2`) in 498 windows.
 
-![Rules fired](../analysis/figures/fig02_rules_fired.png)
+### 7.1 Six archetypes
 
-### 7.2 RQ1 across sessions: timelines, transitions, order
+![Archetype sequences](../analysis/figures/fig16_archetype_sequences.png)
+![Archetype profiles](../analysis/figures/fig17_archetype_profiles.png)
 
-![Session timelines](../analysis/figures/fig03_session_timelines.png)
+Clustering whole category sequences gives six archetypes (mining §1; names follow fixed thresholds in `mine.py`):
 
-*One row per session, one cell per window in turn order. Session sequences: `analysis/results/sessions/session_table.csv`.*
+| Archetype | Sessions (NIRVANA / WildChat) | Mean windows | What it is made of | Median GPT Final % (NIRVANA) |
+|---|---|---|---|---|
+| Short support visit | 35 (25 / 10) | 2.3 | offloading 46%, augmenting 28% | 0.0 |
+| Long working session | 21 (19 / 2) | 10.4 | offloading 31%, augmenting 23%, some of everything; 1.7 switches on average | 0.18 |
+| Paste into the draft | 12 (12 / 0) | 4.6 | SLb 65% | 0.97 |
+| One-shot paste | 7 (7 / 0) | 1.0 | SLb 71% | 1.0 |
+| Delegate in chat | 11 (2 / 9) | 7.9 | SLr 64% | – (2 NIRVANA sessions) |
+| Unresolved | 20 (6 / 14) | 2.6 | indeterminate 60%, SLr 30% | – |
 
-**Session types** (`analysis/results/patterns.md` §2; IND and NEU ignored): of 106 sessions, 34 are surrender-leaning only, 23 mixed, 40 support only, and 9 have no substantive category. Type tracks length: mixed sessions average 9.3 windows, single-type ones 3–4, so a short session has little chance to be mixed. Without R16, surrender-leaning-only sessions halve, from 34 to 17 (`analysis/results/sensitivity.md`). These describe a session's make-up, not kinds of writer.
+The two paste archetypes are NIRVANA-only and end with essays almost wholly by the AI; delegation in chat is mostly WildChat. Cluster structure is modest (silhouette 0.25) but stable: 89–98% of session pairs are grouped the same way at k = 4, 5 and 7 (mining §10). Narratives: e41 (paste into the draft), e24 (short support visit), e70 and e26 (long working sessions), WildChat 2849709b14c2 (delegate in chat), all in `narratives.md`.
 
-**Transitions** (`analysis/results/sessions.md`). Surrender-leaning is followed by surrender-leaning in 83 of 143 cases (58%), the commonest transition. That is make-up, not momentum. A within-session shuffle keeps each session's mix and destroys order. With indeterminate windows set aside first (they are often a conversation's closing turn, which a shuffle would otherwise move into the middle of runs), the shuffle expects 89.2 surrender-leaning pairs against 88 observed (p 0.73). NIRVANA (43 vs 43.6) and WildChat (45 vs 45.5) agree. **Surrender-leaning describes which sessions a writer is in, not a state that pulls the next request after it.** The version with indeterminate windows kept seemed to show persistence; it is shown in the figure's top row for comparison and is not a finding.
+### 7.2 T1: the boundary is whether AI text passes through the writer's hands
 
-![Transitions](../analysis/figures/fig04_transition_matrices.png)
-![Persistence vs shuffle](../analysis/figures/fig05_persistence_vs_shuffle.png)
+**Pasting is on both sides.** In NIRVANA, writers paste into the editor in 65.5% of offloading windows and 63.8% of behavior-based surrender windows (mining §5). What separates them is whose content was pasted and what the writer did next:
 
-**Switching between offloading and surrender.** With indeterminate and neutral windows removed, there are 29 moves from surrender-leaning to support and 29 back. That equality is close to arithmetic: within a session the two counts can differ by at most one, set by where it starts and ends. So it says nothing about direction. Among the 23 sessions with both, support comes first in 10 and surrender-leaning in 13.
+| NIRVANA windows with a paste | Windows | Category | Median characters typed after | Median dwell |
+|---|---|---|---|---|
+| AI proposal taken whole (`D4`) | 42 | SLb 39 | 6 | 70.5 s |
+| Part taken or revised (`D3`) | 32 | offloading 28 | 304.5 | 288.1 s |
+| Writer's own text, reworked by the AI (`D1`) | 29 | offloading 28 | 25 | 150.1 s |
 
-**Order: two kinds of surrender-leaning.** Of 52 multi-window sessions with any surrender-leaning window, 33 have it at window 1. The first surrender-leaning window rests on R16 (a generation request) in 32 of 57 sessions, including all 21 in WildChat. Split by what the rule rests on (`sessions.md` drift table; `figures/fig06`, `fig15`):
+Source: mining §5. The category column restates the rules, and "typed after" partly restates how `D3` and `D4` are defined. Dwell does not.
 
-- **Request-only surrender-leaning (R16) opens sessions.** Its mean position is 0.37 on a 0–1 scale, against 0.50 under shuffle.
-- **Behavior-based surrender-leaning sits later.** This covers pastes, partial pastes and surface-only edits (R06, R09, R11, R15). Its mean position is 0.58 against 0.50 (p 0.01 pooled, NIRVANA alone p 0.015; p between 0.005 and 0.031 in every sensitivity variant except WildChat alone, which has only 2 such windows). Support windows show no drift pooled or in NIRVANA; in WildChat they sit earlier than chance (p 0.006), since language work on the writer's own text tends to come early there.
-- **Caveats.** This test is uncorrected. It may be partly built in: R11 needs visible own work, which accumulates as a session goes on.
-- **NIRVANA's overall surrender-leaning share is flat across the session.** The two trends cancel.
+**The finished essays show the same line.** NIRVANA records how much of each final essay came from the AI and asks writers how much they own it. Across the 71 sessions, the share of behavior-based surrender windows tracks the AI share of the essay (ρ 0.60, p 0.0005) and lower felt ownership (ρ −0.55, p 0.0005). Both hold without one-window sessions (0.54, −0.49). Request-only surrender tracks the AI share only weakly (ρ 0.19, p 0.12). Sessions with any behavior-based surrender window end with a median essay 81% AI; sessions without one, 0% (34 vs 37 sessions) (mining §8, §10).
 
-![Category by position](../analysis/figures/fig06_category_by_position.png)
-![Position drift](../analysis/figures/fig15_position_drift.png)
+![Outcome](../analysis/figures/fig24_outcome.png)
 
-**Does a session ever leave surrender-leaning?** Of sessions whose first surrender-leaning window is not their last, NIRVANA 17 of 29 (59%) later reach a support window, WildChat 2 of 21 (10%). The WildChat figure is low for two reasons besides the writers: chat cannot show a writer returning to their own text (`U3`, `U7`), and the rules read every chat follow-up on an AI draft (`D2 F4 U4`) as R16 again. WildChat can produce support windows (25, mostly language work on the writer's own text), so the gap is not only missing coverage.
+**Substitution is a request for prose.** 80% of drafting-stage windows are surrender-leaning, against 23% of planning and 17% of reviewing windows. This is close to definitional: 192 of 195 drafting windows are generation requests (`F4`), and those feed the surrender rules. The informative part is the other side: requests that are not for generated prose are almost never surrender-leaning (7% when planning, 10% when reviewing). Planning comes early in sessions and reviewing late (both p 0.0005 against the shuffle) (mining §4, §10). This is Yukita et al.'s point in data: what gets delegated is translating.
 
-![Leaving surrender](../analysis/figures/fig08_leaving_surrender.png)
+![Stage](../analysis/figures/fig18_stage_by_category.png)
 
-**Escalation is not supported as a pattern.** Six NIRVANA sessions have a window where the writer hands over their own content (`D1`) and a later window taking an AI proposal (`D4`): e25, e26, e31, e44, e70, e74. Shuffling each session's decision codes gives 6.97 such sessions on average, and the reverse order (`D4`, later `D1`) occurs in 7. So e70-style escalation exists as a case (narrative 1 in `narratives.md`), not as a tendency. WildChat has no `D4` window, because adoption cannot be seen in chat (`figures/fig10_decision_timelines_nirvana.png`).
+**Entering and leaving.** Moves from support into surrender-leaning most often land on a generation request iterated in chat (`D2 U4`, 18 of 29). Moves back out most commonly land on the writer revising AI text in the editor (`D3 U3`, 8 of 29) (mining §3). Narrative e70 shows the turn inside one session: the writer polishes their own paragraphs, then asks for text they do not have and pastes it.
 
-### 7.3 Recurring patterns
+### 7.3 T2: the writer's own text is the anchor
 
-Signatures were fixed on codes before counting (`analysis/results/patterns.md` §1; `figures/fig14_signatures.png`):
+![Own work](../analysis/figures/fig19_own_work_first.png)
 
-| Pattern | Windows (sessions) | Where the rules put it |
-|---|---|---|
-| Whole paste (`D4 V0 U1`) | 32 (26) | surrender-leaning 30 |
-| Surface-only iteration (`D2 V1 U4`) | 30 (19) | surrender-leaning 21, indeterminate 8 |
-| Draft requested, kept in chat (`D2 F4 U4/U5`) | 72 (37) | surrender-leaning 69 |
-| Partial take (`D3`) | 46 (25) | offloading 37, surrender-leaning 7 |
-| Ask, then write own text (`D2 U7`) | 52 (31) | augmenting 37, offloading 7 |
-| Writer's text handed over for language (`D1 F5`) | 68 (30) | offloading 46 |
-| Asked and moved on (`U8`) | 102 (44) | **split across all five**: surrender-leaning 48 |
-| Reasoned check (`V3`/`V4`) | 13 (6) | offloading 13 |
+- **Starting from own text.** Across NIRVANA sessions, the more text in the editor at the first request, the larger the session's support share (ρ 0.40, p 0.0005; 0.26, p 0.075, on multi-window sessions alone). Sessions whose first window shows a running draft have a mean support share of 0.77; with notes, 0.71; with nothing visible, 0.50. In WildChat, the 7 conversations that open with the writer's draft have no surrender-leaning window; 18 of the 19 where no own work is visible do (mining §5, §10).
+- **Next request.** In a model of the next substantive window, a visible draft predicts lower odds of surrender-leaning (odds ratio 0.23, 95% session bootstrap 0.07–0.44), with the current category, chat uptake, dataset and position in the model. The current window being request-only surrender is the larger predictor (odds ratio 7.9) (mining §3).
+- **Switching.** In NIRVANA, writers leave surrender-leaning in 10 of 18 transitions when their draft is visible, 14 of 42 with notes, 4 of 21 with nothing visible. From support, they enter surrender-leaning in 17 of 43 transitions with only notes and 11 of 71 with a draft (mining §3).
+- **Coming back.** Of sessions whose first surrender-leaning window is not their last, 17 of 29 in NIRVANA later return to support; 2 of 21 in WildChat do (mining §6).
+- **The draft grows.** NIRVANA's median editor length at the time of request rises from 101 characters in the first fifth of a session to 2,157 in the last (mining §5).
 
-The consistency in this table is a property of the rule table, not an empirical regularity: signatures and rules are both code combinations. The informative row is "asked and moved on", which the rules do not resolve. They read it by what was requested, so a writer who asked for text and then ignored it is counted as surrender-leaning (R16).
+![Lagged model](../analysis/figures/fig20_lagged_model.png)
+![Switch triggers](../analysis/figures/fig21_switch_triggers.png)
+![Time to event](../analysis/figures/fig22_time_to_event.png)
 
-### 7.4 Narratives
+Narrative e24 shows the anchor in one session: the writer asks while a paragraph of their own is half written, and answers each reply with their own paragraph.
 
-`narratives.md` follows three whole sessions window by window, with ids and paraphrase only: an escalation (NIRVANA e70), a writer who mostly keeps control (NIRVANA e26), and a chat-only run of generation requests (WildChat 2849709b14c2).
+### 7.4 T3: surrender-leaning windows leave no work on the text
+
+![Dwell and copy latency](../analysis/figures/fig23_dwell_latency.png)
+
+- **Dwell.** In NIRVANA, the time from the AI's response to the writer's next request has a median of 58 s for surrender-leaning windows and 152 s for support windows (within-session shuffle p 0.0005). Behavior-based surrender alone is 65 s (p 0.0035). The gap appears in every position bin and within 13 of the 17 sessions that have both (mining §7, §10).
+- **The gap is typing.** Where the writer typed under 50 characters, behavior-based surrender and support windows have the same dwell (44 s and 44 s). Median characters typed after the response: 0 for behavior-based surrender, 108 for offloading, 256 for augmenting (mining §5, §10).
+- **The copy is not faster.** The first copy from the chat comes after a median 15.5 s for behavior-based surrender and 10.3 s for offloading (p 0.62); 20 of 69 and 31 of 87 such windows are copied within 10 s (mining §7).
+- **WildChat cannot test this.** Its one clock, AI reply to next AI reply, includes generation time and does not separate the sides (232 vs 332 s, p 0.39).
+
+Narrative e41 is the extreme case: six chat turns on an empty page, each AI draft on screen for under 21 s before the next request, then one paste of 4,681 characters. The essay is 100% AI by NIRVANA's measure, and the writer rated their ownership 3.1 of 7.
 
 ## 8. RQ2 and RQ3
 
-### RQ2: which substitutions are likely visible to the writer (analytic only)
+### RQ2: which substitutions are likely to go unnoticed (analytic)
 
-The proposal promised no user study, so this is an argument from the codes and the literature, not a finding about awareness.
+The proposal promised no user study, so this is an argument from the patterns and the literature.
 
-| Pattern | Likely visible to the writer? | Reasoning |
+Shaw & Nave define surrender by absent deliberation. No log shows deliberation, but logs show its usual by-product, work on the text, and that is near zero exactly where AI substance is taken over (T3). Reasoned checks, the visible form of deliberation, are nearly absent (13 in 498 windows). Writers do register *origin*: felt ownership is lower in sessions with either kind of surrender (ρ −0.55 for behavior-based, −0.33 for request-only), as Joshi & Vogel (2025) found. So the substitution a writer can see is that the text is not theirs. What a writer is unlikely to see is that its argument was never worked through, the gap H. Kim et al. (2026) call the "LLM fallacy".
+
+| Pattern | Likely noticed? | Why |
 |---|---|---|
-| Whole paste of AI text | Likely visible | The act of pasting is deliberate; the writer knows the text is not theirs at the moment of pasting. What may not be visible is that the *argument* is no longer theirs (H. Kim et al. 2026, "LLM fallacy") |
-| Surface-only iteration | Less visible | The writer acts on the text, but only on its form; Shaw & Nave's routes (Table 2) include no surface-edit route to deliberation, so the substance can stay the AI's while the work feels like editing. This is an argument, not a tested claim |
-| Ask, then write own text (`D2 U7`) | Least visible | Ideas can seed the text without verbatim reuse (Bhat et al. 2026 report unnoticed influence). The rules call this augmenting; the codebook cannot see idea origin, by design |
-| Request-only (R16) in chat | Unknown | The log ends at the request; whether the text was used is unseen by us, not necessarily by the writer |
+| Whole paste of AI text (`D4 U1`) | The origin, yes; the missing reasoning, no | Pasting is deliberate, and ownership is lower in these sessions. But the writer types almost nothing afterwards (T3), so nothing in the session works the argument through |
+| Surface-only iteration on an AI draft (`D2 V1 U4`, 30 windows) | Less likely | The writer is busy with length and tone, which feels like editing; Shaw & Nave's routes to deliberation include no surface-edit route (e41) |
+| Ideas from a generation request, written up in the writer's own words (`D2 U7`, 52 windows, 37 augmenting) | Least likely | The writer types, so ownership need not fall (Jelson et al. 2026b found planning and reviewing reliance kept ownership; Bhat et al. 2026 report unnoticed influence). The codebook cannot see idea origin, by design (e24, R17's weak strength) |
+| Request-only delegation in chat (R16) | Unknown to us | The log ends at the request; in WildChat the writer may use the text off-screen |
 
-### RQ3: observable signals that could drive in-situ feedback
+### RQ3: in-situ feedback triggers
 
-From §7, the candidate signals are combinations that a writing tool could detect without reading anyone's mind:
+![Log triggers](../analysis/figures/fig25_log_triggers.png)
 
-1. **A generation request (`F4`) from a writer with no visible own draft (`NONE_VISIBLE`).** R16 rests on the first part. R09, the only strong rule, needs the second.
-2. **Whole paste with no change** (`U1`, high verbatim overlap): computable by script, as NIRVANA already does.
-3. **Edits only to length, tone or format of AI substance** (`V1` on a `D4`/`D2` window).
-4. **A generation request as the first request.** Request-only surrender-leaning concentrates at window 1, and short sessions tend to be one kind (though that is partly because they are short). So the first request may be the cheapest point for a prompt to reflect, before any AI text is pasted.
-5. **Absence of any reasoned check** across a session (no `V3`/`V4`): near-universal here, so it cannot discriminate alone.
-6. **Later in a session, a paste or a form-only edit of AI text.** Behavior-based surrender-leaning sits later than chance. A signal there would act on what the writer did, not on what they asked.
+| Trigger | Fires when | Evidence (NIRVANA, mining §9–10) | Proposed feedback (mockup level) |
+|---|---|---|---|
+| **Ask on a near-empty page** | A request is sent while the editor holds under 200 characters | Fires on 101 of 347 windows; 59% of the windows it fires on are surrender-leaning (base 40%); catches 45% of surrender-leaning windows; sessions where it fires more report lower ownership (ρ −0.28). Backed by T2 | Before showing generated prose, ask the writer for the claim they want to make, and show the AI's reply beside it |
+| **Large paste, little typing** | 200+ characters pasted and under 50 typed before the next request | Fires on 55 windows; 64% surrender-leaning; catches 46% of behavior-based surrender; sessions where it fires more report lower ownership (ρ −0.41) | After the paste, ask which sentence of it the writer would defend or change, and highlight the pasted span until it has been edited |
+| **Either of the two** | – | Fires on 140 windows; 56% surrender-leaning; catches 63% of surrender-leaning and 70% of behavior-based windows | – |
+| Not a trigger: quick return to chat | Next request within 60 s, under 50 typed | 55% surrender-leaning, no relation to essay outcome (ρ 0.14 with AI share) | Speed alone should not prompt anything |
 
-These are candidates, not validated detectors. No signal was tested against outcomes, and a feedback design stays at mockup level per the proposal.
+The two triggers read only the editor's length and character counts, never the text. In a chat-only tool neither event exists. The nearest analogue there is a run of generation follow-ups where the writer supplies no text of their own: such runs are only slightly more common than chance (46 vs 40.5, p 0.025), but WildChat sessions in them rarely come back (2 of 21).
 
 ## 9. Revised framework: what v1.3 should change (proposed, not applied)
 
 v1.2 stays frozen for this milestone. The data suggest these changes for a v1.3 with a logged rerun:
 
-- **Split R16.** "Asked the AI to write it" with no adoption seen is a different claim from adoption. Report it as its own pattern ("generation requested, use unseen") rather than weak surrender-leaning.
-- **Resolve `U8`.** 48 of the 96 whole-session R16 windows are "asked for text, then did not use it". Either keep `U8` windows indeterminate, or state that they are read by request type.
-- **Narrow R00.** 16 of the 20 windows with an `UNSETTLED` field get the same category under every value of that field. R00 could send a window to indeterminate only when the unsettled field can change the rule that fires.
-- **Add a length rule for `U3` vs `U7`** and a `V0`/`V1` rule for editor windows, the two boundaries that move categories or strength.
-- **Cover the commonest R99 gaps.** 49 windows fall through to R99. The largest groups are AI rework of AI text kept in chat (`D2 F5 U4`, 13), options or plans left open in chat (`D2 F2/F3 U4`, 14) and generation followed by own typing with no visible draft (`D2 F4 U7`, 5). A small group worth a rule is a rewrite set aside while the writer keeps composing (`D2 F5 U7`, 2; NIRVANA-e26-t05 in `narratives.md`), which reads like augmenting (`analysis/results/out_of_sample.md` §9).
-- **Keep `prior_own_work` but allow "unknown, pasted"** in chat, which would settle most WildChat `UNSETTLED` cells.
+- **Split R16.** Request-only surrender tracks the essay's AI share only weakly (ρ 0.19) while behavior-based surrender tracks it strongly (0.60). "Asked the AI to write it" with no adoption seen should be its own pattern, not weak surrender-leaning. 48 of the 96 whole-session R16 windows are "asked for text, then did not use it" (`U8`).
+- **Add a log field for work after the response.** Characters typed and pasted before the next request separate the sides where codes alone cannot (T1, T3) and are computable by script.
+- **Narrow R00.** 16 of the 20 windows with an `UNSETTLED` field get the same category under every value of that field (`out_of_sample.md` §5).
+- **Add a length rule for `U3` vs `U7`** and a `V0`/`V1` rule for editor windows.
+- **Cover the commonest R99 gaps**: AI rework of AI text kept in chat (`D2 F5 U4`, 13), options or plans left open in chat (`D2 F2/F3 U4`, 14), generation followed by own typing with no visible draft (`D2 F4 U7`, 5) (`out_of_sample.md` §9).
+- **Allow "unknown, pasted" for `prior_own_work`** in chat, which would settle most WildChat `UNSETTLED` cells.
 
-## 10. Limitations and honest reporting
+## 10. Limitations
 
 - **No human coded anything.** Every label and every agreement figure is AI-to-AI, including the Fable 5.1 "gold" set. The proposal said "I remain the primary coder"; this plan reverses that.
-- **Categories are literature-grounded inferences, not calibrated probabilities**, and not measurements of cognition. Each keeps the silent-evaluation alternative open.
+- **Categories are literature-grounded inferences, not calibrated probabilities**, and not measurements of cognition. Each rule keeps its alternative reading open, for example that a writer evaluated AI text silently before pasting it.
 - **`NEUTRAL_MECHANICAL` has no source.**
-- **V2–V4 are essentially absent**, so the framework's verification distinctions rest on very few windows.
-- **Adjudicators lean toward the same model** (Bet 4 25:13, Bet 6 159:45, Bet 7 54:17). Where the coders' categories differ, the final follows A 44 to 12; totals barely move (§6).
-- **Statistical tests are exploratory.** The shuffle and drift tests are uncorrected for the number run (each script prints all of them), and windows within a session are clustered. A finding that rests on one p-value near 0.01 is a lead, not a result.
-- **In WildChat, surrender-leaning mostly means "asked the AI to write it"** (R16, request type alone).
-- **Scope was adapted** from research writing to formal long-form writing; NIRVANA is a timed 30-minute essay, not research writing.
-- **Coverage drives what can be inferred.** WildChat has no editor; six rules cannot fire there.
-- **Sessions are short and clustered.** Median WildChat conversation has 4 user turns; NIRVANA sessions are 30 minutes. Nothing here speaks to habits over weeks.
-- **WildChat truncation and screen.** Three coded conversations are capped at 10 turns, and three are ones a second model judged not formal writing; dropping either set changes no headline by more than about 2 points (`analysis/results/sensitivity.md`).
-- **The framework comparison was made by the project's own agent**, corrected by a critic, and the project's three distinctive pairs are narrow (§4).
+- **V2–V4 are essentially absent** (13 `V3`, 0 `V4`, 5 `V2`), so the framework's verification distinctions rest on very few windows.
+- **Adjudicators lean toward the same model** (Bet 4 25:13, Bet 6 159:45, Bet 7 54:17); where the coders' categories differ, the final follows A 44 to 12; totals barely move (§6).
+- **In WildChat, surrender-leaning mostly means "asked the AI to write it"** (67 of 69 windows rest on R16, request type alone).
+- **Some links are partly built in.** The category column of the paste table and "typed after" restate how `D3` and `D4` are defined; the stage result is close to definitional, since drafting windows are generation requests; GPT Final % measures AI text surviving in the essay, so its link to pasting is expected. Dwell and felt ownership are not built in.
+- **Between, not within.** The own-work links (T2) and the ownership link hold across sessions more than within them. Bet 8's shuffle found no turn-to-turn stickiness once a session's make-up is fixed, so "predicts" means across sessions.
+- **Many tests, uncorrected**: 40 category n-grams, 29 signature n-grams, 20 latency contrasts, 12 outcome correlations, 4 triggers, plus Bet 8's order tests. The theses rest on the large effects (outcome ρ ≈ 0.6, dwell 58 vs 152 s, trigger precision), not on p-values near 0.05.
+- **NIRVANA carries T1's paste evidence, T3 and T4.** WildChat has no editor and stamps only AI turns.
+- **Archetypes describe these sessions**; the structure is modest (silhouette 0.25).
+- **Scope was adapted** from research writing to formal long-form writing; NIRVANA is a timed 30-minute essay. Nothing here speaks to habits over weeks.
+- **The framework comparison was made by the project's own agent**, corrected by a critic (§4).
+- **Ownership is NIRVANA's self-report**; I rely on the dataset's description of when and how it was asked.
 
 ## 11. Plan to the final report
 
-Apply M2 feedback; decide on v1.3 (§9) with a logged rerun; decide whether to compute verbatim overlap for WildChat chat turns; consider a small human check of categories (for example, Wayne reading 20 windows blind) if time allows, reported as such; write the final RQ1–3 answers.
+Apply M2 feedback; decide on v1.3 (§9) with a logged rerun, starting with the R16 split and a typed-after field; consider a small human check of categories (for example, Wayne reading 20 windows blind), reported as such; build mockups for the two triggers; write the final RQ1–3 answers from the theses.
 
 ## References
 
-Full list with read levels: `inference/CSE216_Writing_Codebook_v1.2.md` §11 and `lit/related_work.md`. Cited here: Alam 2026 (PAUSE, arXiv:2609.13155, abstract only); Bastani et al. 2025 (*PNAS* 122(26), read as the working paper); Bhat et al. 2026; Chen 2026 (doi:10.3389/fpsyg.2026.1906199); Contractor & Reyes 2026 (arXiv:2607.08849); H. Kim et al. 2026; T. Kim et al. 2025 (doi:10.1002/arcp.70008, abstract only); Jelson et al. 2026 (NIRVANA, arXiv:2604.07344); Maier et al. 2026 (arXiv:2609.20143); Mysore et al. 2025 (EMNLP, doi:10.18653/v1/2025.emnlp-main.852); Padmakumar et al. 2026 (arXiv:2605.29392); Poquet et al. 2026 (doi:10.1007/978-3-032-37979-5_34); Reza et al. 2025 (arXiv:2504.12488); Risko & Gilbert 2016 (doi:10.1016/j.tics.2016.07.002); Shaw & Nave 2026 (SSRN 6097646; read as doi:10.31234/osf.io/yk25n_v1); Skulmowski 2024; Tankelevitch et al. 2024; Zhao et al. 2024 (WildChat, arXiv:2405.01470).
+Full list with read levels: `inference/CSE216_Writing_Codebook_v1.2.md` §11 and `lit/related_work.md`. Cited here: Alam 2026 (PAUSE, arXiv:2609.13155, abstract only); Bastani et al. 2025 (*PNAS* 122(26)); Bhat et al. 2026; Chen 2026 (doi:10.3389/fpsyg.2026.1906199); Contractor & Reyes 2026 (arXiv:2607.08849); Flower & Hayes 1981; H. Kim et al. 2026; T. Kim et al. 2025 (doi:10.1002/arcp.70008, abstract only); Jelson et al. 2026a (NIRVANA, arXiv:2604.07344); Jelson et al. 2026b (CHI 2026, doi:10.1145/3772318.3791056); Joshi & Vogel 2025 (doi:10.1145/3719160.3736608); Maier et al. 2026 (arXiv:2609.20143); Mysore et al. 2025 (doi:10.18653/v1/2025.emnlp-main.852); Padmakumar et al. 2026 (arXiv:2605.29392); Park et al. 2026 (doi:10.1145/3772318.3790276); Poquet et al. 2026 (doi:10.1007/978-3-032-37979-5_34); Reza et al. 2025 (arXiv:2504.12488); Risko & Gilbert 2016 (doi:10.1016/j.tics.2016.07.002); Shaw & Nave 2026 (SSRN 6097646); Skulmowski 2024; Tankelevitch et al. 2024; Wan et al. 2024; Yukita et al. 2025 (preprint); Zhao et al. 2024 (WildChat, arXiv:2405.01470).

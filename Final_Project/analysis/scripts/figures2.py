@@ -89,7 +89,7 @@ def fig_stage(j):
             left += v
         ax.text(101, yi, f"{tot} windows", va="center", fontsize=8, color=INK2)
     ax.set_yticks(y, [l for _, l in st]); ax.set_xlim(0, 100); ax.set_xlabel("% of windows at that stage (labels: counts)")
-    ax.set_title("Surrender-leaning windows sit at the drafting stage; planning and reviewing are mostly support", loc="left")
+    ax.set_title("Surrender-leaning windows are requests for prose at the drafting stage; planning and reviewing are mostly support", loc="left")
     tlegend(ax, loc="upper center", bbox_to_anchor=(0.5, -0.25), ncol=3, fontsize=8)
     save(fig, "fig18_stage_by_category.png")
 
