@@ -109,3 +109,19 @@ Rules applied to coder A's labels only and to coder B's only (A = Opus, the adju
 ## 8. Known scope: `U8` with `V` other than `V0` (not caught by R00)
 
 0 windows: none.
+
+## 9. Code combinations that reach R99 (49 windows)
+
+| Decision function uptake | Windows |
+|---|---|
+| D2 F5 U4 | 13 |
+| D2 F3 U4 | 8 |
+| D2 F2 U4 | 6 |
+| D2 F4 U7 | 5 |
+| D2 F7 U4 | 4 |
+| D2 F3 U8 | 3 |
+| D2 F2 U8 | 3 |
+| D2 F7 U8 | 3 |
+| D2 F5 U7 | 2 |
+| D2 F5 U8 | 1 |
+| D2 FX U8 | 1 |

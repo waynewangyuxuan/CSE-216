@@ -222,6 +222,7 @@ v1.2 stays frozen for this milestone. The data suggest these changes for a v1.3 
 - **Split R16.** "Asked the AI to write it" with no adoption seen is a different claim from adoption. Report it as its own pattern ("generation requested, use unseen") rather than weak surrender-leaning.
 - **Resolve `U8`.** Either keep `U8` windows indeterminate, or state that they are read by request type.
 - **Add a length rule for `U3` vs `U7`** and a `V0`/`V1` rule for editor windows, the two boundaries that move categories or strength.
+- **Cover the commonest R99 gaps.** 49 windows fall through to R99. The largest groups are AI rework of AI text kept in chat (`D2 F5 U4`, 13), options or plans left open in chat (`D2 F2/F3 U4`, 14), and a rewrite set aside while the writer keeps composing (`D2 F5 U7`, 2; NIRVANA-e26-t05 in `narratives.md`), which reads like augmenting (`analysis/results/out_of_sample.md` §9).
 - **Keep `prior_own_work` but allow "unknown, pasted"** in chat, which would settle most WildChat `UNSETTLED` cells.
 
 ## 10. Limitations and honest reporting

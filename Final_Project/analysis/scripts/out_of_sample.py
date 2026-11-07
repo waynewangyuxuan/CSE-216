@@ -145,6 +145,12 @@ def main():
     J["u8_with_v_not_v0"] = u8
     md.append(f"\n## 8. Known scope: `U8` with `V` other than `V0` (not caught by R00)\n\n{len(u8)} windows: {', '.join(u8) or 'none'}.\n")
 
+    # 9. What falls through to R99 (input for a future v1.3; the frozen rules are not changed).
+    r99 = Counter(f"{w['D']} {w['F']} {w['U']}" for w in ws if w["rule"] == "R99")
+    J["r99_combos"] = dict(r99.most_common())
+    md += [f"\n## 9. Code combinations that reach R99 ({sum(r99.values())} windows)\n\n",
+           md_table(["Decision function uptake", "Windows"], r99.most_common())]
+
     write_text(os.path.join(RES, "out_of_sample.md"), "".join(md))
     write_json(os.path.join(RES, "out_of_sample.json"), J)
 

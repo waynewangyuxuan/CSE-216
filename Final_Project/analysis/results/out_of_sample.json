@@ -132,6 +132,19 @@
    "not_indeterminate": 99
   }
  },
+ "r99_combos": {
+  "D2 F2 U4": 6,
+  "D2 F2 U8": 3,
+  "D2 F3 U4": 8,
+  "D2 F3 U8": 3,
+  "D2 F4 U7": 5,
+  "D2 F5 U4": 13,
+  "D2 F5 U7": 2,
+  "D2 F5 U8": 1,
+  "D2 F7 U4": 4,
+  "D2 F7 U8": 3,
+  "D2 FX U8": 1
+ },
  "rules": {
   "R00": {
    "NIRVANA": 7,
