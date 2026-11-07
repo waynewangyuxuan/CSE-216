@@ -1,0 +1,2 @@
+id	decision	why	alternative_rejected	where
+W01	Inclusion definition written and frozen before any screening, sha256 571df688fec8b25b3e0531d134118f39e2888ceba8e8e97cbbbe9636fb710332	Task order: definition first, logged	Defining after seeing labels	DEFINITION.md
