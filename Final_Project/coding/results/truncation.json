@@ -1,0 +1,306 @@
+{
+ "cap_block": 8000,
+ "cap_prior": 500,
+ "fields": {
+  "editor_before_request": {
+   "blocks_cut": 0,
+   "chars_cut": 0,
+   "gold_blocks_cut": 0,
+   "max_cut": 0
+  },
+  "next_actions_text": {
+   "blocks_cut": 8,
+   "chars_cut": 77613,
+   "gold_blocks_cut": 1,
+   "max_cut": 36785
+  },
+  "request": {
+   "blocks_cut": 0,
+   "chars_cut": 0,
+   "gold_blocks_cut": 0,
+   "max_cut": 0
+  },
+  "response": {
+   "blocks_cut": 1,
+   "chars_cut": 1,
+   "gold_blocks_cut": 0,
+   "max_cut": 1
+  }
+ },
+ "prior": {
+  "blocks": 274,
+  "blocks_cut": 139,
+  "chars_cut": 202670,
+  "gold_blocks_cut": 30,
+  "total_chars_by_cap": {
+   "2000": 241144,
+   "500": 91752,
+   "None": 294422
+  },
+  "windows_whose_request_reuses_cut_earlier_ai_text": [
+   "NIRVANA-e43-t02",
+   "NIRVANA-e58-t09",
+   "NIRVANA-e58-t10",
+   "NIRVANA-e61-t05",
+   "NIRVANA-e70-t07",
+   "WILDCHAT-0685972d7031-t03",
+   "WILDCHAT-0abcf1070c03-t02",
+   "WILDCHAT-0abcf1070c03-t03",
+   "WILDCHAT-83d047d8ab0b-t03"
+  ]
+ },
+ "summary": {
+  "gold_blocks_cut_on_page": 31,
+  "gold_uptake_material_windows": [
+   "NIRVANA-e27-t02"
+  ],
+  "gold_windows_with_main_block_cut": 1,
+  "uptake_material_windows": [
+   "NIRVANA-e19-t04",
+   "NIRVANA-e24-t03",
+   "NIRVANA-e27-t02",
+   "NIRVANA-e54-t02",
+   "NIRVANA-e63-t01",
+   "NIRVANA-e70-t06",
+   "NIRVANA-e71-t01"
+  ],
+  "windows_with_main_block_cut": 9
+ },
+ "windows": {
+  "NIRVANA-e19-t04": {
+   "coverage": "C2",
+   "cuts": {
+    "next_actions_text": {
+     "chars": 827,
+     "cut_chars_matching_response": 342,
+     "deleted_after_paste": 0,
+     "events_in_cut": {
+      "chars_del_or_rep": 0,
+      "copied": 0,
+      "cut": 0,
+      "deleted": 0,
+      "lines": 1,
+      "other": 0,
+      "pasted": 1,
+      "replaced": 0,
+      "typed": 0
+     },
+     "next_request_visible": false,
+     "of": 8827,
+     "overlap_class": "PASTE_MATCH_UNEDITED",
+     "typed_after_paste": 0
+    }
+   },
+   "dataset": "NIRVANA",
+   "gold": false,
+   "uptake_material": true
+  },
+  "NIRVANA-e24-t03": {
+   "coverage": "C2",
+   "cuts": {
+    "next_actions_text": {
+     "chars": 1104,
+     "cut_chars_matching_response": 0,
+     "deleted_after_paste": 0,
+     "events_in_cut": {
+      "chars_del_or_rep": 363,
+      "copied": 1,
+      "cut": 0,
+      "deleted": 5,
+      "lines": 14,
+      "other": 0,
+      "pasted": 2,
+      "replaced": 0,
+      "typed": 6
+     },
+     "next_request_visible": true,
+     "of": 9104,
+     "overlap_class": "ADDED_TEXT_NO_MATCH",
+     "typed_after_paste": 0
+    }
+   },
+   "dataset": "NIRVANA",
+   "gold": false,
+   "uptake_material": true
+  },
+  "NIRVANA-e27-t02": {
+   "coverage": "C2",
+   "cuts": {
+    "next_actions_text": {
+     "chars": 14701,
+     "cut_chars_matching_response": 8308,
+     "deleted_after_paste": 3312,
+     "events_in_cut": {
+      "chars_del_or_rep": 4359,
+      "copied": 3,
+      "cut": 0,
+      "deleted": 31,
+      "lines": 75,
+      "other": 4,
+      "pasted": 3,
+      "replaced": 0,
+      "typed": 34
+     },
+     "next_request_visible": true,
+     "of": 22701,
+     "overlap_class": "PASTE_MATCH_THEN_EDITS",
+     "typed_after_paste": 645
+    }
+   },
+   "dataset": "NIRVANA",
+   "gold": true,
+   "uptake_material": true
+  },
+  "NIRVANA-e54-t02": {
+   "coverage": "C2",
+   "cuts": {
+    "next_actions_text": {
+     "chars": 9962,
+     "cut_chars_matching_response": 0,
+     "deleted_after_paste": 0,
+     "events_in_cut": {
+      "chars_del_or_rep": 2311,
+      "copied": 1,
+      "cut": 0,
+      "deleted": 53,
+      "lines": 120,
+      "other": 0,
+      "pasted": 1,
+      "replaced": 2,
+      "typed": 63
+     },
+     "next_request_visible": false,
+     "of": 17962,
+     "overlap_class": "ADDED_TEXT_NO_MATCH",
+     "typed_after_paste": 0
+    }
+   },
+   "dataset": "NIRVANA",
+   "gold": false,
+   "uptake_material": true
+  },
+  "NIRVANA-e56-t02": {
+   "coverage": "C2",
+   "cuts": {
+    "next_actions_text": {
+     "chars": 6497,
+     "cut_chars_matching_response": 0,
+     "deleted_after_paste": 0,
+     "events_in_cut": {
+      "chars_del_or_rep": 2735,
+      "copied": 0,
+      "cut": 0,
+      "deleted": 61,
+      "lines": 142,
+      "other": 3,
+      "pasted": 0,
+      "replaced": 3,
+      "typed": 75
+     },
+     "next_request_visible": true,
+     "of": 14497,
+     "overlap_class": "ADDED_TEXT_NO_MATCH",
+     "typed_after_paste": 0
+    }
+   },
+   "dataset": "NIRVANA",
+   "gold": false,
+   "uptake_material": false
+  },
+  "NIRVANA-e63-t01": {
+   "coverage": "C2",
+   "cuts": {
+    "next_actions_text": {
+     "chars": 7182,
+     "cut_chars_matching_response": 310,
+     "deleted_after_paste": 508,
+     "events_in_cut": {
+      "chars_del_or_rep": 1421,
+      "copied": 1,
+      "cut": 0,
+      "deleted": 34,
+      "lines": 75,
+      "other": 0,
+      "pasted": 1,
+      "replaced": 0,
+      "typed": 39
+     },
+     "next_request_visible": true,
+     "of": 15182,
+     "overlap_class": "PASTE_MATCH_THEN_EDITS",
+     "typed_after_paste": 1971
+    }
+   },
+   "dataset": "NIRVANA",
+   "gold": false,
+   "uptake_material": true
+  },
+  "NIRVANA-e70-t06": {
+   "coverage": "C2",
+   "cuts": {
+    "next_actions_text": {
+     "chars": 555,
+     "cut_chars_matching_response": 156,
+     "deleted_after_paste": 0,
+     "events_in_cut": {
+      "chars_del_or_rep": 0,
+      "copied": 0,
+      "cut": 0,
+      "deleted": 0,
+      "lines": 1,
+      "other": 0,
+      "pasted": 1,
+      "replaced": 0,
+      "typed": 0
+     },
+     "next_request_visible": false,
+     "of": 8555,
+     "overlap_class": "PASTE_MATCH_UNEDITED",
+     "typed_after_paste": 0
+    }
+   },
+   "dataset": "NIRVANA",
+   "gold": false,
+   "uptake_material": true
+  },
+  "NIRVANA-e71-t01": {
+   "coverage": "C2",
+   "cuts": {
+    "next_actions_text": {
+     "chars": 36785,
+     "cut_chars_matching_response": 0,
+     "deleted_after_paste": 0,
+     "events_in_cut": {
+      "chars_del_or_rep": 11663,
+      "copied": 1,
+      "cut": 0,
+      "deleted": 241,
+      "lines": 523,
+      "other": 5,
+      "pasted": 1,
+      "replaced": 10,
+      "typed": 265
+     },
+     "next_request_visible": false,
+     "of": 44785,
+     "overlap_class": "ADDED_TEXT_NO_MATCH",
+     "typed_after_paste": 0
+    }
+   },
+   "dataset": "NIRVANA",
+   "gold": false,
+   "uptake_material": true
+  },
+  "WILDCHAT-62387a055143-t02": {
+   "coverage": "C1",
+   "cuts": {
+    "response": {
+     "chars": 1,
+     "of": 8001
+    }
+   },
+   "dataset": "WildChat",
+   "gold": false
+  }
+ }
+}
