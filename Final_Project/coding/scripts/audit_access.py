@@ -29,7 +29,8 @@ def audit(path):
     prompt = texts(first["message"]["content"])[0]
     meta = json.load(open(path.replace(".jsonl", ".meta.json")))
     m = re.search(r"blind/coder_([ab])/batch_(\d)\.jsonl", prompt)
-    who = {"role": f"coder_{m.group(1)}", "batch": int(m.group(2))} if m else {"role": meta.get("description", "other"), "batch": None}
+    adj = "adjudicator_brief" in prompt
+    who = {"role": f"coder_{m.group(1)}", "batch": int(m.group(2))} if m else {"role": "adjudicator" if adj else meta.get("description", "other"), "batch": None}
     uses, served = [], collections.Counter()
     ended = set()
     seen = []
@@ -55,11 +56,15 @@ def audit(path):
         target = inp
         if name == "Write":  # file content is the agent's own output, so test only the path
             target = json.loads(inp).get("file_path", "")
+        if adj and name == "Read":  # reading a persisted tool result of its own is fine
+            target = target.replace("tool-results", "")
         if name == "Bash":  # same for heredocs that write labels
             target = json.loads(inp).get("command", "").split("<<")[0]
         if m and re.search(rf"coder_{other}/|coder_{other}\b(?!rief)", target):
             violations.append(f"{name}: other coder path")
-        if m:
+        if adj and re.search(r"coder_[ab]/|results/labels", target):
+            violations.append(f"{name}: coder files")
+        if m or adj:
             for k, pat in FORBID.items():
                 if re.search(pat, target):
                     violations.append(f"{name}: {k}")
@@ -92,7 +97,7 @@ def main():
     out.sort(key=lambda r: (r["role"], r["batch"] if r["batch"] is not None else -1))
     for r in out:
         r["file"] = r["file"][:12] + "..."  # the id itself is of no use outside this machine
-    keep = [r for r in out if r["role"].startswith("coder_") or r["role"].startswith("Adjudicator")]
+    keep = [r for r in out if r["role"].startswith("coder_") or r["role"] == "adjudicator"]
     with open(os.path.join(OUT, "access_audit.json"), "w") as f:
         json.dump(keep, f, indent=1, sort_keys=True)
     for r in keep:

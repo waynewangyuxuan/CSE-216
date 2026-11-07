@@ -1,0 +1,93 @@
+{
+ "by_source": {
+  "A": {
+   "class_by_label": {
+    "ADDED_TEXT_NO_MATCH|U3": 1,
+    "ADDED_TEXT_NO_MATCH|U7": 13,
+    "ADDED_TEXT_NO_MATCH|U8": 1,
+    "NO_EDITOR_TEXT|U8": 1,
+    "PASTE_MATCH_THEN_EDITS|U1": 1,
+    "PASTE_MATCH_THEN_EDITS|U2": 3,
+    "PASTE_MATCH_THEN_EDITS|U3": 6,
+    "PASTE_MATCH_UNEDITED|U1": 7,
+    "SMALL_EDITS_ONLY|U4": 1,
+    "TYPED_MATCH|U1": 1
+   },
+   "conflicts": {
+    "NIRVANA-e56-t01": {
+     "class": "ADDED_TEXT_NO_MATCH",
+     "kind": "insertion_label_no_script_match",
+     "label": "U3"
+    }
+   },
+   "u1_u2": {
+    "agree": 11,
+    "both_present": 11
+   },
+   "u7": {
+    "n": 13,
+    "no_script_match": 13
+   }
+  },
+  "B": {
+   "class_by_label": {
+    "ADDED_TEXT_NO_MATCH|U7": 14,
+    "ADDED_TEXT_NO_MATCH|U8": 1,
+    "NO_EDITOR_TEXT|U8": 1,
+    "PASTE_MATCH_THEN_EDITS|U1": 1,
+    "PASTE_MATCH_THEN_EDITS|U2": 3,
+    "PASTE_MATCH_THEN_EDITS|U3": 6,
+    "PASTE_MATCH_UNEDITED|U1": 7,
+    "SMALL_EDITS_ONLY|U8": 1,
+    "TYPED_MATCH|U1": 1
+   },
+   "conflicts": {},
+   "u1_u2": {
+    "agree": 11,
+    "both_present": 11
+   },
+   "u7": {
+    "n": 14,
+    "no_script_match": 14
+   }
+  },
+  "final": {
+   "class_by_label": {
+    "ADDED_TEXT_NO_MATCH|U3": 1,
+    "ADDED_TEXT_NO_MATCH|U7": 13,
+    "ADDED_TEXT_NO_MATCH|U8": 1,
+    "NO_EDITOR_TEXT|U8": 1,
+    "PASTE_MATCH_THEN_EDITS|U1": 1,
+    "PASTE_MATCH_THEN_EDITS|U2": 3,
+    "PASTE_MATCH_THEN_EDITS|U3": 6,
+    "PASTE_MATCH_UNEDITED|U1": 7,
+    "SMALL_EDITS_ONLY|U8": 1,
+    "TYPED_MATCH|U1": 1
+   },
+   "conflicts": {
+    "NIRVANA-e56-t01": {
+     "class": "ADDED_TEXT_NO_MATCH",
+     "kind": "insertion_label_no_script_match",
+     "label": "U3"
+    }
+   },
+   "u1_u2": {
+    "agree": 11,
+    "both_present": 11
+   },
+   "u7": {
+    "n": 13,
+    "no_script_match": 13
+   }
+  }
+ },
+ "class": {
+  "ADDED_TEXT_NO_MATCH": 15,
+  "NO_EDITOR_TEXT": 1,
+  "PASTE_MATCH_THEN_EDITS": 10,
+  "PASTE_MATCH_UNEDITED": 7,
+  "SMALL_EDITS_ONLY": 1,
+  "TYPED_MATCH": 1
+ },
+ "n_c2": 35
+}

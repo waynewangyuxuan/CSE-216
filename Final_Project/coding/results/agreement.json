@@ -1,0 +1,3386 @@
+{
+ "agreement": {
+  "decision": {
+   "C0": {
+    "kappa": 0.79,
+    "kappa_ci_cluster": [
+     0.2,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.25,
+     1.0
+    ],
+    "n": 8,
+    "pct": 87.5,
+    "pct_ci_cluster": [
+     62.5,
+     100.0
+    ],
+    "pct_ci_window": [
+     62.5,
+     100.0
+    ],
+    "sessions": 8
+   },
+   "C1": {
+    "kappa": 0.89,
+    "kappa_ci_cluster": [
+     0.74,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.76,
+     1.0
+    ],
+    "n": 57,
+    "pct": 94.7,
+    "pct_ci_cluster": [
+     88.33,
+     100.0
+    ],
+    "pct_ci_window": [
+     87.72,
+     100.0
+    ],
+    "sessions": 27
+   },
+   "C2": {
+    "kappa": 1.0,
+    "kappa_ci_cluster": [
+     1.0,
+     1.0
+    ],
+    "kappa_ci_window": [
+     1.0,
+     1.0
+    ],
+    "n": 35,
+    "pct": 100.0,
+    "pct_ci_cluster": [
+     100.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     100.0,
+     100.0
+    ],
+    "sessions": 19
+   },
+   "NIRVANA": {
+    "kappa": 0.96,
+    "kappa_ci_cluster": [
+     0.89,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.9,
+     1.0
+    ],
+    "n": 70,
+    "pct": 97.1,
+    "pct_ci_cluster": [
+     92.86,
+     100.0
+    ],
+    "pct_ci_window": [
+     92.86,
+     100.0
+    ],
+    "sessions": 26
+   },
+   "NIRVANA_followup": {
+    "kappa": 0.98,
+    "kappa_ci_cluster": [
+     0.92,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.93,
+     1.0
+    ],
+    "n": 67,
+    "pct": 98.5,
+    "pct_ci_cluster": [
+     95.38,
+     100.0
+    ],
+    "pct_ci_window": [
+     95.52,
+     100.0
+    ],
+    "sessions": 26
+   },
+   "WildChat": {
+    "kappa": 0.85,
+    "kappa_ci_cluster": [
+     0.53,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.63,
+     1.0
+    ],
+    "n": 30,
+    "pct": 93.3,
+    "pct_ci_cluster": [
+     82.76,
+     100.0
+    ],
+    "pct_ci_window": [
+     83.33,
+     100.0
+    ],
+    "sessions": 11
+   },
+   "WildChat_followup": {
+    "kappa": 0.83,
+    "kappa_ci_cluster": [
+     0.47,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.56,
+     1.0
+    ],
+    "n": 25,
+    "pct": 92.0,
+    "pct_ci_cluster": [
+     78.26,
+     100.0
+    ],
+    "pct_ci_window": [
+     80.0,
+     100.0
+    ],
+    "sessions": 11
+   },
+   "all": {
+    "kappa": 0.94,
+    "kappa_ci_cluster": [
+     0.88,
+     0.99
+    ],
+    "kappa_ci_window": [
+     0.87,
+     0.98
+    ],
+    "n": 100,
+    "pct": 96.0,
+    "pct_ci_cluster": [
+     92.16,
+     99.02
+    ],
+    "pct_ci_window": [
+     92.0,
+     99.0
+    ],
+    "sessions": 37
+   },
+   "followup_C1C2": {
+    "kappa": 0.95,
+    "kappa_ci_cluster": [
+     0.89,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.89,
+     1.0
+    ],
+    "n": 92,
+    "pct": 96.7,
+    "pct_ci_cluster": [
+     92.86,
+     100.0
+    ],
+    "pct_ci_window": [
+     92.39,
+     100.0
+    ],
+    "sessions": 37
+   }
+  },
+  "domain": {
+   "WildChat": {
+    "kappa": 1.0,
+    "kappa_ci_cluster": [
+     1.0,
+     1.0
+    ],
+    "kappa_ci_window": [
+     1.0,
+     1.0
+    ],
+    "n": 30,
+    "pct": 100.0,
+    "pct_ci_cluster": [
+     100.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     100.0,
+     100.0
+    ],
+    "sessions": 11
+   },
+   "WildChat_followup": {
+    "kappa": 1.0,
+    "kappa_ci_cluster": [
+     1.0,
+     1.0
+    ],
+    "kappa_ci_window": [
+     1.0,
+     1.0
+    ],
+    "n": 25,
+    "pct": 100.0,
+    "pct_ci_cluster": [
+     100.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     100.0,
+     100.0
+    ],
+    "sessions": 11
+   }
+  },
+  "family": {
+   "C0": {
+    "kappa": 1.0,
+    "kappa_ci_cluster": [
+     1.0,
+     1.0
+    ],
+    "kappa_ci_window": [
+     1.0,
+     1.0
+    ],
+    "n": 8,
+    "pct": 100.0,
+    "pct_ci_cluster": [
+     100.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     100.0,
+     100.0
+    ],
+    "sessions": 8
+   },
+   "C1": {
+    "kappa": 0.95,
+    "kappa_ci_cluster": [
+     0.87,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.88,
+     1.0
+    ],
+    "n": 57,
+    "pct": 96.5,
+    "pct_ci_cluster": [
+     91.07,
+     100.0
+    ],
+    "pct_ci_window": [
+     91.23,
+     100.0
+    ],
+    "sessions": 27
+   },
+   "C2": {
+    "kappa": 0.92,
+    "kappa_ci_cluster": [
+     0.77,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.81,
+     1.0
+    ],
+    "n": 35,
+    "pct": 94.3,
+    "pct_ci_cluster": [
+     82.35,
+     100.0
+    ],
+    "pct_ci_window": [
+     85.71,
+     100.0
+    ],
+    "sessions": 19
+   },
+   "NIRVANA": {
+    "kappa": 0.95,
+    "kappa_ci_cluster": [
+     0.86,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.88,
+     1.0
+    ],
+    "n": 70,
+    "pct": 95.7,
+    "pct_ci_cluster": [
+     88.89,
+     100.0
+    ],
+    "pct_ci_window": [
+     90.0,
+     100.0
+    ],
+    "sessions": 26
+   },
+   "NIRVANA_followup": {
+    "kappa": 0.94,
+    "kappa_ci_cluster": [
+     0.85,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.87,
+     1.0
+    ],
+    "n": 67,
+    "pct": 95.5,
+    "pct_ci_cluster": [
+     88.57,
+     100.0
+    ],
+    "pct_ci_window": [
+     89.55,
+     100.0
+    ],
+    "sessions": 26
+   },
+   "WildChat": {
+    "kappa": 0.95,
+    "kappa_ci_cluster": [
+     0.82,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.81,
+     1.0
+    ],
+    "n": 30,
+    "pct": 96.7,
+    "pct_ci_cluster": [
+     89.66,
+     100.0
+    ],
+    "pct_ci_window": [
+     90.0,
+     100.0
+    ],
+    "sessions": 11
+   },
+   "WildChat_followup": {
+    "kappa": 0.94,
+    "kappa_ci_cluster": [
+     0.77,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.77,
+     1.0
+    ],
+    "n": 25,
+    "pct": 96.0,
+    "pct_ci_cluster": [
+     86.96,
+     100.0
+    ],
+    "pct_ci_window": [
+     88.0,
+     100.0
+    ],
+    "sessions": 11
+   },
+   "all": {
+    "kappa": 0.95,
+    "kappa_ci_cluster": [
+     0.88,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.89,
+     0.99
+    ],
+    "n": 100,
+    "pct": 96.0,
+    "pct_ci_cluster": [
+     90.91,
+     100.0
+    ],
+    "pct_ci_window": [
+     92.0,
+     99.0
+    ],
+    "sessions": 37
+   },
+   "followup_C1C2": {
+    "kappa": 0.94,
+    "kappa_ci_cluster": [
+     0.87,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.88,
+     0.99
+    ],
+    "n": 92,
+    "pct": 95.7,
+    "pct_ci_cluster": [
+     90.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     91.3,
+     98.91
+    ],
+    "sessions": 37
+   }
+  },
+  "function": {
+   "C0": {
+    "kappa": 1.0,
+    "kappa_ci_cluster": [
+     1.0,
+     1.0
+    ],
+    "kappa_ci_window": [
+     1.0,
+     1.0
+    ],
+    "n": 8,
+    "pct": 100.0,
+    "pct_ci_cluster": [
+     100.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     100.0,
+     100.0
+    ],
+    "sessions": 8
+   },
+   "C1": {
+    "kappa": 0.97,
+    "kappa_ci_cluster": [
+     0.91,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.91,
+     1.0
+    ],
+    "n": 57,
+    "pct": 98.2,
+    "pct_ci_cluster": [
+     94.34,
+     100.0
+    ],
+    "pct_ci_window": [
+     94.74,
+     100.0
+    ],
+    "sessions": 27
+   },
+   "C2": {
+    "kappa": 0.8,
+    "kappa_ci_cluster": [
+     0.6,
+     0.96
+    ],
+    "kappa_ci_window": [
+     0.62,
+     0.96
+    ],
+    "n": 35,
+    "pct": 85.7,
+    "pct_ci_cluster": [
+     72.22,
+     97.14
+    ],
+    "pct_ci_window": [
+     71.43,
+     97.14
+    ],
+    "sessions": 19
+   },
+   "NIRVANA": {
+    "kappa": 0.9,
+    "kappa_ci_cluster": [
+     0.8,
+     0.98
+    ],
+    "kappa_ci_window": [
+     0.81,
+     0.98
+    ],
+    "n": 70,
+    "pct": 92.9,
+    "pct_ci_cluster": [
+     85.51,
+     98.59
+    ],
+    "pct_ci_window": [
+     87.14,
+     98.57
+    ],
+    "sessions": 26
+   },
+   "NIRVANA_followup": {
+    "kappa": 0.9,
+    "kappa_ci_cluster": [
+     0.78,
+     0.98
+    ],
+    "kappa_ci_window": [
+     0.8,
+     0.98
+    ],
+    "n": 67,
+    "pct": 92.5,
+    "pct_ci_cluster": [
+     84.72,
+     98.53
+    ],
+    "pct_ci_window": [
+     86.57,
+     98.51
+    ],
+    "sessions": 26
+   },
+   "WildChat": {
+    "kappa": 0.93,
+    "kappa_ci_cluster": [
+     0.7,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.76,
+     1.0
+    ],
+    "n": 30,
+    "pct": 96.7,
+    "pct_ci_cluster": [
+     89.66,
+     100.0
+    ],
+    "pct_ci_window": [
+     90.0,
+     100.0
+    ],
+    "sessions": 11
+   },
+   "WildChat_followup": {
+    "kappa": 0.92,
+    "kappa_ci_cluster": [
+     0.68,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.72,
+     1.0
+    ],
+    "n": 25,
+    "pct": 96.0,
+    "pct_ci_cluster": [
+     86.96,
+     100.0
+    ],
+    "pct_ci_window": [
+     88.0,
+     100.0
+    ],
+    "sessions": 11
+   },
+   "all": {
+    "kappa": 0.91,
+    "kappa_ci_cluster": [
+     0.82,
+     0.97
+    ],
+    "kappa_ci_window": [
+     0.84,
+     0.97
+    ],
+    "n": 100,
+    "pct": 94.0,
+    "pct_ci_cluster": [
+     88.24,
+     98.08
+    ],
+    "pct_ci_window": [
+     89.0,
+     98.0
+    ],
+    "sessions": 37
+   },
+   "followup_C1C2": {
+    "kappa": 0.91,
+    "kappa_ci_cluster": [
+     0.81,
+     0.98
+    ],
+    "kappa_ci_window": [
+     0.83,
+     0.97
+    ],
+    "n": 92,
+    "pct": 93.5,
+    "pct_ci_cluster": [
+     87.36,
+     98.88
+    ],
+    "pct_ci_window": [
+     88.04,
+     97.83
+    ],
+    "sessions": 37
+   }
+  },
+  "object": {
+   "C0": {
+    "kappa": 0.77,
+    "kappa_ci_cluster": [
+     0.43,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.43,
+     1.0
+    ],
+    "n": 8,
+    "pct": 87.5,
+    "pct_ci_cluster": [
+     62.5,
+     100.0
+    ],
+    "pct_ci_window": [
+     62.5,
+     100.0
+    ],
+    "sessions": 8
+   },
+   "C1": {
+    "kappa": 0.93,
+    "kappa_ci_cluster": [
+     0.84,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.83,
+     1.0
+    ],
+    "n": 57,
+    "pct": 96.5,
+    "pct_ci_cluster": [
+     91.38,
+     100.0
+    ],
+    "pct_ci_window": [
+     91.23,
+     100.0
+    ],
+    "sessions": 27
+   },
+   "C2": {
+    "kappa": 0.9,
+    "kappa_ci_cluster": [
+     0.69,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.75,
+     1.0
+    ],
+    "n": 35,
+    "pct": 94.3,
+    "pct_ci_cluster": [
+     82.35,
+     100.0
+    ],
+    "pct_ci_window": [
+     85.71,
+     100.0
+    ],
+    "sessions": 19
+   },
+   "NIRVANA": {
+    "kappa": 0.95,
+    "kappa_ci_cluster": [
+     0.84,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.88,
+     1.0
+    ],
+    "n": 70,
+    "pct": 97.1,
+    "pct_ci_cluster": [
+     91.3,
+     100.0
+    ],
+    "pct_ci_window": [
+     92.86,
+     100.0
+    ],
+    "sessions": 26
+   },
+   "NIRVANA_followup": {
+    "kappa": 0.95,
+    "kappa_ci_cluster": [
+     0.82,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.86,
+     1.0
+    ],
+    "n": 67,
+    "pct": 97.0,
+    "pct_ci_cluster": [
+     90.91,
+     100.0
+    ],
+    "pct_ci_window": [
+     92.54,
+     100.0
+    ],
+    "sessions": 26
+   },
+   "WildChat": {
+    "kappa": 0.77,
+    "kappa_ci_cluster": [
+     0.58,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.5,
+     1.0
+    ],
+    "n": 30,
+    "pct": 90.0,
+    "pct_ci_cluster": [
+     79.31,
+     100.0
+    ],
+    "pct_ci_window": [
+     76.67,
+     100.0
+    ],
+    "sessions": 11
+   },
+   "WildChat_followup": {
+    "kappa": 0.82,
+    "kappa_ci_cluster": [
+     0.64,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.54,
+     1.0
+    ],
+    "n": 25,
+    "pct": 92.0,
+    "pct_ci_cluster": [
+     80.77,
+     100.0
+    ],
+    "pct_ci_window": [
+     80.0,
+     100.0
+    ],
+    "sessions": 11
+   },
+   "all": {
+    "kappa": 0.91,
+    "kappa_ci_cluster": [
+     0.8,
+     0.98
+    ],
+    "kappa_ci_window": [
+     0.83,
+     0.98
+    ],
+    "n": 100,
+    "pct": 95.0,
+    "pct_ci_cluster": [
+     89.0,
+     99.02
+    ],
+    "pct_ci_window": [
+     91.0,
+     99.0
+    ],
+    "sessions": 37
+   },
+   "followup_C1C2": {
+    "kappa": 0.92,
+    "kappa_ci_cluster": [
+     0.82,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.83,
+     0.98
+    ],
+    "n": 92,
+    "pct": 95.7,
+    "pct_ci_cluster": [
+     90.22,
+     100.0
+    ],
+    "pct_ci_window": [
+     91.3,
+     98.91
+    ],
+    "sessions": 37
+   }
+  },
+  "operation": {
+   "C0": {
+    "kappa": 1.0,
+    "kappa_ci_cluster": [
+     1.0,
+     1.0
+    ],
+    "kappa_ci_window": [
+     1.0,
+     1.0
+    ],
+    "n": 8,
+    "pct": 100.0,
+    "pct_ci_cluster": [
+     100.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     100.0,
+     100.0
+    ],
+    "sessions": 8
+   },
+   "C1": {
+    "kappa": 0.95,
+    "kappa_ci_cluster": [
+     0.88,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.88,
+     1.0
+    ],
+    "n": 57,
+    "pct": 96.5,
+    "pct_ci_cluster": [
+     91.07,
+     100.0
+    ],
+    "pct_ci_window": [
+     91.23,
+     100.0
+    ],
+    "sessions": 27
+   },
+   "C2": {
+    "kappa": 0.92,
+    "kappa_ci_cluster": [
+     0.78,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.81,
+     1.0
+    ],
+    "n": 35,
+    "pct": 94.3,
+    "pct_ci_cluster": [
+     82.35,
+     100.0
+    ],
+    "pct_ci_window": [
+     85.71,
+     100.0
+    ],
+    "sessions": 19
+   },
+   "NIRVANA": {
+    "kappa": 0.95,
+    "kappa_ci_cluster": [
+     0.86,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.88,
+     1.0
+    ],
+    "n": 70,
+    "pct": 95.7,
+    "pct_ci_cluster": [
+     88.89,
+     100.0
+    ],
+    "pct_ci_window": [
+     90.0,
+     100.0
+    ],
+    "sessions": 26
+   },
+   "NIRVANA_followup": {
+    "kappa": 0.94,
+    "kappa_ci_cluster": [
+     0.85,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.87,
+     1.0
+    ],
+    "n": 67,
+    "pct": 95.5,
+    "pct_ci_cluster": [
+     88.57,
+     100.0
+    ],
+    "pct_ci_window": [
+     89.55,
+     100.0
+    ],
+    "sessions": 26
+   },
+   "WildChat": {
+    "kappa": 0.95,
+    "kappa_ci_cluster": [
+     0.82,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.81,
+     1.0
+    ],
+    "n": 30,
+    "pct": 96.7,
+    "pct_ci_cluster": [
+     89.66,
+     100.0
+    ],
+    "pct_ci_window": [
+     90.0,
+     100.0
+    ],
+    "sessions": 11
+   },
+   "WildChat_followup": {
+    "kappa": 0.94,
+    "kappa_ci_cluster": [
+     0.78,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.78,
+     1.0
+    ],
+    "n": 25,
+    "pct": 96.0,
+    "pct_ci_cluster": [
+     86.96,
+     100.0
+    ],
+    "pct_ci_window": [
+     88.0,
+     100.0
+    ],
+    "sessions": 11
+   },
+   "all": {
+    "kappa": 0.95,
+    "kappa_ci_cluster": [
+     0.88,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.9,
+     0.99
+    ],
+    "n": 100,
+    "pct": 96.0,
+    "pct_ci_cluster": [
+     90.91,
+     100.0
+    ],
+    "pct_ci_window": [
+     92.0,
+     99.0
+    ],
+    "sessions": 37
+   },
+   "followup_C1C2": {
+    "kappa": 0.94,
+    "kappa_ci_cluster": [
+     0.87,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.88,
+     0.99
+    ],
+    "n": 92,
+    "pct": 95.7,
+    "pct_ci_cluster": [
+     90.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     91.3,
+     98.91
+    ],
+    "sessions": 37
+   }
+  },
+  "prior_own_work": {
+   "C0": {
+    "kappa": 1.0,
+    "kappa_ci_cluster": [
+     1.0,
+     1.0
+    ],
+    "kappa_ci_window": [
+     1.0,
+     1.0
+    ],
+    "n": 8,
+    "pct": 100.0,
+    "pct_ci_cluster": [
+     100.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     100.0,
+     100.0
+    ],
+    "sessions": 8
+   },
+   "C1": {
+    "kappa": 0.93,
+    "kappa_ci_cluster": [
+     0.77,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.84,
+     1.0
+    ],
+    "n": 57,
+    "pct": 94.7,
+    "pct_ci_cluster": [
+     83.33,
+     100.0
+    ],
+    "pct_ci_window": [
+     89.47,
+     100.0
+    ],
+    "sessions": 27
+   },
+   "C2": {
+    "kappa": 0.76,
+    "kappa_ci_cluster": [
+     0.58,
+     0.93
+    ],
+    "kappa_ci_window": [
+     0.55,
+     0.94
+    ],
+    "n": 35,
+    "pct": 85.7,
+    "pct_ci_cluster": [
+     72.97,
+     96.97
+    ],
+    "pct_ci_window": [
+     74.29,
+     97.14
+    ],
+    "sessions": 19
+   },
+   "NIRVANA": {
+    "kappa": 0.88,
+    "kappa_ci_cluster": [
+     0.76,
+     0.98
+    ],
+    "kappa_ci_window": [
+     0.77,
+     0.97
+    ],
+    "n": 70,
+    "pct": 92.9,
+    "pct_ci_cluster": [
+     85.29,
+     98.61
+    ],
+    "pct_ci_window": [
+     87.14,
+     98.57
+    ],
+    "sessions": 26
+   },
+   "NIRVANA_followup": {
+    "kappa": 0.88,
+    "kappa_ci_cluster": [
+     0.75,
+     0.98
+    ],
+    "kappa_ci_window": [
+     0.77,
+     0.97
+    ],
+    "n": 67,
+    "pct": 92.5,
+    "pct_ci_cluster": [
+     84.62,
+     98.57
+    ],
+    "pct_ci_window": [
+     86.57,
+     98.51
+    ],
+    "sessions": 26
+   },
+   "WildChat": {
+    "kappa": 0.82,
+    "kappa_ci_cluster": [
+     0.35,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.59,
+     1.0
+    ],
+    "n": 30,
+    "pct": 90.0,
+    "pct_ci_cluster": [
+     70.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     76.67,
+     100.0
+    ],
+    "sessions": 11
+   },
+   "WildChat_followup": {
+    "kappa": 0.78,
+    "kappa_ci_cluster": [
+     0.29,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.52,
+     1.0
+    ],
+    "n": 25,
+    "pct": 88.0,
+    "pct_ci_cluster": [
+     64.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     76.0,
+     100.0
+    ],
+    "sessions": 11
+   },
+   "all": {
+    "kappa": 0.89,
+    "kappa_ci_cluster": [
+     0.78,
+     0.97
+    ],
+    "kappa_ci_window": [
+     0.81,
+     0.94
+    ],
+    "n": 100,
+    "pct": 92.0,
+    "pct_ci_cluster": [
+     84.16,
+     98.06
+    ],
+    "pct_ci_window": [
+     87.0,
+     96.0
+    ],
+    "sessions": 37
+   },
+   "followup_C1C2": {
+    "kappa": 0.88,
+    "kappa_ci_cluster": [
+     0.76,
+     0.97
+    ],
+    "kappa_ci_window": [
+     0.79,
+     0.95
+    ],
+    "n": 92,
+    "pct": 91.3,
+    "pct_ci_cluster": [
+     82.8,
+     97.89
+    ],
+    "pct_ci_window": [
+     85.87,
+     96.74
+    ],
+    "sessions": 37
+   }
+  },
+  "process": {
+   "C0": {
+    "kappa": 1.0,
+    "kappa_ci_cluster": [
+     1.0,
+     1.0
+    ],
+    "kappa_ci_window": [
+     1.0,
+     1.0
+    ],
+    "n": 8,
+    "pct": 100.0,
+    "pct_ci_cluster": [
+     100.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     100.0,
+     100.0
+    ],
+    "sessions": 8
+   },
+   "C1": {
+    "kappa": 0.95,
+    "kappa_ci_cluster": [
+     0.86,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.86,
+     1.0
+    ],
+    "n": 57,
+    "pct": 96.5,
+    "pct_ci_cluster": [
+     91.07,
+     100.0
+    ],
+    "pct_ci_window": [
+     91.23,
+     100.0
+    ],
+    "sessions": 27
+   },
+   "C2": {
+    "kappa": 1.0,
+    "kappa_ci_cluster": [
+     1.0,
+     1.0
+    ],
+    "kappa_ci_window": [
+     1.0,
+     1.0
+    ],
+    "n": 35,
+    "pct": 100.0,
+    "pct_ci_cluster": [
+     100.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     100.0,
+     100.0
+    ],
+    "sessions": 19
+   },
+   "NIRVANA": {
+    "kappa": 0.98,
+    "kappa_ci_cluster": [
+     0.94,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.94,
+     1.0
+    ],
+    "n": 70,
+    "pct": 98.6,
+    "pct_ci_cluster": [
+     95.65,
+     100.0
+    ],
+    "pct_ci_window": [
+     95.71,
+     100.0
+    ],
+    "sessions": 26
+   },
+   "NIRVANA_followup": {
+    "kappa": 0.98,
+    "kappa_ci_cluster": [
+     0.93,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.93,
+     1.0
+    ],
+    "n": 67,
+    "pct": 98.5,
+    "pct_ci_cluster": [
+     95.38,
+     100.0
+    ],
+    "pct_ci_window": [
+     95.52,
+     100.0
+    ],
+    "sessions": 26
+   },
+   "WildChat": {
+    "kappa": 0.94,
+    "kappa_ci_cluster": [
+     0.79,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.79,
+     1.0
+    ],
+    "n": 30,
+    "pct": 96.7,
+    "pct_ci_cluster": [
+     89.66,
+     100.0
+    ],
+    "pct_ci_window": [
+     90.0,
+     100.0
+    ],
+    "sessions": 11
+   },
+   "WildChat_followup": {
+    "kappa": 0.93,
+    "kappa_ci_cluster": [
+     0.74,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.76,
+     1.0
+    ],
+    "n": 25,
+    "pct": 96.0,
+    "pct_ci_cluster": [
+     86.96,
+     100.0
+    ],
+    "pct_ci_window": [
+     88.0,
+     100.0
+    ],
+    "sessions": 11
+   },
+   "all": {
+    "kappa": 0.97,
+    "kappa_ci_cluster": [
+     0.93,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.93,
+     1.0
+    ],
+    "n": 100,
+    "pct": 98.0,
+    "pct_ci_cluster": [
+     95.05,
+     100.0
+    ],
+    "pct_ci_window": [
+     95.0,
+     100.0
+    ],
+    "sessions": 37
+   },
+   "followup_C1C2": {
+    "kappa": 0.97,
+    "kappa_ci_cluster": [
+     0.92,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.92,
+     1.0
+    ],
+    "n": 92,
+    "pct": 97.8,
+    "pct_ci_cluster": [
+     94.57,
+     100.0
+    ],
+    "pct_ci_window": [
+     94.57,
+     100.0
+    ],
+    "sessions": 37
+   }
+  },
+  "uptake": {
+   "C0": {
+    "kappa": null,
+    "kappa_ci_cluster": null,
+    "kappa_ci_window": null,
+    "n": 8,
+    "pct": 100.0,
+    "pct_ci_cluster": [
+     100.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     100.0,
+     100.0
+    ],
+    "sessions": 8
+   },
+   "C1": {
+    "kappa": 0.87,
+    "kappa_ci_cluster": [
+     0.72,
+     0.97
+    ],
+    "kappa_ci_window": [
+     0.73,
+     0.97
+    ],
+    "n": 57,
+    "pct": 93.0,
+    "pct_ci_cluster": [
+     85.71,
+     98.39
+    ],
+    "pct_ci_window": [
+     85.96,
+     98.25
+    ],
+    "sessions": 27
+   },
+   "C2": {
+    "kappa": 0.92,
+    "kappa_ci_cluster": [
+     0.8,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.8,
+     1.0
+    ],
+    "n": 35,
+    "pct": 94.3,
+    "pct_ci_cluster": [
+     85.29,
+     100.0
+    ],
+    "pct_ci_window": [
+     85.71,
+     100.0
+    ],
+    "sessions": 19
+   },
+   "NIRVANA": {
+    "kappa": 0.95,
+    "kappa_ci_cluster": [
+     0.88,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.88,
+     1.0
+    ],
+    "n": 70,
+    "pct": 95.7,
+    "pct_ci_cluster": [
+     90.91,
+     100.0
+    ],
+    "pct_ci_window": [
+     90.0,
+     100.0
+    ],
+    "sessions": 26
+   },
+   "NIRVANA_followup": {
+    "kappa": 0.94,
+    "kappa_ci_cluster": [
+     0.88,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.87,
+     1.0
+    ],
+    "n": 67,
+    "pct": 95.5,
+    "pct_ci_cluster": [
+     90.48,
+     100.0
+    ],
+    "pct_ci_window": [
+     89.55,
+     100.0
+    ],
+    "sessions": 26
+   },
+   "WildChat": {
+    "kappa": 0.83,
+    "kappa_ci_cluster": [
+     0.62,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.6,
+     1.0
+    ],
+    "n": 30,
+    "pct": 90.0,
+    "pct_ci_cluster": [
+     79.17,
+     100.0
+    ],
+    "pct_ci_window": [
+     76.67,
+     100.0
+    ],
+    "sessions": 11
+   },
+   "WildChat_followup": {
+    "kappa": 0.73,
+    "kappa_ci_cluster": [
+     0.42,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.41,
+     1.0
+    ],
+    "n": 25,
+    "pct": 88.0,
+    "pct_ci_cluster": [
+     76.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     76.0,
+     100.0
+    ],
+    "sessions": 11
+   },
+   "all": {
+    "kappa": 0.92,
+    "kappa_ci_cluster": [
+     0.86,
+     0.98
+    ],
+    "kappa_ci_window": [
+     0.86,
+     0.98
+    ],
+    "n": 100,
+    "pct": 94.0,
+    "pct_ci_cluster": [
+     89.47,
+     98.08
+    ],
+    "pct_ci_window": [
+     89.0,
+     98.0
+    ],
+    "sessions": 37
+   },
+   "followup_C1C2": {
+    "kappa": 0.92,
+    "kappa_ci_cluster": [
+     0.84,
+     0.97
+    ],
+    "kappa_ci_window": [
+     0.84,
+     0.97
+    ],
+    "n": 92,
+    "pct": 93.5,
+    "pct_ci_cluster": [
+     88.17,
+     97.92
+    ],
+    "pct_ci_window": [
+     88.04,
+     97.83
+    ],
+    "sessions": 37
+   }
+  },
+  "verification": {
+   "C0": {
+    "kappa": null,
+    "kappa_ci_cluster": null,
+    "kappa_ci_window": null,
+    "n": 8,
+    "pct": 100.0,
+    "pct_ci_cluster": [
+     100.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     100.0,
+     100.0
+    ],
+    "sessions": 8
+   },
+   "C1": {
+    "kappa": 0.66,
+    "kappa_ci_cluster": [
+     0.28,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.35,
+     0.9
+    ],
+    "n": 57,
+    "pct": 91.2,
+    "pct_ci_cluster": [
+     78.95,
+     100.0
+    ],
+    "pct_ci_window": [
+     84.21,
+     98.25
+    ],
+    "sessions": 27
+   },
+   "C2": {
+    "kappa": 0.84,
+    "kappa_ci_cluster": [
+     0.0,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.3,
+     1.0
+    ],
+    "n": 35,
+    "pct": 97.1,
+    "pct_ci_cluster": [
+     91.43,
+     100.0
+    ],
+    "pct_ci_window": [
+     91.43,
+     100.0
+    ],
+    "sessions": 19
+   },
+   "NIRVANA": {
+    "kappa": 0.76,
+    "kappa_ci_cluster": [
+     0.5,
+     0.96
+    ],
+    "kappa_ci_window": [
+     0.55,
+     0.92
+    ],
+    "n": 70,
+    "pct": 91.4,
+    "pct_ci_cluster": [
+     81.43,
+     98.59
+    ],
+    "pct_ci_window": [
+     84.29,
+     97.14
+    ],
+    "sessions": 26
+   },
+   "NIRVANA_followup": {
+    "kappa": 0.7,
+    "kappa_ci_cluster": [
+     0.38,
+     0.95
+    ],
+    "kappa_ci_window": [
+     0.45,
+     0.9
+    ],
+    "n": 67,
+    "pct": 91.0,
+    "pct_ci_cluster": [
+     80.88,
+     98.55
+    ],
+    "pct_ci_window": [
+     83.58,
+     97.01
+    ],
+    "sessions": 26
+   },
+   "WildChat": {
+    "kappa": 1.0,
+    "kappa_ci_cluster": [
+     1.0,
+     1.0
+    ],
+    "kappa_ci_window": [
+     1.0,
+     1.0
+    ],
+    "n": 30,
+    "pct": 100.0,
+    "pct_ci_cluster": [
+     100.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     100.0,
+     100.0
+    ],
+    "sessions": 11
+   },
+   "WildChat_followup": {
+    "kappa": null,
+    "kappa_ci_cluster": null,
+    "kappa_ci_window": null,
+    "n": 25,
+    "pct": 100.0,
+    "pct_ci_cluster": [
+     100.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     100.0,
+     100.0
+    ],
+    "sessions": 11
+   },
+   "all": {
+    "kappa": 0.82,
+    "kappa_ci_cluster": [
+     0.63,
+     0.97
+    ],
+    "kappa_ci_window": [
+     0.67,
+     0.94
+    ],
+    "n": 100,
+    "pct": 94.0,
+    "pct_ci_cluster": [
+     87.0,
+     99.02
+    ],
+    "pct_ci_window": [
+     89.0,
+     98.0
+    ],
+    "sessions": 37
+   },
+   "followup_C1C2": {
+    "kappa": 0.72,
+    "kappa_ci_cluster": [
+     0.42,
+     0.95
+    ],
+    "kappa_ci_window": [
+     0.46,
+     0.9
+    ],
+    "n": 92,
+    "pct": 93.5,
+    "pct_ci_cluster": [
+     85.42,
+     98.94
+    ],
+    "pct_ci_window": [
+     88.04,
+     97.83
+    ],
+    "sessions": 37
+   }
+  }
+ },
+ "confidence": {
+  "A": {
+   "HIGH": 33,
+   "LOW": 5,
+   "MEDIUM": 62
+  },
+  "B": {
+   "HIGH": 28,
+   "LOW": 9,
+   "MEDIUM": 63
+  }
+ },
+ "confusions": {
+  "decision": {
+   "D0|D1": 1,
+   "D0|D2": 1,
+   "D1|D2": 1,
+   "D2|D3": 1
+  },
+  "domain": {},
+  "family": {
+   "CLAIM_ARGUMENT|FRAME": 2,
+   "FRAME|PROSE_CITATION": 1,
+   "PROSE_CITATION|REVIEW_SUBSTANCE": 1
+  },
+  "function": {
+   "F1|F4": 1,
+   "F2|F4": 2,
+   "F3|F4": 1,
+   "F4|F5": 1,
+   "F5|F8": 1
+  },
+  "object": {
+   "ARGUMENT|IDEA": 2,
+   "EVIDENCE|SOURCE": 1,
+   "OTHER|STRUCTURE": 1,
+   "PROSE|STRUCTURE": 1
+  },
+  "operation": {
+   "O02|O09": 2,
+   "O03|O10": 1,
+   "O10|O12": 1
+  },
+  "prior_own_work": {
+   "NONE_VISIBLE|VISIBLE": 4,
+   "UNOBSERVABLE|VISIBLE": 3,
+   "VISIBLE|VISIBLE": 1
+  },
+  "process": {
+   "P|T": 1,
+   "R|T": 1
+  },
+  "uptake": {
+   "U3|U7": 1,
+   "U4|U8": 5
+  },
+  "verification": {
+   "V0|V1": 4,
+   "V0|V2": 1,
+   "V0|V3": 1
+  }
+ },
+ "final_source": {
+  "decision": {
+   "A=B": 96,
+   "adj=A": 1,
+   "adj=B": 3
+  },
+  "domain": {
+   "A=B": 100
+  },
+  "function": {
+   "A=B": 94,
+   "adj=A": 4,
+   "adj=B": 2
+  },
+  "object": {
+   "A=B": 95,
+   "adj=A": 1,
+   "adj=B": 4
+  },
+  "operation": {
+   "A=B": 96,
+   "adj=A": 2,
+   "adj=B": 2
+  },
+  "prior_own_work": {
+   "A=B": 92,
+   "adj=A": 7,
+   "adj=B": 1
+  },
+  "uptake": {
+   "A=B": 94,
+   "adj=A": 5,
+   "adj=B": 1
+  },
+  "verification": {
+   "A=B": 94,
+   "UNSETTLED": 1,
+   "adj=A": 5
+  }
+ },
+ "final_vs_coder": {
+  "decision": {
+   "A": {
+    "kappa": 0.95,
+    "kappa_ci_cluster": [
+     0.9,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.89,
+     1.0
+    ],
+    "n": 100,
+    "pct": 97.0,
+    "pct_ci_cluster": [
+     93.75,
+     100.0
+    ],
+    "pct_ci_window": [
+     93.0,
+     100.0
+    ],
+    "sessions": 37
+   },
+   "B": {
+    "kappa": 0.98,
+    "kappa_ci_cluster": [
+     0.95,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.95,
+     1.0
+    ],
+    "n": 100,
+    "pct": 99.0,
+    "pct_ci_cluster": [
+     96.94,
+     100.0
+    ],
+    "pct_ci_window": [
+     97.0,
+     100.0
+    ],
+    "sessions": 37
+   }
+  },
+  "family": {
+   "A": {
+    "kappa": 0.97,
+    "kappa_ci_cluster": [
+     0.91,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.93,
+     1.0
+    ],
+    "n": 100,
+    "pct": 98.0,
+    "pct_ci_cluster": [
+     93.68,
+     100.0
+    ],
+    "pct_ci_window": [
+     95.0,
+     100.0
+    ],
+    "sessions": 37
+   },
+   "B": {
+    "kappa": 0.97,
+    "kappa_ci_cluster": [
+     0.93,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.93,
+     1.0
+    ],
+    "n": 100,
+    "pct": 98.0,
+    "pct_ci_cluster": [
+     95.05,
+     100.0
+    ],
+    "pct_ci_window": [
+     95.0,
+     100.0
+    ],
+    "sessions": 37
+   }
+  },
+  "function": {
+   "A": {
+    "kappa": 0.97,
+    "kappa_ci_cluster": [
+     0.9,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.92,
+     1.0
+    ],
+    "n": 100,
+    "pct": 98.0,
+    "pct_ci_cluster": [
+     93.68,
+     100.0
+    ],
+    "pct_ci_window": [
+     95.0,
+     100.0
+    ],
+    "sessions": 37
+   },
+   "B": {
+    "kappa": 0.94,
+    "kappa_ci_cluster": [
+     0.87,
+     0.99
+    ],
+    "kappa_ci_window": [
+     0.88,
+     0.99
+    ],
+    "n": 100,
+    "pct": 96.0,
+    "pct_ci_cluster": [
+     92.0,
+     99.02
+    ],
+    "pct_ci_window": [
+     92.0,
+     99.0
+    ],
+    "sessions": 37
+   }
+  },
+  "object": {
+   "A": {
+    "kappa": 0.92,
+    "kappa_ci_cluster": [
+     0.81,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.85,
+     0.98
+    ],
+    "n": 100,
+    "pct": 96.0,
+    "pct_ci_cluster": [
+     90.1,
+     100.0
+    ],
+    "pct_ci_window": [
+     92.0,
+     99.0
+    ],
+    "sessions": 37
+   },
+   "B": {
+    "kappa": 0.98,
+    "kappa_ci_cluster": [
+     0.94,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.94,
+     1.0
+    ],
+    "n": 100,
+    "pct": 99.0,
+    "pct_ci_cluster": [
+     96.94,
+     100.0
+    ],
+    "pct_ci_window": [
+     97.0,
+     100.0
+    ],
+    "sessions": 37
+   }
+  },
+  "operation": {
+   "A": {
+    "kappa": 0.97,
+    "kappa_ci_cluster": [
+     0.91,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.93,
+     1.0
+    ],
+    "n": 100,
+    "pct": 98.0,
+    "pct_ci_cluster": [
+     93.68,
+     100.0
+    ],
+    "pct_ci_window": [
+     95.0,
+     100.0
+    ],
+    "sessions": 37
+   },
+   "B": {
+    "kappa": 0.97,
+    "kappa_ci_cluster": [
+     0.94,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.93,
+     1.0
+    ],
+    "n": 100,
+    "pct": 98.0,
+    "pct_ci_cluster": [
+     95.05,
+     100.0
+    ],
+    "pct_ci_window": [
+     95.0,
+     100.0
+    ],
+    "sessions": 37
+   }
+  },
+  "prior_own_work": {
+   "A": {
+    "kappa": 0.99,
+    "kappa_ci_cluster": [
+     0.95,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.95,
+     1.0
+    ],
+    "n": 100,
+    "pct": 99.0,
+    "pct_ci_cluster": [
+     96.84,
+     100.0
+    ],
+    "pct_ci_window": [
+     97.0,
+     100.0
+    ],
+    "sessions": 37
+   },
+   "B": {
+    "kappa": 0.9,
+    "kappa_ci_cluster": [
+     0.79,
+     0.99
+    ],
+    "kappa_ci_window": [
+     0.83,
+     0.96
+    ],
+    "n": 100,
+    "pct": 93.0,
+    "pct_ci_cluster": [
+     85.42,
+     99.0
+    ],
+    "pct_ci_window": [
+     88.0,
+     97.0
+    ],
+    "sessions": 37
+   }
+  },
+  "process": {
+   "A": {
+    "kappa": 1.0,
+    "kappa_ci_cluster": [
+     1.0,
+     1.0
+    ],
+    "kappa_ci_window": [
+     1.0,
+     1.0
+    ],
+    "n": 100,
+    "pct": 100.0,
+    "pct_ci_cluster": [
+     100.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     100.0,
+     100.0
+    ],
+    "sessions": 37
+   },
+   "B": {
+    "kappa": 0.97,
+    "kappa_ci_cluster": [
+     0.93,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.93,
+     1.0
+    ],
+    "n": 100,
+    "pct": 98.0,
+    "pct_ci_cluster": [
+     95.05,
+     100.0
+    ],
+    "pct_ci_window": [
+     95.0,
+     100.0
+    ],
+    "sessions": 37
+   }
+  },
+  "uptake": {
+   "A": {
+    "kappa": 0.99,
+    "kappa_ci_cluster": [
+     0.96,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.96,
+     1.0
+    ],
+    "n": 100,
+    "pct": 99.0,
+    "pct_ci_cluster": [
+     96.91,
+     100.0
+    ],
+    "pct_ci_window": [
+     97.0,
+     100.0
+    ],
+    "sessions": 37
+   },
+   "B": {
+    "kappa": 0.94,
+    "kappa_ci_cluster": [
+     0.88,
+     0.99
+    ],
+    "kappa_ci_window": [
+     0.87,
+     0.99
+    ],
+    "n": 100,
+    "pct": 95.0,
+    "pct_ci_cluster": [
+     90.72,
+     99.01
+    ],
+    "pct_ci_window": [
+     90.0,
+     99.0
+    ],
+    "sessions": 37
+   }
+  },
+  "verification": {
+   "A": {
+    "kappa": 0.97,
+    "kappa_ci_cluster": [
+     0.92,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.91,
+     1.0
+    ],
+    "n": 100,
+    "pct": 99.0,
+    "pct_ci_cluster": [
+     96.91,
+     100.0
+    ],
+    "pct_ci_window": [
+     97.0,
+     100.0
+    ],
+    "sessions": 37
+   },
+   "B": {
+    "kappa": 0.82,
+    "kappa_ci_cluster": [
+     0.63,
+     0.97
+    ],
+    "kappa_ci_window": [
+     0.67,
+     0.94
+    ],
+    "n": 100,
+    "pct": 94.0,
+    "pct_ci_cluster": [
+     87.0,
+     99.02
+    ],
+    "pct_ci_window": [
+     89.0,
+     98.0
+    ],
+    "sessions": 37
+   }
+  }
+ },
+ "flags": {
+  "A": {
+   "decision": 12,
+   "domain": 1,
+   "function": 4,
+   "none": 28,
+   "operation": 14,
+   "prior_own_work": 5,
+   "uptake": 27,
+   "verification": 9
+  },
+  "B": {
+   "decision": 12,
+   "function": 1,
+   "none": 39,
+   "object": 1,
+   "operation": 14,
+   "prior_own_work": 3,
+   "uptake": 24,
+   "verification": 6
+  }
+ },
+ "frequency": {
+  "decision": {
+   "A": {
+    "NIRVANA": {
+     "D0": 12,
+     "D1": 10,
+     "D2": 34,
+     "D3": 6,
+     "D4": 8
+    },
+    "WildChat": {
+     "D0": 3,
+     "D1": 5,
+     "D2": 22
+    },
+    "all": {
+     "D0": 15,
+     "D1": 15,
+     "D2": 56,
+     "D3": 6,
+     "D4": 8
+    }
+   },
+   "B": {
+    "NIRVANA": {
+     "D0": 12,
+     "D1": 11,
+     "D2": 32,
+     "D3": 7,
+     "D4": 8
+    },
+    "WildChat": {
+     "D0": 3,
+     "D1": 6,
+     "D2": 21
+    },
+    "all": {
+     "D0": 15,
+     "D1": 17,
+     "D2": 53,
+     "D3": 7,
+     "D4": 8
+    }
+   },
+   "final": {
+    "NIRVANA": {
+     "D0": 12,
+     "D1": 11,
+     "D2": 32,
+     "D3": 7,
+     "D4": 8
+    },
+    "WildChat": {
+     "D0": 4,
+     "D1": 5,
+     "D2": 21
+    },
+    "all": {
+     "D0": 16,
+     "D1": 16,
+     "D2": 53,
+     "D3": 7,
+     "D4": 8
+    }
+   }
+  },
+  "domain": {
+   "A": {
+    "NIRVANA": {
+     "ESSAY_TASK": 70
+    },
+    "WildChat": {
+     "OTHER_WRITING": 1,
+     "RESEARCH_EXPLICIT": 29
+    },
+    "all": {
+     "ESSAY_TASK": 70,
+     "OTHER_WRITING": 1,
+     "RESEARCH_EXPLICIT": 29
+    }
+   },
+   "B": {
+    "NIRVANA": {
+     "ESSAY_TASK": 70
+    },
+    "WildChat": {
+     "OTHER_WRITING": 1,
+     "RESEARCH_EXPLICIT": 29
+    },
+    "all": {
+     "ESSAY_TASK": 70,
+     "OTHER_WRITING": 1,
+     "RESEARCH_EXPLICIT": 29
+    }
+   },
+   "final": {
+    "NIRVANA": {
+     "ESSAY_TASK": 70
+    },
+    "WildChat": {
+     "OTHER_WRITING": 1,
+     "RESEARCH_EXPLICIT": 29
+    },
+    "all": {
+     "ESSAY_TASK": 70,
+     "OTHER_WRITING": 1,
+     "RESEARCH_EXPLICIT": 29
+    }
+   }
+  },
+  "family": {
+   "A": {
+    "NIRVANA": {
+     "CLAIM_ARGUMENT": 7,
+     "FRAME": 7,
+     "OX": 4,
+     "PROSE_CITATION": 22,
+     "REVIEW_SUBSTANCE": 6,
+     "SOURCE_WORK": 7,
+     "SURFACE": 17
+    },
+    "WildChat": {
+     "CLAIM_ARGUMENT": 2,
+     "FRAME": 2,
+     "PROSE_CITATION": 18,
+     "SOURCE_WORK": 3,
+     "SURFACE": 5
+    },
+    "all": {
+     "CLAIM_ARGUMENT": 9,
+     "FRAME": 9,
+     "OX": 4,
+     "PROSE_CITATION": 40,
+     "REVIEW_SUBSTANCE": 6,
+     "SOURCE_WORK": 10,
+     "SURFACE": 22
+    }
+   },
+   "B": {
+    "NIRVANA": {
+     "CLAIM_ARGUMENT": 9,
+     "FRAME": 5,
+     "OX": 4,
+     "PROSE_CITATION": 23,
+     "REVIEW_SUBSTANCE": 5,
+     "SOURCE_WORK": 7,
+     "SURFACE": 17
+    },
+    "WildChat": {
+     "CLAIM_ARGUMENT": 2,
+     "FRAME": 3,
+     "PROSE_CITATION": 17,
+     "SOURCE_WORK": 3,
+     "SURFACE": 5
+    },
+    "all": {
+     "CLAIM_ARGUMENT": 11,
+     "FRAME": 8,
+     "OX": 4,
+     "PROSE_CITATION": 40,
+     "REVIEW_SUBSTANCE": 5,
+     "SOURCE_WORK": 10,
+     "SURFACE": 22
+    }
+   },
+   "final": {
+    "NIRVANA": {
+     "CLAIM_ARGUMENT": 9,
+     "FRAME": 5,
+     "OX": 4,
+     "PROSE_CITATION": 22,
+     "REVIEW_SUBSTANCE": 6,
+     "SOURCE_WORK": 7,
+     "SURFACE": 17
+    },
+    "WildChat": {
+     "CLAIM_ARGUMENT": 2,
+     "FRAME": 2,
+     "PROSE_CITATION": 18,
+     "SOURCE_WORK": 3,
+     "SURFACE": 5
+    },
+    "all": {
+     "CLAIM_ARGUMENT": 11,
+     "FRAME": 7,
+     "OX": 4,
+     "PROSE_CITATION": 40,
+     "REVIEW_SUBSTANCE": 6,
+     "SOURCE_WORK": 10,
+     "SURFACE": 22
+    }
+   }
+  },
+  "function": {
+   "A": {
+    "NIRVANA": {
+     "F1": 3,
+     "F2": 8,
+     "F4": 29,
+     "F5": 14,
+     "F6": 5,
+     "F7": 5,
+     "F8": 2,
+     "FX": 4
+    },
+    "WildChat": {
+     "F1": 2,
+     "F2": 1,
+     "F3": 1,
+     "F4": 21,
+     "F5": 5
+    },
+    "all": {
+     "F1": 5,
+     "F2": 9,
+     "F3": 1,
+     "F4": 50,
+     "F5": 19,
+     "F6": 5,
+     "F7": 5,
+     "F8": 2,
+     "FX": 4
+    }
+   },
+   "B": {
+    "NIRVANA": {
+     "F1": 2,
+     "F2": 6,
+     "F4": 31,
+     "F5": 16,
+     "F6": 5,
+     "F7": 5,
+     "F8": 1,
+     "FX": 4
+    },
+    "WildChat": {
+     "F1": 2,
+     "F2": 1,
+     "F3": 2,
+     "F4": 20,
+     "F5": 5
+    },
+    "all": {
+     "F1": 4,
+     "F2": 7,
+     "F3": 2,
+     "F4": 51,
+     "F5": 21,
+     "F6": 5,
+     "F7": 5,
+     "F8": 1,
+     "FX": 4
+    }
+   },
+   "final": {
+    "NIRVANA": {
+     "F1": 3,
+     "F2": 6,
+     "F4": 31,
+     "F5": 14,
+     "F6": 5,
+     "F7": 5,
+     "F8": 2,
+     "FX": 4
+    },
+    "WildChat": {
+     "F1": 2,
+     "F2": 1,
+     "F3": 1,
+     "F4": 21,
+     "F5": 5
+    },
+    "all": {
+     "F1": 5,
+     "F2": 7,
+     "F3": 1,
+     "F4": 52,
+     "F5": 19,
+     "F6": 5,
+     "F7": 5,
+     "F8": 2,
+     "FX": 4
+    }
+   }
+  },
+  "object": {
+   "A": {
+    "NIRVANA": {
+     "ARGUMENT": 3,
+     "CLAIM": 5,
+     "EVIDENCE": 5,
+     "IDEA": 7,
+     "OTHER": 6,
+     "PROSE": 44
+    },
+    "WildChat": {
+     "ARGUMENT": 1,
+     "CLAIM": 1,
+     "IDEA": 1,
+     "OTHER": 2,
+     "PROSE": 23,
+     "SOURCE": 1,
+     "STRUCTURE": 1
+    },
+    "all": {
+     "ARGUMENT": 4,
+     "CLAIM": 6,
+     "EVIDENCE": 5,
+     "IDEA": 8,
+     "OTHER": 8,
+     "PROSE": 67,
+     "SOURCE": 1,
+     "STRUCTURE": 1
+    }
+   },
+   "B": {
+    "NIRVANA": {
+     "ARGUMENT": 5,
+     "CLAIM": 5,
+     "EVIDENCE": 5,
+     "IDEA": 5,
+     "OTHER": 6,
+     "PROSE": 44
+    },
+    "WildChat": {
+     "ARGUMENT": 1,
+     "CLAIM": 1,
+     "EVIDENCE": 1,
+     "IDEA": 1,
+     "OTHER": 1,
+     "PROSE": 22,
+     "STRUCTURE": 3
+    },
+    "all": {
+     "ARGUMENT": 6,
+     "CLAIM": 6,
+     "EVIDENCE": 6,
+     "IDEA": 6,
+     "OTHER": 7,
+     "PROSE": 66,
+     "STRUCTURE": 3
+    }
+   },
+   "final": {
+    "NIRVANA": {
+     "ARGUMENT": 5,
+     "CLAIM": 5,
+     "EVIDENCE": 5,
+     "IDEA": 5,
+     "OTHER": 6,
+     "PROSE": 44
+    },
+    "WildChat": {
+     "ARGUMENT": 1,
+     "CLAIM": 1,
+     "EVIDENCE": 1,
+     "IDEA": 1,
+     "OTHER": 1,
+     "PROSE": 23,
+     "STRUCTURE": 2
+    },
+    "all": {
+     "ARGUMENT": 6,
+     "CLAIM": 6,
+     "EVIDENCE": 6,
+     "IDEA": 6,
+     "OTHER": 7,
+     "PROSE": 67,
+     "STRUCTURE": 2
+    }
+   }
+  },
+  "operation": {
+   "A": {
+    "NIRVANA": {
+     "O02": 7,
+     "O04": 5,
+     "O05": 2,
+     "O08": 4,
+     "O09": 3,
+     "O10": 22,
+     "O12": 6,
+     "O14": 17,
+     "OX": 4
+    },
+    "WildChat": {
+     "O02": 1,
+     "O03": 1,
+     "O05": 2,
+     "O07": 1,
+     "O08": 1,
+     "O09": 1,
+     "O10": 18,
+     "O14": 5
+    },
+    "all": {
+     "O02": 8,
+     "O03": 1,
+     "O04": 5,
+     "O05": 4,
+     "O07": 1,
+     "O08": 5,
+     "O09": 4,
+     "O10": 40,
+     "O12": 6,
+     "O14": 22,
+     "OX": 4
+    }
+   },
+   "B": {
+    "NIRVANA": {
+     "O02": 5,
+     "O04": 5,
+     "O05": 2,
+     "O08": 4,
+     "O09": 5,
+     "O10": 23,
+     "O12": 5,
+     "O14": 17,
+     "OX": 4
+    },
+    "WildChat": {
+     "O02": 1,
+     "O03": 2,
+     "O05": 2,
+     "O07": 1,
+     "O08": 1,
+     "O09": 1,
+     "O10": 17,
+     "O14": 5
+    },
+    "all": {
+     "O02": 6,
+     "O03": 2,
+     "O04": 5,
+     "O05": 4,
+     "O07": 1,
+     "O08": 5,
+     "O09": 6,
+     "O10": 40,
+     "O12": 5,
+     "O14": 22,
+     "OX": 4
+    }
+   },
+   "final": {
+    "NIRVANA": {
+     "O02": 5,
+     "O04": 5,
+     "O05": 2,
+     "O08": 4,
+     "O09": 5,
+     "O10": 22,
+     "O12": 6,
+     "O14": 17,
+     "OX": 4
+    },
+    "WildChat": {
+     "O02": 1,
+     "O03": 1,
+     "O05": 2,
+     "O07": 1,
+     "O08": 1,
+     "O09": 1,
+     "O10": 18,
+     "O14": 5
+    },
+    "all": {
+     "O02": 6,
+     "O03": 1,
+     "O04": 5,
+     "O05": 4,
+     "O07": 1,
+     "O08": 5,
+     "O09": 6,
+     "O10": 40,
+     "O12": 6,
+     "O14": 22,
+     "OX": 4
+    }
+   }
+  },
+  "prior_own_work": {
+   "A": {
+    "NIRVANA": {
+     "NONE_VISIBLE": 22,
+     "VISIBLE": 48
+    },
+    "WildChat": {
+     "UNOBSERVABLE": 17,
+     "VISIBLE": 13
+    },
+    "all": {
+     "NONE_VISIBLE": 22,
+     "UNOBSERVABLE": 17,
+     "VISIBLE": 61
+    }
+   },
+   "B": {
+    "NIRVANA": {
+     "NONE_VISIBLE": 22,
+     "VISIBLE": 48
+    },
+    "WildChat": {
+     "UNOBSERVABLE": 20,
+     "VISIBLE": 10
+    },
+    "all": {
+     "NONE_VISIBLE": 22,
+     "UNOBSERVABLE": 20,
+     "VISIBLE": 58
+    }
+   },
+   "final": {
+    "NIRVANA": {
+     "NONE_VISIBLE": 21,
+     "VISIBLE": 49
+    },
+    "WildChat": {
+     "UNOBSERVABLE": 17,
+     "VISIBLE": 13
+    },
+    "all": {
+     "NONE_VISIBLE": 21,
+     "UNOBSERVABLE": 17,
+     "VISIBLE": 62
+    }
+   }
+  },
+  "process": {
+   "A": {
+    "NIRVANA": {
+     "P": 21,
+     "PX": 4,
+     "R": 23,
+     "T": 22
+    },
+    "WildChat": {
+     "P": 7,
+     "R": 5,
+     "T": 18
+    },
+    "all": {
+     "P": 28,
+     "PX": 4,
+     "R": 28,
+     "T": 40
+    }
+   },
+   "B": {
+    "NIRVANA": {
+     "P": 21,
+     "PX": 4,
+     "R": 22,
+     "T": 23
+    },
+    "WildChat": {
+     "P": 8,
+     "R": 5,
+     "T": 17
+    },
+    "all": {
+     "P": 29,
+     "PX": 4,
+     "R": 27,
+     "T": 40
+    }
+   },
+   "final": {
+    "NIRVANA": {
+     "P": 21,
+     "PX": 4,
+     "R": 23,
+     "T": 22
+    },
+    "WildChat": {
+     "P": 7,
+     "R": 5,
+     "T": 18
+    },
+    "all": {
+     "P": 28,
+     "PX": 4,
+     "R": 28,
+     "T": 40
+    }
+   }
+  },
+  "uptake": {
+   "A": {
+    "NIRVANA": {
+     "U1": 9,
+     "U2": 3,
+     "U3": 7,
+     "U4": 24,
+     "U5": 1,
+     "U6": 2,
+     "U7": 13,
+     "U8": 8,
+     "UX": 3
+    },
+    "WildChat": {
+     "U4": 8,
+     "U8": 17,
+     "UX": 5
+    },
+    "all": {
+     "U1": 9,
+     "U2": 3,
+     "U3": 7,
+     "U4": 32,
+     "U5": 1,
+     "U6": 2,
+     "U7": 13,
+     "U8": 25,
+     "UX": 8
+    }
+   },
+   "B": {
+    "NIRVANA": {
+     "U1": 9,
+     "U2": 3,
+     "U3": 6,
+     "U4": 22,
+     "U5": 1,
+     "U6": 2,
+     "U7": 14,
+     "U8": 10,
+     "UX": 3
+    },
+    "WildChat": {
+     "U4": 9,
+     "U8": 16,
+     "UX": 5
+    },
+    "all": {
+     "U1": 9,
+     "U2": 3,
+     "U3": 6,
+     "U4": 31,
+     "U5": 1,
+     "U6": 2,
+     "U7": 14,
+     "U8": 26,
+     "UX": 8
+    }
+   },
+   "final": {
+    "NIRVANA": {
+     "U1": 9,
+     "U2": 3,
+     "U3": 7,
+     "U4": 23,
+     "U5": 1,
+     "U6": 2,
+     "U7": 13,
+     "U8": 9,
+     "UX": 3
+    },
+    "WildChat": {
+     "U4": 8,
+     "U8": 17,
+     "UX": 5
+    },
+    "all": {
+     "U1": 9,
+     "U2": 3,
+     "U3": 7,
+     "U4": 31,
+     "U5": 1,
+     "U6": 2,
+     "U7": 13,
+     "U8": 26,
+     "UX": 8
+    }
+   }
+  },
+  "verification": {
+   "A": {
+    "NIRVANA": {
+     "V0": 53,
+     "V1": 13,
+     "V2": 1,
+     "VX": 3
+    },
+    "WildChat": {
+     "V0": 25,
+     "VX": 5
+    },
+    "all": {
+     "V0": 78,
+     "V1": 13,
+     "V2": 1,
+     "VX": 8
+    }
+   },
+   "B": {
+    "NIRVANA": {
+     "V0": 57,
+     "V1": 9,
+     "V3": 1,
+     "VX": 3
+    },
+    "WildChat": {
+     "V0": 25,
+     "VX": 5
+    },
+    "all": {
+     "V0": 82,
+     "V1": 9,
+     "V3": 1,
+     "VX": 8
+    }
+   },
+   "final": {
+    "NIRVANA": {
+     "UNSETTLED": 1,
+     "V0": 53,
+     "V1": 13,
+     "VX": 3
+    },
+    "WildChat": {
+     "V0": 25,
+     "VX": 5
+    },
+    "all": {
+     "UNSETTLED": 1,
+     "V0": 78,
+     "V1": 13,
+     "VX": 8
+    }
+   }
+  }
+ },
+ "n": 100,
+ "note": "Consistency between AI coders only. Not human, expert or gold-standard validation. Says nothing about cognition.",
+ "per_label": {
+  "decision": {
+   "D0": [
+    14,
+    16
+   ],
+   "D1": [
+    15,
+    17
+   ],
+   "D2": [
+    53,
+    56
+   ],
+   "D3": [
+    6,
+    7
+   ],
+   "D4": [
+    8,
+    8
+   ]
+  },
+  "domain": {
+   "ESSAY_TASK": [
+    70,
+    70
+   ],
+   "OTHER_WRITING": [
+    1,
+    1
+   ],
+   "RESEARCH_EXPLICIT": [
+    29,
+    29
+   ]
+  },
+  "family": {
+   "CLAIM_ARGUMENT": [
+    9,
+    11
+   ],
+   "FRAME": [
+    7,
+    10
+   ],
+   "OX": [
+    4,
+    4
+   ],
+   "PROSE_CITATION": [
+    39,
+    41
+   ],
+   "REVIEW_SUBSTANCE": [
+    5,
+    6
+   ],
+   "SOURCE_WORK": [
+    10,
+    10
+   ],
+   "SURFACE": [
+    22,
+    22
+   ]
+  },
+  "function": {
+   "F1": [
+    4,
+    5
+   ],
+   "F2": [
+    7,
+    9
+   ],
+   "F3": [
+    1,
+    2
+   ],
+   "F4": [
+    48,
+    53
+   ],
+   "F5": [
+    19,
+    21
+   ],
+   "F6": [
+    5,
+    5
+   ],
+   "F7": [
+    5,
+    5
+   ],
+   "F8": [
+    1,
+    2
+   ],
+   "FX": [
+    4,
+    4
+   ]
+  },
+  "object": {
+   "ARGUMENT": [
+    4,
+    6
+   ],
+   "CLAIM": [
+    6,
+    6
+   ],
+   "EVIDENCE": [
+    5,
+    6
+   ],
+   "IDEA": [
+    6,
+    8
+   ],
+   "OTHER": [
+    7,
+    8
+   ],
+   "PROSE": [
+    66,
+    67
+   ],
+   "SOURCE": [
+    0,
+    1
+   ],
+   "STRUCTURE": [
+    1,
+    3
+   ]
+  },
+  "operation": {
+   "O02": [
+    6,
+    8
+   ],
+   "O03": [
+    1,
+    2
+   ],
+   "O04": [
+    5,
+    5
+   ],
+   "O05": [
+    4,
+    4
+   ],
+   "O07": [
+    1,
+    1
+   ],
+   "O08": [
+    5,
+    5
+   ],
+   "O09": [
+    4,
+    6
+   ],
+   "O10": [
+    39,
+    41
+   ],
+   "O12": [
+    5,
+    6
+   ],
+   "O14": [
+    22,
+    22
+   ],
+   "OX": [
+    4,
+    4
+   ]
+  },
+  "prior_own_work": {
+   "NONE_VISIBLE": [
+    20,
+    24
+   ],
+   "UNOBSERVABLE": [
+    17,
+    20
+   ],
+   "VISIBLE": [
+    56,
+    63
+   ]
+  },
+  "process": {
+   "P": [
+    28,
+    29
+   ],
+   "PX": [
+    4,
+    4
+   ],
+   "R": [
+    27,
+    28
+   ],
+   "T": [
+    39,
+    41
+   ]
+  },
+  "uptake": {
+   "U1": [
+    9,
+    9
+   ],
+   "U2": [
+    3,
+    3
+   ],
+   "U3": [
+    6,
+    7
+   ],
+   "U4": [
+    29,
+    34
+   ],
+   "U5": [
+    1,
+    1
+   ],
+   "U6": [
+    2,
+    2
+   ],
+   "U7": [
+    13,
+    14
+   ],
+   "U8": [
+    23,
+    28
+   ],
+   "UX": [
+    8,
+    8
+   ]
+  },
+  "verification": {
+   "V0": [
+    77,
+    83
+   ],
+   "V1": [
+    9,
+    13
+   ],
+   "V2": [
+    0,
+    1
+   ],
+   "V3": [
+    0,
+    1
+   ],
+   "VX": [
+    8,
+    8
+   ]
+  }
+ }
+}
