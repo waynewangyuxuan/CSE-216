@@ -1,0 +1,107 @@
+dataset,session_id,type,n_windows,sequence
+NIRVANA,e00,Mixed: surrender-leaning and support,2,SL OFF
+NIRVANA,e01,Support only,5,AUG AUG IND OFF NEU
+NIRVANA,e03,Support only,3,AUG OFF AUG
+NIRVANA,e04,Mixed: surrender-leaning and support,23,IND SL NEU OFF NEU IND OFF IND AUG NEU IND OFF AUG SL OFF IND OFF AUG NEU NEU IND OFF NEU
+NIRVANA,e05,Surrender-leaning only,3,SL SL SL
+NIRVANA,e06,Mixed: surrender-leaning and support,9,SL IND AUG SL NEU SL AUG SL NEU
+NIRVANA,e07,Support only,2,IND OFF
+NIRVANA,e09,Support only,2,IND OFF
+NIRVANA,e10,Surrender-leaning only,2,SL SL
+NIRVANA,e11,Mixed: surrender-leaning and support,10,SL SL SL SL AUG SL SL OFF SL SL
+NIRVANA,e12,Support only,5,AUG AUG NEU AUG AUG
+NIRVANA,e13,Support only,2,OFF AUG
+NIRVANA,e14,No substantive category,1,NEU
+NIRVANA,e15,Mixed: surrender-leaning and support,4,OFF OFF OFF SL
+NIRVANA,e16,Support only,1,AUG
+NIRVANA,e17,No substantive category,1,IND
+NIRVANA,e18,Support only,1,OFF
+NIRVANA,e19,Mixed: surrender-leaning and support,5,IND NEU SL OFF OFF
+NIRVANA,e20,Mixed: surrender-leaning and support,7,SL AUG SL IND IND OFF SL
+NIRVANA,e22,Support only,1,OFF
+NIRVANA,e24,Support only,3,OFF AUG AUG
+NIRVANA,e25,Mixed: surrender-leaning and support,17,OFF AUG SL AUG OFF NEU SL SL IND OFF OFF OFF SL IND OFF IND NEU
+NIRVANA,e26,Mixed: surrender-leaning and support,11,OFF SL OFF AUG IND AUG OFF AUG AUG AUG NEU
+NIRVANA,e27,Mixed: surrender-leaning and support,2,SL OFF
+NIRVANA,e28,Support only,1,AUG
+NIRVANA,e29,Support only,8,AUG AUG NEU NEU NEU NEU AUG OFF
+NIRVANA,e30,Surrender-leaning only,3,SL SL SL
+NIRVANA,e31,Mixed: surrender-leaning and support,7,SL OFF SL IND SL SL IND
+NIRVANA,e32,Surrender-leaning only,1,SL
+NIRVANA,e33,Surrender-leaning only,1,SL
+NIRVANA,e34,Support only,2,OFF OFF
+NIRVANA,e35,Support only,2,AUG AUG
+NIRVANA,e36,No substantive category,1,NEU
+NIRVANA,e37,Surrender-leaning only,4,SL SL SL SL
+NIRVANA,e38,Support only,2,NEU AUG
+NIRVANA,e39,Support only,2,IND AUG
+NIRVANA,e40,Support only,1,OFF
+NIRVANA,e41,Surrender-leaning only,7,IND SL SL SL SL SL SL
+NIRVANA,e42,Support only,15,NEU NEU NEU IND NEU NEU NEU IND NEU NEU OFF NEU AUG AUG OFF
+NIRVANA,e43,No substantive category,3,IND IND NEU
+NIRVANA,e44,Mixed: surrender-leaning and support,7,OFF AUG OFF OFF SL IND SL
+NIRVANA,e46,No substantive category,2,IND IND
+NIRVANA,e47,Support only,4,IND AUG OFF AUG
+NIRVANA,e48,Surrender-leaning only,3,SL IND SL
+NIRVANA,e49,Support only,2,AUG AUG
+NIRVANA,e50,Mixed: surrender-leaning and support,6,NEU OFF SL SL SL OFF
+NIRVANA,e51,Mixed: surrender-leaning and support,2,SL OFF
+NIRVANA,e53,Surrender-leaning only,2,IND SL
+NIRVANA,e54,Support only,4,IND AUG AUG OFF
+NIRVANA,e55,Surrender-leaning only,4,SL NEU SL SL
+NIRVANA,e56,Support only,5,OFF AUG NEU NEU OFF
+NIRVANA,e57,Mixed: surrender-leaning and support,9,SL AUG OFF NEU NEU OFF OFF OFF OFF
+NIRVANA,e58,Mixed: surrender-leaning and support,10,NEU AUG IND AUG NEU OFF OFF NEU SL IND
+NIRVANA,e59,Surrender-leaning only,1,SL
+NIRVANA,e60,Support only,5,OFF OFF OFF AUG AUG
+NIRVANA,e61,Mixed: surrender-leaning and support,27,NEU SL SL SL SL IND AUG SL SL OFF SL OFF OFF IND SL SL AUG AUG IND SL IND OFF AUG OFF SL SL SL
+NIRVANA,e62,Support only,2,OFF AUG
+NIRVANA,e63,Support only,2,NEU OFF
+NIRVANA,e64,Mixed: surrender-leaning and support,7,OFF SL SL SL SL SL SL
+NIRVANA,e65,Mixed: surrender-leaning and support,18,AUG IND OFF IND OFF AUG NEU SL IND OFF IND OFF NEU AUG IND IND IND OFF
+NIRVANA,e66,Surrender-leaning only,1,SL
+NIRVANA,e67,Surrender-leaning only,1,SL
+NIRVANA,e68,Support only,6,AUG AUG AUG OFF AUG IND
+NIRVANA,e69,Support only,1,AUG
+NIRVANA,e70,Mixed: surrender-leaning and support,7,OFF OFF SL OFF OFF SL SL
+NIRVANA,e71,Support only,2,NEU AUG
+NIRVANA,e72,No substantive category,1,IND
+NIRVANA,e73,Surrender-leaning only,2,SL IND
+NIRVANA,e74,Mixed: surrender-leaning and support,11,OFF OFF OFF OFF OFF SL SL OFF SL SL NEU
+NIRVANA,e75,Support only,8,OFF IND OFF IND OFF OFF NEU NEU
+NIRVANA,e76,Surrender-leaning only,3,SL SL SL
+WildChat,04adc14b7dc6,Surrender-leaning only,7,IND SL SL SL SL IND IND
+WildChat,05faf88fa50a,Support only,2,OFF IND
+WildChat,0c19dbfddb6e,Surrender-leaning only,2,SL IND
+WildChat,0c7a64bb1aba,Surrender-leaning only,2,SL IND
+WildChat,13713cfb41c0,Surrender-leaning only,8,SL IND IND NEU IND SL SL IND
+WildChat,14140e33cb98,No substantive category,2,IND IND
+WildChat,1ae11c051865,Surrender-leaning only,3,SL SL IND
+WildChat,2849709b14c2,Surrender-leaning only,8,SL SL SL SL SL SL SL IND
+WildChat,36af11c0a332,Surrender-leaning only,4,SL SL SL IND
+WildChat,56acfd32812b,Surrender-leaning only,2,SL IND
+WildChat,5c7a56d88bea,Support only,4,OFF OFF OFF IND
+WildChat,5f14f31b5762,Support only,2,OFF IND
+WildChat,6dad62e0a326,Surrender-leaning only,8,SL SL SL SL SL SL SL IND
+WildChat,7b46ff7ad4c1,Mixed: surrender-leaning and support,4,SL OFF SL IND
+WildChat,8551dd30e694,Surrender-leaning only,2,SL IND
+WildChat,85fb5101edc7,Surrender-leaning only,2,SL IND
+WildChat,8af2896cda07,Surrender-leaning only,5,SL SL SL SL IND
+WildChat,953148aa3d57,Support only,7,IND IND IND OFF OFF OFF IND
+WildChat,9dff96b50f4f,Surrender-leaning only,4,IND SL SL NEU
+WildChat,a656cf58e949,Surrender-leaning only,3,IND SL IND
+WildChat,a91f0bb0d847,Support only,2,OFF IND
+WildChat,b0a82842cc5e,Support only,4,OFF OFF OFF IND
+WildChat,b25442b5f212,Support only,2,OFF IND
+WildChat,bc60326cb766,Surrender-leaning only,10,SL SL SL SL IND SL SL SL SL SL
+WildChat,d429342fd747,Support only,2,OFF IND
+WildChat,d4e917270898,Support only,2,OFF IND
+WildChat,dc0c59fe2b38,No substantive category,2,IND IND
+WildChat,e6acb3ce8d84,No substantive category,2,IND IND
+WildChat,ea3c00bfc9c9,Support only,4,NEU OFF OFF IND
+WildChat,ee01f593a7f0,Support only,3,OFF OFF IND
+WildChat,f3397aeca0f6,Mixed: surrender-leaning and support,10,SL SL OFF AUG IND OFF IND AUG AUG SL
+WildChat,f432a63be5a3,Surrender-leaning only,5,SL IND IND NEU NEU
+WildChat,f65c46a56af8,Surrender-leaning only,7,SL SL SL SL IND SL IND
+WildChat,f6837354bd04,Surrender-leaning only,5,SL SL IND IND IND
+WildChat,f8c64fc16731,Surrender-leaning only,10,IND SL SL SL SL SL SL SL SL SL

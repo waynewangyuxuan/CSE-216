@@ -1,0 +1,107 @@
+dataset,session_id,n_windows,sequence,strengths,decisions,switches,switches_excl_ind,n_SL,n_OFF,n_AUG,n_NEU,n_IND,first_category,first_determinate,first_sl_index,first_sl_relative,has_sl,has_support,support_before_sl,sl_before_support,leaves_sl_to_support,leaves_sl_any,sl_has_later_window,ends_in_sl,max_sl_run,escalation_d1_to_d4,truncated_session,auditor_reject
+NIRVANA,e00,2,SL OFF,weak moderate,D2 D3,1,1,1,1,0,0,0,SL,SL,1,0.0,1,1,0,1,1,1,1,0,1,0,0,0
+NIRVANA,e01,5,AUG AUG IND OFF NEU,moderate moderate - moderate moderate,D2 D2 D2 D1 D0,3,2,0,1,2,1,1,AUG,AUG,,,0,1,0,0,,,,0,0,0,0,0
+NIRVANA,e03,3,AUG OFF AUG,weak moderate moderate,D2 D1 D2,2,2,0,1,2,0,0,AUG,AUG,,,0,1,0,0,,,,0,0,0,0,0
+NIRVANA,e04,23,IND SL NEU OFF NEU IND OFF IND AUG NEU IND OFF AUG SL OFF IND OFF AUG NEU NEU IND OFF NEU,- moderate moderate moderate moderate - moderate - moderate moderate - moderate weak moderate moderate - moderate moderate moderate moderate - moderate moderate,D2 D4 D0 D1 D0 D1 D1 D2 D1 D0 D2 D3 D2 D2 D1 D1 D3 D2 D0 D0 D3 D3 D0,21,14,2,6,3,6,6,IND,SL,2,0.045,1,1,0,1,1,1,1,0,1,0,0,0
+NIRVANA,e05,3,SL SL SL,strong strong moderate,D4 D4 D4,0,0,3,0,0,0,0,SL,SL,1,0.0,1,0,0,0,0,0,1,1,3,0,0,0
+NIRVANA,e06,9,SL IND AUG SL NEU SL AUG SL NEU,moderate - moderate weak moderate weak moderate weak moderate,D2 D2 D2 D2 D0 D2 D2 D2 D0,8,7,4,0,2,2,1,SL,SL,1,0.0,1,1,0,1,1,1,1,0,1,0,0,0
+NIRVANA,e07,2,IND OFF,- moderate,D2 D1,1,0,0,1,0,0,1,IND,OFF,,,0,1,0,0,,,,0,0,0,0,0
+NIRVANA,e09,2,IND OFF,- weak,D2 D1,1,0,0,1,0,0,1,IND,OFF,,,0,1,0,0,,,,0,0,0,0,0
+NIRVANA,e10,2,SL SL,strong strong,D4 D4,0,0,2,0,0,0,0,SL,SL,1,0.0,1,0,0,0,0,0,1,1,2,0,0,0
+NIRVANA,e11,10,SL SL SL SL AUG SL SL OFF SL SL,weak weak strong weak weak weak weak moderate weak moderate,D2 D2 D4 D2 D2 D2 D2 D3 D2 D4,4,4,8,1,1,0,0,SL,SL,1,0.0,1,1,0,1,1,1,1,1,4,0,0,0
+NIRVANA,e12,5,AUG AUG NEU AUG AUG,weak weak moderate weak weak,D2 D2 D0 D2 D2,2,2,0,0,4,1,0,AUG,AUG,,,0,1,0,0,,,,0,0,0,0,0
+NIRVANA,e13,2,OFF AUG,moderate weak,D3 D4,1,1,0,1,1,0,0,OFF,OFF,,,0,1,0,0,,,,0,0,0,0,0
+NIRVANA,e14,1,NEU,moderate,D0,0,0,0,0,0,1,0,NEU,NEU,,,0,0,0,0,,,,0,0,0,0,0
+NIRVANA,e15,4,OFF OFF OFF SL,moderate moderate moderate moderate,D3 D3 D3 D3,1,1,1,3,0,0,0,OFF,OFF,4,1.0,1,1,1,0,0,0,0,1,1,0,0,0
+NIRVANA,e16,1,AUG,moderate,D2,0,0,0,0,1,0,0,AUG,AUG,,,0,1,0,0,,,,0,0,0,0,0
+NIRVANA,e17,1,IND,-,D2,0,0,0,0,0,0,1,IND,none,,,0,0,0,0,,,,0,0,0,0,0
+NIRVANA,e18,1,OFF,moderate,D1,0,0,0,1,0,0,0,OFF,OFF,,,0,1,0,0,,,,0,0,0,0,0
+NIRVANA,e19,5,IND NEU SL OFF OFF,- moderate moderate moderate moderate,UNSETTLED D0 D4 D1 D3,3,2,1,2,0,1,1,IND,NEU,3,0.5,1,1,0,1,1,1,1,0,1,0,0,0
+NIRVANA,e20,7,SL AUG SL IND IND OFF SL,weak moderate moderate - - moderate moderate,D2 D2 D2 D2 D2 D3 D4,5,4,3,1,1,0,2,SL,SL,1,0.0,1,1,0,1,1,1,1,1,1,0,0,0
+NIRVANA,e22,1,OFF,moderate,D3,0,0,0,1,0,0,0,OFF,OFF,,,0,1,0,0,,,,0,0,0,0,0
+NIRVANA,e24,3,OFF AUG AUG,moderate weak weak,D3 D2 D2,1,1,0,1,2,0,0,OFF,OFF,,,0,1,0,0,,,,0,0,0,0,0
+NIRVANA,e25,17,OFF AUG SL AUG OFF NEU SL SL IND OFF OFF OFF SL IND OFF IND NEU,moderate moderate moderate moderate moderate moderate moderate moderate - moderate moderate moderate moderate - moderate - moderate,D3 D2 D4 D2 D1 D0 D2 D4 D2 D3 D1 D1 D2 D2 D3 D1 D0,13,10,4,6,2,2,3,OFF,OFF,3,0.125,1,1,1,0,1,1,1,0,2,1,0,0
+NIRVANA,e26,11,OFF SL OFF AUG IND AUG OFF AUG AUG AUG NEU,moderate moderate moderate moderate - moderate weak moderate moderate weak moderate,D3 D4 D3 D2 D2 D2 D1 D2 D2 D4 D0,8,6,1,3,5,1,1,OFF,OFF,2,0.1,1,1,1,0,1,1,1,0,1,1,0,0
+NIRVANA,e27,2,SL OFF,weak moderate,D2 D3,1,1,1,1,0,0,0,SL,SL,1,0.0,1,1,0,1,1,1,1,0,1,0,0,0
+NIRVANA,e28,1,AUG,moderate,D2,0,0,0,0,1,0,0,AUG,AUG,,,0,1,0,0,,,,0,0,0,0,0
+NIRVANA,e29,8,AUG AUG NEU NEU NEU NEU AUG OFF,moderate moderate moderate moderate moderate moderate moderate moderate,D1 D1 D0 D0 D0 D0 D1 D1,3,3,0,1,3,4,0,AUG,AUG,,,0,1,0,0,,,,0,0,0,0,0
+NIRVANA,e30,3,SL SL SL,weak moderate moderate,D2 D4 D4,0,0,3,0,0,0,0,SL,SL,1,0.0,1,0,0,0,0,0,1,1,3,0,0,0
+NIRVANA,e31,7,SL OFF SL IND SL SL IND,strong weak weak - moderate weak -,D4 D1 D2 D2 D4 D2 D2,5,2,4,1,0,0,2,SL,SL,1,0.0,1,1,0,1,1,1,1,1,2,1,0,0
+NIRVANA,e32,1,SL,moderate,D4,0,0,1,0,0,0,0,SL,SL,1,0.0,1,0,0,0,0,0,0,1,1,0,0,0
+NIRVANA,e33,1,SL,strong,D4,0,0,1,0,0,0,0,SL,SL,1,0.0,1,0,0,0,0,0,0,1,1,0,0,0
+NIRVANA,e34,2,OFF OFF,weak moderate,D1 D3,0,0,0,2,0,0,0,OFF,OFF,,,0,1,0,0,,,,0,0,0,0,0
+NIRVANA,e35,2,AUG AUG,weak weak,D2 D2,0,0,0,0,2,0,0,AUG,AUG,,,0,1,0,0,,,,0,0,0,0,0
+NIRVANA,e36,1,NEU,moderate,D0,0,0,0,0,0,1,0,NEU,NEU,,,0,0,0,0,,,,0,0,0,0,0
+NIRVANA,e37,4,SL SL SL SL,moderate weak moderate strong,D2 D3 D2 D4,0,0,4,0,0,0,0,SL,SL,1,0.0,1,0,0,0,0,0,1,1,4,0,0,0
+NIRVANA,e38,2,NEU AUG,moderate weak,D0 D2,1,1,0,0,1,1,0,NEU,NEU,,,0,1,0,0,,,,0,0,0,0,0
+NIRVANA,e39,2,IND AUG,- weak,D2 D2,1,0,0,0,1,0,1,IND,AUG,,,0,1,0,0,,,,0,0,0,0,0
+NIRVANA,e40,1,OFF,weak,D2,0,0,0,1,0,0,0,OFF,OFF,,,0,1,0,0,,,,0,0,0,0,0
+NIRVANA,e41,7,IND SL SL SL SL SL SL,- moderate moderate moderate moderate strong strong,D0 D2 D2 D2 D2 D4 D4,1,0,6,0,0,0,1,IND,SL,2,0.167,1,0,0,0,0,0,1,1,6,0,0,0
+NIRVANA,e42,15,NEU NEU NEU IND NEU NEU NEU IND NEU NEU OFF NEU AUG AUG OFF,moderate moderate moderate - moderate moderate moderate - moderate moderate moderate moderate moderate moderate moderate,D0 D0 D0 D2 D0 D0 D0 D0 D0 D0 D1 D0 D2 D2 D1,8,4,0,2,2,9,2,NEU,NEU,,,0,1,0,0,,,,0,0,0,0,0
+NIRVANA,e43,3,IND IND NEU,- - moderate,D1 D1 D0,1,0,0,0,0,1,2,IND,NEU,,,0,0,0,0,,,,0,0,0,0,0
+NIRVANA,e44,7,OFF AUG OFF OFF SL IND SL,moderate weak moderate moderate moderate - moderate,D1 D2 D1 D1 D2 D2 D4,5,3,2,3,1,0,1,OFF,OFF,5,0.667,1,1,1,0,0,0,1,1,1,1,0,0
+NIRVANA,e46,2,IND IND,- -,D2 D2,0,0,0,0,0,0,2,IND,none,,,0,0,0,0,,,,0,0,0,0,0
+NIRVANA,e47,4,IND AUG OFF AUG,- moderate moderate weak,D2 D2 D3 D2,3,2,0,1,2,0,1,IND,AUG,,,0,1,0,0,,,,0,0,0,0,0
+NIRVANA,e48,3,SL IND SL,moderate - moderate,D2 D2 D4,2,0,2,0,0,0,1,SL,SL,1,0.0,1,0,0,0,0,0,1,1,1,0,0,0
+NIRVANA,e49,2,AUG AUG,weak weak,D2 D2,0,0,0,0,2,0,0,AUG,AUG,,,0,1,0,0,,,,0,0,0,0,0
+NIRVANA,e50,6,NEU OFF SL SL SL OFF,moderate weak moderate moderate moderate moderate,D0 D2 D2 D4 D4 D1,3,3,3,2,0,1,0,NEU,NEU,3,0.4,1,1,1,0,1,1,1,0,3,0,0,0
+NIRVANA,e51,2,SL OFF,moderate moderate,D2 D3,1,1,1,1,0,0,0,SL,SL,1,0.0,1,1,0,1,1,1,1,0,1,0,0,0
+NIRVANA,e53,2,IND SL,- moderate,D2 D4,1,0,1,0,0,0,1,IND,SL,2,1.0,1,0,0,0,0,0,0,1,1,0,0,0
+NIRVANA,e54,4,IND AUG AUG OFF,- weak moderate moderate,D2 D2 D2 D3,2,1,0,1,2,0,1,IND,AUG,,,0,1,0,0,,,,0,0,0,0,0
+NIRVANA,e55,4,SL NEU SL SL,weak moderate moderate strong,D2 D0 D2 D4,2,2,3,0,0,1,0,SL,SL,1,0.0,1,0,0,0,0,1,1,1,2,0,0,0
+NIRVANA,e56,5,OFF AUG NEU NEU OFF,moderate weak moderate moderate moderate,D3 D2 D0 D0 D1,3,3,0,2,1,2,0,OFF,OFF,,,0,1,0,0,,,,0,0,0,0,0
+NIRVANA,e57,9,SL AUG OFF NEU NEU OFF OFF OFF OFF,strong weak moderate moderate moderate moderate moderate moderate moderate,D4 D2 D3 D0 D0 D1 D3 D3 D3,4,4,1,5,1,2,0,SL,SL,1,0.0,1,1,0,1,1,1,1,0,1,0,0,0
+NIRVANA,e58,10,NEU AUG IND AUG NEU OFF OFF NEU SL IND,moderate moderate - weak moderate weak weak moderate moderate -,D0 D2 D2 D2 D0 D1 D1 D0 D3 D2,8,5,1,2,2,3,2,NEU,NEU,9,0.889,1,1,1,0,0,0,1,1,1,0,0,0
+NIRVANA,e59,1,SL,strong,D4,0,0,1,0,0,0,0,SL,SL,1,0.0,1,0,0,0,0,0,0,1,1,0,0,0
+NIRVANA,e60,5,OFF OFF OFF AUG AUG,weak weak weak weak weak,D1 D1 D1 D2 D2,1,1,0,3,2,0,0,OFF,OFF,,,0,1,0,0,,,,0,0,0,0,0
+NIRVANA,e61,27,NEU SL SL SL SL IND AUG SL SL OFF SL OFF OFF IND SL SL AUG AUG IND SL IND OFF AUG OFF SL SL SL,moderate weak weak weak moderate - weak weak moderate moderate weak moderate moderate - weak moderate weak weak - moderate - moderate weak moderate moderate moderate moderate,D0 D2 D2 D2 D3 D2 D2 D2 D2 D2 D2 D2 D2 D2 D2 D4 D2 D2 D2 D4 D2 D3 D2 D3 D3 D4 D4,17,13,13,5,4,1,4,NEU,NEU,2,0.038,1,1,0,1,1,1,1,1,4,0,0,0
+NIRVANA,e62,2,OFF AUG,weak weak,D2 D2,1,1,0,1,1,0,0,OFF,OFF,,,0,1,0,0,,,,0,0,0,0,0
+NIRVANA,e63,2,NEU OFF,moderate moderate,D0 D1,1,1,0,1,0,1,0,NEU,NEU,,,0,1,0,0,,,,0,0,0,0,0
+NIRVANA,e64,7,OFF SL SL SL SL SL SL,moderate weak moderate moderate weak moderate moderate,D4 D2 D4 D2 D2 D4 D4,1,1,6,1,0,0,0,OFF,OFF,2,0.167,1,1,1,0,0,0,1,1,6,0,0,0
+NIRVANA,e65,18,AUG IND OFF IND OFF AUG NEU SL IND OFF IND OFF NEU AUG IND IND IND OFF,weak - moderate - moderate moderate moderate moderate - moderate - moderate moderate moderate - - - moderate,D2 D2 D1 D2 D3 D2 D0 D3 D2 D1 D2 D1 D0 D2 D2 D2 D2 D1,15,8,1,5,3,2,7,AUG,AUG,8,0.412,1,1,1,0,1,1,1,0,1,0,0,0
+NIRVANA,e66,1,SL,strong,D4,0,0,1,0,0,0,0,SL,SL,1,0.0,1,0,0,0,0,0,0,1,1,0,0,0
+NIRVANA,e67,1,SL,strong,D4,0,0,1,0,0,0,0,SL,SL,1,0.0,1,0,0,0,0,0,0,1,1,0,0,0
+NIRVANA,e68,6,AUG AUG AUG OFF AUG IND,weak weak moderate moderate moderate -,D2 D2 D1 D1 D1 D2,3,2,0,1,4,0,1,AUG,AUG,,,0,1,0,0,,,,0,0,0,0,0
+NIRVANA,e69,1,AUG,weak,D4,0,0,0,0,1,0,0,AUG,AUG,,,0,1,0,0,,,,0,0,0,0,0
+NIRVANA,e70,7,OFF OFF SL OFF OFF SL SL,moderate moderate weak moderate moderate moderate moderate,D1 D1 D2 D3 D1 D4 D4,3,3,3,4,0,0,0,OFF,OFF,3,0.333,1,1,1,0,1,1,1,1,2,1,0,0
+NIRVANA,e71,2,NEU AUG,moderate moderate,D0 D1,1,1,0,0,1,1,0,NEU,NEU,,,0,1,0,0,,,,0,0,0,0,0
+NIRVANA,e72,1,IND,-,D1,0,0,0,0,0,0,1,IND,none,,,0,0,0,0,,,,0,0,0,0,0
+NIRVANA,e73,2,SL IND,moderate -,D2 D2,1,0,1,0,0,0,1,SL,SL,1,0.0,1,0,0,0,0,0,1,1,1,0,0,0
+NIRVANA,e74,11,OFF OFF OFF OFF OFF SL SL OFF SL SL NEU,moderate moderate moderate moderate moderate weak weak moderate moderate moderate moderate,D3 D3 D1 D3 D3 D2 D2 D3 D3 D4 D0,4,4,4,6,0,1,0,OFF,OFF,6,0.5,1,1,1,0,1,1,1,0,2,1,0,0
+NIRVANA,e75,8,OFF IND OFF IND OFF OFF NEU NEU,weak - weak - weak weak moderate moderate,D2 D2 D2 D2 D2 D2 D0 D0,5,1,0,4,0,2,2,OFF,OFF,,,0,1,0,0,,,,0,0,0,0,0
+NIRVANA,e76,3,SL SL SL,weak weak moderate,D2 D2 D4,0,0,3,0,0,0,0,SL,SL,1,0.0,1,0,0,0,0,0,1,1,3,0,0,0
+WildChat,04adc14b7dc6,7,IND SL SL SL SL IND IND,- weak weak weak weak - -,D2 D2 D2 D2 D2 D2 D2,2,0,4,0,0,0,3,IND,SL,2,0.167,1,0,0,0,0,0,1,1,4,0,0,0
+WildChat,05faf88fa50a,2,OFF IND,weak -,D1 D1,1,0,0,1,0,0,1,OFF,OFF,,,0,1,0,0,,,,0,0,0,0,0
+WildChat,0c19dbfddb6e,2,SL IND,weak -,D2 D2,1,0,1,0,0,0,1,SL,SL,1,0.0,1,0,0,0,0,0,1,1,1,0,0,0
+WildChat,0c7a64bb1aba,2,SL IND,weak -,D2 D2,1,0,1,0,0,0,1,SL,SL,1,0.0,1,0,0,0,0,0,1,1,1,0,0,0
+WildChat,13713cfb41c0,8,SL IND IND NEU IND SL SL IND,weak - - moderate - weak weak -,D2 D2 D2 D0 D3 D2 D2 D2,5,2,3,0,0,1,4,SL,SL,1,0.0,1,0,0,0,0,1,1,1,2,0,0,0
+WildChat,14140e33cb98,2,IND IND,- -,D2 D2,0,0,0,0,0,0,2,IND,none,,,0,0,0,0,,,,0,0,0,0,0
+WildChat,1ae11c051865,3,SL SL IND,weak weak -,D2 D2 D2,1,0,2,0,0,0,1,SL,SL,1,0.0,1,0,0,0,0,0,1,1,2,0,0,0
+WildChat,2849709b14c2,8,SL SL SL SL SL SL SL IND,weak weak weak weak weak weak weak -,D2 D2 D2 D2 D2 D2 D2 D2,1,0,7,0,0,0,1,SL,SL,1,0.0,1,0,0,0,0,0,1,1,7,0,0,0
+WildChat,36af11c0a332,4,SL SL SL IND,weak weak moderate -,D2 D2 D2 D2,1,0,3,0,0,0,1,SL,SL,1,0.0,1,0,0,0,0,0,1,1,3,0,0,0
+WildChat,56acfd32812b,2,SL IND,weak -,D2 D2,1,0,1,0,0,0,1,SL,SL,1,0.0,1,0,0,0,0,0,1,1,1,0,0,0
+WildChat,5c7a56d88bea,4,OFF OFF OFF IND,moderate moderate moderate -,D1 D1 D1 D1,1,0,0,3,0,0,1,OFF,OFF,,,0,1,0,0,,,,0,0,0,0,0
+WildChat,5f14f31b5762,2,OFF IND,moderate -,D1 D1,1,0,0,1,0,0,1,OFF,OFF,,,0,1,0,0,,,,0,0,0,0,0
+WildChat,6dad62e0a326,8,SL SL SL SL SL SL SL IND,weak weak weak weak weak weak weak -,D2 D2 D2 D2 D2 D2 D2 D2,1,0,7,0,0,0,1,SL,SL,1,0.0,1,0,0,0,0,0,1,1,7,0,0,0
+WildChat,7b46ff7ad4c1,4,SL OFF SL IND,weak weak weak -,D2 D1 D2 D2,3,2,2,1,0,0,1,SL,SL,1,0.0,1,1,0,1,1,1,1,1,1,0,0,0
+WildChat,8551dd30e694,2,SL IND,weak -,D2 D2,1,0,1,0,0,0,1,SL,SL,1,0.0,1,0,0,0,0,0,1,1,1,0,0,0
+WildChat,85fb5101edc7,2,SL IND,weak -,D2 D2,1,0,1,0,0,0,1,SL,SL,1,0.0,1,0,0,0,0,0,1,1,1,0,0,0
+WildChat,8af2896cda07,5,SL SL SL SL IND,weak weak weak weak -,D2 D2 D2 D2 D2,1,0,4,0,0,0,1,SL,SL,1,0.0,1,0,0,0,0,0,1,1,4,0,0,1
+WildChat,953148aa3d57,7,IND IND IND OFF OFF OFF IND,- - - moderate moderate moderate -,D1 D1 D1 D1 D1 D1 D1,2,0,0,3,0,0,4,IND,OFF,,,0,1,0,0,,,,0,0,0,0,0
+WildChat,9dff96b50f4f,4,IND SL SL NEU,- weak weak moderate,D0 D2 D2 D0,2,1,2,0,0,1,1,IND,SL,2,0.333,1,0,0,0,0,1,1,0,2,0,0,0
+WildChat,a656cf58e949,3,IND SL IND,- weak -,D2 D2 D2,2,0,1,0,0,0,2,IND,SL,2,0.5,1,0,0,0,0,0,1,1,1,0,0,0
+WildChat,a91f0bb0d847,2,OFF IND,weak -,D1 D1,1,0,0,1,0,0,1,OFF,OFF,,,0,1,0,0,,,,0,0,0,0,0
+WildChat,b0a82842cc5e,4,OFF OFF OFF IND,moderate moderate moderate -,D1 D1 D1 D1,1,0,0,3,0,0,1,OFF,OFF,,,0,1,0,0,,,,0,0,0,0,0
+WildChat,b25442b5f212,2,OFF IND,moderate -,D1 D1,1,0,0,1,0,0,1,OFF,OFF,,,0,1,0,0,,,,0,0,0,0,0
+WildChat,bc60326cb766,10,SL SL SL SL IND SL SL SL SL SL,weak weak weak weak - weak weak moderate weak weak,D2 D2 D2 D2 D2 D2 D2 D2 D2 D2,2,0,9,0,0,0,1,SL,SL,1,0.0,1,0,0,0,0,0,1,1,5,0,1,0
+WildChat,d429342fd747,2,OFF IND,weak -,D1 D2,1,0,0,1,0,0,1,OFF,OFF,,,0,1,0,0,,,,0,0,0,0,1
+WildChat,d4e917270898,2,OFF IND,moderate -,D1 D1,1,0,0,1,0,0,1,OFF,OFF,,,0,1,0,0,,,,0,0,0,0,0
+WildChat,dc0c59fe2b38,2,IND IND,- -,D2 D2,0,0,0,0,0,0,2,IND,none,,,0,0,0,0,,,,0,0,0,0,0
+WildChat,e6acb3ce8d84,2,IND IND,- -,D2 D2,0,0,0,0,0,0,2,IND,none,,,0,0,0,0,,,,0,0,0,0,1
+WildChat,ea3c00bfc9c9,4,NEU OFF OFF IND,moderate moderate moderate -,D0 D1 D1 D1,2,1,0,2,0,1,1,NEU,NEU,,,0,1,0,0,,,,0,0,0,0,0
+WildChat,ee01f593a7f0,3,OFF OFF IND,moderate moderate -,D1 D1 D1,1,0,0,2,0,0,1,OFF,OFF,,,0,1,0,0,,,,0,0,0,0,0
+WildChat,f3397aeca0f6,10,SL SL OFF AUG IND OFF IND AUG AUG SL,weak weak moderate moderate - moderate - moderate moderate weak,D2 D2 D1 D2 D2 D1 D2 D2 D2 D2,7,5,3,2,3,0,2,SL,SL,1,0.0,1,1,0,1,1,1,1,1,2,0,1,0
+WildChat,f432a63be5a3,5,SL IND IND NEU NEU,weak - - moderate moderate,D2 D2 D2 D0 D0,2,1,1,0,0,2,2,SL,SL,1,0.0,1,0,0,0,0,1,1,0,1,0,0,0
+WildChat,f65c46a56af8,7,SL SL SL SL IND SL IND,weak weak weak weak - weak -,D2 D2 D2 D2 D2 D2 D0,3,0,5,0,0,0,2,SL,SL,1,0.0,1,0,0,0,0,0,1,1,4,0,0,0
+WildChat,f6837354bd04,5,SL SL IND IND IND,weak weak - - -,D2 D2 D2 D2 D2,1,0,2,0,0,0,3,SL,SL,1,0.0,1,0,0,0,0,0,1,1,2,0,0,0
+WildChat,f8c64fc16731,10,IND SL SL SL SL SL SL SL SL SL,- weak weak weak weak weak weak weak weak weak,D2 D2 D2 D2 D2 D2 D2 D2 D2 D2,1,0,9,0,0,0,1,IND,SL,2,0.111,1,0,0,0,0,0,1,1,9,0,1,0

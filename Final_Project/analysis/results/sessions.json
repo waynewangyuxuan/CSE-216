@@ -1,0 +1,781 @@
+{
+ "All whole sessions": {
+  "after_sl": {
+   "AUG": 6,
+   "IND": 33,
+   "NEU": 6,
+   "OFF": 15,
+   "SL": 83
+  },
+  "after_sl_excl_ind": {
+   "AUG": 8,
+   "NEU": 8,
+   "OFF": 20,
+   "SL": 88
+  },
+  "before_sl": {
+   "AUG": 8,
+   "IND": 15,
+   "NEU": 7,
+   "OFF": 16,
+   "SL": 83
+  },
+  "ends_in_sl": 43,
+  "escalation_d1_to_d4": 6,
+  "first_determinate": {
+   "AUG": 14,
+   "NEU": 12,
+   "OFF": 29,
+   "SL": 45,
+   "none": 6
+  },
+  "first_sl_relative": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.038,
+   0.045,
+   0.1,
+   0.111,
+   0.125,
+   0.167,
+   0.167,
+   0.167,
+   0.333,
+   0.333,
+   0.4,
+   0.412,
+   0.5,
+   0.5,
+   0.5,
+   0.667,
+   0.889,
+   1.0,
+   1.0
+  ],
+  "first_window": {
+   "AUG": 11,
+   "IND": 21,
+   "NEU": 10,
+   "OFF": 26,
+   "SL": 38
+  },
+  "leaves_sl_any": 23,
+  "leaves_sl_to_support": 19,
+  "max_sl_run": {
+   "0": 49,
+   "1": 29,
+   "2": 11,
+   "3": 5,
+   "4": 6,
+   "5": 1,
+   "6": 2,
+   "7": 2,
+   "9": 1
+  },
+  "n_sessions": 106,
+  "n_windows": 498,
+  "n_windows_dist": {
+   "1": 15,
+   "2": 32,
+   "3": 10,
+   "4": 11,
+   "5": 8,
+   "6": 2,
+   "7": 9,
+   "8": 5,
+   "9": 2,
+   "10": 5,
+   "11": 2,
+   "15": 1,
+   "17": 1,
+   "18": 1,
+   "23": 1,
+   "27": 1
+  },
+  "perm_test": {
+   "AUG->AUG": {
+    "expected": 14.5,
+    "observed": 16,
+    "p_ge": 0.3168
+   },
+   "AUG->SL": {
+    "expected": 6.9,
+    "observed": 8,
+    "p_ge": 0.3653
+   },
+   "OFF->OFF": {
+    "expected": 24.9,
+    "observed": 29,
+    "p_ge": 0.1179
+   },
+   "OFF->SL": {
+    "expected": 17.8,
+    "observed": 16,
+    "p_ge": 0.7991
+   },
+   "SL->AUG": {
+    "expected": 6.9,
+    "observed": 6,
+    "p_ge": 0.7751
+   },
+   "SL->OFF": {
+    "expected": 17.7,
+    "observed": 15,
+    "p_ge": 0.8721
+   },
+   "SL->SL": {
+    "expected": 76.9,
+    "observed": 83,
+    "p_ge": 0.045
+   }
+  },
+  "perm_test_excl_ind": {
+   "OFF->SL": {
+    "expected": 19.9,
+    "observed": 17,
+    "p_ge": 0.8921
+   },
+   "SL->OFF": {
+    "expected": 19.9,
+    "observed": 20,
+    "p_ge": 0.5472
+   },
+   "SL->SL": {
+    "expected": 89.2,
+    "observed": 88,
+    "p_ge": 0.7326
+   }
+  },
+  "position_bins": {
+   "AUG": [
+    14,
+    14,
+    5,
+    14,
+    7
+   ],
+   "IND": [
+    18,
+    11,
+    16,
+    17,
+    15
+   ],
+   "NEU": [
+    9,
+    11,
+    8,
+    11,
+    9
+   ],
+   "OFF": [
+    22,
+    18,
+    23,
+    17,
+    10
+   ],
+   "SL": [
+    40,
+    34,
+    30,
+    29,
+    17
+   ]
+  },
+  "sessions_switching_sl_support": 23,
+  "sessions_with": {
+   "AUG": 33,
+   "IND": 63,
+   "NEU": 28,
+   "OFF": 53,
+   "SL": 57
+  },
+  "sessions_with_sl": 57,
+  "sessions_with_sl_and_support": 23,
+  "sl_first": 13,
+  "sl_sessions_with_later_window": 50,
+  "support_first": 10,
+  "support_sl_switch": {
+   "SL->SL": 91,
+   "SL->support": 29,
+   "support->SL": 29,
+   "support->support": 96
+  },
+  "switches_excl_ind_mean": 1.32,
+  "switches_mean": 2.23,
+  "transitions": {
+   "AUG->AUG": 16,
+   "AUG->IND": 8,
+   "AUG->NEU": 8,
+   "AUG->OFF": 11,
+   "AUG->SL": 8,
+   "IND->AUG": 9,
+   "IND->IND": 15,
+   "IND->NEU": 7,
+   "IND->OFF": 20,
+   "IND->SL": 15,
+   "NEU->AUG": 7,
+   "NEU->IND": 6,
+   "NEU->NEU": 13,
+   "NEU->OFF": 8,
+   "NEU->SL": 7,
+   "OFF->AUG": 17,
+   "OFF->IND": 20,
+   "OFF->NEU": 9,
+   "OFF->OFF": 29,
+   "OFF->SL": 16,
+   "SL->AUG": 6,
+   "SL->IND": 33,
+   "SL->NEU": 6,
+   "SL->OFF": 15,
+   "SL->SL": 83
+  },
+  "transitions_excl_ind": {
+   "AUG->AUG": 18,
+   "AUG->NEU": 8,
+   "AUG->OFF": 15,
+   "AUG->SL": 9,
+   "NEU->AUG": 7,
+   "NEU->NEU": 15,
+   "NEU->OFF": 11,
+   "NEU->SL": 8,
+   "OFF->AUG": 19,
+   "OFF->NEU": 10,
+   "OFF->OFF": 34,
+   "OFF->SL": 17,
+   "SL->AUG": 8,
+   "SL->NEU": 8,
+   "SL->OFF": 20,
+   "SL->SL": 88
+  }
+ },
+ "NIRVANA only (coverage caveat)": {
+  "after_sl": {
+   "AUG": 6,
+   "IND": 13,
+   "NEU": 5,
+   "OFF": 13,
+   "SL": 40
+  },
+  "after_sl_excl_ind": {
+   "AUG": 8,
+   "NEU": 5,
+   "OFF": 18,
+   "SL": 43
+  },
+  "before_sl": {
+   "AUG": 7,
+   "IND": 8,
+   "NEU": 7,
+   "OFF": 15,
+   "SL": 40
+  },
+  "ends_in_sl": 24,
+  "escalation_d1_to_d4": 6,
+  "first_determinate": {
+   "AUG": 14,
+   "NEU": 11,
+   "OFF": 19,
+   "SL": 24,
+   "none": 3
+  },
+  "first_sl_relative": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.038,
+   0.045,
+   0.1,
+   0.125,
+   0.167,
+   0.167,
+   0.333,
+   0.4,
+   0.412,
+   0.5,
+   0.5,
+   0.667,
+   0.889,
+   1.0,
+   1.0
+  ],
+  "first_window": {
+   "AUG": 11,
+   "IND": 13,
+   "NEU": 9,
+   "OFF": 17,
+   "SL": 21
+  },
+  "leaves_sl_any": 18,
+  "leaves_sl_to_support": 17,
+  "max_sl_run": {
+   "0": 35,
+   "1": 21,
+   "2": 6,
+   "3": 4,
+   "4": 3,
+   "6": 2
+  },
+  "n_sessions": 71,
+  "n_windows": 347,
+  "n_windows_dist": {
+   "1": 15,
+   "2": 18,
+   "3": 7,
+   "4": 5,
+   "5": 5,
+   "6": 2,
+   "7": 6,
+   "8": 2,
+   "9": 2,
+   "10": 2,
+   "11": 2,
+   "15": 1,
+   "17": 1,
+   "18": 1,
+   "23": 1,
+   "27": 1
+  },
+  "perm_test": {
+   "AUG->AUG": {
+    "expected": 13.8,
+    "observed": 15,
+    "p_ge": 0.3583
+   },
+   "AUG->SL": {
+    "expected": 6.0,
+    "observed": 7,
+    "p_ge": 0.3723
+   },
+   "OFF->OFF": {
+    "expected": 19.7,
+    "observed": 21,
+    "p_ge": 0.3898
+   },
+   "OFF->SL": {
+    "expected": 16.6,
+    "observed": 15,
+    "p_ge": 0.7886
+   },
+   "SL->AUG": {
+    "expected": 6.0,
+    "observed": 6,
+    "p_ge": 0.6037
+   },
+   "SL->OFF": {
+    "expected": 16.7,
+    "observed": 13,
+    "p_ge": 0.9425
+   },
+   "SL->SL": {
+    "expected": 40.1,
+    "observed": 40,
+    "p_ge": 0.5947
+   }
+  },
+  "perm_test_excl_ind": {
+   "OFF->SL": {
+    "expected": 18.4,
+    "observed": 16,
+    "p_ge": 0.8586
+   },
+   "SL->OFF": {
+    "expected": 18.5,
+    "observed": 18,
+    "p_ge": 0.6462
+   },
+   "SL->SL": {
+    "expected": 43.6,
+    "observed": 43,
+    "p_ge": 0.6837
+   }
+  },
+  "position_bins": {
+   "AUG": [
+    14,
+    13,
+    5,
+    13,
+    6
+   ],
+   "IND": [
+    11,
+    8,
+    10,
+    6,
+    7
+   ],
+   "NEU": [
+    8,
+    10,
+    8,
+    9,
+    8
+   ],
+   "OFF": [
+    19,
+    12,
+    17,
+    16,
+    10
+   ],
+   "SL": [
+    21,
+    18,
+    18,
+    17,
+    12
+   ]
+  },
+  "sessions_switching_sl_support": 21,
+  "sessions_with": {
+   "AUG": 32,
+   "IND": 28,
+   "NEU": 24,
+   "OFF": 40,
+   "SL": 36
+  },
+  "sessions_with_sl": 36,
+  "sessions_with_sl_and_support": 21,
+  "sl_first": 11,
+  "sl_sessions_with_later_window": 29,
+  "support_first": 10,
+  "support_sl_switch": {
+   "SL->SL": 45,
+   "SL->support": 27,
+   "support->SL": 27,
+   "support->support": 84
+  },
+  "switches_excl_ind_mean": 1.8,
+  "switches_mean": 2.58,
+  "transitions": {
+   "AUG->AUG": 15,
+   "AUG->IND": 7,
+   "AUG->NEU": 8,
+   "AUG->OFF": 11,
+   "AUG->SL": 7,
+   "IND->AUG": 8,
+   "IND->IND": 5,
+   "IND->NEU": 5,
+   "IND->OFF": 18,
+   "IND->SL": 8,
+   "NEU->AUG": 7,
+   "NEU->IND": 5,
+   "NEU->NEU": 12,
+   "NEU->OFF": 7,
+   "NEU->SL": 7,
+   "OFF->AUG": 16,
+   "OFF->IND": 8,
+   "OFF->NEU": 9,
+   "OFF->OFF": 21,
+   "OFF->SL": 15,
+   "SL->AUG": 6,
+   "SL->IND": 13,
+   "SL->NEU": 5,
+   "SL->OFF": 13,
+   "SL->SL": 40
+  },
+  "transitions_excl_ind": {
+   "AUG->AUG": 17,
+   "AUG->NEU": 8,
+   "AUG->OFF": 14,
+   "AUG->SL": 8,
+   "NEU->AUG": 7,
+   "NEU->NEU": 14,
+   "NEU->OFF": 10,
+   "NEU->SL": 7,
+   "OFF->AUG": 17,
+   "OFF->NEU": 10,
+   "OFF->OFF": 26,
+   "OFF->SL": 16,
+   "SL->AUG": 8,
+   "SL->NEU": 5,
+   "SL->OFF": 18,
+   "SL->SL": 43
+  }
+ },
+ "WildChat only (coverage caveat)": {
+  "after_sl": {
+   "AUG": 0,
+   "IND": 20,
+   "NEU": 1,
+   "OFF": 2,
+   "SL": 43
+  },
+  "after_sl_excl_ind": {
+   "AUG": 0,
+   "NEU": 3,
+   "OFF": 2,
+   "SL": 45
+  },
+  "before_sl": {
+   "AUG": 1,
+   "IND": 7,
+   "NEU": 0,
+   "OFF": 1,
+   "SL": 43
+  },
+  "ends_in_sl": 19,
+  "escalation_d1_to_d4": 0,
+  "first_determinate": {
+   "NEU": 1,
+   "OFF": 10,
+   "SL": 21,
+   "none": 3
+  },
+  "first_sl_relative": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.111,
+   0.167,
+   0.333,
+   0.5
+  ],
+  "first_window": {
+   "IND": 8,
+   "NEU": 1,
+   "OFF": 9,
+   "SL": 17
+  },
+  "leaves_sl_any": 5,
+  "leaves_sl_to_support": 2,
+  "max_sl_run": {
+   "0": 14,
+   "1": 8,
+   "2": 5,
+   "3": 1,
+   "4": 3,
+   "5": 1,
+   "7": 2,
+   "9": 1
+  },
+  "n_sessions": 35,
+  "n_windows": 151,
+  "n_windows_dist": {
+   "2": 14,
+   "3": 3,
+   "4": 6,
+   "5": 3,
+   "7": 3,
+   "8": 3,
+   "10": 3
+  },
+  "perm_test": {
+   "AUG->AUG": {
+    "expected": 0.6,
+    "observed": 1,
+    "p_ge": 0.5277
+   },
+   "AUG->SL": {
+    "expected": 0.9,
+    "observed": 1,
+    "p_ge": 0.7221
+   },
+   "OFF->OFF": {
+    "expected": 5.2,
+    "observed": 8,
+    "p_ge": 0.0375
+   },
+   "OFF->SL": {
+    "expected": 1.1,
+    "observed": 1,
+    "p_ge": 0.7766
+   },
+   "SL->AUG": {
+    "expected": 0.9,
+    "observed": 0,
+    "p_ge": 1.0
+   },
+   "SL->OFF": {
+    "expected": 1.1,
+    "observed": 2,
+    "p_ge": 0.3073
+   },
+   "SL->SL": {
+    "expected": 36.7,
+    "observed": 43,
+    "p_ge": 0.001
+   }
+  },
+  "perm_test_excl_ind": {
+   "OFF->SL": {
+    "expected": 1.4,
+    "observed": 1,
+    "p_ge": 0.8826
+   },
+   "SL->OFF": {
+    "expected": 1.4,
+    "observed": 2,
+    "p_ge": 0.4723
+   },
+   "SL->SL": {
+    "expected": 45.5,
+    "observed": 45,
+    "p_ge": 0.8371
+   }
+  },
+  "position_bins": {
+   "AUG": [
+    0,
+    1,
+    0,
+    1,
+    1
+   ],
+   "IND": [
+    7,
+    3,
+    6,
+    11,
+    8
+   ],
+   "NEU": [
+    1,
+    1,
+    0,
+    2,
+    1
+   ],
+   "OFF": [
+    3,
+    6,
+    6,
+    1,
+    0
+   ],
+   "SL": [
+    19,
+    16,
+    12,
+    12,
+    5
+   ]
+  },
+  "sessions_switching_sl_support": 2,
+  "sessions_with": {
+   "AUG": 1,
+   "IND": 35,
+   "NEU": 4,
+   "OFF": 13,
+   "SL": 21
+  },
+  "sessions_with_sl": 21,
+  "sessions_with_sl_and_support": 2,
+  "sl_first": 2,
+  "sl_sessions_with_later_window": 21,
+  "support_first": 0,
+  "support_sl_switch": {
+   "SL->SL": 46,
+   "SL->support": 2,
+   "support->SL": 2,
+   "support->support": 12
+  },
+  "switches_excl_ind_mean": 0.34,
+  "switches_mean": 1.51,
+  "transitions": {
+   "AUG->AUG": 1,
+   "AUG->IND": 1,
+   "AUG->NEU": 0,
+   "AUG->OFF": 0,
+   "AUG->SL": 1,
+   "IND->AUG": 1,
+   "IND->IND": 10,
+   "IND->NEU": 2,
+   "IND->OFF": 2,
+   "IND->SL": 7,
+   "NEU->AUG": 0,
+   "NEU->IND": 1,
+   "NEU->NEU": 1,
+   "NEU->OFF": 1,
+   "NEU->SL": 0,
+   "OFF->AUG": 1,
+   "OFF->IND": 12,
+   "OFF->NEU": 0,
+   "OFF->OFF": 8,
+   "OFF->SL": 1,
+   "SL->AUG": 0,
+   "SL->IND": 20,
+   "SL->NEU": 1,
+   "SL->OFF": 2,
+   "SL->SL": 43
+  },
+  "transitions_excl_ind": {
+   "AUG->AUG": 1,
+   "AUG->NEU": 0,
+   "AUG->OFF": 1,
+   "AUG->SL": 1,
+   "NEU->AUG": 0,
+   "NEU->NEU": 1,
+   "NEU->OFF": 1,
+   "NEU->SL": 1,
+   "OFF->AUG": 2,
+   "OFF->NEU": 0,
+   "OFF->OFF": 8,
+   "OFF->SL": 1,
+   "SL->AUG": 0,
+   "SL->NEU": 3,
+   "SL->OFF": 2,
+   "SL->SL": 45
+  }
+ }
+}

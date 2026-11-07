@@ -1,0 +1,10 @@
+signature,meaning,windows_NIRVANA,windows_WildChat,sessions,categories,rules,example_windows
+Surface-only iteration (D2 V1 U4),"AI substance kept while only length, tone or format is asked for",26,4,19,SL 21; AUG 1; IND 8,R00 1; R15 21; R18 1; R99 7,NIRVANA-e04-t14 NIRVANA-e06-t01 NIRVANA-e20-t03 NIRVANA-e20-t04
+Whole paste (D4 V0 U1),"AI text pasted into the editor unchanged, no check seen",32,0,26,SL 30; AUG 2,R09 12; R10 2; R11 18,NIRVANA-e05-t03 NIRVANA-e10-t01 NIRVANA-e11-t03 NIRVANA-e11-t10
+Partial take (D3),Writer selects or revises part of the AI content,45,1,25,SL 7; OFF 37; IND 2,R04 8; R05 2; R06 6; R07 1; R08 29,NIRVANA-e00-t02 NIRVANA-e04-t12 NIRVANA-e04-t17 NIRVANA-e04-t21
+"Ask, then write own text (D2 U7)",AI proposes; the writer then types new text with no verbatim AI run,52,0,31,OFF 7; AUG 37; IND 8,R00 1; R17 11; R18 6; R19 20; R20 7; R99 7,NIRVANA-e03-t01 NIRVANA-e03-t03 NIRVANA-e04-t13 NIRVANA-e07-t01
+Asked and moved on (U8),Next action ignores the output,29,73,44,SL 48; OFF 18; AUG 8; NEU 13; IND 15,R00 4; R02 13; R08 1; R13 13; R14 4; R16 48; R18 8; R99 11,NIRVANA-e01-t01 NIRVANA-e01-t02 NIRVANA-e03-t02 NIRVANA-e04-t01
+Writer's text handed over for language (D1 F5),"Writer supplies content, AI rewrites the wording",39,29,30,OFF 46; AUG 5; IND 17,R00 5; R03 9; R05 3; R08 3; R12 5; R13 43,NIRVANA-e01-t04 NIRVANA-e03-t02 NIRVANA-e04-t06 NIRVANA-e04-t07
+"Draft requested, kept in chat (D2 F4 U4/U5)","Generation asked for, then iterated or accepted in chat only",46,26,37,SL 69; OFF 1; IND 2,R00 2; R04 1; R15 21; R16 48,NIRVANA-e00-t01 NIRVANA-e04-t14 NIRVANA-e06-t01 NIRVANA-e06-t04
+Reasoned check (V3/V4),"Challenge with reasons, or comparison with a source",13,0,6,OFF 13,R04 13,NIRVANA-e04-t12 NIRVANA-e20-t06 NIRVANA-e26-t01 NIRVANA-e61-t10
+AI checks itself (V2),Writer asks the AI to verify its own output,4,1,4,SL 3; OFF 1; NEU 1,R02 1; R13 1; R16 3,NIRVANA-e06-t04 NIRVANA-e06-t06 NIRVANA-e29-t03 NIRVANA-e42-t11
