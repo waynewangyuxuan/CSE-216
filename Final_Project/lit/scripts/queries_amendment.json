@@ -1,0 +1,7 @@
+{
+ "version": "amendment-1, added after the frozen run because Q2 ranked every 'cognitive surrender' paper below its top 40",
+ "openalex_per_query": 100, "arxiv_per_query": 50, "s2_per_query": 25,
+ "from_date": "2022-11-01",
+ "queries": [ {"id":"A1","theme":"cognitive surrender, stand-alone","text":"\"cognitive surrender\""} ],
+ "citation_queries": []
+}

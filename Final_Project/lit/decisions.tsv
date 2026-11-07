@@ -1,0 +1,22 @@
+date	decision	why	evidence
+2026-11-06	Did not run automated Google Scholar queries	robots.txt disallows /scholar; the task forbids bypassing a bot check	raw/scholar_robots.txt
+2026-11-06	Used OpenAlex and arXiv for the logged run; listed 11 hand queries for Scholar	Named fallbacks in the task; Semantic Scholar returned HTTP 429 on all queries	raw/search/forward/manifest.json; protocol.md
+2026-11-06	Set the date limit at 2022-11-01	Month ChatGPT launched; keeps the search on LLM-era work, at the cost of missing older theory	scripts/queries.json
+2026-11-06	Froze queries after two development passes rather than tuning to the 10 remaining misses	More tuning would only inflate the recovery figure	scripts/queries.sha256; search_log.csv
+2026-11-06	Added one disclosed amendment query for "cognitive surrender"	Q2 ranked every such paper below its top 40, so the project's central term returned nothing	scripts/queries_amendment.json; raw/search/amend1/
+2026-11-06	Did not chase Padmakumar and Doshi misses	One amendment fixed a design flaw in a central term; these two miss on query wording, and chasing individual seeds would be retrofitting	protocol.md; critic_report.md D1
+2026-11-06	Screened with two subagents (Haiku 5.5, Sonnet 5.5), no temperature control	No LLM API key in the environment; the Agent tool does not expose settings; disclosed in the protocol	scripts/screening_prompt.md; screening/
+2026-11-06	Added adjudication rule R1 for reviews during adjudication	The screening prompt was silent on reviews, causing 24 of 93 disagreements	screening/adjudication.tsv
+2026-11-06	Kept PAUSE and Peters despite both screeners excluding them	PAUSE is a required comparison; Peters motivates the source-checking codes. Reported, not overridden	papers.csv
+2026-11-06	Kept full-text copies out of lit/	The repo is public; stored under the gitignored bet notes, deleted at close	.git/info/exclude
+2026-11-06	Did not fetch Hornbaek and Oulasvirta from a third-party site	The permission system blocked that copy, and ACM and Aalto were blocked; marked abstract-only	citation_check.csv row X2
+2026-11-06	Did not use SSRN or OpenReview pages for Shaw and WildChat	Bot checks; verified through Crossref, OSF and ICLR proceedings instead	citation_check.csv
+2026-11-06	Did not change the Harvard author name	Task says to report, not fix silently	citation_check.csv row S22
+2026-11-06	Treated Jelson 2026 and NIRVANA as one data source	Same group and same n; not stated outright in sections read	related_work.md
+2026-11-06	Did not stop at the RQ1 and success-criterion tension	It is a difference in definitions, not a factual error in a submitted claim, and nothing here edits submitted text; raised for the user's decision in REPORT.md	REPORT.md; framework_comparison.md
+2026-11-06	Copied the idea file into bet notes rather than moving it	Task limits writes to lit/ and the bet folder	.wayne/bets/0003-literature-base/notes/
+2026-11-06	Added extra files beyond the listed outputs: scripts/, raw/, screening/	Reproducibility requires them; all inside lit/	lit/scripts/
+2026-11-06	Re-rated the comparison table after the critic	The key was uneven and favored the project; split rule from evidence, gave R&G N/A, made the project N/A on pair 10	critic_report.md D3-D8; framework_comparison.md
+2026-11-06	Changed read marks to separate full reading from relevant sections	Eight [F] marks overstated reading, per critic	critic_report.md D9; related_work.md
+2026-11-06	Ran a second fresh reviewer on the fixes	The gate requires no self-grading, and the re-rating was a judgment call	critic_recheck.md
+2026-11-06	Fixed the recheck's three leftovers without a third review	Small, specific edits; disclosed in REPORT.md	REPORT.md

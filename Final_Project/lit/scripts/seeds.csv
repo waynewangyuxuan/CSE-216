@@ -1,0 +1,23 @@
+seed_id,short,title_key,doi,arxiv
+S01,Alam 2026 PAUSE,pause a privacy preserving self reflection tool,,2609.13155
+S02,Bastani 2025,generative ai without guardrails can harm learning,10.1073/pnas.2422633122,
+S03,Bereiter & Scardamalia 1987,the psychology of written composition,,
+S04,Doshi & Hauser 2024,generative ai enhances individual creativity but reduces the collective diversity,10.1126/sciadv.adn5290,
+S05,Flower & Hayes 1981,a cognitive process theory of writing,10.2307/356600,
+S06,Jelson 2026 Empirical,an empirical study to understand how students use chatgpt for writing essays,10.1145/3772318.3791056,2501.10551
+S07,Jelson 2026 NIRVANA,nirvana a comprehensive dataset,,2604.07344
+S08,Kosmyna 2025,your brain on chatgpt,,2506.08872
+S09,Le 2026 ScholaWrite,scholawrite a dataset of end to end scholarly writing process,,2502.02904
+S10,Lee 2025,the impact of generative ai on critical thinking,10.1145/3706598.3713778,
+S11,Maier 2026,designing against deskilling,,2609.20143
+S12,Mysore 2025,prototypical human ai collaboration behaviors,10.18653/v1/2025.emnlp-main.852,2505.16023
+S13,Padmakumar 2026,offloading score measuring ai reliance,,2605.29392
+S14,Peters & Chin-Yee 2025,generalization bias in large language model summarization,10.1098/rsos.241776,2504.00025
+S15,Risko & Gilbert 2016,cognitive offloading,10.1016/j.tics.2016.07.002,
+S16,Shaw & Nave 2026,thinking fast slow and artificial,10.2139/ssrn.6097646,
+S17,Sweller 1998,cognitive architecture and instructional design,10.1023/a:1022193728205,
+S18,Zhao 2024 WildChat,wildchat 1m chatgpt interaction logs in the wild,,2405.01470
+S19,Reza 2025,co writing with ai on human terms,10.1145/3757566,2504.12488
+S20,Zimmerman 2002,becoming a self regulated learner,10.1207/s15430421tip4102_2,
+S21,van Merrienboer & Sweller 2010,cognitive load theory in health professional education,10.1111/j.1365-2923.2009.03498.x,
+S22,Harvard Writing Center,a source s role in your paper,,

@@ -1,0 +1,72 @@
+{
+ "version": "frozen-2",
+ "openalex_per_query": 40,
+ "arxiv_per_query": 25,
+ "s2_per_query": 25,
+ "from_date": "2022-11-01",
+ "queries": [
+  {
+   "id": "Q1",
+   "theme": "offloading and AI",
+   "text": "\"cognitive offloading\" AND (\"generative AI\" OR LLM OR ChatGPT OR \"large language model\")"
+  },
+  {
+   "id": "Q2",
+   "theme": "surrender and deference",
+   "text": "\"cognitive surrender\" OR ((\"epistemic dependence\" OR overreliance OR \"over-reliance\") AND (\"generative AI\" OR LLM OR ChatGPT) AND (reasoning OR judgment OR writing))"
+  },
+  {
+   "id": "Q3",
+   "theme": "student essay behaviour",
+   "text": "(ChatGPT OR LLM OR \"generative AI\") AND (essay OR \"academic writing\") AND students AND (\"log\" OR logs OR \"writing process\" OR behaviors OR behaviours)"
+  },
+  {
+   "id": "Q4",
+   "theme": "human-AI writing interaction",
+   "text": "(\"human-AI\" OR \"co-writing\" OR \"AI-assisted writing\" OR \"LLM-assisted writing\") AND writing AND (taxonomy OR behaviors OR behaviours OR \"interaction logs\" OR delegation)"
+  },
+  {
+   "id": "Q5",
+   "theme": "research and scholarly writing",
+   "text": "(\"research writing\" OR \"scholarly writing\" OR \"scientific writing\" OR \"literature review\") AND (ChatGPT OR LLM OR \"generative AI\") AND (researchers OR \"graduate students\" OR process OR dataset)"
+  },
+  {
+   "id": "Q6",
+   "theme": "critical thinking and deskilling",
+   "text": "(\"critical thinking\" OR deskilling OR \"cognitive debt\" OR \"cognitive effort\" OR \"metacognitive\") AND (\"generative AI\" OR LLM OR ChatGPT) AND (writing OR learning OR \"knowledge workers\")"
+  },
+  {
+   "id": "Q7",
+   "theme": "verification and uptake",
+   "text": "(verification OR verify OR \"source checking\" OR uptake OR \"appropriate reliance\" OR \"generalization bias\") AND (\"generative AI\" OR LLM OR ChatGPT OR \"large language model\") AND (writing OR summaries OR summarization)"
+  },
+  {
+   "id": "Q8",
+   "theme": "ownership and agency",
+   "text": "(ownership OR authorship OR agency) AND (LLM OR \"generative AI\" OR ChatGPT) AND writing AND (\"human-computer interaction\" OR study OR writers)"
+  },
+  {
+   "id": "Q9",
+   "theme": "measuring reliance",
+   "text": "(\"AI reliance\" OR \"reliance on AI\" OR \"offloading score\" OR \"AI dependence\") AND (measure OR measuring OR scale OR score) AND (LLM OR \"generative AI\" OR ChatGPT)"
+  },
+  {
+   "id": "Q10",
+   "theme": "conversation datasets",
+   "text": "(\"interaction logs\" OR \"conversation logs\" OR \"chat logs\") AND (ChatGPT OR LLM OR chatbot) AND dataset"
+  },
+  {
+   "id": "Q11",
+   "theme": "outcome experiments",
+   "text": "(\"generative AI\" OR LLM OR ChatGPT) AND (learning OR creativity OR skill) AND (randomized OR \"field experiment\" OR preregistered)"
+  }
+ ],
+ "citation_queries": [
+  {
+   "id": "C1",
+   "theme": "forward citation of Risko and Gilbert 2016",
+   "openalex_cites_doi": "10.1016/j.tics.2016.07.002",
+   "text": "(\"generative AI\" OR LLM OR ChatGPT OR \"large language model\")"
+  }
+ ]
+}
