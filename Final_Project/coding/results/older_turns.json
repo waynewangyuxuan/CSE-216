@@ -1,0 +1,124 @@
+{
+ "windows_reusing_unseen_ai_text": {
+  "NIRVANA-e26-t09": {
+   "decision": "D2",
+   "decision_source": "A=B",
+   "gold": false,
+   "older_turns": 5,
+   "prior_own_work": "VISIBLE_DRAFT",
+   "prior_source": "A=B",
+   "share_editor_from_unseen_ai": 0.15,
+   "share_request_from_unseen_ai": 0.0
+  },
+  "NIRVANA-e26-t10": {
+   "decision": "D4",
+   "decision_source": "A=B",
+   "gold": false,
+   "older_turns": 6,
+   "prior_own_work": "VISIBLE_DRAFT",
+   "prior_source": "A=B",
+   "share_editor_from_unseen_ai": 0.15,
+   "share_request_from_unseen_ai": 0.0
+  },
+  "NIRVANA-e26-t11": {
+   "decision": "D0",
+   "decision_source": "A=B",
+   "gold": true,
+   "older_turns": 7,
+   "prior_own_work": "VISIBLE_DRAFT",
+   "prior_source": "A=B",
+   "share_editor_from_unseen_ai": 0.22,
+   "share_request_from_unseen_ai": 0.0
+  },
+  "NIRVANA-e58-t08": {
+   "decision": "D0",
+   "decision_source": "A=B",
+   "gold": false,
+   "older_turns": 4,
+   "prior_own_work": "VISIBLE_DRAFT",
+   "prior_source": "A=B",
+   "share_editor_from_unseen_ai": 0.06,
+   "share_request_from_unseen_ai": 0.0
+  },
+  "NIRVANA-e58-t09": {
+   "decision": "D3",
+   "decision_source": "A=B",
+   "gold": false,
+   "older_turns": 5,
+   "prior_own_work": "VISIBLE_DRAFT",
+   "prior_source": "A=B",
+   "share_editor_from_unseen_ai": 0.07,
+   "share_request_from_unseen_ai": 0.07
+  },
+  "NIRVANA-e58-t10": {
+   "decision": "D1",
+   "decision_source": "adj=B",
+   "gold": false,
+   "older_turns": 6,
+   "prior_own_work": "VISIBLE_DRAFT",
+   "prior_source": "A=B",
+   "share_editor_from_unseen_ai": 0.53,
+   "share_request_from_unseen_ai": 0.52
+  },
+  "NIRVANA-e61-t07": {
+   "decision": "D2",
+   "decision_source": "A=B",
+   "gold": false,
+   "older_turns": 3,
+   "prior_own_work": "NONE_VISIBLE",
+   "prior_source": "A=B",
+   "share_editor_from_unseen_ai": 0.28,
+   "share_request_from_unseen_ai": 0.0
+  },
+  "NIRVANA-e70-t05": {
+   "decision": "D1",
+   "decision_source": "A=B",
+   "gold": false,
+   "older_turns": 1,
+   "prior_own_work": "VISIBLE_DRAFT",
+   "prior_source": "A=B",
+   "share_editor_from_unseen_ai": 0.28,
+   "share_request_from_unseen_ai": 0.0
+  },
+  "NIRVANA-e70-t06": {
+   "decision": "D4",
+   "decision_source": "A=B",
+   "gold": false,
+   "older_turns": 2,
+   "prior_own_work": "VISIBLE_DRAFT",
+   "prior_source": "A=B",
+   "share_editor_from_unseen_ai": 0.61,
+   "share_request_from_unseen_ai": 0.0
+  },
+  "NIRVANA-e70-t07": {
+   "decision": "D4",
+   "decision_source": "A=B",
+   "gold": true,
+   "older_turns": 3,
+   "prior_own_work": "VISIBLE_DRAFT",
+   "prior_source": "A=B",
+   "share_editor_from_unseen_ai": 0.45,
+   "share_request_from_unseen_ai": 0.45
+  }
+ },
+ "windows_with_unseen_older_turns": [
+  "NIRVANA-e26-t09",
+  "NIRVANA-e26-t10",
+  "NIRVANA-e26-t11",
+  "NIRVANA-e29-t06",
+  "NIRVANA-e29-t07",
+  "NIRVANA-e29-t08",
+  "NIRVANA-e42-t05",
+  "NIRVANA-e42-t06",
+  "NIRVANA-e42-t07",
+  "NIRVANA-e58-t08",
+  "NIRVANA-e58-t09",
+  "NIRVANA-e58-t10",
+  "NIRVANA-e61-t05",
+  "NIRVANA-e61-t06",
+  "NIRVANA-e61-t07",
+  "NIRVANA-e70-t05",
+  "NIRVANA-e70-t06",
+  "NIRVANA-e70-t07"
+ ]
+}

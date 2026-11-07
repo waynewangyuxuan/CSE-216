@@ -8,7 +8,8 @@ Numbers come from `scripts/run_all.sh`, which replays saved labels and calls no 
 
 - **All 100 windows are coded** by Coders A and B, with final labels. 99 windows have a final code in every field. 1 field stays `UNSETTLED`.
 - **The coders agree closely.** `decision` κ 0.94, `verification` 0.82, `uptake` 0.92.
-- **No stop condition was hit.** The lowest Q3–Q5 κ is 0.66 (`verification` on C1). Against Fable, the lowest is 0.81.
+- **No stop condition was hit.** The lowest Q3–Q5 κ between coders is 0.66 (`verification` on C1). Against Fable, the lowest is 0.81 for final labels and 0.75 for a single coder (B on `uptake`), or 0.71 on follow-up windows.
+- **Coders saw only the last 3 earlier turns.** 18 windows have older turns nobody read, and 10 of those reuse text from an unseen AI response. Fable shared this limit, so all three can miss the same thing. One ruling is affected (`NIRVANA-e58-t10`).
 - **Truncation mattered on one gold window.** The standard page hid a paste on `NIRVANA-e27-t02`. Fable coded it `U7`, and both coders, with full text, coded `U3`.
 - **Checks are nearly absent.** Final labels hold 0 `V2`, 0 `V3`, 0 `V4`. So κ on `verification` says nothing about grading the grounds of a check.
 - **WildChat's research-writing screen is in doubt.** Fable said no on 2 of 6 gold windows. A, B and final labels called all 6 `RESEARCH_EXPLICIT`.
@@ -36,7 +37,31 @@ Settled before coding (`decisions.tsv` T01–T04).
 
 The 31 cut blocks on the gold page are the 1 next-action block plus 30 earlier-turn blocks.
 
-**Choice.** Coders saw every request, response, editor and next-action block uncut. Earlier turns stayed cut, except an earlier AI response whose cut part this request or editor reuses. That shows 19 windows at least one earlier response whole. Coders never saw overlap numbers, as v1.1 s7 requires. With nothing left unread, the script did not need to stand in for reading. `results/access_audit.json` confirms each view's every line was returned to its coder.
+**Choice.** Coders saw every request, response, editor and next-action block uncut. Earlier turns stayed cut, except an earlier AI response whose cut part this request or editor reuses. That shows 19 windows at least one earlier response whole. Coders never saw overlap numbers, as v1.1 s7 requires. Main blocks were all readable, so the script did not need to stand in for reading them. `results/access_audit.json` confirms each view's every line was returned to its coder.
+
+**What stayed unseen: turns older than the last 3.** Views show 3 earlier exchanges, so a coder can't tell if text in the request or editor came from an older AI response. v1.1 s2 and s5 need this: pasted AI text is not own work, and content from an earlier AI turn is AI-origin. `scripts/older_turns.py` measures it. All of this also applies to the Fable page, so it doesn't show up as disagreement. No window was recoded.
+
+| Measure | Windows |
+|---|---|
+| Have older turns nobody saw | 18 of 100 (3 gold) |
+| Request or editor reuses a 30+ character run from an unseen AI response | 10 |
+
+| Window | Share of request / editor from unseen AI text | `decision`, `prior_own_work` (final) |
+|---|---|---|
+| `NIRVANA-e58-t10` | 0.52 / 0.53 | D1 (adjudicated for B), VISIBLE_DRAFT |
+| `NIRVANA-e70-t07` (gold) | 0.45 / 0.45 | D4, VISIBLE_DRAFT |
+| `NIRVANA-e70-t06` | 0.00 / 0.61 | D4, VISIBLE_DRAFT |
+| `NIRVANA-e70-t05` | 0.00 / 0.28 | D1, VISIBLE_DRAFT |
+| `NIRVANA-e61-t07` | 0.00 / 0.28 | D2, NONE_VISIBLE |
+| `NIRVANA-e26-t11` (gold) | 0.00 / 0.22 | D0, VISIBLE_DRAFT |
+| `NIRVANA-e26-t09` | 0.00 / 0.15 | D2, VISIBLE_DRAFT |
+| `NIRVANA-e26-t10` | 0.00 / 0.15 | D4, VISIBLE_DRAFT |
+| `NIRVANA-e58-t09` | 0.07 / 0.07 | D3, VISIBLE_DRAFT |
+| `NIRVANA-e58-t08` | 0.00 / 0.06 | D0, VISIBLE_DRAFT |
+
+- **`NIRVANA-e58-t10` `decision` is undercut.** The adjudicator ruled D1 because the view did not show most of the essay coming from the AI. The script finds over half of it in unseen turns alone, and the critic's whole-session test found 98% of the request and all of the editor in earlier AI turns. The label stays D1, since coders and adjudicator ruled on what they could see. Bet 5 should exclude it or run both readings.
+- **`NIRVANA-e61-t07` `prior_own_work` looks like an artifact.** It is NONE_VISIBLE, while `-t05` and `-t06` were ruled VISIBLE_PARTIAL on a stance in a turn that has dropped out of view.
+- **`VISIBLE_DRAFT` on these windows may overcount own work.** It needs the same care in Bet 5.
 
 **Effect.** 7 windows could hide uptake evidence under the cap. Coders agreed on all 8 cut next-action windows.
 
@@ -129,6 +154,9 @@ A, B and per-dataset counts are in `results/agreement_tables.md`. The sample is 
 
 - **`NIRVANA-e06-t02` `verification` is `UNSETTLED`** (A `V2`, B `V0`). v1.1 doesn't say if handing a criterion to the AI, with no failing stated, is `V2` or `V3`. Bet 5 should leave it out or run both readings.
 - **25 to 13 favours A, the adjudicator's own requested model.** Labels were shown as first and second with a seeded flip, and identity was never shown. That doesn't rule out a same-model preference. By field the split is uneven: `prior_own_work` 7 to 1, `object` 1 to 4.
+- **Position may have mattered too.** The second-shown label won 24 times, the first 14. With 38 rulings this can't be told from chance or from rule fit.
+- **`NIRVANA-e06-t02` was not settled, though priority settled similar calls.** The adjudicator used s6 priority on `NIRVANA-e41-t02` to `t04`, and left this one open because the rule gap is on whether `V3` applies at all. So "0 `V2`, 0 `V3`" in final labels leaves this one window out; its two coders gave `V2` and `V0`, and the adjudicator considered `V3`.
+- **`NIRVANA-e56-t01` was ruled, although `rule_gaps_for_v2.tsv` G03 says no rule covers a short paste.** Read that ruling as a call, not as an application of a settled rule.
 - **Every final label traces** to A=B or a row in `results/adjudication_log.csv`. Free-text reasons stay in the git-excluded `blind/`.
 - **v1.1 did not change.** Gaps are in `rule_gaps_for_v2.tsv`.
 
@@ -202,14 +230,14 @@ From transcripts, by path (`results/access_audit.json`, `scripts/audit_access.py
 | Every line of every view returned to its coder | All 10 agents, 100% |
 | A and B ran in parallel | Yes |
 
-Coder A batch 4 listed `blind/` once, which shows folder names only. It made scratch copies of its own views, then deleted them. Separation is not enforced by the file system. Transcripts show what agents did.
+Coder A batch 4 listed `blind/` once, which shows folder names only. It made scratch copies of its own views, then deleted them. The adjudicator's folder listing showed `flips.json`, which it did not open. Coder B wrote label-building scripts in the session scratchpad, which A could have reached. The transcripts show A did not open them. B finished first, so this exposure was real but unused. Separation is not enforced by the file system. Transcripts show what agents did. The audit needs local transcripts, so `run_all.sh` does not rerun it and the committed JSON is the record.
 
 ## Still unverified
 
 1. **Any human reading.** No person coded any window. All three parties are AI models and may share a bias.
 2. **Whether high agreement means right labels.** It doesn't show that.
 3. **Grading the grounds of a check.** 0 final `V2`, `V3`, `V4` here, and the same near-absence in the pilot. The claim the lit review singled out has no data in this sample. Checks elsewhere are unseen, so this doesn't show writers don't check.
-4. **What the cut cost A and B.** Only Fable's page was capped. Its one direct case is `NIRVANA-e27-t02`.
+4. **What the cut cost A and B.** Only Fable's page had main blocks capped. Its one direct case is `NIRVANA-e27-t02`. Older turns were unseen by all three parties, so agreement can't reveal what that cost.
 5. **Within-coder drift across batches.** Not measured.
 6. **Same-model effect in adjudication.** 25 to 13, not separable from true rule fit.
 7. **WildChat's domain.** The third check disagrees on 2 of 6, and the screen is unverified.
@@ -218,14 +246,18 @@ Coder A batch 4 listed `blind/` once, which shows folder names only. It made scr
 ## For Bet 5
 
 - Use `results/final_labels.csv`. Exclude or double-run `NIRVANA-e06-t02` `verification`.
+- Exclude or double-run `NIRVANA-e58-t10` `decision` as well. Treat `NIRVANA-e61-t07` `prior_own_work` as a likely artifact.
+- Check `D1` and `VISIBLE_DRAFT` on the 10 windows in `results/older_turns.json` before relying on them. The "no visible own work" and "writer-supplied content" indicators of section 9 are exposed to this.
 - Treat `NIRVANA-e56-t01` as weak, and mark `NIRVANA-e01-t04` as a rule-gap case.
 - Keep NIRVANA and WildChat apart, and report sessions as clusters.
 - `V2`–`V4` are absent, so section 9's "AI checks itself" indicator will be empty on final labels.
 
 ## Files
 
-`results/final_labels.csv` · `results/labels_ab.csv` · `results/adjudication_log.csv` · `results/agreement.json`, `agreement_tables.md` · `results/fable_comparison.json`, `.md` · `results/overlap_audit.json`, `overlap_facts.csv` · `results/truncation.json`, `truncation_effect.json`, `views_expanded_prior.json` · `results/access_audit.json` · `decisions.tsv` · `rule_gaps_for_v2.tsv` · `coder_brief.md`, `adjudicator_brief.md` · `scripts/` · `blind/` (git-excluded: views, coder and adjudicator notes)
+`results/final_labels.csv` · `results/labels_ab.csv` · `results/adjudication_log.csv` · `results/agreement.json`, `agreement_tables.md` · `results/fable_comparison.json`, `.md` · `results/overlap_audit.json`, `overlap_facts.csv` · `results/truncation.json`, `truncation_effect.json`, `views_expanded_prior.json`, `older_turns.json` · `results/access_audit.json` · `decisions.tsv` · `rule_gaps_for_v2.tsv` · `coder_brief.md`, `adjudicator_brief.md` · `scripts/` · `blind/` (git-excluded: views, coder and adjudicator notes)
 
 ## Gate
 
-GATE_PLACEHOLDER
+**First pass: failed, on one blocking problem.** A fresh critic with no access to my reasoning found that the report left out the 3-turn limit, and said nothing was left unread. Items 1 to 5 passed: separation (its own transcript read), completeness, rerun with identical hashes and its own κ, traceability on 800 fields, and no dataset text in commits. Report: `.wayne/bets/0005-coding-run/gate/critic_report.md`. The fixes are above, with no label changed.
+
+GATE_RECHECK
