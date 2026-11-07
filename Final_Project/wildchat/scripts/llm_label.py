@@ -52,8 +52,10 @@ def main():
     cache = load_cache(role)
     todo = [h for h in ids if h not in cache]
     print(f"{role}: {len(ids)} ids, {len(ids) - len(todo)} cached, {len(todo)} missing")
-    if "--call" not in sys.argv or not todo:
+    if not todo:
         return
+    if "--call" not in sys.argv:
+        sys.exit(f"{len(todo)} labels missing from the cache; rerun with --call to fill them (results will differ)")
     system = open(os.path.join(w7.HERE, prompt), encoding="utf-8").read()
     ver = subprocess.run(["claude", "--version"], capture_output=True, text=True).stdout.strip()
     loc = {r["hash"]: (r["shard"], r["row"]) for r in w7.read_jsonl(os.path.join(w7.BLIND, "eligible.jsonl"))}

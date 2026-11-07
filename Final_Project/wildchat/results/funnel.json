@@ -1,0 +1,317 @@
+{
+ "note": "AI judgment only. No human checked any label.",
+ "eligibility": {
+  "records": 837989,
+  "toxic": 0,
+  "non_english": 359491,
+  "under_2_user_turns": 321381,
+  "no_pair": 0,
+  "duplicate_hash": 4,
+  "duplicate_first_turn": 17377,
+  "eligible": 139736,
+  "eligible_with_contact_pattern_masked": 4014,
+  "eligible_used_before": 72,
+  "used_session_ids_found": 74,
+  "used_session_ids_matched": 72
+ },
+ "seed": {
+  "n": 1200,
+  "labels": {
+   "EXCLUDE": 1064,
+   "INCLUDE": 120,
+   "UNSURE": 16
+  },
+  "include_share": 0.1,
+  "include_ci": [
+   0.084,
+   0.118
+  ],
+  "accepted_followup_rule": 114,
+  "genre_of_include": {
+   "essay": 38,
+   "research_paper": 22,
+   "article": 17,
+   "report": 17,
+   "formal_statement": 7,
+   "proposal": 5,
+   "lit_review": 5,
+   "thesis": 5,
+   "other": 4
+  }
+ },
+ "enrich": {
+  "n": 600,
+  "labels": {
+   "INCLUDE": 384,
+   "UNSURE": 21,
+   "EXCLUDE": 195
+  }
+ },
+ "confirm": {
+  "k": 2500,
+  "already_labelled_in_seed_or_enrich": 259,
+  "labels": {
+   "INCLUDE": 2039,
+   "EXCLUDE": 422,
+   "UNSURE": 39
+  },
+  "accepted": 1975,
+  "rank_meta": {
+   "train_n": 1204,
+   "train_include": 448,
+   "confirm_k": 2500,
+   "test_n": 596,
+   "test_include": 56,
+   "test_include_in_top_k": 10,
+   "eligible": 139736
+  }
+ },
+ "pool": {
+  "labelled_unused": 4041,
+  "accepted_unused": 2236,
+  "accepted_unused_by_source": {
+   "seed": 114,
+   "enrich_only": 367,
+   "confirm_only": 1755
+  },
+  "accepted_genre": {
+   "essay": 826,
+   "research_paper": 451,
+   "report": 246,
+   "article": 194,
+   "lit_review": 169,
+   "thesis": 145,
+   "proposal": 125,
+   "formal_statement": 62,
+   "other": 18
+  },
+  "never_labelled_unused": 135623
+ },
+ "sample": {
+  "conversations": 35,
+  "windows": 151,
+  "coded": 151,
+  "coverage": {
+   "C1": 119,
+   "C0": 32
+  },
+  "turns_beyond_cap": 20,
+  "user_turns_median": 4,
+  "genre": {
+   "article": 9,
+   "essay": 8,
+   "research_paper": 8,
+   "report": 3,
+   "proposal": 3,
+   "lit_review": 2,
+   "thesis": 1,
+   "other": 1
+  }
+ },
+ "audit": {
+  "acc_random": {
+   "n": 120,
+   "include": 118,
+   "unsure": 0,
+   "exclude": 2,
+   "strict": 0.983,
+   "strict_ci": [
+    0.941,
+    0.995
+   ],
+   "lenient": 0.983,
+   "lenient_ci": [
+    0.941,
+    0.995
+   ],
+   "missing": 0
+  },
+  "selected": {
+   "n": 35,
+   "include": 32,
+   "unsure": 0,
+   "exclude": 3,
+   "strict": 0.914,
+   "strict_ci": [
+    0.776,
+    0.97
+   ],
+   "lenient": 0.914,
+   "lenient_ci": [
+    0.776,
+    0.97
+   ],
+   "missing": 0
+  },
+  "rej_confirm": {
+   "n": 100,
+   "include": 29,
+   "unsure": 0,
+   "exclude": 71,
+   "strict": 0.29,
+   "strict_ci": [
+    0.21,
+    0.385
+   ],
+   "lenient": 0.29,
+   "lenient_ci": [
+    0.21,
+    0.385
+   ],
+   "missing": 0
+  },
+  "unlabeled": {
+   "n": 150,
+   "include": 17,
+   "unsure": 1,
+   "exclude": 132,
+   "strict": 0.113,
+   "strict_ci": [
+    0.072,
+    0.174
+   ],
+   "lenient": 0.114,
+   "lenient_ci": [
+    0.072,
+    0.175
+   ],
+   "missing": 0
+  },
+  "bet4": {
+   "n": 11,
+   "include": 11,
+   "unsure": 0,
+   "exclude": 0,
+   "strict": 1.0,
+   "strict_ci": [
+    0.741,
+    1.0
+   ],
+   "lenient": 1.0,
+   "lenient_ci": [
+    0.741,
+    1.0
+   ],
+   "missing": 0
+  }
+ },
+ "recall_rough": {
+  "true_found_est": 2198,
+  "labelled_rejects": 1805,
+  "missed_in_rejects_est": 523,
+  "never_labelled": 135623,
+  "missed_unlabelled_est": 15325,
+  "recall_est": 0.122,
+  "caveat": "Reject rate measured on top-K rejects is applied to all labelled rejects; unlabelled rate rests on a small sample. Rough only.",
+  "seed_test_half_in_top_k": "10 of 56"
+ },
+ "screen_vs_audit": {
+  "n": 265,
+  "agree_pct": 88.7,
+  "kappa_3way": 0.74,
+  "table": {
+   "INCLUDE|EXCLUDE": 5,
+   "INCLUDE|INCLUDE": 166,
+   "EXCLUDE|EXCLUDE": 69,
+   "EXCLUDE|INCLUDE": 20,
+   "UNSURE|INCLUDE": 3,
+   "UNSURE|EXCLUDE": 2
+  }
+ },
+ "bet1_vs_new_on_draw": {
+  "n": 281,
+  "table": {
+   "NOT_WRITING|EXCLUDE": 143,
+   "OTHER_WRITING|EXCLUDE": 83,
+   "ACADEMIC_NOT_RESEARCH|EXCLUDE": 14,
+   "OTHER_WRITING|INCLUDE": 8,
+   "ACADEMIC_NOT_RESEARCH|INCLUDE": 7,
+   "CLEAR_RESEARCH_WRITING|INCLUDE": 6,
+   "POSSIBLE_RESEARCH_WRITING|EXCLUDE": 6,
+   "POSSIBLE_RESEARCH_WRITING|INCLUDE": 5,
+   "UNKNOWN|EXCLUDE": 3,
+   "NOT_WRITING|INCLUDE": 2,
+   "CLEAR_RESEARCH_WRITING|EXCLUDE": 2,
+   "POSSIBLE_RESEARCH_WRITING|UNSURE": 1,
+   "OTHER_WRITING|UNSURE": 1
+  }
+ },
+ "bet4_rejudge": {
+  "conversations": 11,
+  "screen": {
+   "INCLUDE": 10,
+   "EXCLUDE": 1
+  },
+  "audit": {
+   "INCLUDE": 11
+  },
+  "per_conversation": {
+   "0685972d7031": {
+    "screen": "INCLUDE",
+    "screen_genre": "lit_review",
+    "audit": "INCLUDE",
+    "audit_genre": "lit_review"
+   },
+   "0abcf1070c03": {
+    "screen": "INCLUDE",
+    "screen_genre": "thesis",
+    "audit": "INCLUDE",
+    "audit_genre": "thesis"
+   },
+   "1bcd99f673a7": {
+    "screen": "INCLUDE",
+    "screen_genre": "research_paper",
+    "audit": "INCLUDE",
+    "audit_genre": "research_paper"
+   },
+   "2d9abc984de9": {
+    "screen": "EXCLUDE",
+    "screen_genre": "short_answer",
+    "audit": "INCLUDE",
+    "audit_genre": "report"
+   },
+   "30f7e79715c8": {
+    "screen": "INCLUDE",
+    "screen_genre": "research_paper",
+    "audit": "INCLUDE",
+    "audit_genre": "research_paper"
+   },
+   "56e6d87d4326": {
+    "screen": "INCLUDE",
+    "screen_genre": "research_paper",
+    "audit": "INCLUDE",
+    "audit_genre": "research_paper"
+   },
+   "62387a055143": {
+    "screen": "INCLUDE",
+    "screen_genre": "lit_review",
+    "audit": "INCLUDE",
+    "audit_genre": "lit_review"
+   },
+   "7666be57e1d7": {
+    "screen": "INCLUDE",
+    "screen_genre": "lit_review",
+    "audit": "INCLUDE",
+    "audit_genre": "lit_review"
+   },
+   "7ce4215c67a9": {
+    "screen": "INCLUDE",
+    "screen_genre": "thesis",
+    "audit": "INCLUDE",
+    "audit_genre": "thesis"
+   },
+   "83d047d8ab0b": {
+    "screen": "INCLUDE",
+    "screen_genre": "lit_review",
+    "audit": "INCLUDE",
+    "audit_genre": "lit_review"
+   },
+   "8685d89a537b": {
+    "screen": "INCLUDE",
+    "screen_genre": "proposal",
+    "audit": "INCLUDE",
+    "audit_genre": "proposal"
+   }
+  }
+ }
+}

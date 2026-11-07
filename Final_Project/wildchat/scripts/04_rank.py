@@ -2,7 +2,7 @@
 """Rank every eligible record for formal long-form writing from keywords and embeddings. No LLM; reads cached screen labels.
 Usage: 04_rank.py enrich | confirm
  enrich:  score0 = cosine to (mean INCLUDE - mean non-INCLUDE) embedding of the TRAIN half of the seed, plus a keyword score.
-          Draws ENRICH_N records at random (key "enrich") from the top ENRICH_POOL by score0, not yet labelled. Training use only.
+          Draws ENRICH_N records at random (key "enrich") from the top ENRICH_POOL by score0, leaving out the seed. Training use only.
  confirm: logistic regression on embedding + keyword features, trained on seed-train + enrichment labels (INCLUDE = 1).
           The top CONFIRM_K unused records by score go to the LLM confirm pass (same prompt as the seed).
 The seed TEST half is never used to fit anything, so its INCLUDE records give a rough recall of the top-K cut.
@@ -74,7 +74,7 @@ def main():
         s_emb, s_kw = E @ d, kw_score(F)
         score = (s_emb - s_emb.mean()) / s_emb.std() + (s_kw - s_kw.mean()) / s_kw.std()
         score[used] = -np.inf
-        pool = [hs[i] for i in np.argsort(-score, kind="stable")[:ENRICH_POOL] if hs[i] not in lab]
+        pool = [hs[i] for i in np.argsort(-score, kind="stable")[:ENRICH_POOL] if hs[i] not in split]  # seed records were the only labels then
         chosen = sorted(pool, key=lambda h: w7.key("enrich", h))[:ENRICH_N]
         write(stage, el, score, chosen)
         print(f"train labelled {len(tr)} (INCLUDE {len(pos)}); enrichment drawn {len(chosen)} from top {ENRICH_POOL}")

@@ -1,0 +1,138 @@
+{
+ "a2b999cc6d48b0a93": {
+  "batch": "1",
+  "disallowed_paths": [],
+  "distinct_paths": 40,
+  "lookahead_counts": {
+   "0": 33
+  },
+  "requested": "opus",
+  "role": "coder_A",
+  "served": [
+   "claude-opus-5-5"
+  ],
+  "windows_lookahead_ge2": [],
+  "windows_written": 33
+ },
+ "a3f52e269c711ce47": {
+  "batch": "2",
+  "disallowed_paths": [],
+  "distinct_paths": 46,
+  "lookahead_counts": {
+   "0": 39
+  },
+  "requested": "opus",
+  "role": "coder_A",
+  "served": [
+   "claude-opus-5-5"
+  ],
+  "windows_lookahead_ge2": [],
+  "windows_written": 39
+ },
+ "a6e2d8c6df58928ba": {
+  "batch": "3",
+  "disallowed_paths": [],
+  "distinct_paths": 9,
+  "lookahead_counts": {
+   "0": 19,
+   "1": 19,
+   "2": 3
+  },
+  "requested": "sonnet",
+  "role": "coder_B",
+  "served": [
+   "claude-sonnet-5-5"
+  ],
+  "windows_lookahead_ge2": [
+   "04adc14b7dc6-t05",
+   "a656cf58e949-t01",
+   "f432a63be5a3-t01"
+  ],
+  "windows_written": 41
+ },
+ "a74fa63f059a310a6": {
+  "batch": "2",
+  "disallowed_paths": [],
+  "distinct_paths": 47,
+  "lookahead_counts": {
+   "0": 39
+  },
+  "requested": "sonnet",
+  "role": "coder_B",
+  "served": [
+   "claude-sonnet-5-5"
+  ],
+  "windows_lookahead_ge2": [],
+  "windows_written": 39
+ },
+ "a77c86eee8f3a7a22": {
+  "batch": "0",
+  "disallowed_paths": [],
+  "distinct_paths": 42,
+  "lookahead_counts": {
+   "0": 35
+  },
+  "requested": "opus",
+  "role": "coder_A",
+  "served": [
+   "claude-opus-5-5"
+  ],
+  "windows_lookahead_ge2": [],
+  "windows_written": 35
+ },
+ "ab35bba7dcb2cd273": {
+  "batch": "0",
+  "disallowed_paths": [],
+  "distinct_paths": 14,
+  "requested": "opus",
+  "role": "adjudicator",
+  "served": [
+   "claude-opus-5-5"
+  ]
+ },
+ "ab6eb56d1e8662114": {
+  "batch": "0",
+  "disallowed_paths": [],
+  "distinct_paths": 42,
+  "lookahead_counts": {
+   "0": 35
+  },
+  "requested": "sonnet",
+  "role": "coder_B",
+  "served": [
+   "claude-sonnet-5-5"
+  ],
+  "windows_lookahead_ge2": [],
+  "windows_written": 35
+ },
+ "abfc0943fc496bafb": {
+  "batch": "1",
+  "disallowed_paths": [],
+  "distinct_paths": 9,
+  "lookahead_counts": {
+   "0": 33
+  },
+  "requested": "sonnet",
+  "role": "coder_B",
+  "served": [
+   "claude-sonnet-5-5"
+  ],
+  "windows_lookahead_ge2": [],
+  "windows_written": 33
+ },
+ "afeb912225d0336b5": {
+  "batch": "3",
+  "disallowed_paths": [],
+  "distinct_paths": 51,
+  "lookahead_counts": {
+   "0": 44
+  },
+  "requested": "opus",
+  "role": "coder_A",
+  "served": [
+   "claude-opus-5-5"
+  ],
+  "windows_lookahead_ge2": [],
+  "windows_written": 44
+ }
+}

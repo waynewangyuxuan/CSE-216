@@ -1,0 +1,8 @@
+id	rule	gap	effect here	source
+G1	s2 prior_own_work	No line between a title, one-line premise or project details in the request (VISIBLE_PARTIAL?) and the request itself (UNOBSERVABLE); "a few full sentences" floor for VISIBLE_DRAFT unset	11 UNSETTLED; prior_own_work has the lowest A-B kappa	adjudicator report; results/adjudication_log_wildchat.csv
+G2	s2 domain	OTHER_WRITING undefined, so it cannot be told from DOMAIN_UNKNOWN when no purpose is stated; school-like tasks with no stated course fall between ACADEMIC_STATED and DOMAIN_UNKNOWN	5 UNSETTLED	adjudicator report; coder reports
+G3	s7 U4 vs U8	"Sending input that was missing" vs "next item of a batch"; next turn working down an AI-made list or series	2 UNSETTLED; the most named hard rule by all 8 coders	adjudicator and coder reports
+G4	s4 object	No entry for a term or concept being defined (IDEA vs OTHER)	1 UNSETTLED	adjudicator report
+G5	s5 step 2	A writer's text reworded by the AI, then the AI's version reworked again: "earlier AI turn" (AI-origin) vs "rewording of writer's claims" (D1)	Settled D1 by first origin; a call, not a rule	adjudicator and coder reports
+G6	s3 O10 vs content codes	"Write the X section" as O10 or O01/O07/O09	Settled O10; a call	adjudicator and coder reports
+G7	s6 V0 vs V1	A resend with new length or style constraints that does not refer to the output	Settled V0 unless the turn refers to the output; a call	adjudicator and coder reports
