@@ -8,7 +8,7 @@ Numbers come from `scripts/run_all.sh`, which replays saved labels and calls no 
 
 - **All 100 windows are coded** by Coders A and B, with final labels. 99 windows have a final code in every field. 1 field stays `UNSETTLED`.
 - **The coders agree closely.** `decision` κ 0.94, `verification` 0.82, `uptake` 0.92.
-- **No stop condition was hit.** The lowest Q3–Q5 κ between coders is 0.66 (`verification` on C1). Against Fable, the lowest is 0.81 for final labels and 0.75 for a single coder (B on `uptake`), or 0.71 on follow-up windows.
+- **No stop condition was hit.** The lowest Q3–Q5 κ between coders is 0.66 (`verification` on C1). Against Fable on all 20 windows, the lowest is 0.81 for final labels (0.78 on follow-ups) and 0.75 for a single coder (B on `uptake`), or 0.71 on follow-up windows.
 - **Coders saw only the last 3 earlier turns.** 18 windows have older turns nobody read, and 10 of those reuse text from an unseen AI response. Fable shared this limit, so all three can miss the same thing. One ruling is affected (`NIRVANA-e58-t10`).
 - **Truncation mattered on one gold window.** The standard page hid a paste on `NIRVANA-e27-t02`. Fable coded it `U7`, and both coders, with full text, coded `U3`.
 - **Checks are nearly absent.** Final labels hold 0 `V2`, 0 `V3`, 0 `V4`. So κ on `verification` says nothing about grading the grounds of a check.
@@ -59,11 +59,11 @@ The 31 cut blocks on the gold page are the 1 next-action block plus 30 earlier-t
 | `NIRVANA-e58-t09` | 0.07 / 0.07 | D3, VISIBLE_DRAFT |
 | `NIRVANA-e58-t08` | 0.00 / 0.06 | D0, VISIBLE_DRAFT |
 
-- **`NIRVANA-e58-t10` `decision` is undercut.** The adjudicator ruled D1 because the view did not show most of the essay coming from the AI. The script finds over half of it in unseen turns alone, and the critic's whole-session test found 98% of the request and all of the editor in earlier AI turns. The label stays D1, since coders and adjudicator ruled on what they could see. Bet 5 should exclude it or run both readings.
+- **`NIRVANA-e58-t10` `decision` is undercut.** The adjudicator ruled D1 because the view did not show most of the essay coming from the AI, and because the writer did not ask for a rework. The script finds over half of it in unseen turns alone, and the first critic's own whole-session test, which has no script in this folder, found 98% of the request and all of the editor in earlier AI turns. The label stays D1, since coders and adjudicator ruled on what they could see. Bet 5 should exclude it or run both readings.
 - **`NIRVANA-e61-t07` `prior_own_work` looks like an artifact.** It is NONE_VISIBLE, while `-t05` and `-t06` were ruled VISIBLE_PARTIAL on a stance in a turn that has dropped out of view.
-- **`VISIBLE_DRAFT` on these windows may overcount own work.** It needs the same care in Bet 5.
+- **`VISIBLE_DRAFT` may overcount own work, on these windows and beyond.** On `NIRVANA-e58-t09` most reuse sat in turns the coders were shown. So the list of 10 may not catch every such window.
 
-**Effect.** 7 windows could hide uptake evidence under the cap. Coders agreed on all 8 cut next-action windows.
+**Effect of the 8,000-character cap on main blocks.** 7 windows could hide uptake evidence under it. Coders agreed on all 8 cut next-action windows.
 
 | Window | Cut, of total | Matching text in the capped view, of full | `uptake` A, B, final |
 |---|---|---|---|
@@ -155,7 +155,7 @@ A, B and per-dataset counts are in `results/agreement_tables.md`. The sample is 
 - **`NIRVANA-e06-t02` `verification` is `UNSETTLED`** (A `V2`, B `V0`). v1.1 doesn't say if handing a criterion to the AI, with no failing stated, is `V2` or `V3`. Bet 5 should leave it out or run both readings.
 - **25 to 13 favours A, the adjudicator's own requested model.** Labels were shown as first and second with a seeded flip, and identity was never shown. That doesn't rule out a same-model preference. By field the split is uneven: `prior_own_work` 7 to 1, `object` 1 to 4.
 - **Position may have mattered too.** The second-shown label won 24 times, the first 14. With 38 rulings this can't be told from chance or from rule fit.
-- **`NIRVANA-e06-t02` was not settled, though priority settled similar calls.** The adjudicator used s6 priority on `NIRVANA-e41-t02` to `t04`, and left this one open because the rule gap is on whether `V3` applies at all. So "0 `V2`, 0 `V3`" in final labels leaves this one window out; its two coders gave `V2` and `V0`, and the adjudicator considered `V3`.
+- **`NIRVANA-e06-t02` was not settled, though priority settled similar calls.** The adjudicator used s6 priority on `NIRVANA-e41-t02` to `t04`, and left this one open because the rule gap is on whether `V3` applies at all. So "0 `V2`, 0 `V3`" in final labels leaves this one window out; its two coders gave `V2` and `V0`. The adjudicator ruled `V0` out and left `V2` vs `V3` open.
 - **`NIRVANA-e56-t01` was ruled, although `rule_gaps_for_v2.tsv` G03 says no rule covers a short paste.** Read that ruling as a call, not as an application of a settled rule.
 - **Every final label traces** to A=B or a row in `results/adjudication_log.csv`. Free-text reasons stay in the git-excluded `blind/`.
 - **v1.1 did not change.** Gaps are in `rule_gaps_for_v2.tsv`.
@@ -260,4 +260,6 @@ Coder A batch 4 listed `blind/` once, which shows folder names only. It made scr
 
 **First pass: failed, on one blocking problem.** A fresh critic with no access to my reasoning found that the report left out the 3-turn limit, and said nothing was left unread. Items 1 to 5 passed: separation (its own transcript read), completeness, rerun with identical hashes and its own κ, traceability on 800 fields, and no dataset text in commits. Report: `.wayne/bets/0005-coding-run/gate/critic_report.md`. The fixes are above, with no label changed.
 
-GATE_RECHECK
+**Recheck: passed, with 0 blocking problems.** A second fresh critic reproduced the 18 and 10 window sets with its own script, confirmed the new claims and numbers, got identical hashes on rerun, and confirmed that `final_labels.csv` and `labels_ab.csv` did not change since `c0d8944`. Report: `.wayne/bets/0005-coding-run/gate/critic_recheck.md`.
+
+**One limit.** After the recheck I made small wording fixes from its minor list, in this report and two log files. No critic rechecked those. No label or number changed.

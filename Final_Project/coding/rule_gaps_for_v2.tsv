@@ -5,7 +5,7 @@ G03	s5 D4 and s7	The 30-character run appears only in D4. No rule says if a shor
 G04	s7 U3 "added beside"	No rule on how near typed claims must be to pasted text. Text pasted whole and kept, with new typing after it, reads as U1 or U3	NIRVANA-e01-t04 (A, B U3; Fable U1)	Log for v2.0
 G05	s7 U4 vs U8	A next turn on the same topic that does not point at this output, and a resent request changed in scope. 5 of 6 uptake disagreements	NIRVANA-e46-t01, NIRVANA-e75-t02, WILDCHAT-2d9abc984de9-t01, WILDCHAT-7666be57e1d7-t02, WILDCHAT-8685d89a537b-t02	Log for v2.0
 G06	s2 prior_own_work	VISIBLE_PARTIAL has no floor: a title, one line or a stance under a persona. 7 of 8 disagreements are at this boundary	NIRVANA-e05-t02, NIRVANA-e61-t05, NIRVANA-e61-t06, NIRVANA-e63-t01, WILDCHAT-62387a055143-t01 to t03	Log for v2.0
-G07	s5 step 2	Supplied text that is partly earlier AI output, when the request is not an explicit rework	NIRVANA-e58-t10	Log for v2.0
+G07	s5 step 2	Supplied text that is partly earlier AI output, when the request is not an explicit rework. Here the view limit also hid most of the earlier AI turns (REPORT.md)	NIRVANA-e58-t10	Log for v2.0
 G08	s4 function and object	No function for a plain open question of fact. No object for a term being explained. Object codes are not defined one by one	NIRVANA-e20-t02	Log for v2.0
 G09	s3 and s8 E7	An open question asking for one named perspective, argument or ideation	NIRVANA-e24-t02, NIRVANA-e24-t03	Log for v2.0
 G10	s5 D0 and E14	E14 treats an advice-only response as a decision in play, while D0 excludes explanations with no claim for the writing	WILDCHAT-7ce4215c67a9-t01	Log for v2.0
