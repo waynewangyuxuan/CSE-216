@@ -15,6 +15,8 @@ Outputs
   typed_chars, pasted_chars   characters added to the editor by typing and by paste before the next request
   deleted_chars               characters deleted from the editor before the next request
   copies_from_ai              copy operations in the chat pane before the next request
+  editor_chars_before         length of the editor text when the request was sent (the writer's draft so far)
+  editor_chars_after          length of the editor text just before the next request (or at the log's end)
 - derived/outcome_nirvana.csv, one row per essay: the dataset's own final-essay measures (User Final %, GPT Final %,
   GPT Paste, User Add, Total Words, Total Time, GPT Inquiry, Perceived Ownership, Self Efficacy Score).
 - derived/timing_wildchat.csv, one row per WildChat window (151). The release stamps only AI turns, so the one
@@ -83,6 +85,8 @@ def nirvana():
                 "pasted_chars": sum(len(a["add"] or a["selected_text"]) for a in ed if a["op_type"] == "p"),
                 "deleted_chars": sum(len(a["delete"]) for a in ed if a["op_type"] in ("d", "d_i", "x")),
                 "copies_from_ai": sum(a["op_loc"] == "gpt" and a["op_type"] == "y" for a in acts),
+                "editor_chars_before": len(w["editor_before_request"] or ""),
+                "editor_chars_after": len(w["editor_after_next_actions"] or ""),
             })
     write("timing_nirvana.csv", rows)
     pr = list(wb["Participants"].iter_rows(values_only=True))
