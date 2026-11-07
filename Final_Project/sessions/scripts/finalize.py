@@ -34,12 +34,18 @@ def rulings():
             key = (r["window_id"], r["field"])
             assert key not in adj, key
             adj[key] = r
-    return adj
+    redo = {}
+    for p in sorted(glob.glob(os.path.join(s6.BLIND, "adjudication", "rerun_*.jsonl"))):  # decisions.tsv S08
+        for r in s6.load_jsonl(p):
+            key = (r["window_id"], r["field"])
+            assert key in adj and key not in redo, key
+            redo[key] = r
+    return adj, redo
 
 
 def main():
     A, B, m, ws, b4 = read_coder("a"), read_coder("b"), s6.meta(), window_set(), s6.bet4_final()
-    adj, fx = rulings(), script_facts()
+    (adj, redo), fx = rulings(), script_facts()
     flips = json.load(open(os.path.join(s6.BLIND, "adjudication", "flips.json")))
     cols = ["window_id", "dataset", "session_id", "turn_order", "part", "coverage", "source"] + CODED + ["process", "family", "u4_subtype"] + [f + "_source" for f in CODED] + ["bet4_" + f for f in CODED]
     log, final, errs = [], {}, 0
@@ -56,6 +62,11 @@ def main():
                 r[f], r[f + "_source"] = A[i][f], "A=B"
                 continue
             a = adj.get((i, f))
+            if (i, f) in redo:
+                o = a
+                log.append({"window_id": i, "set": ws[i], "field": f, "label_a": A[i][f], "label_b": B[i][f], "final": o["final"] if o["settled"] is True else UNSET,
+                            "source": "superseded_S08", "settled": int(o["settled"] is True), "rule": re.sub(r"\s+", " ", o.get("rule", ""))[:60], "shown_order": flips[i]})
+                a = redo[(i, f)]
             if not a:
                 print("PROBLEM no ruling", i, f)
                 errs += 1
@@ -85,7 +96,7 @@ def main():
             for p in check_labels.problems(r):
                 print("PROBLEM final rule check", i, p)
                 errs += 1
-    extra = set(adj) - {(l["window_id"], l["field"]) for l in log if l["source"] != "script_s7"}
+    extra = set(adj) - {(l["window_id"], l["field"]) for l in log if l["source"] not in ("script_s7", "superseded_S08")}
     if extra:
         print("PROBLEM rulings on fields not in dispute:", sorted(extra))
         errs += 1

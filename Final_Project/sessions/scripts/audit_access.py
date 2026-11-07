@@ -30,25 +30,28 @@ def audit(path, idx):
     meta = json.load(open(path.replace(".jsonl", ".meta.json")))
     prompt = texts(next(r for r in rows if r.get("type") == "user")["message"]["content"])[0]
     m = re.search(r"Coder ([AB]) for Bet 6, batch (\d+)", prompt)
-    a = re.search(r"adjudicator for Bet 6, packet (\d+)", prompt)
+    a = re.search(r"adjudicator for Bet 6, packet (\w+)\.", prompt)
     if not (m or a):
         return None
     role = f"coder_{m.group(1).lower()}" if m else "adjudicator"
-    batch = int(m.group(2)) if m else int(a.group(1))
-    uses, served, seen = [], collections.Counter(), []
+    batch = int(m.group(2)) if m else a.group(1)
+    uses, served, seen, result = [], collections.Counter(), [], {}
     for r in rows:
         msg = r.get("message") or {}
         if r.get("type") == "assistant":
             served[msg.get("model")] += 1
             for x in msg.get("content") or []:
                 if isinstance(x, dict) and x.get("type") == "tool_use":
-                    uses.append((x["name"], x["input"]))
+                    uses.append((x["name"], x["input"], x["id"]))
         if r.get("type") == "user":
             seen += texts(msg.get("content"))
+            for x in msg.get("content") or [] if isinstance(msg.get("content"), list) else []:
+                if isinstance(x, dict) and x.get("type") == "tool_result":
+                    result[x.get("tool_use_id")] = "\n".join(texts(x.get("content")))
     viol, reads, writes_lab, listing = collections.Counter(), [], [], []
     other = {"coder_a": "coder_b", "coder_b": "coder_a"}.get(role)
     events = []  # (step, kind, window)
-    for n, (name, inp) in enumerate(uses):
+    for n, (name, inp, uid) in enumerate(uses):
         if name == "Read":
             target = inp.get("file_path", "")
             reads.append(target.replace("/Users/wang/CSE-216/", ""))
@@ -58,9 +61,9 @@ def audit(path, idx):
         elif name == "Bash":
             cmd = inp.get("command", "")
             target = cmd.split("<<")[0]
-            if re.search(r"add_label\.py|add_ruling\.py", target):
-                body = cmd.split("<<", 1)[1] if "<<" in cmd else ""
-                for w in re.findall(r'"window_id"\s*:\s*"(NIRVANA-\w+-t\d+)"', body):
+            if re.search(r"add_label\.py|add_ruling\.py", cmd):
+                # a label counts as written only when the gate printed ok for that window (failed calls write nothing)
+                for w in re.findall(r"^ok (NIRVANA-\w+-t\d+)", result.get(uid, ""), re.M):
                     events.append((n, "label", w))
             for d in re.findall(r"(?:^|[;&|]\s*|\bcd\s+\S+\s*;\s*)((?:ls|find|tree|grep|rg)\b[^;&|]*)", target):
                 listing.append(re.sub(r"\s+", " ", d).strip())
@@ -106,7 +109,7 @@ def audit(path, idx):
         elif later and min(later) < labeled[w]:
             order_bad.append(f"{w}: later part read before label")
     res = {"role": role, "batch": batch, "model_requested": meta.get("model"), "model_served": {k: v for k, v in served.items() if k and k != "<synthetic>"},
-           "tool_uses": dict(collections.Counter(n for n, _ in uses)), "violations": dict(viol), "writes_to_label_files": writes_lab, "listing_or_search": listing,
+           "tool_uses": dict(collections.Counter(u[0] for u in uses)), "violations": dict(viol), "writes_to_label_files": writes_lab, "listing_or_search": listing,
            "other_reads": sorted(set(r for r in reads if not PART.search(r))), "order_problems": order_bad, "targets": len(targets), "labels_seen": len([w for w in targets if w in labeled])}
     want_parts = [w for w in targets] if role != "adjudicator" else sorted({p for l in pk for p in l["read_first"]})
     lines_seen = set()
@@ -126,7 +129,10 @@ def audit(path, idx):
 def main():
     idx = json.load(open(os.path.join(s6.BLIND, "index.json")))
     out = [r for r in (audit(p, idx) for p in sorted(glob.glob(os.path.join(sys.argv[1], "*.jsonl")))) if r]
-    out.sort(key=lambda r: (r["role"], r["batch"]))
+    out.sort(key=lambda r: (r["role"], str(r["batch"]).zfill(3)))
+    redone = {x["window_id"] for p in glob.glob(os.path.join(s6.BLIND, "adjudication", "rerun_*.jsonl")) for x in s6.load_jsonl(p)}
+    for r in out:  # decisions.tsv S08: an adjudicator breach is redone by a fresh agent; a coder breach would need a recode
+        r["order_problems_redone_S08"] = [o for o in r["order_problems"] if r["role"] == "adjudicator" and o.split(":")[0] in redone]
     json.dump(out, open(os.path.join(s6.OUT, "access_audit.json"), "w"), indent=1, sort_keys=True)
     for r in out:
         print(r["role"], r["batch"], "served", r["model_served"], "viol", r["violations"], "writes", len(r["writes_to_label_files"]), "list", len(r["listing_or_search"]),

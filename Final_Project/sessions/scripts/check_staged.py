@@ -2,9 +2,12 @@
 """Stop dataset text from being committed (Bet 4's check, for sessions/). Run after `git add`, before `git commit`. Prints counts and paths only.
 Fails if a staged file is outside Final_Project/sessions/, is under blind/, holds a free-text note column, or shares a 40-character run
 (whitespace collapsed, lowercased) with any text of any NIRVANA window. Usage: check_staged.py [--all-tracked]"""
-import subprocess, sys
+import importlib.util, os, subprocess, sys
 import s6
-from check_staged import BAN, grams      # coding/scripts, Bet 4
+_spec = importlib.util.spec_from_file_location("bet4_check_staged", os.path.join(s6.CODING, "scripts", "check_staged.py"))
+_b4 = importlib.util.module_from_spec(_spec)
+_spec.loader.exec_module(_b4)
+BAN, grams = _b4.BAN, _b4.grams          # Bet 4's banned columns and 40-character runs
 from views import _actions_text, editor_text, load_windows
 
 

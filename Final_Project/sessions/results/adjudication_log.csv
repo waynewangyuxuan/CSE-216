@@ -1,0 +1,226 @@
+window_id,set,field,label_a,label_b,final,source,settled,rule,shown_order
+NIRVANA-e01-t01,new,uptake,U8_MOVED_ON,U4_CHAT_ITERATE,U8_MOVED_ON,adj=A,1,s7 U8; s6 (checking own essay is a new request),first=A
+NIRVANA-e01-t05,new,function,F8_PROCEDURAL,F5_TRANSFORM,F5_TRANSFORM,adj=B,1,s4 F5_TRANSFORM (proofread); s3 O14,first=B
+NIRVANA-e03-t02,new,uptake,U4_CHAT_ITERATE,U8_MOVED_ON,U8_MOVED_ON,adj=B,1,s7 U8; s6 check of writer's own essay is a new request,first=A
+NIRVANA-e03-t03,new,decision,D2_AI_PROPOSED_OPEN,D3_HUMAN_CHOSE_REVISED,D2_AI_PROPOSED_OPEN,adj=A,1,"s5 D2 (typed echo), s5 never infer adoption from similarity;",first=A
+NIRVANA-e04-t01,new,prior_own_work,VISIBLE_PARTIAL,NONE_VISIBLE,VISIBLE_PARTIAL,adj=A,1,s2 prior_own_work VISIBLE_PARTIAL,first=B
+NIRVANA-e04-t02,new,verification,V1_SURFACE_ONLY,V0_NONE_VISIBLE,V1_SURFACE_ONLY,adj=A,1,s6 V1; s8 E2,first=A
+NIRVANA-e04-t03,new,prior_own_work,VISIBLE_PARTIAL,VISIBLE_DRAFT,VISIBLE_PARTIAL,adj=A,1,s2 prior_own_work VISIBLE_PARTIAL; text pasted from the AI i,first=A
+NIRVANA-e04-t04,new,verification,V1_SURFACE_ONLY,V0_NONE_VISIBLE,V1_SURFACE_ONLY,adj=A,1,s6 V1; s6 priority V1 > V0,first=B
+NIRVANA-e04-t05,new,object,ARGUMENT,PROSE,ARGUMENT,adj=A,1,s4 object ARGUMENT,first=B
+NIRVANA-e04-t05,new,decision,D2_AI_PROPOSED_OPEN,D0_NO_DECISION,D0_NO_DECISION,adj=B,1,s5 step 1; s5 D0,first=B
+NIRVANA-e04-t07,new,verification,V1_SURFACE_ONLY,V0_NONE_VISIBLE,V0_NONE_VISIBLE,adj=B,1,s6 V0; s6 V1 does not count edits to the writer's own text,first=B
+NIRVANA-e04-t08,new,decision,D2_AI_PROPOSED_OPEN,D1_HUMAN_GIVEN,D2_AI_PROPOSED_OPEN,adj=A,1,s5 step 2 (what is selected or concluded is new); s5 D2,first=A
+NIRVANA-e04-t09,new,operation,O03,O13,O13,adj=B,1,s3 O03 boundary (reordering an existing draft is O13); s3 O1,first=A
+NIRVANA-e04-t09,new,function,F6_CRITIQUE,F3_PLAN,F6_CRITIQUE,adj=A,1,s4 code what the writer asks for; s4 F6,first=A
+NIRVANA-e04-t10,new,object,ARGUMENT,PROSE,ARGUMENT,adj=A,1,s4 object ARGUMENT,first=A
+NIRVANA-e04-t10,new,decision,D2_AI_PROPOSED_OPEN,D0_NO_DECISION,D0_NO_DECISION,adj=B,1,s5 step 1; s5 D0,first=A
+NIRVANA-e04-t12,new,decision,D3_HUMAN_CHOSE_REVISED,D2_AI_PROPOSED_OPEN,D3_HUMAN_CHOSE_REVISED,adj=A,1,s5 D3 (explicitly selects or rejects); s8 E14,first=B
+NIRVANA-e04-t15,new,verification,V1_SURFACE_ONLY,V0_NONE_VISIBLE,V1_SURFACE_ONLY,adj=A,1,s6 V1; s6 priority V1 > V0,first=A
+NIRVANA-e04-t15,new,uptake,U2_EDITOR_SURFACE,U3_EDITOR_SUBSTANTIVE,U3_EDITOR_SUBSTANTIVE,adj=B,1,s7 U3 (claims replaced or added beside it),first=A
+NIRVANA-e04-t16,new,verification,V1_SURFACE_ONLY,V0_NONE_VISIBLE,UNSETTLED,UNSETTLED,0,"s6 V1 'only for grammar, tone or format'; s6 V3 boundary (si",first=B
+NIRVANA-e04-t18,new,object,ARGUMENT,PROSE,ARGUMENT,adj=A,1,s4 object ARGUMENT,first=B
+NIRVANA-e04-t19,new,object,ARGUMENT,PROSE,ARGUMENT,adj=A,1,s4 object ARGUMENT,first=B
+NIRVANA-e04-t19,new,decision,D2_AI_PROPOSED_OPEN,D0_NO_DECISION,D0_NO_DECISION,adj=B,1,s5 step 1; s5 D0,first=B
+NIRVANA-e04-t20,new,function,F1_EXPLAIN,FX_OTHER,FX_OTHER,adj=B,1,s4 code what the writer asks for; s4 FX_OTHER,first=B
+NIRVANA-e04-t21,new,operation,O10,O03,O10,adj=A,1,s3 dominant requested deliverable; s3 O10; s8 E14,first=B
+NIRVANA-e04-t21,new,function,F4_GENERATE,F3_PLAN,F4_GENERATE,adj=A,1,s4 code what the writer asks for; s4 F4; s8 E14,first=B
+NIRVANA-e04-t21,new,object,PROSE,STRUCTURE,PROSE,adj=A,1,s4 object; s8 E14,first=B
+NIRVANA-e04-t21,new,decision,D3_HUMAN_CHOSE_REVISED,D2_AI_PROPOSED_OPEN,D3_HUMAN_CHOSE_REVISED,adj=A,1,s5 D3 (explicitly selects or rejects); s8 E14,first=B
+NIRVANA-e04-t23,new,decision,D2_AI_PROPOSED_OPEN,D0_NO_DECISION,D0_NO_DECISION,adj=B,1,s5 step 1; s5 D0,first=A
+NIRVANA-e06-t05,new,decision,D2_AI_PROPOSED_OPEN,D0_NO_DECISION,D0_NO_DECISION,adj=B,1,s5 step 1; s5 D0_NO_DECISION,first=A
+NIRVANA-e06-t08,new,verification,V2_AI_SELF_CHECK,V0_NONE_VISIBLE,V0_NONE_VISIBLE,adj=B,1,s6 V0; s7 U4 (repairs the same request); s8 E12,first=B
+NIRVANA-e06-t09,new,decision,D2_AI_PROPOSED_OPEN,D0_NO_DECISION,D0_NO_DECISION,adj=B,1,s5 step 1; s5 D0_NO_DECISION,first=B
+NIRVANA-e06-t09,new,uptake,U8_MOVED_ON,UX_NO_TRACE,UX_NO_TRACE,adj=B,1,"s7 U8 (evidence: chat, needs a next turn); s7 UX; 'UX is not",first=B
+NIRVANA-e07-t01,new,function,F4_GENERATE,F2_OPTIONS,F4_GENERATE,adj=A,1,s4 F2_OPTIONS vs F4_GENERATE,first=B
+NIRVANA-e10-t01,new,operation,O09,O10,O09,superseded_S08,1,s3 O09; s3 O10 boundary,first=B
+NIRVANA-e10-t01,new,operation,O09,O10,O09,adj=A,1,s3 O09; O09/O10 boundary,first=B
+NIRVANA-e10-t01,new,object,ARGUMENT,PROSE,ARGUMENT,superseded_S08,1,s4 object,first=B
+NIRVANA-e10-t01,new,object,ARGUMENT,PROSE,ARGUMENT,adj=A,1,s4 object; consistent with s3 O09,first=B
+NIRVANA-e10-t01,new,verification,V1_SURFACE_ONLY,V0_NONE_VISIBLE,V0_NONE_VISIBLE,superseded_S08,1,s6 priority note on paste seam,first=B
+NIRVANA-e10-t01,new,verification,V1_SURFACE_ONLY,V0_NONE_VISIBLE,V0_NONE_VISIBLE,adj=B,1,s6 seam rule; s6 V0; consistency with s7 U1,first=B
+NIRVANA-e10-t01,new,uptake,U2_EDITOR_SURFACE,U1_EDITOR_DIRECT,U1_EDITOR_DIRECT,superseded_S08,1,s7 U1; s7 script audit 99.5%,first=B
+NIRVANA-e10-t01,new,uptake,U2_EDITOR_SURFACE,U1_EDITOR_DIRECT,U1_EDITOR_DIRECT,adj=B,1,s7 U1 seam clause; s7 script audit 99.5% threshold,first=B
+NIRVANA-e10-t02,new,prior_own_work,NONE_VISIBLE,VISIBLE_DRAFT,NONE_VISIBLE,adj=A,1,s2 prior_own_work,first=B
+NIRVANA-e10-t02,new,operation,O09,O07,O07,adj=B,1,"s3 O05 boundary, O07; s8 E8",first=B
+NIRVANA-e10-t02,new,function,F4_GENERATE,F1_EXPLAIN,F1_EXPLAIN,adj=B,1,s4 F1 vs F4,first=B
+NIRVANA-e10-t02,new,uptake,U1_EDITOR_DIRECT,U2_EDITOR_SURFACE,U1_EDITOR_DIRECT,adj=A,1,s7 U1; s7 script audit 99.5%,first=B
+NIRVANA-e10-t02,new,uptake,U1_EDITOR_DIRECT,U2_EDITOR_SURFACE,U2_EDITOR_SURFACE,script_s7,1,"s7 script audit, kept 0.97",
+NIRVANA-e13-t01,new,operation,O02,O09,O02,superseded_S08,1,s3 O02; s8 E7,first=A
+NIRVANA-e13-t01,new,operation,O02,O09,O02,adj=A,1,s3 O02; s8 E7,first=A
+NIRVANA-e13-t01,new,function,F2_OPTIONS,F4_GENERATE,F2_OPTIONS,superseded_S08,1,s4 F2_OPTIONS; s8 E7,first=A
+NIRVANA-e13-t01,new,function,F2_OPTIONS,F4_GENERATE,F2_OPTIONS,adj=A,1,s4 F2_OPTIONS; s8 E7,first=A
+NIRVANA-e13-t01,new,object,IDEA,ARGUMENT,IDEA,superseded_S08,1,s4 object; s8 E7,first=A
+NIRVANA-e13-t01,new,object,IDEA,ARGUMENT,IDEA,adj=A,1,s4 object; s8 E7,first=A
+NIRVANA-e13-t02,new,operation,O07,O09,UNSETTLED,UNSETTLED,0,s3 O07 vs O09,first=B
+NIRVANA-e13-t02,new,function,F1_EXPLAIN,F4_GENERATE,F1_EXPLAIN,adj=A,1,s4 code what is asked; F1_EXPLAIN,first=B
+NIRVANA-e14-t01,new,decision,D0_NO_DECISION,D2_AI_PROPOSED_OPEN,D0_NO_DECISION,adj=A,1,s5 step 1; D0_NO_DECISION (explanation of a task),first=B
+NIRVANA-e15-t02,new,prior_own_work,VISIBLE_PARTIAL,VISIBLE_DRAFT,VISIBLE_DRAFT,adj=B,1,s2 prior_own_work VISIBLE_DRAFT,first=B
+NIRVANA-e18-t01,new,verification,V1_SURFACE_ONLY,V0_NONE_VISIBLE,V0_NONE_VISIBLE,adj=B,1,"s6 V1, V0",first=A
+NIRVANA-e18-t01,new,uptake,U2_EDITOR_SURFACE,U1_EDITOR_DIRECT,U1_EDITOR_DIRECT,adj=B,1,s7 U1; s7 script audit 99.5%,first=A
+NIRVANA-e19-t01,new,decision,D4_AI_PROPOSAL_TAKEN,D3_HUMAN_CHOSE_REVISED,UNSETTLED,UNSETTLED,0,s5 D3 vs D4; s7 U3 beside it,first=A
+NIRVANA-e19-t01,new,uptake,U1_EDITOR_DIRECT,U3_EDITOR_SUBSTANTIVE,UNSETTLED,UNSETTLED,0,s7 U1 vs U3 beside it,first=A
+NIRVANA-e19-t05,new,decision,D3_HUMAN_CHOSE_REVISED,D2_AI_PROPOSED_OPEN,D3_HUMAN_CHOSE_REVISED,adj=A,1,s5 D3 pastes then changes claims,first=B
+NIRVANA-e19-t05,new,uptake,U3_EDITOR_SUBSTANTIVE,U7_EDITOR_NEW_TEXT,U3_EDITOR_SUBSTANTIVE,adj=A,1,s7 U3 claims replaced; U7 no verbatim run,first=B
+NIRVANA-e20-t07,new,operation,O12,O10,O12,adj=A,1,s3 O12 vs O10 boundary,first=B
+NIRVANA-e22-t01,new,prior_own_work,VISIBLE_DRAFT,VISIBLE_PARTIAL,VISIBLE_PARTIAL,adj=B,1,s2 prior_own_work VISIBLE_DRAFT vs VISIBLE_PARTIAL,first=B
+NIRVANA-e25-t02,new,decision,D2_AI_PROPOSED_OPEN,D1_HUMAN_GIVEN,D2_AI_PROPOSED_OPEN,adj=A,1,s5 step 2; s5 D1 row,first=B
+NIRVANA-e25-t03,new,decision,D4_AI_PROPOSAL_TAKEN,D1_HUMAN_GIVEN,D4_AI_PROPOSAL_TAKEN,adj=A,1,s5 step 2 (earlier AI turn); s2 pasted AI text not own work;,first=B
+NIRVANA-e25-t03,new,verification,V1_SURFACE_ONLY,V0_NONE_VISIBLE,V1_SURFACE_ONLY,adj=A,1,s6 V1; s6 priority,first=B
+NIRVANA-e25-t03,new,uptake,U2_EDITOR_SURFACE,U1_EDITOR_DIRECT,U2_EDITOR_SURFACE,adj=A,1,s7 U2; s7 script audit,first=B
+NIRVANA-e25-t04,new,prior_own_work,VISIBLE_PARTIAL,VISIBLE_DRAFT,VISIBLE_PARTIAL,adj=A,1,s2 prior_own_work; s2 pasted AI text not own work,first=B
+NIRVANA-e25-t04,new,decision,D2_AI_PROPOSED_OPEN,D1_HUMAN_GIVEN,D2_AI_PROPOSED_OPEN,adj=A,1,s5 step 2; s5 D1 row,first=B
+NIRVANA-e25-t05,new,prior_own_work,VISIBLE_PARTIAL,VISIBLE_DRAFT,VISIBLE_PARTIAL,adj=A,1,s2 prior_own_work; s2 pasted AI text not own work,first=B
+NIRVANA-e25-t05,new,uptake,U2_EDITOR_SURFACE,U2_EDITOR_SURFACE,U1_EDITOR_DIRECT,script_s7,1,"s7 script audit, kept 1.0",
+NIRVANA-e25-t06,new,prior_own_work,VISIBLE_PARTIAL,VISIBLE_DRAFT,VISIBLE_PARTIAL,adj=A,1,s2 prior_own_work; s2 pasted AI text not own work,first=A
+NIRVANA-e25-t06,new,uptake,U7_EDITOR_NEW_TEXT,U8_MOVED_ON,U7_EDITOR_NEW_TEXT,adj=A,1,s7 editor events first; s7 U7; s7 U8 evidence is chat,first=A
+NIRVANA-e25-t07,new,prior_own_work,VISIBLE_PARTIAL,VISIBLE_DRAFT,VISIBLE_PARTIAL,adj=A,1,s2 prior_own_work; s2 pasted AI text not own work,first=B
+NIRVANA-e25-t08,new,prior_own_work,VISIBLE_PARTIAL,VISIBLE_DRAFT,VISIBLE_PARTIAL,adj=A,1,s2 prior_own_work; s2 pasted AI text not own work,first=A
+NIRVANA-e25-t09,new,prior_own_work,VISIBLE_PARTIAL,VISIBLE_DRAFT,VISIBLE_PARTIAL,adj=A,1,s2 prior_own_work; s2 pasted AI text not own work,first=A
+NIRVANA-e25-t10,new,prior_own_work,VISIBLE_PARTIAL,VISIBLE_DRAFT,VISIBLE_PARTIAL,adj=A,1,s2 prior_own_work; s2 pasted AI text not own work,first=A
+NIRVANA-e25-t11,new,prior_own_work,VISIBLE_PARTIAL,VISIBLE_DRAFT,VISIBLE_PARTIAL,adj=A,1,s2 prior_own_work; s2 pasted AI text not own work,first=B
+NIRVANA-e25-t11,new,uptake,U2_EDITOR_SURFACE,U2_EDITOR_SURFACE,U1_EDITOR_DIRECT,script_s7,1,"s7 script audit, kept 1.0",
+NIRVANA-e25-t12,new,prior_own_work,VISIBLE_PARTIAL,VISIBLE_DRAFT,VISIBLE_PARTIAL,adj=A,1,s2 prior_own_work; s2 pasted AI text not own work,first=A
+NIRVANA-e25-t13,new,prior_own_work,VISIBLE_PARTIAL,VISIBLE_DRAFT,VISIBLE_PARTIAL,adj=A,1,s2 prior_own_work; s2 pasted AI text not own work,first=A
+NIRVANA-e25-t14,new,prior_own_work,VISIBLE_PARTIAL,VISIBLE_DRAFT,VISIBLE_PARTIAL,adj=A,1,s2 prior_own_work; s2 pasted AI text not own work,first=B
+NIRVANA-e25-t14,new,operation,O10,O14,O14,adj=B,1,s3 O14 (shorten); s8 E13,first=B
+NIRVANA-e25-t14,new,function,F4_GENERATE,F5_TRANSFORM,F5_TRANSFORM,adj=B,1,s4 F5 (shorten); s8 E13,first=B
+NIRVANA-e25-t15,new,prior_own_work,VISIBLE_PARTIAL,VISIBLE_DRAFT,VISIBLE_PARTIAL,adj=A,1,s2 prior_own_work; s2 pasted AI text not own work,first=B
+NIRVANA-e25-t15,new,operation,O10,O14,O14,adj=B,1,s3 O14; s8 E13,first=B
+NIRVANA-e25-t15,new,function,F4_GENERATE,F5_TRANSFORM,F5_TRANSFORM,adj=B,1,s4 F5; s8 E13,first=B
+NIRVANA-e25-t15,new,decision,D3_HUMAN_CHOSE_REVISED,D2_AI_PROPOSED_OPEN,D3_HUMAN_CHOSE_REVISED,adj=A,1,s5 D3 (selects; pastes less than about half); s5 D2 do-not-u,first=B
+NIRVANA-e25-t16,new,prior_own_work,VISIBLE_PARTIAL,VISIBLE_DRAFT,VISIBLE_PARTIAL,adj=A,1,s2 prior_own_work; s2 pasted AI text not own work,first=A
+NIRVANA-e25-t16,new,verification,V2_AI_SELF_CHECK,V0_NONE_VISIBLE,UNSETTLED,UNSETTLED,0,s6 V2 vs V0 (and V1 format),first=A
+NIRVANA-e25-t17,new,prior_own_work,VISIBLE_PARTIAL,VISIBLE_DRAFT,VISIBLE_PARTIAL,adj=A,1,s2 prior_own_work; s2 pasted AI text not own work,first=B
+NIRVANA-e25-t17,new,operation,O14,O16,O16,adj=B,1,s3 O16 (reflection on AI use); s3 O14,first=B
+NIRVANA-e25-t17,new,object,PROSE,PROCESS,PROCESS,adj=B,1,s4 object; s3 O16,first=B
+NIRVANA-e26-t01,new,operation,O10,O03,O10,adj=A,1,"s3 dominant requested deliverable; s4 code what is asked, no",first=A
+NIRVANA-e26-t01,new,function,F4_GENERATE,F3_PLAN,F4_GENERATE,adj=A,1,s4 code what the writer asks for; F4 draft or completed text,first=A
+NIRVANA-e26-t01,new,object,PROSE,STRUCTURE,PROSE,adj=A,1,s4 object; s4 code what is asked,first=A
+NIRVANA-e26-t02,new,decision,D4_AI_PROPOSAL_TAKEN,D1_HUMAN_GIVEN,D4_AI_PROPOSAL_TAKEN,adj=A,1,s5 step 2 earlier AI turn is AI-origin; s5 D4 verbatim reuse,first=B
+NIRVANA-e26-t04,new,decision,D2_AI_PROPOSED_OPEN,D1_HUMAN_GIVEN,D2_AI_PROPOSED_OPEN,adj=A,1,s5 step 2 analysis of supplied material and earlier AI turn ,first=A
+NIRVANA-e26-t05,new,decision,D2_AI_PROPOSED_OPEN,D1_HUMAN_GIVEN,D2_AI_PROPOSED_OPEN,adj=A,1,s5 step 2 rework of an earlier AI turn is AI-origin; s5 D2,first=A
+NIRVANA-e26-t06,new,decision,D2_AI_PROPOSED_OPEN,D0_NO_DECISION,D2_AI_PROPOSED_OPEN,adj=A,1,s5 step 1 meaningful plan; s5 step 2 analysis of supplied ma,first=A
+NIRVANA-e26-t07,new,uptake,U1_EDITOR_DIRECT,U2_EDITOR_SURFACE,U1_EDITOR_DIRECT,adj=A,1,s7 U1 seam allowance; s7 script audit 99.5% survival,first=A
+NIRVANA-e26-t08,new,decision,D2_AI_PROPOSED_OPEN,D0_NO_DECISION,D2_AI_PROPOSED_OPEN,adj=A,1,s5 step 1 evidence choice or plan; s5 step 2 analysis is AI-,first=A
+NIRVANA-e26-t09,sensitivity,decision,D2_AI_PROPOSED_OPEN,D0_NO_DECISION,D2_AI_PROPOSED_OPEN,adj=A,1,s5 step 1 any substantive decision; s5 step 2 analysis is AI,first=A
+NIRVANA-e28-t01,new,operation,O06,O05,O06,adj=A,1,s3 O06 vs O05,first=A
+NIRVANA-e28-t01,new,object,CLAIM,IDEA,CLAIM,adj=A,1,s4 object; s3 O06,first=A
+NIRVANA-e29-t01,new,function,F5_TRANSFORM,F4_GENERATE,F5_TRANSFORM,adj=A,1,s4 F5,first=A
+NIRVANA-e29-t01,new,decision,D1_HUMAN_GIVEN,D0_NO_DECISION,D1_HUMAN_GIVEN,adj=A,1,s5 D1; D0 do-not-use note,first=A
+NIRVANA-e29-t02,new,function,F5_TRANSFORM,F4_GENERATE,F5_TRANSFORM,adj=A,1,s4 F5,first=A
+NIRVANA-e29-t02,new,decision,D1_HUMAN_GIVEN,D0_NO_DECISION,D1_HUMAN_GIVEN,adj=A,1,s5 D1; D0 do-not-use note,first=A
+NIRVANA-e29-t03,new,verification,V2_AI_SELF_CHECK,V0_NONE_VISIBLE,V2_AI_SELF_CHECK,adj=A,1,s6 V2; s6 credit next request to prior window,first=A
+NIRVANA-e29-t06,sensitivity,function,F8_PROCEDURAL,F1_EXPLAIN,F8_PROCEDURAL,adj=A,1,s4 F8 conventions,first=A
+NIRVANA-e29-t06,sensitivity,object,PROSE,OTHER,OTHER,adj=B,1,s4 object,first=A
+NIRVANA-e29-t06,sensitivity,uptake,U4_CHAT_ITERATE,U8_MOVED_ON,U8_MOVED_ON,adj=B,1,s7 U8 vs U4; s5 no inference from thought,first=A
+NIRVANA-e29-t07,sensitivity,decision,D1_HUMAN_GIVEN,D0_NO_DECISION,D1_HUMAN_GIVEN,adj=A,1,s5 D1; D0 do-not-use note,first=A
+NIRVANA-e31-t05,new,decision,D4_AI_PROPOSAL_TAKEN,D3_HUMAN_CHOSE_REVISED,D4_AI_PROPOSAL_TAKEN,adj=A,1,"s5 D4 (about half or more reused verbatim, no content change",first=A
+NIRVANA-e31-t05,new,verification,V1_SURFACE_ONLY,V0_NONE_VISIBLE,V1_SURFACE_ONLY,adj=A,1,s6 V1 (edits AI text only for format),first=A
+NIRVANA-e31-t05,new,uptake,U2_EDITOR_SURFACE,U3_EDITOR_SUBSTANTIVE,U2_EDITOR_SURFACE,adj=A,1,s7 U2; s7 script audit 99.5% survival,first=A
+NIRVANA-e31-t06,new,prior_own_work,VISIBLE_PARTIAL,VISIBLE_DRAFT,VISIBLE_PARTIAL,adj=A,1,s2 prior_own_work (AI-pasted text is not own work; stated po,first=A
+NIRVANA-e31-t06,new,decision,D2_AI_PROPOSED_OPEN,D1_HUMAN_GIVEN,D2_AI_PROPOSED_OPEN,adj=A,1,"s5 step 2 (content from an earlier AI turn is AI-origin), s5",first=A
+NIRVANA-e31-t07,new,prior_own_work,VISIBLE_PARTIAL,VISIBLE_DRAFT,VISIBLE_PARTIAL,adj=A,1,s2 prior_own_work (AI-pasted text is not own work; stated po,first=A
+NIRVANA-e31-t07,new,decision,D2_AI_PROPOSED_OPEN,D1_HUMAN_GIVEN,D2_AI_PROPOSED_OPEN,adj=A,1,"s5 step 2 (rework of an earlier AI turn is AI-origin), s5 D2",first=A
+NIRVANA-e34-t01,new,object,STRUCTURE,ARGUMENT,UNSETTLED,UNSETTLED,0,s4 object (STRUCTURE vs ARGUMENT); F3_PLAN argument map,first=B
+NIRVANA-e38-t01,new,verification,V1_SURFACE_ONLY,V0_NONE_VISIBLE,V1_SURFACE_ONLY,adj=A,1,s6 V1_SURFACE_ONLY; s6 priority note on paste-seam deletions,first=B
+NIRVANA-e38-t02,new,operation,O02,O09,O02,adj=A,1,s3 O02 vs O09,first=A
+NIRVANA-e38-t02,new,function,F2_OPTIONS,F4_GENERATE,F2_OPTIONS,adj=A,1,s4 F2_OPTIONS,first=A
+NIRVANA-e41-t06,new,function,F8_PROCEDURAL,F5_TRANSFORM,F8_PROCEDURAL,adj=A,1,s4 F8_PROCEDURAL; s3 O15,first=B
+NIRVANA-e42-t02,new,operation,OX,O04,OX,adj=A,1,s3 OX (chat about the AI itself); s3 bare-request inference ,first=A
+NIRVANA-e42-t02,new,function,FX_OTHER,F7_FIND_CHECK,FX_OTHER,adj=A,1,s4 FX_OTHER (not a writing request),first=A
+NIRVANA-e42-t02,new,object,OTHER,EVIDENCE,OTHER,adj=A,1,s4 object OTHER,first=A
+NIRVANA-e42-t02,new,uptake,U4_CHAT_ITERATE,U8_MOVED_ON,U4_CHAT_ITERATE,adj=A,1,"s7 U4 (reacts to this output, continues the same request)",first=A
+NIRVANA-e42-t03,new,uptake,U4_CHAT_ITERATE,U8_MOVED_ON,U4_CHAT_ITERATE,adj=A,1,s7 U4 (repairs the same request),first=A
+NIRVANA-e42-t04,new,operation,O04,O02,O04,adj=A,1,s3 O04 (find a fact) vs O02 (candidate directions),first=A
+NIRVANA-e42-t04,new,function,F7_FIND_CHECK,F2_OPTIONS,F7_FIND_CHECK,adj=A,1,s4 F7_FIND_CHECK,first=A
+NIRVANA-e42-t04,new,object,EVIDENCE,IDEA,EVIDENCE,adj=A,1,s4 object EVIDENCE (material from a source or data),first=A
+NIRVANA-e42-t08,new,uptake,U4_CHAT_ITERATE,U8_MOVED_ON,UNSETTLED,UNSETTLED,0,s7 U4 vs U8,first=A
+NIRVANA-e42-t13,new,function,F1_EXPLAIN,F4_GENERATE,F1_EXPLAIN,adj=A,1,s4 code what the writer asks for; F1_EXPLAIN; s5 step 2 anal,first=A
+NIRVANA-e42-t14,new,function,F1_EXPLAIN,F4_GENERATE,F1_EXPLAIN,adj=A,1,s4 code what the writer asks for; F1_EXPLAIN,first=A
+NIRVANA-e44-t01,new,uptake,U1_EDITOR_DIRECT,U3_EDITOR_SUBSTANTIVE,U1_EDITOR_DIRECT,adj=A,1,"s7 U1 (pasted, no later change to it); s7 script audit",first=B
+NIRVANA-e44-t03,new,uptake,U1_EDITOR_DIRECT,U3_EDITOR_SUBSTANTIVE,U1_EDITOR_DIRECT,adj=A,1,"s7 U1 (pasted, no later change to it); s7 script audit",first=B
+NIRVANA-e44-t07,new,decision,D4_AI_PROPOSAL_TAKEN,D2_AI_PROPOSED_OPEN,D4_AI_PROPOSAL_TAKEN,adj=A,1,"s5 D4 (about half or more reused verbatim in the editor, 30+",first=B
+NIRVANA-e44-t07,new,uptake,U1_EDITOR_DIRECT,UX_NO_TRACE,U1_EDITOR_DIRECT,adj=A,1,"s7 U1 (paste with verbatim AI run, no later change); s7 scri",first=B
+NIRVANA-e47-t01,new,uptake,U4_CHAT_ITERATE,U8_MOVED_ON,UNSETTLED,UNSETTLED,0,s7 U4 (sending missing input) vs U8,first=A
+NIRVANA-e49-t01,new,prior_own_work,VISIBLE_PARTIAL,VISIBLE_DRAFT,VISIBLE_DRAFT,adj=B,1,s2 prior_own_work VISIBLE_DRAFT,first=B
+NIRVANA-e54-t04,new,decision,D3_HUMAN_CHOSE_REVISED,D4_AI_PROPOSAL_TAKEN,D3_HUMAN_CHOSE_REVISED,adj=A,1,s5 D3 (pastes then changes claims); s5 D4 (needs no content ,first=B
+NIRVANA-e54-t04,new,uptake,U3_EDITOR_SUBSTANTIVE,U2_EDITOR_SURFACE,U3_EDITOR_SUBSTANTIVE,adj=A,1,"s7 U3 vs U2; s6 V1 (surface = grammar, tone, format)",first=B
+NIRVANA-e56-t03,new,function,F5_TRANSFORM,F2_OPTIONS,F5_TRANSFORM,adj=A,1,s4 F5_TRANSFORM; s4 F2 boundary (one item to insert is not o,first=B
+NIRVANA-e56-t04,new,function,F5_TRANSFORM,F2_OPTIONS,F5_TRANSFORM,adj=A,1,s4 F5_TRANSFORM; s4 F2 boundary (one item to insert is not o,first=A
+NIRVANA-e56-t04,new,decision,D0_NO_DECISION,D3_HUMAN_CHOSE_REVISED,D0_NO_DECISION,adj=A,1,s5 step 1; s5 D0 (explanation of a term); s5 D3 needs AI-ori,first=A
+NIRVANA-e56-t05,new,uptake,U1_EDITOR_DIRECT,U2_EDITOR_SURFACE,U2_EDITOR_SURFACE,adj=B,1,s7 U1 (no later change) vs U2; s7 script audit (99.5% surviv,first=A
+NIRVANA-e57-t04,new,uptake,U4_CHAT_ITERATE,U8_MOVED_ON,U4_CHAT_ITERATE,adj=A,1,s7 U4 (repeats or repairs the same request),first=B
+NIRVANA-e57-t07,new,verification,V1_SURFACE_ONLY,V0_NONE_VISIBLE,V1_SURFACE_ONLY,adj=A,1,s6 V1 (asks for changes of style to this output); s6 priorit,first=A
+NIRVANA-e57-t09,new,decision,D3_HUMAN_CHOSE_REVISED,D4_AI_PROPOSAL_TAKEN,D3_HUMAN_CHOSE_REVISED,adj=A,1,s5 D3 (pastes and then changes claims); s5 D4 requires no co,first=B
+NIRVANA-e57-t09,new,verification,V0_NONE_VISIBLE,V1_SURFACE_ONLY,V0_NONE_VISIBLE,adj=A,1,"s6 V3 'silent content edits are U3, not V3'; s6 V1 covers on",first=B
+NIRVANA-e57-t09,new,uptake,U3_EDITOR_SUBSTANTIVE,U2_EDITOR_SURFACE,U3_EDITOR_SUBSTANTIVE,adj=A,1,s7 U3 (claim changed after insertion) vs U2; s6 V1 defines s,first=B
+NIRVANA-e58-t05,new,prior_own_work,VISIBLE_DRAFT,VISIBLE_PARTIAL,VISIBLE_DRAFT,adj=A,1,s2 prior_own_work VISIBLE_DRAFT,first=A
+NIRVANA-e58-t05,new,function,F8_PROCEDURAL,F2_OPTIONS,F8_PROCEDURAL,adj=A,1,s4 F8 (conventions); s4 F2,first=A
+NIRVANA-e58-t10,sensitivity,function,F5_TRANSFORM,F6_CRITIQUE,F5_TRANSFORM,adj=A,1,s4 F5 (proofread); s4 F6,first=B
+NIRVANA-e58-t10,sensitivity,decision,D2_AI_PROPOSED_OPEN,D1_HUMAN_GIVEN,D2_AI_PROPOSED_OPEN,adj=A,1,s5 step 2 (earlier AI turn); s5 D2; s8 E13,first=B
+NIRVANA-e60-t05,new,prior_own_work,NONE_VISIBLE,VISIBLE_PARTIAL,VISIBLE_PARTIAL,adj=B,1,s2 prior_own_work VISIBLE_PARTIAL vs NONE_VISIBLE,first=A
+NIRVANA-e61-t06,sensitivity,object,CLAIM,PROSE,PROSE,adj=B,1,s4 object; s8 E2 and E13 (surface work on text holding a cla,first=B
+NIRVANA-e61-t07,sensitivity,function,F4_GENERATE,F5_TRANSFORM,F4_GENERATE,adj=A,1,s4 F5 boundary (asks for more content goes to F4); s4 F4 new,first=A
+NIRVANA-e61-t08,new,uptake,U4_CHAT_ITERATE,U8_MOVED_ON,U4_CHAT_ITERATE,adj=A,1,s7 U4 repeats or repairs the same request; s7 U8 different s,first=B
+NIRVANA-e61-t09,new,prior_own_work,VISIBLE_PARTIAL,NONE_VISIBLE,VISIBLE_PARTIAL,adj=A,1,s2 prior_own_work VISIBLE_PARTIAL (stated position; look at ,first=A
+NIRVANA-e61-t10,new,prior_own_work,VISIBLE_PARTIAL,NONE_VISIBLE,VISIBLE_PARTIAL,adj=A,1,s2 prior_own_work VISIBLE_PARTIAL (stated position; look at ,first=B
+NIRVANA-e61-t11,new,prior_own_work,VISIBLE_PARTIAL,NONE_VISIBLE,VISIBLE_PARTIAL,adj=A,1,s2 prior_own_work VISIBLE_PARTIAL (stated position; look at ,first=A
+NIRVANA-e61-t11,new,uptake,U4_CHAT_ITERATE,U8_MOVED_ON,U4_CHAT_ITERATE,adj=A,1,s7 U4 feeding this output into a new task; s7 U8 does not to,first=A
+NIRVANA-e61-t12,new,prior_own_work,VISIBLE_PARTIAL,NONE_VISIBLE,VISIBLE_PARTIAL,adj=A,1,s2 prior_own_work VISIBLE_PARTIAL (stated position; look at ,first=B
+NIRVANA-e61-t13,new,prior_own_work,VISIBLE_PARTIAL,NONE_VISIBLE,VISIBLE_PARTIAL,adj=A,1,s2 prior_own_work VISIBLE_PARTIAL (stated position; look at ,first=A
+NIRVANA-e61-t14,new,prior_own_work,VISIBLE_PARTIAL,NONE_VISIBLE,VISIBLE_PARTIAL,adj=A,1,s2 prior_own_work VISIBLE_PARTIAL (stated position; look at ,first=B
+NIRVANA-e61-t15,new,prior_own_work,VISIBLE_PARTIAL,NONE_VISIBLE,VISIBLE_PARTIAL,adj=A,1,s2 prior_own_work VISIBLE_PARTIAL (stated position; look at ,first=A
+NIRVANA-e61-t16,new,prior_own_work,VISIBLE_PARTIAL,NONE_VISIBLE,VISIBLE_PARTIAL,adj=A,1,s2 prior_own_work VISIBLE_PARTIAL (stated position; look at ,first=B
+NIRVANA-e61-t17,new,operation,O10,O12,O12,adj=B,1,"s3 O12 change meaning, claim, argument; s4 code what is aske",first=A
+NIRVANA-e61-t17,new,object,PROSE,ARGUMENT,ARGUMENT,adj=B,1,s4 object; s3 O12,first=A
+NIRVANA-e61-t19,new,uptake,U4_CHAT_ITERATE,U8_MOVED_ON,U4_CHAT_ITERATE,adj=A,1,s7 U4 feeding this output into a new task; s7 UX copy with n,first=A
+NIRVANA-e61-t20,new,verification,V1_SURFACE_ONLY,V0_NONE_VISIBLE,V1_SURFACE_ONLY,adj=A,1,s6 V1 visibly edits AI text only for tone; s6 priority V1 ov,first=A
+NIRVANA-e61-t21,new,uptake,U4_CHAT_ITERATE,U8_MOVED_ON,U4_CHAT_ITERATE,adj=A,1,s7 U4 feeding this output into a new task; s7 U8 next paragr,first=B
+NIRVANA-e61-t25,new,operation,O10,O09,O10,adj=A,1,s3 dominant requested deliverable; s3 O10 expanding with new,first=A
+NIRVANA-e61-t25,new,object,PROSE,ARGUMENT,PROSE,adj=A,1,s4 object; s3 O10,first=A
+NIRVANA-e61-t26,new,prior_own_work,VISIBLE_PARTIAL,VISIBLE_DRAFT,VISIBLE_PARTIAL,adj=A,1,s2 prior_own_work (text from the AI is not own work; VISIBLE,first=A
+NIRVANA-e61-t26,new,decision,D4_AI_PROPOSAL_TAKEN,D3_HUMAN_CHOSE_REVISED,D4_AI_PROPOSAL_TAKEN,adj=A,1,s5 D4 verbatim reuse of half or more with no content change;,first=A
+NIRVANA-e61-t26,new,verification,V1_SURFACE_ONLY,V0_NONE_VISIBLE,V1_SURFACE_ONLY,adj=A,1,s6 V1 visibly edits AI text only for wording; s6 priority V1,first=A
+NIRVANA-e61-t26,new,uptake,U2_EDITOR_SURFACE,U3_EDITOR_SUBSTANTIVE,U2_EDITOR_SURFACE,adj=A,1,s7 U2 only surface changes; s7 U3 claim changed or claims ad,first=A
+NIRVANA-e61-t27,new,prior_own_work,VISIBLE_PARTIAL,VISIBLE_DRAFT,VISIBLE_PARTIAL,adj=A,1,s2 prior_own_work (text from the AI is not own work; VISIBLE,first=B
+NIRVANA-e61-t27,new,verification,V1_SURFACE_ONLY,V0_NONE_VISIBLE,V1_SURFACE_ONLY,adj=A,1,s6 V1 visibly edits AI text only for wording or format; s6 p,first=B
+NIRVANA-e62-t01,new,operation,O04,O02,O04,adj=A,1,s3 O04 (a fact or statistic) vs O02,first=A
+NIRVANA-e62-t01,new,function,F7_FIND_CHECK,F2_OPTIONS,F7_FIND_CHECK,adj=A,1,s4 F7_FIND_CHECK,first=A
+NIRVANA-e62-t01,new,object,EVIDENCE,IDEA,EVIDENCE,adj=A,1,s4 object EVIDENCE vs IDEA,first=A
+NIRVANA-e64-t03,new,verification,V1_SURFACE_ONLY,V0_NONE_VISIBLE,V1_SURFACE_ONLY,adj=A,1,s6 V1 (style/format complaint in words; length change asked),first=A
+NIRVANA-e64-t06,new,verification,V0_NONE_VISIBLE,V3_REASONED_CHALLENGE,V0_NONE_VISIBLE,adj=A,1,s6 V0 (requests for more content); s6 V3 (needs a stated cou,first=A
+NIRVANA-e65-t06,new,function,F1_EXPLAIN,F2_OPTIONS,F1_EXPLAIN,adj=A,1,s4 F1 vs F2,first=A
+NIRVANA-e65-t08,new,verification,V1_SURFACE_ONLY,V0_NONE_VISIBLE,V1_SURFACE_ONLY,adj=A,1,s6 V1; s6 paste seam note,first=B
+NIRVANA-e67-t01,new,operation,O10,O08,O10,adj=A,1,s3 dominant requested deliverable; O10,first=B
+NIRVANA-e67-t01,new,object,PROSE,CLAIM,PROSE,adj=A,1,s4 object; s3 O10,first=B
+NIRVANA-e68-t03,new,function,F5_TRANSFORM,F8_PROCEDURAL,F5_TRANSFORM,adj=A,1,s4 F5 proofread,first=B
+NIRVANA-e68-t03,new,decision,D1_HUMAN_GIVEN,D0_NO_DECISION,D1_HUMAN_GIVEN,adj=A,1,s5 D1; D0 do-not-use note,first=B
+NIRVANA-e68-t03,new,uptake,U7_EDITOR_NEW_TEXT,U1_EDITOR_DIRECT,U7_EDITOR_NEW_TEXT,adj=A,1,s7 U7 vs U1; s5 D4 30-character run,first=B
+NIRVANA-e68-t05,new,uptake,U7_EDITOR_NEW_TEXT,U2_EDITOR_SURFACE,U7_EDITOR_NEW_TEXT,adj=A,1,s7 U7 vs U1/U2; s5 D4 30-character run,first=B
+NIRVANA-e68-t06,new,operation,O05,O09,UNSETTLED,UNSETTLED,0,s3 bare request; O05 vs O09,first=B
+NIRVANA-e68-t06,new,function,F1_EXPLAIN,F4_GENERATE,UNSETTLED,UNSETTLED,0,s4 F1 vs F4; s3 bare request,first=B
+NIRVANA-e68-t06,new,object,OTHER,ARGUMENT,UNSETTLED,UNSETTLED,0,s4 object OTHER for assignment prompt vs ARGUMENT,first=B
+NIRVANA-e69-t01,new,decision,D1_HUMAN_GIVEN,D4_AI_PROPOSAL_TAKEN,D4_AI_PROPOSAL_TAKEN,adj=B,1,s5 step 2 (analysis of supplied material is AI-origin); s5 s,first=B
+NIRVANA-e70-t03,new,decision,D2_AI_PROPOSED_OPEN,D1_HUMAN_GIVEN,D2_AI_PROPOSED_OPEN,adj=A,1,s5 step 2 assignment prompt not a writer decision; DX note o,first=A
+NIRVANA-e70-t04,new,decision,D3_HUMAN_CHOSE_REVISED,D2_AI_PROPOSED_OPEN,D3_HUMAN_CHOSE_REVISED,adj=A,1,s5 D3 pastes less than half / adds claims,first=A
+NIRVANA-e70-t04,new,uptake,U3_EDITOR_SUBSTANTIVE,U7_EDITOR_NEW_TEXT,U3_EDITOR_SUBSTANTIVE,adj=A,1,s7 U3; U7 no verbatim run,first=A
+NIRVANA-e73-t02,new,uptake,U8_MOVED_ON,UX_NO_TRACE,UX_NO_TRACE,adj=B,1,s7 U8 evidence is a next chat turn; UX; U8 is not UX,first=A
+NIRVANA-e74-t02,new,decision,D3_HUMAN_CHOSE_REVISED,D1_HUMAN_GIVEN,D3_HUMAN_CHOSE_REVISED,adj=A,1,s5 step 2 (earlier AI turn; stance counts only for what it s,first=B
+NIRVANA-e74-t06,new,operation,O12,O10,O12,adj=A,1,"s3 O12 (change claim, argument); s3 O12 boundary (from scrat",first=A
+NIRVANA-e74-t06,new,object,ARGUMENT,PROSE,ARGUMENT,adj=A,1,s4 object,first=A
+NIRVANA-e74-t06,new,decision,D2_AI_PROPOSED_OPEN,D4_AI_PROPOSAL_TAKEN,D2_AI_PROPOSED_OPEN,adj=A,1,s5 D4 (says they accept); s7 U5 (praise alone is not accepta,first=A
+NIRVANA-e74-t08,new,decision,D4_AI_PROPOSAL_TAKEN,D3_HUMAN_CHOSE_REVISED,D3_HUMAN_CHOSE_REVISED,adj=B,1,s5 D3 (pastes and then changes or adds claims),first=B
+NIRVANA-e74-t08,new,verification,V1_SURFACE_ONLY,V0_NONE_VISIBLE,V0_NONE_VISIBLE,adj=B,1,"s6 V1 (only grammar, tone or format); s6 V3 (silent content ",first=B
+NIRVANA-e74-t08,new,uptake,U2_EDITOR_SURFACE,U3_EDITOR_SUBSTANTIVE,U3_EDITOR_SUBSTANTIVE,adj=B,1,s7 U3 (claims replaced or added beside it); s7 U2 (only surf,first=B
+NIRVANA-e74-t09,new,prior_own_work,VISIBLE_PARTIAL,VISIBLE_DRAFT,VISIBLE_PARTIAL,adj=A,1,s2 prior_own_work (stated position is PARTIAL; pasted AI tex,first=A
+NIRVANA-e74-t10,new,prior_own_work,VISIBLE_PARTIAL,VISIBLE_DRAFT,VISIBLE_PARTIAL,adj=A,1,s2 prior_own_work (pasted AI text not own work),first=B
+NIRVANA-e74-t11,new,prior_own_work,VISIBLE_PARTIAL,VISIBLE_DRAFT,VISIBLE_PARTIAL,adj=A,1,s2 prior_own_work (pasted AI text not own work),first=A
+NIRVANA-e75-t03,new,prior_own_work,VISIBLE_DRAFT,VISIBLE_PARTIAL,VISIBLE_PARTIAL,adj=B,1,s2 prior_own_work VISIBLE_DRAFT vs VISIBLE_PARTIAL,first=B
+NIRVANA-e75-t04,new,prior_own_work,VISIBLE_DRAFT,VISIBLE_PARTIAL,VISIBLE_DRAFT,adj=A,1,s2 prior_own_work VISIBLE_DRAFT,first=A
+NIRVANA-e75-t05,new,prior_own_work,VISIBLE_DRAFT,VISIBLE_PARTIAL,VISIBLE_DRAFT,adj=A,1,s2 prior_own_work VISIBLE_DRAFT,first=A
+NIRVANA-e75-t06,new,prior_own_work,VISIBLE_DRAFT,VISIBLE_PARTIAL,VISIBLE_DRAFT,adj=A,1,s2 prior_own_work VISIBLE_DRAFT,first=A
+NIRVANA-e75-t07,new,decision,D0_NO_DECISION,D2_AI_PROPOSED_OPEN,D0_NO_DECISION,adj=A,1,s5 step 1; D0 explanation of a term,first=B
+NIRVANA-e76-t01,new,decision,D3_HUMAN_CHOSE_REVISED,D2_AI_PROPOSED_OPEN,D2_AI_PROPOSED_OPEN,adj=B,1,"s5 D2 and DX note (missing input, AI invents); s8 E12",first=B
+NIRVANA-e76-t02,new,operation,O09,O10,O10,adj=B,1,"s3 bare request, infer task from earlier turns; O10",first=B
+NIRVANA-e76-t02,new,object,ARGUMENT,PROSE,PROSE,adj=B,1,s4 object; s3 O10,first=B

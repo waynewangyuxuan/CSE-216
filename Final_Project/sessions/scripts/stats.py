@@ -45,7 +45,7 @@ def main():
     res["frequency_coders"] = {f: {c: dict(sorted(collections.Counter(short(L[i][f]) for i in adjd).items())) for c, L in (("A", A), ("B", B))} for f in FIELDS}
     res["confusions"] = {f: dict(collections.Counter("|".join(sorted((short(A[i][f]), short(B[i][f])))) for i in adjd if A[i][f] != B[i][f]).most_common(5)) for f in FIELDS}
     # adjudication
-    disp = [l for l in log if l["source"] != "script_s7"]
+    disp = [l for l in log if l["source"] not in ("script_s7", "superseded_S08")]
     flips = {l["window_id"]: l["shown_order"] for l in disp}
     won_pos = collections.Counter()
     for l in disp:
@@ -69,7 +69,7 @@ def main():
     for i in sens:
         for f in FIELDS:
             if short(F[i][f]) != short(F4[i][f]) or F[i][f] != F4[i][f]:
-                S["final_changes"].append({"window_id": i, "field": f, "bet4": F4[i][f], "bet6": F[i][f], "bet6_source": F[i][f + "_source"], "reuse_unseen": i in reuse10})
+                S["final_changes"].append({"window_id": i, "field": f, "bet4": F4[i][f], "bet6": F[i][f], "bet6_source": F[i].get(f + "_source", "derived"), "reuse_unseen": i in reuse10})
     for f in FIELDS:
         S["per_field"][f] = {"final_same": sum(F[i][f] == F4[i][f] for i in sens), "n": len(sens),
                              "final_same_reuse10": sum(F[i][f] == F4[i][f] for i in reuse10), "n_reuse10": len(reuse10)}

@@ -1,5 +1,252 @@
 [
  {
+  "batch": "0",
+  "labels_seen": 17,
+  "listing_or_search": [],
+  "model_requested": "opus",
+  "model_served": {
+   "claude-opus-5-5": 61
+  },
+  "order_problems": [],
+  "order_problems_redone_S08": [],
+  "other_reads": [
+   "Final_Project/sessions/adjudicator_brief.md",
+   "Final_Project/sessions/blind/adjudication/packet_0.jsonl",
+   "Final_Project/sessions/coder_codebook_v1.1.md"
+  ],
+  "part_line_coverage_min": 1.0,
+  "parts_under_full_coverage": {},
+  "role": "adjudicator",
+  "targets": 17,
+  "tool_uses": {
+   "Bash": 17,
+   "Read": 26,
+   "SubagentHandback": 1
+  },
+  "violations": {},
+  "writes_to_label_files": []
+ },
+ {
+  "batch": "1",
+  "labels_seen": 26,
+  "listing_or_search": [],
+  "model_requested": "opus",
+  "model_served": {
+   "claude-opus-5-5": 93
+  },
+  "order_problems": [],
+  "order_problems_redone_S08": [],
+  "other_reads": [
+   "Final_Project/sessions/adjudicator_brief.md",
+   "Final_Project/sessions/blind/adjudication/packet_1.jsonl",
+   "Final_Project/sessions/coder_codebook_v1.1.md"
+  ],
+  "part_line_coverage_min": 1.0,
+  "parts_under_full_coverage": {},
+  "role": "adjudicator",
+  "targets": 26,
+  "tool_uses": {
+   "Bash": 27,
+   "Read": 39,
+   "SubagentHandback": 1
+  },
+  "violations": {},
+  "writes_to_label_files": []
+ },
+ {
+  "batch": "2",
+  "labels_seen": 24,
+  "listing_or_search": [],
+  "model_requested": "opus",
+  "model_served": {
+   "claude-opus-5-5": 89
+  },
+  "order_problems": [],
+  "order_problems_redone_S08": [],
+  "other_reads": [
+   "Final_Project/sessions/adjudicator_brief.md",
+   "Final_Project/sessions/blind/adjudication/packet_2.jsonl",
+   "Final_Project/sessions/coder_codebook_v1.1.md"
+  ],
+  "part_line_coverage_min": 1.0,
+  "parts_under_full_coverage": {},
+  "role": "adjudicator",
+  "targets": 24,
+  "tool_uses": {
+   "Bash": 26,
+   "Read": 41,
+   "SubagentHandback": 1
+  },
+  "violations": {},
+  "writes_to_label_files": []
+ },
+ {
+  "batch": "3",
+  "labels_seen": 17,
+  "listing_or_search": [],
+  "model_requested": "opus",
+  "model_served": {
+   "claude-opus-5-5": 85
+  },
+  "order_problems": [],
+  "order_problems_redone_S08": [],
+  "other_reads": [
+   "Final_Project/sessions/blind/adjudication/packet_3.jsonl",
+   "Final_Project/sessions/coder_codebook_v1.1.md"
+  ],
+  "part_line_coverage_min": 1.0,
+  "parts_under_full_coverage": {},
+  "role": "adjudicator",
+  "targets": 17,
+  "tool_uses": {
+   "Bash": 19,
+   "Read": 42,
+   "SubagentHandback": 1
+  },
+  "violations": {},
+  "writes_to_label_files": []
+ },
+ {
+  "batch": "4",
+  "labels_seen": 12,
+  "listing_or_search": [],
+  "model_requested": "opus",
+  "model_served": {
+   "claude-opus-5-5": 66
+  },
+  "order_problems": [],
+  "order_problems_redone_S08": [],
+  "other_reads": [
+   "Final_Project/sessions/adjudicator_brief.md",
+   "Final_Project/sessions/blind/adjudication/packet_4.jsonl",
+   "Final_Project/sessions/coder_codebook_v1.1.md"
+  ],
+  "part_line_coverage_min": 1.0,
+  "parts_under_full_coverage": {},
+  "role": "adjudicator",
+  "targets": 12,
+  "tool_uses": {
+   "Bash": 13,
+   "Read": 38,
+   "SubagentHandback": 1
+  },
+  "violations": {},
+  "writes_to_label_files": []
+ },
+ {
+  "batch": "5",
+  "labels_seen": 25,
+  "listing_or_search": [],
+  "model_requested": "opus",
+  "model_served": {
+   "claude-opus-5-5": 104
+  },
+  "order_problems": [
+   "NIRVANA-e10-t01: later part read before label"
+  ],
+  "order_problems_redone_S08": [
+   "NIRVANA-e10-t01: later part read before label"
+  ],
+  "other_reads": [
+   "Final_Project/sessions/adjudicator_brief.md",
+   "Final_Project/sessions/blind/adjudication/packet_5.jsonl",
+   "Final_Project/sessions/coder_codebook_v1.1.md"
+  ],
+  "part_line_coverage_min": 1.0,
+  "parts_under_full_coverage": {},
+  "role": "adjudicator",
+  "targets": 25,
+  "tool_uses": {
+   "Bash": 26,
+   "Read": 51,
+   "SubagentHandback": 1
+  },
+  "violations": {},
+  "writes_to_label_files": []
+ },
+ {
+  "batch": "6",
+  "labels_seen": 17,
+  "listing_or_search": [],
+  "model_requested": "opus",
+  "model_served": {
+   "claude-opus-5-5": 64
+  },
+  "order_problems": [
+   "NIRVANA-e13-t01: later part read before label"
+  ],
+  "order_problems_redone_S08": [
+   "NIRVANA-e13-t01: later part read before label"
+  ],
+  "other_reads": [
+   "Final_Project/sessions/adjudicator_brief.md",
+   "Final_Project/sessions/blind/adjudication/packet_6.jsonl",
+   "Final_Project/sessions/coder_codebook_v1.1.md"
+  ],
+  "part_line_coverage_min": 1.0,
+  "parts_under_full_coverage": {},
+  "role": "adjudicator",
+  "targets": 17,
+  "tool_uses": {
+   "Bash": 18,
+   "Read": 27,
+   "SubagentHandback": 1
+  },
+  "violations": {},
+  "writes_to_label_files": []
+ },
+ {
+  "batch": "r0",
+  "labels_seen": 1,
+  "listing_or_search": [],
+  "model_requested": "opus",
+  "model_served": {
+   "claude-opus-5-5": 7
+  },
+  "order_problems": [],
+  "order_problems_redone_S08": [],
+  "other_reads": [
+   "Final_Project/sessions/adjudicator_brief.md",
+   "Final_Project/sessions/blind/adjudication/packet_r0.jsonl",
+   "Final_Project/sessions/coder_codebook_v1.1.md"
+  ],
+  "part_line_coverage_min": 1.0,
+  "parts_under_full_coverage": {},
+  "role": "adjudicator",
+  "targets": 1,
+  "tool_uses": {
+   "Bash": 1,
+   "Read": 4,
+   "SubagentHandback": 1
+  },
+  "violations": {},
+  "writes_to_label_files": []
+ },
+ {
+  "batch": "r1",
+  "labels_seen": 1,
+  "listing_or_search": [
+   "ls /Users/wang/CSE-216/Final_Project/sessions/blind/adjudication/"
+  ],
+  "model_requested": "opus",
+  "model_served": {
+   "claude-opus-5-5": 8
+  },
+  "order_problems": [],
+  "order_problems_redone_S08": [],
+  "other_reads": [],
+  "part_line_coverage_min": 1.0,
+  "parts_under_full_coverage": {},
+  "role": "adjudicator",
+  "targets": 1,
+  "tool_uses": {
+   "Bash": 5,
+   "SubagentHandback": 1
+  },
+  "violations": {},
+  "writes_to_label_files": []
+ },
+ {
   "batch": 0,
   "labels_seen": 23,
   "listing_or_search": [],
@@ -8,6 +255,7 @@
    "claude-opus-5-5": 72
   },
   "order_problems": [],
+  "order_problems_redone_S08": [],
   "other_reads": [
    "Final_Project/sessions/blind/lists/batch_0.txt",
    "Final_Project/sessions/coder_brief.md",
@@ -36,6 +284,7 @@
    "claude-opus-5-5": 58
   },
   "order_problems": [],
+  "order_problems_redone_S08": [],
   "other_reads": [],
   "part_line_coverage_min": 1.0,
   "parts_under_full_coverage": {},
@@ -57,6 +306,7 @@
    "claude-opus-5-5": 57
   },
   "order_problems": [],
+  "order_problems_redone_S08": [],
   "other_reads": [
    "Final_Project/sessions/blind/lists/batch_2.txt",
    "Final_Project/sessions/coder_brief.md",
@@ -83,6 +333,7 @@
    "claude-opus-5-5": 67
   },
   "order_problems": [],
+  "order_problems_redone_S08": [],
   "other_reads": [
    "Final_Project/sessions/blind/lists/batch_3.txt",
    "Final_Project/sessions/coder_brief.md",
@@ -109,6 +360,7 @@
    "claude-opus-5-5": 91
   },
   "order_problems": [],
+  "order_problems_redone_S08": [],
   "other_reads": [
    "Final_Project/sessions/blind/lists/batch_4.txt",
    "Final_Project/sessions/coder_brief.md",
@@ -135,6 +387,7 @@
    "claude-opus-5-5": 46
   },
   "order_problems": [],
+  "order_problems_redone_S08": [],
   "other_reads": [
    "Final_Project/sessions/blind/lists/batch_5.txt",
    "Final_Project/sessions/coder_brief.md",
@@ -163,6 +416,7 @@
    "claude-opus-5-5": 81
   },
   "order_problems": [],
+  "order_problems_redone_S08": [],
   "other_reads": [
    "Final_Project/sessions/coder_codebook_v1.1.md"
   ],
@@ -187,6 +441,7 @@
    "claude-opus-5-5": 67
   },
   "order_problems": [],
+  "order_problems_redone_S08": [],
   "other_reads": [
    "Final_Project/sessions/blind/lists/batch_7.txt",
    "Final_Project/sessions/coder_brief.md",
@@ -213,6 +468,7 @@
    "claude-opus-5-5": 70
   },
   "order_problems": [],
+  "order_problems_redone_S08": [],
   "other_reads": [
    "Final_Project/sessions/blind/lists/batch_8.txt",
    "Final_Project/sessions/coder_brief.md",
@@ -239,6 +495,7 @@
    "claude-opus-5-5": 70
   },
   "order_problems": [],
+  "order_problems_redone_S08": [],
   "other_reads": [
    "Final_Project/sessions/blind/lists/batch_9.txt",
    "Final_Project/sessions/coder_brief.md",
@@ -267,6 +524,7 @@
    "claude-opus-5-5": 72
   },
   "order_problems": [],
+  "order_problems_redone_S08": [],
   "other_reads": [
    "Final_Project/sessions/coder_brief.md",
    "Final_Project/sessions/coder_codebook_v1.1.md"
@@ -294,6 +552,7 @@
    "claude-opus-5-5": 44
   },
   "order_problems": [],
+  "order_problems_redone_S08": [],
   "other_reads": [],
   "part_line_coverage_min": 1.0,
   "parts_under_full_coverage": {},
@@ -315,6 +574,7 @@
    "claude-opus-5-5": 49
   },
   "order_problems": [],
+  "order_problems_redone_S08": [],
   "other_reads": [
    "Final_Project/sessions/blind/lists/batch_12.txt",
    "Final_Project/sessions/coder_brief.md",
@@ -341,6 +601,7 @@
    "claude-opus-5-5": 67
   },
   "order_problems": [],
+  "order_problems_redone_S08": [],
   "other_reads": [
    "Final_Project/sessions/blind/lists/batch_13.txt",
    "Final_Project/sessions/coder_brief.md",
@@ -369,6 +630,7 @@
    "claude-opus-5-5": 78
   },
   "order_problems": [],
+  "order_problems_redone_S08": [],
   "other_reads": [],
   "part_line_coverage_min": 1.0,
   "parts_under_full_coverage": {},
@@ -392,6 +654,7 @@
    "claude-opus-5-5": 43
   },
   "order_problems": [],
+  "order_problems_redone_S08": [],
   "other_reads": [
    "Final_Project/sessions/coder_brief.md",
    "Final_Project/sessions/coder_codebook_v1.1.md"
@@ -420,6 +683,7 @@
    "claude-sonnet-5-5": 74
   },
   "order_problems": [],
+  "order_problems_redone_S08": [],
   "other_reads": [
    "Final_Project/sessions/coder_brief.md",
    "Final_Project/sessions/coder_codebook_v1.1.md"
@@ -447,6 +711,7 @@
    "claude-sonnet-5-5": 87
   },
   "order_problems": [],
+  "order_problems_redone_S08": [],
   "other_reads": [
    "Final_Project/sessions/blind/lists/batch_1.txt",
    "Final_Project/sessions/coder_brief.md",
@@ -475,6 +740,7 @@
    "claude-sonnet-5-5": 61
   },
   "order_problems": [],
+  "order_problems_redone_S08": [],
   "other_reads": [
    "Final_Project/sessions/coder_brief.md",
    "Final_Project/sessions/coder_codebook_v1.1.md"
@@ -502,6 +768,7 @@
    "claude-sonnet-5-5": 71
   },
   "order_problems": [],
+  "order_problems_redone_S08": [],
   "other_reads": [
    "Final_Project/sessions/coder_brief.md",
    "Final_Project/sessions/coder_codebook_v1.1.md"
@@ -529,6 +796,7 @@
    "claude-sonnet-5-5": 99
   },
   "order_problems": [],
+  "order_problems_redone_S08": [],
   "other_reads": [
    "Final_Project/sessions/coder_brief.md",
    "Final_Project/sessions/coder_codebook_v1.1.md"
@@ -556,6 +824,7 @@
    "claude-sonnet-5-5": 35
   },
   "order_problems": [],
+  "order_problems_redone_S08": [],
   "other_reads": [
    "Final_Project/sessions/coder_brief.md",
    "Final_Project/sessions/coder_codebook_v1.1.md"
@@ -583,6 +852,7 @@
    "claude-sonnet-5-5": 82
   },
   "order_problems": [],
+  "order_problems_redone_S08": [],
   "other_reads": [
    "Final_Project/sessions/coder_brief.md",
    "Final_Project/sessions/coder_codebook_v1.1.md"
@@ -610,6 +880,7 @@
    "claude-sonnet-5-5": 57
   },
   "order_problems": [],
+  "order_problems_redone_S08": [],
   "other_reads": [
    "Final_Project/sessions/coder_brief.md",
    "Final_Project/sessions/coder_codebook_v1.1.md"
@@ -638,6 +909,7 @@
    "claude-sonnet-5-5": 73
   },
   "order_problems": [],
+  "order_problems_redone_S08": [],
   "other_reads": [
    "Final_Project/sessions/coder_brief.md",
    "Final_Project/sessions/coder_codebook_v1.1.md"
@@ -666,6 +938,7 @@
    "claude-sonnet-5-5": 70
   },
   "order_problems": [],
+  "order_problems_redone_S08": [],
   "other_reads": [
    "Final_Project/sessions/coder_brief.md",
    "Final_Project/sessions/coder_codebook_v1.1.md"
@@ -693,6 +966,7 @@
    "claude-sonnet-5-5": 75
   },
   "order_problems": [],
+  "order_problems_redone_S08": [],
   "other_reads": [
    "Final_Project/sessions/coder_brief.md",
    "Final_Project/sessions/coder_codebook_v1.1.md"
@@ -720,6 +994,7 @@
    "claude-sonnet-5-5": 66
   },
   "order_problems": [],
+  "order_problems_redone_S08": [],
   "other_reads": [
    "Final_Project/sessions/coder_brief.md",
    "Final_Project/sessions/coder_codebook_v1.1.md"
@@ -748,6 +1023,7 @@
    "claude-sonnet-5-5": 52
   },
   "order_problems": [],
+  "order_problems_redone_S08": [],
   "other_reads": [
    "Final_Project/sessions/coder_brief.md",
    "Final_Project/sessions/coder_codebook_v1.1.md"
@@ -775,6 +1051,7 @@
    "claude-sonnet-5-5": 67
   },
   "order_problems": [],
+  "order_problems_redone_S08": [],
   "other_reads": [
    "Final_Project/sessions/coder_brief.md",
    "Final_Project/sessions/coder_codebook_v1.1.md"
@@ -802,6 +1079,7 @@
    "claude-sonnet-5-5": 79
   },
   "order_problems": [],
+  "order_problems_redone_S08": [],
   "other_reads": [
    "Final_Project/sessions/coder_brief.md",
    "Final_Project/sessions/coder_codebook_v1.1.md"
@@ -829,6 +1107,7 @@
    "claude-sonnet-5-5": 32
   },
   "order_problems": [],
+  "order_problems_redone_S08": [],
   "other_reads": [
    "Final_Project/sessions/coder_brief.md",
    "Final_Project/sessions/coder_codebook_v1.1.md"

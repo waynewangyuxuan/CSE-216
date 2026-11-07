@@ -1,0 +1,372 @@
+{
+ "by_source": {
+  "A": {
+   "conflict_kinds": {
+    "U1_U2_script_differs": 6,
+    "U7_script_found_run": 3,
+    "chat_or_no_trace_label_script_found_paste": 6,
+    "insertion_label_no_script_match": 2
+   },
+   "conflicts": {
+    "NIRVANA-e01-t05": {
+     "class": "ADDED_TEXT_NO_MATCH",
+     "final_source": "bet6",
+     "kind": "insertion_label_no_script_match",
+     "label": "U1"
+    },
+    "NIRVANA-e04-t17": {
+     "class": "ADDED_TEXT_NO_MATCH",
+     "final_source": "bet6",
+     "kind": "insertion_label_no_script_match",
+     "label": "U3"
+    },
+    "NIRVANA-e06-t05": {
+     "class": "PASTE_MATCH_THEN_EDITS",
+     "final_source": "bet6",
+     "kind": "chat_or_no_trace_label_script_found_paste",
+     "label": "U8"
+    },
+    "NIRVANA-e06-t09": {
+     "class": "PASTE_MATCH_THEN_EDITS",
+     "final_source": "bet6",
+     "kind": "chat_or_no_trace_label_script_found_paste",
+     "label": "U8"
+    },
+    "NIRVANA-e10-t01": {
+     "class": "PASTE_MATCH_THEN_EDITS",
+     "final_source": "bet6",
+     "kind": "U1_U2_script_differs",
+     "label": "U2"
+    },
+    "NIRVANA-e10-t02": {
+     "class": "PASTE_MATCH_THEN_EDITS",
+     "final_source": "bet6",
+     "kind": "U1_U2_script_differs",
+     "label": "U1"
+    },
+    "NIRVANA-e18-t01": {
+     "class": "PASTE_MATCH_THEN_EDITS",
+     "final_source": "bet6",
+     "kind": "U1_U2_script_differs",
+     "label": "U2"
+    },
+    "NIRVANA-e25-t05": {
+     "class": "PASTE_MATCH_THEN_EDITS",
+     "final_source": "bet6",
+     "kind": "U1_U2_script_differs",
+     "label": "U2"
+    },
+    "NIRVANA-e25-t11": {
+     "class": "PASTE_MATCH_THEN_EDITS",
+     "final_source": "bet6",
+     "kind": "U1_U2_script_differs",
+     "label": "U2"
+    },
+    "NIRVANA-e25-t15": {
+     "class": "PASTE_MATCH_UNEDITED",
+     "final_source": "bet6",
+     "kind": "chat_or_no_trace_label_script_found_paste",
+     "label": "U8"
+    },
+    "NIRVANA-e38-t02": {
+     "class": "TYPED_MATCH",
+     "final_source": "bet6",
+     "kind": "U7_script_found_run",
+     "label": "U7"
+    },
+    "NIRVANA-e42-t12": {
+     "class": "PASTE_MATCH_UNEDITED",
+     "final_source": "bet6",
+     "kind": "U7_script_found_run",
+     "label": "U7"
+    },
+    "NIRVANA-e44-t05": {
+     "class": "PASTE_MATCH_UNEDITED",
+     "final_source": "bet6",
+     "kind": "chat_or_no_trace_label_script_found_paste",
+     "label": "U4"
+    },
+    "NIRVANA-e56-t05": {
+     "class": "PASTE_MATCH_THEN_EDITS",
+     "final_source": "bet6",
+     "kind": "U1_U2_script_differs",
+     "label": "U1"
+    },
+    "NIRVANA-e57-t07": {
+     "class": "PASTE_MATCH_UNEDITED",
+     "final_source": "bet6",
+     "kind": "chat_or_no_trace_label_script_found_paste",
+     "label": "U4"
+    },
+    "NIRVANA-e61-t23": {
+     "class": "TYPED_MATCH",
+     "final_source": "bet6",
+     "kind": "U7_script_found_run",
+     "label": "U7"
+    },
+    "NIRVANA-e73-t02": {
+     "class": "PASTE_MATCH_THEN_EDITS",
+     "final_source": "bet6",
+     "kind": "chat_or_no_trace_label_script_found_paste",
+     "label": "U8"
+    }
+   },
+   "u1_u2": {
+    "agree": 73,
+    "both_present": 79
+   },
+   "u7": {
+    "n": 75,
+    "no_script_match": 72
+   }
+  },
+  "B": {
+   "conflict_kinds": {
+    "U1_U2_script_differs": 5,
+    "U7_script_found_run": 5,
+    "chat_or_no_trace_label_script_found_paste": 7,
+    "insertion_label_no_script_match": 5
+   },
+   "conflicts": {
+    "NIRVANA-e01-t05": {
+     "class": "ADDED_TEXT_NO_MATCH",
+     "final_source": "bet6",
+     "kind": "insertion_label_no_script_match",
+     "label": "U1"
+    },
+    "NIRVANA-e04-t17": {
+     "class": "ADDED_TEXT_NO_MATCH",
+     "final_source": "bet6",
+     "kind": "insertion_label_no_script_match",
+     "label": "U3"
+    },
+    "NIRVANA-e06-t05": {
+     "class": "PASTE_MATCH_THEN_EDITS",
+     "final_source": "bet6",
+     "kind": "chat_or_no_trace_label_script_found_paste",
+     "label": "U8"
+    },
+    "NIRVANA-e06-t09": {
+     "class": "PASTE_MATCH_THEN_EDITS",
+     "final_source": "bet6",
+     "kind": "chat_or_no_trace_label_script_found_paste",
+     "label": "UX"
+    },
+    "NIRVANA-e19-t05": {
+     "class": "PASTE_MATCH_THEN_EDITS",
+     "final_source": "bet6",
+     "kind": "U7_script_found_run",
+     "label": "U7"
+    },
+    "NIRVANA-e25-t03": {
+     "class": "PASTE_MATCH_THEN_EDITS",
+     "final_source": "bet6",
+     "kind": "U1_U2_script_differs",
+     "label": "U1"
+    },
+    "NIRVANA-e25-t05": {
+     "class": "PASTE_MATCH_THEN_EDITS",
+     "final_source": "bet6",
+     "kind": "U1_U2_script_differs",
+     "label": "U2"
+    },
+    "NIRVANA-e25-t11": {
+     "class": "PASTE_MATCH_THEN_EDITS",
+     "final_source": "bet6",
+     "kind": "U1_U2_script_differs",
+     "label": "U2"
+    },
+    "NIRVANA-e25-t15": {
+     "class": "PASTE_MATCH_UNEDITED",
+     "final_source": "bet6",
+     "kind": "chat_or_no_trace_label_script_found_paste",
+     "label": "U8"
+    },
+    "NIRVANA-e26-t07": {
+     "class": "PASTE_MATCH_THEN_EDITS",
+     "final_source": "bet6",
+     "kind": "U1_U2_script_differs",
+     "label": "U2"
+    },
+    "NIRVANA-e38-t02": {
+     "class": "TYPED_MATCH",
+     "final_source": "bet6",
+     "kind": "U7_script_found_run",
+     "label": "U7"
+    },
+    "NIRVANA-e42-t12": {
+     "class": "PASTE_MATCH_UNEDITED",
+     "final_source": "bet6",
+     "kind": "U7_script_found_run",
+     "label": "U7"
+    },
+    "NIRVANA-e44-t05": {
+     "class": "PASTE_MATCH_UNEDITED",
+     "final_source": "bet6",
+     "kind": "chat_or_no_trace_label_script_found_paste",
+     "label": "U4"
+    },
+    "NIRVANA-e44-t07": {
+     "class": "PASTE_MATCH_UNEDITED",
+     "final_source": "bet6",
+     "kind": "chat_or_no_trace_label_script_found_paste",
+     "label": "UX"
+    },
+    "NIRVANA-e57-t07": {
+     "class": "PASTE_MATCH_UNEDITED",
+     "final_source": "bet6",
+     "kind": "chat_or_no_trace_label_script_found_paste",
+     "label": "U4"
+    },
+    "NIRVANA-e61-t23": {
+     "class": "TYPED_MATCH",
+     "final_source": "bet6",
+     "kind": "U7_script_found_run",
+     "label": "U7"
+    },
+    "NIRVANA-e63-t01": {
+     "class": "PASTE_MATCH_THEN_EDITS",
+     "final_source": "bet4",
+     "kind": "U1_U2_script_differs",
+     "label": "U1"
+    },
+    "NIRVANA-e68-t03": {
+     "class": "ADDED_TEXT_NO_MATCH",
+     "final_source": "bet6",
+     "kind": "insertion_label_no_script_match",
+     "label": "U1"
+    },
+    "NIRVANA-e68-t05": {
+     "class": "ADDED_TEXT_NO_MATCH",
+     "final_source": "bet6",
+     "kind": "insertion_label_no_script_match",
+     "label": "U2"
+    },
+    "NIRVANA-e70-t04": {
+     "class": "PASTE_MATCH_THEN_EDITS",
+     "final_source": "bet6",
+     "kind": "U7_script_found_run",
+     "label": "U7"
+    },
+    "NIRVANA-e71-t01": {
+     "class": "ADDED_TEXT_NO_MATCH",
+     "final_source": "bet4",
+     "kind": "insertion_label_no_script_match",
+     "label": "U1"
+    },
+    "NIRVANA-e73-t02": {
+     "class": "PASTE_MATCH_THEN_EDITS",
+     "final_source": "bet6",
+     "kind": "chat_or_no_trace_label_script_found_paste",
+     "label": "UX"
+    }
+   },
+   "u1_u2": {
+    "agree": 68,
+    "both_present": 73
+   },
+   "u7": {
+    "n": 73,
+    "no_script_match": 68
+   }
+  },
+  "final": {
+   "conflict_kinds": {
+    "U7_script_found_run": 3,
+    "chat_or_no_trace_label_script_found_paste": 6,
+    "insertion_label_no_script_match": 3
+   },
+   "conflicts": {
+    "NIRVANA-e01-t05": {
+     "class": "ADDED_TEXT_NO_MATCH",
+     "final_source": "bet6",
+     "kind": "insertion_label_no_script_match",
+     "label": "U1"
+    },
+    "NIRVANA-e04-t17": {
+     "class": "ADDED_TEXT_NO_MATCH",
+     "final_source": "bet6",
+     "kind": "insertion_label_no_script_match",
+     "label": "U3"
+    },
+    "NIRVANA-e06-t05": {
+     "class": "PASTE_MATCH_THEN_EDITS",
+     "final_source": "bet6",
+     "kind": "chat_or_no_trace_label_script_found_paste",
+     "label": "U8"
+    },
+    "NIRVANA-e06-t09": {
+     "class": "PASTE_MATCH_THEN_EDITS",
+     "final_source": "bet6",
+     "kind": "chat_or_no_trace_label_script_found_paste",
+     "label": "UX"
+    },
+    "NIRVANA-e25-t15": {
+     "class": "PASTE_MATCH_UNEDITED",
+     "final_source": "bet6",
+     "kind": "chat_or_no_trace_label_script_found_paste",
+     "label": "U8"
+    },
+    "NIRVANA-e38-t02": {
+     "class": "TYPED_MATCH",
+     "final_source": "bet6",
+     "kind": "U7_script_found_run",
+     "label": "U7"
+    },
+    "NIRVANA-e42-t12": {
+     "class": "PASTE_MATCH_UNEDITED",
+     "final_source": "bet6",
+     "kind": "U7_script_found_run",
+     "label": "U7"
+    },
+    "NIRVANA-e44-t05": {
+     "class": "PASTE_MATCH_UNEDITED",
+     "final_source": "bet6",
+     "kind": "chat_or_no_trace_label_script_found_paste",
+     "label": "U4"
+    },
+    "NIRVANA-e56-t01": {
+     "class": "ADDED_TEXT_NO_MATCH",
+     "final_source": "bet4",
+     "kind": "insertion_label_no_script_match",
+     "label": "U3"
+    },
+    "NIRVANA-e57-t07": {
+     "class": "PASTE_MATCH_UNEDITED",
+     "final_source": "bet6",
+     "kind": "chat_or_no_trace_label_script_found_paste",
+     "label": "U4"
+    },
+    "NIRVANA-e61-t23": {
+     "class": "TYPED_MATCH",
+     "final_source": "bet6",
+     "kind": "U7_script_found_run",
+     "label": "U7"
+    },
+    "NIRVANA-e73-t02": {
+     "class": "PASTE_MATCH_THEN_EDITS",
+     "final_source": "bet6",
+     "kind": "chat_or_no_trace_label_script_found_paste",
+     "label": "UX"
+    }
+   },
+   "u1_u2": {
+    "agree": 74,
+    "both_present": 74
+   },
+   "u7": {
+    "n": 74,
+    "no_script_match": 71
+   }
+  }
+ },
+ "class": {
+  "ADDED_TEXT_NO_MATCH": 72,
+  "NO_EDITOR_TEXT": 3,
+  "PASTE_MATCH_THEN_EDITS": 71,
+  "PASTE_MATCH_UNEDITED": 41,
+  "SMALL_EDITS_ONLY": 7,
+  "TYPED_MATCH": 10
+ },
+ "n_c2": 204
+}

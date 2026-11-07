@@ -1,0 +1,2231 @@
+{
+ "adjudication": {
+  "by_field": {
+   "decision": 44,
+   "function": 29,
+   "object": 22,
+   "operation": 22,
+   "prior_own_work": 41,
+   "uptake": 35,
+   "verification": 22
+  },
+  "by_field_source": {
+   "decision": {
+    "UNSETTLED": 1,
+    "adj=A": 34,
+    "adj=B": 9
+   },
+   "function": {
+    "UNSETTLED": 1,
+    "adj=A": 23,
+    "adj=B": 5
+   },
+   "object": {
+    "UNSETTLED": 2,
+    "adj=A": 15,
+    "adj=B": 5
+   },
+   "operation": {
+    "UNSETTLED": 2,
+    "adj=A": 13,
+    "adj=B": 7
+   },
+   "prior_own_work": {
+    "adj=A": 36,
+    "adj=B": 5
+   },
+   "uptake": {
+    "UNSETTLED": 3,
+    "adj=A": 23,
+    "adj=B": 9
+   },
+   "verification": {
+    "UNSETTLED": 2,
+    "adj=A": 15,
+    "adj=B": 5
+   }
+  },
+  "by_set": {
+   "new": {
+    "UNSETTLED": 11,
+    "adj=A": 153,
+    "adj=B": 42
+   },
+   "sensitivity": {
+    "adj=A": 6,
+    "adj=B": 3
+   }
+  },
+  "by_source": {
+   "UNSETTLED": 11,
+   "adj=A": 159,
+   "adj=B": 45,
+   "script_s7": 3,
+   "superseded_S08": 7
+  },
+  "coded_fields": 2065,
+  "disputed_fields": 215,
+  "shown_position_won": {
+   "first": 122,
+   "second": 82
+  },
+  "unsettled": [
+   "NIRVANA-e04-t16 verification",
+   "NIRVANA-e13-t02 operation",
+   "NIRVANA-e19-t01 decision",
+   "NIRVANA-e19-t01 uptake",
+   "NIRVANA-e25-t16 verification",
+   "NIRVANA-e34-t01 object",
+   "NIRVANA-e42-t08 uptake",
+   "NIRVANA-e47-t01 uptake",
+   "NIRVANA-e68-t06 function",
+   "NIRVANA-e68-t06 object",
+   "NIRVANA-e68-t06 operation"
+  ],
+  "windows_adjudicated": 295,
+  "windows_with_dispute": 138
+ },
+ "agreement": {
+  "decision": {
+   "C1": {
+    "kappa": 0.73,
+    "kappa_ci_cluster": [
+     0.53,
+     0.91
+    ],
+    "kappa_ci_window": [
+     0.61,
+     0.84
+    ],
+    "n": 110,
+    "pct": 84.5,
+    "pct_ci_cluster": [
+     72.9,
+     95.17
+    ],
+    "pct_ci_window": [
+     77.27,
+     90.91
+    ],
+    "sessions": 32
+   },
+   "C2": {
+    "kappa": 0.82,
+    "kappa_ci_cluster": [
+     0.74,
+     0.88
+    ],
+    "kappa_ci_window": [
+     0.76,
+     0.88
+    ],
+    "n": 179,
+    "pct": 86.0,
+    "pct_ci_cluster": [
+     80.0,
+     91.07
+    ],
+    "pct_ci_window": [
+     81.01,
+     90.5
+    ],
+    "sessions": 61
+   },
+   "adjudicated": {
+    "kappa": 0.8,
+    "kappa_ci_cluster": [
+     0.72,
+     0.87
+    ],
+    "kappa_ci_window": [
+     0.74,
+     0.85
+    ],
+    "n": 295,
+    "pct": 85.1,
+    "pct_ci_cluster": [
+     79.1,
+     90.67
+    ],
+    "pct_ci_window": [
+     80.68,
+     89.15
+    ],
+    "sessions": 62
+   },
+   "all_347": {
+    "kappa": 0.81,
+    "kappa_ci_cluster": [
+     0.75,
+     0.88
+    ],
+    "kappa_ci_window": [
+     0.76,
+     0.86
+    ],
+    "n": 347,
+    "pct": 86.5,
+    "pct_ci_cluster": [
+     81.36,
+     91.59
+    ],
+    "pct_ci_window": [
+     82.71,
+     89.91
+    ],
+    "sessions": 71
+   },
+   "bet4_kept_52": {
+    "kappa": 0.91,
+    "kappa_ci_cluster": [
+     0.8,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.79,
+     1.0
+    ],
+    "n": 52,
+    "pct": 94.2,
+    "pct_ci_cluster": [
+     88.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     86.54,
+     100.0
+    ],
+    "sessions": 20
+   },
+   "followup": {
+    "kappa": 0.8,
+    "kappa_ci_cluster": [
+     0.72,
+     0.88
+    ],
+    "kappa_ci_window": [
+     0.75,
+     0.85
+    ],
+    "n": 289,
+    "pct": 85.5,
+    "pct_ci_cluster": [
+     79.06,
+     91.38
+    ],
+    "pct_ci_window": [
+     81.31,
+     89.27
+    ],
+    "sessions": 61
+   },
+   "new": {
+    "kappa": 0.8,
+    "kappa_ci_cluster": [
+     0.71,
+     0.87
+    ],
+    "kappa_ci_window": [
+     0.74,
+     0.85
+    ],
+    "n": 277,
+    "pct": 85.2,
+    "pct_ci_cluster": [
+     78.78,
+     90.81
+    ],
+    "pct_ci_window": [
+     81.23,
+     89.17
+    ],
+    "sessions": 62
+   },
+   "sensitivity": {
+    "kappa": 0.78,
+    "kappa_ci_cluster": [
+     0.57,
+     0.93
+    ],
+    "kappa_ci_window": [
+     0.51,
+     1.0
+    ],
+    "n": 18,
+    "pct": 83.3,
+    "pct_ci_cluster": [
+     72.22,
+     94.44
+    ],
+    "pct_ci_window": [
+     66.67,
+     100.0
+    ],
+    "sessions": 6
+   }
+  },
+  "family": {
+   "C1": {
+    "kappa": 0.92,
+    "kappa_ci_cluster": [
+     0.87,
+     0.97
+    ],
+    "kappa_ci_window": [
+     0.86,
+     0.97
+    ],
+    "n": 110,
+    "pct": 93.6,
+    "pct_ci_cluster": [
+     89.6,
+     97.44
+    ],
+    "pct_ci_window": [
+     89.09,
+     97.27
+    ],
+    "sessions": 32
+   },
+   "C2": {
+    "kappa": 0.91,
+    "kappa_ci_cluster": [
+     0.85,
+     0.96
+    ],
+    "kappa_ci_window": [
+     0.85,
+     0.95
+    ],
+    "n": 179,
+    "pct": 92.7,
+    "pct_ci_cluster": [
+     88.24,
+     96.48
+    ],
+    "pct_ci_window": [
+     88.83,
+     96.09
+    ],
+    "sessions": 61
+   },
+   "adjudicated": {
+    "kappa": 0.91,
+    "kappa_ci_cluster": [
+     0.87,
+     0.95
+    ],
+    "kappa_ci_window": [
+     0.87,
+     0.95
+    ],
+    "n": 295,
+    "pct": 92.9,
+    "pct_ci_cluster": [
+     89.62,
+     95.87
+    ],
+    "pct_ci_window": [
+     89.83,
+     95.59
+    ],
+    "sessions": 62
+   },
+   "all_347": {
+    "kappa": 0.91,
+    "kappa_ci_cluster": [
+     0.87,
+     0.94
+    ],
+    "kappa_ci_window": [
+     0.87,
+     0.94
+    ],
+    "n": 347,
+    "pct": 92.5,
+    "pct_ci_cluster": [
+     89.52,
+     95.32
+    ],
+    "pct_ci_window": [
+     89.91,
+     95.1
+    ],
+    "sessions": 71
+   },
+   "bet4_kept_52": {
+    "kappa": 0.88,
+    "kappa_ci_cluster": [
+     0.75,
+     0.98
+    ],
+    "kappa_ci_window": [
+     0.77,
+     0.97
+    ],
+    "n": 52,
+    "pct": 90.4,
+    "pct_ci_cluster": [
+     80.39,
+     98.08
+    ],
+    "pct_ci_window": [
+     80.77,
+     98.08
+    ],
+    "sessions": 20
+   },
+   "followup": {
+    "kappa": 0.91,
+    "kappa_ci_cluster": [
+     0.87,
+     0.95
+    ],
+    "kappa_ci_window": [
+     0.87,
+     0.95
+    ],
+    "n": 289,
+    "pct": 93.1,
+    "pct_ci_cluster": [
+     89.86,
+     95.88
+    ],
+    "pct_ci_window": [
+     89.97,
+     95.85
+    ],
+    "sessions": 61
+   },
+   "new": {
+    "kappa": 0.91,
+    "kappa_ci_cluster": [
+     0.86,
+     0.94
+    ],
+    "kappa_ci_window": [
+     0.87,
+     0.94
+    ],
+    "n": 277,
+    "pct": 92.4,
+    "pct_ci_cluster": [
+     89.08,
+     95.54
+    ],
+    "pct_ci_window": [
+     89.53,
+     95.31
+    ],
+    "sessions": 62
+   },
+   "sensitivity": {
+    "kappa": 1.0,
+    "kappa_ci_cluster": [
+     1.0,
+     1.0
+    ],
+    "kappa_ci_window": [
+     1.0,
+     1.0
+    ],
+    "n": 18,
+    "pct": 100.0,
+    "pct_ci_cluster": [
+     100.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     100.0,
+     100.0
+    ],
+    "sessions": 6
+   }
+  },
+  "function": {
+   "C1": {
+    "kappa": 0.91,
+    "kappa_ci_cluster": [
+     0.84,
+     0.97
+    ],
+    "kappa_ci_window": [
+     0.84,
+     0.96
+    ],
+    "n": 110,
+    "pct": 92.7,
+    "pct_ci_cluster": [
+     86.67,
+     97.83
+    ],
+    "pct_ci_window": [
+     87.27,
+     97.27
+    ],
+    "sessions": 32
+   },
+   "C2": {
+    "kappa": 0.85,
+    "kappa_ci_cluster": [
+     0.79,
+     0.91
+    ],
+    "kappa_ci_window": [
+     0.79,
+     0.91
+    ],
+    "n": 179,
+    "pct": 88.8,
+    "pct_ci_cluster": [
+     83.95,
+     93.08
+    ],
+    "pct_ci_window": [
+     83.8,
+     93.3
+    ],
+    "sessions": 61
+   },
+   "adjudicated": {
+    "kappa": 0.87,
+    "kappa_ci_cluster": [
+     0.82,
+     0.92
+    ],
+    "kappa_ci_window": [
+     0.83,
+     0.92
+    ],
+    "n": 295,
+    "pct": 90.2,
+    "pct_ci_cluster": [
+     86.01,
+     94.18
+    ],
+    "pct_ci_window": [
+     86.78,
+     93.56
+    ],
+    "sessions": 62
+   },
+   "all_347": {
+    "kappa": 0.88,
+    "kappa_ci_cluster": [
+     0.83,
+     0.92
+    ],
+    "kappa_ci_window": [
+     0.84,
+     0.92
+    ],
+    "n": 347,
+    "pct": 90.8,
+    "pct_ci_cluster": [
+     87.25,
+     94.16
+    ],
+    "pct_ci_window": [
+     87.61,
+     93.66
+    ],
+    "sessions": 71
+   },
+   "bet4_kept_52": {
+    "kappa": 0.92,
+    "kappa_ci_cluster": [
+     0.78,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.81,
+     1.0
+    ],
+    "n": 52,
+    "pct": 94.2,
+    "pct_ci_cluster": [
+     84.91,
+     100.0
+    ],
+    "pct_ci_window": [
+     86.54,
+     100.0
+    ],
+    "sessions": 20
+   },
+   "followup": {
+    "kappa": 0.87,
+    "kappa_ci_cluster": [
+     0.82,
+     0.92
+    ],
+    "kappa_ci_window": [
+     0.83,
+     0.92
+    ],
+    "n": 289,
+    "pct": 90.3,
+    "pct_ci_cluster": [
+     86.05,
+     94.24
+    ],
+    "pct_ci_window": [
+     86.85,
+     93.77
+    ],
+    "sessions": 61
+   },
+   "new": {
+    "kappa": 0.88,
+    "kappa_ci_cluster": [
+     0.82,
+     0.93
+    ],
+    "kappa_ci_window": [
+     0.83,
+     0.92
+    ],
+    "n": 277,
+    "pct": 90.6,
+    "pct_ci_cluster": [
+     85.94,
+     94.79
+    ],
+    "pct_ci_window": [
+     87.0,
+     94.22
+    ],
+    "sessions": 62
+   },
+   "sensitivity": {
+    "kappa": 0.8,
+    "kappa_ci_cluster": [
+     0.61,
+     0.93
+    ],
+    "kappa_ci_window": [
+     0.57,
+     1.0
+    ],
+    "n": 18,
+    "pct": 83.3,
+    "pct_ci_cluster": [
+     72.22,
+     94.44
+    ],
+    "pct_ci_window": [
+     66.67,
+     100.0
+    ],
+    "sessions": 6
+   }
+  },
+  "object": {
+   "C1": {
+    "kappa": 0.82,
+    "kappa_ci_cluster": [
+     0.67,
+     0.93
+    ],
+    "kappa_ci_window": [
+     0.72,
+     0.9
+    ],
+    "n": 110,
+    "pct": 89.1,
+    "pct_ci_cluster": [
+     80.91,
+     96.55
+    ],
+    "pct_ci_window": [
+     83.64,
+     94.55
+    ],
+    "sessions": 32
+   },
+   "C2": {
+    "kappa": 0.91,
+    "kappa_ci_cluster": [
+     0.84,
+     0.97
+    ],
+    "kappa_ci_window": [
+     0.84,
+     0.96
+    ],
+    "n": 179,
+    "pct": 95.0,
+    "pct_ci_cluster": [
+     91.04,
+     98.34
+    ],
+    "pct_ci_window": [
+     91.06,
+     97.77
+    ],
+    "sessions": 61
+   },
+   "adjudicated": {
+    "kappa": 0.87,
+    "kappa_ci_cluster": [
+     0.81,
+     0.92
+    ],
+    "kappa_ci_window": [
+     0.81,
+     0.92
+    ],
+    "n": 295,
+    "pct": 92.5,
+    "pct_ci_cluster": [
+     89.13,
+     95.78
+    ],
+    "pct_ci_window": [
+     89.49,
+     95.25
+    ],
+    "sessions": 62
+   },
+   "all_347": {
+    "kappa": 0.86,
+    "kappa_ci_cluster": [
+     0.8,
+     0.91
+    ],
+    "kappa_ci_window": [
+     0.81,
+     0.91
+    ],
+    "n": 347,
+    "pct": 91.9,
+    "pct_ci_cluster": [
+     88.71,
+     94.98
+    ],
+    "pct_ci_window": [
+     89.05,
+     94.52
+    ],
+    "sessions": 71
+   },
+   "bet4_kept_52": {
+    "kappa": 0.8,
+    "kappa_ci_cluster": [
+     0.62,
+     0.94
+    ],
+    "kappa_ci_window": [
+     0.66,
+     0.93
+    ],
+    "n": 52,
+    "pct": 88.5,
+    "pct_ci_cluster": [
+     78.0,
+     96.3
+    ],
+    "pct_ci_window": [
+     78.85,
+     96.15
+    ],
+    "sessions": 20
+   },
+   "followup": {
+    "kappa": 0.87,
+    "kappa_ci_cluster": [
+     0.82,
+     0.93
+    ],
+    "kappa_ci_window": [
+     0.82,
+     0.92
+    ],
+    "n": 289,
+    "pct": 92.7,
+    "pct_ci_cluster": [
+     89.14,
+     96.05
+    ],
+    "pct_ci_window": [
+     89.62,
+     95.5
+    ],
+    "sessions": 61
+   },
+   "new": {
+    "kappa": 0.87,
+    "kappa_ci_cluster": [
+     0.82,
+     0.93
+    ],
+    "kappa_ci_window": [
+     0.82,
+     0.92
+    ],
+    "n": 277,
+    "pct": 92.8,
+    "pct_ci_cluster": [
+     89.3,
+     96.03
+    ],
+    "pct_ci_window": [
+     89.53,
+     95.67
+    ],
+    "sessions": 62
+   },
+   "sensitivity": {
+    "kappa": 0.81,
+    "kappa_ci_cluster": [
+     0.42,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.48,
+     1.0
+    ],
+    "n": 18,
+    "pct": 88.9,
+    "pct_ci_cluster": [
+     77.78,
+     100.0
+    ],
+    "pct_ci_window": [
+     72.22,
+     100.0
+    ],
+    "sessions": 6
+   }
+  },
+  "operation": {
+   "C1": {
+    "kappa": 0.92,
+    "kappa_ci_cluster": [
+     0.88,
+     0.97
+    ],
+    "kappa_ci_window": [
+     0.86,
+     0.97
+    ],
+    "n": 110,
+    "pct": 93.6,
+    "pct_ci_cluster": [
+     89.6,
+     97.44
+    ],
+    "pct_ci_window": [
+     89.09,
+     97.27
+    ],
+    "sessions": 32
+   },
+   "C2": {
+    "kappa": 0.9,
+    "kappa_ci_cluster": [
+     0.84,
+     0.95
+    ],
+    "kappa_ci_window": [
+     0.85,
+     0.95
+    ],
+    "n": 179,
+    "pct": 92.2,
+    "pct_ci_cluster": [
+     87.5,
+     96.02
+    ],
+    "pct_ci_window": [
+     87.71,
+     96.09
+    ],
+    "sessions": 61
+   },
+   "adjudicated": {
+    "kappa": 0.91,
+    "kappa_ci_cluster": [
+     0.87,
+     0.95
+    ],
+    "kappa_ci_window": [
+     0.87,
+     0.94
+    ],
+    "n": 295,
+    "pct": 92.5,
+    "pct_ci_cluster": [
+     89.26,
+     95.67
+    ],
+    "pct_ci_window": [
+     89.49,
+     95.25
+    ],
+    "sessions": 62
+   },
+   "all_347": {
+    "kappa": 0.91,
+    "kappa_ci_cluster": [
+     0.87,
+     0.94
+    ],
+    "kappa_ci_window": [
+     0.87,
+     0.94
+    ],
+    "n": 347,
+    "pct": 92.2,
+    "pct_ci_cluster": [
+     89.15,
+     95.0
+    ],
+    "pct_ci_window": [
+     89.34,
+     94.81
+    ],
+    "sessions": 71
+   },
+   "bet4_kept_52": {
+    "kappa": 0.88,
+    "kappa_ci_cluster": [
+     0.75,
+     0.98
+    ],
+    "kappa_ci_window": [
+     0.77,
+     0.97
+    ],
+    "n": 52,
+    "pct": 90.4,
+    "pct_ci_cluster": [
+     80.39,
+     98.08
+    ],
+    "pct_ci_window": [
+     80.77,
+     98.08
+    ],
+    "sessions": 20
+   },
+   "followup": {
+    "kappa": 0.91,
+    "kappa_ci_cluster": [
+     0.87,
+     0.94
+    ],
+    "kappa_ci_window": [
+     0.87,
+     0.95
+    ],
+    "n": 289,
+    "pct": 92.7,
+    "pct_ci_cluster": [
+     89.49,
+     95.56
+    ],
+    "pct_ci_window": [
+     89.62,
+     95.5
+    ],
+    "sessions": 61
+   },
+   "new": {
+    "kappa": 0.9,
+    "kappa_ci_cluster": [
+     0.86,
+     0.94
+    ],
+    "kappa_ci_window": [
+     0.87,
+     0.94
+    ],
+    "n": 277,
+    "pct": 92.1,
+    "pct_ci_cluster": [
+     88.54,
+     95.22
+    ],
+    "pct_ci_window": [
+     88.81,
+     94.95
+    ],
+    "sessions": 62
+   },
+   "sensitivity": {
+    "kappa": 1.0,
+    "kappa_ci_cluster": [
+     1.0,
+     1.0
+    ],
+    "kappa_ci_window": [
+     1.0,
+     1.0
+    ],
+    "n": 18,
+    "pct": 100.0,
+    "pct_ci_cluster": [
+     100.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     100.0,
+     100.0
+    ],
+    "sessions": 6
+   }
+  },
+  "prior_own_work": {
+   "C1": {
+    "kappa": 0.76,
+    "kappa_ci_cluster": [
+     0.53,
+     0.96
+    ],
+    "kappa_ci_window": [
+     0.66,
+     0.86
+    ],
+    "n": 110,
+    "pct": 85.5,
+    "pct_ci_cluster": [
+     70.54,
+     98.0
+    ],
+    "pct_ci_window": [
+     78.18,
+     91.82
+    ],
+    "sessions": 32
+   },
+   "C2": {
+    "kappa": 0.79,
+    "kappa_ci_cluster": [
+     0.65,
+     0.91
+    ],
+    "kappa_ci_window": [
+     0.7,
+     0.87
+    ],
+    "n": 179,
+    "pct": 87.7,
+    "pct_ci_cluster": [
+     79.23,
+     95.0
+    ],
+    "pct_ci_window": [
+     82.68,
+     92.18
+    ],
+    "sessions": 61
+   },
+   "adjudicated": {
+    "kappa": 0.76,
+    "kappa_ci_cluster": [
+     0.61,
+     0.91
+    ],
+    "kappa_ci_window": [
+     0.7,
+     0.83
+    ],
+    "n": 295,
+    "pct": 86.1,
+    "pct_ci_cluster": [
+     75.49,
+     94.96
+    ],
+    "pct_ci_window": [
+     82.03,
+     89.83
+    ],
+    "sessions": 62
+   },
+   "all_347": {
+    "kappa": 0.79,
+    "kappa_ci_cluster": [
+     0.65,
+     0.92
+    ],
+    "kappa_ci_window": [
+     0.73,
+     0.85
+    ],
+    "n": 347,
+    "pct": 87.3,
+    "pct_ci_cluster": [
+     78.19,
+     95.2
+    ],
+    "pct_ci_window": [
+     83.57,
+     90.78
+    ],
+    "sessions": 71
+   },
+   "bet4_kept_52": {
+    "kappa": 0.91,
+    "kappa_ci_cluster": [
+     0.8,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.8,
+     1.0
+    ],
+    "n": 52,
+    "pct": 94.2,
+    "pct_ci_cluster": [
+     88.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     86.54,
+     100.0
+    ],
+    "sessions": 20
+   },
+   "followup": {
+    "kappa": 0.78,
+    "kappa_ci_cluster": [
+     0.63,
+     0.92
+    ],
+    "kappa_ci_window": [
+     0.71,
+     0.84
+    ],
+    "n": 289,
+    "pct": 86.9,
+    "pct_ci_cluster": [
+     76.9,
+     95.83
+    ],
+    "pct_ci_window": [
+     83.04,
+     90.66
+    ],
+    "sessions": 61
+   },
+   "new": {
+    "kappa": 0.75,
+    "kappa_ci_cluster": [
+     0.6,
+     0.91
+    ],
+    "kappa_ci_window": [
+     0.68,
+     0.82
+    ],
+    "n": 277,
+    "pct": 85.2,
+    "pct_ci_cluster": [
+     74.76,
+     94.96
+    ],
+    "pct_ci_window": [
+     80.87,
+     89.17
+    ],
+    "sessions": 62
+   },
+   "sensitivity": {
+    "kappa": 1.0,
+    "kappa_ci_cluster": [
+     1.0,
+     1.0
+    ],
+    "kappa_ci_window": [
+     1.0,
+     1.0
+    ],
+    "n": 18,
+    "pct": 100.0,
+    "pct_ci_cluster": [
+     100.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     100.0,
+     100.0
+    ],
+    "sessions": 6
+   }
+  },
+  "process": {
+   "C1": {
+    "kappa": 0.92,
+    "kappa_ci_cluster": [
+     0.87,
+     0.97
+    ],
+    "kappa_ci_window": [
+     0.85,
+     0.97
+    ],
+    "n": 110,
+    "pct": 94.5,
+    "pct_ci_cluster": [
+     91.25,
+     97.76
+    ],
+    "pct_ci_window": [
+     90.0,
+     98.18
+    ],
+    "sessions": 32
+   },
+   "C2": {
+    "kappa": 0.94,
+    "kappa_ci_cluster": [
+     0.9,
+     0.98
+    ],
+    "kappa_ci_window": [
+     0.89,
+     0.98
+    ],
+    "n": 179,
+    "pct": 96.1,
+    "pct_ci_cluster": [
+     93.42,
+     98.76
+    ],
+    "pct_ci_window": [
+     92.74,
+     98.32
+    ],
+    "sessions": 61
+   },
+   "adjudicated": {
+    "kappa": 0.93,
+    "kappa_ci_cluster": [
+     0.9,
+     0.96
+    ],
+    "kappa_ci_window": [
+     0.9,
+     0.97
+    ],
+    "n": 295,
+    "pct": 95.3,
+    "pct_ci_cluster": [
+     92.95,
+     97.59
+    ],
+    "pct_ci_window": [
+     92.88,
+     97.63
+    ],
+    "sessions": 62
+   },
+   "all_347": {
+    "kappa": 0.93,
+    "kappa_ci_cluster": [
+     0.9,
+     0.96
+    ],
+    "kappa_ci_window": [
+     0.9,
+     0.96
+    ],
+    "n": 347,
+    "pct": 95.4,
+    "pct_ci_cluster": [
+     93.25,
+     97.54
+    ],
+    "pct_ci_window": [
+     93.08,
+     97.41
+    ],
+    "sessions": 71
+   },
+   "bet4_kept_52": {
+    "kappa": 0.94,
+    "kappa_ci_cluster": [
+     0.85,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.86,
+     1.0
+    ],
+    "n": 52,
+    "pct": 96.2,
+    "pct_ci_cluster": [
+     90.2,
+     100.0
+    ],
+    "pct_ci_window": [
+     90.38,
+     100.0
+    ],
+    "sessions": 20
+   },
+   "followup": {
+    "kappa": 0.93,
+    "kappa_ci_cluster": [
+     0.9,
+     0.96
+    ],
+    "kappa_ci_window": [
+     0.9,
+     0.96
+    ],
+    "n": 289,
+    "pct": 95.5,
+    "pct_ci_cluster": [
+     93.41,
+     97.57
+    ],
+    "pct_ci_window": [
+     93.08,
+     97.58
+    ],
+    "sessions": 61
+   },
+   "new": {
+    "kappa": 0.93,
+    "kappa_ci_cluster": [
+     0.89,
+     0.96
+    ],
+    "kappa_ci_window": [
+     0.89,
+     0.96
+    ],
+    "n": 277,
+    "pct": 94.9,
+    "pct_ci_cluster": [
+     92.39,
+     97.42
+    ],
+    "pct_ci_window": [
+     92.42,
+     97.47
+    ],
+    "sessions": 62
+   },
+   "sensitivity": {
+    "kappa": 1.0,
+    "kappa_ci_cluster": [
+     1.0,
+     1.0
+    ],
+    "kappa_ci_window": [
+     1.0,
+     1.0
+    ],
+    "n": 18,
+    "pct": 100.0,
+    "pct_ci_cluster": [
+     100.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     100.0,
+     100.0
+    ],
+    "sessions": 6
+   }
+  },
+  "uptake": {
+   "C1": {
+    "kappa": 0.75,
+    "kappa_ci_cluster": [
+     0.51,
+     0.92
+    ],
+    "kappa_ci_window": [
+     0.6,
+     0.88
+    ],
+    "n": 110,
+    "pct": 90.9,
+    "pct_ci_cluster": [
+     83.72,
+     96.9
+    ],
+    "pct_ci_window": [
+     85.45,
+     95.45
+    ],
+    "sessions": 32
+   },
+   "C2": {
+    "kappa": 0.81,
+    "kappa_ci_cluster": [
+     0.73,
+     0.88
+    ],
+    "kappa_ci_window": [
+     0.74,
+     0.87
+    ],
+    "n": 179,
+    "pct": 86.0,
+    "pct_ci_cluster": [
+     79.71,
+     91.23
+    ],
+    "pct_ci_window": [
+     81.01,
+     91.06
+    ],
+    "sessions": 61
+   },
+   "adjudicated": {
+    "kappa": 0.85,
+    "kappa_ci_cluster": [
+     0.79,
+     0.9
+    ],
+    "kappa_ci_window": [
+     0.81,
+     0.9
+    ],
+    "n": 295,
+    "pct": 88.1,
+    "pct_ci_cluster": [
+     83.71,
+     91.81
+    ],
+    "pct_ci_window": [
+     84.41,
+     91.86
+    ],
+    "sessions": 62
+   },
+   "all_347": {
+    "kappa": 0.86,
+    "kappa_ci_cluster": [
+     0.81,
+     0.9
+    ],
+    "kappa_ci_window": [
+     0.82,
+     0.9
+    ],
+    "n": 347,
+    "pct": 88.8,
+    "pct_ci_cluster": [
+     85.05,
+     92.31
+    ],
+    "pct_ci_window": [
+     85.3,
+     91.93
+    ],
+    "sessions": 71
+   },
+   "bet4_kept_52": {
+    "kappa": 0.9,
+    "kappa_ci_cluster": [
+     0.8,
+     0.98
+    ],
+    "kappa_ci_window": [
+     0.8,
+     0.98
+    ],
+    "n": 52,
+    "pct": 92.3,
+    "pct_ci_cluster": [
+     84.31,
+     98.18
+    ],
+    "pct_ci_window": [
+     84.62,
+     98.08
+    ],
+    "sessions": 20
+   },
+   "followup": {
+    "kappa": 0.85,
+    "kappa_ci_cluster": [
+     0.79,
+     0.9
+    ],
+    "kappa_ci_window": [
+     0.8,
+     0.9
+    ],
+    "n": 289,
+    "pct": 87.9,
+    "pct_ci_cluster": [
+     83.27,
+     91.75
+    ],
+    "pct_ci_window": [
+     83.74,
+     91.7
+    ],
+    "sessions": 61
+   },
+   "new": {
+    "kappa": 0.85,
+    "kappa_ci_cluster": [
+     0.78,
+     0.9
+    ],
+    "kappa_ci_window": [
+     0.8,
+     0.89
+    ],
+    "n": 277,
+    "pct": 87.7,
+    "pct_ci_cluster": [
+     83.07,
+     91.8
+    ],
+    "pct_ci_window": [
+     83.75,
+     91.34
+    ],
+    "sessions": 62
+   },
+   "sensitivity": {
+    "kappa": 0.93,
+    "kappa_ci_cluster": [
+     0.79,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.78,
+     1.0
+    ],
+    "n": 18,
+    "pct": 94.4,
+    "pct_ci_cluster": [
+     83.33,
+     100.0
+    ],
+    "pct_ci_window": [
+     83.33,
+     100.0
+    ],
+    "sessions": 6
+   }
+  },
+  "verification": {
+   "C1": {
+    "kappa": 0.96,
+    "kappa_ci_cluster": [
+     0.91,
+     1.0
+    ],
+    "kappa_ci_window": [
+     0.9,
+     1.0
+    ],
+    "n": 110,
+    "pct": 98.2,
+    "pct_ci_cluster": [
+     95.18,
+     100.0
+    ],
+    "pct_ci_window": [
+     95.45,
+     100.0
+    ],
+    "sessions": 32
+   },
+   "C2": {
+    "kappa": 0.48,
+    "kappa_ci_cluster": [
+     0.17,
+     0.69
+    ],
+    "kappa_ci_window": [
+     0.27,
+     0.65
+    ],
+    "n": 179,
+    "pct": 88.8,
+    "pct_ci_cluster": [
+     83.33,
+     94.53
+    ],
+    "pct_ci_window": [
+     83.8,
+     93.3
+    ],
+    "sessions": 61
+   },
+   "adjudicated": {
+    "kappa": 0.79,
+    "kappa_ci_cluster": [
+     0.66,
+     0.87
+    ],
+    "kappa_ci_window": [
+     0.69,
+     0.87
+    ],
+    "n": 295,
+    "pct": 92.5,
+    "pct_ci_cluster": [
+     89.21,
+     95.87
+    ],
+    "pct_ci_window": [
+     89.49,
+     95.59
+    ],
+    "sessions": 62
+   },
+   "all_347": {
+    "kappa": 0.79,
+    "kappa_ci_cluster": [
+     0.69,
+     0.86
+    ],
+    "kappa_ci_window": [
+     0.7,
+     0.86
+    ],
+    "n": 347,
+    "pct": 92.2,
+    "pct_ci_cluster": [
+     89.01,
+     95.1
+    ],
+    "pct_ci_window": [
+     89.05,
+     94.81
+    ],
+    "sessions": 71
+   },
+   "bet4_kept_52": {
+    "kappa": 0.78,
+    "kappa_ci_cluster": [
+     0.61,
+     0.95
+    ],
+    "kappa_ci_window": [
+     0.58,
+     0.95
+    ],
+    "n": 52,
+    "pct": 90.4,
+    "pct_ci_cluster": [
+     81.13,
+     98.08
+    ],
+    "pct_ci_window": [
+     80.77,
+     98.08
+    ],
+    "sessions": 20
+   },
+   "followup": {
+    "kappa": 0.76,
+    "kappa_ci_cluster": [
+     0.63,
+     0.86
+    ],
+    "kappa_ci_window": [
+     0.67,
+     0.86
+    ],
+    "n": 289,
+    "pct": 92.4,
+    "pct_ci_cluster": [
+     88.99,
+     95.82
+    ],
+    "pct_ci_window": [
+     89.27,
+     95.5
+    ],
+    "sessions": 61
+   },
+   "new": {
+    "kappa": 0.77,
+    "kappa_ci_cluster": [
+     0.65,
+     0.86
+    ],
+    "kappa_ci_window": [
+     0.67,
+     0.86
+    ],
+    "n": 277,
+    "pct": 92.1,
+    "pct_ci_cluster": [
+     88.63,
+     95.62
+    ],
+    "pct_ci_window": [
+     88.81,
+     94.95
+    ],
+    "sessions": 62
+   },
+   "sensitivity": {
+    "kappa": 1.0,
+    "kappa_ci_cluster": [
+     1.0,
+     1.0
+    ],
+    "kappa_ci_window": [
+     1.0,
+     1.0
+    ],
+    "n": 18,
+    "pct": 100.0,
+    "pct_ci_cluster": [
+     100.0,
+     100.0
+    ],
+    "pct_ci_window": [
+     100.0,
+     100.0
+    ],
+    "sessions": 6
+   }
+  }
+ },
+ "confusions": {
+  "decision": {
+   "D0|D1": 4,
+   "D0|D2": 11,
+   "D1|D2": 9,
+   "D2|D3": 7,
+   "D3|D4": 6
+  },
+  "family": {
+   "CLAIM_ARGUMENT|FRAME_IDEA_PLAN": 2,
+   "CLAIM_ARGUMENT|PROSE_CITATION": 4,
+   "CLAIM_ARGUMENT|SOURCE_WORK": 3,
+   "FRAME_IDEA_PLAN|PROSE_CITATION": 2,
+   "PROSE_CITATION|REVIEW_SUBSTANCE": 3
+  },
+  "function": {
+   "F1|F4": 5,
+   "F2|F4": 3,
+   "F3|F4": 2,
+   "F4|F5": 5,
+   "F5|F8": 3
+  },
+  "object": {
+   "ARGUMENT|IDEA": 1,
+   "ARGUMENT|PROSE": 9,
+   "CLAIM|PROSE": 2,
+   "EVIDENCE|IDEA": 2,
+   "PROSE|STRUCTURE": 2
+  },
+  "operation": {
+   "O02|O09": 2,
+   "O03|O10": 2,
+   "O07|O09": 2,
+   "O09|O10": 3,
+   "O10|O12": 3
+  },
+  "prior_own_work": {
+   "NONE_VISIBLE|VISIBLE_DRAFT": 1,
+   "NONE_VISIBLE|VISIBLE_PARTIAL": 10,
+   "VISIBLE_DRAFT|VISIBLE_PARTIAL": 30
+  },
+  "process": {
+   "M|R": 1,
+   "P|PX": 1,
+   "P|R": 1,
+   "P|T": 6,
+   "R|T": 5
+  },
+  "uptake": {
+   "U1|U2": 6,
+   "U1|U3": 3,
+   "U2|U3": 6,
+   "U4|U8": 12,
+   "U8|UX": 2
+  },
+  "verification": {
+   "V0|V1": 18,
+   "V0|V2": 3,
+   "V0|V3": 1
+  }
+ },
+ "coverage": {
+  "by_source": {
+   "bet4": 52,
+   "bet6": 277,
+   "bet6_fullview_recode": 18
+  },
+  "sessions": 71,
+  "sessions_complete": 71,
+  "unsettled_fields": 16,
+  "windows": 347
+ },
+ "final_source": {
+  "decision": {
+   "A=B": 251,
+   "UNSETTLED": 1,
+   "adj=A": 34,
+   "adj=B": 9,
+   "bet4": 52
+  },
+  "function": {
+   "A=B": 266,
+   "UNSETTLED": 1,
+   "adj=A": 23,
+   "adj=B": 5,
+   "bet4": 52
+  },
+  "object": {
+   "A=B": 273,
+   "UNSETTLED": 2,
+   "adj=A": 15,
+   "adj=B": 5,
+   "bet4": 52
+  },
+  "operation": {
+   "A=B": 273,
+   "UNSETTLED": 2,
+   "adj=A": 13,
+   "adj=B": 7,
+   "bet4": 52
+  },
+  "prior_own_work": {
+   "A=B": 254,
+   "adj=A": 36,
+   "adj=B": 5,
+   "bet4": 52
+  },
+  "uptake": {
+   "A=B": 258,
+   "UNSETTLED": 3,
+   "adj=A": 22,
+   "adj=B": 9,
+   "bet4": 52,
+   "script_s7": 3
+  },
+  "verification": {
+   "A=B": 273,
+   "UNSETTLED": 2,
+   "adj=A": 15,
+   "adj=B": 5,
+   "bet4": 52
+  }
+ },
+ "frequency_coders": {
+  "decision": {
+   "A": {
+    "D0": 39,
+    "D1": 45,
+    "D2": 128,
+    "D3": 40,
+    "D4": 43
+   },
+   "B": {
+    "D0": 49,
+    "D1": 52,
+    "D2": 117,
+    "D3": 37,
+    "D4": 40
+   }
+  },
+  "family": {
+   "A": {
+    "CLAIM_ARGUMENT": 20,
+    "FRAME_IDEA_PLAN": 43,
+    "MONITOR": 1,
+    "OX": 7,
+    "PROSE_CITATION": 91,
+    "REVIEW_SUBSTANCE": 34,
+    "SOURCE_WORK": 31,
+    "SURFACE": 68
+   },
+   "B": {
+    "CLAIM_ARGUMENT": 23,
+    "FRAME_IDEA_PLAN": 44,
+    "MONITOR": 2,
+    "OX": 6,
+    "PROSE_CITATION": 88,
+    "REVIEW_SUBSTANCE": 34,
+    "SOURCE_WORK": 29,
+    "SURFACE": 69
+   }
+  },
+  "function": {
+   "A": {
+    "F1": 19,
+    "F2": 24,
+    "F3": 18,
+    "F4": 116,
+    "F5": 60,
+    "F6": 25,
+    "F7": 17,
+    "F8": 9,
+    "FX": 7
+   },
+   "B": {
+    "F1": 15,
+    "F2": 29,
+    "F3": 21,
+    "F4": 117,
+    "F5": 59,
+    "F6": 25,
+    "F7": 16,
+    "F8": 6,
+    "FX": 7
+   }
+  },
+  "object": {
+   "A": {
+    "ARGUMENT": 18,
+    "CLAIM": 12,
+    "EVIDENCE": 17,
+    "IDEA": 25,
+    "OTHER": 16,
+    "PROCESS": 1,
+    "PROSE": 187,
+    "STRUCTURE": 19
+   },
+   "B": {
+    "ARGUMENT": 16,
+    "CLAIM": 11,
+    "EVIDENCE": 16,
+    "IDEA": 27,
+    "OTHER": 15,
+    "PROCESS": 2,
+    "PROSE": 188,
+    "STRUCTURE": 20
+   }
+  },
+  "operation": {
+   "A": {
+    "O02": 24,
+    "O03": 19,
+    "O04": 17,
+    "O05": 12,
+    "O06": 1,
+    "O07": 1,
+    "O08": 9,
+    "O09": 11,
+    "O10": 91,
+    "O12": 30,
+    "O13": 4,
+    "O14": 67,
+    "O15": 1,
+    "O16": 1,
+    "OX": 7
+   },
+   "B": {
+    "O02": 24,
+    "O03": 20,
+    "O04": 16,
+    "O05": 12,
+    "O07": 1,
+    "O08": 10,
+    "O09": 13,
+    "O10": 88,
+    "O12": 29,
+    "O13": 5,
+    "O14": 68,
+    "O15": 1,
+    "O16": 2,
+    "OX": 6
+   }
+  },
+  "prior_own_work": {
+   "A": {
+    "NONE_VISIBLE": 41,
+    "VISIBLE_DRAFT": 151,
+    "VISIBLE_PARTIAL": 103
+   },
+   "B": {
+    "NONE_VISIBLE": 48,
+    "VISIBLE_DRAFT": 170,
+    "VISIBLE_PARTIAL": 77
+   }
+  },
+  "process": {
+   "A": {
+    "M": 1,
+    "P": 94,
+    "PX": 7,
+    "R": 102,
+    "T": 91
+   },
+   "B": {
+    "M": 2,
+    "P": 96,
+    "PX": 6,
+    "R": 103,
+    "T": 88
+   }
+  },
+  "uptake": {
+   "A": {
+    "U1": 61,
+    "U2": 18,
+    "U3": 24,
+    "U4": 93,
+    "U5": 1,
+    "U6": 3,
+    "U7": 64,
+    "U8": 24,
+    "UX": 7
+   },
+   "B": {
+    "U1": 58,
+    "U2": 17,
+    "U3": 27,
+    "U4": 83,
+    "U5": 1,
+    "U6": 3,
+    "U7": 63,
+    "U8": 33,
+    "UX": 10
+   }
+  },
+  "verification": {
+   "A": {
+    "V0": 226,
+    "V1": 44,
+    "V2": 6,
+    "V3": 13,
+    "VX": 6
+   },
+   "B": {
+    "V0": 244,
+    "V1": 28,
+    "V2": 3,
+    "V3": 14,
+    "VX": 6
+   }
+  }
+ },
+ "frequency_final": {
+  "decision": {
+   "D0": 50,
+   "D1": 52,
+   "D2": 152,
+   "D3": 45,
+   "D4": 47,
+   "UNSETTLED": 1
+  },
+  "family": {
+   "CLAIM_ARGUMENT": 26,
+   "FRAME_IDEA_PLAN": 47,
+   "MONITOR": 2,
+   "OX": 9,
+   "PROSE_CITATION": 107,
+   "REVIEW_SUBSTANCE": 40,
+   "SOURCE_WORK": 33,
+   "SURFACE": 81,
+   "UNSETTLED": 2
+  },
+  "function": {
+   "F1": 20,
+   "F2": 29,
+   "F3": 18,
+   "F4": 139,
+   "F5": 73,
+   "F6": 28,
+   "F7": 19,
+   "F8": 10,
+   "FX": 10,
+   "UNSETTLED": 1
+  },
+  "object": {
+   "ARGUMENT": 23,
+   "CLAIM": 14,
+   "EVIDENCE": 19,
+   "IDEA": 30,
+   "OTHER": 19,
+   "PROCESS": 2,
+   "PROSE": 220,
+   "STRUCTURE": 18,
+   "UNSETTLED": 2
+  },
+  "operation": {
+   "O02": 29,
+   "O03": 18,
+   "O04": 19,
+   "O05": 12,
+   "O06": 1,
+   "O07": 1,
+   "O08": 12,
+   "O09": 14,
+   "O10": 107,
+   "O12": 35,
+   "O13": 5,
+   "O14": 80,
+   "O15": 1,
+   "O16": 2,
+   "OX": 9,
+   "UNSETTLED": 2
+  },
+  "prior_own_work": {
+   "NONE_VISIBLE": 60,
+   "VISIBLE_DRAFT": 174,
+   "VISIBLE_PARTIAL": 113
+  },
+  "process": {
+   "M": 2,
+   "P": 106,
+   "PX": 9,
+   "R": 121,
+   "T": 107,
+   "UNSETTLED": 2
+  },
+  "uptake": {
+   "U1": 66,
+   "U2": 17,
+   "U3": 32,
+   "U4": 110,
+   "U5": 1,
+   "U6": 5,
+   "U7": 74,
+   "U8": 29,
+   "UNSETTLED": 3,
+   "UX": 10
+  },
+  "verification": {
+   "UNSETTLED": 3,
+   "V0": 269,
+   "V1": 51,
+   "V2": 4,
+   "V3": 13,
+   "VX": 7
+  }
+ },
+ "frequency_final_by_source": {
+  "bet4": {
+   "decision": {
+    "D0": 5,
+    "D1": 8,
+    "D2": 29,
+    "D3": 5,
+    "D4": 5
+   },
+   "prior_own_work": {
+    "NONE_VISIBLE": 20,
+    "VISIBLE_DRAFT": 23,
+    "VISIBLE_PARTIAL": 9
+   },
+   "uptake": {
+    "U1": 4,
+    "U2": 3,
+    "U3": 6,
+    "U4": 21,
+    "U6": 2,
+    "U7": 10,
+    "U8": 5,
+    "UX": 1
+   },
+   "verification": {
+    "UNSETTLED": 1,
+    "V0": 38,
+    "V1": 12,
+    "VX": 1
+   }
+  },
+  "bet6": {
+   "decision": {
+    "D0": 39,
+    "D1": 41,
+    "D2": 119,
+    "D3": 38,
+    "D4": 39,
+    "UNSETTLED": 1
+   },
+   "prior_own_work": {
+    "NONE_VISIBLE": 40,
+    "VISIBLE_DRAFT": 136,
+    "VISIBLE_PARTIAL": 101
+   },
+   "uptake": {
+    "U1": 57,
+    "U2": 14,
+    "U3": 25,
+    "U4": 87,
+    "U6": 3,
+    "U7": 61,
+    "U8": 20,
+    "UNSETTLED": 3,
+    "UX": 7
+   },
+   "verification": {
+    "UNSETTLED": 2,
+    "V0": 216,
+    "V1": 38,
+    "V2": 4,
+    "V3": 13,
+    "VX": 4
+   }
+  },
+  "bet6_fullview_recode": {
+   "decision": {
+    "D0": 6,
+    "D1": 3,
+    "D2": 4,
+    "D3": 2,
+    "D4": 3
+   },
+   "prior_own_work": {
+    "VISIBLE_DRAFT": 15,
+    "VISIBLE_PARTIAL": 3
+   },
+   "uptake": {
+    "U1": 5,
+    "U3": 1,
+    "U4": 2,
+    "U5": 1,
+    "U7": 3,
+    "U8": 4,
+    "UX": 2
+   },
+   "verification": {
+    "V0": 15,
+    "V1": 1,
+    "VX": 2
+   }
+  }
+ },
+ "n": {
+  "C1": 110,
+  "C2": 179,
+  "adjudicated": 295,
+  "all_347": 347,
+  "bet4_kept_52": 52,
+  "followup": 289,
+  "new": 277,
+  "sensitivity": 18
+ },
+ "note": "Consistency between AI coders only. Not human, expert or gold-standard validation. Says nothing about cognition.",
+ "q345_min_kappa": {
+  "C1": [
+   0.73,
+   "decision"
+  ],
+  "C2": [
+   0.48,
+   "verification"
+  ],
+  "adjudicated": [
+   0.79,
+   "verification"
+  ],
+  "followup": [
+   0.76,
+   "verification"
+  ]
+ },
+ "sessions": {
+  "C1": 32,
+  "C2": 61,
+  "adjudicated": 62,
+  "all_347": 71,
+  "bet4_kept_52": 20,
+  "followup": 61,
+  "new": 62,
+  "sensitivity": 6
+ }
+}

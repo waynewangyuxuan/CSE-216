@@ -1,0 +1,307 @@
+{
+ "final_changes": [
+  {
+   "bet4": "SOURCE_WORK",
+   "bet6": "SURFACE",
+   "bet6_source": "derived",
+   "field": "family",
+   "reuse_unseen": false,
+   "window_id": "NIRVANA-e29-t06"
+  },
+  {
+   "bet4": "O05",
+   "bet6": "O14",
+   "bet6_source": "A=B",
+   "field": "operation",
+   "reuse_unseen": false,
+   "window_id": "NIRVANA-e29-t06"
+  },
+  {
+   "bet4": "P",
+   "bet6": "R",
+   "bet6_source": "derived",
+   "field": "process",
+   "reuse_unseen": false,
+   "window_id": "NIRVANA-e29-t06"
+  },
+  {
+   "bet4": "F1_EXPLAIN",
+   "bet6": "F8_PROCEDURAL",
+   "bet6_source": "adj=A",
+   "field": "function",
+   "reuse_unseen": false,
+   "window_id": "NIRVANA-e29-t06"
+  },
+  {
+   "bet4": "D0_NO_DECISION",
+   "bet6": "D1_HUMAN_GIVEN",
+   "bet6_source": "adj=A",
+   "field": "decision",
+   "reuse_unseen": false,
+   "window_id": "NIRVANA-e29-t07"
+  },
+  {
+   "bet4": "D1_HUMAN_GIVEN",
+   "bet6": "D2_AI_PROPOSED_OPEN",
+   "bet6_source": "adj=A",
+   "field": "decision",
+   "reuse_unseen": true,
+   "window_id": "NIRVANA-e58-t10"
+  },
+  {
+   "bet4": "CLAIM",
+   "bet6": "PROSE",
+   "bet6_source": "adj=B",
+   "field": "object",
+   "reuse_unseen": false,
+   "window_id": "NIRVANA-e61-t06"
+  },
+  {
+   "bet4": "NONE_VISIBLE",
+   "bet6": "VISIBLE_PARTIAL",
+   "bet6_source": "A=B",
+   "field": "prior_own_work",
+   "reuse_unseen": true,
+   "window_id": "NIRVANA-e61-t07"
+  }
+ ],
+ "note": "Bet 4 labels came from views showing the last 3 earlier turns; Bet 6 labels from full session history. Different agents, so a change can be view or coder noise.",
+ "per_field": {
+  "decision": {
+   "final_same": 16,
+   "final_same_reuse10": 9,
+   "n": 18,
+   "n_reuse10": 10
+  },
+  "family": {
+   "final_same": 17,
+   "final_same_reuse10": 10,
+   "n": 18,
+   "n_reuse10": 10
+  },
+  "function": {
+   "final_same": 17,
+   "final_same_reuse10": 10,
+   "n": 18,
+   "n_reuse10": 10
+  },
+  "object": {
+   "final_same": 17,
+   "final_same_reuse10": 10,
+   "n": 18,
+   "n_reuse10": 10
+  },
+  "operation": {
+   "final_same": 17,
+   "final_same_reuse10": 10,
+   "n": 18,
+   "n_reuse10": 10
+  },
+  "prior_own_work": {
+   "final_same": 17,
+   "final_same_reuse10": 9,
+   "n": 18,
+   "n_reuse10": 10
+  },
+  "process": {
+   "final_same": 17,
+   "final_same_reuse10": 10,
+   "n": 18,
+   "n_reuse10": 10
+  },
+  "uptake": {
+   "final_same": 18,
+   "final_same_reuse10": 10,
+   "n": 18,
+   "n_reuse10": 10
+  },
+  "verification": {
+   "final_same": 18,
+   "final_same_reuse10": 10,
+   "n": 18,
+   "n_reuse10": 10
+  }
+ },
+ "reuse_unseen_ai_text": [
+  "NIRVANA-e26-t09",
+  "NIRVANA-e26-t10",
+  "NIRVANA-e26-t11",
+  "NIRVANA-e58-t08",
+  "NIRVANA-e58-t09",
+  "NIRVANA-e58-t10",
+  "NIRVANA-e61-t07",
+  "NIRVANA-e70-t05",
+  "NIRVANA-e70-t06",
+  "NIRVANA-e70-t07"
+ ],
+ "same_coder_role": {
+  "bet4_kept_52": {
+   "decision": {
+    "A6_vs_A4_kappa": 0.94,
+    "A6_vs_A4_pct": 96.15,
+    "B6_vs_B4_kappa": 0.88,
+    "B6_vs_B4_pct": 92.31,
+    "bet4_AB_pct": 98.08,
+    "bet6_AB_pct": 94.23
+   },
+   "family": {
+    "A6_vs_A4_kappa": 0.9,
+    "A6_vs_A4_pct": 92.31,
+    "B6_vs_B4_kappa": 0.95,
+    "B6_vs_B4_pct": 96.15,
+    "bet4_AB_pct": 94.23,
+    "bet6_AB_pct": 90.38
+   },
+   "function": {
+    "A6_vs_A4_kappa": 0.97,
+    "A6_vs_A4_pct": 98.08,
+    "B6_vs_B4_kappa": 0.94,
+    "B6_vs_B4_pct": 96.15,
+    "bet4_AB_pct": 92.31,
+    "bet6_AB_pct": 94.23
+   },
+   "object": {
+    "A6_vs_A4_kappa": 0.83,
+    "A6_vs_A4_pct": 90.38,
+    "B6_vs_B4_kappa": 0.9,
+    "B6_vs_B4_pct": 94.23,
+    "bet4_AB_pct": 96.15,
+    "bet6_AB_pct": 88.46
+   },
+   "operation": {
+    "A6_vs_A4_kappa": 0.9,
+    "A6_vs_A4_pct": 92.31,
+    "B6_vs_B4_kappa": 0.95,
+    "B6_vs_B4_pct": 96.15,
+    "bet4_AB_pct": 94.23,
+    "bet6_AB_pct": 90.38
+   },
+   "prior_own_work": {
+    "A6_vs_A4_kappa": 0.85,
+    "A6_vs_A4_pct": 90.38,
+    "B6_vs_B4_kappa": 0.85,
+    "B6_vs_B4_pct": 90.38,
+    "bet4_AB_pct": 94.23,
+    "bet6_AB_pct": 94.23
+   },
+   "process": {
+    "A6_vs_A4_kappa": 0.94,
+    "A6_vs_A4_pct": 96.15,
+    "B6_vs_B4_kappa": 0.97,
+    "B6_vs_B4_pct": 98.08,
+    "bet4_AB_pct": 98.08,
+    "bet6_AB_pct": 96.15
+   },
+   "uptake": {
+    "A6_vs_A4_kappa": 0.9,
+    "A6_vs_A4_pct": 92.31,
+    "B6_vs_B4_kappa": 0.9,
+    "B6_vs_B4_pct": 92.31,
+    "bet4_AB_pct": 94.23,
+    "bet6_AB_pct": 92.31
+   },
+   "verification": {
+    "A6_vs_A4_kappa": 0.78,
+    "A6_vs_A4_pct": 90.38,
+    "B6_vs_B4_kappa": 0.81,
+    "B6_vs_B4_pct": 92.31,
+    "bet4_AB_pct": 90.38,
+    "bet6_AB_pct": 90.38
+   }
+  },
+  "sensitivity_18": {
+   "decision": {
+    "A6_vs_A4_kappa": 0.93,
+    "A6_vs_A4_pct": 94.44,
+    "B6_vs_B4_kappa": 0.92,
+    "B6_vs_B4_pct": 94.44,
+    "bet4_AB_pct": 94.44,
+    "bet6_AB_pct": 83.33
+   },
+   "family": {
+    "A6_vs_A4_kappa": 0.93,
+    "A6_vs_A4_pct": 94.44,
+    "B6_vs_B4_kappa": 0.93,
+    "B6_vs_B4_pct": 94.44,
+    "bet4_AB_pct": 100.0,
+    "bet6_AB_pct": 100.0
+   },
+   "function": {
+    "A6_vs_A4_kappa": 0.93,
+    "A6_vs_A4_pct": 94.44,
+    "B6_vs_B4_kappa": 0.93,
+    "B6_vs_B4_pct": 94.44,
+    "bet4_AB_pct": 94.44,
+    "bet6_AB_pct": 83.33
+   },
+   "object": {
+    "A6_vs_A4_kappa": 0.91,
+    "A6_vs_A4_pct": 94.44,
+    "B6_vs_B4_kappa": 0.91,
+    "B6_vs_B4_pct": 94.44,
+    "bet4_AB_pct": 100.0,
+    "bet6_AB_pct": 88.89
+   },
+   "operation": {
+    "A6_vs_A4_kappa": 0.93,
+    "A6_vs_A4_pct": 94.44,
+    "B6_vs_B4_kappa": 0.93,
+    "B6_vs_B4_pct": 94.44,
+    "bet4_AB_pct": 100.0,
+    "bet6_AB_pct": 100.0
+   },
+   "prior_own_work": {
+    "A6_vs_A4_kappa": 0.81,
+    "A6_vs_A4_pct": 94.44,
+    "B6_vs_B4_kappa": 0.45,
+    "B6_vs_B4_pct": 83.33,
+    "bet4_AB_pct": 88.89,
+    "bet6_AB_pct": 100.0
+   },
+   "process": {
+    "A6_vs_A4_kappa": 0.92,
+    "A6_vs_A4_pct": 94.44,
+    "B6_vs_B4_kappa": 0.92,
+    "B6_vs_B4_pct": 94.44,
+    "bet4_AB_pct": 100.0,
+    "bet6_AB_pct": 100.0
+   },
+   "uptake": {
+    "A6_vs_A4_kappa": 0.93,
+    "A6_vs_A4_pct": 94.44,
+    "B6_vs_B4_kappa": 1.0,
+    "B6_vs_B4_pct": 100.0,
+    "bet4_AB_pct": 100.0,
+    "bet6_AB_pct": 94.44
+   },
+   "verification": {
+    "A6_vs_A4_kappa": 1.0,
+    "A6_vs_A4_pct": 100.0,
+    "B6_vs_B4_kappa": 0.77,
+    "B6_vs_B4_pct": 94.44,
+    "bet4_AB_pct": 94.44,
+    "bet6_AB_pct": 100.0
+   }
+  }
+ },
+ "windows": [
+  "NIRVANA-e26-t09",
+  "NIRVANA-e26-t10",
+  "NIRVANA-e26-t11",
+  "NIRVANA-e29-t06",
+  "NIRVANA-e29-t07",
+  "NIRVANA-e29-t08",
+  "NIRVANA-e42-t05",
+  "NIRVANA-e42-t06",
+  "NIRVANA-e42-t07",
+  "NIRVANA-e58-t08",
+  "NIRVANA-e58-t09",
+  "NIRVANA-e58-t10",
+  "NIRVANA-e61-t05",
+  "NIRVANA-e61-t06",
+  "NIRVANA-e61-t07",
+  "NIRVANA-e70-t05",
+  "NIRVANA-e70-t06",
+  "NIRVANA-e70-t07"
+ ]
+}

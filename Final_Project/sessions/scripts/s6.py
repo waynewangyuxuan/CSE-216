@@ -8,6 +8,7 @@ CODING = os.path.join(FP, "coding")
 CODEBOOK = os.path.join(FP, "codebook")
 sys.path.insert(0, os.path.join(CODEBOOK, "scripts"))
 sys.path.insert(1, os.path.join(CODING, "scripts"))
+sys.path.insert(0, HERE)  # this folder first, so a same-named Bet 4 script (finalize, make_packet, check_staged) never shadows ours
 csv.field_size_limit(10 ** 9)
 BLIND = os.path.join(SESS, "blind")   # git-excluded: part files, coder and adjudicator files with free text
 OUT = os.path.join(SESS, "results")   # labels-only and numbers-only, committed
