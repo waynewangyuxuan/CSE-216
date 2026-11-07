@@ -1707,6 +1707,68 @@
     "spearman_rho_with_support_share": 0.242
    }
   },
+  "paste_by_decision": [
+   {
+    "AUG": 0,
+    "IND": 0,
+    "NEU": 10,
+    "OFF": 0,
+    "SLb": 0,
+    "SLr": 0,
+    "decision": "D0",
+    "median_dwell": 166.5,
+    "median_typed_after": 212.0,
+    "windows_with_paste": 10
+   },
+   {
+    "AUG": 0,
+    "IND": 1,
+    "NEU": 0,
+    "OFF": 28,
+    "SLb": 0,
+    "SLr": 0,
+    "decision": "D1",
+    "median_dwell": 150.05,
+    "median_typed_after": 25,
+    "windows_with_paste": 29
+   },
+   {
+    "AUG": 4,
+    "IND": 2,
+    "NEU": 0,
+    "OFF": 0,
+    "SLb": 1,
+    "SLr": 0,
+    "decision": "D2",
+    "median_dwell": 175.7,
+    "median_typed_after": 461,
+    "windows_with_paste": 7
+   },
+   {
+    "AUG": 0,
+    "IND": 0,
+    "NEU": 0,
+    "OFF": 28,
+    "SLb": 4,
+    "SLr": 0,
+    "decision": "D3",
+    "median_dwell": 288.1,
+    "median_typed_after": 304.5,
+    "windows_with_paste": 32
+   },
+   {
+    "AUG": 2,
+    "IND": 0,
+    "NEU": 0,
+    "OFF": 1,
+    "SLb": 39,
+    "SLr": 0,
+    "decision": "D4",
+    "median_dwell": 70.5,
+    "median_typed_after": 6.0,
+    "windows_with_paste": 42
+   }
+  ],
   "trajectory_prior_own_work": [
    {
     "NONE_VISIBLE": 19,

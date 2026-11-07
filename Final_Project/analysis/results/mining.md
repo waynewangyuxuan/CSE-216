@@ -255,6 +255,16 @@ NIRVANA typing and pasting after the response, by token:
 | NEU | 48 | 3.5 | 0.0 | 0.208 | 0.208 |
 | IND | 51 | 0 | 0 | 0.078 | 0.196 |
 
+NIRVANA windows with any paste into the editor, by decision code:
+
+| Decision | Windows with paste | SLr | SLb | OFF | AUG | NEU | IND | Median typed after | Median dwell (s) |
+|---|---|---|---|---|---|---|---|---|---|
+| D0 | 10 | 0 | 0 | 0 | 0 | 10 | 0 | 212.0 | 166.5 |
+| D1 | 29 | 0 | 0 | 28 | 0 | 0 | 1 | 25 | 150.05 |
+| D2 | 7 | 0 | 1 | 0 | 4 | 0 | 2 | 461 | 175.7 |
+| D3 | 32 | 0 | 4 | 28 | 0 | 0 | 0 | 304.5 | 288.1 |
+| D4 | 42 | 0 | 39 | 1 | 2 | 0 | 0 | 6.0 | 70.5 |
+
 First window's prior_own_work and the session's support share (of determinate windows):
 
 | Dataset | First window prior_own_work | Sessions | Mean support share | Sessions with any SL |

@@ -476,7 +476,15 @@ def own_work(S, arch_of):
     for f in ("editor_chars_first", "minutes_before_first_ask"):
         x, y = [r[f] for r in nv], [r["support_share"] for r in nv]
         corr[f] = {"sessions": len(nv), "spearman_rho_with_support_share": r2(spearman(x, y)), "p": round(spearman_p(x, y), 4)}
-    return {"trajectory_prior_own_work": traj, "editor_chars_by_position": ed_rows, "typed_pasted_by_token": tp,
+    # Pasting is common on both sides; what differs is whose content was pasted and what the writer did next.
+    paste = []
+    for dcode in ("D0", "D1", "D2", "D3", "D4"):
+        ws = [w for w in W if w["dataset"] == "NIRVANA" and w["t"] and int(w["t"]["pasted_chars"]) > 0 and w["D"] == dcode]
+        if ws:
+            paste.append({"decision": dcode, "windows_with_paste": len(ws), **{t: sum(w["tok"] == t for w in ws) for t in TOK},
+                          "median_typed_after": med([int(w["t"]["typed_chars"]) for w in ws]),
+                          "median_dwell": r2(med([float(w["t"]["dwell_s"]) for w in ws if w["t"]["dwell_s"] != ""]))})
+    return {"paste_by_decision": paste, "trajectory_prior_own_work": traj, "editor_chars_by_position": ed_rows, "typed_pasted_by_token": tp,
             "first_window_groups": grp, "nirvana_first_ask_correlations": corr}
 
 
@@ -780,6 +788,10 @@ def report(J):
               md_table(["Token", "Windows", "Median typed", "Median pasted", "Any paste", "Any copy from chat"],
                        [[r["token"], r["windows"], r["median_typed"], r["median_pasted"], r["share_any_paste"], r["share_any_copy_from_ai"]]
                         for r in O["typed_pasted_by_token"]]))
+    md.append("\nNIRVANA windows with any paste into the editor, by decision code:\n\n" +
+              md_table(["Decision", "Windows with paste"] + TOK + ["Median typed after", "Median dwell (s)"],
+                       [[r["decision"], r["windows_with_paste"]] + [r[t] for t in TOK] + [r["median_typed_after"], r["median_dwell"]]
+                        for r in O["paste_by_decision"]]))
     md.append("\nFirst window's prior_own_work and the session's support share (of determinate windows):\n\n" +
               md_table(["Dataset", "First window prior_own_work", "Sessions", "Mean support share", "Sessions with any SL"],
                        [[r["dataset"], r["first_window_prior_own_work"], r["sessions"], r["mean_support_share"], r["sessions_any_SL"]]
