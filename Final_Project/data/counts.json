@@ -1,0 +1,459 @@
+{
+ "contact_pattern_hits": {
+  "gold": [],
+  "sample": [],
+  "windows_jsonl_wildchat": 8
+ },
+ "draw_english": {
+  "clear": 20,
+  "possible": 34,
+  "screened": 1161
+ },
+ "draw_rates_percent_with_wilson95": {
+  "clear_all": [
+   2.05,
+   1.52,
+   2.77
+  ],
+  "clear_english": [
+   1.72,
+   1.12,
+   2.65
+  ]
+ },
+ "gold": {
+  "by_dataset_coverage": {
+   "NIRVANA/C0": 1,
+   "NIRVANA/C1": 6,
+   "NIRVANA/C2": 7,
+   "WildChat/C0": 1,
+   "WildChat/C1": 5
+  },
+  "participants": {
+   "NIRVANA": 14,
+   "WildChat": 6
+  },
+  "sessions": {
+   "NIRVANA": 14,
+   "WildChat": 6
+  },
+  "windows": 20
+ },
+ "gold_plan": {
+  "NIRVANA": {
+   "C0": 1,
+   "C1": 6,
+   "C2": 7
+  },
+  "WildChat": {
+   "C0": 1,
+   "C1": 5
+  }
+ },
+ "malformed_windows_in_gold": [],
+ "malformed_windows_in_sample": [
+  "NIRVANA-e29-t08"
+ ],
+ "nirvana_stats": {
+  "coverage": {
+   "C0": 7,
+   "C1": 136,
+   "C2": 204
+  },
+  "duplicate_gpt_inquiry_rows": 1,
+  "duplicate_rows_by_essay": {
+   "69": 28,
+   "76": 2
+  },
+  "duplicate_rows_dropped": 30,
+  "essays_in_log": 77,
+  "essays_past_30min_by_last_log_time": 24,
+  "essays_past_30min_by_sheet_total_time": 23,
+  "first_edit_latency_sec": {
+   "max": 456.948,
+   "median": 15.371,
+   "over_120": 14,
+   "over_300": 4
+  },
+  "linkage": {
+   "temporal_only": 85,
+   "verbatim_ambiguous": 10,
+   "verbatim_this_response": 109
+  },
+  "longest_last_log_time_sec": 5010.073,
+  "malformed_sheet_rows": [
+   396,
+   3406,
+   6285,
+   6371,
+   9621,
+   10305,
+   10927,
+   10929,
+   11300,
+   11302,
+   11303,
+   11304,
+   11467,
+   11710,
+   11717,
+   11741,
+   13528,
+   14411,
+   14579,
+   14581,
+   14586,
+   14588,
+   16719,
+   20282,
+   26142,
+   26143
+  ],
+  "raw_gpt_inquiry_rows": 348,
+  "repeat_request_text_same_student": 4,
+  "roster_inquiry_sum": 347.0,
+  "roster_participants": 77,
+  "roster_vs_log_mismatch_after_dedup": [],
+  "sha256": "e63e6c47d1eb17c7bb3d081ec2dc7ec81059031bb58488a41272e6e20a2ea734",
+  "sheet_data_rows": 26142,
+  "students_with_no_inquiry": [
+   2,
+   8,
+   21,
+   23,
+   45,
+   52
+  ],
+  "students_with_windows": 71,
+  "very_short_requests": 6,
+  "windows_per_student_sorted": [
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   4,
+   4,
+   4,
+   4,
+   4,
+   5,
+   5,
+   5,
+   5,
+   5,
+   6,
+   6,
+   7,
+   7,
+   7,
+   7,
+   7,
+   7,
+   8,
+   8,
+   9,
+   9,
+   10,
+   10,
+   11,
+   11,
+   15,
+   17,
+   18,
+   23,
+   27
+  ],
+  "windows_total": 347,
+  "windows_touching_malformed_rows": [
+   "NIRVANA-e00-t02",
+   "NIRVANA-e06-t09",
+   "NIRVANA-e17-t01",
+   "NIRVANA-e26-t05",
+   "NIRVANA-e29-t01",
+   "NIRVANA-e29-t04",
+   "NIRVANA-e29-t08",
+   "NIRVANA-e38-t01",
+   "NIRVANA-e39-t01",
+   "NIRVANA-e39-t02",
+   "NIRVANA-e58-t06"
+  ],
+  "windows_usable": 347,
+  "windows_with_ops_during_wait": 21
+ },
+ "response_without_terminal_punctuation": {
+  "NIRVANA": [
+   5,
+   347
+  ],
+  "WildChat": [
+   187,
+   1460
+  ]
+ },
+ "sample": {
+  "by_dataset_coverage": {
+   "NIRVANA/C0": 3,
+   "NIRVANA/C1": 32,
+   "NIRVANA/C2": 35,
+   "WildChat/C0": 5,
+   "WildChat/C1": 25
+  },
+  "participants": {
+   "NIRVANA": 26,
+   "WildChat": 11
+  },
+  "sessions": {
+   "NIRVANA": 26,
+   "WildChat": 11
+  },
+  "windows": 100
+ },
+ "scholawrite_stats": {
+  "all_labels_in_paper": true,
+  "data_rows": 61504,
+  "fields_in_data": [
+   "project",
+   "timestamp",
+   "author",
+   "before text",
+   "after text",
+   "label",
+   "high-level"
+  ],
+  "fields_named_in_public_code": [
+   "label",
+   "project",
+   "timestamp"
+  ],
+  "has_ai_interaction_field": false,
+  "label_count": 15,
+  "label_count_in_data": 15,
+  "label_sets_match": true,
+  "labels_from_repo": [
+   "Text Production",
+   "Visual Formatting",
+   "Clarity",
+   "Section Planning",
+   "Structural",
+   "Object Insertion",
+   "Cross-reference",
+   "Fluency",
+   "Idea Generation",
+   "Idea Organization",
+   "Citation Integration",
+   "Coherence",
+   "Linguistic Style",
+   "Scientific Accuracy",
+   "Macro Insertion"
+  ],
+  "labels_in_data": [
+   "Citation Integration",
+   "Clarity",
+   "Coherence",
+   "Cross-reference",
+   "Fluency",
+   "Idea Generation",
+   "Idea Organization",
+   "Linguistic Style",
+   "Macro Insertion",
+   "Object Insertion",
+   "Scientific Accuracy",
+   "Section Planning",
+   "Structural",
+   "Text Production",
+   "Visual Formatting"
+  ],
+  "missing_from_paper": [],
+  "projects": 5,
+  "status": "CONFIRMED_FROM_DATA"
+ },
+ "wildchat_llm_stats": {
+  "meta": {
+   "batch_size": 25,
+   "cli": [
+    "2.1.318 (Claude Code)"
+   ],
+   "excerpt": "first 3 user turns, 600 chars each, emails/phones masked",
+   "human_verified": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_file": "scripts/wildchat_llm_prompt.txt",
+   "settings": "claude -p, tools off, no session persistence; temperature and seed not settable through this CLI"
+  },
+  "summary": {
+   "clear_mt": {
+    "labels": {
+     "ACADEMIC_NOT_RESEARCH": 31,
+     "CLEAR_RESEARCH_WRITING": 230,
+     "NOT_WRITING": 9,
+     "OTHER_WRITING": 7,
+     "POSSIBLE_RESEARCH_WRITING": 23
+    },
+    "n": 300
+   },
+   "draw2000": {
+    "labels": {
+     "ACADEMIC_NOT_RESEARCH": 105,
+     "CLEAR_RESEARCH_WRITING": 41,
+     "NOT_SCREENED": 1,
+     "NOT_WRITING": 1058,
+     "OTHER_WRITING": 651,
+     "POSSIBLE_RESEARCH_WRITING": 69,
+     "UNKNOWN": 75
+    },
+    "n": 2000
+   },
+   "draw2000_llm_by_rule": {
+    "ACADEMIC_NOT_RESEARCH | rule=negative_context": 2,
+    "ACADEMIC_NOT_RESEARCH | rule=no_rule_hit": 36,
+    "ACADEMIC_NOT_RESEARCH | rule=non_english": 62,
+    "ACADEMIC_NOT_RESEARCH | rule=possible": 5,
+    "CLEAR_RESEARCH_WRITING | rule=clear": 3,
+    "CLEAR_RESEARCH_WRITING | rule=no_rule_hit": 15,
+    "CLEAR_RESEARCH_WRITING | rule=non_english": 21,
+    "CLEAR_RESEARCH_WRITING | rule=pii_regex": 1,
+    "CLEAR_RESEARCH_WRITING | rule=possible": 1,
+    "NOT_SCREENED | rule=non_english": 1,
+    "NOT_WRITING | rule=negative_context": 3,
+    "NOT_WRITING | rule=no_rule_hit": 556,
+    "NOT_WRITING | rule=non_english": 499,
+    "OTHER_WRITING | rule=negative_context": 1,
+    "OTHER_WRITING | rule=no_rule_hit": 476,
+    "OTHER_WRITING | rule=non_english": 171,
+    "OTHER_WRITING | rule=possible": 3,
+    "POSSIBLE_RESEARCH_WRITING | rule=no_rule_hit": 29,
+    "POSSIBLE_RESEARCH_WRITING | rule=non_english": 35,
+    "POSSIBLE_RESEARCH_WRITING | rule=possible": 5,
+    "UNKNOWN | rule=no_rule_hit": 24,
+    "UNKNOWN | rule=non_english": 50,
+    "UNKNOWN | rule=possible": 1
+   },
+   "draw2000_not_screened_hashes": [
+    "42c27ed739e2da75a2dac844101b1208"
+   ],
+   "possible_mt": {
+    "labels": {
+     "ACADEMIC_NOT_RESEARCH": 40,
+     "CLEAR_RESEARCH_WRITING": 24,
+     "NOT_WRITING": 8,
+     "OTHER_WRITING": 17,
+     "POSSIBLE_RESEARCH_WRITING": 11
+    },
+    "n": 100
+   }
+  }
+ },
+ "wildchat_max_windows": {
+  "per_conversation": 35,
+  "per_ip_cluster": 65
+ },
+ "wildchat_screen_stats": {
+  "denominator_A_full_corpus": {
+   "distinct_conversation_hashes": 826319,
+   "duplicate_first_request_dropped": {
+    "clear": 269,
+    "possible": 767
+   },
+   "duplicate_hash_dropped": 5,
+   "included_after_dedup": {
+    "clear": 1704,
+    "possible": 5089
+   },
+   "included_multi_turn": {
+    "clear": 1047,
+    "possible": 2938
+   },
+   "negative_context": 2479,
+   "no_pair": 0,
+   "no_rule_hit": 467996,
+   "non_english": 359491,
+   "pii_regex": 189,
+   "records": 837989,
+   "rule_hits_before_dedup": {
+    "clear": 1973,
+    "possible": 5861
+   }
+  },
+  "denominator_B_draw_2000": {
+   "clear": 3,
+   "english": 1161,
+   "exclude_negative_context": 6,
+   "exclude_no_rule_hit": 1136,
+   "exclude_non_english": 839,
+   "exclude_pii_regex": 1,
+   "possible": 15
+  },
+  "shards": [
+   "train-00000-of-00014.parquet",
+   "train-00001-of-00014.parquet",
+   "train-00002-of-00014.parquet",
+   "train-00003-of-00014.parquet",
+   "train-00004-of-00014.parquet",
+   "train-00005-of-00014.parquet",
+   "train-00006-of-00014.parquet",
+   "train-00007-of-00014.parquet",
+   "train-00008-of-00014.parquet",
+   "train-00009-of-00014.parquet",
+   "train-00010-of-00014.parquet",
+   "train-00011-of-00014.parquet",
+   "train-00012-of-00014.parquet",
+   "train-00013-of-00014.parquet"
+  ]
+ },
+ "wildchat_windows_llm_clear": 1262,
+ "wildchat_windows_llm_possible": 198,
+ "windows_all": {
+  "by_dataset_coverage": {
+   "NIRVANA/C0": 7,
+   "NIRVANA/C1": 136,
+   "NIRVANA/C2": 204,
+   "WildChat/C0": 302,
+   "WildChat/C1": 1158,
+   "WildChat/CX": 15
+  },
+  "participants": {
+   "NIRVANA": 71,
+   "WildChat": 237
+  },
+  "sessions": {
+   "NIRVANA": 71,
+   "WildChat": 296
+  },
+  "windows": 1822
+ }
+}
