@@ -8,7 +8,7 @@ Numbers come from `scripts/run_all.sh`, which replays saved labels and calls no 
 
 - **All 347 NIRVANA windows have final v1.1 labels, so all 71 sessions are complete.** File: `results/final_labels_nirvana.csv`. 16 of 3,123 label cells are `UNSETTLED`: 11 rulings, 4 derived from them, and Bet 4's 1.
 - **The coders agree well.** On the 295 adjudicated windows: `decision` κ 0.80, `verification` 0.79, `uptake` 0.85. The lowest Q3–Q5 κ on any subset is 0.48 (`verification` on C2), with a session interval of [0.17, 0.69]. The point estimate is above the 0.4 stop line, but the interval is not.
-- **Full history changed 6 coded labels on 5 of the 18 recoded windows.** It confirmed both Bet 4 flags: `NIRVANA-e58-t10` `decision` went from D1 to D2, and `NIRVANA-e61-t07` `prior_own_work` went from NONE_VISIBLE to VISIBLE_PARTIAL.
+- **Full history changed 6 coded labels on 5 of the 18 recoded windows.** Both changes go the way Bet 4 flagged them, though a change cannot be split from coder noise: `NIRVANA-e58-t10` `decision` went from D1 to D2, and `NIRVANA-e61-t07` `prior_own_work` went from NONE_VISIBLE to VISIBLE_PARTIAL.
 - **The adjudicator sided with Coder A, its own requested model, 159 to 45.** That is a stronger lean than Bet 4's 25 to 13.
 - **Blindness held for coders; adjudicators broke the order rule twice.** None of the 41 agents touched a forbidden path, and every coder labeled each window before reading the next turn. Two adjudicators each read one later part early. Both rulings were redone by fresh agents and came out the same.
 
@@ -21,7 +21,7 @@ Numbers come from `scripts/run_all.sh`, which replays saved labels and calls no 
 | Other Bet 4 windows | 52 | 20 | Bet 4, unchanged |
 | **All** | **347** | **71** | `source` column; Bet 4 labels kept in `bet4_` columns for all 70 |
 
-Every final label traces to A=B, a row in `results/adjudication_log.csv`, the s7 script rule, or Bet 4's committed `final_labels.csv`. `finalize.py` stops on any field with no source. The log's `rule` column is a short citation of at most 60 characters, such as `s5 step 2`. Free-text reasons stay in the git-excluded `blind/`. `blind/` is excluded only through the local `.git/info/exclude`, so a fresh clone would need that line.
+Every final label traces to A=B, a row in `results/adjudication_log.csv`, the s7 script rule, or Bet 4's committed `final_labels.csv`. `finalize.py` stops on any field with no source. The log's `rule` column is the adjudicator's citation cut to 60 characters, such as `s5 step 2`, sometimes with a short gloss and often cut mid-phrase; it holds no dataset text. Free-text reasons stay in the git-excluded `blind/`. `blind/` is excluded only through the local `.git/info/exclude`, so a fresh clone would need that line.
 
 ## How coders saw a window
 
@@ -95,7 +95,7 @@ Rule S05 was fixed before any Bet 6 label existed: the 18 windows take the full-
 |---|---|
 | Coded fields changed, final Bet 4 → Bet 6 | 6 of 126, on 5 of 18 windows |
 | On the 10 windows that reuse unseen AI text | 2 changed, both as Bet 4 predicted |
-| The other 8 of those 10 | Every field unchanged, including their `D1` and `VISIBLE_DRAFT` labels |
+| The other 8 of those 10 | Every field unchanged (all 8 `VISIBLE_DRAFT`; 1 of them `D1`) |
 
 | Window | Field | Bet 4 (3 turns) | Bet 6 (full) | Reuses unseen AI text |
 |---|---|---|---|---|
@@ -129,7 +129,7 @@ Details: `results/overlap_audit.json`. As in Bet 4, only U1 vs U2 is the script'
 | Every line of every assigned part returned to the agent | All 41 |
 | Writes to label files other than through the gate | 0 |
 | Adjudicator rulings written after a later part was read | 2 windows (`e10-t01`, `e13-t01`). Both followed a failed batched call; the failed calls held the same rulings. Redone (S08) |
-| Directory listings | Own folder, or the `blind/` top level. That listing shows folder names plus `batches.json` and `index.json`, which hold no labels and were not opened. The e10 redo listed `blind/adjudication/` in the same call that read its brief (file names only) |
+| Directory listings | Own folder, or the `blind/` top level. That listing shows folder names plus `batches.json` and `index.json`, which hold no labels and were not opened. The e10 redo listed `blind/adjudication/` in the same call that read its brief: file names only, including `flips.json`, which it did not open |
 | Other exposure | Coder B batch 7 ran `wc -c` on its part files, so it saw byte sizes of later parts but not their content. The coder codebook keeps the project title and v1.1 s1's line that Q3–Q5 are reported as risk indicators, so coders knew the framing but not the mapping |
 
 The audit first counted a failed `add_ruling` call as written, which hid the packet 6 breach that its adjudicator had reported. I fixed it to count only calls that returned `ok`, and that also found the packet 5 case. Separation is not enforced by the file system: transcripts show what agents did. The audit needs local transcripts, so `run_all.sh` does not rerun it, and the committed JSON is the record.
@@ -170,4 +170,4 @@ Whole sessions contain `V2` (4) and `V3` (13), which the 100-window sample did n
 
 I fixed the sentence and its minor points: the listing wording, the `wc -c` exposure, the rule column, the headline and the 158 count. No label or number changed. Report: `.wayne/bets/0007-nirvana-sessions/gate/critic_report.md`.
 
-**Recheck:** pending.
+**Recheck: passed, with 0 blocking problems.** A second fresh critic recounted the disputes, found that only REPORT.md and one docstring had changed, got the same hashes on rerun, matched every κ, spot-checked three transcripts, and found 0 problems in `check_staged.py --all-tracked`. Report: `.wayne/bets/0007-nirvana-sessions/gate/critic_recheck.md`. After it, I made four wording fixes from its minor list: the rule column, the 8 windows, "confirmed", and `flips.json`. No critic rechecked those. No label or number changed.
