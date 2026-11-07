@@ -180,3 +180,7 @@ Every number in the findings table that I recomputed matches the scripts' output
 6. **Two rules raise face-validity questions the report should state.**
    - R16 labels `U8` (asked, then ignored the output) as surrender-leaning. That is 48 of the 96 whole-session R16 windows.
    - R00 sends windows to IND even when the unsettled field cannot change the rule that fires (the 11 windows in F13).
+
+---
+
+*Correction added by the main session after the gate review:* in F3, the 30 unchecked pastes with visible own work are R11 28 and R10 2 (`results/out_of_sample.md` §7d), not all R11; the 2 R10 windows are augmenting. The report states the corrected split.
