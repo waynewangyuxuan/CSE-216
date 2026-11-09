@@ -22,7 +22,7 @@ Status key: **public** = tracked on branch `final-project`; some are in commits 
 | Results: all numbers | Rerunnable analysis | `Final_Project/analysis/scripts/run_all.sh`, `Final_Project/analysis/results/mining.md`, `Final_Project/analysis/results/out_of_sample.md`, `Final_Project/analysis/results/patterns.md` | public |
 | Results: theses | Theses and the checks on them | `Final_Project/analysis/THESES.md`, `Final_Project/analysis/SKEPTIC_T.md`, `Final_Project/analysis/SKEPTIC.md`, `Final_Project/analysis/GATE_T.md`, `Final_Project/analysis/FINDINGS.md` | public |
 | Results: narratives | Paraphrased sessions e41, e24, e70 | `Final_Project/report/narratives.md` | public |
-| Results: figures | Figures 1 to 5 | `Final_Project/paper/figures`, built by `Final_Project/paper/scripts/sync_figures.py` from `Final_Project/analysis/figures` | public |
+| Results: figures | All 11 figures and diagrams | `Final_Project/paper/figures`, built by `Final_Project/paper/scripts/make_figures.py` from `Final_Project/analysis/results` and `Final_Project/analysis/derived`; palette check in `Final_Project/paper/scripts/check_palette.py` | public |
 | Related work | Search protocol, log, registry, screening reliability | `Final_Project/lit/protocol.md`, `Final_Project/lit/search_log.csv`, `Final_Project/lit/papers.csv`, `Final_Project/lit/citation_check.csv`, `Final_Project/lit/related_work.md`, `Final_Project/lit/scripts` | public |
 | Related work | Search results and screener raw output | `Final_Project/lit/raw`, `Final_Project/lit/screening` | local, contains publisher abstracts |
 | Related work | Each citation's read level | `Final_Project/paper/CITATIONS.tsv` | public |

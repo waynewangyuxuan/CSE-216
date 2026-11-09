@@ -4,7 +4,7 @@ Everything below needs you. Items marked in the source as `% TODO(Wayne):` are l
 
 ## 1. In `main.tex` (search for `TODO(Wayne)`)
 
-1. **Affiliation.** Replace the affiliation line with your institution, city, country and preferred email.
+1. **Affiliation.** Replace the affiliation line with your institution, city and preferred email. The country is set to USA.
 2. **NIRVANA consent and compensation.** Open arXiv:2604.07344 and add its recruitment, consent and compensation details if it states them. This draft says the sections read left no record, because no download was allowed here.
 3. **IRB.** Add a determination sentence if you obtained one. None is recorded in the project.
 4. **Method citations (the critic counts this as blocking).** The rubric says to cite the analysis method. Standard citations for Cohen's kappa, Spearman, permutation tests, optimal matching, silhouette and deductive qualitative coding are not in `lit/`, and the draft was limited to `lit/`. Approve adding them; these are candidates recalled from memory and unverified: Cohen 1960; Spearman 1904; Abbott and Tsay 2000; Rousseeuw 1987; Hsieh and Shannon 2005.
@@ -16,7 +16,7 @@ Everything below needs you. Items marked in the source as `% TODO(Wayne):` are l
 
 ## 2. Compiling
 
-`sh build.sh` builds `main.pdf` with `tectonic` and the current ACM class in `template/`. `python3 scripts/check_build.py` confirms a clean compile and the page count (17 body pages, 25 total, as of this draft). `main.pdf` is not tracked, so keep it out of git until it is the final file. The PDF prints the placeholders `[city]` and `[country]` until item 1 is done. Compile warnings report missing publisher and page fields for 44 reference fields, because the registry does not hold them and none was invented.
+`sh build.sh` builds `main.pdf` with `tectonic` and the current ACM class in `template/`. `python3 scripts/check_build.py` confirms a clean compile and the page count (19 body pages, 27 total, as of this draft). `main.pdf` is not tracked, so keep it out of git until it is the final file. The PDF prints the placeholder `[city]` until item 1 is done. Compile warnings report missing publisher and page fields for 44 reference fields, because the registry does not hold them and none was invented.
 
 ## 3. Proofreading
 

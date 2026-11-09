@@ -78,6 +78,9 @@ def main():
     tex = (PAPER / "main.tex").read_text(encoding="utf-8")
     allow = {w.strip().lower() for w in ALLOW.read_text().splitlines() if w.strip() and not w.startswith("#")} if ALLOW.exists() else set()
     lines = prose_lines(tex)
+    figure_text = PAPER / "figures" / "figure_text.txt"
+    if figure_text.exists():
+        lines += [(f"figure text {n}", text) for n, text in enumerate(figure_text.read_text(encoding="utf-8").splitlines(), 1)]
     where = {}
     for number, text in lines:
         for word in tokens(text):

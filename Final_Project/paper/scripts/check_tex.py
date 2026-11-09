@@ -76,6 +76,14 @@ def main():
         if re.search(r"(?<![\\\d])\d+(\.\d+)?%", clean):
             problems.append(f"line {number}: unescaped percent")
 
+    for match in re.finditer(r"\\begin\{figure\}.*?\\end\{figure\}", body, re.S):
+        block = match.group(0)
+        label = re.search(r"\\label\{([^}]+)\}", block)
+        if "\\Description{" not in block:
+            problems.append(f"figure without Description: {label.group(1) if label else '?'}")
+        if label and label.group(1) not in refs:
+            problems.append(f"figure never referenced: {label.group(1)}")
+
     body_part = body.split("\\begin{document}")[1].split("\\bibliographystyle")[0]
     words = len(re.findall(r"[A-Za-z][A-Za-z'-]+", re.sub(r"\\[a-zA-Z]+\*?(\{[^}]*\}|\[[^]]*\])?", " ", body_part)))
     figures = body_part.count("\\begin{figure}")

@@ -1,0 +1,377 @@
+NIRVANA
+WildChat
+77 university students wrote a timed essay
+with ChatGPT; chat and editor were logged
+WildChat-1M: 837,989 conversations from
+users of a free ChatGPT service
+Script: 71 students used the chat,
+347 request windows
+Script: 139,736 eligible. AI screen of a
+random seed of 1,200: 114 accepted
+71 whole sessions
+C0 7, C1 136, C2 204 windows
+35 whole conversations, 151 windows,
+plus 30 windows from an earlier sample
+528 request windows
+Coder A (Opus 5.5)
+labels Q1 to Q5 alone
+Coder B (Sonnet 5.5)
+labels Q1 to Q5 alone
+Adjudicator
+(Opus 5.5)
+Final codes
+Frozen v1.2 rules
+Category,
+strength
+Log facts (NIRVANA): timing,
+typing, essay outcomes
+106 whole sessions (498 windows), chained by turn: archetypes, order tests, theses T1 to T4
+dataset authors
+script or screen
+AI agent
+No human coded any window.
+Editor and earlier
+turns before
+the request
+Request
+the writer sends
+AI response
+Next action, before
+the next request:
+editor events or chat
+C0: request and response only
+C1: plus a later chat turn
+C2: plus editor or paste actions
+prior_own_work
+writer's draft or
+notes visible?
+Q1 operation
+Q2 function, object
+what is asked for
+Q3 decision: whose content is in the response,
+and what the next action shows
+Q4
+verification
+visible check
+Q5 uptake
+paste, type,
+iterate, leave
+Codes record behavior. Silent reading or thinking leaves no code.
+Observed in the log (paraphrased)
+Codes (AI coders)
+Rule (script)
+Category (inference)
+observed
+assigned and inferred: nothing here measures thinking
+NIRVANA-e41-t06: whole paste
+The editor is empty. The writer asks for
+the essay in a form ready to copy, copies
+it 6.5 s after the response and pastes
+4,681 characters. Nothing is changed.
+F8  D4  V0  U1
+none visible
+C2
+R09
+D4, no check, U1,
+no own work
+visible, C2
+Surrender-leaning
+strong
+Alternative: silent
+evaluation first
+NIRVANA-e24-t01: partial take
+A short note is in the editor. The writer
+copies one AI sentence, changes its ending
+and types a paragraph of their own:
+1,271 characters typed, 334 pasted, 577 s.
+F4  D3  V0  U3
+none visible
+C2
+R08
+D3 or U3, after
+earlier rules
+do not match
+Offloading
+moderate
+Alternative: the part
+kept may be AI's
+Support side
+Surrender-leaning side
+the writer's own content
+Whose content is in play?
+AI-originated content
+Does the text pass through the writer's hands?
+Writer's text reworded
+for language (D1 F5)
+68 windows, 46 offloading
+Ask, then write own text
+(D2 U7) 52 windows,
+37 augmenting
+Reasoned check (V3)
+13 windows,
+all offloading
+Partial take, AI text changed
+(D3) 46 windows,
+37 offloading
+Surface-only iteration
+(D2 V1 U4) 30 windows,
+21 surrender-leaning
+Whole paste (D4 V0 U1)
+32 windows,
+30 surrender-leaning
+Draft requested, kept in chat
+(D2 F4 U4/U5) 72 windows,
+69 surrender-leaning
+No substantive decision
+(D0): neutral-mechanical,
+outside both axes, 53 windows
+29
+69
+87
+63
+48
+51
+67
+22
+5
+52
+share of whole-session windows (%), with counts
+NIRVANA
+347 windows
+NIRVANA
+347 windows
+WildChat
+151 windows
+WildChat
+151 windows
+Surrender-leaning, request-only
+Surrender-leaning, behavior-based
+Offloading
+Augmenting
+Neutral-mechanical
+Indeterminate
+One window
+request, response,
+next action
+One session (e70): windows in turn order. Polishing own text, then pasted AI text.
+Sessions with similar sequences
+cluster into archetypes (below)
+window in session
+Short support visit: 35 sessions
+NIRVANA 25, WildChat 10
+mean 2.3 windows; offloading 46%,
+augmenting 28%; essay AI share 0.0
+window in session
+Long working session: 21 sessions
+NIRVANA 19, WildChat 2
+mean 10.4 windows, mixed; offloading
+31%, augmenting 23%; essay AI share 0.18
+window in session
+Paste into the draft: 12 sessions
+NIRVANA 12, WildChat 0
+mean 4.6 windows; behavior-based
+surrender 65%; essay AI share 0.97
+window in session
+One-shot paste: 7 sessions
+NIRVANA 7, WildChat 0
+a single window, behavior-based
+surrender 71%; essay AI share 1.0
+window in session
+Delegate in chat: 11 sessions
+NIRVANA 2, WildChat 9
+mean 7.9 windows; request-only
+surrender 64%; essay AI share 0.32
+window in session
+Unresolved: 20 sessions
+NIRVANA 6, WildChat 14
+mean 2.6 windows; indeterminate
+60%, request-only 30%; essay AI share 0.0
+Surrender-leaning, request-only
+Surrender-leaning, behavior-based
+Offloading
+Augmenting
+Neutral-mechanical
+Indeterminate
+AI proposal taken (D4)
+42 pasted windows,
+39 behavior-based
+70.5 s
+typed 6 chars
+Part taken or revised (D3)
+32 pasted windows,
+28 offloading
+288.1 s
+typed 304.5 chars
+Writer's own text reworked (D1)
+29 pasted windows,
+28 offloading
+150.1 s
+typed 25 chars
+0
+60
+120
+180
+240
+300
+seconds
+AI response
+finishes
+first copy from the chat
+next request
+share behavior-based
+essay AI share (%)
+rho 0.60 (n = 71)
+share request-only
+essay AI share (%)
+rho 0.19 (n = 71)
+share behavior-based
+felt ownership (1 to 7)
+rho −0.55 (n = 71)
+n=30
+n=17
+n=18
+NIRVANA
+n=19
+n=5
+n=7
+WildChat
+own work visible in the first window
+none
+none
+notes
+notes
+draft
+draft
+unseen
+unseen
+notes
+notes
+draft
+draft
+mean support share (%)
+characters in the editor at the first request (log scale)
+0
+0
+100
+100
+1000
+1000
+3000
+3000
+support share (%)
+NIRVANA sessions: rho 0.40, n = 65
+44
+65
+174
+126
+request-
+only
+request-
+only
+behavior-
+based
+behavior-
+based
+offload-
+ing
+offload-
+ing
+augment-
+ing
+augment-
+ing
+seconds (log scale; bar = median)
+1
+1
+10
+10
+60
+60
+300
+300
+1200
+1200
+Response to next request (dwell)
+26
+16
+10
+23
+request-
+only
+request-
+only
+behavior-
+based
+behavior-
+based
+offload-
+ing
+offload-
+ing
+augment-
+ing
+augment-
+ing
+1
+1
+10
+10
+60
+60
+300
+300
+1200
+1200
+Response to first copy
+44
+44
+156
+308
+under 50
+typed
+under 50
+typed
+50+
+typed
+50+
+typed
+median dwell (s)
+The gap is typing
+behavior-based
+support
+time in the session (schematic)
+characters in the editor
+Signal 1: ask on a near-empty page
+Request sent with under 200 characters
+in the editor.
+Feedback before showing generated
+prose: ask for the claim the writer
+wants to make.
+Signal 2: large paste, little typing
+200+ characters pasted, under 50 typed before
+the next request. Feedback: ask which sentence
+of it the writer would defend or change.
+64
+33
+Large paste, little typing
+fired 55; rho −0.41
+59
+45
+Ask on a near-empty page
+fired 101; rho −0.28
+56
+63
+Either of the two (proposed)
+fired 140
+55
+41
+Quick return to chat
+fired 122; rho −0.11
+67
+14
+Paste, then straight back
+fired 23; rho −0.23
+base rate 39.5
+% of surrender-leaning, by AI-coded labels
+precision
+recall
