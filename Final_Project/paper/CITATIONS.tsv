@@ -1,0 +1,33 @@
+key	paper_id	title	identifier_in_papers_csv	read_level
+alam2026	S01	PAUSE: A Privacy-Preserving Self-Reflection Tool for AI-Associated Cognitive Offloading	arXiv:2609.13155	relevant sections of full text
+bastani2025	C0327	Generative AI without guardrails can harm learning: Evidence from high school mathematics	doi:10.1073/pnas.2422633122	abstract and introduction
+bhat2026	C0490	Reactive Writers: How Co-Writing with AI Changes How We Engage with Ideas	arXiv:2603.10374	title and abstract at screening only
+chen2026	C0399	Layer-sensitive cognitive offloading in generative AI-assisted writing: supported performance and independent no-AI outcomes	doi:10.3389/fpsyg.2026.1906199	relevant sections of full text
+contractor2026	C0227	Experimental Evidence on the Learning Impact of Generative AI	arXiv:2607.08849	abstract and introduction
+davalos2026	C0184	Does AI Assistance Leave a Temporal Fingerprint? Detecting Overreliance in AI-Assisted Writing and Programming	doi:10.48550/arxiv.2609.17883	title and abstract at screening only
+flower1981	S05	A Cognitive Process Theory of Writing	doi:10.2307/356600	not read; second-hand
+jelson2026chi	C0042	An Empirical Study to Understand How Students Use ChatGPT for Writing Essays	arXiv:2501.10551	relevant sections of full text
+jelson2026nirvana	C0453	NIRVANA: A Comprehensive Dataset for Reproducing How Students Use Generative AI for Essay Writing	arXiv:2604.07344	relevant sections of full text
+joshi2025	C0649	Writing with AI Lowers Psychological Ownership, but Longer Prompts Can Help	arXiv:2404.03108	title and abstract at screening only
+kim2025arcp	A027	From algorithm aversion to AI dependence: Deskilling, upskilling, and emerging addictions in the GenAI age	doi:10.1002/arcp.70008	title and abstract at screening only
+kim2026fallacy	C0577	The LLM Fallacy: Misattribution in AI-Assisted Cognitive Workflows	arXiv:2604.14807	title and abstract at screening only
+kosmyna2025	C0653	Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task	doi:10.48550/arxiv.2506.08872	abstract only (PDF fetched, not read)
+lee2025	C0568	The Impact of Generative AI on Critical Thinking: Self-Reported Reductions in Cognitive Effort and Confidence Effects From a Survey of Knowledge Workers	doi:10.1145/3706598.3713778	relevant sections of full text
+maier2026	C0169	Designing Against Deskilling: Metacognitive Feedback Reduces Cognitive Offloading to LLM Assistants	arXiv:2609.20143	relevant sections of full text
+mallissery2026	A017	Cognitive Surrender in AI-Mediated Education: Behavioral Reliance, Prospective Signals, and Governance for Human Cognitive Agency	doi:10.5281/zenodo.22847816	title and abstract at screening only
+mysore2025	C0486	Prototypical Human-AI Collaboration Behaviors from LLM-Assisted Writing in the Wild	doi:10.18653/v1/2025.emnlp-main.852	abstract, introduction, data section
+padmakumar2026	S13	Offloading Score: Measuring AI Reliance Through Counterfactual Workflows	arXiv:2605.29392	relevant sections of full text
+park2026	C0066	Authorship Drift: How Self-Efficacy and Trust Evolve During LLM-Assisted Writing	doi:10.1145/3772318.3790276	title and abstract at screening only
+poquet2026	C0482	Profiling cognitive offloading in LLM-mediated synthesis writing: Volume vs. content	arXiv:2606.10434	relevant sections of full text
+reza2025	C0133	Co-Writing with AI, on Human Terms: Aligning Research with User Demands Across the Writing Process	arXiv:2504.12488	abstract and introduction
+risko2016	S15	Cognitive Offloading	doi:10.1016/j.tics.2016.07.002	accepted manuscript, full
+shaw2026	A058	Thinking—Fast, Slow, and Artificial: How AI is Reshaping Human Reasoning and the Rise of Cognitive Surrender	doi:10.2139/ssrn.6097646	through Study 1 plus limitations (PsyArXiv copy)
+skulmowski2024	C0471	Placebo or Assistant? Generative AI Between Externalization and Anthropomorphization	doi:10.1007/s10648-024-09894-x	title and abstract at screening only
+tankelevitch2024	C0579	The Metacognitive Demands and Opportunities of Generative AI	doi:10.1145/3613904.3642902	title and abstract at screening only
+tao2026	C0596	Think Before You Accept: Can Written Justification Reduce Uncritical Uptake of AI Writing Suggestions?	arXiv:2609.23936	relevant sections of full text
+wan2024	C0134	CoCo Matrix: Taxonomy of Cognitive Contributions in Co-writing with Intelligent Agents	doi:10.1145/3635636.3664260	title and abstract at screening only
+welzel2026	C0462	Overreliance in Writing Tasks: Exploring Similarity-Based Measures of AI Influence on Writing and Proposing a Reflective Writing Interface Intervention	arXiv:2605.15322	abstract only (fetched, not read)
+yang2025	C0374	Ink and algorithm: Exploring temporal dynamics in generative AI ‐assisted writing	doi:10.1111/bjet.70031	title and abstract at screening only
+yukita2025	C0491	Reassessing Collaborative Writing Theories and Frameworks in the Age of LLMs: What Still Applies and What We Must Leave Behind	arXiv:2505.16254	title and abstract at screening only
+zhao2024	C0642	WildChat: 1M ChatGPT Interaction Logs in the Wild	doi:10.48550/arxiv.2405.01470	relevant sections of full text
+zhu2026	C0455	Not all cognitive offloading is equal: distinguishing dependent and autonomous offloading to generative AI	doi:10.3389/fpsyg.2026.1878629	abstract and limitations
