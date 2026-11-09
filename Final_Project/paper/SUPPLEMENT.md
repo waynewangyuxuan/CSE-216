@@ -39,7 +39,7 @@ Status key: **public** = tracked on branch `final-project`; some are in commits 
 ## 2. What Wayne still has to do
 
 1. **Export the AI chat logs as PDFs.** Links are not accepted, and the logs must match the AI Use Statement. Nothing has been exported or uploaded. See the decision in section 3.
-2. **Push `final-project`, then confirm section 1 matches what the remote shows.** The parent session pushes after verifying.
+2. **Push `final-project`, then confirm section 1 matches what the remote shows.**
 3. **Give the instructor and TA access to the repository** (GitHub, branch `final-project`). Do this only after confirming the branch holds what section 1 says. Nothing has been shared.
 4. **Decide about local-only evidence.** The bet logs and gate critic reports under `.wayne/` are not in the repository, and they are the main evidence for several Barriers. Section 3 raises this.
 5. **Upload the final paper PDF and supplementary materials to Canvas** by Monday, December 7, 8:00pm.

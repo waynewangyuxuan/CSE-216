@@ -45,7 +45,7 @@ REFS = {
 
 NOTES = {
     "alam2026": "records conflict: lit/papers.csv says relevant sections, inference/sources.tsv says abstract only; the paper uses only what the abstract states",
-    "bastani2025": "working-paper version on a third-party host (abstract, introduction, pp. 14-15); PNAS version of record not read (PMC blocked by reCAPTCHA); see inference/sources.tsv",
+    "bastani2025": "PMC abstract and introduction read at the literature stage (lit/citation_check.csv); PMC later blocked by reCAPTCHA, so the working-paper version on a third-party host was read for the rules (abstract, pp. 11, 13-15; cited pp. 2, 14, 15, per inference/sources.tsv); PNAS version of record not read in full",
     "contractor2026": "also pp. 22-23, 68, 77, per inference/sources.tsv",
     "jelson2026chi": "bib year is the published CHI 2026 version; registry year is the 2025 preprint",
     "joshi2025": "bib year is the published 2025 version; registry year is the 2024 preprint",
@@ -57,7 +57,7 @@ CLEAN = {"‐": "-", "’": "'", "—": "---", "–": "--", "&": r"\&", "_": r"\
 def clean(text):
     for old, new in CLEAN.items():
         text = text.replace(old, new)
-    return " ".join(text.split())
+    return " ".join(text.split()).replace("AI -assisted", "AI-assisted")
 
 
 def authors(raw):

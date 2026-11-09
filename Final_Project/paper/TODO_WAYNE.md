@@ -16,7 +16,7 @@ Everything below needs you. Items marked in the source as `% TODO(Wayne):` are l
 
 ## 2. Compiling
 
-`sh build.sh` builds `main.pdf` with `tectonic` and the current ACM class in `template/`. `python3 scripts/check_build.py` confirms a clean compile and the page count (17 body pages, 24 total, as of this draft). `main.pdf` is not tracked, so keep it out of git until it is the final file. The PDF prints the placeholders `[city]` and `[country]` until item 1 is done. Compile warnings report missing publisher and page fields for 44 reference fields, because the registry does not hold them and none was invented.
+`sh build.sh` builds `main.pdf` with `tectonic` and the current ACM class in `template/`. `python3 scripts/check_build.py` confirms a clean compile and the page count (18 body pages, 25 total, as of this draft). `main.pdf` is not tracked, so keep it out of git until it is the final file. The PDF prints the placeholders `[city]` and `[country]` until item 1 is done. Compile warnings report missing publisher and page fields for 44 reference fields, because the registry does not hold them and none was invented.
 
 ## 3. Proofreading
 
