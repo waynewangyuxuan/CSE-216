@@ -2,8 +2,10 @@
 """Check the category palette for color-vision-deficiency separation and greyscale order (OKLab, Machado 2009 matrices)."""
 import itertools
 import math
+import sys
 
 PAL = {"SLb": "#D55E00", "SLr": "#F5B27A", "OFF": "#004E89", "AUG": "#56B4E9", "NEU": "#6E6E6E", "IND": "#E3E3E3"}
+HATCHED = {"SLr", "NEU"}
 CVD = {
     "normal": [[1, 0, 0], [0, 1, 0], [0, 0, 1]],
     "protan": [[0.152286, 1.052583, -0.204868], [0.114503, 0.786281, 0.099216], [-0.003882, -0.048116, 1.051998]],
@@ -35,9 +37,13 @@ def main():
         worst[name] = min((100 * math.dist(oklab(apply(m, lin(PAL[a]))), oklab(apply(m, lin(PAL[b])))), a, b) for a, b in itertools.combinations(PAL, 2))
     lum = {k: round(0.2126 * lin(v)[0] + 0.7152 * lin(v)[1] + 0.0722 * lin(v)[2], 3) for k, v in PAL.items()}
     grey = sorted((116 * v ** (1 / 3) - 16, k) for k, v in lum.items())
-    gaps = min(b[0] - a[0] for a, b in zip(grey, grey[1:]))
+    plain = [g for g in grey if g[1] not in HATCHED]
+    gaps = min(b[0] - a[0] for a, b in zip(plain, plain[1:]))
     print("worst pair delta E (OKLab x 100):", {k: (round(v[0], 1), v[1], v[2]) for k, v in worst.items()})
-    print("greyscale L*:", [(round(a, 1), b) for a, b in grey], "smallest gap", round(gaps, 1))
+    print("greyscale L*:", [(round(a, 1), b) for a, b in grey], "smallest gap among unhatched colors", round(gaps, 1))
+    if gaps < 15 or min(v[0] for v in worst.values()) < 10:
+        sys.exit("check_palette: fail")
+    print("check_palette: ok")
 
 
 main()

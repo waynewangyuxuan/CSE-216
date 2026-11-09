@@ -107,7 +107,7 @@ All of WildChat-1M was screened by an LLM for formal long-form writing: an exten
 
 \begin{figure}[tbp]
 \includegraphics[width=\linewidth]{flow.pdf}
-\caption{How the data moved from the two sources to the theses, and who or what did each step. Dashed boxes are AI agents, shaded boxes are scripts or screens, and plain boxes are the dataset authors' work. Coverage \code{C0} is a request and response with no usable next action, \code{C1} adds a later chat turn, and \code{C2} adds editor actions. Three WildChat conversations are capped at ten turns, and the 30 earlier windows are incomplete, so they stay out of every session measure.}
+\caption{How the data moved from the two sources to the theses, and who or what did each step. Dashed boxes are AI agents, shaded boxes are scripts or screens, and plain boxes are the dataset authors' work. Coverage \code{C0} is a request and response with no usable next action, \code{C1} adds a later chat turn, and \code{C2} adds editor actions. Three WildChat conversations are capped at ten turns and remain in the session measures; the 30 earlier windows are incomplete and stay out of every session measure.}
 \Description{A flow chart. NIRVANA: 77 students, then 71 who used the chat with 347 windows, then 71 whole sessions. WildChat: 837,989 conversations, then 139,736 eligible and 114 accepted from a random seed of 1,200, then 35 whole conversations with 151 windows plus 30 earlier windows. Both feed 528 request windows, coded separately by Coder A (Opus 5.5) and Coder B (Sonnet 5.5), with an adjudicator (Opus 5.5) resolving disagreements. Final codes pass through frozen v1.2 rules to one category and strength. Categories and NIRVANA log facts feed analysis of 106 whole sessions and theses T1 to T4. A note says no human coded any window.}
 \label{fig:flow}
 \end{figure}
@@ -125,7 +125,7 @@ Codebook v1.0 was a reconstruction from the proposal and Milestone 1. Agents rev
 
 \begin{figure}[tbp]
 \includegraphics[width=\linewidth]{anatomy.pdf}
-\caption{Anatomy of a window, the unit of coding. Each code is read from a named part of the window. The lines above show what each coverage level lets a coder see: a chat-only log (\code{C1}) has no editor actions, so it cannot show pasting or typing.}
+\caption{Anatomy of a window, the unit of coding. Each code is read from a named part of the window. The lines above show what each coverage level lets a coder see: a chat-only window (\code{C1}) has no editor actions, so it cannot show pasting or typing.}
 \Description{Four boxes in sequence: editor and earlier turns before the request, the request, the AI response, and the next action before the next request. Brackets below show that prior own work is read from the first box, Q1 operation and Q2 function and object from the request, Q3 decision from the response and the next action, and Q4 verification and Q5 uptake from the next action only. Lines above show that C0 covers request and response, C1 adds a later chat turn and C2 adds editor actions.}
 \label{fig:anatomy}
 \end{figure}
@@ -158,8 +158,8 @@ Figure~\ref{fig:worked} walks two real windows through these steps, and Figure~\
 
 \begin{figure}[tbp]
 \includegraphics[width=\linewidth]{concept_map.pdf}
-\caption{Concept map of the categories, with behavior signatures placed by hand on the two dimensions that separate them. Positions are schematic. Counts are windows in the 106 whole sessions, and the fill shows the most common category for that signature. Hatching marks the request-only form of surrender-leaning.}
-\Description{A two-dimensional map. The horizontal axis runs from the writer's own content to AI-originated content. The vertical axis asks whether the text passes through the writer's hands. Upper and left areas are the support side: writer's text reworded for language, ask then write own text, reasoned check, and partial take with AI text changed. The lower right is the surrender-leaning side: surface-only iteration, whole paste, and a draft requested and kept in chat, which is hatched. Neutral-mechanical sits apart, outside both axes.}
+\caption{Concept map of the categories, with behavior signatures placed by hand on the two dimensions that separate them. Positions are schematic. Counts are windows in the 106 whole sessions, and the fill shows the most common category for that signature. Hatching marks the signature that is mostly request-only surrender-leaning. A window can match more than one signature: 22 windows are in both surface-only iteration and draft requested. Indeterminate windows have no position on these axes.}
+\Description{A two-dimensional map. The horizontal axis runs from the writer's own content to AI-originated content. The vertical axis asks whether the text passes through the writer's hands. Upper areas are the support side: writer's text reworded for language, ask then write own text, reasoned check, and partial take with AI text changed. The lower right is the surrender-leaning side: surface-only iteration, whole paste, and a draft requested and kept in chat, which is hatched and holds 48 request-only and 21 behavior-based windows. Neutral-mechanical sits in an unshaded corner, outside both axes.}
 \label{fig:concept}
 \end{figure}
 % src: analysis/results/patterns.md s1; analysis/results/out_of_sample.md s3 (R02)
@@ -170,7 +170,7 @@ Windows were chained by turn into sessions. From the raw NIRVANA logs a script e
 
 \subsection{Tools, duration and checks}
 
-Agents worked in Claude Code. Analysis scripts are Python, with NumPy and Matplotlib; the WildChat ranker used the \code{BAAI/bge-small-en-v1.5} embedding model. Data preparation, coding and analysis ran on November 6--7, 2026, and this draft was written on November 8. Each stage's numbers rerun from saved labels by script, with no model calls, and repeat runs gave byte-identical outputs. Fresh agents with no access to the working agent's reasoning checked each stage against a stated gate, and a skeptic agent tried to refute each claim in the results below.
+Agents worked in Claude Code. Analysis scripts are Python, with NumPy and Matplotlib; the WildChat ranker used the \code{BAAI/bge-small-en-v1.5} embedding model. Data preparation, coding and analysis ran on November 6--7, 2026, and this draft was written on November 8. Each stage's numbers rerun from saved labels by script, with no model calls, and repeat runs gave byte-identical outputs; numbers in the schematic figures and some figure labels are typed from those results files. Fresh agents with no access to the working agent's reasoning checked each stage against a stated gate, and a skeptic agent tried to refute each claim in the results below.
 % src: analysis/scripts/run_all.sh; analysis/SKEPTIC_T.md; git log dates
 
 \section{Results}
@@ -210,7 +210,7 @@ Figure~\ref{fig:categories} shows the category counts by dataset. The datasets d
 
 \begin{figure}[tbp]
 \includegraphics[width=\linewidth]{categories.pdf}
-\caption{Category of each whole-session window, by dataset. WildChat's surrender-leaning windows are almost all request-only, because a chat log cannot show what happened to the text.}
+\caption{Category of each whole-session window, by dataset. WildChat's surrender-leaning windows are almost all request-only, because a chat log cannot show what happened to the text. Unlabeled WildChat segments are behavior-based, 2, and augmenting, 3.}
 \Description{Two stacked horizontal bars. NIRVANA, 347 windows: request-only 29, behavior-based 69, offloading 87, augmenting 63, neutral-mechanical 48, indeterminate 51. WildChat, 151 windows: request-only 67, behavior-based 2, offloading 22, augmenting 3, neutral-mechanical 5, indeterminate 52.}
 \label{fig:categories}
 \end{figure}
@@ -218,11 +218,11 @@ Figure~\ref{fig:categories} shows the category counts by dataset. The datasets d
 
 \subsection{Themes: six session archetypes}
 
-The categories are the deductive themes, defined in Section~\ref{sec:rules} and Figure~\ref{fig:concept}. The inductive themes are six session archetypes, defined in Figure~\ref{fig:archetypes}. The two paste archetypes occur only in NIRVANA and end with essays almost wholly by the AI. Delegate in chat is mostly a WildChat pattern. Short support visits and long working sessions end with little AI text.
+The categories are the deductive themes, defined in Section~\ref{sec:rules} and Appendix~\ref{app:codebook} and placed in Figure~\ref{fig:concept}. The inductive themes are six session archetypes, defined in Figure~\ref{fig:archetypes}. The two paste archetypes occur only in NIRVANA and end with essays almost wholly by the AI. Delegate in chat is mostly a WildChat pattern. Short support visits and long working sessions end with little AI text.
 
 \begin{figure}[tbp]
 \includegraphics[width=\linewidth]{archetypes.pdf}
-\caption{Top: a window is one tile, and a session is a row of windows in turn order. Below: every session, grouped into six archetypes by clustering category sequences. Percentages are mean shares of a session's windows. Essay AI share is the NIRVANA median of GPT Final \%, as a proportion; the Delegate in chat value rests on 2 NIRVANA sessions.}
+\caption{Top: a window is one tile, and a session is a row of windows in turn order. Below: every session, grouped into six archetypes by clustering category sequences. Percentages are mean shares of a session's windows. Essay AI share is the NIRVANA median of GPT Final \%, as a proportion; the Delegate in chat value rests on 2 NIRVANA sessions. Panels use different horizontal scales.}
 \Description{Top strip: one window as a tile, then session e70 as seven tiles (offloading, offloading, request-only surrender, offloading, offloading, behavior-based surrender, behavior-based surrender). Below, six panels of rows of colored tiles. Short support visit, 35 sessions, and long working session, 21 sessions, are mostly offloading and augmenting. Paste into the draft, 12 sessions, and one-shot paste, 7 sessions, are mostly behavior-based surrender. Delegate in chat, 11 sessions, is mostly hatched request-only surrender. Unresolved, 20 sessions, is mostly indeterminate.}
 \label{fig:archetypes}
 \end{figure}
@@ -237,7 +237,7 @@ Pasting is on both sides. In NIRVANA, writers paste in 65.5\% of offloading wind
 
 \begin{figure}[tbp]
 \includegraphics[width=\linewidth]{after_response.pdf}
-\caption{What happens after the response, among NIRVANA windows with a paste, drawn to scale from medians. The bar runs from the end of the AI response to the next request (dwell), and the label gives the median characters typed. First-copy times come from the matching code signatures (\code{D4} with \code{U1}, 35 windows; \code{D3}, 45; \code{D1}, 52).}
+\caption{What happens after the response, among NIRVANA windows with a paste, drawn to scale from medians. The bar runs from the end of the AI response to the next request (dwell), and the label gives the median characters typed. Dwell uses the 21, 23 and 20 windows that have a next request. First-copy times come from the matching code signatures (\code{D4} with \code{U1}, 35 windows; \code{D3}, 45; \code{D1}, 52).}
 \Description{Three horizontal timelines to scale. AI proposal taken (D4), 42 windows, 39 behavior-based: dwell 70.5 seconds, 6 characters typed. Part taken or revised (D3), 32 windows, 28 offloading: dwell 288.1 seconds, 304.5 characters typed. Writer's own text reworked (D1), 29 windows, 28 offloading: dwell 150.1 seconds, 25 characters typed. A tick marks first copy at about 15, 17 and 9 seconds.}
 \label{fig:after}
 \end{figure}
@@ -248,7 +248,7 @@ The finished essays show the same line (Figure~\ref{fig:outcome}). Across the 71
 
 \begin{figure}[tbp]
 \includegraphics[width=\linewidth]{outcome.pdf}
-\caption{NIRVANA essay outcomes by session. Behavior-based surrender tracks the essay's AI share and lower ownership. Request-only surrender tracks the AI share only weakly.}
+\caption{NIRVANA essay outcomes by session. Behavior-based surrender tracks the essay's AI share and lower ownership. Request-only surrender tracks the AI share only weakly, and 58 of the 71 sessions have a request-only share of zero. Larger markers stand for several sessions at one point.}
 \Description{Three scatter plots across 71 sessions. Left: share of windows surrender-leaning by behavior against GPT Final percent, rho 0.603. Middle: share by request only against GPT Final percent, rho 0.191. Right: share by behavior against Perceived Ownership, rho minus 0.546.}
 \label{fig:outcome}
 \end{figure}
@@ -267,7 +267,7 @@ Across NIRVANA sessions, the more text in the editor at the first request, the l
 
 \begin{figure}[tbp]
 \includegraphics[width=\linewidth]{own_work.pdf}
-\caption{Own work in the first window and the session's support share, by dataset (left), and NIRVANA editor length at the first request against support share (right).}
+\caption{Own work in the first window and the session's support share, by dataset (left), and NIRVANA editor length at the first request against support share (right). Support share is offloading and augmenting windows as a share of a session's windows with a surrender or support category; sessions with none, and one WildChat session whose first-window field is unsettled, are not shown. Unseen means a chat-only first window with no writer text.}
 \Description{Left: bars of support share by first-window own work. NIRVANA none 50, notes 71, draft 77 percent. WildChat unseen 7, notes 53, draft 100 percent. Right: scatter of characters in the editor at the first request, on a log scale, against support share, with Spearman 0.401.}
 \label{fig:ownwork}
 \end{figure}
@@ -278,7 +278,7 @@ The anchor also predicts the next step. In a model of the next substantive windo
 
 \subsection{T3: surrender-leaning windows leave little work on the text}
 
-In NIRVANA, the writer is back in the chat after a median of 57.8 seconds in surrender-leaning windows and 152.2 seconds in support windows (within-session shuffle $p < 0.001$; behavior-based alone 65.4 seconds, $p = 0.0035$). The gap appears in every fifth of a session and within 13 of the 17 sessions that have both kinds (Figure~\ref{fig:dwell}). The gap is typing time. With under 50 characters typed, behavior-based surrender and support windows have the same dwell, 44.1 and 43.5 seconds. Median characters typed after the response are 0 for behavior-based surrender, 108 for offloading and 256 for augmenting.
+In NIRVANA, the writer is back in the chat after a median of 57.8 seconds in surrender-leaning windows and 152.2 seconds in support windows (within-session shuffle $p < 0.001$; behavior-based alone 65.4 seconds, $p = 0.0035$). The gap appears in every fifth of a session and within 13 of the 17 sessions that have both kinds. The gap is typing time (Figure~\ref{fig:dwell}). With under 50 characters typed, behavior-based surrender and support windows have the same dwell, 44.1 and 43.5 seconds. Median characters typed after the response are 0 for behavior-based surrender, 108 for offloading and 256 for augmenting.
 
 The copy is not faster. The first copy from the chat comes after a median of 15.5 seconds for behavior-based surrender and 10.35 seconds for support ($p = 0.62$). Twenty of 69 behavior-based surrender windows and 31 of 87 offloading windows are copied within 10 seconds. Felt ownership is lower in sessions with more of either kind of surrender ($\rho = -0.55$ behavior-based, $p < 0.001$; $-0.33$ request-only, $p = 0.004$), mostly as a difference between sessions with any behavior-based surrender and those with none: among the 34 sessions that have some, the correlation is $-0.21$ ($p = 0.25$). WildChat's only clock does not separate the sides (232 against 332 seconds, $p = 0.39$).
 % src: analysis/results/mining.md s5, s7, s8, s10
@@ -291,17 +291,17 @@ The copy is not faster. The first copy from the chat comes after a median of 15.
 \end{figure}
 % src: analysis/derived/timing_nirvana.csv; analysis/results/mining.md s7, s10
 
-\subsection{T4: two content-free log events catch two-thirds of surrender-leaning windows}
-
-Four rules were computed from the NIRVANA keystroke log alone, with no codes and no text, of which two are proposed as triggers (Figure~\ref{fig:triggers}). Against a base rate of 39.5\%, a large paste with little typing is the more precise of the two and tracks ownership most closely, and a request on a near-empty page catches more of the surrender-leaning windows. Together they fire on 140 of 347 windows, with precision 55.9\%, and catch 63.3\% of the windows that the AI-coded labels mark as surrender-leaning and 69.6\% of behavior-based ones. Speed alone does not qualify: a quick return to the chat has only modest precision and no relation to essay outcome. A fourth rule, a paste followed by a quick return, is precise (66.7\%) but catches only 14.3\%.
-% src: analysis/results/mining.md s9, s10
-
 \begin{figure}[tbp]
 \includegraphics[width=\linewidth]{signals.pdf}
-\caption{Top: where the two proposed log signals fire in a writing session, and the feedback each would give (schematic, not an interface; nothing was built). Bottom: performance of the log-only rules in NIRVANA, out of 347 windows. Precision is the share of fired windows that are surrender-leaning and recall is the share of surrender-leaning windows caught, both by the AI-coded labels. Rho is the correlation between a session's fire rate and felt ownership.}
+\caption{Top: where the two proposed log signals fire in a writing session, and the feedback each would give (schematic, not an interface; nothing was built). Bottom: performance of the log-only rules in NIRVANA, out of 347 windows. Precision is the share of fired windows with a surrender or support category that are surrender-leaning, against a base rate of 39.5\% on the same windows (98 of 248); recall is the share of all surrender-leaning windows caught, both by the AI-coded labels. Quick return: next request within 60 s of the response, with under 50 characters typed. Paste, then straight back: 200 or more characters pasted and the next request within 90 s. Rho is the correlation between a session's fire rate and felt ownership.}
 \Description{Top: a schematic line of editor length over a session, with signal 1 near the start, when a request is sent with under 200 characters in the editor, and signal 2 at a sudden jump, when 200 or more characters are pasted and under 50 typed before the next request. Each has a feedback prompt. Bottom: paired bars of precision and recall against a base rate of 39.5 percent. Large paste, little typing: 64 and 33, fired 55. Ask on a near-empty page: 59 and 45, fired 101. Either of the two: 56 and 63, fired 140. Quick return to chat: 55 and 41, fired 122. Paste, then straight back: 67 and 14, fired 23.}
 \label{fig:triggers}
 \end{figure}
+% src: analysis/results/mining.md s9, s10
+
+\subsection{T4: two content-free log events catch two-thirds of surrender-leaning windows}
+
+Four rules were computed from the NIRVANA keystroke log alone, with no codes and no text, of which two are proposed as triggers (Figure~\ref{fig:triggers}). Against a base rate of 39.5\%, a large paste with little typing is the more precise of the two and tracks ownership most closely, and a request on a near-empty page catches more of the surrender-leaning windows. Together they fire on 140 of 347 windows, with precision 55.9\% among fired windows that have a surrender or support category, and catch 63.3\% of the windows that the AI-coded labels mark as surrender-leaning and 69.6\% of behavior-based ones. Speed alone does not qualify: a quick return to the chat has only modest precision and no relation to essay outcome. A fourth rule, a paste followed by a quick return, is precise (66.7\%) but catches only 14.3\%.
 % src: analysis/results/mining.md s9, s10
 
 \section{Analysis and Study Barriers}
@@ -387,7 +387,7 @@ The substitutions most likely to go unseen, if they occur, keep the writer busy.
 
 \subsection{RQ3: signals for in-situ feedback}
 
-Two log events, a request on a near-empty page and a large paste with little typing, are the basis for feedback a tool could offer without reading a writer's text. Each corresponds to a specific prompt, stated as a proposal, since no system or mockup was built. Before showing generated prose on a near-empty page, the tool can ask the writer for the claim they want to make, drawing on the anchor result. After a large paste with no typing, it can ask which sentence the writer would defend or change, drawing on the paste result. Speed should not trigger anything, since time to first copy does not differ reliably between the sides and a quick return shows no relation to essay outcome. Precision of 56\% means that many firings would land on legitimate use, so feedback should be light and easily dismissed. Written justification has been shown to reduce uptake of flawed suggestions while the reasons stay thin \cite{tao2026}, which argues for prompts that ask for a claim or a choice over prompts that ask for an explanation.
+Two log events, a request on a near-empty page and a large paste with little typing, are the basis for feedback a tool could offer without reading a writer's text. Each corresponds to a specific prompt, stated as a proposal, since no system or mockup was built. Before showing generated prose on a near-empty page, the tool can ask the writer for the claim they want to make, drawing on the anchor result. After a large paste with no typing, it can ask which sentence the writer would defend or change, drawing on the paste result. Speed should not trigger anything, since time to first copy does not differ reliably between the sides and a quick return shows no relation to essay outcome. Precision of 56\% among fired windows with a surrender or support category means that many firings would land on legitimate use, so feedback should be light and easily dismissed. Written justification has been shown to reduce uptake of flawed suggestions while the reasons stay thin \cite{tao2026}, which argues for prompts that ask for a claim or a choice over prompts that ask for an explanation.
 
 In a chat-only tool neither event exists. The nearest analogue is a run of generation follow-ups in which the writer supplies no text of their own, and WildChat sessions that become surrender-leaning rarely come back. That analogue has weak support here.
 
@@ -423,8 +423,9 @@ Study design & Drafted the plan, briefs, protocols and rule table & I chose dire
 Dataset work & Built windows, labeled WildChat with Sonnet 5.5 (43 labels record Claude Sonnet 5 as served), audited the screen with Opus 5.5 & Scripted rebuilds and critic agents \\
 Codebook & Drafted and revised v1.1 and v1.2 through pilots by AI coders & I accepted v1.1 at a checkpoint; critic agents reviewed; no human coded with it \\
 Coding & All coding: Opus 5.5 and Sonnet 5.5 coders, Opus 5.5 adjudicators, Fable 5.1 on the 20-window set & AI-to-AI agreement and transcript audits only \\
-Analysis & Wrote all scripts, ran the analysis, made the figures, wrote narratives & Byte-identical reruns and skeptic agents \\
+Analysis & Wrote all scripts, ran the analysis, made the first versions of the figures, wrote narratives & Byte-identical reruns and skeptic agents \\
 Writing & Drafted the milestone report and this entire paper, including its text, tables, appendix, references and supplementary plan, using Opus 5.5 & Spell-check script, a fresh proofreading agent and a fresh critic agent \\
+Figures & Redrew the figures in one palette, replaced six tables with figures and added explanatory diagrams, using Opus 5.5 & Scripted rerun, palette and text-overlap checks, a fresh figure critic and its recheck \\
 Editing & Applied the proofreading and critic findings to the draft, using Opus 5.5 & A fresh critic rechecked the edits; its minor corrections were applied afterward and not rechecked \\
 \bottomrule
 \end{tabular}

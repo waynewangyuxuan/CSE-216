@@ -24,7 +24,7 @@ WIDTH = 6.0  # inches; the figures are placed at \linewidth
 
 # One color per category in every figure; lightness differs so the order survives greyscale print.
 COL = {"SLb": "#D55E00", "SLr": "#F5B27A", "OFF": "#004E89", "AUG": "#56B4E9", "NEU": "#6E6E6E", "IND": "#E3E3E3"}
-HATCH = {"SLr": "////"}
+HATCH = {"SLr": "////", "NEU": "xxxx"}
 LABEL = {
     "SLb": "Surrender-leaning, behavior-based",
     "SLr": "Surrender-leaning, request-only",
@@ -93,11 +93,11 @@ def fig_flow():
     arrow(ax, (4.5, y), (4.5, y - 0.14))
     y -= 0.58
     box(ax, 0.1, y, 2.8, 0.44, "71 whole sessions\nC0 7, C1 136, C2 204 windows", fc=SCRIPT_FILL)
-    box(ax, 3.1, y, 2.8, 0.44, "35 whole conversations, 151 windows,\nplus 30 windows from an earlier sample", fc=SCRIPT_FILL)
+    box(ax, 3.1, y, 2.8, 0.44, "35 whole conversations, 151 windows (C0 32, C1 119),\nplus 30 windows from an earlier sample", fc=SCRIPT_FILL, fs=7)
     arrow(ax, (1.5, y), (2.6, y - 0.14))
     arrow(ax, (4.5, y), (3.4, y - 0.14))
     y -= 0.42
-    box(ax, 1.9, y, 2.2, 0.28, "528 request windows", fc="white", weight="bold", ec=INK, lw=1.1)
+    box(ax, 1.9, y, 2.2, 0.28, "528 request windows", fc=SCRIPT_FILL, weight="bold", ec=INK, lw=1.1)
     arrow(ax, (2.3, y), (1.3, y - 0.16))
     arrow(ax, (3.7, y), (4.7, y - 0.16))
     y -= 0.5
@@ -108,9 +108,9 @@ def fig_flow():
     arrow(ax, (3.6, y + 0.17), (3.45, y + 0.17))
     arrow(ax, (3.0, y), (3.0, y - 0.14))
     y -= 0.42
-    box(ax, 2.4, y, 1.2, 0.28, "Final codes", fc="white")
+    box(ax, 2.4, y, 1.2, 0.28, "Final codes", fc="white", ls="--")
     box(ax, 3.82, y, 0.98, 0.28, "Frozen v1.2 rules", fc=SCRIPT_FILL, fs=6.9)
-    box(ax, 5.02, y, 0.88, 0.28, "Category,\nstrength", fc=COL["IND"], weight="bold", fs=6.9)
+    box(ax, 5.02, y, 0.88, 0.28, "Category,\nstrength", fc=SCRIPT_FILL, weight="bold", fs=6.9)
     arrow(ax, (3.6, y + 0.14), (3.82, y + 0.14))
     arrow(ax, (4.8, y + 0.14), (5.02, y + 0.14))
     box(ax, 0.1, y, 2.05, 0.28, "Log facts (NIRVANA): timing,\ntyping, essay outcomes", fc=SCRIPT_FILL, fs=6.9)
@@ -176,7 +176,7 @@ def fig_worked():
     rows = [
         (1.5, "NIRVANA-e41-t06: whole paste", "The editor is empty. The writer asks for\nthe essay in a form ready to copy, copies\nit 6.5 s after the response and pastes\n4,681 characters. Nothing is changed.",
          "F8  D4  V0  U1\nnone visible\nC2", "R09\nD4, no check, U1,\nno own work\nvisible, C2", "Surrender-leaning\nstrong", "SLb", "Alternative: silent\nevaluation first"),
-        (0.28, "NIRVANA-e24-t01: partial take", "A short note is in the editor. The writer\ncopies one AI sentence, changes its ending\nand types a paragraph of their own:\n1,271 characters typed, 334 pasted, 577 s.",
+        (0.28, "NIRVANA-e24-t01: partial take", "The only text in the editor becomes the\nrequest. The writer copies one AI sentence,\nchanges its ending and types a paragraph:\n1,271 characters typed, 334 pasted, 577 s.",
          "F4  D3  V0  U3\nnone visible\nC2", "R08\nD3 or U3, after\nearlier rules\ndo not match", "Offloading\nmoderate", "OFF", "Alternative: the part\nkept may be AI's"),
     ]
     for y, title, obs, codes, rule, cat, tok, alt in rows:
@@ -197,9 +197,8 @@ def fig_concept():
     fig, ax = canvas(h)
     x0, y0, W, H = 0.42, 0.42, 5.46, 3.28
     ax.add_patch(Rectangle((x0, y0), W, H, fc="white", ec=RULE, lw=0.8))
-    ax.add_patch(Rectangle((x0 + W * 0.42, y0), W * 0.58, H * 0.47, fc="#FBE9DC", ec="none"))
+    ax.add_patch(Rectangle((x0 + W * 0.42, y0), W * 0.58, H * 0.47, fc="#FBE9DC", ec=INK2, ls="--", lw=0.8))
     ax.add_patch(Rectangle((x0, y0 + H * 0.47), W, H * 0.53, fc="#E5F0F8", ec="none"))
-    ax.add_patch(Rectangle((x0, y0), W * 0.42, H * 0.47, fc="#E5F0F8", ec="none"))
     ax.text(x0 + 0.07, y0 + H - 0.11, "Support side", fontsize=8, weight="bold", color=COL["OFF"], va="center")
     ax.text(x0 + W * 0.42 + 0.07, y0 + 0.12, "Surrender-leaning side", fontsize=8, weight="bold", color="#A84700", va="center")
     ax.annotate("", (x0 + W, 0.3), (x0, 0.3), arrowprops=dict(arrowstyle="-|>", color=INK2, lw=0.9))
@@ -207,15 +206,17 @@ def fig_concept():
     ax.text(x0 + W / 2, 0.13, "Whose content is in play?", fontsize=7.5, weight="bold", color=INK, va="center", ha="center")
     ax.text(x0 + W, 0.13, "AI-originated content", fontsize=7.5, color=INK2, va="center", ha="right")
     ax.annotate("", (0.3, y0 + H), (0.3, y0), arrowprops=dict(arrowstyle="-|>", color=INK2, lw=0.9))
+    ax.text(0.3, y0 + H + 0.03, "yes", fontsize=7, color=INK2, ha="center", va="bottom")
+    ax.text(0.14, y0 - 0.03, "no", fontsize=7, color=INK2, ha="center", va="top")
     ax.text(0.14, y0 + H / 2, "Does the text pass through the writer's hands?", fontsize=7.5, weight="bold", color=INK, rotation=90, va="center", ha="center")
     items = [
-        (0.62, 1.82, 1.55, 0.56, "Writer's text reworded\nfor language (D1 F5)\n68 windows, 46 offloading", "OFF"),
+        (0.62, 2.04, 1.55, 0.56, "Writer's text reworded\nfor language (D1 F5)\n68 windows, 46 offloading", "OFF"),
         (2.32, 2.97, 1.62, 0.56, "Ask, then write own text\n(D2 U7) 52 windows,\n37 augmenting", "AUG"),
         (4.08, 2.97, 1.62, 0.56, "Reasoned check (V3)\n13 windows,\nall offloading", "OFF"),
         (3.48, 2.18, 1.72, 0.56, "Partial take, AI text changed\n(D3) 46 windows,\n37 offloading", "OFF"),
         (2.72, 1.25, 1.5, 0.56, "Surface-only iteration\n(D2 V1 U4) 30 windows,\n21 surrender-leaning", "SLb"),
         (4.32, 1.33, 1.5, 0.56, "Whole paste (D4 V0 U1)\n32 windows,\n30 surrender-leaning", "SLb"),
-        (4.08, 0.58, 1.72, 0.56, "Draft requested, kept in chat\n(D2 F4 U4/U5) 72 windows,\n69 surrender-leaning", "SLr"),
+        (4.08, 0.58, 1.72, 0.56, "Draft requested, kept in chat\n(D2 F4 U4/U5) 72 windows:\n48 request-only, 21 behavior", "SLr"),
     ]
     for x, y, w, hh, text, tok in items:
         if tok == "SLr":
@@ -224,7 +225,7 @@ def fig_concept():
                     bbox=dict(fc=COL[tok], ec="none", pad=1.2))
         else:
             cat_box(ax, x, y, w, hh, text, tok, fs=7.1)
-    box(ax, 0.62, 0.56, 1.72, 0.56, "No substantive decision\n(D0): neutral-mechanical,\noutside both axes, 53 windows", fc=COL["NEU"], fs=7.1, color="white")
+    box(ax, 0.62, 0.56, 1.72, 0.56, "No substantive decision\n(D0), 57 windows, 53 neutral-\nmechanical, outside both axes", fc=COL["NEU"], fs=7.1, color="white")
     save(fig, "concept_map")
 
 
@@ -246,7 +247,7 @@ def fig_categories(S):
             if n[t] >= 5:
                 t_obj = ax.text(left + v / 2, y, str(n[t]), ha="center", va="center", fontsize=7.5, color="white" if t in ON_DARK else INK)
                 if t in HATCH:
-                    t_obj.set_bbox(dict(fc=COL[t], ec="none", pad=0.8))
+                    t_obj.set_bbox(dict(fc=COL[t], ec="none", pad=1.2))
             left += v
     ax.set_yticks([1, 0], [f"{d}\n{sum(n.values())} windows" for d, n in rows])
     ax.set_xlim(0, 100)
@@ -356,7 +357,8 @@ def fig_outcome():
              (1, 2, "SLr", "share request-only", "essay AI share (%)", "SLr_share", "gpt_final"),
              (0, 3, "SLb", "share behavior-based", "felt ownership (1 to 7)", "SLb_share", "ownership")]
     for ax, (xi, yi, tok, xl, yl, a, b) in zip(axes, specs):
-        ax.scatter(pts[:, xi], pts[:, yi], s=14, color=COL[tok], edgecolor=INK2, linewidth=0.35, alpha=0.9)
+        where, counts = np.unique(pts[:, [xi, yi]], axis=0, return_counts=True)
+        ax.scatter(where[:, 0], where[:, 1], s=9 + 7 * counts, color=COL[tok], edgecolor=INK2, linewidth=0.35, alpha=0.9)
         c = C[(a, b)]
         ax.set_title(f"rho {c['spearman_rho']:.2f} (n = {c['sessions']})".replace("-", "\u2212"), loc="left")
         ax.set_xlabel(xl, labelpad=2)
@@ -372,13 +374,13 @@ def fig_own_work(S):
     lab = {"NONE_VISIBLE": "none", "UNOBSERVABLE": "unseen", "VISIBLE_PARTIAL": "notes", "VISIBLE_DRAFT": "draft"}
     fig, (a1, a2) = plt.subplots(1, 2, figsize=(WIDTH, 2.25), gridspec_kw={"width_ratios": [1, 1.1]})
     xs, i = [], 0
-    for d, fc, hatch in (("NIRVANA", "#444444", None), ("WildChat", "#FFFFFF", "....")):
+    for d, fc, hatch in (("NIRVANA", "#222222", None), ("WildChat", "#FFFFFF", "....")):
         start = i
         for p in order:
             g = next((g for g in G if g["dataset"] == d and g["first_window_prior_own_work"] == p), None)
             if not g:
                 continue
-            a1.bar(i, g["mean_support_share"] * 100, color=fc, width=0.72, hatch=hatch, edgecolor="#444444", lw=0.7)
+            a1.bar(i, g["mean_support_share"] * 100, color=fc, width=0.72, hatch=hatch, edgecolor="#222222", lw=0.7)
             a1.text(i, g["mean_support_share"] * 100 + 2, f"n={g['sessions']}", ha="center", fontsize=7, color=INK2)
             xs.append((i, lab[p]))
             i += 1
@@ -397,7 +399,7 @@ def fig_own_work(S):
             pts.append((int(v[0]["t"]["editor_chars_before"]), 100 * sum(w["side"] == "P" for w in det) / len(det)))
     x = [math.log10(p[0] + 10) for p in pts]
     y = [p[1] for p in pts]
-    a2.scatter(x, y, s=14, color="#444444", alpha=0.75, edgecolor="white", linewidth=0.4)
+    a2.scatter(x, y, s=14, color="#222222", alpha=0.75, edgecolor="white", linewidth=0.4)
     c = j["own_work"]["nirvana_first_ask_correlations"]["editor_chars_first"]
     ticks = [0, 100, 1000, 3000]
     a2.set_xticks([math.log10(t + 10) for t in ticks], [str(t) for t in ticks])
@@ -414,8 +416,8 @@ def support_bar(ax, x, value, width):
 
 def fig_dwell(S):
     toks = ["SLr", "SLb", "OFF", "AUG"]
-    names = {"SLr": "request-\nonly", "SLb": "behavior-\nbased", "OFF": "offload-\ning", "AUG": "augment-\ning"}
-    fig, axes = plt.subplots(1, 3, figsize=(WIDTH, 2.5), gridspec_kw={"width_ratios": [1.15, 1.15, 0.85]})
+    names = {"SLr": "request\nonly", "SLb": "behavior\nbased", "OFF": "offload-\ning", "AUG": "augment-\ning"}
+    fig, axes = plt.subplots(1, 3, figsize=(WIDTH, 2.5), gridspec_kw={"width_ratios": [1.3, 1.3, 0.78]})
     rng = np.random.default_rng(216)
     for ax, field, title in ((axes[0], "dwell_s", "Response to next request (dwell)"), (axes[1], "first_copy_ai_s", "Response to first copy")):
         for i, t in enumerate(toks):
@@ -424,10 +426,11 @@ def fig_dwell(S):
             ax.scatter(i + rng.uniform(-0.2, 0.2, len(vals)), np.log10(vals + 1), s=6, color=COL[t], edgecolor=INK2, linewidth=0.2, alpha=0.9)
             m = float(np.median(vals))
             ax.plot([i - 0.32, i + 0.32], [math.log10(m + 1)] * 2, color=INK, lw=1.8)
-            ax.text(i + 0.34, math.log10(m + 1) + 0.07, f"{m:.0f}", fontsize=7, color=INK, weight="bold", ha="right", va="bottom", bbox=dict(fc="white", ec="none", pad=0.4, alpha=0.8))
+            ax.text(i + 0.36, math.log10(m + 1), f"{m:.0f}", fontsize=7, color=INK, weight="bold", ha="left", va="center", bbox=dict(fc="white", ec="none", pad=0.3))
         ticks = [1, 10, 60, 300, 1200]
         ax.set_yticks([math.log10(t + 1) for t in ticks], [str(t) for t in ticks])
         ax.set_xticks(range(4), [names[t] for t in toks], fontsize=6.9)
+        ax.set_xlim(-0.5, 3.85)
         ax.set_title(title, loc="left")
     axes[0].set_ylabel("seconds (log scale; bar = median)", labelpad=2)
     ax = axes[2]
@@ -438,6 +441,7 @@ def fig_dwell(S):
         ax.text(xi - 0.18, a + 6, f"{a:.0f}", ha="center", fontsize=7, color=INK)
         ax.text(xi + 0.18, b + 6, f"{b:.0f}", ha="center", fontsize=7, color=INK)
     ax.set_xticks(x, ["under 50\ntyped", "50+\ntyped"], fontsize=7)
+    ax.set_ylim(0, 420)
     ax.set_ylabel("median dwell (s)", labelpad=2)
     ax.set_title("The gap is typing", loc="left")
     ax.legend(handles=[Patch(facecolor=COL["SLb"], label="behavior-based"), Patch(facecolor=COL["AUG"], hatch="\\\\\\\\", edgecolor=COL["OFF"], label="support")],
@@ -459,23 +463,23 @@ def fig_signals():
     ax.plot([p[0] for p in path], [p[1] for p in path], color=INK, lw=1.4)
     # signal 1
     s1 = 1.1
-    ax.plot([s1, s1], [base + 0.04, base + 0.42], color=COL["SLb"], lw=1.2)
-    ax.plot([s1], [base + 0.07], marker="o", color=COL["SLb"], ms=6)
-    box(ax, 0.68, base + 0.45, 2.0, 0.98, "Signal 1: ask on a near-empty page\nRequest sent with under 200 characters\nin the editor.\nFeedback before showing generated\nprose: ask for the claim the writer\nwants to make.", fs=7.2, ec=COL["SLb"], lw=1.0, align="left")
+    ax.plot([s1, s1], [base + 0.04, base + 0.42], color=INK, lw=1.2)
+    ax.plot([s1], [base + 0.07], marker="o", color=INK, ms=6)
+    box(ax, 0.68, base + 0.45, 2.0, 0.98, "Signal 1: ask on a near-empty page\nRequest sent with under 200 characters\nin the editor.\nFeedback before showing generated\nprose: ask for the claim the writer\nwants to make.", fs=7.2, ec=INK, lw=1.0, align="left")
     # signal 2
     s2 = 3.2
-    ax.plot([2.75, s2], [base + 0.62, base + 1.0], color=COL["SLb"], lw=1.0, alpha=0)
-    ax.annotate("", (2.76, base + 0.62), (s2, base + 0.62), arrowprops=dict(arrowstyle="-", color=COL["SLb"], lw=1.2))
-    ax.plot([2.76], [base + 0.62], marker="o", color=COL["SLb"], ms=6)
-    box(ax, s2, base + 0.1, 2.5, 0.72, "Signal 2: large paste, little typing\n200+ characters pasted, under 50 typed before\nthe next request. Feedback: ask which sentence\nof it the writer would defend or change.", fs=7.2, ec=COL["SLb"], lw=1.0, align="left")
+    ax.plot([2.75, s2], [base + 0.62, base + 1.0], color=INK, lw=1.0, alpha=0)
+    ax.annotate("", (2.76, base + 0.62), (s2, base + 0.62), arrowprops=dict(arrowstyle="-", color=INK, lw=1.2))
+    ax.plot([2.76], [base + 0.62], marker="o", color=INK, ms=6)
+    box(ax, s2, base + 0.1, 2.5, 0.72, "Signal 2: large paste, little typing\n200+ characters pasted, under 50 typed before\nthe next request. Feedback: ask which sentence\nof it the writer would defend or change.", fs=7.2, ec=INK, lw=1.0, align="left")
     # chart
     rows = [("Large paste, little typing", 55, 64.0, 32.7, "\u22120.41"), ("Ask on a near-empty page", 101, 58.7, 44.9, "\u22120.28"), ("Either of the two (proposed)", 140, 55.9, 63.3, "not computed"),
             ("Quick return to chat", 122, 54.8, 40.8, "\u22120.11"), ("Paste, then straight back", 23, 66.7, 14.3, "\u22120.23")]
     chart = fig.add_axes([0.32, 0.095, 0.46, 0.42])
     y = np.arange(len(rows))[::-1]
     for yi, (name, fired, prec, rec, rho) in zip(y, rows):
-        chart.barh(yi + 0.18, prec, 0.33, color="#444444")
-        chart.barh(yi - 0.18, rec, 0.33, color="#FFFFFF", hatch="....", edgecolor="#444444", lw=0.6)
+        chart.barh(yi + 0.18, prec, 0.33, color="#222222")
+        chart.barh(yi - 0.18, rec, 0.33, color="#FFFFFF", hatch="....", edgecolor="#222222", lw=0.6)
         chart.text(prec + 1, yi + 0.18, f"{prec:.0f}", va="center", fontsize=7, color=INK)
         chart.text(rec + 1, yi - 0.18, f"{rec:.0f}", va="center", fontsize=7, color=INK)
         chart.text(-2, yi, name, ha="right", va="center", fontsize=7.3, color=INK, weight="bold" if "two" in name else "normal")
@@ -487,7 +491,7 @@ def fig_signals():
     chart.set_yticks([])
     chart.spines["left"].set_color(RULE)
     chart.set_xlabel("% of surrender-leaning, by AI-coded labels", labelpad=1)
-    chart.legend(handles=[Patch(facecolor="#444444", label="precision"), Patch(facecolor="white", hatch="....", edgecolor="#444444", label="recall")],
+    chart.legend(handles=[Patch(facecolor="#222222", label="precision"), Patch(facecolor="white", hatch="....", edgecolor="#222222", label="recall")],
                  frameon=False, fontsize=7, loc="lower right", bbox_to_anchor=(1.0, 0.02), handlelength=1.4)
     save(fig, "signals")
 

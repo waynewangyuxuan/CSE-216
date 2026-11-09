@@ -10,7 +10,7 @@ Script: 139,736 eligible. AI screen of a
 random seed of 1,200: 114 accepted
 71 whole sessions
 C0 7, C1 136, C2 204 windows
-35 whole conversations, 151 windows,
+35 whole conversations, 151 windows (C0 32, C1 119),
 plus 30 windows from an earlier sample
 528 request windows
 Coder A (Opus 5.5)
@@ -80,9 +80,9 @@ strong
 Alternative: silent
 evaluation first
 NIRVANA-e24-t01: partial take
-A short note is in the editor. The writer
-copies one AI sentence, changes its ending
-and types a paragraph of their own:
+The only text in the editor becomes the
+request. The writer copies one AI sentence,
+changes its ending and types a paragraph:
 1,271 characters typed, 334 pasted, 577 s.
 F4  D3  V0  U3
 none visible
@@ -100,6 +100,8 @@ Surrender-leaning side
 the writer's own content
 Whose content is in play?
 AI-originated content
+yes
+no
 Does the text pass through the writer's hands?
 Writer's text reworded
 for language (D1 F5)
@@ -120,11 +122,11 @@ Whole paste (D4 V0 U1)
 32 windows,
 30 surrender-leaning
 Draft requested, kept in chat
-(D2 F4 U4/U5) 72 windows,
-69 surrender-leaning
+(D2 F4 U4/U5) 72 windows:
+48 request-only, 21 behavior
 No substantive decision
-(D0): neutral-mechanical,
-outside both axes, 53 windows
+(D0), 57 windows, 53 neutral-
+mechanical, outside both axes
 29
 69
 87
@@ -264,13 +266,13 @@ NIRVANA sessions: rho 0.40, n = 65
 65
 174
 126
-request-
+request
 only
-request-
+request
 only
-behavior-
+behavior
 based
-behavior-
+behavior
 based
 offload-
 ing
@@ -296,13 +298,13 @@ Response to next request (dwell)
 16
 10
 23
-request-
+request
 only
-request-
+request
 only
-behavior-
+behavior
 based
-behavior-
+behavior
 based
 offload-
 ing
