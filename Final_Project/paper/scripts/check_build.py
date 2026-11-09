@@ -7,7 +7,7 @@ import sys
 import tempfile
 
 PAPER = pathlib.Path(__file__).resolve().parents[1]
-MAX_BODY_PAGES = 20
+MAX_BODY_PAGES = 11
 OVERFULL_LIMIT_PT = 2.0
 
 
