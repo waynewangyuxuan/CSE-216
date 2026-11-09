@@ -9,7 +9,7 @@ Everything below needs you. Items marked in the source as `% TODO(Wayne):` are l
 3. **IRB.** Add a determination sentence if you obtained one. None is recorded in the project.
 4. **Method citations (the critic counts this as blocking).** The rubric says to cite the analysis method. Standard citations for Cohen's kappa, Spearman, permutation tests, optimal matching, silhouette and deductive qualitative coding are not in `lit/`, and the draft was limited to `lit/`. Approve adding them; these are candidates recalled from memory and unverified: Cohen 1960; Spearman 1904; Abbott and Tsay 2000; Rousseeuw 1987; Hsieh and Shannon 2005.
 5. **Codebook v1.0.** Confirm who wrote it. It says it is a reconstruction dated Nov 2. The repository cannot show the author.
-6. **Barriers.** An agent drafted this section, including every "What I learned" sentence. Rewrite any lesson that is not yours.
+6. **Barriers.** An agent drafted this section, including every "What I learned" sentence. The longer version is in `supplement_details.tex`, so check both. Rewrite any lesson that is not yours.
 7. **AI Use Statement: your review.** Add what you personally reviewed and when: your read of M2 (planned Nov 14), your read and edits of this paper, your own full proofread. None has happened as of this draft, and none is claimed.
 8. **AI Use Statement: other tools.** State whether you used AI for the proposal and Milestone 1, and whether any other tool (ChatGPT, Grammarly, editor autocomplete) touched this work.
 9. **Chat logs sentence.** Confirm it once the logs are exported.

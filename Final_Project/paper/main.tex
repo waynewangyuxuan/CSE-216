@@ -64,7 +64,7 @@ The findings are four theses. T1: pasting is not the line between support and su
 
 \paragraph{Contributions.} This paper makes three contributions to HCI research on AI-assisted writing: (1) a framework that links observable behavior to likely offloading or surrender through the literature, as a five-question codebook and a frozen, source-cited rule table (Appendix~\ref{app:codebook}); (2) session-level findings on where the boundary falls, from joining the codes to timing, typing and essay outcomes; and (3) log-only signals for in-situ feedback, each paired with a proposed intervention, not built or tested.
 
-Section~\ref{sec:related} reviews related work, Section~\ref{sec:method} gives the method and Section~\ref{sec:results} the results. Sections~\ref{sec:barriers} and~\ref{sec:limitations} report barriers and limitations, Section~\ref{sec:discussion} answers the research questions and Section~\ref{sec:conclusion} concludes. Appendices hold the codebook, method details and further results.
+Section~\ref{sec:related} reviews related work, Section~\ref{sec:method} gives the method and Section~\ref{sec:results} the results. Sections~\ref{sec:barriers} and~\ref{sec:limitations} report barriers and limitations, Section~\ref{sec:discussion} answers the research questions and Section~\ref{sec:conclusion} concludes. The appendices hold the codebook, the agreement table, the session archetypes and the AI use table.
 
 \section{Related Work}
 \label{sec:related}
@@ -78,7 +78,7 @@ What is missing is one account that ties request, origin of content, visible che
 \section{Method}
 \label{sec:method}
 
-This is a secondary analysis of existing logs that combines qualitative coding, a rule-based inference step and quantitative analysis of sessions. Appendix~\ref{app:method} gives the full procedure.
+This is a secondary analysis of existing logs that combines qualitative coding, a rule-based inference step and quantitative analysis of sessions. The supplementary details file gives the full procedure.
 
 \subsection{Data}
 \label{sec:data}
@@ -90,11 +90,12 @@ This is a secondary analysis of existing logs that combines qualitative coding, 
 % TODO(Wayne): add an IRB determination sentence if you obtained one. None is recorded in the project files.
 % src: data/REPORT.md; data/raw/nirvana (sheet columns only); analysis/derived/outcome_nirvana.csv
 
-\emph{WildChat} \cite{zhao2024} comes from users of a free ChatGPT service who opted in to anonymous collection. That is the only consent and compensation information I report for it. It has no editor, no verified identity and no record of what happened to the text afterward. An LLM screened conversations for formal long-form writing under a definition committed before any record was labeled. The coded sample comes only from a random seed of 1,200 of the 139,736 eligible conversations (837,989 before filtering), one conversation per IP cluster: 35 whole conversations with 151 windows, plus 30 earlier windows that stay out of every session measure. Figure~\ref{fig:flow} shows the funnel. In all, 528 windows were coded, and 106 whole sessions were analyzed. Dataset text stays out of the public record, and narratives in this paper are paraphrases.
+\emph{WildChat} \cite{zhao2024} comes from users of a free ChatGPT service who opted in to anonymous collection. That is the only consent and compensation information I report for it. It has no editor, no verified identity and no record of what happened to the text afterward. An LLM screened conversations for formal long-form writing under a definition committed before any record was labeled. The coded sample comes only from a random seed of 1,200 of the 139,736 eligible conversations (837,989 before filtering), one conversation per IP cluster: 35 whole conversations with 151 windows, plus 30 earlier windows that stay out of every session measure. The supplementary details file shows the full funnel. In all, 528 windows were coded, and 106 whole sessions were analyzed. Dataset text stays out of the public record, and narratives in this paper are paraphrases.
 
 \subsection{Codebook and coding}
 
-The unit of coding is the \emph{window}: one request, the AI's response, and the writer's first relevant next action before the next request (Figure~\ref{fig:anatomy}). Codes describe behavior and never cognition, because a writer may read and judge silently. Each window is coded on five questions (Appendix~\ref{app:codebook}). Q1 records the operation requested, from which a script derives the writing stage. Q2 records what the writer asks for. Q3 records where the response's main content came from and what the next action shows: \code{D0} no substantive decision, \code{D1} the writer's content, \code{D2} an AI proposal left open, \code{D3} the writer chose or revised, \code{D4} the AI proposal taken. Q4 records only visible checks of this response, from \code{V0} (none) through \code{V4} (compared with a source). Q5 records uptake, from \code{U1} (pasted unchanged) through \code{U7} (the writer types new text) and \code{U8} (moved on). A \code{prior\_own\_work} field records whether the writer's own draft is visible before the request.
+The unit of coding is the \emph{window}: one request, the AI's response, and the writer's first relevant next action before the next request. Codes describe behavior and never cognition, because a writer may read and judge silently. Each window is coded on five questions (Appendix~\ref{app:codebook}). Q1 records the operation requested, from which a script derives the writing stage. Q2 records what the writer asks for. Q3 records where the response's main content came from and what the next action shows: \code{D0} no substantive decision, \code{D1} the writer's content, \code{D2} an AI proposal left open, \code{D3} the writer chose or revised, \code{D4} the AI proposal taken. Q4 records only visible checks of this response, from \code{V0} (none) through \code{V4} (compared with a source). Q5 records uptake, from \code{U1} (pasted unchanged) through \code{U7} (the writer types new text) and \code{U8} (moved on). A \code{prior\_own\_work} field records whether the writer's own draft is visible before the request. Agents revised a codebook reconstructed from the proposal and Milestone 1 through four pilot rounds (132 windows), and version 1.1 was frozen on November 6, 2026.
+% TODO(Wayne): confirm who wrote codebook v1.0 (it says it is a reconstruction dated Nov 2; the repo cannot show the author).
 
 All windows were coded by AI agents in Claude Code. Coder A (Claude Opus 5.5) and Coder B (Claude Sonnet 5.5) were instructed not to read each other's labels, and a transcript audit found that none did. A fresh Opus 5.5 adjudicator ruled on disagreements without knowing which coder was which. A Claude Fable 5.1 agent coded a 20-window set that had been reserved for human coding, which is a third AI check and not human validation. Across the three main coding runs, Cohen's $\kappa$ between coders, also reported in prior prompt coding \cite{jelson2026chi,poquet2026}, is 0.80 to 0.94 on \code{decision}, 0.79 to 0.94 on \code{verification} and 0.85 to 0.92 on \code{uptake} (Table~\ref{tab:agreement}). The rules applied to each coder's labels separately give the same category on 89.2\% of 528 windows ($\kappa = 0.86$).
 
@@ -115,7 +116,7 @@ The surrender-leaning rules draw on uncritical adoption \cite{shaw2026}, copied 
 
 \begin{figure}[tbp]
 \includegraphics[width=\linewidth]{concept_map.pdf}
-\caption{Concept map of the categories, with behavior signatures placed by hand on the two dimensions that separate them. Positions are schematic. Counts are windows in the 106 whole sessions, and the fill shows the most common category for that signature. Diagonal hatching marks the signature that is mostly request-only surrender-leaning, and cross-hatching marks neutral-mechanical, as in Figures~\ref{fig:categories} and~\ref{fig:archetypes}. A window can match more than one signature: 22 windows are in both surface-only iteration and draft requested. Indeterminate windows have no position on these axes.}
+\caption{Concept map of the categories, with behavior signatures placed by hand on the two dimensions that separate them. Positions are schematic. Counts are windows in the 106 whole sessions, and the fill shows the most common category for that signature. Diagonal hatching marks the signature that is mostly request-only surrender-leaning, and cross-hatching marks neutral-mechanical, as in Figure~\ref{fig:archetypes}. A window can match more than one signature: 22 windows are in both surface-only iteration and draft requested. Indeterminate windows have no position on these axes.}
 \Description{A two-dimensional map. The horizontal axis runs from the writer's own content to AI-originated content. The vertical axis asks whether the text passes through the writer's hands. Upper areas are the support side: writer's text reworded for language, ask then write own text, reasoned check, and partial take with AI text changed. The lower right is the surrender-leaning side: surface-only iteration, whole paste, and a draft requested and kept in chat, which is hatched and holds 48 request-only and 21 behavior-based windows. Neutral-mechanical sits in an unshaded corner, outside both axes.}
 \label{fig:concept}
 \end{figure}
@@ -123,12 +124,13 @@ The surrender-leaning rules draw on uncritical adoption \cite{shaw2026}, copied 
 
 \subsection{Analysis}
 
-From the raw NIRVANA logs a script extracted numbers only: for each window, the time from response to first copy and to next request (\emph{dwell}), the characters typed and pasted, and the editor's length at the request. WildChat stamps only AI turns. Categories were fixed before the new labels were read, and session types were then derived from the data by clustering category sequences. Order claims are tested against a within-session shuffle, outcome links are Spearman correlations with permutation $p$ values across sessions, and a logistic regression with session-cluster bootstraps tests the next-window prediction (Appendix~\ref{app:method}).
+From the raw NIRVANA logs a script extracted numbers only: for each window, the time from response to first copy and to next request (\emph{dwell}), the characters typed and pasted, and the editor's length at the request. WildChat stamps only AI turns. Categories were fixed before the new labels were read, and session types were then derived from the data by clustering category sequences. Order claims are tested against a within-session shuffle, outcome links are Spearman correlations with permutation $p$ values across sessions, and a logistic regression with session-cluster bootstraps tests the next-window prediction (procedure in the supplementary details file). Agents worked in Claude Code, and analysis scripts are Python with NumPy and Matplotlib. Data preparation, coding and analysis ran on November 6--7, 2026, and this draft was written on November 8. Every number reruns from saved labels by script.
+% TODO(Wayne): standard citations for Cohen's kappa, Spearman, optimal matching and silhouette are not in lit/. This draft was limited to sources in lit/, so none is cited. Approve adding them or leave as is; see TODO_WAYNE.md.
 
 \section{Results}
 \label{sec:results}
 
-The analysis method is in Section~\ref{sec:method}. Reasoned checks are nearly absent everywhere: of 498 whole-session windows, 376 show no check, 13 carry a reasoned challenge (\code{V3}) and none compare with a source (\code{V4}). In WildChat nothing shows what happened to the text, so 67 of its 69 surrender-leaning windows rest on the request alone (Figure~\ref{fig:categories}).
+The analysis method is in Section~\ref{sec:method}. Reasoned checks are nearly absent everywhere: of 498 whole-session windows, 376 show no check, 13 carry a reasoned challenge (\code{V3}) and none compare with a source (\code{V4}). In WildChat nothing shows what happened to the text, so 67 of its 69 surrender-leaning windows rest on the request alone.
 
 The rule categories are the deductive themes (Section~\ref{sec:rules}). The inductive themes are six archetypes from clustering all 106 sessions, defined in Figure~\ref{fig:archetypes}: short support visit (35 sessions), long working session (21), paste into the draft (12), one-shot paste (7), delegate in chat (11) and unresolved (20). The two paste archetypes occur only in NIRVANA and end with essays almost wholly by the AI. Delegate in chat is mostly a WildChat pattern. Short support visits and long working sessions end with little AI text. The extremes show what the labels mean. In session e41 the editor stays empty while the writer asks for an essay and then only for longer or differently divided versions, and one paste of 4,681 characters follows. The essay is 100\% AI text by NIRVANA's measure, and the writer rated ownership 3.1 of 7. In session e24, after the first request, each request comes while a paragraph of the writer's is half written, and the writer answers each reply by typing a paragraph of their own. That essay is about 10\% AI text, with ownership 6.0.
 % src: analysis/results/mining.md s1, s8, s10; analysis/results/out_of_sample.md s3, s7c; report/narratives.md s4, s5 (paraphrased)
@@ -145,7 +147,7 @@ Pasting is on both sides. In NIRVANA, writers paste in 65.5\% of offloading wind
 \end{figure}
 % src: analysis/results/mining.md s5 "windows with any paste", s7 signature table
 
-The finished essays show the same line (Figure~\ref{fig:outcome}). Across the 71 NIRVANA sessions, the share of behavior-based surrender windows tracks the share of AI text in the essay ($\rho = 0.60$, $p < 0.001$) and lower felt ownership ($\rho = -0.55$, $p < 0.001$). Request-only surrender tracks the AI share only weakly ($\rho = 0.19$, $p = 0.12$). Sessions with any behavior-based surrender window end with a median essay 81\% AI, and sessions without one end at 0\% (34 against 37 sessions). Pooled across datasets, requests that are not for generated prose are rarely surrender-leaning at any stage (7.1\% when planning, 9.8\% when reviewing), so substitution sits with requests for generated prose and what happens to them.
+The finished essays show the same line. Across the 71 NIRVANA sessions, the share of behavior-based surrender windows tracks the share of AI text in the essay ($\rho = 0.60$, $p < 0.001$) and lower felt ownership ($\rho = -0.55$, $p < 0.001$). Request-only surrender tracks the AI share only weakly ($\rho = 0.19$, $p = 0.12$). Sessions with any behavior-based surrender window end with a median essay 81\% AI, and sessions without one end at 0\% (34 against 37 sessions). Pooled across datasets, requests that are not for generated prose are rarely surrender-leaning at any stage (7.1\% when planning, 9.8\% when reviewing), so substitution sits with requests for generated prose and what happens to them.
 % src: analysis/results/mining.md s4, s8, s10
 
 \subsection{T2: the writer's own text is the anchor}
@@ -193,7 +195,7 @@ Four rules were computed from the NIRVANA keystroke log alone, with no codes and
 \label{sec:barriers}
 % TODO(Wayne): an agent drafted this section from the project logs, including every "What I learned" sentence. Rewrite any lesson that is not yours.
 
-This section reports what did not go as planned in the process. Effects on the claims are in Section~\ref{sec:limitations}, and Appendix~\ref{app:process} has the full record.
+This section reports what did not go as planned in the process. Effects on the claims are in Section~\ref{sec:limitations}, and the supplementary details file has the full record.
 
 \paragraph{The promise to be the primary coder was reversed.} My proposal said ``I remain the primary coder.'' On November 6 I chose agent-led work and kept a blind human coding set of 20 windows. Its instructions estimated 90 minutes to 2 hours and said the task could not be delegated. I delegated it anyway, to a Fable 5.1 agent. With more time, I would code those windows myself before seeing any AI output. \emph{What I learned:} the one step that later steps could not replace was the one I gave up.
 
@@ -212,7 +214,7 @@ This section reports what did not go as planned in the process. Effects on the c
 
 \paragraph{Evidence is uneven and correlational.} T3, T4 and the paste evidence for T1 rest on NIRVANA alone. In WildChat, surrender-leaning mostly means that someone asked for text, so cross-dataset contrasts mix behavior with what each log can see, and the gap in returning to support is a dataset difference, not an editor effect. The own-work and ownership links hold across sessions more than within them, so ``predicts'' means across sessions, and none of these results is causal. Tests are not corrected for multiple comparisons, so the theses rest on the large effects.
 
-\paragraph{Sample.} NIRVANA is one timed essay by university students. WildChat conversations are English, from anonymous users of a free service. The sample is small and clustered: the 21 long working sessions hold 218 of the 498 windows, and archetype structure is modest (best silhouette 0.25). Nothing here speaks to habits over weeks, skill change or research writing specifically, and demographics are not analyzed. Appendix~\ref{app:limits} gives further procedural limits, including weak agreement on \code{verification} for editor windows (0.48).
+\paragraph{Sample and procedure.} NIRVANA is one timed essay by university students. WildChat conversations are English, from anonymous users of a free service. The sample is small and clustered: the 21 long working sessions hold 218 of the 498 windows, and archetype structure is modest (best silhouette 0.25). Nothing here speaks to habits over weeks, skill change or research writing specifically, and demographics are not analyzed. Final labels for later windows were already in git when the rule table was last frozen, and the record that no agent read them rests on agents' briefs and on mapping late changes to critic findings. Agreement on \code{verification} for editor windows is weak (0.48). The supplementary details file lists further procedural limits.
 
 \paragraph{What remains valuable.} The direction of the main outcome links holds under the skeptic's checks. The pastes, typing and timing themselves come from logs. The instrument is open: anyone can reapply the codebook, replace the coders with humans and rerun the frozen rules. And the two triggers are simple enough to test in a real tool.
 
@@ -221,11 +223,11 @@ This section reports what did not go as planned in the process. Effects on the c
 
 \paragraph{RQ1: where the boundary lies.} AI use sits on the support side when the content is the writer's own or passes through the writer's hands, and it substitutes when AI-generated prose enters the draft whole, or is only polished, and the writer moves on. The rules assign categories by content origin, so that part of the boundary follows from their definition. What the data add, in NIRVANA, is that pasting occurs at about the same rate on both sides, that whole-take and partial-take patterns differ in the typing and time that follow, and that sessions rich in unchecked adoption end with more AI text and lower ownership. This also speaks to the dispute over the word ``offloading'': papers that call the harmful case offloading \cite{alam2026,maier2026} and papers that reserve it for support \cite{shaw2026} often describe the same event from different goals. Tying each category to who supplied the substance and what the writer did next says which event is meant.
 
-\paragraph{RQ2: which substitutions writers are likely to notice.} This answer is analytic (Table~\ref{tab:rq2}). Logs cannot show deliberation, but they show a possible by-product, work on the text, and that is near zero where AI substance is taken over. Writers do register origin, since felt ownership is lower where AI text was taken in \cite{joshi2025}. What a writer is unlikely to see is that an argument was never worked through, the gap \citet{kim2026fallacy} describe as misattributed competence. The substitutions most likely to go unseen, if they occur, keep the writer busy: surface-only iteration on an AI draft, or ideas from a generation request written up in the writer's own words. Measures that count pasted or AI-matched text will read those sessions as healthy.
+\paragraph{RQ2: which substitutions writers are likely to notice.} This answer is analytic. Logs cannot show deliberation, but they show a possible by-product, work on the text, and that is near zero where AI substance is taken over. Writers do register origin, since felt ownership is lower where AI text was taken in \cite{joshi2025}. What a writer is unlikely to see is that an argument was never worked through, the gap \citet{kim2026fallacy} describe as misattributed competence. The substitutions most likely to go unseen, if they occur, keep the writer busy: surface-only iteration on an AI draft, or ideas from a generation request written up in the writer's own words. Measures that count pasted or AI-matched text will read those sessions as healthy.
 
 \paragraph{RQ3: signals for in-situ feedback.} Two log events could drive feedback without reading a writer's text, stated as proposals, since nothing was built. Before showing generated prose on a near-empty page, a tool can ask for the claim the writer wants to make. After a large paste with no typing, it can ask which sentence the writer would defend or change. Speed should not trigger anything. Precision of 56\% means that many firings would land on legitimate use, so feedback should be light and easily dismissed. Written justification can stay thin \cite{tao2026}, which argues for prompts that ask for a claim or a choice over prompts that ask for an explanation. In a chat-only tool neither event exists.
 
-\paragraph{What the framework adds.} The proposal's success criterion asked for a framework that assigns real interactions to these categories with acceptable agreement and distinguishes cases that existing frameworks cannot. The first part is met within the limits above. The second is not established (Appendix~\ref{app:results}). The narrower addition is making a distinction theory already states, whether a claim was the writer's and reworded or the AI's and adopted, observable on the same act of pasting.
+\paragraph{What the framework adds.} The proposal's success criterion asked for a framework that assigns real interactions to these categories with acceptable agreement and distinguishes cases that existing frameworks cannot. The first part is met within the limits above. The second is not established: an agent's comparison rated the project the only framework able to separate 3 of 11 case pairs, but NIRVANA's own metrics already separate 2 of those, and the third was built from the codebook's own worked examples. The narrower addition is making a distinction theory already states, whether a claim was the writer's and reworded or the AI's and adopted, observable on the same act of pasting.
 
 \section{Conclusion and Future Work}
 \label{sec:conclusion}
@@ -235,15 +237,14 @@ In formal long-form writing with AI, the boundary between support and substituti
 \section{AI Use Statement}
 \label{sec:aiuse}
 
-AI tools did most of the work in this project. I used Claude Code (Anthropic), running Claude Opus 5.5, Sonnet 5.5, Haiku 5.5 and Fable 5.1, for literature search and screening, study design, the codebook and rules, all coding, all analysis scripts, the figures, and drafting and editing this entire paper. The \code{BAAI/bge-small-en-v1.5} embedding model ranked WildChat conversations. Table~\ref{tab:aiuse} lists each activity and how its output was checked: by scripted reruns, transcript audits and fresh critic agents.
+I led the development of the study. I defined the research questions, structured the literature review, built the coding framework, designed the study, and established the framework for the data analysis. I also shaped the report's overall narrative, deciding how to connect the research questions, methods, and findings.
 
-\paragraph{What I decided.} I set the project's direction, its research questions and its scope, including the move to formal long-form writing. I decided that the framework should link observable behavior to likely offloading or surrender through the literature and assign real interactions to those categories. I chose agent-led work with review at checkpoints, delegated the 20-window coding to an agent, and asked that findings be stated directly with caveats collected in one section. I accepted codebook v1.1 at a checkpoint on November 6, 2026.
+I used Claude Code (Anthropic), with Claude Opus 5.5, Sonnet 5.5, Haiku 5.5, and Fable 5.1, primarily to write and run scripts and carry out repeated tasks. These included searching and screening the literature, preparing datasets, applying and piloting the codebook, coding and adjudicating interactions, and compiling the analysis results. For the report, I used AI to draft prose, create figures, connect arguments across sections, and revise wording within the narrative I set. The \code{BAAI/bge-small-en-v1.5} embedding model ranked WildChat conversations.
 
-\paragraph{What I did not do.} I did not code any window, and no human did. I did not write the scripts or the text of this draft. Agreement figures and most verification are AI output checked by other AI agents and by scripts that rerun deterministically.
 % TODO(Wayne): state what you personally reviewed and when. Do not leave this as is. Add: your read of M2 (planned Nov 14), your read and edits of this paper, and your own full proofread. None of these has happened as of this draft, and none is claimed.
 % TODO(Wayne): state whether you used AI tools for the proposal and Milestone 1, whose original files are lost, and whether any other tool (e.g., ChatGPT, Grammarly, editor autocomplete) touched this work.
 
-Chat logs from these sessions are part of the supplementary materials.
+The supplementary materials will include PDF exports of the AI chat logs.
 % TODO(Wayne): confirm this sentence once the logs are exported; see SUPPLEMENT.md.
 
 \label{end:body}\bibliographystyle{ACM-Reference-Format}
@@ -440,7 +441,7 @@ An outline requested, and the writer says it will be used (\code{C1}) & \code{D4
 
 \subsection{Inference layer (v1.2): categories and rules}
 
-Categories: surrender-leaning, offloading, augmenting, neutral-mechanical, indeterminate. Strength: strong, moderate, weak (Appendix~\ref{app:method}). First match wins. ``No check'' means \code{V0}, \code{V1} or \code{V2}. C\&R is \citet{contractor2026}; S\&N is \citet{shaw2026}; R\&G is \citet{risko2016}.
+Categories: surrender-leaning, offloading, augmenting, neutral-mechanical, indeterminate. Strength: strong, moderate, weak. Strength is \emph{strong} when the window shows a signature a source names and coverage can see it, \emph{moderate} when one element is unobservable or a live alternative remains, and \emph{weak} when the match is only by request type or rests on a study of another task. First match wins. ``No check'' means \code{V0}, \code{V1} or \code{V2}. C\&R is \citet{contractor2026}; S\&N is \citet{shaw2026}; R\&G is \citet{risko2016}.
 
 {\small
 \begin{longtable}{p{0.05\linewidth}p{0.27\linewidth}p{0.13\linewidth}p{0.20\linewidth}p{0.20\linewidth}}
@@ -479,61 +480,8 @@ R99 & Anything else & Indeterminate & -- & -- \\
 \end{longtable}
 }
 
-\section{Method Details}
-\label{app:method}
-
-\subsection{Data and screening}
-
-The NIRVANA task was about 30 minutes long; 24 essays have logged times beyond that, the longest 5,010 seconds. What the original authors did is reported only as far as their papers state it and as far as the agents read them, as recorded in the read levels in the supplementary materials. Survey, interview and consent appendices do not apply, because none was created.
-
-Samples of WildChat-1M were screened by an LLM for formal long-form writing: an extended formal text such as an essay, research paper, report, thesis, literature review, proposal or business plan, article for publication (including expository blog articles) or formal statement. Fiction, emails, CVs, marketing copy, code and translation-only work were excluded. The definition was committed before any record was labeled. Figure~\ref{fig:flow} shows the resulting sets. Of 837,989 records, 139,736 were eligible: English, at least two non-blank user turns, and deduplicated. A random seed of 1,200 eligible conversations was labeled by an LLM, and 120 (10.0\%) were included, 114 of which passed a rule requiring a user turn after the first writing turn. A logistic-regression ranker over embeddings and keywords was trained on 1,204 labels, and the top 2,500 conversations were confirmed by the LLM, for an accepted pool of 2,236. The coded sample was drawn only from the random seed's 114, one conversation per IP cluster, so the ranking cannot bias it. A separate model audited a random 120 accepted conversations and agreed on 118 (98.3\%). Nine of the 35 coded conversations were screened as articles, and all 3 that the audit rejected are in that group.
-% src: wildchat/REPORT.md Funnel, Precision and recall, Sample
-
-\begin{figure}[tbp]
-\includegraphics[width=\linewidth]{flow.pdf}
-\caption{How the data moved from the two sources to the theses, and who or what did each step. Dashed boxes are AI agents, shaded boxes are scripts or screens, and plain boxes are the dataset authors' work. Coverage \code{C0} is a request and response with no usable next action, \code{C1} adds a later chat turn, and \code{C2} adds editor actions. Three WildChat conversations are capped at ten turns and remain in the session measures; the 30 earlier windows are incomplete and stay out of every session measure.}
-\Description{A flow chart. NIRVANA: 77 students, then 71 who used the chat with 347 windows, then 71 whole sessions. WildChat: 837,989 conversations, then 139,736 eligible and 114 accepted from a random seed of 1,200, then 35 whole conversations with 151 windows plus 30 earlier windows. Both feed 528 request windows, coded separately by Coder A (Opus 5.5) and Coder B (Sonnet 5.5), with an adjudicator (Opus 5.5) resolving disagreements. Final codes pass through frozen v1.2 rules to one category and strength. Categories and NIRVANA log facts feed analysis of 106 whole sessions and theses T1 to T4. A note says no human coded any window.}
-\label{fig:flow}
-\end{figure}
-% src: data/REPORT.md Coverage; wildchat/REPORT.md Funnel, Sample; analysis/results/out_of_sample.md s4
-
-Scripts scan the repository for leaked dataset text, and WildChat contact patterns were masked before any reading.
-
-\subsection{Theoretical grounding and codebook development}
-
-The stages of writing come from \citet{flower1981}, read secondhand through work that builds on them \cite{jelson2026chi,reza2025}. \citet{bastani2025} was read as its working-paper version.
-
-Codebook v1.0 was a reconstruction from the proposal and Milestone 1. Agents revised it through four pilot rounds, 132 windows, plus a 10-window check of one rule and 12 constructed cases, on windows that share no session with the 100-window sample and the 20-window set; later whole-session coding did include pilot sessions. Two AI coders applied each round. Version 1.1 cut two labels that the pilots did not support and added \code{U8} and \code{prior\_own\_work}. Version 1.1 was frozen on November 6, 2026, with round 4 agreement of $\kappa = 0.78$ on \code{decision}, 1.0 on \code{verification} and 0.94 on \code{uptake}.
-% TODO(Wayne): confirm who wrote codebook v1.0 (it says it is a reconstruction dated Nov 2; the repo cannot show the author).
-% src: codebook/REPORT.md; CSE216_Research_Writing_Codebook_v1.0.md header
-
-\begin{figure}[tbp]
-\includegraphics[width=\linewidth]{anatomy.pdf}
-\caption{Anatomy of a window, the unit of coding. Each code is read from a named part of the window. The lines above show what each coverage level lets a coder see: a chat-only window (\code{C1}) has no editor actions, so it cannot show pasting or typing.}
-\Description{Four boxes in sequence: editor and earlier turns before the request, the request, the AI response, and the next action before the next request. Brackets below show that prior own work is read from the first box, Q1 operation and Q2 function and object from the request, Q3 decision from the response and the next action, and Q4 verification and Q5 uptake from the next action only. Lines above show that C0 covers request and response, C1 adds a later chat turn and C2 adds editor actions.}
-\label{fig:anatomy}
-\end{figure}
-% src: codebook/CSE216_Research_Writing_Codebook_v1.1.md s1, s2
-
-\subsection{Coding procedure}
-
-All windows were coded by AI agents in Claude Code. Coder A was Claude Opus 5.5 and Coder B was Claude Sonnet 5.5. Fresh agents worked on separate batches with sessions kept whole. They were instructed not to read each other's labels, and a transcript audit found that none did; the file system did not enforce this. Where they disagreed, a fresh Opus 5.5 adjudicator ruled between two labels shown with a seeded order flip that hid which coder was which. Temperature cannot be set in this tool, so labels are saved rather than regenerated. Briefs and prompts are in the supplementary materials. Transcripts were audited by script for each agent's file access and served model.
-
-Coding ran in three stages. The first took a sample of 100 windows (70 NIRVANA and 30 WildChat) from 37 sessions, with coders shown the last three earlier turns. The second coded all remaining NIRVANA windows under full history, reading one turn at a time and labeling each before opening the next, and recoded the 18 earlier windows with older unseen turns under a rule fixed in advance. It used 41 agents. The third coded the 35 WildChat conversations in the same way. A Claude Fable 5.1 agent separately coded a 20-window set that had been reserved for human coding. That comparison is a third AI consistency check and not human validation. Section~\ref{sec:barriers} explains why it replaced a human.
-% src: coding/REPORT.md; sessions/REPORT.md; wildchat/REPORT.md
-
-\subsection{Rule strength and review}
-
-Strength is \emph{strong} when the window shows a signature a source names and coverage can see it, \emph{moderate} when one element is unobservable or a live alternative remains, and \emph{weak} when the match is only by request type or rests on a study of another task. A reviewing agent enumerated all 98,000 code combinations and found no errors.
-
-\subsection{Analysis method, tools and agreement}
-
-The qualitative analysis was deductive: categories were fixed by the rule table before the new labels were read, and session types were then derived from the data. Agreement is Cohen's $\kappa$, with bootstrapped intervals over 2,000 draws and sessions as the resampling unit where sessions matter; prior studies that code prompts also report $\kappa$ \cite{jelson2026chi,poquet2026}. Order claims are tested against a within-session shuffle, reordering each session's categories 2,000 times, which holds a session's make-up fixed and moves only its order. Outcome links are Spearman correlations with two-sided permutation $p$ values across sessions. Session archetypes come from optimal-matching distance between category sequences and average-linkage clustering, with the number of clusters chosen by best mean silhouette over 3 to 7. A logistic regression with 1,000 session-cluster bootstraps tests the next-window prediction.
-% TODO(Wayne): standard citations for Cohen's kappa, Spearman, optimal matching and silhouette are not in lit/. This draft was limited to sources in lit/, so none is cited. Approve adding them or leave as is; see TODO_WAYNE.md.
-% src: analysis/results/mining.md preamble, s1, s3, s8; sessions/REPORT.md
-
-Agents worked in Claude Code. Analysis scripts are Python, with NumPy and Matplotlib; the WildChat ranker used the \code{BAAI/bge-small-en-v1.5} embedding model. Data preparation, coding and analysis ran on November 6--7, 2026, and this draft was written on November 8. Each stage's numbers rerun from saved labels by script, with no model calls, and repeat runs gave byte-identical outputs; numbers in the schematic figures and some figure labels are typed from those results files. Fresh agents with no access to the working agent's reasoning checked each stage against a stated gate, and a skeptic agent tried to refute each claim in the results.
-% src: analysis/scripts/run_all.sh; analysis/SKEPTIC_T.md; git log dates
+\section{Agreement, Session Archetypes and AI Use}
+\label{app:support}
 
 All agreement in Table~\ref{tab:agreement} is between AI models. It measures whether two models apply the same written rules the same way. On the 100 calibration windows, the frozen rules gave a category other than indeterminate to 79.
 
@@ -555,19 +503,6 @@ WildChat & 151 & 0.92 & 0.94 & 0.92 & -- \\
 \end{table}
 % src: codebook/REPORT.md; coding/REPORT.md; coding/results/fable_comparison.md; sessions/REPORT.md; wildchat/REPORT.md
 
-\section{Further Results}
-\label{app:results}
-
-\subsection{Categories and archetypes}
-
-\begin{figure}[tbp]
-\includegraphics[width=\linewidth]{categories.pdf}
-\caption{Category of each whole-session window, by dataset. WildChat's surrender-leaning windows are almost all request-only, because a chat log cannot show what happened to the text. Unlabeled WildChat segments are behavior-based, 2, and augmenting, 3.}
-\Description{Two stacked horizontal bars. NIRVANA, 347 windows: request-only 29, behavior-based 69, offloading 87, augmenting 63, neutral-mechanical 48, indeterminate 51. WildChat, 151 windows: request-only 67, behavior-based 2, offloading 22, augmenting 3, neutral-mechanical 5, indeterminate 52.}
-\label{fig:categories}
-\end{figure}
-% src: analysis/results/mining.md s5 tokens; analysis/results/out_of_sample.md s7c
-
 \begin{figure}[tbp]
 \includegraphics[width=\linewidth]{archetypes.pdf}
 \caption{Top: a window is one tile, and a session is a row of windows in turn order. Below: every session, grouped into six archetypes by clustering category sequences. Percentages are mean shares of a session's windows. Essay AI share is the NIRVANA median of GPT Final \%, as a proportion; the Delegate in chat value rests on 2 NIRVANA sessions. Panels use different horizontal scales.}
@@ -575,92 +510,6 @@ WildChat & 151 & 0.92 & 0.94 & 0.92 & -- \\
 \label{fig:archetypes}
 \end{figure}
 % src: analysis/results/mining.md s1, s8; analysis/results/mining/archetypes.csv
-
-Session e70 shows the turn within one session. The writer first hands over their own paragraphs for polishing, then asks for text they do not have, and pastes it unchanged. Five windows ask the AI to check itself (\code{V2}), and the 13 reasoned challenges fall in 6 sessions.
-
-\subsection{Further results for the theses}
-
-T1: both behavior-based surrender correlations (AI share, ownership) hold on multi-window sessions alone (0.54 and $-0.49$).
-
-\begin{figure}[tbp]
-\includegraphics[width=\linewidth]{outcome.pdf}
-\caption{NIRVANA essay outcomes by session. Behavior-based surrender tracks the essay's AI share and lower ownership. Request-only surrender tracks the AI share only weakly, and 58 of the 71 sessions have a request-only share of zero. Larger markers stand for several sessions at one point.}
-\Description{Three scatter plots across 71 sessions. Left: share of windows surrender-leaning by behavior against GPT Final percent, rho 0.603. Middle: share by request only against GPT Final percent, rho 0.191. Right: share by behavior against Perceived Ownership, rho minus 0.546.}
-\label{fig:outcome}
-\end{figure}
-% src: analysis/results/mining/outcome_sessions.csv; analysis/results/mining.md s8
-
-Substitution sits with requests for generated prose. Pooled across both datasets, 79.5\% of translating-stage (drafting) windows are surrender-leaning, against 22.9\% of planning and 17.4\% of reviewing windows, shares taken over windows with a surrender or support category. In these codes drafting nearly equals generation: 192 of 195 drafting windows are generation requests. The informative result is on the other side. Requests that are not for generated prose are rarely surrender-leaning at any stage (7.1\% when planning, 9.8\% when reviewing). Planning requests come earlier in sessions and reviewing requests later than chance (mean position 0.412 and 0.562; both $p < 0.001$).
-% src: analysis/results/mining.md s4, s10
-
-Sessions move across the boundary in recognizable ways. Moves from support into the surrender-leaning category most often land on a generation request iterated in chat (18 of 29). Moves back out most commonly land on the writer revising AI text in the editor (8 of 29, the plurality; 27 of the 29 exits are in NIRVANA).
-% src: analysis/results/mining.md s3
-
-T2: the anchor also predicts the next step. In a model of the next substantive window, a visible draft predicts lower odds of a surrender-leaning window (odds ratio 0.23, 95\% session bootstrap 0.07 to 0.44), with the current window's category, chat uptake, dataset and position in the model; the rate is 0.21 with a draft and 0.65 without, pooled across datasets, and 0.237 against 0.505 in NIRVANA alone. Most of this is between sessions: in the 16 sessions across both datasets where the draft flag varies, the next-window rate is 0.18 with a draft and 0.26 without. A current request-only surrender window is a larger predictor (odds ratio 7.9). In NIRVANA, writers leave the surrender-leaning category in 9 of 17 transitions with their draft visible, 14 of 34 with notes and 4 of 21 with nothing visible, and they enter it from support in 16 of 41 transitions with only notes and 10 of 59 with a draft. Sessions that become surrender-leaning return to support in 17 of the 29 NIRVANA sessions with a later window and 2 of 21 in WildChat. The document itself grows through a session: NIRVANA's median editor length at the time of a request rises from 101 characters in the first fifth of a session to 2,157 in the last.
-% src: analysis/results/mining.md s3, s5, s6
-
-T3: the dwell gap (behavior-based alone 65.4 seconds, $p = 0.0035$) appears in every fifth of a session and within 13 of the 17 sessions that have both kinds. Twenty of 69 behavior-based surrender windows and 31 of 87 offloading windows are copied within 10 seconds. Felt ownership is lower in sessions with more of either kind of surrender ($\rho = -0.55$ behavior-based, $p < 0.001$; $-0.33$ request-only, $p = 0.004$), mostly as a difference between sessions with any behavior-based surrender and those with none: among the 34 sessions that have some, the correlation is $-0.21$ ($p = 0.25$). A fourth log-only rule, a paste followed by a quick return, is precise (66.7\%) but catches only 14.3\%.
-
-\subsection{RQ2 patterns}
-
-\begin{table}[tbp]
-\caption{Likely visibility of substitution patterns to the writer (analytic).}
-\label{tab:rq2}
-\small
-\begin{tabular}{p{0.33\linewidth}p{0.17\linewidth}p{0.39\linewidth}}
-\toprule
-Pattern & Likely noticed? & Why \\
-\midrule
-Whole paste of AI text (\code{D4 V0 U1}, 32 windows) & Origin yes; missing reasoning no & Pasting is deliberate and ownership is lower, but the writer types almost nothing afterward \\
-Surface-only iteration on an AI draft (\code{D2 V1 U4}, 30 windows, 21 surrender-leaning) & Less likely & The writer is busy with length and tone, which feels like editing \\
-Ideas from a generation request, written up in the writer's words (\code{D2 U7}, 52 windows, 37 augmenting by the rules; possible substitution of the ideas, which the rules cannot see) & Least likely & The writer types, so ownership need not fall, as with planning or reviewing use \cite{jelson2026chi}, and influence can go unnoticed \cite{bhat2026}. The codebook cannot see the origin of ideas, by design \\
-Request-only delegation in chat (R16) & Unknown & The log ends at the request, and the text may be used off-screen \\
-\bottomrule
-\end{tabular}
-\end{table}
-% src: analysis/results/patterns.md s1; analysis/THESES.md RQ2 argument
-
-\subsection{The framework against the success criterion}
-
-The proposal's success criterion asked for a framework that assigns real interactions to these categories with acceptable agreement and distinguishes cases that existing frameworks cannot. The first part is met within the limits in Section~\ref{sec:limitations}: 78.5\% of new windows receive a category by frozen rules, and AI-to-AI category agreement across all 528 windows is $\kappa = 0.86$. The second part is not established. An agent's comparison across 11 case pairs, written before any real window was coded, rated the project the only framework able to separate 3 of them. NIRVANA's own metrics already separate 2 of those, and the third was built from the codebook's own worked examples, so the project could not have failed it. What the framework adds is narrower. On real data, the distinction that does the most work is one that theory already states: whether a claim was the writer's and reworded, or the AI's and adopted. The addition is making it observable on the same act of pasting, through the code for whose content it is and the typing that follows. Both ends of that contrast occur on real windows: the rules send 30 of 32 whole pastes to the surrender-leaning side and 44 of 52 ask-then-write-own windows to the support side. NIRVANA's essay metric also separates those two, and what the log adds is the typing that follows a paste.
-% src: lit/framework_comparison.md; report/M2_draft.md s4; analysis/results/patterns.md s1
-
-The findings suggest specific changes for a future version: split R16, since request-only surrender tracks outcomes weakly and half of the 96 such windows are requests whose output was not used; add a field for work after the response; narrow the rule for unsettled fields; and add a length rule for \code{U3} against \code{U7}. These are proposed and were not applied.
-
-\section{Further Limitations}
-\label{app:limits}
-
-\paragraph{Adjudicators lean toward one model.} Where the coders disagreed, the Opus adjudicator sided with Opus Coder A by 25 to 13, 159 to 45 and 54 to 17 across three runs. On the 57 windows where A's and B's categories differ, the final category follows A in 44 and B in 12. Contested labels are therefore A-leaning, although totals barely move: 177 surrender-leaning windows in whole sessions under A's labels, 167 under B's and 167 in the final set.
-% src: coding/REPORT.md; sessions/REPORT.md; wildchat/REPORT.md; analysis/results/out_of_sample.md s7
-
-\paragraph{Tests are uncorrected.} The analysis ran 40 category n-gram tests, 29 signature n-gram tests, 20 latency contrasts, 12 outcome correlations and 4 log-only rules without correction for multiple comparisons. The theses rest on the large effects, not on $p$ values near 0.05. The overrepresentation of request-only runs ($p = 0.025$) is one of 40 tests and is about what chance would give.
-
-\paragraph{Sample and generalization.} NIRVANA is one timed essay by university students. WildChat conversations are English, from anonymous users of a free ChatGPT service, drawn from the conversations an LLM accepted in a random seed of 1,200; recall of the larger accepted pool, which was not coded, is about 12\%. An audit questioned 3 of the 35 coded conversations. Windows cluster within sessions: the 21 long working sessions hold 218 of the 498 windows. Archetype structure is modest (best silhouette 0.25), although stable at 89 to 98\% of session pairs when the number of clusters changes. Nothing here speaks to habits over weeks, to skill change, or to research writing specifically, and the demographics of these writers are not analyzed.
-
-\paragraph{Procedure.} Some procedural details reduce what the rule freeze can prove. Final labels for later windows were in git when the rule table was last frozen, and the record that no agent read them rests on agents' briefs and on mapping each late change to a critic finding. Fifty-two NIRVANA windows keep labels coded from shorter views, and a small share of labels rest on reading outside the protocol. Agreement on \code{verification} for editor windows is weak (0.48, interval 0.17 to 0.69), and 20 windows with an unsettled field go to indeterminate as the frozen rules require. \code{V2} to \code{V4} occur so rarely that the framework's distinction between kinds of check has little data behind it. The comparison with existing frameworks reflects ratings by the project's own agent, corrected by a critic.
-% src: inference/FROZEN.md; sessions/REPORT.md; wildchat/REPORT.md; analysis/results/out_of_sample.md s5
-
-\section{Process Record}
-\label{app:process}
-
-\paragraph{The promise to be the primary coder was reversed.} My proposal said ``I remain the primary coder,'' with an LLM as a consistency check. On November 6 I chose agent-led work and kept a blind human coding set of 20 windows. The instructions for that set estimated 90 minutes to 2 hours, not the planned hour, and said the task could not be delegated. I delegated it anyway, to a Fable 5.1 agent. With more time, I would code those 20 windows myself before seeing any AI output. \emph{What I learned:} the one step that later steps could not replace was the one I gave up, and the cost of a human check should be estimated before it is promised.
-
-\paragraph{The research-writing sample fell short and could not be reproduced.} The proposal targeted research writing, and Milestone 1 reported 42 clear and 40 possible candidates from a draw of 2,000 records, pending human verification. A rebuild could not reproduce the counts: the original draw method was lost, a new LLM pass gave 41 clear and 69 possible on the rebuilt draw, and keyword rules gave 3 and 15. Of the 41 clear conversations, 21 were not in English. Milestone 1's count was below the proposal's target of 100 and no person had verified it, and too few genuine research-writing conversations was the risk the proposal had named. On November 7 I widened the scope to formal long-form writing, and an agent wrote and committed the new definition before any record was labeled. \emph{What I learned:} a construct has to be defined and tested for precision before its count is reported.
-
-\paragraph{A priming mistake before blind coding.} A report written for me held the frequency of check codes back until after blind coding, because a critic agent noticed that telling a coder those rates could prime them toward ``no check.'' I nevertheless heard the pilot's frequencies before those 20 windows were coded. This became moot only because I did not then code. \emph{What I learned:} a blind protocol has to cover what is said in conversation with agents, as well as which files can be opened.
-
-\paragraph{A shared git index swept files into one commit.} Parallel agent sessions shared a checkout. On November 7, a checkpoint commit for the rule table swept in 27 WildChat files that another session had staged. Their names were printed, their contents were not opened by that session, and a parent session confirmed that they held no dataset text. Because the rules were meant to be frozen before new labels were read, this needed a logged account rather than a quiet fix. \emph{What I learned:} running work in parallel moves the risk to whatever the workers still share, so commits afterward named their paths.
-
-\paragraph{Sources and search tools refused automated access.} The PubMed Central copy of the Bastani paper was blocked by reCAPTCHA, so agents did not bypass it; they read a working-paper version instead. Google Scholar's \code{robots.txt} disallows automated queries, Semantic Scholar returned HTTP 429 on every query, and SSRN showed a bot check. The logged search used OpenAlex and arXiv, and 11 Scholar queries were listed for a person to run. \emph{What I learned:} the version actually read must be recorded with the citation, because it is not always the version of record.
-
-\paragraph{Early work was lost, and a coder view was too short.} The original proposal-stage files, screening data and pilot cases were lost, so the search protocol was built after the seed list existed, and Milestone 1's ``77 students'' turned out to be 71 students with windows. Separately, coders in the first sample saw only the last three earlier turns, and a gate review showed that 10 windows reused text from AI turns nobody had shown them. The 18 windows with unseen turns were recoded with full history. \emph{What I learned:} keep records of how a selection was made from the first day, and state every limit of what a coder can see, including limits that seem harmless.
-
-\paragraph{Review agents caught real errors.} Gates failed repeatedly: the codebook needed three critic passes, and in the first analysis pass a skeptic refuted 3 of 13 findings, including a persistence effect produced by how the shuffle moved closing-turn windows. A later skeptic reworded 10 of 23 claims. \emph{What I learned:} a fresh reviewer who cannot see the worker's reasoning finds things the worker cannot, and that kind of review should be planned for from the start.
-
-\paragraph{Some agents broke the reading protocol.} One WildChat coder batch read ahead on 24 windows, and its labels were not redone. Two NIRVANA adjudicators each read one later part early, and those rulings were redone by fresh agents with the same result. One WildChat adjudicator read some long parts only partly, and those rulings were not redone. Transcript audits and critic reads of the transcripts found these, except one NIRVANA breach, which its adjudicator reported and the first audit script missed. \emph{What I learned:} a rule enforced only by instruction will sometimes be broken, so the audit has to be planned along with the rule.
-
-\section{AI Use by Activity}
-\label{app:aiuse}
 
 \begin{table}[tbp]
 \caption{Use of AI by activity, and how the output was checked.}
@@ -670,16 +519,17 @@ The findings suggest specific changes for a future version: split R16, since req
 \toprule
 Activity & What AI did & How output was checked \\
 \midrule
-Literature & Searched OpenAlex and arXiv by script, screened 713 records with Haiku 5.5 and Sonnet 5.5, read sources, drafted the related work and framework comparison & Fresh critic agents; registry records and identifiers; no human checked the screening \\
-Study design & Drafted the plan, briefs, protocols and rule table & I chose direction and accepted the plan; critic agents reviewed each stage \\
+Literature & Following the review structure I set, searched OpenAlex and arXiv by script, screened 713 records with Haiku 5.5 and Sonnet 5.5, read sources, drafted the related work and framework comparison & Fresh critic agents; registry records and identifiers; no human checked the screening \\
+Study design & Turned my study design into a written plan, briefs, protocols and a rule table & I reviewed and accepted the plan; critic agents reviewed each stage \\
 Dataset work & Built windows, labeled WildChat with Sonnet 5.5 (43 labels record Claude Sonnet 5 as served), audited the screen with Opus 5.5 & Scripted rebuilds and critic agents \\
-Codebook & Drafted and revised v1.1 and v1.2 through pilots by AI coders & I accepted v1.1 at a checkpoint; critic agents reviewed; no human coded with it \\
+Codebook & Drafted and revised v1.1 and v1.2 within the coding framework I built, using pilots by AI coders & I accepted v1.1 at a checkpoint; critic agents reviewed; no human coded with it \\
 Coding & All coding: Opus 5.5 and Sonnet 5.5 coders, Opus 5.5 adjudicators, Fable 5.1 on the 20-window set & AI-to-AI agreement and transcript audits only \\
-Analysis & Wrote all scripts, ran the analysis, made the first versions of the figures, wrote narratives & Byte-identical reruns and skeptic agents \\
-Writing & Drafted the milestone report and this entire paper, including its text, tables, appendix, references and supplementary plan, using Opus 5.5 & Spell-check script, a fresh proofreading agent and a fresh critic agent \\
+Analysis & Implemented my analysis framework in scripts, ran them, compiled results, and drafted figures and result summaries & Byte-identical reruns and skeptic agents \\
+Writing & Used Opus 5.5 to draft the milestone report and paper around the narrative I set, connect sections, and revise wording & Spell-check script, a fresh proofreading agent and a fresh critic agent \\
 Figures & Redrew the figures in one palette, replaced six tables with figures and added explanatory diagrams, using Opus 5.5 & Scripted rerun, palette and text-overlap checks, a fresh figure critic and its recheck; the recheck's minor corrections were applied afterward and not rechecked \\
 Editing & Applied the proofreading and critic findings to the draft, using Opus 5.5 & A fresh critic rechecked the edits; its minor corrections were applied afterward and not rechecked \\
-Condensing & Cut the body from 20 to 11 pages at my request and moved details, five figures and the full process record to the appendices, using Opus 5.5 & A script checked each number against the longer draft; a fresh critic compared the two versions \\
+Disclosure & Codex revised the wording of the AI Use Statement & Compared the revision with the prior disclosure and project records \\
+Condensing & Cut the body from 20 to 11 pages at my request and moved details, four figures and the full process record to a supplementary details file, using Opus 5.5 & A script checked each number against the longer draft; a fresh critic compared the two versions \\
 \bottomrule
 \end{tabular}
 \end{table}

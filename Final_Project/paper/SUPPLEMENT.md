@@ -33,6 +33,7 @@ Status key: **public** = tracked on branch `final-project`; some are in commits 
 | Barriers | Shared-index commit | commit `ff704c6`, `Final_Project/inference/FROZEN.md` | public |
 | Barriers | PMC reCAPTCHA | `Final_Project/inference/sources.tsv` | public |
 | AI Use Statement | Models used | session transcripts (section 3), `Final_Project/wildchat/results/agents.tsv`, `Final_Project/coding/results/access_audit.json`, `Final_Project/sessions/results/access_audit.json` | transcripts local |
+| Method, Results, Limitations, Barriers | Full funnel and coding procedure, four figures, further results, further limitations, process record | `Final_Project/paper/supplement_details.tex`, built to `supplement_details.pdf` by `build.sh` | public |
 | Appendix | Full codebook | `Final_Project/codebook/CSE216_Research_Writing_Codebook_v1.1.md`, `Final_Project/inference/CSE216_Writing_Codebook_v1.2.md` | public |
 | This paper | Source and checks | `Final_Project/paper/main.tex`, `Final_Project/paper/refs.bib`, `Final_Project/paper/scripts/check_tex.py`, `Final_Project/paper/scripts/spellcheck.py`, `Final_Project/paper/scripts/check_build.py`, `Final_Project/paper/PROOFREAD.md`, `Final_Project/paper/CRITIC.md`, `Final_Project/paper/CRITIC_RECHECK.md` | public once committed |
 
