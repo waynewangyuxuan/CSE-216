@@ -22,7 +22,7 @@ Redrafted Nov 6, 2026. AI agents do the work; Wayne reviews at three checkpoints
 | **6 NIRVANA sessions** | Code all 347 NIRVANA windows under v1.1, so every one of the 71 sessions is complete | `sessions/` | As Bet 4 | Parallel, Nov 7 |
 | **7 WildChat writing** | Screen all of WildChat for formal long-form writing (LLM-labeled seeds, then keywords and embeddings, then LLM confirmation); code whole multi-turn conversations under v1.1 | `wildchat/` | Random audit gives screen precision; coding as Bet 4 | Parallel, Nov 7 |
 | **8 Analysis + M2** | Apply frozen v1.2 to all coded windows; session timelines, transitions, frequencies and order; patterns; narratives; draft M2 | `analysis/`, `report/` | Every claim traces to a file; a skeptic agent tries to refute each finding | After 5–7 |
-| **9 Final report** | RQ1–3, final report; mockups optional, not yet decided | `report/` | Same as Bet 8 | After M2 feedback |
+| **9 Final report** | RQ1–3, final paper in the CHI template; mockups optional, not yet decided | `paper/` | Same as Bet 8 | After M2 feedback |
 
 **Direction since Nov 7 (Wayne):** the framework links observable behavior to likely offloading or surrender through the literature, and assigns real interactions to those categories with stated uncertainty, as the proposal's success criterion says. Scope is formal long-form writing, reported as one writing activity. Rare check codes are not a goal.
 
@@ -52,7 +52,7 @@ Also yours: Reflection 2 (Nov 11), Reflection 3 (Nov 18), the professor meetings
 | Nov 16–25 | Apply feedback | Reflection 3; meetings Nov 19 and 24 |
 | Nov 25 | M2 revision ready (due Nov 27) | Review and submit |
 | Nov 28–Dec 3 | Bet 9 | Read and defend |
-| **Fri Dec 4** | | **Submit final report** |
+| **Mon Dec 7, 8pm** | | **Submit final paper PDF and supplementary materials** (internal target Dec 4) |
 
 ## Stop conditions (agent pauses and asks)
 
@@ -82,5 +82,5 @@ Do not cut: frozen codebook before coding, citation checks, honest counts.
 ## Dates to check on Canvas
 
 - M2 initial: notes say "Mon Nov 15", but Nov 15 is a Sunday.
-- Final report: Dec 4 on the Grades page, Dec 7 in the proposal. Planned to Dec 4.
+- Final report: the assignment page says Mon Dec 7, 8pm (Wayne pasted it Nov 8). Dec 4 on the Grades page is the internal target.
 - Presentation: date not in notes.
