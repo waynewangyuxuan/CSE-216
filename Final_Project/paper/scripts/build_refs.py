@@ -10,7 +10,7 @@ LIT = PAPER.parent / "lit"
 # the reference list in lit/related_work.md, which took them from Crossref.
 REFS = {
     "alam2026": ("S01", "misc", "arXiv:2609.13155", {}),
-    "bastani2025": ("C0327", "article", "Proceedings of the National Academy of Sciences", {"volume": "122", "number": "26", "doi": "10.1073/pnas.2422633122"}),
+    "bastani2025": ("C0327", "article", "Proceedings of the National Academy of Sciences", {"volume": "122", "number": "26", "note": "Read as the working-paper version", "doi": "10.1073/pnas.2422633122"}),
     "bhat2026": ("C0490", "inproceedings", "Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems", {"doi": "10.1145/3772318.3791529"}),
     "chen2026": ("C0399", "article", "Frontiers in Psychology", {"doi": "10.3389/fpsyg.2026.1906199"}),
     "contractor2026": ("C0227", "misc", "arXiv:2607.08849", {}),
@@ -41,6 +41,14 @@ REFS = {
     "yukita2025": ("C0491", "misc", "arXiv:2505.16254", {}),
     "zhao2024": ("C0642", "inproceedings", "Proceedings of the International Conference on Learning Representations (ICLR)", {"doi": "10.48550/arXiv.2405.01470"}),
     "zhu2026": ("C0455", "article", "Frontiers in Psychology", {"doi": "10.3389/fpsyg.2026.1878629"}),
+}
+
+NOTES = {
+    "alam2026": "records conflict: lit/papers.csv says relevant sections, inference/sources.tsv says abstract only; the paper uses only what the abstract states",
+    "bastani2025": "working-paper version on a third-party host (abstract, introduction, pp. 14-15); PNAS version of record not read (PMC blocked by reCAPTCHA); see inference/sources.tsv",
+    "contractor2026": "also pp. 22-23, 68, 77, per inference/sources.tsv",
+    "jelson2026chi": "bib year is the published CHI 2026 version; registry year is the 2025 preprint",
+    "joshi2025": "bib year is the published 2025 version; registry year is the 2024 preprint",
 }
 
 CLEAN = {"‐": "-", "’": "'", "—": "---", "–": "--", "&": r"\&", "_": r"\_"}
@@ -75,7 +83,7 @@ def entry(key, row, kind, venue, extra):
         fields["booktitle"] = venue
     else:
         fields["howpublished"] = venue
-    for name in ("volume", "number", "pages", "doi"):
+    for name in ("volume", "number", "pages", "note", "doi"):
         if name in extra:
             fields[name] = extra[name].replace("_", r"\_") if name != "doi" else extra[name]
     body = ",\n".join(f"  {k} = {{{v}}}" for k, v in fields.items())
@@ -84,12 +92,12 @@ def entry(key, row, kind, venue, extra):
 
 def main():
     rows = {r["paper_id"]: r for r in csv.DictReader(open(LIT / "papers.csv", encoding="utf-8"))}
-    bib, table = [], ["key\tpaper_id\ttitle\tidentifier_in_papers_csv\tread_level"]
+    bib, table = [], ["key\tpaper_id\ttitle\tidentifier_in_papers_csv\tread_level\tnote"]
     for key in sorted(REFS):
         pid, kind, venue, extra = REFS[key]
         row = rows[pid]  # KeyError means the source is not in the registry
         bib.append(entry(key, row, kind, venue, extra))
-        table.append("\t".join([key, pid, row["title"], row["identifier"], row["read_level"]]))
+        table.append("\t".join([key, pid, row["title"], row["identifier"], row["read_level"], NOTES.get(key, "")]))
     (PAPER / "refs.bib").write_text("\n".join(bib), encoding="utf-8")
     (PAPER / "CITATIONS.tsv").write_text("\n".join(table) + "\n", encoding="utf-8")
     print(f"{len(REFS)} references written")

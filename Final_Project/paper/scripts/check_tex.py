@@ -81,7 +81,7 @@ def main():
     figures = body_part.count("\\begin{figure}")
     tables = body_part.count("\\begin{table}")
     pages = words / 520 + figures * 0.45 + tables * 0.2
-    print(f"body words about {words}; figures {figures}; tables {tables}; estimated pages about {pages:.1f} (no TeX here, so this is an estimate)")
+    print(f"body words about {words}; figures {figures}; tables {tables}; estimated pages about {pages:.1f} (estimate; check_build.py gives the real count)")
 
     if problems:
         print("\n".join(problems))

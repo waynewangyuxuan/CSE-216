@@ -7,7 +7,7 @@ Everything below needs you. Items marked in the source as `% TODO(Wayne):` are l
 1. **Affiliation.** Replace the affiliation line with your institution, city, country and preferred email.
 2. **NIRVANA consent and compensation.** Open arXiv:2604.07344 and add its recruitment, consent and compensation details if it states them. This draft says the sections read left no record, because no download was allowed here.
 3. **IRB.** Add a determination sentence if you obtained one. None is recorded in the project.
-4. **Method citations.** Standard citations for Cohen's kappa, Spearman, optimal matching and silhouette are not in `lit/`, and the draft was limited to `lit/`. The rubric says to cite the analysis method. Approve adding them or leave as is.
+4. **Method citations (the critic counts this as blocking).** The rubric says to cite the analysis method. Standard citations for Cohen's kappa, Spearman, permutation tests, optimal matching, silhouette and deductive qualitative coding are not in `lit/`, and the draft was limited to `lit/`. Approve adding them; these are candidates recalled from memory and unverified: Cohen 1960; Spearman 1904; Abbott and Tsay 2000; Rousseeuw 1987; Hsieh and Shannon 2005.
 5. **Codebook v1.0.** Confirm who wrote it. It says it is a reconstruction dated Nov 2. The repository cannot show the author.
 6. **Barriers.** An agent drafted this section, including every "What I learned" sentence. Rewrite any lesson that is not yours.
 7. **AI Use Statement: your review.** Add what you personally reviewed and when: your read of M2 (planned Nov 14), your read and edits of this paper, your own full proofread. None has happened as of this draft, and none is claimed.
@@ -16,7 +16,7 @@ Everything below needs you. Items marked in the source as `% TODO(Wayne):` are l
 
 ## 2. Compiling
 
-No TeX is installed on this machine, and nothing was downloaded. **Decide how to compile**: Overleaf is the simplest (upload `main.tex`, `refs.bib`, `figures/`; class `acmart` is available there). The source has never been compiled, so expect to fix small errors. After compiling, check that the length is near 20 pages (estimate 17.5, excluding references and appendix), that tables fit the margins, and that `\citet` and the longtables render. Confirm the current official ACM CHI template settings at submission time.
+`sh build.sh` builds `main.pdf` with `tectonic` and the current ACM class in `template/`. `python3 scripts/check_build.py` confirms a clean compile and the page count (17 body pages, 24 total, as of this draft). `main.pdf` is not tracked, so keep it out of git until it is the final file. The PDF prints the placeholders `[city]` and `[country]` until item 1 is done. Compile warnings report missing publisher and page fields for 44 reference fields, because the registry does not hold them and none was invented.
 
 ## 3. Proofreading
 
@@ -24,7 +24,7 @@ No TeX is installed on this machine, and nothing was downloaded. **Decide how to
 - Rerun the checks after your edits, then fix anything they report:
 
 ```bash
-cd /Users/wang/CSE-216/Final_Project/paper && python3 scripts/spellcheck.py && python3 scripts/check_tex.py && python3 scripts/check_todos.py
+cd /Users/wang/CSE-216/Final_Project/paper && python3 scripts/spellcheck.py && python3 scripts/check_tex.py && python3 scripts/check_build.py && python3 scripts/check_todos.py
 ```
 
 ## 4. M2 feedback (to fold in later)
@@ -41,6 +41,13 @@ M2 is due Nov 15. Feedback arrives after that and should be folded in here befor
 
 See `SUPPLEMENT.md` sections 2 and 3. Three decisions wait for you: how to hand over transcripts, whether local-only evidence moves into the repository, and whether the repository stays public.
 
-## 6. Fixing proofreading and critic findings
+## 6. Agent review
 
-`PROOFREAD.md` and `CRITIC.md` record what agents found and fixed in this draft.
+`PROOFREAD.md`, `CRITIC.md` and `CRITIC_RECHECK.md` record what agents found and what happened to it.
+
+## 7. Smaller calls that are yours
+
+- **Title.** The critic suggests "Mapping Where AI Assistance May Substitute for Thinking", since the paper does not measure thinking.
+- **Serial commas.** The paper mixes the two styles in a few simple lists. Proofreading treated this as consistency, not an error, and it was left.
+- **Padmakumar reference.** `lit/papers.csv` holds surnames only, so this reference prints without given names. Fill them in if you have them.
+- **Barriers wording.** The motive "to save two hours" was removed because no file records it. Add it back if it is true.

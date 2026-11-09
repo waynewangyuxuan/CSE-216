@@ -2,7 +2,7 @@
 
 Every piece of work the paper describes, mapped to where its evidence lives, plus what Wayne still has to do. Paths are relative to the repository root. `scripts/check_supplement.py` verifies that each path below exists and reports whether git tracks it.
 
-Status key: **public** = tracked on branch `final-project`. **local** = exists only on this machine (git-excluded), so an instructor cannot see it through the repository.
+Status key: **public** = tracked on branch `final-project`; some are in commits not yet pushed. **local** = exists only on this machine (git-excluded), so an instructor cannot see it through the repository.
 
 ## 1. Evidence for each piece of work
 
@@ -28,19 +28,21 @@ Status key: **public** = tracked on branch `final-project`. **local** = exists o
 | Related work | Each citation's read level | `Final_Project/paper/CITATIONS.tsv` | public |
 | Discussion | Framework comparison, 11 case pairs | `Final_Project/lit/framework_comparison.md`, `Final_Project/lit/critic_report.md`, `Final_Project/lit/critic_recheck.md`, `Final_Project/report/M2_draft.md` | public |
 | Barriers | Plan, reversal, checkpoints | `Final_Project/PACING.md`, `Final_Project/codebook/C3_INSTRUCTIONS.md` | public |
+| Barriers | Proposal quote, Milestone 1 counts, lost files | `Final_Project/BRIEF.md` (the proposal and Milestone 1 themselves are not in the repository; add them if you can) | public |
 | Barriers | Decisions and events | `.wayne/steering/product.md`, `.wayne/bets` (each bet's `log.tsv` and `gate/` critic reports) | local |
 | Barriers | Shared-index commit | commit `ff704c6`, `Final_Project/inference/FROZEN.md` | public |
 | Barriers | PMC reCAPTCHA | `Final_Project/inference/sources.tsv` | public |
 | AI Use Statement | Models used | session transcripts (section 3), `Final_Project/wildchat/results/agents.tsv`, `Final_Project/coding/results/access_audit.json`, `Final_Project/sessions/results/access_audit.json` | transcripts local |
 | Appendix | Full codebook | `Final_Project/codebook/CSE216_Research_Writing_Codebook_v1.1.md`, `Final_Project/inference/CSE216_Writing_Codebook_v1.2.md` | public |
-| This paper | Source and checks | `Final_Project/paper/main.tex`, `Final_Project/paper/refs.bib`, `Final_Project/paper/scripts/check_tex.py`, `Final_Project/paper/scripts/spellcheck.py`, `Final_Project/paper/PROOFREAD.md`, `Final_Project/paper/CRITIC.md` | public once committed |
+| This paper | Source and checks | `Final_Project/paper/main.tex`, `Final_Project/paper/refs.bib`, `Final_Project/paper/scripts/check_tex.py`, `Final_Project/paper/scripts/spellcheck.py`, `Final_Project/paper/scripts/check_build.py`, `Final_Project/paper/PROOFREAD.md`, `Final_Project/paper/CRITIC.md`, `Final_Project/paper/CRITIC_RECHECK.md` | public once committed |
 
 ## 2. What Wayne still has to do
 
 1. **Export the AI chat logs as PDFs.** Links are not accepted, and the logs must match the AI Use Statement. Nothing has been exported or uploaded. See the decision in section 3.
-2. **Give the instructor and TA access to the repository** (GitHub, branch `final-project`). Do this only after confirming the branch holds what section 1 says. Nothing has been shared.
-3. **Decide about local-only evidence.** The bet logs and gate critic reports under `.wayne/` are not in the repository, and they are the main evidence for several Barriers. Section 3 raises this.
-4. **Upload the final paper PDF and supplementary materials to Canvas** by Monday, December 7, 8:00pm.
+2. **Push `final-project`, then confirm section 1 matches what the remote shows.** The parent session pushes after verifying.
+3. **Give the instructor and TA access to the repository** (GitHub, branch `final-project`). Do this only after confirming the branch holds what section 1 says. Nothing has been shared.
+4. **Decide about local-only evidence.** The bet logs and gate critic reports under `.wayne/` are not in the repository, and they are the main evidence for several Barriers. Section 3 raises this.
+5. **Upload the final paper PDF and supplementary materials to Canvas** by Monday, December 7, 8:00pm.
 
 ## 3. Decisions for Wayne
 
