@@ -207,14 +207,14 @@ def fig_concept():
     ax.text(x0 + W, 0.13, "AI-originated content", fontsize=7.5, color=INK2, va="center", ha="right")
     ax.annotate("", (0.3, y0 + H), (0.3, y0), arrowprops=dict(arrowstyle="-|>", color=INK2, lw=0.9))
     ax.text(0.3, y0 + H + 0.03, "yes", fontsize=7, color=INK2, ha="center", va="bottom")
-    ax.text(0.14, y0 - 0.03, "no", fontsize=7, color=INK2, ha="center", va="top")
+    ax.text(0.3, y0 - 0.03, "no", fontsize=7, color=INK2, ha="center", va="top")
     ax.text(0.14, y0 + H / 2, "Does the text pass through the writer's hands?", fontsize=7.5, weight="bold", color=INK, rotation=90, va="center", ha="center")
     items = [
         (0.62, 2.04, 1.55, 0.56, "Writer's text reworded\nfor language (D1 F5)\n68 windows, 46 offloading", "OFF"),
         (2.32, 2.97, 1.62, 0.56, "Ask, then write own text\n(D2 U7) 52 windows,\n37 augmenting", "AUG"),
         (4.08, 2.97, 1.62, 0.56, "Reasoned check (V3)\n13 windows,\nall offloading", "OFF"),
         (3.48, 2.18, 1.72, 0.56, "Partial take, AI text changed\n(D3) 46 windows,\n37 offloading", "OFF"),
-        (2.72, 1.25, 1.5, 0.56, "Surface-only iteration\n(D2 V1 U4) 30 windows,\n21 surrender-leaning", "SLb"),
+        (2.80, 1.25, 1.42, 0.56, "Surface-only iteration\n(D2 V1 U4) 30 windows,\n21 surrender-leaning", "SLb"),
         (4.32, 1.33, 1.5, 0.56, "Whole paste (D4 V0 U1)\n32 windows,\n30 surrender-leaning", "SLb"),
         (4.08, 0.58, 1.72, 0.56, "Draft requested, kept in chat\n(D2 F4 U4/U5) 72 windows:\n48 request-only, 21 behavior", "SLr"),
     ]
@@ -225,7 +225,8 @@ def fig_concept():
                     bbox=dict(fc=COL[tok], ec="none", pad=1.2))
         else:
             cat_box(ax, x, y, w, hh, text, tok, fs=7.1)
-    box(ax, 0.62, 0.56, 1.72, 0.56, "No substantive decision\n(D0), 57 windows, 53 neutral-\nmechanical, outside both axes", fc=COL["NEU"], fs=7.1, color="white")
+    box(ax, 0.62, 0.56, 1.72, 0.56, "", fc=COL["NEU"], hatch=HATCH["NEU"], ec="white")
+    ax.text(1.48, 0.84, "No substantive decision\n(D0), 57 windows, 53 neutral-\nmechanical, outside both axes", ha="center", va="center", fontsize=7.1, color="white", linespacing=1.15, bbox=dict(fc=COL["NEU"], ec="none", pad=1.2))
     save(fig, "concept_map")
 
 
