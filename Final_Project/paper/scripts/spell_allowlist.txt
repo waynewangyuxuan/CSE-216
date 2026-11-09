@@ -1,0 +1,3 @@
+# Names, dataset terms and technical words the system dictionary does not know. One per line. Add only after checking the spelling.
+Matplotlib
+Poquet
