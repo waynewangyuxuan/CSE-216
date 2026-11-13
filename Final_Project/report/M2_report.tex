@@ -1,0 +1,83 @@
+% Milestone 2 report, CSE 216 / COGS 230, Fall 2026. Two pages of text in 11-point Arial; figures after page 2; references on one extra page.
+% Build: cd Final_Project/report && tectonic M2_report.tex (needs tectonic; uses ../paper/refs.bib and ../paper/figures).
+% Every number here also appears in Final_Project/paper/main.tex or report/M2_draft.md, which name the results file it comes from.
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{fontspec}
+\setmainfont{Arial}
+\usepackage{graphicx}
+\graphicspath{{../paper/figures/}}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=1.2em}
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{8pt}{3pt}
+\usepackage[hidelinks]{hyperref}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\pagestyle{plain}
+\emergencystretch=1.5em
+
+\begin{document}
+
+{\large\bfseries Offloading or Surrendering? Milestone 2 Report}\\
+Wayne Wang \textbullet\ CSE 216 / COGS 230, Fall 2026 \textbullet\ solo project
+
+\textbf{In one paragraph.} The project asks which observable patterns of AI use in writing support a writer's thinking (offloading) and which substitute for it (surrender), which of those writers would notice, and which log signals a tool could act on. Since Milestone 1, all 528 request windows have been coded and analyzed, and a full paper draft exists. Two things did not go as planned: I did not code the data myself as the proposal promised, and the research-writing sample could not be reproduced, so the scope is now formal long-form writing.
+
+\section{1. Current Progress}
+
+\textbf{Measured against the proposal and Milestone 1.}
+\begin{itemize}
+  \item \textbf{Data (done, with corrections).} Milestone 1 reported 347 NIRVANA windows from 77 students; the rebuild found they come from the 71 students who used ChatGPT \cite{jelson2026nirvana}. Milestone 1's 42 clear WildChat candidates could not be reproduced (the original draw was lost, and 21 of 41 clear conversations on a rebuilt draw were not in English). I rescreened 139,736 eligible WildChat conversations \cite{zhao2024} for formal long-form writing under a definition committed before labeling, and coded 35 conversations (151 windows) drawn from a random seed. A second model agreed with 118 of 120 accepted conversations.
+  \item \textbf{Literature (done, partly reproducible).} You asked for a reproducible selection process. Searches ran by script on OpenAlex and arXiv, and 713 records were screened by LLM with the prompts saved. Google Scholar forbids automated queries, so 11 Scholar queries are listed for me to run by hand; I have not run them yet.
+  \item \textbf{Codebook and framework (done, revised).} Codebook v1.1 codes each window on five questions (operation, delegation, decision, verification, uptake) after four pilot rounds. You asked how offloading can be judged in a given scene. My answer is v1.2: an ordered rule table, frozen before new labels were read, that maps each window's codes to one category with a strength and a cited source \cite{risko2016,shaw2026}. A category is an inference from behavior, not a measurement of thinking.
+  \item \textbf{Coding and agreement (done, but not by me).} The proposal said ``I remain the primary coder.'' Instead, two AI coders (Claude Opus 5.5 and Sonnet 5.5) coded every window, an Opus adjudicator resolved disagreements, and a Fable 5.1 agent coded the 20 windows I had reserved for my own blind coding. Agreement between coders ranges from 0.79 to 0.94 (Cohen's $\kappa$) on the key fields, and category agreement is 0.86. \textbf{All of this is AI-to-AI agreement; no human has coded anything.} The adjudicator also sided with the Opus coder more often (159 to 45 in the largest run).
+  \item \textbf{Comparison with existing frameworks (done; criterion only half met).} Across 11 case pairs, the framework was the only one rated able to separate 3, but NIRVANA's own metrics already separate 2 of those, and the third was built from the codebook's own examples. So the second half of my success criterion, distinguishing cases existing frameworks cannot, is not established.
+\end{itemize}
+
+\textbf{What the data show so far} (106 whole sessions; details in Figures~\ref{fig:concept} and~\ref{fig:signals}).
+\begin{itemize}
+  \item \textbf{Pasting is not the line.} NIRVANA writers paste in 65.5\% of offloading and 63.8\% of behavior-based surrender windows. What differs is whose content moves and what follows: after pasting an AI proposal whole, writers type a median of 6 characters before returning to the chat, against 304.5 after taking part of one. Sessions with more unchecked adoption end with more AI text in the essay ($\rho = 0.60$) and lower felt ownership ($\rho = -0.55$).
+  \item \textbf{The writer's own text is the anchor.} Sessions that start from a visible draft have a mean support share of 0.77, against 0.50 with nothing visible.
+  \item \textbf{Two log events flag risk without reading content.} A request on a near-empty page and a large paste with little typing together catch 63.3\% of the windows the AI-coded labels mark as surrender-leaning, at 55.9\% precision against a 39.5\% base rate.
+\end{itemize}
+These results rest on AI-coded labels, the timing and paste results come from NIRVANA alone, and none is causal.
+
+\section{2. Planned Activities (before the final paper, Dec 7)}
+\begin{itemize}
+  \item \textbf{Add a human check (because all agreement is AI-to-AI).} I will code the 20 reserved windows blind before looking at any AI labels, and report agreement with the final labels as the project's only human check. If staff think another check is more useful, I will do that instead.
+  \item \textbf{Revise the rules once, with a logged rerun (because one rule underperforms).} Request-only surrender, where someone asked for text but no adoption is visible, tracks essay outcomes only weakly ($\rho = 0.19$). I plan to split that rule and add a field for the typing after a response, then rerun the frozen pipeline and report both versions.
+  \item \textbf{Reframe the contribution (because the comparison did not establish novelty).} The paper will claim a narrower addition: making Shaw and Nave's distinction between a writer's claim reworded and an AI claim adopted observable on the same act of pasting.
+  \item \textbf{Finish the literature trail.} Run the 11 Scholar queries by hand and record results, and cite standard sources for the statistics used.
+  \item \textbf{Fold this meeting's feedback into the paper draft} and submit the revised Milestone 2 by Nov 27.
+\end{itemize}
+
+\section{3. Desired Feedback}
+\begin{enumerate}
+  \item \textbf{Is AI-only coding acceptable if disclosed plainly, or does the project need human coding to count as valid?} If my 20 blind windows are the human check, is that enough, and what agreement would you treat as acceptable?
+  \item \textbf{Is the scope change acceptable?} The data are a timed student essay (NIRVANA) and formal long-form writing from WildChat, not research writing. Should the title and RQs say ``formal long-form writing''?
+  \item \textbf{Is the narrower contribution enough,} given that the framework comparison did not show cases only this framework can separate?
+  \item \textbf{What did you mean by ``conceptual analysis''} after Milestone 1? My search suggested a method such as Jabareen's conceptual framework analysis \cite{jabareen2009} or a concept critique like Hornb\ae k and Oulasvirta's \cite{hornbaek2017}, and I am not sure either is what you meant.
+  \item \textbf{Are mockups of the two feedback triggers worth the time,} or should RQ3 stay at proposed signals?
+\end{enumerate}
+
+\clearpage
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{concept_map.pdf}
+\caption{Concept map of the categories. The horizontal axis is whose content it is, and the vertical axis is whether the text passes through the writer's hands. Counts are windows in the 106 whole sessions, coded by AI agents.}
+\label{fig:concept}
+\end{figure}
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{signals.pdf}
+\caption{Top: where the two proposed log signals fire in a session (schematic; nothing was built). Bottom: how often each log-only rule is right (precision) and how many surrender-leaning windows it catches (recall) in NIRVANA's 347 windows, both judged against the AI-coded labels.}
+\label{fig:signals}
+\end{figure}
+
+\clearpage
+\bibliographystyle{plain}
+\bibliography{../paper/refs,m2_extra}
+
+\end{document}
