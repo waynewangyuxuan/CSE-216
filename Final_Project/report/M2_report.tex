@@ -6,6 +6,7 @@
 \usepackage{fontspec}
 \setmainfont{Arial}
 \usepackage{graphicx}
+\usepackage{float}
 \graphicspath{{../paper/figures/}}
 \usepackage{enumitem}
 \setlist{nosep,leftmargin=1.2em}
@@ -42,6 +43,7 @@ The project asks which patterns of AI use in writing support a writer's thinking
   \item \textbf{Two log events flag risk without reading the text}: a request on a near-empty page, and a large paste with little typing. Together they catch 63.3\% of surrender-leaning windows.
 \end{itemize}
 
+
 \section{2. Planned Activities (before the final paper, Dec 7)}
 \begin{itemize}
   \item \textbf{Add a human check}, because all agreement is AI-to-AI: I will code 20 windows blind and compare with the AI labels.
@@ -57,16 +59,15 @@ The project asks which patterns of AI use in writing support a writer's thinking
   \item \textbf{What did you mean by ``conceptual analysis''?} Did you mean a method like Jabareen's \cite{jabareen2009}, or something else?
 \end{enumerate}
 
-\clearpage
-\begin{figure}[t]
+\begin{figure}[H]
 \centering
-\includegraphics[width=\linewidth]{concept_map.pdf}
+\includegraphics[width=0.6\linewidth]{concept_map.pdf}
 \caption{Concept map of the categories. The horizontal axis is whose content it is, and the vertical axis is whether the text passes through the writer's hands. Counts are windows in the 106 whole sessions, coded by AI agents.}
 \label{fig:concept}
 \end{figure}
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
-\includegraphics[width=\linewidth]{signals.pdf}
+\includegraphics[width=0.6\linewidth]{signals.pdf}
 \caption{Top: where the two proposed log signals fire in a session (schematic; nothing was built). Bottom: how often each log-only rule is right (precision) and how many surrender-leaning windows it catches (recall) in NIRVANA's 347 windows, both judged against the AI-coded labels.}
 \label{fig:signals}
 \end{figure}
