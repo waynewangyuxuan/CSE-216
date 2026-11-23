@@ -6,6 +6,7 @@
 
 \usepackage{longtable}
 \usepackage{graphicx}
+\usepackage{float}
 \graphicspath{{figures/}}
 
 \setcopyright{none}
@@ -485,7 +486,7 @@ R99 & Anything else & Indeterminate & -- & -- \\
 
 All agreement in Table~\ref{tab:agreement} is between AI models. It measures whether two models apply the same written rules the same way. On the 100 calibration windows, the frozen rules gave a category other than indeterminate to 79.
 
-\begin{table}[tbp]
+\begin{table}[H]
 \caption{AI-to-AI agreement on the codes.}
 \label{tab:agreement}
 \small
@@ -503,18 +504,11 @@ WildChat & 151 & 0.92 & 0.94 & 0.92 & -- \\
 \end{table}
 % src: codebook/REPORT.md; coding/REPORT.md; coding/results/fable_comparison.md; sessions/REPORT.md; wildchat/REPORT.md
 
-\begin{figure}[tbp]
-\includegraphics[width=\linewidth]{archetypes.pdf}
-\caption{Top: a window is one tile, and a session is a row of windows in turn order. Below: every session, grouped into six archetypes by clustering category sequences. Percentages are mean shares of a session's windows. Essay AI share is the NIRVANA median of GPT Final \%, as a proportion; the Delegate in chat value rests on 2 NIRVANA sessions. Panels use different horizontal scales.}
-\Description{Top strip: one window as a tile, then session e70 as seven tiles (offloading, offloading, request-only surrender, offloading, offloading, behavior-based surrender, behavior-based surrender). Below, six panels of rows of colored tiles. Short support visit, 35 sessions, and long working session, 21 sessions, are mostly offloading and augmenting. Paste into the draft, 12 sessions, and one-shot paste, 7 sessions, are mostly behavior-based surrender. Delegate in chat, 11 sessions, is mostly hatched request-only surrender. Unresolved, 20 sessions, is mostly indeterminate.}
-\label{fig:archetypes}
-\end{figure}
-% src: analysis/results/mining.md s1, s8; analysis/results/mining/archetypes.csv
 
-\begin{table}[tbp]
+\begin{table}[H]
 \caption{Use of AI by activity, and how the output was checked.}
 \label{tab:aiuse}
-\small
+\footnotesize
 \begin{tabular}{p{0.17\linewidth}p{0.42\linewidth}p{0.31\linewidth}}
 \toprule
 Activity & What AI did & How output was checked \\
@@ -533,5 +527,13 @@ Condensing & Cut the body from 20 to 11 pages at my request and moved details, f
 \bottomrule
 \end{tabular}
 \end{table}
+
+\begin{figure}[H]
+\includegraphics[width=\linewidth]{archetypes.pdf}
+\caption{Top: a window is one tile, and a session is a row of windows in turn order. Below: every session, grouped into six archetypes by clustering category sequences. Percentages are mean shares of a session's windows. Essay AI share is the NIRVANA median of GPT Final \%, as a proportion; the Delegate in chat value rests on 2 NIRVANA sessions. Panels use different horizontal scales.}
+\Description{Top strip: one window as a tile, then session e70 as seven tiles (offloading, offloading, request-only surrender, offloading, offloading, behavior-based surrender, behavior-based surrender). Below, six panels of rows of colored tiles. Short support visit, 35 sessions, and long working session, 21 sessions, are mostly offloading and augmenting. Paste into the draft, 12 sessions, and one-shot paste, 7 sessions, are mostly behavior-based surrender. Delegate in chat, 11 sessions, is mostly hatched request-only surrender. Unresolved, 20 sessions, is mostly indeterminate.}
+\label{fig:archetypes}
+\end{figure}
+% src: analysis/results/mining.md s1, s8; analysis/results/mining/archetypes.csv
 
 \end{document}
