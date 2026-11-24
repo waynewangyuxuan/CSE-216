@@ -14,7 +14,6 @@ kim2026fallacy	C0577	The LLM Fallacy: Misattribution in AI-Assisted Cognitive Wo
 kosmyna2025	C0653	Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task	doi:10.48550/arxiv.2506.08872	abstract only (PDF fetched, not read)	
 lee2025	C0568	The Impact of Generative AI on Critical Thinking: Self-Reported Reductions in Cognitive Effort and Confidence Effects From a Survey of Knowledge Workers	doi:10.1145/3706598.3713778	relevant sections of full text	
 maier2026	C0169	Designing Against Deskilling: Metacognitive Feedback Reduces Cognitive Offloading to LLM Assistants	arXiv:2609.20143	relevant sections of full text	
-mallissery2026	A017	Cognitive Surrender in AI-Mediated Education: Behavioral Reliance, Prospective Signals, and Governance for Human Cognitive Agency	doi:10.5281/zenodo.22847816	title and abstract at screening only	
 mysore2025	C0486	Prototypical Human-AI Collaboration Behaviors from LLM-Assisted Writing in the Wild	doi:10.18653/v1/2025.emnlp-main.852	abstract, introduction, data section	
 padmakumar2026	S13	Offloading Score: Measuring AI Reliance Through Counterfactual Workflows	arXiv:2605.29392	relevant sections of full text	
 park2026	C0066	Authorship Drift: How Self-Efficacy and Trust Evolve During LLM-Assisted Writing	doi:10.1145/3772318.3790276	title and abstract at screening only	
@@ -28,6 +27,6 @@ tao2026	C0596	Think Before You Accept: Can Written Justification Reduce Uncritic
 wan2024	C0134	CoCo Matrix: Taxonomy of Cognitive Contributions in Co-writing with Intelligent Agents	doi:10.1145/3635636.3664260	title and abstract at screening only	
 welzel2026	C0462	Overreliance in Writing Tasks: Exploring Similarity-Based Measures of AI Influence on Writing and Proposing a Reflective Writing Interface Intervention	arXiv:2605.15322	abstract only (fetched, not read)	
 yang2025	C0374	Ink and algorithm: Exploring temporal dynamics in generative AI ‐assisted writing	doi:10.1111/bjet.70031	title and abstract at screening only	
-yukita2025	C0491	Reassessing Collaborative Writing Theories and Frameworks in the Age of LLMs: What Still Applies and What We Must Leave Behind	arXiv:2505.16254	title and abstract at screening only	
+yukita2025	C0491	Reassessing Collaborative Writing Theories and Frameworks in the Age of LLMs: What Still Applies and What We Must Leave Behind	arXiv:2505.16254	title and abstract at screening only	bib title is arXiv v4; v1-v3, read at screening, were titled Reassessing Collaborative Writing Theories and Frameworks in the Age of LLMs
 zhao2024	C0642	WildChat: 1M ChatGPT Interaction Logs in the Wild	doi:10.48550/arxiv.2405.01470	relevant sections of full text	
 zhu2026	C0455	Not all cognitive offloading is equal: distinguishing dependent and autonomous offloading to generative AI	doi:10.3389/fpsyg.2026.1878629	abstract and limitations	
