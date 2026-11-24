@@ -23,10 +23,10 @@
 
 \title[Offloading or Surrendering?]{Offloading or Surrendering? Mapping Where AI Assistance Substitutes for Thinking in Formal Long-Form Writing}
 
-% TODO(Wayne): replace the affiliation line with your institution, city and preferred email.
 \author{Wayne Wang}
+\email{waw009@ucsd.edu}
 \affiliation{%
-  \institution{CSE 216 / COGS 230, Fall 2026}\city{[city]}\country{USA}
+  \institution{University of California San Diego}\city{San Diego}\state{California}\country{USA}
 }
 
 \begin{abstract}
@@ -84,21 +84,18 @@ This is a secondary analysis of existing logs that combines qualitative coding, 
 \subsection{Data}
 \label{sec:data}
 
-\textbf{No participants were recruited for this study.} I gave no instructions to anyone, paid no one and collected no new data. RQ2 is analytic, because the project promised no user study.
+\textbf{No participants were recruited for this study.} I gave no instructions to anyone, paid no one and collected no new data. RQ2 is analytic, because the project promised no user study. The study reanalyzed released datasets and involved no interaction with people, so no IRB review was sought.
 
-\emph{NIRVANA} \cite{jelson2026nirvana} records 77 university students writing an analytical essay with ChatGPT in about 30 minutes, including keystrokes, full conversations and all text copied from ChatGPT. Six never asked ChatGPT anything, so the 347 request windows come from 71 students. Its participant sheet gives two outside outcomes for each essay: GPT Final \% (the share of the essay that came from the AI) and Perceived Ownership (1--7). The sections of the NIRVANA preprint read for this project left no record of its consent or compensation procedures, so I state none here.
-% TODO(Wayne): open the NIRVANA preprint (arXiv:2604.07344) and add its recruitment, consent and compensation details if it states them. Nothing here was read for those details, and no download was made in this draft.
-% TODO(Wayne): add an IRB determination sentence if you obtained one. None is recorded in the project files.
+\emph{NIRVANA} \cite{jelson2026nirvana} records 77 university students writing an analytical essay with ChatGPT in about 30 minutes, including keystrokes, full conversations and all text copied from ChatGPT. Six never asked ChatGPT anything, so the 347 request windows come from 71 students. Its participant sheet gives two outside outcomes for each essay: GPT Final \% (the share of the essay that came from the AI) and Perceived Ownership (1--7). Its authors recruited United States college students through university mailing lists and Prolific and entered each participant in a raffle for a \$10 gift card, with odds of 1 in 5 and no link to essay quality. The preprint does not describe a consent or ethics review procedure.
 % src: data/REPORT.md; data/raw/nirvana (sheet columns only); analysis/derived/outcome_nirvana.csv
 
 \emph{WildChat} \cite{zhao2024} comes from users of a free ChatGPT service who opted in to anonymous collection. That is the only consent and compensation information I report for it. It has no editor, no verified identity and no record of what happened to the text afterward. An LLM screened conversations for formal long-form writing under a definition committed before any record was labeled. The coded sample comes only from a random sample of 1,200 of the 139,736 eligible conversations (837,989 before filtering), one conversation per IP cluster: 35 whole conversations with 151 windows, plus 30 earlier windows that stay out of every session measure. The supplementary details file shows the full funnel. In all, 528 windows were coded, and 106 whole sessions were analyzed. Dataset text stays out of the public record, and narratives in this paper are paraphrases.
 
 \subsection{Codebook and coding}
 
-The unit of coding is the \emph{window}: one request, the AI's response, and the writer's first relevant next action before the next request. Codes describe behavior and never cognition, because a writer may read and judge silently. Each window is coded on five questions (Appendix~\ref{app:codebook}). Q1 records the operation requested, from which a script derives the writing stage. Q2 records what the writer asks for. Q3 records where the response's main content came from and what the next action shows: \code{D0} no substantive decision, \code{D1} the writer's content, \code{D2} an AI proposal left open, \code{D3} the writer chose or revised, \code{D4} the AI proposal taken. Q4 records only visible checks of this response, from \code{V0} (none) through \code{V4} (compared with a source). Q5 records uptake, from \code{U1} (pasted unchanged) through \code{U7} (the writer types new text) and \code{U8} (moved on). A \code{prior\_own\_work} field records whether the writer's own draft is visible before the request. Agents revised a codebook reconstructed from the proposal and Milestone 1 through four pilot rounds (132 windows), and version 1.1 was frozen on November 6, 2026.
-% TODO(Wayne): confirm who wrote codebook v1.0 (it says it is a reconstruction dated Nov 2; the repo cannot show the author).
+The unit of coding is the \emph{window}: one request, the AI's response, and the writer's first relevant next action before the next request. Codes describe behavior and never cognition, because a writer may read and judge silently. Each window is coded on five questions (Appendix~\ref{app:codebook}). Q1 records the operation requested, from which a script derives the writing stage. Q2 records what the writer asks for. Q3 records where the response's main content came from and what the next action shows: \code{D0} no substantive decision, \code{D1} the writer's content, \code{D2} an AI proposal left open, \code{D3} the writer chose or revised, \code{D4} the AI proposal taken. Q4 records only visible checks of this response, from \code{V0} (none) through \code{V4} (compared with a source). Q5 records uptake, from \code{U1} (pasted unchanged) through \code{U7} (the writer types new text) and \code{U8} (moved on). A \code{prior\_own\_work} field records whether the writer's own draft is visible before the request. I wrote codebook v1.0 from the proposal and Milestone 1, with AI help in organizing ideas and gathering sources. Agents revised it through four pilot rounds (132 windows), and version 1.1 was frozen on November 6, 2026.
 
-All windows were coded by AI agents in Claude Code. Coder A (Claude Opus 5.5) and Coder B (Claude Sonnet 5.5) were instructed not to read each other's labels, and a transcript audit found that none did. A fresh Opus 5.5 adjudicator ruled on disagreements without knowing which coder was which. A Claude Fable 5.1 agent coded a 20-window set that had been reserved for human coding, which is a third AI check and not human validation. Across the three main coding runs, Cohen's $\kappa$ between coders, also reported in prior prompt coding \cite{jelson2026chi,poquet2026}, is 0.80 to 0.94 on \code{decision}, 0.79 to 0.94 on \code{verification} and 0.85 to 0.92 on \code{uptake} (Table~\ref{tab:agreement}). The rules applied to each coder's labels separately give the same category on 89.2\% of 528 windows ($\kappa = 0.86$).
+All windows were coded by AI agents in Claude Code. Coder A (Claude Opus 5.5) and Coder B (Claude Sonnet 5.5) were instructed not to read each other's labels, and a transcript audit found that none did. A fresh Opus 5.5 adjudicator ruled on disagreements without knowing which coder was which. A Claude Fable 5.1 agent coded a 20-window set that had been reserved for human coding, which is a third AI check and not human validation. Across the three main coding runs, Cohen's $\kappa$ \cite{cohen1960} between coders, also reported in prior prompt coding \cite{jelson2026chi,poquet2026}, is 0.80 to 0.94 on \code{decision}, 0.79 to 0.94 on \code{verification} and 0.85 to 0.92 on \code{uptake} (Table~\ref{tab:agreement}). The rules applied to each coder's labels separately give the same category on 89.2\% of 528 windows ($\kappa = 0.86$).
 
 \subsection{From codes to a category}
 \label{sec:rules}
@@ -125,8 +122,7 @@ The surrender-leaning rules draw on uncritical adoption \cite{shaw2026}, copied 
 
 \subsection{Analysis}
 
-From the raw NIRVANA logs a script extracted numbers only: for each window, the time from response to first copy and to next request (\emph{dwell}), the characters typed and pasted, and the editor's length at the request. WildChat stamps only AI turns. Categories were fixed before the new labels were read, and session types were then derived from the data by clustering category sequences. Order claims are tested against a within-session shuffle, outcome links are Spearman correlations with permutation $p$ values across sessions, and a logistic regression with session-cluster bootstraps tests the next-window prediction (procedure in the supplementary details file). Agents worked in Claude Code, and analysis scripts are Python with NumPy and Matplotlib. Data preparation, coding and analysis ran on November 6--7, 2026, and the paper was first drafted on November 8 and revised through November 23. Every number reruns from saved labels by script.
-% TODO(Wayne): standard citations for Cohen's kappa, Spearman, optimal matching and silhouette are not in lit/. This draft was limited to sources in lit/, so none is cited. Approve adding them or leave as is; see TODO_WAYNE.md.
+From the raw NIRVANA logs a script extracted numbers only: for each window, the time from response to first copy and to next request (\emph{dwell}), the characters typed and pasted, and the editor's length at the request. WildChat stamps only AI turns. Categories were fixed before the new labels were read, as in directed content analysis \cite{hsieh2005}, and session types were then derived from the data by clustering category sequences with optimal matching \cite{abbott2000} and silhouette selection \cite{rousseeuw1987}. Order claims are tested against a within-session shuffle \cite{good2005}, outcome links are Spearman correlations \cite{spearman1904} with permutation $p$ values across sessions, and a logistic regression with session-cluster bootstraps \cite{efron1994} tests the next-window prediction (procedure in the supplementary details file). Agents worked in Claude Code, and analysis scripts are Python with NumPy and Matplotlib. Data preparation, coding and analysis ran on November 6--7, 2026, and the paper was first drafted on November 8 and revised through November 23. Every number reruns from saved labels by script.
 
 \section{Results}
 \label{sec:results}
@@ -481,6 +477,7 @@ R99 & Anything else & Indeterminate & -- & -- \\
 \end{longtable}
 }
 
+\clearpage
 \section{Agreement, Session Archetypes and AI Use}
 \label{app:support}
 

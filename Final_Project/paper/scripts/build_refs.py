@@ -43,6 +43,18 @@ REFS = {
     "zhu2026": ("C0455", "article", "Frontiers in Psychology", {"volume": "17", "articleno": "1878629", "doi": "10.3389/fpsyg.2026.1878629"}),
 }
 
+# Standard method citations added on 2026-11-23 at Wayne's approval. They are not in lit/papers.csv;
+# every field below was checked against Crossref on that date. Cited for the method only, not read for this project.
+METHOD_REFS = {
+    "cohen1960": ("article", {"author": "Jacob Cohen", "title": "{A Coefficient of Agreement for Nominal Scales}", "year": "1960", "journal": "Educational and Psychological Measurement", "volume": "20", "number": "1", "pages": "37--46", "doi": "10.1177/001316446002000104"}),
+    "spearman1904": ("article", {"author": "C. Spearman", "title": "{The Proof and Measurement of Association between Two Things}", "year": "1904", "journal": "The American Journal of Psychology", "volume": "15", "number": "1", "pages": "72--101", "doi": "10.2307/1412159"}),
+    "good2005": ("book", {"author": "Phillip I. Good", "title": "{Permutation, Parametric and Bootstrap Tests of Hypotheses}", "year": "2005", "edition": "3rd", "series": "Springer Series in Statistics", "publisher": "Springer", "address": "New York, NY", "doi": "10.1007/b138696"}),
+    "efron1994": ("book", {"author": "Bradley Efron and R. J. Tibshirani", "title": "{An Introduction to the Bootstrap}", "year": "1994", "publisher": "Chapman and Hall/CRC", "address": "New York, NY", "doi": "10.1201/9780429246593"}),
+    "abbott2000": ("article", {"author": "Andrew Abbott and Angela Tsay", "title": "{Sequence Analysis and Optimal Matching Methods in Sociology}", "year": "2000", "journal": "Sociological Methods \\& Research", "volume": "29", "number": "1", "pages": "3--33", "doi": "10.1177/0049124100029001001"}),
+    "rousseeuw1987": ("article", {"author": "Peter J. Rousseeuw", "title": "{Silhouettes: A graphical aid to the interpretation and validation of cluster analysis}", "year": "1987", "journal": "Journal of Computational and Applied Mathematics", "volume": "20", "pages": "53--65", "doi": "10.1016/0377-0427(87)90125-7"}),
+    "hsieh2005": ("article", {"author": "Hsiu-Fang Hsieh and Sarah E. Shannon", "title": "{Three Approaches to Qualitative Content Analysis}", "year": "2005", "journal": "Qualitative Health Research", "volume": "15", "number": "9", "pages": "1277--1288", "doi": "10.1177/1049732305276687"}),
+}
+
 NOTES = {
     "alam2026": "records conflict: lit/papers.csv says relevant sections, inference/sources.tsv says abstract only; the paper uses only what the abstract states",
     "bastani2025": "PMC abstract and introduction read at the literature stage (lit/citation_check.csv); PMC later blocked by reCAPTCHA, so the working-paper version on a third-party host was read for the rules (abstract, pp. 11, 13-15; cited pp. 2, 14, 15, per inference/sources.tsv); PNAS version of record not read in full",
@@ -94,14 +106,20 @@ def entry(key, row, kind, venue, extra):
 def main():
     rows = {r["paper_id"]: r for r in csv.DictReader(open(LIT / "papers.csv", encoding="utf-8"))}
     bib, table = [], ["key\tpaper_id\ttitle\tidentifier_in_papers_csv\tread_level\tnote"]
-    for key in sorted(REFS):
+    for key in sorted(set(REFS) | set(METHOD_REFS)):
+        if key in METHOD_REFS:
+            kind, fields = METHOD_REFS[key]
+            body = ",\n".join(f"  {k} = {{{v}}}" for k, v in fields.items())
+            bib.append(f"@{kind}{{{key},\n{body}\n}}\n")
+            table.append("\t".join([key, "-", fields["title"].strip("{}"), "doi:" + fields["doi"], "not read; standard method citation", "not in lit/papers.csv; fields checked against Crossref 2026-11-23"]))
+            continue
         pid, kind, venue, extra = REFS[key]
         row = rows[pid]  # KeyError means the source is not in the registry
         bib.append(entry(key, row, kind, venue, extra))
         table.append("\t".join([key, pid, row["title"], row["identifier"], row["read_level"], NOTES.get(key, "")]))
     (PAPER / "refs.bib").write_text("\n".join(bib), encoding="utf-8")
     (PAPER / "CITATIONS.tsv").write_text("\n".join(table) + "\n", encoding="utf-8")
-    print(f"{len(REFS)} references written")
+    print(f"{len(REFS) + len(METHOD_REFS)} references written")
 
 
 main()

@@ -18,7 +18,8 @@
 \begin{document}
 \title[Offloading or Surrendering? Supplementary Details]{Supplementary Details for ``Offloading or Surrendering?''}
 \author{Wayne Wang}
-\affiliation{\institution{CSE 216 / COGS 230, Fall 2026}\city{[city]}\country{USA}}
+\email{waw009@ucsd.edu}
+\affiliation{\institution{University of California San Diego}\city{San Diego}\state{California}\country{USA}}
 \maketitle
 \renewcommand{\thefigure}{S\arabic{figure}}\renewcommand{\thetable}{S\arabic{table}}
 
@@ -47,7 +48,7 @@ Scripts scan the repository for leaked dataset text, and WildChat contact patter
 
 The stages of writing come from \citet{flower1981}, read secondhand through work that builds on them \cite{jelson2026chi,reza2025}. \citet{bastani2025} was read as its working-paper version.
 
-Codebook v1.0 was a reconstruction from the proposal and Milestone 1. Agents revised it through four pilot rounds, 132 windows, plus a 10-window check of one rule and 12 constructed cases, on windows that share no session with the 100-window sample and the 20-window set; later whole-session coding did include pilot sessions. Two AI coders applied each round. Version 1.1 cut two labels that the pilots did not support and added \code{U8} and \code{prior\_own\_work}. Version 1.1 was frozen on November 6, 2026, with round 4 agreement of $\kappa = 0.78$ on \code{decision}, 1.0 on \code{verification} and 0.94 on \code{uptake}.
+I wrote codebook v1.0 from the proposal and Milestone 1, with AI help in organizing ideas and gathering sources. Agents revised it through four pilot rounds, 132 windows, plus a 10-window check of one rule and 12 constructed cases, on windows that share no session with the 100-window sample and the 20-window set; later whole-session coding did include pilot sessions. Two AI coders applied each round. Version 1.1 cut two labels that the pilots did not support and added \code{U8} and \code{prior\_own\_work}. Version 1.1 was frozen on November 6, 2026, with round 4 agreement of $\kappa = 0.78$ on \code{decision}, 1.0 on \code{verification} and 0.94 on \code{uptake}.
 % src: codebook/REPORT.md; CSE216_Research_Writing_Codebook_v1.0.md header
 
 \begin{figure}[tbp]
@@ -71,7 +72,7 @@ Strength is \emph{strong} when the window shows a signature a source names and c
 
 \subsection{Analysis method and tools}
 
-The qualitative analysis was deductive: categories were fixed by the rule table before the new labels were read, and session types were then derived from the data. Agreement is Cohen's $\kappa$, with bootstrapped intervals over 2,000 draws and sessions as the resampling unit where sessions matter; prior studies that code prompts also report $\kappa$ \cite{jelson2026chi,poquet2026}. Order claims are tested against a within-session shuffle, reordering each session's categories 2,000 times, which holds a session's make-up fixed and moves only its order. Outcome links are Spearman correlations with two-sided permutation $p$ values across sessions. Session archetypes come from optimal-matching distance between category sequences and average-linkage clustering, with the number of clusters chosen by best mean silhouette over 3 to 7. A logistic regression with 1,000 session-cluster bootstraps tests the next-window prediction.
+The qualitative analysis was deductive, in the manner of directed content analysis \cite{hsieh2005}: categories were fixed by the rule table before the new labels were read, and session types were then derived from the data. Agreement is Cohen's $\kappa$ \cite{cohen1960}, with bootstrapped intervals \cite{efron1994} over 2,000 draws and sessions as the resampling unit where sessions matter; prior studies that code prompts also report $\kappa$ \cite{jelson2026chi,poquet2026}. Order claims are tested against a within-session shuffle, reordering each session's categories 2,000 times \cite{good2005}, which holds a session's make-up fixed and moves only its order. Outcome links are Spearman correlations \cite{spearman1904} with two-sided permutation $p$ values across sessions. Session archetypes come from optimal-matching distance between category sequences \cite{abbott2000} and average-linkage clustering, with the number of clusters chosen by best mean silhouette \cite{rousseeuw1987} over 3 to 7. A logistic regression with 1,000 session-cluster bootstraps tests the next-window prediction.
 % src: analysis/results/mining.md preamble, s1, s3, s8; sessions/REPORT.md
 
 Agents worked in Claude Code. Analysis scripts are Python, with NumPy and Matplotlib; the WildChat ranker used the \code{BAAI/bge-small-en-v1.5} embedding model. Data preparation, coding and analysis ran on November 6--7, 2026, and the paper was first drafted on November 8 and revised through November 23. Each stage's numbers rerun from saved labels by script, with no model calls, and repeat runs gave byte-identical outputs; numbers in the schematic figures and some figure labels are typed from those results files. Fresh agents with no access to the working agent's reasoning checked each stage against a stated gate, and a skeptic agent tried to refute each claim in the results.

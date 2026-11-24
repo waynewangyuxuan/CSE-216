@@ -4,19 +4,16 @@ Everything below needs you. Items marked in the source as `% TODO(Wayne):` are l
 
 ## 1. In `main.tex` (search for `TODO(Wayne)`)
 
-1. **Affiliation.** Replace the affiliation line with your institution, city and preferred email. The country is set to USA.
-2. **NIRVANA consent and compensation.** Open arXiv:2604.07344 and add its recruitment, consent and compensation details if it states them. This draft says the sections read left no record, because no download was allowed here.
-3. **IRB.** Add a determination sentence if you obtained one. None is recorded in the project.
-4. **Method citations (the critic counts this as blocking).** The rubric says to cite the analysis method. Standard citations for Cohen's kappa, Spearman, permutation tests, optimal matching, silhouette and deductive qualitative coding are not in `lit/`, and the draft was limited to `lit/`. Approve adding them; these are candidates recalled from memory and unverified: Cohen 1960; Spearman 1904; Abbott and Tsay 2000; Rousseeuw 1987; Hsieh and Shannon 2005.
-5. **Codebook v1.0.** Confirm who wrote it. It says it is a reconstruction dated Nov 2. The repository cannot show the author.
-6. **Barriers.** An agent drafted this section, including every "What I learned" sentence. The longer version is in `supplement_details.tex`, so check both. Rewrite any lesson that is not yours.
-7. **AI Use Statement: your review.** Add what you personally reviewed and when: your read of M2 (planned Nov 14), your read and edits of this paper, your own full proofread. None has happened as of this draft, and none is claimed.
-8. **AI Use Statement: other tools.** State whether you used AI for the proposal and Milestone 1, and whether any other tool (ChatGPT, Grammarly, editor autocomplete) touched this work.
-9. **Chat logs sentence.** Confirm it once the logs are exported.
+1. **Barriers.** An agent drafted this section, including every "What I learned" sentence. The longer version is in `supplement_details.tex`, so check both. Rewrite any lesson that is not yours. The assignment asks for it: Barriers is about the process (what did not go as planned, why, what you would change, what you learned) and ends with what you learned about doing research.
+2. **AI Use Statement: your review.** Add what you personally reviewed and when: your read of M2, your read and edits of this paper, your own full proofread.
+3. **AI Use Statement: other tools.** State whether you used AI for the proposal and Milestone 1, and whether any other tool (ChatGPT, Grammarly, editor autocomplete) touched this work.
+4. **Chat logs sentence.** Confirm it once the logs are exported.
+
+Done on Nov 23 from your answers: affiliation (UCSD, San Diego, email); NIRVANA recruitment and compensation, taken from the preprint's section 3.3 (it states no consent or ethics procedure); no IRB review sought, since no people were involved; codebook v1.0 written by you with AI help; seven standard method citations added and checked against Crossref.
 
 ## 2. Compiling
 
-`sh build.sh` builds `main.pdf` with `tectonic` and the current ACM class in `template/`. `python3 scripts/check_build.py` confirms a clean compile and the page count (11 body pages, the target set on Nov 8; 20 total). `main.pdf` is not tracked, so keep it out of git until it is the final file. The PDF prints the placeholder `[city]` until item 1 is done. On Nov 23 every reference was checked against Crossref, DataCite and the arXiv API, and missing authors, pages, volumes and publishers were added in `scripts/build_refs.py`. 13 warnings remain: four journals number articles instead of pages, and ICLR 2024 has no page numbers. One cited Zenodo record (Mallissery 2026) had been deleted, so its citation and the clause it supported were removed.
+`sh build.sh` builds `main.pdf` with `tectonic` and the current ACM class in `template/`. `python3 scripts/check_build.py` confirms a clean compile and the page count (11 body pages, the target set on Nov 8; 21 total). `main.pdf` is not tracked, so keep it out of git until it is the final file. On Nov 23 every reference was checked against Crossref, DataCite and the arXiv API, and missing authors, pages, volumes and publishers were added in `scripts/build_refs.py`. 13 warnings remain: four journals number articles instead of pages, and ICLR 2024 has no page numbers. One cited Zenodo record (Mallissery 2026) had been deleted, so its citation and the clause it supported were removed.
 
 ## 3. Proofreading
 

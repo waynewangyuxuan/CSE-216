@@ -1,11 +1,16 @@
 key	paper_id	title	identifier_in_papers_csv	read_level	note
+abbott2000	-	Sequence Analysis and Optimal Matching Methods in Sociology	doi:10.1177/0049124100029001001	not read; standard method citation	not in lit/papers.csv; fields checked against Crossref 2026-11-23
 alam2026	S01	PAUSE: A Privacy-Preserving Self-Reflection Tool for AI-Associated Cognitive Offloading	arXiv:2609.13155	relevant sections of full text	records conflict: lit/papers.csv says relevant sections, inference/sources.tsv says abstract only; the paper uses only what the abstract states
 bastani2025	C0327	Generative AI without guardrails can harm learning: Evidence from high school mathematics	doi:10.1073/pnas.2422633122	abstract and introduction	PMC abstract and introduction read at the literature stage (lit/citation_check.csv); PMC later blocked by reCAPTCHA, so the working-paper version on a third-party host was read for the rules (abstract, pp. 11, 13-15; cited pp. 2, 14, 15, per inference/sources.tsv); PNAS version of record not read in full
 bhat2026	C0490	Reactive Writers: How Co-Writing with AI Changes How We Engage with Ideas	arXiv:2603.10374	title and abstract at screening only	
 chen2026	C0399	Layer-sensitive cognitive offloading in generative AI-assisted writing: supported performance and independent no-AI outcomes	doi:10.3389/fpsyg.2026.1906199	relevant sections of full text	
+cohen1960	-	A Coefficient of Agreement for Nominal Scales	doi:10.1177/001316446002000104	not read; standard method citation	not in lit/papers.csv; fields checked against Crossref 2026-11-23
 contractor2026	C0227	Experimental Evidence on the Learning Impact of Generative AI	arXiv:2607.08849	abstract and introduction	also pp. 22-23, 68, 77, per inference/sources.tsv
 davalos2026	C0184	Does AI Assistance Leave a Temporal Fingerprint? Detecting Overreliance in AI-Assisted Writing and Programming	doi:10.48550/arxiv.2609.17883	title and abstract at screening only	
+efron1994	-	An Introduction to the Bootstrap	doi:10.1201/9780429246593	not read; standard method citation	not in lit/papers.csv; fields checked against Crossref 2026-11-23
 flower1981	S05	A Cognitive Process Theory of Writing	doi:10.2307/356600	not read; second-hand	
+good2005	-	Permutation, Parametric and Bootstrap Tests of Hypotheses	doi:10.1007/b138696	not read; standard method citation	not in lit/papers.csv; fields checked against Crossref 2026-11-23
+hsieh2005	-	Three Approaches to Qualitative Content Analysis	doi:10.1177/1049732305276687	not read; standard method citation	not in lit/papers.csv; fields checked against Crossref 2026-11-23
 jelson2026chi	C0042	An Empirical Study to Understand How Students Use ChatGPT for Writing Essays	arXiv:2501.10551	relevant sections of full text	bib year is the published CHI 2026 version; registry year is the 2025 preprint
 jelson2026nirvana	C0453	NIRVANA: A Comprehensive Dataset for Reproducing How Students Use Generative AI for Essay Writing	arXiv:2604.07344	relevant sections of full text	
 joshi2025	C0649	Writing with AI Lowers Psychological Ownership, but Longer Prompts Can Help	arXiv:2404.03108	title and abstract at screening only	bib year is the published 2025 version; registry year is the 2024 preprint
@@ -20,8 +25,10 @@ park2026	C0066	Authorship Drift: How Self-Efficacy and Trust Evolve During LLM-A
 poquet2026	C0482	Profiling cognitive offloading in LLM-mediated synthesis writing: Volume vs. content	arXiv:2606.10434	relevant sections of full text	
 reza2025	C0133	Co-Writing with AI, on Human Terms: Aligning Research with User Demands Across the Writing Process	arXiv:2504.12488	abstract and introduction	
 risko2016	S15	Cognitive Offloading	doi:10.1016/j.tics.2016.07.002	accepted manuscript, full	
+rousseeuw1987	-	Silhouettes: A graphical aid to the interpretation and validation of cluster analysis	doi:10.1016/0377-0427(87)90125-7	not read; standard method citation	not in lit/papers.csv; fields checked against Crossref 2026-11-23
 shaw2026	A058	Thinking—Fast, Slow, and Artificial: How AI is Reshaping Human Reasoning and the Rise of Cognitive Surrender	doi:10.2139/ssrn.6097646	through Study 1 plus limitations (PsyArXiv copy)	
 skulmowski2024	C0471	Placebo or Assistant? Generative AI Between Externalization and Anthropomorphization	doi:10.1007/s10648-024-09894-x	title and abstract at screening only	
+spearman1904	-	The Proof and Measurement of Association between Two Things	doi:10.2307/1412159	not read; standard method citation	not in lit/papers.csv; fields checked against Crossref 2026-11-23
 tankelevitch2024	C0579	The Metacognitive Demands and Opportunities of Generative AI	doi:10.1145/3613904.3642902	title and abstract at screening only	
 tao2026	C0596	Think Before You Accept: Can Written Justification Reduce Uncritical Uptake of AI Writing Suggestions?	arXiv:2609.23936	relevant sections of full text	
 wan2024	C0134	CoCo Matrix: Taxonomy of Cognitive Contributions in Co-writing with Intelligent Agents	doi:10.1145/3635636.3664260	title and abstract at screening only	
