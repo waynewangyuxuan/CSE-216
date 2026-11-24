@@ -49,5 +49,4 @@ See `SUPPLEMENT.md` sections 2 and 3. Three decisions wait for you: how to hand 
 
 - **Title.** The critic suggests "Mapping Where AI Assistance May Substitute for Thinking", since the paper does not measure thinking.
 - **Serial commas.** The paper mixes the two styles in a few simple lists. Proofreading treated this as consistency, not an error, and it was left.
-- **Padmakumar reference.** `lit/papers.csv` holds surnames only, so this reference prints without given names. Fill them in if you have them.
 - **Barriers wording.** The motive "to save two hours" was removed because no file records it. Add it back if it is true.
